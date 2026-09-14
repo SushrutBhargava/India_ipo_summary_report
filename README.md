@@ -1,5 +1,7 @@
 # IPO Fundamentals Ledger
 
+**Live ledger: https://sushrutbhargava.github.io/India_ipo_summary_report/**
+
 A daily-refreshed research ledger tracking every Indian mainboard/SME IPO
 that is currently open for subscription, closed and awaiting listing, or
 opening within the next 10 days.
