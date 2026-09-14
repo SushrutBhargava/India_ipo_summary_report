@@ -8,18 +8,12 @@ opening within the next 10 days.
 
 ## Contents
 
-- `ipo-fundamentals-ledger.html` — the main ledger: DRHP-sourced fundamentals
-  (revenue/PAT trends, margins, ROE/ROCE, leverage, EPS, P/E, promoter
-  shareholding, fund usage), subscription status, and a scorecard against
-  four filters (financial health, valuation, fund usage, subscription demand)
-  for every tracked issue. Includes a dedicated lead manager (BRLM) track
-  record section.
-- `lead-managers/lead_manager_track_records.json` — raw per-lead-manager
-  performance profiles (2026 mainboard/SME track record, or a multi-year
-  fallback for lead managers without a 2026 record).
-- `lead-managers/per_issue_lead_manager_assessment.json` — per-issue lead
-  manager assessment (which BRLM(s), and a Strong/Solid/Mixed/Caution/
-  Unproven read on their track record).
+- `index.html` / `ipo-fundamentals-ledger.html` — the ledger: DRHP-sourced
+  fundamentals (revenue/PAT trends, margins, ROE/ROCE, leverage, EPS, P/E,
+  promoter shareholding, fund usage), subscription status, and a scorecard
+  against four filters (financial health, valuation, fund usage, subscription
+  demand) for every tracked issue. Includes a dedicated lead manager (BRLM)
+  track record section built into the page itself.
 
 ## Sources
 
