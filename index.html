@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>IPO Fundamentals Ledger — India Mainboard &amp; SME</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600;700&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --parchment: #f3ecd9;
+    --parchment-dark: #e8dfc4;
+    --navy: #14213d;
+    --navy-light: #1f3059;
+    --ink: #2a2116;
+    --gold: #a9812f;
+    --green: #2f5d3a;
+    --red: #8a2e2e;
+    --amber: #9c6b1f;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--parchment);
+    background-image: radial-gradient(circle at 20% 10%, rgba(169,129,47,0.06), transparent 40%),
+                       radial-gradient(circle at 80% 90%, rgba(20,33,61,0.05), transparent 40%);
+    color: var(--ink);
+    font-family: 'Public Sans', sans-serif;
+    line-height: 1.55;
+  }
+  header {
+    background: var(--navy);
+    color: var(--parchment);
+    padding: 40px 24px 32px;
+    border-bottom: 6px double var(--gold);
+  }
+  header .wrap { max-width: 1180px; margin: 0 auto; }
+  h1 {
+    font-family: 'Source Serif 4', serif;
+    font-size: 2.4rem;
+    margin: 0 0 6px;
+    letter-spacing: 0.5px;
+  }
+  .eyebrow {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 10px;
+  }
+  .compiled-badge {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #cdd6e8;
+    margin-bottom: 14px;
+  }
+  .subtitle { font-size: 1rem; color: #cdd6e8; margin-bottom: 16px; max-width: 900px; }
+  .compiled-line {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.85rem;
+    color: var(--gold);
+    border-top: 1px solid rgba(255,255,255,0.15);
+    padding-top: 12px;
+  }
+  .summary-strip {
+    display: flex;
+    gap: 24px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+  }
+  .summary-item {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.82rem;
+    background: rgba(255,255,255,0.06);
+    padding: 6px 12px;
+    border-radius: 3px;
+    border: 1px solid rgba(255,255,255,0.12);
+  }
+  main { max-width: 1180px; margin: 0 auto; padding: 32px 24px 80px; }
+  section.notes {
+    background: var(--parchment-dark);
+    border: 1px solid rgba(20,33,61,0.15);
+    border-left: 4px solid var(--gold);
+    padding: 20px 24px;
+    margin-bottom: 30px;
+    border-radius: 2px;
+  }
+  section.notes h2 {
+    font-family: 'Source Serif 4', serif;
+    font-size: 1.3rem;
+    margin-top: 0;
+    color: var(--navy);
+  }
+  section.notes ul { margin: 8px 0; padding-left: 20px; }
+  section.notes li { margin-bottom: 6px; }
+  .update-box {
+    background: rgba(47,93,58,0.08);
+    border: 1px dashed var(--green);
+    padding: 12px 16px;
+    margin-top: 14px;
+    font-size: 0.92rem;
+  }
+  .update-box strong { color: var(--green); }
+  .filter-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+    margin: 20px 0 0;
+  }
+  .filter-box {
+    background: #fffdf6;
+    border: 1px solid rgba(20,33,61,0.15);
+    border-radius: 3px;
+    padding: 12px 14px;
+  }
+  .filter-box .fnum { font-family:'IBM Plex Mono',monospace; color: var(--gold); font-size:0.72rem; }
+  .filter-box h4 { font-family:'Source Serif 4',serif; margin: 4px 0 6px; font-size: 0.98rem; color: var(--navy); }
+  .filter-box p { font-size: 0.8rem; margin: 0; color: #4a4030; }
+  h2.section-title {
+    font-family: 'Source Serif 4', serif;
+    font-size: 1.6rem;
+    color: var(--navy);
+    border-bottom: 2px solid var(--gold);
+    padding-bottom: 8px;
+    margin: 42px 0 8px;
+  }
+  .section-desc { font-size: 0.86rem; color: #4a4030; margin-bottom: 20px; max-width: 900px; }
+  .cards-col {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 20px;
+  }
+  .ledger-card {
+    background: #fffdf6;
+    border: 1px solid rgba(20,33,61,0.18);
+    border-radius: 4px;
+    padding: 16px 18px;
+    box-shadow: 2px 2px 0 rgba(20,33,61,0.05);
+  }
+  .card-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; flex-wrap: wrap; }
+  .card-head h3 {
+    font-family: 'Source Serif 4', serif;
+    font-size: 1.12rem;
+    margin: 0 0 4px;
+    color: var(--navy);
+    line-height: 1.25;
+  }
+  .seg-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.62rem;
+    color: #8a7f66;
+    font-weight: 400;
+    margin-left: 6px;
+  }
+  .status-badge {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.68rem;
+    padding: 3px 8px;
+    border-radius: 10px;
+    white-space: nowrap;
+    font-weight: 500;
+  }
+  .badge-open { background: #dcefe0; color: var(--green); border: 1px solid var(--green); }
+  .badge-closed { background: #f0e6d2; color: var(--amber); border: 1px solid var(--amber); }
+  .badge-upcoming { background: #e2e7f2; color: var(--navy); border: 1px solid var(--navy); }
+  .card-meta-line {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.76rem;
+    color: var(--navy-light);
+    background: #eef1f8;
+    padding: 6px 8px;
+    border-radius: 3px;
+    margin: 8px 0 10px;
+    border: 1px solid rgba(20,33,61,0.1);
+  }
+  .card-tags { margin: 0 0 10px; display: flex; flex-wrap: wrap; gap: 6px; }
+  .tag {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.65rem;
+    padding: 2px 7px;
+    border-radius: 3px;
+    background: #eee;
+    color: #444;
+    border: 1px solid #ccc;
+  }
+  .tag-strong { background: #dcefe0; color: var(--green); border-color: var(--green); }
+  .tag-mixed { background: #f5eccb; color: var(--amber); border-color: var(--amber); }
+  .tag-weak, .tag-caution { background: #f3dcdc; color: var(--red); border-color: var(--red); }
+  .tag-val-attractive { background: #dcefe0; color: var(--green); border-color: var(--green); }
+  .tag-val-fair { background: #f5eccb; color: var(--amber); border-color: var(--amber); }
+  .tag-val-rich { background: #f3dcdc; color: var(--red); border-color: var(--red); }
+  .tag-val-pending { background: #eee; color: #777; }
+  .tag-fund-growth-led { background: #dcefe0; color: var(--green); border-color: var(--green); }
+  .tag-fund-mixed { background: #f5eccb; color: var(--amber); border-color: var(--amber); }
+  .tag-fund-debt-heavy, .tag-fund-ofs-only { background: #f3dcdc; color: var(--red); border-color: var(--red); }
+  .tag-sub-very-strong { background: #dcefe0; color: var(--green); border-color: var(--green); }
+  .tag-sub-oversubscribed { background: #f5eccb; color: var(--amber); border-color: var(--amber); }
+  .tag-sub-undersubscribed, .tag-sub-pending { background: #f3dcdc; color: var(--red); border-color: var(--red); }
+  .tag-sub-not-opened { background: #eee; color: #777; }
+  .card-prose { font-size: 0.86rem; color: #3a3226; margin: 0; }
+  table.ledger-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fffdf6;
+    font-size: 0.78rem;
+    margin-bottom: 40px;
+  }
+  table.ledger-table caption { text-align: left; font-family:'Source Serif 4',serif; font-size:1.05rem; margin-bottom:8px; color: var(--navy); }
+  table.ledger-table th {
+    background: var(--navy);
+    color: var(--parchment);
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 500;
+    font-size: 0.68rem;
+    text-align: left;
+    padding: 8px 10px;
+  }
+  table.ledger-table td {
+    padding: 7px 10px;
+    border-bottom: 1px solid rgba(20,33,61,0.1);
+    vertical-align: top;
+  }
+  table.ledger-table tr:nth-child(even) { background: rgba(20,33,61,0.02); }
+  .tcell-name { font-weight: 600; color: var(--navy); white-space: nowrap; }
+  .tsub { font-family: 'IBM Plex Mono', monospace; font-size: 0.62rem; color: #7a7060; font-weight: 400; }
+  .table-scroll { overflow-x: auto; }
+  .table-footnote { font-size: 0.78rem; color: #5a5040; margin: -20px 0 40px; padding: 10px 14px; background: rgba(20,33,61,0.03); border-left: 3px solid rgba(20,33,61,0.2); }
+  footer {
+    text-align: center;
+    padding: 24px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.75rem;
+    color: #7a7060;
+  }
+
+  .analyst-note {
+    background: #fffdf6;
+    border: 1px solid rgba(20,33,61,0.15);
+    border-radius: 4px;
+    padding: 18px 22px;
+    margin-bottom: 22px;
+  }
+  .analyst-note h3 {
+    font-family: 'Source Serif 4', serif;
+    font-size: 1.1rem;
+    color: var(--navy);
+    margin: 0 0 10px;
+  }
+  .analyst-note p { font-size: 0.88rem; margin: 0 0 10px; color: #3a3226; }
+  .analyst-note ul { margin: 0 0 10px; padding-left: 20px; }
+  .analyst-note li { font-size: 0.88rem; margin-bottom: 8px; color: #3a3226; }
+  .verdict-box {
+    border-left: 4px solid var(--gold);
+    background: rgba(169,129,47,0.06);
+  }
+  .disclaimer-line {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.72rem;
+    color: #6a6050;
+    border-top: 1px dashed rgba(20,33,61,0.2);
+    padding-top: 10px;
+    margin-top: 14px !important;
+  }
+  table.rank-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.82rem;
+    margin-top: 12px;
+  }
+  table.rank-table th {
+    background: var(--navy);
+    color: var(--parchment);
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 500;
+    font-size: 0.68rem;
+    text-align: left;
+    padding: 8px 10px;
+  }
+  table.rank-table td {
+    padding: 10px;
+    border-bottom: 1px solid rgba(20,33,61,0.1);
+    vertical-align: top;
+  }
+  table.rank-table tr.rank-buy { background: rgba(47,93,58,0.06); }
+  table.rank-table tr.rank-watch { background: rgba(156,107,31,0.06); }
+  table.rank-table tr.rank-avoid { background: rgba(138,46,46,0.05); }
+  .rank-score { font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; font-weight: 600; white-space: nowrap; }
+  tr.rank-buy .rank-score { color: var(--green); }
+  tr.rank-watch .rank-score { color: var(--amber); }
+  tr.rank-avoid .rank-score { color: var(--red); }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="eyebrow">DRHP / RHP Financial Extract</div>
+    <h1>IPO Fundamentals Ledger</h1>
+    <div class="compiled-badge">Compiled 14 September 2026</div>
+    <div class="subtitle">Every mainboard and SME IPO open for subscription, awaiting listing, or opening within the next ten days, read against its own Red Herring Prospectus — three years of revenue and profit, ROE, ROCE, RoNW, debt/equity, PAT and EBITDA margins, price-to-book, EPS and promoter holding pre- and post-issue, what the fresh money actually funds, and how the order book is filling in. Figures are drawn directly from each company's disclosed financial statements and KPI tables in its prospectus; where a prospectus hadn't disclosed a figure yet, it's marked "pending" rather than estimated.</div>
+    <div class="summary-strip">
+      <div class="summary-item">Open: 8</div>
+      <div class="summary-item">Closed — awaiting listing: 13</div>
+      <div class="summary-item">Upcoming (≤10 days): 12</div>
+      <div class="summary-item">Total tracked: 33</div>
+    </div>
+    <div class="compiled-line">Source: chittorgarh.com IPO detail pages (DRHP/RHP financials, KPI, valuation, subscription) · GMP and cohort cross-checks: investorgain.com, ipoplatform.com, ipoji.com · price bands &amp; bidding dates for open/forthcoming mainboard issues verified directly against nseindia.com's exchange API · BSE-only live subscription figures (separate from the combined BSE+NSE multiples in the scorecards) and price-band confirmation for all currently live/forthcoming issues, mainboard and SME, pulled directly from api.bseindia.com · NSE's historical issue archive (nseindia.com/api/public-past-issues) cross-checked where it carries a matching record · Lead manager (BRLM) track records: chittorgarh.com's 2026 Lead Manager Performance Tracker, cross-checked with ipomarkets.com for merchant bankers with no 2026 mainboard/SME record</div>
+  </div>
+</header>
+<main>
+  <section class="notes">
+    <h2>The four-question filter this ledger scores against</h2>
+    <div class="filter-grid">
+      <div class="filter-box"><div class="fnum">01 · FINANCIAL HEALTH</div><h4>Revenue &amp; PAT growth</h4><p>Growing consistently across the three disclosed years, without debt or cash flow that looks unstable.</p></div>
+      <div class="filter-box"><div class="fnum">02 · VALUATION</div><h4>P/E and P/B</h4><p>Weighed against listed peers where the prospectus discloses a comparable set — no peer set is invented where none is disclosed.</p></div>
+      <div class="filter-box"><div class="fnum">03 · FUND USAGE</div><h4>Where proceeds go</h4><p>Fresh proceeds going to expansion or working capital reads constructively; heavy debt repayment or a pure share sale (OFS) is a caution flag.</p></div>
+      <div class="filter-box"><div class="fnum">04 · SUBSCRIPTION</div><h4>QIB and NII demand</h4><p>Institutional cover in the closing hours of bidding, where the book has opened — large institutional demand signals conviction from large investors.</p></div>
+    </div>
+    <div class="update-box">
+      <strong>Update — 14 Sep 2026:</strong> Rebuilt in the narrative-ledger format — each issue now carries a prose write-up alongside its scorecard tags, plus four dedicated data tables (revenue/PAT trend, returns/leverage, valuation/GMP, fund usage/promoter holding), matching the structure of the reference copy. GMP was added as color from investorgain.com's live tracker (unofficial, unregulated, shown separately from every DRHP-sourced ratio). Cohort cross-checked against ipoplatform.com and ipoji.com; no discrepancies found beyond what was already captured. This ledger does not carry the reference copy's peer-comparison multiples, data-quality-conflict footnotes (e.g. Hero Motors' EPS dispute, NSE's margin-basis conflict) or day-by-day subscription narrative, since those require re-deriving each company's own peer tables and multiple independent trackers per issue — flagged here rather than fabricated. Price bands and bidding dates for the 6 currently open/forthcoming mainboard issues (Manika Plastech, Veegaland Developers, Sonaselection India, Jindal Supreme, SS Retail, Hero Motors) were independently cross-checked against nseindia.com's own exchange API — all 6 matched exactly, no discrepancies found. Additionally, live BSE-only order-book data (api.bseindia.com's Pubissues_GetBkbldgCatdem_ng endpoint) and BSE price-band confirmation (GetPublicIssue_par endpoint) were pulled directly for all 8 currently open issues and cross-checked against the ledger — all 14 matched price bands on BSE's active/forthcoming feed confirmed exactly, and BSE-only subscription reads (naturally lower than the combined BSE+NSE multiples already shown, since retail volume skews heavily to NSE) are appended to each open issue's write-up, clearly labeled as BSE-only. NSE's own historical issue archive (nseindia.com/api/public-past-issues) was also cross-checked for the 4 closed issues it lists price bands for (Kanohar Electricals, Prasol Chemicals, Glass Wall Systems, Pranav Constructions) — all 4 matched the ledger exactly. NSE's archive does not carry every closed issue in this cohort (it's missing e.g. Rentomojo, Karamtara Engineering, LCC Projects, Steamhouse India, Manipal Cards, and most SME names), so BSE's live-issue API remains the more complete single source for cross-checking this cohort as a whole.
+    </div>
+  </section>
+
+  <h2 class="section-title">Scorecard — 33 issues, sorted by open date</h2>
+  <p class="section-desc">Each tag is this ledger's read of the prospectus against the four filters above — not a recommendation. "Pending" means the prospectus/market hasn't disclosed enough yet (price band, order book) to call it either way.</p>
+  <div class="cards-col">
+
+    <div class="ledger-card" id="card-Pranav-Constructions">
+      <div class="card-head">
+        <h3>Pranav Constructions <span class="seg-label">Mainboard</span></h3>
+        <span class="status-badge badge-closed">Closed — awaiting listing</span>
+      </div>
+      <div class="card-meta-line">
+        <strong>₹118 – ₹124 (final ₹124)</strong> · 7 Sep 2026–9 Sep 2026 · <strong>126.34x overall (QIB 268.54x) · as of 9 Sep 2026, 6:52 PM (Day 3, final)</strong> · GMP ₹45 (36.29%)
+      </div>
+      <div class="card-meta-line" style="margin-top:-6px;"><strong>Lead manager(s):</strong> Centrum Capital Ltd., PNB Investment Services Ltd.</div>
+      <div class="card-tags">
+      <span class="tag tag-strong">Health: Strong</span>
+      <span class="tag tag-val-fair">Valuation: Fair</span>
+      <span class="tag tag-fund-growth-led">Fund use: Growth-led</span>
+      <span class="tag tag-sub-very-strong">Subscription: Very strong</span>
+      <span class="tag tag-mixed">Lead mgr: Mixed bench</span>
+    </div>
+      <p class="card-prose">Revenue grew 20% and PAT 15% in the latest disclosed year (FY26), on a PAT margin of 9.37% (FY26) and EBITDA margin of 17.18% (FY26). Debt/equity sits at a moderate 1.08x. ROE 33.78%, ROCE 24.34%, RoNW 33.78%. Post-issue P/E works out to 19.59x on disclosed EPS (P/BV pending); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Redevelopment project expenses ₹145.72 Cr + debt repayment ₹91.50 Cr + new project acquisition ₹42.57 Cr + issue expenses. Growth-heavy with a debt component. Book closed/stands at 126.34x overall (QIB 268.54x, NII 217.73x, Retail 45.31x) as of 9 Sep 2026, 6:52 PM (Day 3, final). Grey-market premium reads ₹45 (36.29%) as of 13 Sep 2026 (unofficial, unregulated, moves daily — sourced from investorgain.com, treated as sentiment color, not a fundamental). Lead manager(s): Centrum Capital Ltd., PNB Investment Services Ltd. — track record read: Mixed bench. Centrum Capital Ltd.: 1 mainboard IPOs managed in 2026, 100% listed positive, average listing-day gain +22.0%. PNB Investment Services Ltd.: 1 mainboard IPOs managed in 2026, 100% listed positive, average listing-day gain +0.4%.</p>
+    </div>
+    
+
+    <div class="ledger-card" id="card-Kanohar-Electricals">
+      <div class="card-head">
+        <h3>Kanohar Electricals <span class="seg-label">Mainboard</span></h3>
+        <span class="status-badge badge-closed">Closed — awaiting listing</span>
+      </div>
+      <div class="card-meta-line">
+        <strong>₹601 – ₹632 (final ₹632)</strong> · 8 Sep 2026–10 Sep 2026 · <strong>90.59x overall (QIB 215.37x) · as of 10 Sep 2026, 6:54 PM (Day 3, final)</strong> · GMP ₹241 (38.13%)
+      </div>
+      <div class="card-meta-line" style="margin-top:-6px;"><strong>Lead manager(s):</strong> Nuvama Wealth Management Ltd., IIFL Capital Services Ltd.</div>
+      <div class="card-tags">
+      <span class="tag tag-strong">Health: Strong</span>
+      <span class="tag tag-val-rich">Valuation: Rich</span>
+      <span class="tag tag-fund-growth-led">Fund use: Growth-led</span>
+      <span class="tag tag-sub-very-strong">Subscription: Very strong</span>
+      <span class="tag tag-mixed">Lead mgr: Mixed bench</span>
+    </div>
+      <p class="card-prose">Revenue grew 45% and PAT 99% in the latest disclosed year (FY26), on a PAT margin of 19.57% (FY26) and EBITDA margin of 27.59% (FY26). Debt/equity is a clean 0.1x. ROE 42.12%, ROCE 70.13%, RoNW 34.80%. Post-issue P/E works out to 38.58x on disclosed EPS (P/BV 12.62); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Capex ₹64.18 Cr + working capital ₹155 Cr (dominant use); balance general corporate. Large OFS (₹755.74 Cr) to promoter family trust. Book closed/stands at 90.59x overall (QIB 215.37x, NII 87.74x, Retail 20.51x) as of 10 Sep 2026, 6:54 PM (Day 3, final). Grey-market premium reads ₹241 (38.13%) as of 13 Sep 2026 (unofficial, unregulated, moves daily — sourced from investorgain.com, treated as sentiment color, not a fundamental). Lead manager(s): Nuvama Wealth Management Ltd., IIFL Capital Services Ltd. — track record read: Mixed bench. Nuvama Wealth Management Ltd.: 4 mainboard IPOs managed in 2026, 50% listed positive, average listing-day gain +9.0%. IIFL Capital Services Ltd.: 12 mainboard IPOs managed in 2026, 42% listed positive, average listing-day gain +7.9%.</p>
+    </div>
+    
+
+    <div class="ledger-card" id="card-Prasol-Chemicals">
+      <div class="card-head">
+        <h3>Prasol Chemicals <span class="seg-label">Mainboard</span></h3>
+        <span class="status-badge badge-closed">Closed — awaiting listing</span>
+      </div>
+      <div class="card-meta-line">
+        <strong>₹643 – ₹676 (final ₹676)</strong> · 8 Sep 2026–10 Sep 2026 · <strong>3.47x overall (QIB 7.59x) · as of 10 Sep 2026, 6:54 PM (Day 3, final)</strong> · GMP ₹-15 (-2.22%)
+      </div>
+      <div class="card-meta-line" style="margin-top:-6px;"><strong>Lead manager(s):</strong> Dam Capital Advisors Ltd.</div>
+      <div class="card-tags">
+      <span class="tag tag-strong">Health: Strong</span>
+      <span class="tag tag-val-pending">Valuation: Pending</span>
+      <span class="tag tag-fund-mixed">Fund use: Mixed</span>
+      <span class="tag tag-sub-oversubscribed">Subscription: Oversubscribed</span>
+      <span class="tag tag-strong">Lead mgr: Strong bench</span>
+    </div>
+      <p class="card-prose">Revenue grew 22% and PAT 91% in the latest disclosed year (FY26), on a PAT margin of 6.74% (FY26) and EBITDA margin of 11.30% (FY26). Debt/equity is a clean 0.19x. ROE 20.37%, ROCE 22.43%, RoNW 18.53%. Valuation multiples: EPS pre/post 14.33/pending, P/BV pending. Fund usage: Debt repayment ₹60 Cr out of ₹80 Cr fresh issue (75%); balance general corporate + issue expenses. OFS ₹420 Cr dominates total issue size (84%). Book closed/stands at 3.47x overall (QIB 7.59x, NII 1.89x, Retail 1.79x) as of 10 Sep 2026, 6:54 PM (Day 3, final). Grey-market premium reads ₹-15 (-2.22%) as of 13 Sep 2026 (unofficial, unregulated, moves daily — sourced from investorgain.com, treated as sentiment color, not a fundamental). Lead manager(s): Dam Capital Advisors Ltd. — track record read: Strong bench. Dam Capital Advisors Ltd.: 2 mainboard IPOs managed in 2026, 100% listed positive, average listing-day gain +68.2%.</p>
+    </div>
+    
+
+    <div class="ledger-card" id="card-Glass-Wall-Systems-India-">
+      <div class="card-head">
+        <h3>Glass Wall Systems (India) <span class="seg-label">Mainboard</span></h3>
+        <span class="status-badge badge-closed">Closed — awaiting listing</span>
+      </div>
+      <div class="card-meta-line">
+        <strong>₹172 – ₹182 (final ₹182)</strong> · 8 Sep 2026–10 Sep 2026 · <strong>81.65x overall (QIB 167.93x) · as of 10 Sep 2026, 6:54 PM (Day 3, final)</strong> · GMP ₹52 (28.57%)
+      </div>
+      <div class="card-meta-line" style="margin-top:-6px;"><strong>Lead manager(s):</strong> IIFL Capital Services Ltd., Motilal Oswal Investment Advisors Ltd.</div>
+      <div class="card-tags">
+      <span class="tag tag-strong">Health: Strong</span>
+      <span class="tag tag-val-fair">Valuation: Fair</span>
+      <span class="tag tag-fund-growth-led">Fund use: Growth-led</span>
+      <span class="tag tag-sub-very-strong">Subscription: Very strong</span>
+      <span class="tag tag-mixed">Lead mgr: Mixed bench</span>
+    </div>
+      <p class="card-prose">Revenue grew 64% and PAT 46% in the latest disclosed year (FY26), on a PAT margin of 18.34% (FY26) and EBITDA margin of 23.02% (FY26). Debt/equity is a clean 0.03x. ROE 38.62%, ROCE 43.01%, RoNW 32.03%. Post-issue P/E works out to 19.1x on disclosed EPS (P/BV 9.00); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Glass processing unit capex ₹50 Cr (backward integration at Vile Bhagad); balance general corporate + issue expenses. Growth-oriented fresh issue; OFS ₹368 Cr is bulk of total issue. Book closed/stands at 81.65x overall (QIB 167.93x, NII 79.71x, Retail 33.18x) as of 10 Sep 2026, 6:54 PM (Day 3, final). Grey-market premium reads ₹52 (28.57%) as of 13 Sep 2026 (unofficial, unregulated, moves daily — sourced from investorgain.com, treated as sentiment color, not a fundamental). Lead manager(s): IIFL Capital Services Ltd., Motilal Oswal Investment Advisors Ltd. — track record read: Mixed bench. IIFL Capital Services Ltd.: 12 mainboard IPOs managed in 2026, 42% listed positive, average listing-day gain +7.9%. Motilal Oswal Investment Advisors Ltd.: 10 mainboard IPOs managed in 2026, 90% listed positive, average listing-day gain +18.2%.</p>
+    </div>
+    
+
+    <div class="ledger-card" id="card-Rentomojo">
+      <div class="card-head">
+        <h3>Rentomojo <span class="seg-label">Mainboard</span></h3>
+        <span class="status-badge badge-closed">Closed — awaiting listing</span>
+      </div>
+      <div class="card-meta-line">
+        <strong>₹384 – ₹404 (final ₹404)</strong> · 9 Sep 2026–11 Sep 2026 · <strong>72.89x overall (QIB pending breakout) · as of 11 Sep 2026, 6:53 PM (Day 3, final)</strong> · GMP ₹157 (38.86%)
+      </div>
+      <div class="card-meta-line" style="margin-top:-6px;"><strong>Lead manager(s):</strong> Motilal Oswal Investment Advisors Ltd., Axis Capital Ltd., IIFL Capital Services Ltd.</div>
+      <div class="card-tags">
+      <span class="tag tag-strong">Health: Strong</span>
+      <span class="tag tag-val-rich">Valuation: Rich</span>
+      <span class="tag tag-fund-mixed">Fund use: Mixed</span>
+      <span class="tag tag-sub-very-strong">Subscription: Very strong</span>
+      <span class="tag tag-mixed">Lead mgr: Mixed bench</span>
+    </div>
+      <p class="card-prose">Revenue grew 45% and PAT 142% in the latest disclosed year (FY26), on a PAT margin of 26.95% (FY26) and EBITDA margin of 41.48% (FY26). Debt/equity sits at a moderate 0.63x. ROE 43.51%, ROCE 25.34%, RoNW 43.51%. Post-issue P/E works out to 40.73x on disclosed EPS (P/BV 14.10); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Debt repayment ₹70 Cr + warehouse/store lease payments ₹42.5 Cr; balance general corporate. Large OFS component from VC investors (Accel, Edelweiss, IDG, ValueQuest). Book closed/stands at 72.89x overall (QIB pending breakout, NII pending breakout, Retail pending breakout) as of 11 Sep 2026, 6:53 PM (Day 3, final). Grey-market premium reads ₹157 (38.86%) as of 13 Sep 2026 (unofficial, unregulated, moves daily — sourced from investorgain.com, treated as sentiment color, not a fundamental). Lead manager(s): Motilal Oswal Investment Advisors Ltd., Axis Capital Ltd., IIFL Capital Services Ltd. — track record read: Mixed bench. Motilal Oswal Investment Advisors Ltd.: 10 mainboard IPOs managed in 2026, 90% listed positive, average listing-day gain +18.2%. Axis Capital Ltd.: 13 mainboard IPOs managed in 2026, 62% listed positive, average listing-day gain +16.1%. IIFL Capital Services Ltd.: 12 mainboard IPOs managed in 2026, 42% listed positive, average listing-day gain +7.9%.</p>
+    </div>
+    
+
+    <div class="ledger-card" id="card-Asset-Reconstruction-Co-India-">
+      <div class="card-head">
+        <h3>Asset Reconstruction Co. (India) <span class="seg-label">Mainboard</span></h3>
+        <span class="status-badge badge-closed">Closed — awaiting listing</span>
+      </div>
+      <div class="card-meta-line">
+        <strong>₹132 – ₹139</strong> · 9 Sep 2026–11 Sep 2026 · <strong>20.10x overall (QIB 52.65x) · as of 11 Sep 2026, 6:54 PM (Day 3, final)</strong> · GMP ₹15 (10.79%)
+      </div>
+      <div class="card-meta-line" style="margin-top:-6px;"><strong>Lead manager(s):</strong> IIFL Capital Services Ltd., IDBI Capital Markets &amp; Securities Ltd., JM Financial Ltd.</div>
+      <div class="card-tags">
+      <span class="tag tag-strong">Health: Strong</span>
+      <span class="tag tag-val-attractive">Valuation: Attractive</span>
+      <span class="tag tag-fund-ofs-only">Fund use: OFS-only</span>
+      <span class="tag tag-sub-very-strong">Subscription: Very strong</span>
+      <span class="tag tag-mixed">Lead mgr: Mixed bench</span>
+    </div>
+      <p class="card-prose">Revenue grew 26% and PAT 15% in the latest disclosed year (FY26), on a PAT margin of 51.95% (FY26) and EBITDA margin of 78.21% (FY26). Debt/equity sits at a moderate 0.39x. ROE pending, ROCE pending, RoNW 13.95%. Post-issue P/E works out to 11.08x on disclosed EPS (P/BV 1.70); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: 100% Offer for Sale — no funds to company; proceeds to Avenue India Resurgence, SBI, Lathe Investment and Federal Bank. Book closed/stands at 20.10x overall (QIB 52.65x, NII 15.69x, Retail 3.39x) as of 11 Sep 2026, 6:54 PM (Day 3, final). Grey-market premium reads ₹15 (10.79%) as of 13 Sep 2026 (unofficial, unregulated, moves daily — sourced from investorgain.com, treated as sentiment color, not a fundamental). Lead manager(s): IIFL Capital Services Ltd., IDBI Capital Markets &amp; Securities Ltd., JM Financial Ltd. — track record read: Mixed bench. IIFL Capital Services Ltd.: 12 mainboard IPOs managed in 2026, 42% listed positive, average listing-day gain +7.9%. IDBI Capital Markets &amp; Securities Ltd.: 3 mainboard IPOs managed in 2026, 67% listed positive, average listing-day gain +24.6%. JM Financial Ltd.: 15 mainboard IPOs managed in 2026, 67% listed positive, average listing-day gain +16.6%.</p>
+    </div>
+    
+
+    <div class="ledger-card" id="card-Manipal-Payment-Identity-Solutions-Manipal-Cards-">
+      <div class="card-head">
+        <h3>Manipal Payment &amp; Identity Solutions (Manipal Cards) <span class="seg-label">Mainboard</span></h3>
+        <span class="status-badge badge-closed">Closed — awaiting listing</span>
+      </div>
+      <div class="card-meta-line">
+        <strong>₹322 – ₹339</strong> · 9 Sep 2026–11 Sep 2026 · <strong>pending overall (QIB pending) · as of pending final tally</strong> · GMP ₹-2 (-0.59%)
+      </div>
+      <div class="card-meta-line" style="margin-top:-6px;"><strong>Lead manager(s):</strong> Motilal Oswal Investment Advisors Ltd., Axis Capital Ltd., ICICI Securities Ltd., IIFL Capital Services Ltd., Nuvama Wealth Management Ltd.</div>
+      <div class="card-tags">
+      <span class="tag tag-strong">Health: Strong</span>
+      <span class="tag tag-val-rich">Valuation: Rich</span>
+      <span class="tag tag-fund-growth-led">Fund use: Growth-led</span>
+      <span class="tag tag-sub-pending">Subscription: Pending</span>
+      <span class="tag tag-mixed">Lead mgr: Mixed bench</span>
+    </div>
+      <p class="card-prose">Revenue grew 6% and PAT -10% in the latest disclosed year (FY26), on a PAT margin of 18.68% (FY26) vs 22.10% (FY25) and EBITDA margin of 33.60% (FY26). Debt/equity is a clean 0.0x. ROE 29.35%, ROCE 32.69%, RoNW 22.93%. Post-issue P/E works out to 31.02x on disclosed EPS (P/BV 6.94); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Capital expenditure on equipment ₹238.43 Cr (100% of fresh issue); balance general corporate. PAT declined 10% YoY despite revenue growth — margin flag. Book closed/stands at pending overall (QIB pending, NII pending, Retail pending) as of pending final tally. Grey-market premium reads ₹-2 (-0.59%) as of 13 Sep 2026 (unofficial, unregulated, moves daily — sourced from investorgain.com, treated as sentiment color, not a fundamental). Lead manager(s): Motilal Oswal Investment Advisors Ltd., Axis Capital Ltd., ICICI Securities Ltd., IIFL Capital Services Ltd., Nuvama Wealth Management Ltd. — track record read: Mixed bench. Motilal Oswal Investment Advisors Ltd.: 10 mainboard IPOs managed in 2026, 90% listed positive, average listing-day gain +18.2%. Axis Capital Ltd.: 13 mainboard IPOs managed in 2026, 62% listed positive, average listing-day gain +16.1%. ICICI Securities Ltd.: 12 mainboard IPOs managed in 2026, 67% listed positive, average listing-day gain +22.4%. IIFL Capital Services Ltd.: 12 mainboard IPOs managed in 2026, 42% listed positive, average listing-day gain +7.9%. Nuvama Wealth Management Ltd.: 4 mainboard IPOs managed in 2026, 50% listed positive, average listing-day gain +9.0%.</p>
+    </div>
+    
+
+    <div class="ledger-card" id="card-Steamhouse-India">
+      <div class="card-head">
+        <h3>Steamhouse India <span class="seg-label">Mainboard</span></h3>
+        <span class="status-badge badge-closed">Closed — awaiting listing</span>
+      </div>
+      <div class="card-meta-line">
+        <strong>₹77 – ₹81 (final ₹81)</strong> · 9 Sep 2026–11 Sep 2026 · <strong>32.07x overall (QIB 46.19x) · as of 11 Sep 2026, 6:53 PM (Day 3, final)</strong> · GMP ₹21 (25.93%)
+      </div>
+      <div class="card-meta-line" style="margin-top:-6px;"><strong>Lead manager(s):</strong> Equirus Capital Ltd.</div>
+      <div class="card-tags">
+      <span class="tag tag-caution">Health: Caution</span>
+      <span class="tag tag-val-rich">Valuation: Rich</span>
+      <span class="tag tag-fund-mixed">Fund use: Mixed</span>
+      <span class="tag tag-sub-very-strong">Subscription: Very strong</span>
+      <span class="tag tag-strong">Lead mgr: Strong bench</span>
+    </div>
+      <p class="card-prose">Revenue grew 24% and PAT 24% in the latest disclosed year (FY26), on a PAT margin of 7.81% (FY26) and EBITDA margin of 16.99% (FY26). Debt/equity of 1.57x is on the leveraged side for this cohort. ROE 22.36%, ROCE 16.06%, RoNW 23.60%. Post-issue P/E works out to 57.86x on disclosed EPS (P/BV 11.17); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Debt repayment ₹180 Cr + capex across 3 facilities (Ankleshwar, Panoli, Dahej SEZ) ₹114 Cr combined; balance general corporate. Mixed use, debt-heavy. Book closed/stands at 32.07x overall (QIB 46.19x, NII 46.60x, Retail 17.78x) as of 11 Sep 2026, 6:53 PM (Day 3, final). Grey-market premium reads ₹21 (25.93%) as of 13 Sep 2026 (unofficial, unregulated, moves daily — sourced from investorgain.com, treated as sentiment color, not a fundamental). Lead manager(s): Equirus Capital Ltd. — track record read: Strong bench. Equirus Capital Ltd.: 5 mainboard IPOs managed in 2026, 80% listed positive, average listing-day gain +13.4%.</p>
+    </div>
+    
+
+    <div class="ledger-card" id="card-LCC-Projects">
+      <div class="card-head">
+        <h3>LCC Projects <span class="seg-label">Mainboard</span></h3>
+        <span class="status-badge badge-closed">Closed — awaiting listing</span>
+      </div>
+      <div class="card-meta-line">
+        <strong>₹139 – ₹146 (final ₹146)</strong> · 9 Sep 2026–11 Sep 2026 · <strong>49.57x overall (QIB 78.73x) · as of 11 Sep 2026, 6:52 PM (Day 3, final)</strong> · GMP ₹64 (43.84%)
+      </div>
+      <div class="card-meta-line" style="margin-top:-6px;"><strong>Lead manager(s):</strong> Motilal Oswal Investment Advisors Ltd.</div>
+      <div class="card-tags">
+      <span class="tag tag-strong">Health: Strong</span>
+      <span class="tag tag-val-attractive">Valuation: Attractive</span>
+      <span class="tag tag-fund-debt-heavy">Fund use: Debt-heavy</span>
+      <span class="tag tag-sub-very-strong">Subscription: Very strong</span>
+      <span class="tag tag-strong">Lead mgr: Strong bench</span>
+    </div>
+      <p class="card-prose">Revenue grew 24% and PAT 28% in the latest disclosed year (FY26), on a PAT margin of 7.96% (FY26) and EBITDA margin of 14.44% (FY26). Debt/equity sits at a moderate 0.97x. ROE 32.24%, ROCE 27.13%, RoNW 32.24%. Post-issue P/E works out to 14.76x on disclosed EPS (P/BV 4.47); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Equipment purchase ₹14.69 Cr + debt repayment ₹180 Cr (majority); balance general corporate. Also OFS ₹169 Cr to 2 promoters. Book closed/stands at 49.57x overall (QIB 78.73x, NII 64.91x, Retail 26.34x) as of 11 Sep 2026, 6:52 PM (Day 3, final). Grey-market premium reads ₹64 (43.84%) as of 13 Sep 2026 (unofficial, unregulated, moves daily — sourced from investorgain.com, treated as sentiment color, not a fundamental). Lead manager(s): Motilal Oswal Investment Advisors Ltd. — track record read: Strong bench. Motilal Oswal Investment Advisors Ltd.: 10 mainboard IPOs managed in 2026, 90% listed positive, average listing-day gain +18.2%.</p>
+    </div>
+    
+
+    <div class="ledger-card" id="card-Karamtara-Engineering">
+      <div class="card-head">
+        <h3>Karamtara Engineering <span class="seg-label">Mainboard</span></h3>
+        <span class="status-badge badge-closed">Closed — awaiting listing</span>
+      </div>
+      <div class="card-meta-line">
+        <strong>₹241 – ₹254 (final ₹254)</strong> · 9 Sep 2026–11 Sep 2026 · <strong>66.01x overall (QIB 168.19x) · as of 11 Sep 2026, 6:52 PM (Day 3, final)</strong> · GMP ₹71 (27.95%)
+      </div>
+      <div class="card-meta-line" style="margin-top:-6px;"><strong>Lead manager(s):</strong> JM Financial Ltd., ICICI Securities Ltd., IIFL Capital Services Ltd.</div>
+      <div class="card-tags">
+      <span class="tag tag-strong">Health: Strong</span>
+      <span class="tag tag-val-rich">Valuation: Rich</span>
+      <span class="tag tag-fund-debt-heavy">Fund use: Debt-heavy</span>
+      <span class="tag tag-sub-very-strong">Subscription: Very strong</span>
+      <span class="tag tag-mixed">Lead mgr: Mixed bench</span>
+    </div>
+      <p class="card-prose">Revenue grew 36% and PAT 64% in the latest disclosed year (FY26), on a PAT margin of pending (not disclosed) and EBITDA margin of 11.55% (FY26). Debt/equity sits at a moderate 0.84x. ROE 20.77%, ROCE 23.27%, RoNW 20.78%. Post-issue P/E works out to 35.72x on disclosed EPS (P/BV 6.09); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Debt repayment ₹600 Cr — 100% of fresh issue proceeds go to lender prepayment; no growth capex earmarked. Book closed/stands at 66.01x overall (QIB 168.19x, NII 51.17x, Retail 13.98x) as of 11 Sep 2026, 6:52 PM (Day 3, final). Grey-market premium reads ₹71 (27.95%) as of 13 Sep 2026 (unofficial, unregulated, moves daily — sourced from investorgain.com, treated as sentiment color, not a fundamental). Lead manager(s): JM Financial Ltd., ICICI Securities Ltd., IIFL Capital Services Ltd. — track record read: Mixed bench. JM Financial Ltd.: 15 mainboard IPOs managed in 2026, 67% listed positive, average listing-day gain +16.6%. ICICI Securities Ltd.: 12 mainboard IPOs managed in 2026, 67% listed positive, average listing-day gain +22.4%. IIFL Capital Services Ltd.: 12 mainboard IPOs managed in 2026, 42% listed positive, average listing-day gain +7.9%.</p>
+    </div>
+    
+
+    <div class="ledger-card" id="card-Infrax-Renewable">
+      <div class="card-head">
+        <h3>Infrax Renewable <span class="seg-label">SME</span></h3>
+        <span class="status-badge badge-closed">Closed — awaiting listing</span>
+      </div>
+      <div class="card-meta-line">
+        <strong>₹104 (fixed, final)</strong> · 9 Sep 2026–11 Sep 2026 · <strong>2.05x overall (QIB —) · as of 11 Sep 2026, 6:52 PM (Day 3, final)</strong> · GMP not yet quoted
+      </div>
+      <div class="card-meta-line" style="margin-top:-6px;"><strong>Lead manager(s):</strong> Smart Horizon Capital Advisors Pvt.Ltd.</div>
+      <div class="card-tags">
+      <span class="tag tag-strong">Health: Strong</span>
+      <span class="tag tag-val-attractive">Valuation: Attractive</span>
+      <span class="tag tag-fund-growth-led">Fund use: Growth-led</span>
+      <span class="tag tag-sub-oversubscribed">Subscription: Oversubscribed</span>
+      <span class="tag tag-mixed">Lead mgr: Mixed bench</span>
+    </div>
+      <p class="card-prose">Revenue grew 206% and PAT 258% in the latest disclosed year (FY26), on a PAT margin of 10.94% (FY26) and EBITDA margin of 15.62% (FY26). Debt/equity sits at a moderate 0.44x. ROE 115.54%, ROCE 63.89%, RoNW 64.68%. Post-issue P/E works out to 14.5x on disclosed EPS (P/BV 6.59); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Machinery/equipment capex ₹12.29 Cr + working capital ₹17 Cr; growth-oriented, very small company (FY24 base ₹9.66 Cr revenue — treat growth rates with caution). Book closed/stands at 2.05x overall (QIB —, NII 1.39x, Retail 1.90x) as of 11 Sep 2026, 6:52 PM (Day 3, final). GMP not yet quoted. Lead manager(s): Smart Horizon Capital Advisors Pvt.Ltd. — track record read: Mixed bench. Smart Horizon Capital Advisors Pvt.Ltd.: 2 mainboard IPOs managed in 2026, 100% listed positive, average listing-day gain +4.3%.</p>
+    </div>
+    
+
+    <div class="ledger-card" id="card-Vinod-Texworld">
+      <div class="card-head">
+        <h3>Vinod Texworld <span class="seg-label">SME</span></h3>
+        <span class="status-badge badge-closed">Closed — awaiting listing</span>
+      </div>
+      <div class="card-meta-line">
+        <strong>₹fixed (final not itemised)</strong> · 9 Sep 2026–11 Sep 2026 · <strong>1.60x overall (QIB —) · as of 11 Sep 2026, 6:54 PM (Day 3, final)</strong> · GMP ₹1 (1.06%)
+      </div>
+      <div class="card-meta-line" style="margin-top:-6px;"><strong>Lead manager(s):</strong> Novus Capital Advisors Pvt.Ltd.</div>
+      <div class="card-tags">
+      <span class="tag tag-caution">Health: Caution</span>
+      <span class="tag tag-val-attractive">Valuation: Attractive</span>
+      <span class="tag tag-fund-mixed">Fund use: Mixed</span>
+      <span class="tag tag-sub-oversubscribed">Subscription: Oversubscribed</span>
+      <span class="tag tag-strong">Lead mgr: Strong bench</span>
+    </div>
+      <p class="card-prose">Revenue grew 2% and PAT 13% in the latest disclosed year (FY26), on a PAT margin of 3.04% (FY26) and EBITDA margin of 6.66% (FY26). Debt/equity of 1.65x is on the leveraged side for this cohort. ROE 24.31%, ROCE 31.80%, RoNW 24.31%. Post-issue P/E works out to 14.6x on disclosed EPS (P/BV 2.55); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Plant expansion ₹6.39 Cr + debt repayment ₹7.15 Cr + working capital ₹20.35 Cr; balance general corporate + issue expenses. Thin PAT margin (3%), elevated leverage. Book closed/stands at 1.60x overall (QIB —, NII 0.30x, Retail 2.91x) as of 11 Sep 2026, 6:54 PM (Day 3, final). Grey-market premium reads ₹1 (1.06%) as of 13 Sep 2026 (unofficial, unregulated, moves daily — sourced from investorgain.com, treated as sentiment color, not a fundamental). Lead manager(s): Novus Capital Advisors Pvt.Ltd. — track record read: Strong bench. Novus Capital Advisors Pvt.Ltd.: 2 SME IPOs managed in 2026, 100% listed positive, average listing-day gain +8.3%.</p>
+    </div>
+    
+
+    <div class="ledger-card" id="card-Amtech-Esters">
+      <div class="card-head">
+        <h3>Amtech Esters <span class="seg-label">SME</span></h3>
+        <span class="status-badge badge-closed">Closed — awaiting listing</span>
+      </div>
+      <div class="card-meta-line">
+        <strong>₹71 – ₹75 (final ₹75)</strong> · 9 Sep 2026–11 Sep 2026 · <strong>25.70x overall (QIB 15.07x) · as of 11 Sep 2026, 6:54 PM (Day 3, final)</strong> · GMP ₹7 (9.33%)
+      </div>
+      <div class="card-meta-line" style="margin-top:-6px;"><strong>Lead manager(s):</strong> Credora Partners Pvt.Ltd.</div>
+      <div class="card-tags">
+      <span class="tag tag-strong">Health: Strong</span>
+      <span class="tag tag-val-pending">Valuation: Pending</span>
+      <span class="tag tag-fund-growth-led">Fund use: Growth-led</span>
+      <span class="tag tag-sub-very-strong">Subscription: Very strong</span>
+      <span class="tag tag-mixed">Lead mgr: Unproven</span>
+    </div>
+      <p class="card-prose">Revenue grew 10% and PAT 13% in the latest disclosed year (FY26), on a PAT margin of 10.28% (FY26) and EBITDA margin of 18.41% (FY26). Debt/equity is a clean 0.17x. ROE 24.17%, ROCE 30.16%, RoNW 24.17%. Valuation multiples: EPS pre/post 6.55/4.78, P/BV pending. Fund usage: Investment in subsidiary (Croda Pigments) via debt for capex/working capital ₹8.81 Cr + debt repayment ₹4.20 Cr; balance for unidentified acquisitions. Small, clean balance sheet (D/E 0.17). Book closed/stands at 25.70x overall (QIB 15.07x, NII 32.32x, Retail 28.93x) as of 11 Sep 2026, 6:54 PM (Day 3, final). Grey-market premium reads ₹7 (9.33%) as of 13 Sep 2026 (unofficial, unregulated, moves daily — sourced from investorgain.com, treated as sentiment color, not a fundamental). Lead manager(s): Credora Partners Pvt.Ltd. — track record read: Unproven. Credora Partners Pvt.Ltd.: Brand-new merchant banker — Amtech Esters (17 Sep 2026 listing) is effectively its market debut; zero prior listed track record to judge by. Treat as an unknown quantity.</p>
+    </div>
+    
+
+    <div class="ledger-card" id="card-Veegaland-Developers">
+      <div class="card-head">
+        <h3>Veegaland Developers <span class="seg-label">Mainboard</span></h3>
+        <span class="status-badge badge-open">Open</span>
+      </div>
+      <div class="card-meta-line">
+        <strong>₹130 – ₹140</strong> · 10 Sep 2026–15 Sep 2026 · <strong>1.25x overall (QIB 0.49x) · as of 11 Sep 2026, 5:09 PM (Day 2)</strong> · GMP ₹15 (10.71%)
+      </div>
+      <div class="card-meta-line" style="margin-top:-6px;"><strong>Lead manager(s):</strong> Cumulative Capital Pvt.Ltd.</div>
+      <div class="card-tags">
+      <span class="tag tag-strong">Health: Strong</span>
+      <span class="tag tag-val-fair">Valuation: Fair</span>
+      <span class="tag tag-fund-growth-led">Fund use: Growth-led</span>
+      <span class="tag tag-sub-oversubscribed">Subscription: Oversubscribed</span>
+      <span class="tag tag-strong">Lead mgr: Strong bench</span>
+    </div>
+      <p class="card-prose">Revenue grew 30% and PAT 30% in the latest disclosed year (FY26), on a PAT margin of 10.47% (FY26) and EBITDA margin of 16.78% (FY26). Debt/equity sits at a moderate 0.32x. ROE 16.02%, ROCE 11.89%, RoNW 16.02%. Post-issue P/E works out to 25.64x on disclosed EPS (P/BV 1.77); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Project development funding ₹119.83 Cr (Ongoing + Upcoming Projects) + unidentified land acquisition/general corporate. 100% growth capex, no debt repayment or OFS component. Book closed/stands at 1.25x overall (QIB 0.49x, NII 1.01x, Retail 1.78x) as of 11 Sep 2026, 5:09 PM (Day 2). Grey-market premium reads ₹15 (10.71%) as of 13 Sep 2026 (unofficial, unregulated, moves daily — sourced from investorgain.com, treated as sentiment color, not a fundamental). BSE-only book (as of 9/12/2026 5:00:00 PM): 0.26x overall — QIB 0.00x, NII 0.12x, Retail 0.47x (BSE bids only, separate from the combined BSE+NSE multiples above). Lead manager(s): Cumulative Capital Pvt.Ltd. — track record read: Strong bench. Cumulative Capital Pvt.Ltd.: 1 mainboard IPOs managed in 2026, 100% listed positive, average listing-day gain +18.2%.</p>
+    </div>
+    
+
+    <div class="ledger-card" id="card-Maharaja-Speedex-India">
+      <div class="card-head">
+        <h3>Maharaja &amp; Speedex India <span class="seg-label">SME</span></h3>
+        <span class="status-badge badge-open">Open</span>
+      </div>
+      <div class="card-meta-line">
+        <strong>₹177 – ₹186</strong> · 10 Sep 2026–15 Sep 2026 · <strong>0.48x overall (QIB 0.10x) · as of 11 Sep 2026, 5:08 PM (Day 2)</strong> · GMP ₹45 (24.19%)
+      </div>
+      <div class="card-meta-line" style="margin-top:-6px;"><strong>Lead manager(s):</strong> Choice Capital Advisors Pvt.Ltd.</div>
+      <div class="card-tags">
+      <span class="tag tag-strong">Health: Strong</span>
+      <span class="tag tag-val-fair">Valuation: Fair</span>
+      <span class="tag tag-fund-growth-led">Fund use: Growth-led</span>
+      <span class="tag tag-sub-undersubscribed">Subscription: Undersubscribed</span>
+      <span class="tag tag-weak">Lead mgr: Caution</span>
+    </div>
+      <p class="card-prose">Revenue grew 31% and PAT 175% in the latest disclosed year (FY26), on a PAT margin of 12.51% (FY26) and EBITDA margin of 18.36% (FY26). Debt/equity sits at a moderate 0.92x. ROE pending, ROCE 54.60%, RoNW 80.47%. Post-issue P/E works out to 19.81x on disclosed EPS (P/BV 8.97); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Debt repayment ₹24.10 Cr + capex on plant/machinery ₹21.42 Cr at subsidiary; balance general corporate. Mixed. Book closed/stands at 0.48x overall (QIB 0.10x, NII 0.80x, Retail 0.56x) as of 11 Sep 2026, 5:08 PM (Day 2). Grey-market premium reads ₹45 (24.19%) as of 13 Sep 2026 (unofficial, unregulated, moves daily — sourced from investorgain.com, treated as sentiment color, not a fundamental). BSE-only book (as of 9/12/2026 5:00:00 PM): 0.53x overall — QIB 0.10x, NII —, Retail 0.59x (BSE bids only, separate from the combined BSE+NSE multiples above). Lead manager(s): Choice Capital Advisors Pvt.Ltd. — track record read: Caution. Choice Capital Advisors Pvt.Ltd.: 2 SME IPOs managed in 2026, 50% listed positive, average listing-day gain -0.5%.</p>
+    </div>
+    
+
+    <div class="ledger-card" id="card-Om-Galaxy">
+      <div class="card-head">
+        <h3>Om Galaxy <span class="seg-label">SME</span></h3>
+        <span class="status-badge badge-open">Open</span>
+      </div>
+      <div class="card-meta-line">
+        <strong>₹85 – ₹90</strong> · 10 Sep 2026–15 Sep 2026 · <strong>0.95x overall (QIB 3.11x) · as of 11 Sep 2026, 5:08 PM (Day 2)</strong> · GMP not yet quoted
+      </div>
+      <div class="card-meta-line" style="margin-top:-6px;"><strong>Lead manager(s):</strong> Indorient Financial Services Ltd.</div>
+      <div class="card-tags">
+      <span class="tag tag-strong">Health: Strong</span>
+      <span class="tag tag-val-fair">Valuation: Fair</span>
+      <span class="tag tag-fund-growth-led">Fund use: Growth-led</span>
+      <span class="tag tag-sub-undersubscribed">Subscription: Undersubscribed</span>
+      <span class="tag tag-weak">Lead mgr: Caution</span>
+    </div>
+      <p class="card-prose">Revenue grew 10% and PAT 5% in the latest disclosed year (FY26), on a PAT margin of 13.42% (FY26) and EBITDA margin of 26.33% (FY26). Debt/equity sits at a moderate 0.45x. ROE 22.13%, ROCE 20.39%, RoNW 22.13%. Post-issue P/E works out to 18.33x on disclosed EPS (P/BV 2.50); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: New manufacturing unit capex ₹74.66 Cr (consolidation + capacity expansion) + debt repayment ₹14 Cr; growth-tilted. Book closed/stands at 0.95x overall (QIB 3.11x, NII 0.05x, Retail 0.10x) as of 11 Sep 2026, 5:08 PM (Day 2). GMP not yet quoted. BSE-only book (as of 9/12/2026 5:00:00 PM): 0.95x overall — QIB 3.11x, NII —, Retail 0.10x (BSE bids only, separate from the combined BSE+NSE multiples above). Lead manager(s): Indorient Financial Services Ltd. — track record read: Caution. Indorient Financial Services Ltd.: 1 SME IPOs managed in 2026, 0% listed positive, average listing-day gain -24.0%.</p>
+    </div>
+    
+
+    <div class="ledger-card" id="card-Raksan-Transformers">
+      <div class="card-head">
+        <h3>Raksan Transformers <span class="seg-label">SME</span></h3>
+        <span class="status-badge badge-open">Open</span>
+      </div>
+      <div class="card-meta-line">
+        <strong>₹258 – ₹273</strong> · 10 Sep 2026–15 Sep 2026 · <strong>1.31x overall (QIB 3.87x) · as of 11 Sep 2026, 5:09 PM (Day 2)</strong> · GMP ₹30 (10.99%)
+      </div>
+      <div class="card-meta-line" style="margin-top:-6px;"><strong>Lead manager(s):</strong> Hem Securities Ltd.</div>
+      <div class="card-tags">
+      <span class="tag tag-strong">Health: Strong</span>
+      <span class="tag tag-val-fair">Valuation: Fair</span>
+      <span class="tag tag-fund-growth-led">Fund use: Growth-led</span>
+      <span class="tag tag-sub-oversubscribed">Subscription: Oversubscribed</span>
+      <span class="tag tag-strong">Lead mgr: Strong bench</span>
+    </div>
+      <p class="card-prose">Revenue grew 12% and PAT 65% in the latest disclosed year (FY26), on a PAT margin of 9.25% (FY26) and EBITDA margin of 12.87% (FY26). Debt/equity is a clean 0.27x. ROE 55.32%, ROCE 46.72%, RoNW 43.41%. Post-issue P/E works out to 16.98x on disclosed EPS (P/BV 18.98); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: New manufacturing facility capex (Sonepat, Haryana) ₹62.14 Cr + working capital ₹35 Cr + debt repayment ₹7.28 Cr. Growth-tilted. Book closed/stands at 1.31x overall (QIB 3.87x, NII 0.16x, Retail 0.35x) as of 11 Sep 2026, 5:09 PM (Day 2). Grey-market premium reads ₹30 (10.99%) as of 13 Sep 2026 (unofficial, unregulated, moves daily — sourced from investorgain.com, treated as sentiment color, not a fundamental). BSE-only book (as of 9/12/2026 5:00:00 PM): 1.30x overall — QIB 3.87x, NII —, Retail 0.36x (BSE bids only, separate from the combined BSE+NSE multiples above). Lead manager(s): Hem Securities Ltd. — track record read: Strong bench. Hem Securities Ltd.: 10 SME IPOs managed in 2026, 90% listed positive, average listing-day gain +35.9%.</p>
+    </div>
+    
+
+    <div class="ledger-card" id="card-Panchatv-Bharat">
+      <div class="card-head">
+        <h3>Panchatv Bharat <span class="seg-label">SME</span></h3>
+        <span class="status-badge badge-open">Open</span>
+      </div>
+      <div class="card-meta-line">
+        <strong>₹140 (fixed, final)</strong> · 10 Sep 2026–15 Sep 2026 · <strong>0.04x overall (QIB —) · as of 11 Sep 2026, 5:08 PM (Day 2)</strong> · GMP ₹11 (7.86%)
+      </div>
+      <div class="card-meta-line" style="margin-top:-6px;"><strong>Lead manager(s):</strong> Mark Corporate Advisors Pvt.Ltd.</div>
+      <div class="card-tags">
+      <span class="tag tag-caution">Health: Caution</span>
+      <span class="tag tag-val-fair">Valuation: Fair</span>
+      <span class="tag tag-fund-growth-led">Fund use: Growth-led</span>
+      <span class="tag tag-sub-undersubscribed">Subscription: Undersubscribed</span>
+      <span class="tag tag-weak">Lead mgr: Caution</span>
+    </div>
+      <p class="card-prose">Revenue grew 16% and PAT 42% in the latest disclosed year (FY26), on a PAT margin of 7.09% (FY26) and EBITDA margin of 11.32% (FY26). Debt/equity of 2.26x is on the leveraged side for this cohort. ROE 89.99%, ROCE 24.01%, RoNW 31.93%. Post-issue P/E works out to 20.32x on disclosed EPS (P/BV 4.54); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Property purchase/renovation ₹6.00 Cr + working capital ₹11.50 Cr; balance general corporate + issue expenses. Growth-oriented, but high leverage (D/E 2.26). Book closed/stands at 0.04x overall (QIB —, NII —, Retail 0.07x) as of 11 Sep 2026, 5:08 PM (Day 2). Grey-market premium reads ₹11 (7.86%) as of 13 Sep 2026 (unofficial, unregulated, moves daily — sourced from investorgain.com, treated as sentiment color, not a fundamental). BSE-only book (as of 9/12/2026 5:00:00 PM): — overall — QIB —, NII —, Retail — (BSE bids only, separate from the combined BSE+NSE multiples above). Lead manager(s): Mark Corporate Advisors Pvt.Ltd. — track record read: Caution. Mark Corporate Advisors Pvt.Ltd.: 1 SME IPOs managed in 2026, 0% listed positive, average listing-day gain -24.0%.</p>
+    </div>
+    
+
+    <div class="ledger-card" id="card-Manika-Plastech">
+      <div class="card-head">
+        <h3>Manika Plastech <span class="seg-label">Mainboard</span></h3>
+        <span class="status-badge badge-open">Open</span>
+      </div>
+      <div class="card-meta-line">
+        <strong>₹40 – ₹43</strong> · 11 Sep 2026–16 Sep 2026 · <strong>1.49x overall (QIB 0.36x) · as of 11 Sep 2026, 5:08 PM (Day 1)</strong> · GMP ₹11 (25.58%)
+      </div>
+      <div class="card-meta-line" style="margin-top:-6px;"><strong>Lead manager(s):</strong> Pantomath Capital Advisors Pvt.Ltd.</div>
+      <div class="card-tags">
+      <span class="tag tag-strong">Health: Strong</span>
+      <span class="tag tag-val-attractive">Valuation: Attractive</span>
+      <span class="tag tag-fund-growth-led">Fund use: Growth-led</span>
+      <span class="tag tag-sub-oversubscribed">Subscription: Oversubscribed</span>
+      <span class="tag tag-strong">Lead mgr: Strong bench</span>
+    </div>
+      <p class="card-prose">Revenue grew 6% and PAT 16% in the latest disclosed year (FY26), on a PAT margin of 5.12% (FY26) and EBITDA margin of 13.34% (FY26). Debt/equity sits at a moderate 0.6x. ROE 15.18% (FY26), ROCE 18.77% (FY26), RoNW 15.18%. Post-issue P/E works out to 9.58x on disclosed EPS (P/BV 2.77); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Plant &amp; machinery capex ₹54.93 Cr + debt repayment ₹15 Cr; balance general corporate. Growth-oriented. Book closed/stands at 1.49x overall (QIB 0.36x, NII 1.26x, Retail 2.24x) as of 11 Sep 2026, 5:08 PM (Day 1). Grey-market premium reads ₹11 (25.58%) as of 13 Sep 2026 (unofficial, unregulated, moves daily — sourced from investorgain.com, treated as sentiment color, not a fundamental). BSE-only book (as of 9/12/2026 5:00:00 PM): 0.52x overall — QIB 0.35x, NII 0.27x, Retail 0.72x (BSE bids only, separate from the combined BSE+NSE multiples above). Lead manager(s): Pantomath Capital Advisors Pvt.Ltd. — track record read: Strong bench. Pantomath Capital Advisors Pvt.Ltd.: 2 mainboard IPOs managed in 2026, 100% listed positive, average listing-day gain +17.1%.</p>
+    </div>
+    
+
+    <div class="ledger-card" id="card-Injecto-Polymers">
+      <div class="card-head">
+        <h3>Injecto Polymers <span class="seg-label">SME</span></h3>
+        <span class="status-badge badge-open">Open</span>
+      </div>
+      <div class="card-meta-line">
+        <strong>₹98 – ₹100</strong> · 11 Sep 2026–16 Sep 2026 · <strong>0.29x overall (QIB 1.02x) · as of 11 Sep 2026, 5:09 PM (Day 1)</strong> · GMP not yet quoted
+      </div>
+      <div class="card-meta-line" style="margin-top:-6px;"><strong>Lead manager(s):</strong> Indcap Advisors Pvt.Ltd.</div>
+      <div class="card-tags">
+      <span class="tag tag-caution">Health: Caution</span>
+      <span class="tag tag-val-attractive">Valuation: Attractive</span>
+      <span class="tag tag-fund-growth-led">Fund use: Growth-led</span>
+      <span class="tag tag-sub-undersubscribed">Subscription: Undersubscribed</span>
+      <span class="tag tag-strong">Lead mgr: Strong bench</span>
+    </div>
+      <p class="card-prose">Revenue grew 44% and PAT 97% in the latest disclosed year (FY26), on a PAT margin of 4.26% (FY26) and EBITDA margin of 10.13% (FY26). Debt/equity of 2.61x is on the leveraged side for this cohort. ROE 28.94%, ROCE 15.64%, RoNW 41.73%. Post-issue P/E works out to 12.99x on disclosed EPS (P/BV 2.40); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Debt repayment ₹10 Cr + capex for Phase IV manufacturing expansion (West Bengal) ₹30.5 Cr; growth-tilted but elevated leverage (D/E 2.61). Book closed/stands at 0.29x overall (QIB 1.02x, NII 0.08x, Retail 0.26x) as of 11 Sep 2026, 5:09 PM (Day 1). GMP not yet quoted. BSE-only book (as of 9/12/2026 5:00:00 PM): 0.28x overall — QIB 1.02x, NII —, Retail 0.27x (BSE bids only, separate from the combined BSE+NSE multiples above). Lead manager(s): Indcap Advisors Pvt.Ltd. — track record read: Strong bench. Indcap Advisors Pvt.Ltd.: 1 SME IPOs managed in 2026, 100% listed positive, average listing-day gain +36.1%.</p>
+    </div>
+    
+
+    <div class="ledger-card" id="card-Century-Business-Media">
+      <div class="card-head">
+        <h3>Century Business Media <span class="seg-label">SME</span></h3>
+        <span class="status-badge badge-open">Open</span>
+      </div>
+      <div class="card-meta-line">
+        <strong>₹70 – ₹74</strong> · 11 Sep 2026–16 Sep 2026 · <strong>1.15x overall (QIB 3.51x) · as of 11 Sep 2026, 5:09 PM (Day 1)</strong> · GMP not yet quoted
+      </div>
+      <div class="card-meta-line" style="margin-top:-6px;"><strong>Lead manager(s):</strong> Hem Securities Ltd.</div>
+      <div class="card-tags">
+      <span class="tag tag-strong">Health: Strong</span>
+      <span class="tag tag-val-attractive">Valuation: Attractive</span>
+      <span class="tag tag-fund-growth-led">Fund use: Growth-led</span>
+      <span class="tag tag-sub-oversubscribed">Subscription: Oversubscribed</span>
+      <span class="tag tag-strong">Lead mgr: Strong bench</span>
+    </div>
+      <p class="card-prose">Revenue grew 27% and PAT 18% in the latest disclosed year (FY26), on a PAT margin of 11.96% (FY26) and EBITDA margin of 18.47% (FY26). Debt/equity sits at a moderate 0.44x. ROE 36.44%, ROCE 30.06%, RoNW 30.83%. Post-issue P/E works out to 11.67x on disclosed EPS (P/BV 2.65); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Media asset purchase ₹4.21 Cr + airport ad-rights deposit ₹3.77 Cr + debt repayment ₹1.45 Cr + working capital ₹3.25 Cr. Balanced growth mix, small debt component. Book closed/stands at 1.15x overall (QIB 3.51x, NII 0.41x, Retail 0.12x) as of 11 Sep 2026, 5:09 PM (Day 1). GMP not yet quoted. BSE-only book (as of 9/12/2026 5:00:00 PM): 1.07x overall — QIB 3.51x, NII —, Retail 0.12x (BSE bids only, separate from the combined BSE+NSE multiples above). Lead manager(s): Hem Securities Ltd. — track record read: Strong bench. Hem Securities Ltd.: 10 SME IPOs managed in 2026, 90% listed positive, average listing-day gain +35.9%.</p>
+    </div>
+    
+
+    <div class="ledger-card" id="card-Quanto-Agroworld">
+      <div class="card-head">
+        <h3>Quanto Agroworld <span class="seg-label">SME</span></h3>
+        <span class="status-badge badge-upcoming">Upcoming</span>
+      </div>
+      <div class="card-meta-line">
+        <strong>₹67 (fixed)</strong> · 15 Sep 2026–17 Sep 2026 · <strong>Bidding not yet open</strong> · GMP not yet quoted
+      </div>
+      <div class="card-meta-line" style="margin-top:-6px;"><strong>Lead manager(s):</strong> Sobhagya Capital Options Pvt.Ltd.</div>
+      <div class="card-tags">
+      <span class="tag tag-strong">Health: Strong</span>
+      <span class="tag tag-val-attractive">Valuation: Attractive</span>
+      <span class="tag tag-fund-growth-led">Fund use: Growth-led</span>
+      <span class="tag tag-sub-not-opened">Subscription: Not opened</span>
+      <span class="tag tag-weak">Lead mgr: Caution</span>
+    </div>
+      <p class="card-prose">Revenue grew 145% and PAT 26% in the latest disclosed year (FY26), on a PAT margin of 20.78% (FY26) and EBITDA margin of 29.54% (FY26). Debt/equity is a clean 0.16x. ROE 24.68%, ROCE 25.62%, RoNW 24.68%. Post-issue P/E works out to 13.99x on disclosed EPS (P/BV 2.53); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Distillation plant capex ₹3.79 Cr + farm expansion capex ₹15.23 Cr + debt repayment ₹3.63 Cr; balance general corporate + issue expenses. Growth-led, clean balance sheet (D/E 0.16). Bidding has not opened yet. GMP not yet quoted. Lead manager(s): Sobhagya Capital Options Pvt.Ltd. — track record read: Caution. Sobhagya Capital Options Pvt.Ltd.: 4 SME IPOs managed in 2026, 25% listed positive, average listing-day gain -0.2%.</p>
+    </div>
+    
+
+    <div class="ledger-card" id="card-Shakti-Polytarp">
+      <div class="card-head">
+        <h3>Shakti Polytarp <span class="seg-label">SME</span></h3>
+        <span class="status-badge badge-upcoming">Upcoming</span>
+      </div>
+      <div class="card-meta-line">
+        <strong>₹56 – ₹59</strong> · 15 Sep 2026–17 Sep 2026 · <strong>Bidding not yet open</strong> · GMP not yet quoted
+      </div>
+      <div class="card-meta-line" style="margin-top:-6px;"><strong>Lead manager(s):</strong> NEXGEN Financial Solutions Pvt.Ltd.</div>
+      <div class="card-tags">
+      <span class="tag tag-caution">Health: Caution</span>
+      <span class="tag tag-val-attractive">Valuation: Attractive</span>
+      <span class="tag tag-fund-growth-led">Fund use: Growth-led</span>
+      <span class="tag tag-sub-not-opened">Subscription: Not opened</span>
+      <span class="tag tag-strong">Lead mgr: Strong bench</span>
+    </div>
+      <p class="card-prose">Revenue grew 30% and PAT 102% in the latest disclosed year (FY26), on a PAT margin of 4.66% (FY26) and EBITDA margin of 8.94% (FY26). Debt/equity of 2.6x is on the leveraged side for this cohort. ROE 44.04%, ROCE 17.87%, RoNW 44.04%. Post-issue P/E works out to 10.05x on disclosed EPS (P/BV 2.66); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Capital expenditure ₹20.88 Cr (100% of fresh issue); balance general corporate. Thin PAT margin, elevated leverage (D/E 2.60) — caution flag despite strong revenue growth. Bidding has not opened yet. GMP not yet quoted. Lead manager(s): NEXGEN Financial Solutions Pvt.Ltd. — track record read: Strong bench. NEXGEN Financial Solutions Pvt.Ltd.: 6 SME IPOs managed in 2026, 67% listed positive, average listing-day gain +18.9%.</p>
+    </div>
+    
+
+    <div class="ledger-card" id="card-Vama-Wovenfab">
+      <div class="card-head">
+        <h3>Vama Wovenfab <span class="seg-label">SME</span></h3>
+        <span class="status-badge badge-upcoming">Upcoming</span>
+      </div>
+      <div class="card-meta-line">
+        <strong>₹324 – ₹341</strong> · 15 Sep 2026–17 Sep 2026 · <strong>Bidding not yet open</strong> · GMP not yet quoted
+      </div>
+      <div class="card-meta-line" style="margin-top:-6px;"><strong>Lead manager(s):</strong> Gretex Corporate Services Ltd.</div>
+      <div class="card-tags">
+      <span class="tag tag-strong">Health: Strong</span>
+      <span class="tag tag-val-fair">Valuation: Fair</span>
+      <span class="tag tag-fund-growth-led">Fund use: Growth-led</span>
+      <span class="tag tag-sub-not-opened">Subscription: Not opened</span>
+      <span class="tag tag-strong">Lead mgr: Strong bench</span>
+    </div>
+      <p class="card-prose">Revenue grew 176% and PAT 69% in the latest disclosed year (FY26), on a PAT margin of 5.38% (FY26) and EBITDA margin of 8.32% (FY26). Debt/equity sits at a moderate 0.89x. ROE 50.37%, ROCE 31.94%, RoNW 50.37%. Post-issue P/E works out to 15.33x on disclosed EPS (P/BV 4.44); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Shed construction ₹1.36 Cr + machinery purchase ₹7.25 Cr + working capital ₹26.50 Cr (dominant); balance general corporate. Growth-led; revenue nearly tripled YoY — treat trend with some caution given the pace. Bidding has not opened yet. GMP not yet quoted. Lead manager(s): Gretex Corporate Services Ltd. — track record read: Strong bench. Gretex Corporate Services Ltd.: 2 SME IPOs managed in 2026, 100% listed positive, average listing-day gain +7.1%.</p>
+    </div>
+    
+
+    <div class="ledger-card" id="card-SS-Retail">
+      <div class="card-head">
+        <h3>SS Retail <span class="seg-label">Mainboard</span></h3>
+        <span class="status-badge badge-upcoming">Upcoming</span>
+      </div>
+      <div class="card-meta-line">
+        <strong>₹403 – ₹424</strong> · 16 Sep 2026–18 Sep 2026 · <strong>Bidding not yet open</strong> · GMP ₹120 (28.30%)
+      </div>
+      <div class="card-meta-line" style="margin-top:-6px;"><strong>Lead manager(s):</strong> Anand Rathi Advisors Ltd., Emkay Global Financial Services Ltd.</div>
+      <div class="card-tags">
+      <span class="tag tag-strong">Health: Strong</span>
+      <span class="tag tag-val-rich">Valuation: Rich</span>
+      <span class="tag tag-fund-growth-led">Fund use: Growth-led</span>
+      <span class="tag tag-sub-not-opened">Subscription: Not opened</span>
+      <span class="tag tag-strong">Lead mgr: Strong bench</span>
+    </div>
+      <p class="card-prose">Revenue grew 47% and PAT 49% in the latest disclosed year (FY26), on a PAT margin of 2.52% (FY26) and EBITDA margin of 5.32% (FY26). Debt/equity sits at a moderate 0.7x. ROE 30.60%, ROCE 29.30%, RoNW 32.60%. Post-issue P/E works out to 53.2x on disclosed EPS (P/BV 12.35); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: New store fit-outs ₹12.45 Cr + working capital ₹416.53 Cr (dominant use); OFS ₹140 Cr to promoters/other selling shareholder. Bidding has not opened yet. Grey-market premium reads ₹120 (28.30%) as of 13 Sep 2026 (unofficial, unregulated, moves daily — sourced from investorgain.com, treated as sentiment color, not a fundamental). Lead manager(s): Anand Rathi Advisors Ltd., Emkay Global Financial Services Ltd. — track record read: Strong bench. Anand Rathi Advisors Ltd.: 1 mainboard IPOs managed in 2026, 100% listed positive, average listing-day gain +23.6%. Emkay Global Financial Services Ltd.: 4 mainboard IPOs managed in 2026, 50% listed positive, average listing-day gain +10.8%.</p>
+    </div>
+    
+
+    <div class="ledger-card" id="card-Jindal-Supreme-India-">
+      <div class="card-head">
+        <h3>Jindal Supreme (India) <span class="seg-label">Mainboard</span></h3>
+        <span class="status-badge badge-upcoming">Upcoming</span>
+      </div>
+      <div class="card-meta-line">
+        <strong>₹88 – ₹93</strong> · 16 Sep 2026–18 Sep 2026 · <strong>Bidding not yet open</strong> · GMP ₹27 (29.03%)
+      </div>
+      <div class="card-meta-line" style="margin-top:-6px;"><strong>Lead manager(s):</strong> Sarthi Capital Advisors Pvt.Ltd.</div>
+      <div class="card-tags">
+      <span class="tag tag-strong">Health: Strong</span>
+      <span class="tag tag-val-attractive">Valuation: Attractive</span>
+      <span class="tag tag-fund-debt-heavy">Fund use: Debt-heavy</span>
+      <span class="tag tag-sub-not-opened">Subscription: Not opened</span>
+      <span class="tag tag-mixed">Lead mgr: Mixed bench</span>
+    </div>
+      <p class="card-prose">Revenue grew 12% and PAT -7% in the latest disclosed year (FY26), on a PAT margin of 3.33% (FY26) vs 4.01% (FY25) and EBITDA margin of 6.16% (FY26). Debt/equity sits at a moderate 1.24x. ROE 26.28% (FY26), ROCE 16.78% (FY26), RoNW 26.28%. Post-issue P/E works out to 14.33x on disclosed EPS (P/BV 3.87); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Debt repayment ₹71 Cr out of ₹125 Cr issue (57%); balance general corporate purposes. Revenue up 12% but PAT down 7% YoY — margin compression flag. Bidding has not opened yet. Grey-market premium reads ₹27 (29.03%) as of 13 Sep 2026 (unofficial, unregulated, moves daily — sourced from investorgain.com, treated as sentiment color, not a fundamental). Lead manager(s): Sarthi Capital Advisors Pvt.Ltd. — track record read: Mixed bench. Sarthi Capital Advisors Pvt.Ltd.: 1 mainboard IPOs managed in 2026, 100% listed positive, average listing-day gain +1.6%.</p>
+    </div>
+    
+
+    <div class="ledger-card" id="card-Hero-Motors">
+      <div class="card-head">
+        <h3>Hero Motors <span class="seg-label">Mainboard</span></h3>
+        <span class="status-badge badge-upcoming">Upcoming</span>
+      </div>
+      <div class="card-meta-line">
+        <strong>₹79 – ₹84</strong> · 16 Sep 2026–18 Sep 2026 · <strong>Bidding not yet open</strong> · GMP ₹24 (28.57%)
+      </div>
+      <div class="card-meta-line" style="margin-top:-6px;"><strong>Lead manager(s):</strong> ICICI Securities Ltd., Dam Capital Advisors Ltd., JM Financial Ltd.</div>
+      <div class="card-tags">
+      <span class="tag tag-strong">Health: Strong</span>
+      <span class="tag tag-val-rich">Valuation: Rich</span>
+      <span class="tag tag-fund-growth-led">Fund use: Growth-led</span>
+      <span class="tag tag-sub-not-opened">Subscription: Not opened</span>
+      <span class="tag tag-strong">Lead mgr: Strong bench</span>
+    </div>
+      <p class="card-prose">Revenue grew 9% and PAT 26% in the latest disclosed year (FY26), on a PAT margin of 3.46% (FY26) and EBITDA margin of 12.44% (FY26). Debt/equity sits at a moderate 0.83x. ROE 8.56%, ROCE 19.77%, RoNW 8.53%. Post-issue P/E works out to 92.31x on disclosed EPS (P/BV 6.60); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Debt repayment ₹190 Cr + capex ₹200 Cr (Gautam Buddha Nagar facility expansion); balance for inorganic growth/general purposes. Rich P/E (78–92x) vs thin PAT margin. Bidding has not opened yet. Grey-market premium reads ₹24 (28.57%) as of 13 Sep 2026 (unofficial, unregulated, moves daily — sourced from investorgain.com, treated as sentiment color, not a fundamental). Lead manager(s): ICICI Securities Ltd., Dam Capital Advisors Ltd., JM Financial Ltd. — track record read: Strong bench. ICICI Securities Ltd.: 12 mainboard IPOs managed in 2026, 67% listed positive, average listing-day gain +22.4%. Dam Capital Advisors Ltd.: 2 mainboard IPOs managed in 2026, 100% listed positive, average listing-day gain +68.2%. JM Financial Ltd.: 15 mainboard IPOs managed in 2026, 67% listed positive, average listing-day gain +16.6%.</p>
+    </div>
+    
+
+    <div class="ledger-card" id="card-National-Stock-Exchange-of-India-NSE-">
+      <div class="card-head">
+        <h3>National Stock Exchange of India (NSE) <span class="seg-label">Mainboard</span></h3>
+        <span class="status-badge badge-upcoming">Upcoming</span>
+      </div>
+      <div class="card-meta-line">
+        <strong>₹1,700 – ₹1,785</strong> · 17 Sep 2026–21 Sep 2026 · <strong>Bidding not yet open</strong> · GMP ₹210 (11.76%)
+      </div>
+      <div class="card-meta-line" style="margin-top:-6px;"><strong>Lead manager(s):</strong> Kotak Mahindra Capital Co.Ltd., Morgan Stanley India Co.Pvt.Ltd., HSBC Securities &amp; Capital Markets (India) Pvt.Ltd., Avendus Capital Pvt.Ltd., Dam Capital Advisors Ltd., HDFC Bank Ltd., IDBI Capital Markets &amp; Securities Ltd., Motilal Oswal Investment Advisors Ltd., Pantomath Capital Advisors Pvt.Ltd., JM Financial Ltd., Citigroup Global Markets India Pvt.Ltd., JP Morgan India Pvt.Ltd., Anand Rathi Advisors Ltd., Axis Capital Ltd., Equirus Capital Ltd., ICICI Securities Ltd., IIFL Capital Services Ltd., Nuvama Wealth Management Ltd., 360 One WAM Ltd.</div>
+      <div class="card-tags">
+      <span class="tag tag-mixed">Health: Mixed</span>
+      <span class="tag tag-val-rich">Valuation: Rich</span>
+      <span class="tag tag-fund-ofs-only">Fund use: OFS-only</span>
+      <span class="tag tag-sub-not-opened">Subscription: Not opened</span>
+      <span class="tag tag-weak">Lead mgr: Caution</span>
+    </div>
+      <p class="card-prose">Revenue grew -2% and PAT -15% in the latest disclosed year (FY26), on a PAT margin of 50.98% (FY26) and EBITDA margin of pending (EBITDA ₹14,519 Cr / Income ₹18,713 Cr ≈ 77.6%). Debt/equity is not yet disclosed. ROE 32.98%, ROCE 42.80%, RoNW 33.21%. Post-issue P/E works out to 35.4x on disclosed EPS (P/BV 13.76); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: 100% Offer for Sale — company receives zero proceeds; entire ₹22,562 Cr flows to selling shareholders (SBI, MS Strategic, CPPIB, Aranda, BoB and others). Bidding has not opened yet. Grey-market premium reads ₹210 (11.76%) as of 13 Sep 2026 (unofficial, unregulated, moves daily — sourced from investorgain.com, treated as sentiment color, not a fundamental). Lead manager(s): Kotak Mahindra Capital Co.Ltd., Morgan Stanley India Co.Pvt.Ltd., HSBC Securities &amp; Capital Markets (India) Pvt.Ltd., Avendus Capital Pvt.Ltd., Dam Capital Advisors Ltd., HDFC Bank Ltd., IDBI Capital Markets &amp; Securities Ltd., Motilal Oswal Investment Advisors Ltd., Pantomath Capital Advisors Pvt.Ltd., JM Financial Ltd., Citigroup Global Markets India Pvt.Ltd., JP Morgan India Pvt.Ltd., Anand Rathi Advisors Ltd., Axis Capital Ltd., Equirus Capital Ltd., ICICI Securities Ltd., IIFL Capital Services Ltd., Nuvama Wealth Management Ltd., 360 One WAM Ltd. — track record read: Caution. Kotak Mahindra Capital Co.Ltd.: 9 mainboard IPOs managed in 2026, 78% listed positive, average listing-day gain +21.3%. Morgan Stanley India Co.Pvt.Ltd.: 2 mainboard IPOs managed in 2026, 0% listed positive, average listing-day gain -8.6%. HSBC Securities &amp; Capital Markets (India) Pvt.Ltd.: 4 mainboard IPOs managed in 2026, 75% listed positive, average listing-day gain +6.5%. Avendus Capital Pvt.Ltd.: 4 mainboard IPOs managed in 2026, 50% listed positive, average listing-day gain +1.5%. Dam Capital Advisors Ltd.: 2 mainboard IPOs managed in 2026, 100% listed positive, average listing-day gain +68.2%. HDFC Bank Ltd.: 1 mainboard IPOs managed in 2026, 100% listed positive, average listing-day gain +52.9%. IDBI Capital Markets &amp; Securities Ltd.: 3 mainboard IPOs managed in 2026, 67% listed positive, average listing-day gain +24.6%. Motilal Oswal Investment Advisors Ltd.: 10 mainboard IPOs managed in 2026, 90% listed positive, average listing-day gain +18.2%. Pantomath Capital Advisors Pvt.Ltd.: 2 mainboard IPOs managed in 2026, 100% listed positive, average listing-day gain +17.1%. JM Financial Ltd.: 15 mainboard IPOs managed in 2026, 67% listed positive, average listing-day gain +16.6%. Citigroup Global Markets India Pvt.Ltd.: 1 mainboard IPOs managed in 2026, 0% listed positive, average listing-day gain -3.5%. JP Morgan India Pvt.Ltd.: 2 mainboard IPOs managed in 2026, 50% listed positive, average listing-day gain -2.3%. Anand Rathi Advisors Ltd.: 1 mainboard IPOs managed in 2026, 100% listed positive, average listing-day gain +23.6%. Axis Capital Ltd.: 13 mainboard IPOs managed in 2026, 62% listed positive, average listing-day gain +16.1%. Equirus Capital Ltd.: 5 mainboard IPOs managed in 2026, 80% listed positive, average listing-day gain +13.4%. ICICI Securities Ltd.: 12 mainboard IPOs managed in 2026, 67% listed positive, average listing-day gain +22.4%. IIFL Capital Services Ltd.: 12 mainboard IPOs managed in 2026, 42% listed positive, average listing-day gain +7.9%. Nuvama Wealth Management Ltd.: 4 mainboard IPOs managed in 2026, 50% listed positive, average listing-day gain +9.0%. 360 One WAM Ltd.: 2 mainboard IPOs managed in 2026, 50% listed positive, average listing-day gain +16.6%.</p>
+    </div>
+    
+
+    <div class="ledger-card" id="card-Sonaselection-India">
+      <div class="card-head">
+        <h3>Sonaselection India <span class="seg-label">Mainboard</span></h3>
+        <span class="status-badge badge-upcoming">Upcoming</span>
+      </div>
+      <div class="card-meta-line">
+        <strong>₹94 – ₹99</strong> · 17 Sep 2026–21 Sep 2026 · <strong>Bidding not yet open</strong> · GMP not yet quoted
+      </div>
+      <div class="card-meta-line" style="margin-top:-6px;"><strong>Lead manager(s):</strong> Choice Capital Advisors Pvt.Ltd.</div>
+      <div class="card-tags">
+      <span class="tag tag-caution">Health: Caution</span>
+      <span class="tag tag-val-fair">Valuation: Fair</span>
+      <span class="tag tag-fund-growth-led">Fund use: Growth-led</span>
+      <span class="tag tag-sub-not-opened">Subscription: Not opened</span>
+      <span class="tag tag-weak">Lead mgr: Caution</span>
+    </div>
+      <p class="card-prose">Revenue grew 64% and PAT 83% in the latest disclosed year (FY26), on a PAT margin of 6.58% (FY26) and EBITDA margin of 16.40% (FY26). Debt/equity of 2.48x is on the leveraged side for this cohort. ROE 39.05%, ROCE 19.69%, RoNW 39.05%. Post-issue P/E works out to 16.53x on disclosed EPS (P/BV 4.00); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Debt repayment ₹80 Cr + capex on plant/machinery ₹50.6 Cr at existing Bhilwara facility. Mixed debt-paydown/growth-capex. Bidding has not opened yet. GMP not yet quoted. Lead manager(s): Choice Capital Advisors Pvt.Ltd. — track record read: Caution. Choice Capital Advisors Pvt.Ltd.: 2 SME IPOs managed in 2026, 50% listed positive, average listing-day gain -0.5%.</p>
+    </div>
+    
+
+    <div class="ledger-card" id="card-Kheria-Autocomp">
+      <div class="card-head">
+        <h3>Kheria Autocomp <span class="seg-label">SME</span></h3>
+        <span class="status-badge badge-upcoming">Upcoming</span>
+      </div>
+      <div class="card-meta-line">
+        <strong>₹96 – ₹101</strong> · 17 Sep 2026–21 Sep 2026 · <strong>Bidding not yet open</strong> · GMP not yet quoted
+      </div>
+      <div class="card-meta-line" style="margin-top:-6px;"><strong>Lead manager(s):</strong> SMC Capitals Ltd.</div>
+      <div class="card-tags">
+      <span class="tag tag-strong">Health: Strong</span>
+      <span class="tag tag-val-attractive">Valuation: Attractive</span>
+      <span class="tag tag-fund-growth-led">Fund use: Growth-led</span>
+      <span class="tag tag-sub-not-opened">Subscription: Not opened</span>
+      <span class="tag tag-mixed">Lead mgr: Mixed bench</span>
+    </div>
+      <p class="card-prose">Revenue grew 30% and PAT 39% in the latest disclosed year (FY26), on a PAT margin of 9.52% (FY26) and EBITDA margin of 19.08% (FY26). Debt/equity sits at a moderate 0.89x. ROE 33.72%, ROCE 26.89%, RoNW 33.72%. Post-issue P/E works out to 14.01x on disclosed EPS (P/BV pending); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: New manufacturing facility capex ₹39.96 Cr (plastic moulded auto components, Sanand GIDC); 100% growth capex, no debt repayment or OFS. Bidding has not opened yet. GMP not yet quoted. Lead manager(s): SMC Capitals Ltd. — track record read: Mixed bench. SMC Capitals Ltd.: all-time avg listing gain +3.6% across 4 listed issues. Modest but consistently non-negative record: Denta Water +10.5% (Jan 2025), Venus Pipes +3.5% (May 2022), Oval Projects +0.3% (Sep 2025), Jinaam&#x27;s Dress flat (2019). No negative listings in its history, but none are large gains either.</p>
+    </div>
+    
+
+    <div class="ledger-card" id="card-SpectraA-Technology-Solutions">
+      <div class="card-head">
+        <h3>SpectraA Technology Solutions <span class="seg-label">SME</span></h3>
+        <span class="status-badge badge-upcoming">Upcoming</span>
+      </div>
+      <div class="card-meta-line">
+        <strong>₹118 (fixed)</strong> · 17 Sep 2026–21 Sep 2026 · <strong>Bidding not yet open</strong> · GMP ₹27 (22.88%)
+      </div>
+      <div class="card-meta-line" style="margin-top:-6px;"><strong>Lead manager(s):</strong> Indcap Advisors Pvt.Ltd.</div>
+      <div class="card-tags">
+      <span class="tag tag-strong">Health: Strong</span>
+      <span class="tag tag-val-attractive">Valuation: Attractive</span>
+      <span class="tag tag-fund-growth-led">Fund use: Growth-led</span>
+      <span class="tag tag-sub-not-opened">Subscription: Not opened</span>
+      <span class="tag tag-strong">Lead mgr: Strong bench</span>
+    </div>
+      <p class="card-prose">Revenue grew 36% and PAT 135% in the latest disclosed year (FY26), on a PAT margin of 11.42% (FY26) and EBITDA margin of 19.04% (FY26). Debt/equity sits at a moderate 1.09x. ROE 60.95%, ROCE 37.61%, RoNW 46.59%. Post-issue P/E works out to 13.63x on disclosed EPS (P/BV 4.80); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Jaipur facility capex ₹11 Cr + term loan repayment ₹6.48 Cr + working capital ₹9.5 Cr; small OFS ₹4.11 Cr from 2 promoters. Growth-tilted. Bidding has not opened yet. Grey-market premium reads ₹27 (22.88%) as of 13 Sep 2026 (unofficial, unregulated, moves daily — sourced from investorgain.com, treated as sentiment color, not a fundamental). Lead manager(s): Indcap Advisors Pvt.Ltd. — track record read: Strong bench. Indcap Advisors Pvt.Ltd.: 1 SME IPOs managed in 2026, 100% listed positive, average listing-day gain +36.1%.</p>
+    </div>
+    
+
+    <div class="ledger-card" id="card-Axiom-Gas-Engineering">
+      <div class="card-head">
+        <h3>Axiom Gas Engineering <span class="seg-label">SME</span></h3>
+        <span class="status-badge badge-upcoming">Upcoming</span>
+      </div>
+      <div class="card-meta-line">
+        <strong>₹50 – ₹53</strong> · 18 Sep 2026–22 Sep 2026 · <strong>Bidding not yet open</strong> · GMP not yet quoted
+      </div>
+      <div class="card-meta-line" style="margin-top:-6px;"><strong>Lead manager(s):</strong> SKI Capital Services Ltd.</div>
+      <div class="card-tags">
+      <span class="tag tag-strong">Health: Strong</span>
+      <span class="tag tag-val-fair">Valuation: Fair</span>
+      <span class="tag tag-fund-growth-led">Fund use: Growth-led</span>
+      <span class="tag tag-sub-not-opened">Subscription: Not opened</span>
+      <span class="tag tag-weak">Lead mgr: Caution</span>
+    </div>
+      <p class="card-prose">Revenue grew 12% and PAT 22% in the latest disclosed year (FY26), on a PAT margin of 9.38% (FY25) and EBITDA margin of 15.36% (FY25). Debt/equity sits at a moderate 0.48x. ROE 28.40% (FY25), ROCE 28.90% (FY25), RoNW 28.40% (FY25). Post-issue P/E works out to 19.85x on disclosed EPS (P/BV 4.13); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Capex ₹27.60 Cr (majority) + debt repayment ₹9.12 Cr; balance general corporate. Growth-tilted. Bidding has not opened yet. GMP not yet quoted. Lead manager(s): SKI Capital Services Ltd. — track record read: Caution. SKI Capital Services Ltd.: 1 SME IPOs managed in 2026, 0% listed positive, average listing-day gain -5.0%.</p>
+    </div>
+    
+
+    <div class="ledger-card" id="card-A-One-Steels-India">
+      <div class="card-head">
+        <h3>A-One Steels India <span class="seg-label">Mainboard</span></h3>
+        <span class="status-badge badge-upcoming">Upcoming</span>
+      </div>
+      <div class="card-meta-line">
+        <strong>Not disclosed</strong> · 24 Sep 2026–28 Sep 2026 · <strong>Bidding not yet open</strong> · GMP not yet quoted
+      </div>
+      <div class="card-meta-line" style="margin-top:-6px;"><strong>Lead manager(s):</strong> PL Capital Markets Pvt.Ltd., Khambatta Securities Ltd.</div>
+      <div class="card-tags">
+      <span class="tag tag-strong">Health: Strong</span>
+      <span class="tag tag-val-pending">Valuation: Pending</span>
+      <span class="tag tag-fund-debt-heavy">Fund use: Debt-heavy</span>
+      <span class="tag tag-sub-not-opened">Subscription: Not opened</span>
+      <span class="tag tag-mixed">Lead mgr: Mixed bench</span>
+    </div>
+      <p class="card-prose">Revenue grew 18% and PAT 1553% in the latest disclosed year (FY26), on a PAT margin of 3.04% (FY26) vs 0.34% (FY25) and EBITDA margin of 7.29% (FY26) vs 4.91% (FY25). Debt/equity sits at a moderate 1.17x. ROE 14.70%, ROCE 12.86%, RoNW 15.43%. P/E is not computable yet — price band pending disclosure. Fund usage: Debt repayment ₹250 Cr (fresh issue of ₹355 Cr) + OFS ₹50 Cr (promoters); balance general corporate purposes. Skewed toward debt paydown. Bidding has not opened yet. GMP not yet quoted. Lead manager(s): PL Capital Markets Pvt.Ltd., Khambatta Securities Ltd. — track record read: Mixed bench. PL Capital Markets Pvt.Ltd.: all-time avg listing gain +5.3% across 3 listed issues. Mixed multi-year record: Gala Precision Engineering +36.3% (Sep 2024), Rajshree Polypack -7.5% (2018 SME), Laxmi India Finance -13.0% (Aug 2025). Small sample (3 listed), split results. Khambatta Securities Ltd.: 1 mainboard IPOs managed in 2026, 100% listed positive, average listing-day gain +46.8%.</p>
+    </div>
+    
+  </div>
+
+  <h2 class="section-title">Financial health — revenue, profit &amp; margins</h2>
+  <p class="section-desc">Total income and profit after tax as disclosed in the restated financial statements in each prospectus, in ₹ crore, FY24 → FY25 → FY26 (years ended 31 March) unless individually noted.</p>
+  <div class="table-scroll">
+  <table class="ledger-table">
+    <thead><tr><th>Company</th><th>Revenue (₹Cr)</th><th>PAT (₹Cr)</th><th>PAT Margin</th><th>EBITDA Margin</th></tr></thead>
+    <tbody>
+<tr><td class='tcell-name'>Pranav Constructions<br/><span class='tsub'>Mainboard</span></td><td>449.75 → 638.24 → 763.93</td><td>39.62 → 62.25 → 71.32</td><td>9.37% (FY26)</td><td>17.18% (FY26)</td></tr>
+<tr><td class='tcell-name'>Kanohar Electricals<br/><span class='tsub'>Mainboard</span></td><td>281.12 → 457.30 → 662.86</td><td>17.76 → 65.12 → 129.73</td><td>19.57% (FY26)</td><td>27.59% (FY26)</td></tr>
+<tr><td class='tcell-name'>Prasol Chemicals<br/><span class='tsub'>Mainboard</span></td><td>887.56 → 1,015.54 → 1,237.85</td><td>18.13 → 43.57 → 83.12</td><td>6.74% (FY26)</td><td>11.30% (FY26)</td></tr>
+<tr><td class='tcell-name'>Glass Wall Systems (India)<br/><span class='tsub'>Mainboard</span></td><td>310.26 → 288.14 → 471.43</td><td>20.25 → 57.51 → 83.79</td><td>18.34% (FY26)</td><td>23.02% (FY26)</td></tr>
+<tr><td class='tcell-name'>Rentomojo<br/><span class='tsub'>Mainboard</span></td><td>195.80 → 271.96 → 394.09</td><td>22.41 → 43.11 → 104.30</td><td>26.95% (FY26)</td><td>41.48% (FY26)</td></tr>
+<tr><td class='tcell-name'>Asset Reconstruction Co. (India)<br/><span class='tsub'>Mainboard</span></td><td>574.11 → 623.40 → 785.08</td><td>305.34 → 355.32 → 407.84</td><td>51.95% (FY26)</td><td>78.21% (FY26)</td></tr>
+<tr><td class='tcell-name'>Manipal Payment &amp; Identity Solutions (Manipal Cards)<br/><span class='tsub'>Mainboard</span></td><td>1,267.97 → 1,277.11 → 1,356.59</td><td>249.17 → 282.21 → 253.46</td><td>18.68% (FY26) vs 22.10% (FY25)</td><td>33.60% (FY26)</td></tr>
+<tr><td class='tcell-name'>Steamhouse India<br/><span class='tsub'>Mainboard</span></td><td>293.16 → 398.53 → 494.97</td><td>27.19 → 31.16 → 38.64</td><td>7.81% (FY26)</td><td>16.99% (FY26)</td></tr>
+<tr><td class='tcell-name'>LCC Projects<br/><span class='tsub'>Mainboard</span></td><td>2,449.79 → 2,941.01 → 3,639.45</td><td>122.00 → 223.63 → 286.44</td><td>7.96% (FY26)</td><td>14.44% (FY26)</td></tr>
+<tr><td class='tcell-name'>Karamtara Engineering<br/><span class='tsub'>Mainboard</span></td><td>2,427.12 → 3,165.36 → 4,316.36</td><td>102.65 → 139.33 → 228.75</td><td>pending (not disclosed)</td><td>11.55% (FY26)</td></tr>
+<tr><td class='tcell-name'>Infrax Renewable<br/><span class='tsub'>SME</span></td><td>9.66 → 30.48 → 93.33</td><td>0.96 → 2.85 → 10.20</td><td>10.94% (FY26)</td><td>15.62% (FY26)</td></tr>
+<tr><td class='tcell-name'>Vinod Texworld<br/><span class='tsub'>SME</span></td><td>271.65 → 335.74 → 342.96</td><td>5.49 → 9.23 → 10.41</td><td>3.04% (FY26)</td><td>6.66% (FY26)</td></tr>
+<tr><td class='tcell-name'>Amtech Esters<br/><span class='tsub'>SME</span></td><td>27.24 → 36.97 → 40.75</td><td>2.84 → 3.72 → 4.22</td><td>10.28% (FY26)</td><td>18.41% (FY26)</td></tr>
+<tr><td class='tcell-name'>Veegaland Developers<br/><span class='tsub'>Mainboard</span></td><td>114.61 → 196.22 → 254.16</td><td>7.87 → 20.43 → 26.61</td><td>10.47% (FY26)</td><td>16.78% (FY26)</td></tr>
+<tr><td class='tcell-name'>Maharaja &amp; Speedex India<br/><span class='tsub'>SME</span></td><td>61.41 → 93.60 → 122.74</td><td>1.08 → 5.57 → 15.34</td><td>12.51% (FY26)</td><td>18.36% (FY26)</td></tr>
+<tr><td class='tcell-name'>Om Galaxy<br/><span class='tsub'>SME</span></td><td>105.12 → 113.13 → 124.68</td><td>12.04 → 15.92 → 16.64</td><td>13.42% (FY26)</td><td>26.33% (FY26)</td></tr>
+<tr><td class='tcell-name'>Raksan Transformers<br/><span class='tsub'>SME</span></td><td>162.52 → 324.78 → 363.63</td><td>7.59 → 20.38 → 33.60</td><td>9.25% (FY26)</td><td>12.87% (FY26)</td></tr>
+<tr><td class='tcell-name'>Panchatv Bharat<br/><span class='tsub'>SME</span></td><td>39.31 → 48.99 → 56.87</td><td>2.02 → 2.83 → 4.03</td><td>7.09% (FY26)</td><td>11.32% (FY26)</td></tr>
+<tr><td class='tcell-name'>Manika Plastech<br/><span class='tsub'>Mainboard</span></td><td>368.76 → 412.59 → 437.26</td><td>11.53 → 19.33 → 22.40</td><td>5.12% (FY26)</td><td>13.34% (FY26)</td></tr>
+<tr><td class='tcell-name'>Injecto Polymers<br/><span class='tsub'>SME</span></td><td>109.80 → 261.85 → 375.83</td><td>4.44 → 8.11 → 16.01</td><td>4.26% (FY26)</td><td>10.13% (FY26)</td></tr>
+<tr><td class='tcell-name'>Century Business Media<br/><span class='tsub'>SME</span></td><td>32.27 → 36.91 → 46.76</td><td>3.68 → 4.70 → 5.56</td><td>11.96% (FY26)</td><td>18.47% (FY26)</td></tr>
+<tr><td class='tcell-name'>Quanto Agroworld<br/><span class='tsub'>SME</span></td><td>15.56 → 16.49 → 40.35</td><td>5.37 → 6.63 → 8.38</td><td>20.78% (FY26)</td><td>29.54% (FY26)</td></tr>
+<tr><td class='tcell-name'>Shakti Polytarp<br/><span class='tsub'>SME</span></td><td>62.23 → 166.50 → 216.10</td><td>0.98 → 4.97 → 10.06</td><td>4.66% (FY26)</td><td>8.94% (FY26)</td></tr>
+<tr><td class='tcell-name'>Vama Wovenfab<br/><span class='tsub'>SME</span></td><td>27.87 → 77.76 → 214.62</td><td>2.63 → 6.84 → 11.55</td><td>5.38% (FY26)</td><td>8.32% (FY26)</td></tr>
+<tr><td class='tcell-name'>SS Retail<br/><span class='tsub'>Mainboard</span></td><td>1,208.04 → 1,599.96 → 2,352.85</td><td>26.65 → 39.86 → 59.28</td><td>2.52% (FY26)</td><td>5.32% (FY26)</td></tr>
+<tr><td class='tcell-name'>Jindal Supreme (India)<br/><span class='tsub'>Mainboard</span></td><td>650.88 → 604.74 → 675.94</td><td>12.87 → 24.27 → 22.53</td><td>3.33% (FY26) vs 4.01% (FY25)</td><td>6.16% (FY26)</td></tr>
+<tr><td class='tcell-name'>Hero Motors<br/><span class='tsub'>Mainboard</span></td><td>1,083.42 → 1,111.23 → 1,216.74</td><td>17.04 → 32.80 → 41.17</td><td>3.46% (FY26)</td><td>12.44% (FY26)</td></tr>
+<tr><td class='tcell-name'>National Stock Exchange of India (NSE)<br/><span class='tsub'>Mainboard</span></td><td>16,352.06 → 19,176.83 → 18,713.37</td><td>8,305.74 → 12,187.69 → 10,302.06</td><td>50.98% (FY26)</td><td>pending (EBITDA ₹14,519 Cr / Income ₹18,713 Cr ≈ 77.6%)</td></tr>
+<tr><td class='tcell-name'>Sonaselection India<br/><span class='tsub'>Mainboard</span></td><td>121.31 → 316.47 → 517.60</td><td>13.10 → 18.56 → 34.02</td><td>6.58% (FY26)</td><td>16.40% (FY26)</td></tr>
+<tr><td class='tcell-name'>Kheria Autocomp<br/><span class='tsub'>SME</span></td><td>62.40 → 92.31 → 120.30</td><td>3.31 → 8.24 → 11.42</td><td>9.52% (FY26)</td><td>19.08% (FY26)</td></tr>
+<tr><td class='tcell-name'>SpectraA Technology Solutions<br/><span class='tsub'>SME</span></td><td>89.68 → 75.53 → 103.05</td><td>2.00 → 4.91 → 11.56</td><td>11.42% (FY26)</td><td>19.04% (FY26)</td></tr>
+<tr><td class='tcell-name'>Axiom Gas Engineering<br/><span class='tsub'>SME</span></td><td>74.54 → 89.85 → 100.78</td><td>5.74 → 7.75 → 9.45</td><td>9.38% (FY25)</td><td>15.36% (FY25)</td></tr>
+<tr><td class='tcell-name'>A-One Steels India<br/><span class='tsub'>Mainboard</span></td><td>3,862.44 → 3,569.63 → 4,202.05</td><td>38.91 → 7.71 → 127.41</td><td>3.04% (FY26) vs 0.34% (FY25)</td><td>7.29% (FY26) vs 4.91% (FY25)</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h2 class="section-title">Returns &amp; leverage — ROE, ROCE, RoNW, debt/equity</h2>
+  <p class="section-desc">Latest disclosed year. A blank means only one year's ratio block was disclosed on the company's prospectus/tracker page.</p>
+  <div class="table-scroll">
+  <table class="ledger-table">
+    <thead><tr><th>Company</th><th>ROE</th><th>ROCE</th><th>RoNW</th><th>Debt/Equity</th></tr></thead>
+    <tbody>
+<tr><td class='tcell-name'>Pranav Constructions</td><td>33.78%</td><td>24.34%</td><td>33.78%</td><td>1.08</td></tr>
+<tr><td class='tcell-name'>Kanohar Electricals</td><td>42.12%</td><td>70.13%</td><td>34.80%</td><td>0.10</td></tr>
+<tr><td class='tcell-name'>Prasol Chemicals</td><td>20.37%</td><td>22.43%</td><td>18.53%</td><td>0.19</td></tr>
+<tr><td class='tcell-name'>Glass Wall Systems (India)</td><td>38.62%</td><td>43.01%</td><td>32.03%</td><td>0.03</td></tr>
+<tr><td class='tcell-name'>Rentomojo</td><td>43.51%</td><td>25.34%</td><td>43.51%</td><td>0.63</td></tr>
+<tr><td class='tcell-name'>Asset Reconstruction Co. (India)</td><td>pending</td><td>pending</td><td>13.95%</td><td>0.39</td></tr>
+<tr><td class='tcell-name'>Manipal Payment &amp; Identity Solutions (Manipal Cards)</td><td>29.35%</td><td>32.69%</td><td>22.93%</td><td>0.00</td></tr>
+<tr><td class='tcell-name'>Steamhouse India</td><td>22.36%</td><td>16.06%</td><td>23.60%</td><td>1.57</td></tr>
+<tr><td class='tcell-name'>LCC Projects</td><td>32.24%</td><td>27.13%</td><td>32.24%</td><td>0.97</td></tr>
+<tr><td class='tcell-name'>Karamtara Engineering</td><td>20.77%</td><td>23.27%</td><td>20.78%</td><td>0.84</td></tr>
+<tr><td class='tcell-name'>Infrax Renewable</td><td>115.54%</td><td>63.89%</td><td>64.68%</td><td>0.44</td></tr>
+<tr><td class='tcell-name'>Vinod Texworld</td><td>24.31%</td><td>31.80%</td><td>24.31%</td><td>1.65</td></tr>
+<tr><td class='tcell-name'>Amtech Esters</td><td>24.17%</td><td>30.16%</td><td>24.17%</td><td>0.17</td></tr>
+<tr><td class='tcell-name'>Veegaland Developers</td><td>16.02%</td><td>11.89%</td><td>16.02%</td><td>0.32</td></tr>
+<tr><td class='tcell-name'>Maharaja &amp; Speedex India</td><td>pending</td><td>54.60%</td><td>80.47%</td><td>0.92</td></tr>
+<tr><td class='tcell-name'>Om Galaxy</td><td>22.13%</td><td>20.39%</td><td>22.13%</td><td>0.45</td></tr>
+<tr><td class='tcell-name'>Raksan Transformers</td><td>55.32%</td><td>46.72%</td><td>43.41%</td><td>0.27</td></tr>
+<tr><td class='tcell-name'>Panchatv Bharat</td><td>89.99%</td><td>24.01%</td><td>31.93%</td><td>2.26</td></tr>
+<tr><td class='tcell-name'>Manika Plastech</td><td>15.18% (FY26)</td><td>18.77% (FY26)</td><td>15.18%</td><td>0.60</td></tr>
+<tr><td class='tcell-name'>Injecto Polymers</td><td>28.94%</td><td>15.64%</td><td>41.73%</td><td>2.61</td></tr>
+<tr><td class='tcell-name'>Century Business Media</td><td>36.44%</td><td>30.06%</td><td>30.83%</td><td>0.44</td></tr>
+<tr><td class='tcell-name'>Quanto Agroworld</td><td>24.68%</td><td>25.62%</td><td>24.68%</td><td>0.16</td></tr>
+<tr><td class='tcell-name'>Shakti Polytarp</td><td>44.04%</td><td>17.87%</td><td>44.04%</td><td>2.60</td></tr>
+<tr><td class='tcell-name'>Vama Wovenfab</td><td>50.37%</td><td>31.94%</td><td>50.37%</td><td>0.89</td></tr>
+<tr><td class='tcell-name'>SS Retail</td><td>30.60%</td><td>29.30%</td><td>32.60%</td><td>0.70</td></tr>
+<tr><td class='tcell-name'>Jindal Supreme (India)</td><td>26.28% (FY26)</td><td>16.78% (FY26)</td><td>26.28%</td><td>1.24</td></tr>
+<tr><td class='tcell-name'>Hero Motors</td><td>8.56%</td><td>19.77%</td><td>8.53%</td><td>0.83</td></tr>
+<tr><td class='tcell-name'>National Stock Exchange of India (NSE)</td><td>32.98%</td><td>42.80%</td><td>33.21%</td><td>pending (no meaningful debt disclosed)</td></tr>
+<tr><td class='tcell-name'>Sonaselection India</td><td>39.05%</td><td>19.69%</td><td>39.05%</td><td>2.48</td></tr>
+<tr><td class='tcell-name'>Kheria Autocomp</td><td>33.72%</td><td>26.89%</td><td>33.72%</td><td>0.89</td></tr>
+<tr><td class='tcell-name'>SpectraA Technology Solutions</td><td>60.95%</td><td>37.61%</td><td>46.59%</td><td>1.09</td></tr>
+<tr><td class='tcell-name'>Axiom Gas Engineering</td><td>28.40% (FY25)</td><td>28.90% (FY25)</td><td>28.40% (FY25)</td><td>0.48</td></tr>
+<tr><td class='tcell-name'>A-One Steels India</td><td>14.70%</td><td>12.86%</td><td>15.43%</td><td>1.17</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h2 class="section-title">Valuation — EPS, P/E, price-to-book and grey-market premium</h2>
+  <p class="section-desc">Pre-issue figures use the pre-IPO share base; post-issue figures dilute for the new shares issued in the offer. Multiples for banded issues use the upper band. GMP is unofficial, unregulated, moves daily and is shown as sentiment color only — sourced from investorgain.com as of 13 Sep 2026, never substituted for a DRHP-disclosed ratio.</p>
+  <div class="table-scroll">
+  <table class="ledger-table">
+    <thead><tr><th>Company</th><th>EPS Pre → Post (₹)</th><th>P/E Pre / Post</th><th>P/BV</th><th>GMP (13 Sep)</th></tr></thead>
+    <tbody>
+<tr><td class='tcell-name'>Pranav Constructions</td><td>8.18 → 6.33</td><td>15.16 / 19.59</td><td>pending</td><td>₹45 (36.29%)</td></tr>
+<tr><td class='tcell-name'>Kanohar Electricals</td><td>17.43 → 16.38</td><td>36.26 / 38.58</td><td>12.62</td><td>₹241 (38.13%)</td></tr>
+<tr><td class='tcell-name'>Prasol Chemicals</td><td>14.33 → pending</td><td>pending / pending</td><td>pending</td><td>₹-15 (-2.22%)</td></tr>
+<tr><td class='tcell-name'>Glass Wall Systems (India)</td><td>9.90 → 9.53</td><td>18.38 / 19.10</td><td>9.00</td><td>₹52 (28.57%)</td></tr>
+<tr><td class='tcell-name'>Rentomojo</td><td>10.29 → 9.92</td><td>39.26 / 40.73</td><td>14.10</td><td>₹157 (38.86%)</td></tr>
+<tr><td class='tcell-name'>Asset Reconstruction Co. (India)</td><td>12.55 → 12.55</td><td>11.08 / 11.08</td><td>1.70</td><td>₹15 (10.79%)</td></tr>
+<tr><td class='tcell-name'>Manipal Payment &amp; Identity Solutions (Manipal Cards)</td><td>11.40 → 10.93</td><td>29.74 / 31.02</td><td>6.94</td><td>₹-2 (-0.59%)</td></tr>
+<tr><td class='tcell-name'>Steamhouse India</td><td>1.66 → 1.40</td><td>48.80 / 57.86</td><td>11.17</td><td>₹21 (25.93%)</td></tr>
+<tr><td class='tcell-name'>LCC Projects</td><td>10.53 → 9.89</td><td>13.87 / 14.76</td><td>4.47</td><td>₹64 (43.84%)</td></tr>
+<tr><td class='tcell-name'>Karamtara Engineering</td><td>7.75 → 7.11</td><td>32.77 / 35.72</td><td>6.09</td><td>₹71 (27.95%)</td></tr>
+<tr><td class='tcell-name'>Infrax Renewable</td><td>9.29 → 7.17</td><td>11.19 / 14.50</td><td>6.59</td><td>not yet quoted</td></tr>
+<tr><td class='tcell-name'>Vinod Texworld</td><td>8.97 → 6.44</td><td>10.48 / 14.60</td><td>2.55</td><td>₹1 (1.06%)</td></tr>
+<tr><td class='tcell-name'>Amtech Esters</td><td>6.55 → 4.78</td><td>pending / pending</td><td>pending</td><td>₹7 (9.33%)</td></tr>
+<tr><td class='tcell-name'>Veegaland Developers</td><td>7.89 → 5.46</td><td>17.74 / 25.64</td><td>1.77</td><td>₹15 (10.71%)</td></tr>
+<tr><td class='tcell-name'>Maharaja &amp; Speedex India</td><td>11.89 → 9.39</td><td>15.64 / 19.81</td><td>8.97</td><td>₹45 (24.19%)</td></tr>
+<tr><td class='tcell-name'>Om Galaxy</td><td>7.49 → 4.91</td><td>12.02 / 18.33</td><td>2.50</td><td>not yet quoted</td></tr>
+<tr><td class='tcell-name'>Raksan Transformers</td><td>20.39 → 16.08</td><td>13.39 / 16.98</td><td>18.98</td><td>₹30 (10.99%)</td></tr>
+<tr><td class='tcell-name'>Panchatv Bharat</td><td>9.84 → 6.89</td><td>14.23 / 20.32</td><td>4.54</td><td>₹11 (7.86%)</td></tr>
+<tr><td class='tcell-name'>Manika Plastech</td><td>2.36 → 4.49</td><td>18.22 / 9.58</td><td>2.77</td><td>₹11 (25.58%)</td></tr>
+<tr><td class='tcell-name'>Injecto Polymers</td><td>10.55 → 7.70</td><td>9.48 / 12.99</td><td>2.40</td><td>not yet quoted</td></tr>
+<tr><td class='tcell-name'>Century Business Media</td><td>8.61 → 6.34</td><td>8.59 / 11.67</td><td>2.65</td><td>not yet quoted</td></tr>
+<tr><td class='tcell-name'>Quanto Agroworld</td><td>6.52 → 4.79</td><td>10.28 / 13.99</td><td>2.53</td><td>not yet quoted</td></tr>
+<tr><td class='tcell-name'>Shakti Polytarp</td><td>8.00 → 5.87</td><td>7.38 / 10.05</td><td>2.66</td><td>not yet quoted</td></tr>
+<tr><td class='tcell-name'>Vama Wovenfab</td><td>30.90 → 22.25</td><td>11.04 / 15.33</td><td>4.44</td><td>not yet quoted</td></tr>
+<tr><td class='tcell-name'>SS Retail</td><td>9.00 → 7.97</td><td>47.11 / 53.20</td><td>12.35</td><td>₹120 (28.30%)</td></tr>
+<tr><td class='tcell-name'>Jindal Supreme (India)</td><td>5.59 → 6.49</td><td>16.64 / 14.33</td><td>3.87</td><td>₹27 (29.03%)</td></tr>
+<tr><td class='tcell-name'>Hero Motors</td><td>1.08 → 0.91</td><td>77.78 / 92.31</td><td>6.60</td><td>₹24 (28.57%)</td></tr>
+<tr><td class='tcell-name'>National Stock Exchange of India (NSE)</td><td>41.62 → 50.43</td><td>42.89 / 35.40</td><td>13.76</td><td>₹210 (11.76%)</td></tr>
+<tr><td class='tcell-name'>Sonaselection India</td><td>8.00 → 5.99</td><td>12.38 / 16.53</td><td>4.00</td><td>not yet quoted</td></tr>
+<tr><td class='tcell-name'>Kheria Autocomp</td><td>10.15 → 7.21</td><td>9.95 / 14.01</td><td>pending</td><td>not yet quoted</td></tr>
+<tr><td class='tcell-name'>SpectraA Technology Solutions</td><td>11.45 → 8.66</td><td>10.31 / 13.63</td><td>4.80</td><td>₹27 (22.88%)</td></tr>
+<tr><td class='tcell-name'>Axiom Gas Engineering</td><td>3.64 → 2.67</td><td>14.56 / 19.85</td><td>4.13</td><td>not yet quoted</td></tr>
+<tr><td class='tcell-name'>A-One Steels India</td><td>18.61 → pending</td><td>pending / pending</td><td>pending</td><td>not yet quoted</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h2 class="section-title">Fund usage &amp; promoter holding, pre- and post-issue</h2>
+  <p class="section-desc">Net proceeds breakdown as itemized in each prospectus' Objects of the Issue section, and this ledger's read of whether that skews toward growth, debt repayment, or a pure secondary sale.</p>
+  <div class="table-scroll">
+  <table class="ledger-table">
+    <thead><tr><th>Company</th><th>Net proceeds go to</th><th>Read on fund use</th><th>Promoter holding Pre → Post</th></tr></thead>
+    <tbody>
+<tr><td class='tcell-name'>Pranav Constructions</td><td>Redevelopment project expenses ₹145.72 Cr + debt repayment ₹91.50 Cr + new project acquisition ₹42.57 Cr + issue expenses. Growth-heavy with a debt component.</td><td>Growth-led</td><td>63.35% → 49.03%</td></tr>
+<tr><td class='tcell-name'>Kanohar Electricals</td><td>Capex ₹64.18 Cr + working capital ₹155 Cr (dominant use); balance general corporate. Large OFS (₹755.74 Cr) to promoter family trust.</td><td>Growth-led</td><td>95.47% → 74.65%</td></tr>
+<tr><td class='tcell-name'>Prasol Chemicals</td><td>Debt repayment ₹60 Cr out of ₹80 Cr fresh issue (75%); balance general corporate + issue expenses. OFS ₹420 Cr dominates total issue size (84%).</td><td>Mixed</td><td>86.89% → 75.25%</td></tr>
+<tr><td class='tcell-name'>Glass Wall Systems (India)</td><td>Glass processing unit capex ₹50 Cr (backward integration at Vile Bhagad); balance general corporate + issue expenses. Growth-oriented fresh issue; OFS ₹368 Cr is bulk of total issue.</td><td>Growth-led</td><td>61.52% → 53.22%</td></tr>
+<tr><td class='tcell-name'>Rentomojo</td><td>Debt repayment ₹70 Cr + warehouse/store lease payments ₹42.5 Cr; balance general corporate. Large OFS component from VC investors (Accel, Edelweiss, IDG, ValueQuest).</td><td>Mixed</td><td>21.49% → 19.94%</td></tr>
+<tr><td class='tcell-name'>Asset Reconstruction Co. (India)</td><td>100% Offer for Sale — no funds to company; proceeds to Avenue India Resurgence, SBI, Lathe Investment and Federal Bank.</td><td>OFS-only</td><td>88.47% → 77.45%</td></tr>
+<tr><td class='tcell-name'>Manipal Payment &amp; Identity Solutions (Manipal Cards)</td><td>Capital expenditure on equipment ₹238.43 Cr (100% of fresh issue); balance general corporate. PAT declined 10% YoY despite revenue growth — margin flag.</td><td>Growth-led</td><td>62.1% → 53.92%</td></tr>
+<tr><td class='tcell-name'>Steamhouse India</td><td>Debt repayment ₹180 Cr + capex across 3 facilities (Ankleshwar, Panoli, Dahej SEZ) ₹114 Cr combined; balance general corporate. Mixed use, debt-heavy.</td><td>Mixed</td><td>95.79% → 77.96%</td></tr>
+<tr><td class='tcell-name'>LCC Projects</td><td>Equipment purchase ₹14.69 Cr + debt repayment ₹180 Cr (majority); balance general corporate. Also OFS ₹169 Cr to 2 promoters.</td><td>Debt-heavy</td><td>100% → 89.9%</td></tr>
+<tr><td class='tcell-name'>Karamtara Engineering</td><td>Debt repayment ₹600 Cr — 100% of fresh issue proceeds go to lender prepayment; no growth capex earmarked.</td><td>Debt-heavy</td><td>94.79% → 83.64%</td></tr>
+<tr><td class='tcell-name'>Infrax Renewable</td><td>Machinery/equipment capex ₹12.29 Cr + working capital ₹17 Cr; growth-oriented, very small company (FY24 base ₹9.66 Cr revenue — treat growth rates with caution).</td><td>Growth-led</td><td>70.64% → 49.73%</td></tr>
+<tr><td class='tcell-name'>Vinod Texworld</td><td>Plant expansion ₹6.39 Cr + debt repayment ₹7.15 Cr + working capital ₹20.35 Cr; balance general corporate + issue expenses. Thin PAT margin (3%), elevated leverage.</td><td>Mixed</td><td>93.1% → 66.85%</td></tr>
+<tr><td class='tcell-name'>Amtech Esters</td><td>Investment in subsidiary (Croda Pigments) via debt for capex/working capital ₹8.81 Cr + debt repayment ₹4.20 Cr; balance for unidentified acquisitions. Small, clean balance sheet (D/E 0.17).</td><td>Growth-led</td><td>62.35% → 45.52%</td></tr>
+<tr><td class='tcell-name'>Veegaland Developers</td><td>Project development funding ₹119.83 Cr (Ongoing + Upcoming Projects) + unidentified land acquisition/general corporate. 100% growth capex, no debt repayment or OFS component.</td><td>Growth-led</td><td>92% → 63.69%</td></tr>
+<tr><td class='tcell-name'>Maharaja &amp; Speedex India</td><td>Debt repayment ₹24.10 Cr + capex on plant/machinery ₹21.42 Cr at subsidiary; balance general corporate. Mixed.</td><td>Growth-led</td><td>87.69% → 63.93%</td></tr>
+<tr><td class='tcell-name'>Om Galaxy</td><td>New manufacturing unit capex ₹74.66 Cr (consolidation + capacity expansion) + debt repayment ₹14 Cr; growth-tilted.</td><td>Growth-led</td><td>100% → 65.56%</td></tr>
+<tr><td class='tcell-name'>Raksan Transformers</td><td>New manufacturing facility capex (Sonepat, Haryana) ₹62.14 Cr + working capital ₹35 Cr + debt repayment ₹7.28 Cr. Growth-tilted.</td><td>Growth-led</td><td>100% → 73.61%</td></tr>
+<tr><td class='tcell-name'>Panchatv Bharat</td><td>Property purchase/renovation ₹6.00 Cr + working capital ₹11.50 Cr; balance general corporate + issue expenses. Growth-oriented, but high leverage (D/E 2.26).</td><td>Growth-led</td><td>92.91% → 65.02%</td></tr>
+<tr><td class='tcell-name'>Manika Plastech</td><td>Plant &amp; machinery capex ₹54.93 Cr + debt repayment ₹15 Cr; balance general corporate. Growth-oriented.</td><td>Growth-led</td><td>100% → 74.95%</td></tr>
+<tr><td class='tcell-name'>Injecto Polymers</td><td>Debt repayment ₹10 Cr + capex for Phase IV manufacturing expansion (West Bengal) ₹30.5 Cr; growth-tilted but elevated leverage (D/E 2.61).</td><td>Growth-led</td><td>88.14% → 64.35%</td></tr>
+<tr><td class='tcell-name'>Century Business Media</td><td>Media asset purchase ₹4.21 Cr + airport ad-rights deposit ₹3.77 Cr + debt repayment ₹1.45 Cr + working capital ₹3.25 Cr. Balanced growth mix, small debt component.</td><td>Growth-led</td><td>100% → 73.61%</td></tr>
+<tr><td class='tcell-name'>Quanto Agroworld</td><td>Distillation plant capex ₹3.79 Cr + farm expansion capex ₹15.23 Cr + debt repayment ₹3.63 Cr; balance general corporate + issue expenses. Growth-led, clean balance sheet (D/E 0.16).</td><td>Growth-led</td><td>61.49% → 45.21%</td></tr>
+<tr><td class='tcell-name'>Shakti Polytarp</td><td>Capital expenditure ₹20.88 Cr (100% of fresh issue); balance general corporate. Thin PAT margin, elevated leverage (D/E 2.60) — caution flag despite strong revenue growth.</td><td>Growth-led</td><td>90.9% → 66.67%</td></tr>
+<tr><td class='tcell-name'>Vama Wovenfab</td><td>Shed construction ₹1.36 Cr + machinery purchase ₹7.25 Cr + working capital ₹26.50 Cr (dominant); balance general corporate. Growth-led; revenue nearly tripled YoY — treat trend with some caution given the pace.</td><td>Growth-led</td><td>100% → 72%</td></tr>
+<tr><td class='tcell-name'>SS Retail</td><td>New store fit-outs ₹12.45 Cr + working capital ₹416.53 Cr (dominant use); OFS ₹140 Cr to promoters/other selling shareholder.</td><td>Growth-led</td><td>75.74% → pending</td></tr>
+<tr><td class='tcell-name'>Jindal Supreme (India)</td><td>Debt repayment ₹71 Cr out of ₹125 Cr issue (57%); balance general corporate purposes. Revenue up 12% but PAT down 7% YoY — margin compression flag.</td><td>Debt-heavy</td><td>100% → 73.68%</td></tr>
+<tr><td class='tcell-name'>Hero Motors</td><td>Debt repayment ₹190 Cr + capex ₹200 Cr (Gautam Buddha Nagar facility expansion); balance for inorganic growth/general purposes. Rich P/E (78–92x) vs thin PAT margin.</td><td>Growth-led</td><td>84.67% → 61.63%</td></tr>
+<tr><td class='tcell-name'>National Stock Exchange of India (NSE)</td><td>100% Offer for Sale — company receives zero proceeds; entire ₹22,562 Cr flows to selling shareholders (SBI, MS Strategic, CPPIB, Aranda, BoB and others).</td><td>OFS-only</td><td>No identifiable promoter (public 100%) → No identifiable promoter (public 100%)</td></tr>
+<tr><td class='tcell-name'>Sonaselection India</td><td>Debt repayment ₹80 Cr + capex on plant/machinery ₹50.6 Cr at existing Bhilwara facility. Mixed debt-paydown/growth-capex.</td><td>Growth-led</td><td>86.21% → 64.52%</td></tr>
+<tr><td class='tcell-name'>Kheria Autocomp</td><td>New manufacturing facility capex ₹39.96 Cr (plastic moulded auto components, Sanand GIDC); 100% growth capex, no debt repayment or OFS.</td><td>Growth-led</td><td>100% → 70.99%</td></tr>
+<tr><td class='tcell-name'>SpectraA Technology Solutions</td><td>Jaipur facility capex ₹11 Cr + term loan repayment ₹6.48 Cr + working capital ₹9.5 Cr; small OFS ₹4.11 Cr from 2 promoters. Growth-tilted.</td><td>Growth-led</td><td>96.04% → 70%</td></tr>
+<tr><td class='tcell-name'>Axiom Gas Engineering</td><td>Capex ₹27.60 Cr (majority) + debt repayment ₹9.12 Cr; balance general corporate. Growth-tilted.</td><td>Growth-led</td><td>98.28% → 72.15%</td></tr>
+<tr><td class='tcell-name'>A-One Steels India</td><td>Debt repayment ₹250 Cr (fresh issue of ₹355 Cr) + OFS ₹50 Cr (promoters); balance general corporate purposes. Skewed toward debt paydown.</td><td>Debt-heavy</td><td>85.86% → pending</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="table-footnote">Figures not yet disclosed in a company's DRHP/RHP are marked "pending" rather than estimated. GMP is an unofficial over-the-counter indicator, not a forecast, and can swing sharply day to day — it tracks sentiment, not the prospectus, and is never used in place of a disclosed fundamental anywhere on this page.</div>
+
+  
+  <h2 class="section-title">Lead manager track record</h2>
+  <p class="section-desc">Each issue's Book Running Lead Manager(s) (BRLM), pulled from its own prospectus page, read against Chittorgarh's 2026 lead-manager performance tracker (issues handled, % positive vs negative listing, average listing-day gain) — or, where a merchant banker has no 2026 mainboard/SME record on that tracker, its multi-year history sourced separately. "Strong bench" = every named lead manager individually clears &ge;70% positive listings and &ge;15% average listing-day gain (or an equivalent multi-year record); "Solid" a step below that; "Mixed bench" = the lead managers' records disagree or land in the middle; "Caution" = at least one named lead manager has a negative average listing-day gain in 2026; "Unproven" = no prior listed track record exists to judge by (a debut mandate). A strong or weak bench doesn't override the fundamentals above — it's one more input, not a verdict on its own. Full per-lead-manager data saved locally at <code>~/ipo-ledger/lead-managers/</code>.</p>
+  <div class="table-scroll">
+  <table class="ledger-table">
+    <thead><tr><th>Company</th><th>Lead manager(s)</th><th>Track record read</th></tr></thead>
+    <tbody>
+<tr><td class='tcell-name'>Pranav Constructions</td><td>Centrum Capital Ltd., PNB Investment Services Ltd.</td><td>Mixed bench</td></tr>
+<tr><td class='tcell-name'>Kanohar Electricals</td><td>Nuvama Wealth Management Ltd., IIFL Capital Services Ltd.</td><td>Mixed bench</td></tr>
+<tr><td class='tcell-name'>Prasol Chemicals</td><td>Dam Capital Advisors Ltd.</td><td>Strong bench</td></tr>
+<tr><td class='tcell-name'>Glass Wall Systems (India)</td><td>IIFL Capital Services Ltd., Motilal Oswal Investment Advisors Ltd.</td><td>Mixed bench</td></tr>
+<tr><td class='tcell-name'>Rentomojo</td><td>Motilal Oswal Investment Advisors Ltd., Axis Capital Ltd., IIFL Capital Services Ltd.</td><td>Mixed bench</td></tr>
+<tr><td class='tcell-name'>Asset Reconstruction Co. (India)</td><td>IIFL Capital Services Ltd., IDBI Capital Markets &amp; Securities Ltd., JM Financial Ltd.</td><td>Mixed bench</td></tr>
+<tr><td class='tcell-name'>Manipal Payment &amp; Identity Solutions (Manipal Cards)</td><td>Motilal Oswal Investment Advisors Ltd., Axis Capital Ltd., ICICI Securities Ltd., IIFL Capital Services Ltd., Nuvama Wealth Management Ltd.</td><td>Mixed bench</td></tr>
+<tr><td class='tcell-name'>Steamhouse India</td><td>Equirus Capital Ltd.</td><td>Strong bench</td></tr>
+<tr><td class='tcell-name'>LCC Projects</td><td>Motilal Oswal Investment Advisors Ltd.</td><td>Strong bench</td></tr>
+<tr><td class='tcell-name'>Karamtara Engineering</td><td>JM Financial Ltd., ICICI Securities Ltd., IIFL Capital Services Ltd.</td><td>Mixed bench</td></tr>
+<tr><td class='tcell-name'>Infrax Renewable</td><td>Smart Horizon Capital Advisors Pvt.Ltd.</td><td>Mixed bench</td></tr>
+<tr><td class='tcell-name'>Vinod Texworld</td><td>Novus Capital Advisors Pvt.Ltd.</td><td>Strong bench</td></tr>
+<tr><td class='tcell-name'>Amtech Esters</td><td>Credora Partners Pvt.Ltd.</td><td>Unproven</td></tr>
+<tr><td class='tcell-name'>Veegaland Developers</td><td>Cumulative Capital Pvt.Ltd.</td><td>Strong bench</td></tr>
+<tr><td class='tcell-name'>Maharaja &amp; Speedex India</td><td>Choice Capital Advisors Pvt.Ltd.</td><td>Caution</td></tr>
+<tr><td class='tcell-name'>Om Galaxy</td><td>Indorient Financial Services Ltd.</td><td>Caution</td></tr>
+<tr><td class='tcell-name'>Raksan Transformers</td><td>Hem Securities Ltd.</td><td>Strong bench</td></tr>
+<tr><td class='tcell-name'>Panchatv Bharat</td><td>Mark Corporate Advisors Pvt.Ltd.</td><td>Caution</td></tr>
+<tr><td class='tcell-name'>Manika Plastech</td><td>Pantomath Capital Advisors Pvt.Ltd.</td><td>Strong bench</td></tr>
+<tr><td class='tcell-name'>Injecto Polymers</td><td>Indcap Advisors Pvt.Ltd.</td><td>Strong bench</td></tr>
+<tr><td class='tcell-name'>Century Business Media</td><td>Hem Securities Ltd.</td><td>Strong bench</td></tr>
+<tr><td class='tcell-name'>Quanto Agroworld</td><td>Sobhagya Capital Options Pvt.Ltd.</td><td>Caution</td></tr>
+<tr><td class='tcell-name'>Shakti Polytarp</td><td>NEXGEN Financial Solutions Pvt.Ltd.</td><td>Strong bench</td></tr>
+<tr><td class='tcell-name'>Vama Wovenfab</td><td>Gretex Corporate Services Ltd.</td><td>Strong bench</td></tr>
+<tr><td class='tcell-name'>SS Retail</td><td>Anand Rathi Advisors Ltd., Emkay Global Financial Services Ltd.</td><td>Strong bench</td></tr>
+<tr><td class='tcell-name'>Jindal Supreme (India)</td><td>Sarthi Capital Advisors Pvt.Ltd.</td><td>Mixed bench</td></tr>
+<tr><td class='tcell-name'>Hero Motors</td><td>ICICI Securities Ltd., Dam Capital Advisors Ltd., JM Financial Ltd.</td><td>Strong bench</td></tr>
+<tr><td class='tcell-name'>National Stock Exchange of India (NSE)</td><td>Kotak Mahindra Capital Co.Ltd., Morgan Stanley India Co.Pvt.Ltd., HSBC Securities &amp; Capital Markets (India) Pvt.Ltd., Avendus Capital Pvt.Ltd., Dam Capital Advisors Ltd., HDFC Bank Ltd., IDBI Capital Markets &amp; Securities Ltd., Motilal Oswal Investment Advisors Ltd., Pantomath Capital Advisors Pvt.Ltd., JM Financial Ltd., Citigroup Global Markets India Pvt.Ltd., JP Morgan India Pvt.Ltd., Anand Rathi Advisors Ltd., Axis Capital Ltd., Equirus Capital Ltd., ICICI Securities Ltd., IIFL Capital Services Ltd., Nuvama Wealth Management Ltd., 360 One WAM Ltd.</td><td>Caution</td></tr>
+<tr><td class='tcell-name'>Sonaselection India</td><td>Choice Capital Advisors Pvt.Ltd.</td><td>Caution</td></tr>
+<tr><td class='tcell-name'>Kheria Autocomp</td><td>SMC Capitals Ltd.</td><td>Mixed bench</td></tr>
+<tr><td class='tcell-name'>SpectraA Technology Solutions</td><td>Indcap Advisors Pvt.Ltd.</td><td>Strong bench</td></tr>
+<tr><td class='tcell-name'>Axiom Gas Engineering</td><td>SKI Capital Services Ltd.</td><td>Caution</td></tr>
+<tr><td class='tcell-name'>A-One Steels India</td><td>PL Capital Markets Pvt.Ltd., Khambatta Securities Ltd.</td><td>Mixed bench</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h2 class="section-title">Analyst comparison — where the money looks best placed right now</h2>
+  <p class="section-desc">A read across all 33 tracked issues against the same four filters, written the way a sell-side primary-market note would frame it. This is analysis of public DRHP/RHP disclosures and live subscription data, not personalized investment advice — position sizing, your own risk tolerance, and lock-in/liquidity needs for unlisted allotments are yours to weigh, and SME allotments in particular carry materially thinner post-listing liquidity than mainboard names.</p>
+
+  <div class="analyst-note">
+    <h3>The actionable set: 8 issues still open for bidding</h3>
+    <p>Of the 33 tracked, only 8 are open for fresh applications today — the rest have either closed (awaiting listing, no longer applyable) or haven't opened yet (price band may still be pending). Ranked by the same composite read as the scorecards above — financial health, valuation, fund usage, and Day-1/Day-2 institutional demand — with the caveat that early-bid multiples can swing hard into the closing session, as several closed issues in this cohort (Pranav Constructions, Asset Reconstruction, Steamhouse) demonstrated by turning a weak Day-2 book into a 20×–126× final close.</p>
+
+    <table class="rank-table">
+      <thead><tr><th>Rank</th><th>Issue</th><th>Closes</th><th>Composite read</th><th>Why</th></tr></thead>
+      <tbody>
+        <tr class="rank-buy">
+          <td>1</td><td class="tcell-name">Manika Plastech <span class="seg-label">Mainboard</span></td><td>16 Sep</td><td class="rank-score">Strong Buy candidate</td>
+          <td>Clean growth-led capex (₹54.93cr plant &amp; machinery vs ₹15cr debt), 100% fresh issue, post-issue P/E a cheap 9.58x, and the book is already oversubscribed 1.49x by Day 1 with retail leading at 2.24x — the strongest all-round combination among names still open. Lead manager Pantomath Capital Advisors carries a strong 2026 bench record (100% positive listings, +17.1% avg gain), reinforcing rather than offsetting the fundamentals case.</td>
+        </tr>
+        <tr class="rank-buy">
+          <td>2</td><td class="tcell-name">Century Business Media <span class="seg-label">SME</span></td><td>16 Sep</td><td class="rank-score">Strong Buy candidate</td>
+          <td>30%+ ROE/ROCE, 11.67x post-issue P/E, and one of the cleanest fund-usage splits in the cohort (only 9% of the ₹17cr raise repays debt). QIB already at 3.51x on Day 1 signals real institutional interest for a name this small — retail lagging at 0.12x is the one soft spot to watch into close. Lead manager Hem Securities is the busiest SME BRLM in this cohort (10 SME IPOs in 2026, 90% positive listings, +35.9% avg gain) — a genuinely strong bench.</td>
+        </tr>
+        <tr class="rank-watch">
+          <td>3</td><td class="tcell-name">Veegaland Developers <span class="seg-label">Mainboard</span></td><td>15 Sep</td><td class="rank-score">Buy on dips / watch QIB</td>
+          <td>100% fresh issue funding project development, no debt repayment — but ROCE of 11.9% is the lowest of any mainboard name here and 25.64x post-issue P/E isn't a discount for that return profile. QIB still soft at 0.49x through Day 2; a real-estate developer's capital-heavy economics deserve the more cautious tag despite decent overall demand. Sole lead manager Cumulative Capital has a thin sample (1-2 issues) but a clean 100% positive-listing record so far — not enough history to lean on heavily either way.</td>
+        </tr>
+        <tr class="rank-watch">
+          <td>4</td><td class="tcell-name">Raksan Transformers <span class="seg-label">SME</span></td><td>15 Sep</td><td class="rank-score">Buy on dips / watch QIB</td>
+          <td>Strong deleveraging story (D/E nearly halved) and 16.98x post-issue P/E, funding a new Haryana facility. QIB has only reached 3.87x with NII lagging badly at 0.16x by Day 2 — institutional conviction needs to build materially in the final session for this one to clear with confidence. Same lead manager as Century Business Media above (Hem Securities) — a genuinely strong SME bench, which slightly offsets the soft NII read.</td>
+        </tr>
+        <tr class="rank-avoid">
+          <td>5</td><td class="tcell-name">Maharaja &amp; Speedex India <span class="seg-label">SME</span></td><td>15 Sep</td><td class="rank-score">Speculative only</td>
+          <td>+176% PAT growth off a small base is real momentum, but 38% of the ₹64cr fresh issue still repays debt, and the book is undersubscribed at 0.48x through Day 2. Small-base percentage gains this large carry real volatility risk on top of weak current demand. Lead manager Choice Capital Advisors' 2026 SME record is a coin-flip (50% positive, roughly flat avg gain) — another reason this stays speculative rather than a clear pass.</td>
+        </tr>
+        <tr class="rank-avoid">
+          <td>6</td><td class="tcell-name">Om Galaxy <span class="seg-label">SME</span></td><td>15 Sep</td><td class="rank-score">Speculative only</td>
+          <td>PAT growth has stalled sharply (+32% FY25 to just +4.5% FY26) even though margins stay healthy. 18.33x post-issue P/E has no disclosed peer to benchmark against, and the book sits under-filled at 0.95x with retail barely present (0.10x) — a soft combination heading into close. Lead manager Indorient Financial Services' only 2026 SME mandate listed at -24% — a genuine red flag that compounds the demand weakness.</td>
+        </tr>
+        <tr class="rank-avoid">
+          <td>7</td><td class="tcell-name">Injecto Polymers <span class="seg-label">SME</span></td><td>16 Sep</td><td class="rank-score">Avoid unless conviction improves</td>
+          <td>The most leveraged name still open (D/E 2.61x) with a thin 4.26% PAT margin from a trading-heavy revenue mix. Day-1 book is soft at 0.29x overall — needs a strong QIB-led final day, similar to what rescued several closed issues this cohort, to be worth the leverage risk. Lead manager Indcap Advisors' sole 2026 track record is genuinely strong (+36.1% listing gain) — one of the few positives working in this issue's favor.</td>
+        </tr>
+        <tr class="rank-avoid">
+          <td>8</td><td class="tcell-name">Panchatv Bharat <span class="seg-label">SME</span></td><td>15 Sep</td><td class="rank-score">Avoid</td>
+          <td>Thin 7.09% PAT margin, D/E of 2.26x, and by far the weakest demand signal in this entire cohort — 0.04x overall by Day 2 with zero recorded QIB interest. Nothing in the fundamentals or the book supports a subscription case here. Lead manager Mark Corporate Advisors' only 2026 mandate also listed at -24% — the fundamentals, the book, and the lead-manager record all point the same direction on this one.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="analyst-note">
+    <h3>On the near-term horizon: the two strongest upcoming stories</h3>
+    <p>Among issues opening in the next ten days (price band already fixed, not yet bidding), two stand out on fundamentals alone — worth pre-positioning research on even though the book hasn't opened:</p>
+    <ul>
+      <li><strong>Kheria Autocomp (SME, opens 17 Sep):</strong> 100% fresh issue funding a new Sanand manufacturing facility, no OFS, no debt repayment. 33.7% ROE/RoNW, PAT up 38.6% in FY26, and a 14.01x post-issue P/E — the cleanest growth-capex profile of any upcoming name in this ledger.</li>
+      <li><strong>SpectraA Technology Solutions (SME, opens 17 Sep):</strong> PAT nearly 2.4x'd in FY26 (₹4.91cr → ₹11.56cr), 46.6% RoNW, 13.63x post-issue P/E for that growth rate — genuinely balanced fund usage (facility capex, term-loan repayment, and working capital roughly evenly split) rather than a single-purpose raise. The one caveat: debt/equity of 1.09x is a real leverage load for its size.</li>
+    </ul>
+    <p>Conversely, <strong>Hero Motors</strong> (opens 16 Sep) and <strong>SS Retail</strong> (opens 16 Sep) both price rich relative to their own return profiles — Hero Motors at a thin 3.46% PAT margin against a P/E north of 90x post-issue at the upper band, and SS Retail at ~53x post-issue P/E on a 2.52% PAT margin retail business. Both are large, well-covered mainboard names likely to draw institutional demand regardless — but the valuation math doesn't leave obvious room for listing-day upside the way the smaller SME names above do.</p>
+  </div>
+
+  <div class="analyst-note">
+    <h3>The one to skip on fundamentals: National Stock Exchange of India (NSE)</h3>
+    <p>NSE is the largest, most anticipated listing in this cohort and will likely draw enormous demand purely on brand and scarcity value — but on the numbers alone it scores the weakest composite in this entire ledger. FY26 revenue fell ~2.4% and PAT fell ~15.5% year-over-year, a rare down year for the exchange. It is a 100% offer-for-sale: every rupee of the ₹22,562cr raise goes to selling shareholders (SBI, MS Strategic, CPPIB and others) — NSE itself receives nothing, so there is no growth-capital story to underwrite the valuation. At the ₹1,785 upper band that's a 35.4x post-issue P/E and 13.76x P/BV on a year of declining earnings. Worth owning for its exchange-monopoly moat and post-listing liquidity if you want long-term index exposure — but the IPO entry price itself is not cheap on this ledger's four filters, and this is the one name here where reputation, not the prospectus, is doing most of the work.</p>
+  </div>
+
+  <div class="analyst-note verdict-box">
+    <h3>Bottom line</h3>
+    <p><strong>If you can only apply to two names before close this week:</strong> Manika Plastech and Century Business Media carry the strongest combination of clean fund usage, reasonable valuation, and real Day-1 institutional demand among everything still open for bidding — Manika Plastech skews toward growth-capex conviction, Century Business Media toward margin quality and a cheap multiple.</p>
+    <p><strong>If you're willing to wait for the book to build:</strong> watch Veegaland Developers and Raksan Transformers into their final bidding session — both have clean fundamentals held back only by soft institutional cover so far, and this cohort has repeatedly shown QIB books can swing from under 1x to 100x+ in the closing hours.</p>
+    <p><strong>Skip or size down:</strong> Maharaja &amp; Speedex India, Om Galaxy, Injecto Polymers and especially Panchatv Bharat combine weaker fundamentals with genuinely poor demand signals — there is no compelling reason on this data to prioritize them over the names above.</p>
+    <p class="disclaimer-line">This section is generated from public DRHP/RHP disclosures and live exchange subscription data as of 13–14 Sep 2026, in the style of a primary-market research note — it is analysis, not a personal investment recommendation. IPO allotment is lottery-based on oversubscription, past growth doesn't guarantee listing-day or long-term performance, and SME allotments carry thinner post-listing liquidity than mainboard names. Verify current price bands, subscription figures and RHP terms directly before applying, and size any application to your own risk tolerance.</p>
+  </div>
+
+</main>
+<footer>
+  IPO Fundamentals Ledger · Figures sourced from company DRHP/RHP via chittorgarh.com; GMP and cohort completeness cross-checked against investorgain.com, ipoplatform.com, ipoji.com · Not investment advice · Data current as of compile date above
+</footer>
+</body>
+</html>
