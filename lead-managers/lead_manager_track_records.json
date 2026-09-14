@@ -1,0 +1,1423 @@
+{
+  "JM Financial Ltd.": {
+    "segments": {
+      "mainboard_2026": {
+        "issues_2026": 15,
+        "amount_cr_2026": 29053.66,
+        "positive_listings": 10,
+        "positive_pct": 67,
+        "negative_listings": 5,
+        "negative_pct": 33,
+        "avg_listing_gain_pct": 16.59
+      }
+    }
+  },
+  "Axis Capital Ltd.": {
+    "segments": {
+      "mainboard_2026": {
+        "issues_2026": 13,
+        "amount_cr_2026": 41061.15,
+        "positive_listings": 8,
+        "positive_pct": 62,
+        "negative_listings": 5,
+        "negative_pct": 38,
+        "avg_listing_gain_pct": 16.11
+      }
+    }
+  },
+  "ICICI Securities Ltd.": {
+    "segments": {
+      "mainboard_2026": {
+        "issues_2026": 12,
+        "amount_cr_2026": 24059.12,
+        "positive_listings": 8,
+        "positive_pct": 67,
+        "negative_listings": 4,
+        "negative_pct": 33,
+        "avg_listing_gain_pct": 22.41
+      }
+    }
+  },
+  "IIFL Capital Services Ltd.": {
+    "segments": {
+      "mainboard_2026": {
+        "issues_2026": 12,
+        "amount_cr_2026": 17173.2,
+        "positive_listings": 5,
+        "positive_pct": 42,
+        "negative_listings": 7,
+        "negative_pct": 58,
+        "avg_listing_gain_pct": 7.93
+      }
+    }
+  },
+  "Motilal Oswal Investment Advisors Ltd.": {
+    "segments": {
+      "mainboard_2026": {
+        "issues_2026": 10,
+        "amount_cr_2026": 17681.59,
+        "positive_listings": 9,
+        "positive_pct": 90,
+        "negative_listings": 1,
+        "negative_pct": 10,
+        "avg_listing_gain_pct": 18.25
+      }
+    }
+  },
+  "Kotak Mahindra Capital Co.Ltd.": {
+    "segments": {
+      "mainboard_2026": {
+        "issues_2026": 9,
+        "amount_cr_2026": 34929.24,
+        "positive_listings": 7,
+        "positive_pct": 78,
+        "negative_listings": 2,
+        "negative_pct": 22,
+        "avg_listing_gain_pct": 21.28
+      }
+    }
+  },
+  "SBI Capital Markets Ltd.": {
+    "segments": {
+      "mainboard_2026": {
+        "issues_2026": 7,
+        "amount_cr_2026": 25121.57,
+        "positive_listings": 4,
+        "positive_pct": 57,
+        "negative_listings": 3,
+        "negative_pct": 43,
+        "avg_listing_gain_pct": 12.34
+      }
+    }
+  },
+  "Equirus Capital Ltd.": {
+    "segments": {
+      "mainboard_2026": {
+        "issues_2026": 5,
+        "amount_cr_2026": 4414.9,
+        "positive_listings": 4,
+        "positive_pct": 80,
+        "negative_listings": 1,
+        "negative_pct": 20,
+        "avg_listing_gain_pct": 13.44
+      }
+    }
+  },
+  "Jefferies India Pvt.Ltd.": {
+    "segments": {
+      "mainboard_2026": {
+        "issues_2026": 5,
+        "amount_cr_2026": 23959.8,
+        "positive_listings": 4,
+        "positive_pct": 80,
+        "negative_listings": 1,
+        "negative_pct": 20,
+        "avg_listing_gain_pct": 14.74
+      }
+    }
+  },
+  "HSBC Securities & Capital Markets (India) Pvt.Ltd.": {
+    "segments": {
+      "mainboard_2026": {
+        "issues_2026": 4,
+        "amount_cr_2026": 15601.12,
+        "positive_listings": 3,
+        "positive_pct": 75,
+        "negative_listings": 1,
+        "negative_pct": 25,
+        "avg_listing_gain_pct": 6.51
+      }
+    }
+  },
+  "Avendus Capital Pvt.Ltd.": {
+    "segments": {
+      "mainboard_2026": {
+        "issues_2026": 4,
+        "amount_cr_2026": 7112.97,
+        "positive_listings": 2,
+        "positive_pct": 50,
+        "negative_listings": 2,
+        "negative_pct": 50,
+        "avg_listing_gain_pct": 1.51
+      }
+    }
+  },
+  "Nuvama Wealth Management Ltd.": {
+    "segments": {
+      "mainboard_2026": {
+        "issues_2026": 4,
+        "amount_cr_2026": 3860.92,
+        "positive_listings": 2,
+        "positive_pct": 50,
+        "negative_listings": 2,
+        "negative_pct": 50,
+        "avg_listing_gain_pct": 8.98
+      }
+    }
+  },
+  "Emkay Global Financial Services Ltd.": {
+    "segments": {
+      "mainboard_2026": {
+        "issues_2026": 4,
+        "amount_cr_2026": 1520.59,
+        "positive_listings": 2,
+        "positive_pct": 50,
+        "negative_listings": 2,
+        "negative_pct": 50,
+        "avg_listing_gain_pct": 10.76
+      }
+    }
+  },
+  "Systematix Corporate Services Ltd.": {
+    "segments": {
+      "mainboard_2026": {
+        "issues_2026": 3,
+        "amount_cr_2026": 1461.12,
+        "positive_listings": 3,
+        "positive_pct": 100,
+        "negative_listings": 0,
+        "negative_pct": 0,
+        "avg_listing_gain_pct": 65.2
+      }
+    }
+  },
+  "Goldman Sachs (India) Securities Pvt.Ltd.": {
+    "segments": {
+      "mainboard_2026": {
+        "issues_2026": 3,
+        "amount_cr_2026": 13897.74,
+        "positive_listings": 1,
+        "positive_pct": 33,
+        "negative_listings": 2,
+        "negative_pct": 67,
+        "avg_listing_gain_pct": 1.21
+      }
+    }
+  },
+  "IDBI Capital Markets & Securities Ltd.": {
+    "segments": {
+      "mainboard_2026": {
+        "issues_2026": 3,
+        "amount_cr_2026": 3349.73,
+        "positive_listings": 2,
+        "positive_pct": 67,
+        "negative_listings": 1,
+        "negative_pct": 33,
+        "avg_listing_gain_pct": 24.55
+      }
+    }
+  },
+  "Nomura Financial Advisory & Securities (India) Pvt.Ltd.": {
+    "segments": {
+      "mainboard_2026": {
+        "issues_2026": 3,
+        "amount_cr_2026": 7903.77,
+        "positive_listings": 2,
+        "positive_pct": 67,
+        "negative_listings": 1,
+        "negative_pct": 33,
+        "avg_listing_gain_pct": 9.92
+      }
+    }
+  },
+  "Mefcom Capital Markets Ltd.": {
+    "segments": {
+      "mainboard_2026": {
+        "issues_2026": 3,
+        "amount_cr_2026": 391.56,
+        "positive_listings": 1,
+        "positive_pct": 33,
+        "negative_listings": 2,
+        "negative_pct": 67,
+        "avg_listing_gain_pct": -2.45
+      },
+      "sme_2026": {
+        "issues_2026": 1,
+        "amount_cr_2026": 53.52,
+        "positive_listings": 1,
+        "positive_pct": 100,
+        "negative_listings": 0,
+        "negative_pct": 0,
+        "avg_listing_gain_pct": 59.78
+      }
+    }
+  },
+  "UBS Securities India Pvt.Ltd.": {
+    "segments": {
+      "mainboard_2026": {
+        "issues_2026": 2,
+        "amount_cr_2026": 11755.22,
+        "positive_listings": 1,
+        "positive_pct": 50,
+        "negative_listings": 1,
+        "negative_pct": 50,
+        "avg_listing_gain_pct": 2.09
+      }
+    }
+  },
+  "JP Morgan India Pvt.Ltd.": {
+    "segments": {
+      "mainboard_2026": {
+        "issues_2026": 2,
+        "amount_cr_2026": 12355.1,
+        "positive_listings": 1,
+        "positive_pct": 50,
+        "negative_listings": 1,
+        "negative_pct": 50,
+        "avg_listing_gain_pct": -2.29
+      }
+    }
+  },
+  "Pantomath Capital Advisors Pvt.Ltd.": {
+    "segments": {
+      "mainboard_2026": {
+        "issues_2026": 2,
+        "amount_cr_2026": 865.37,
+        "positive_listings": 2,
+        "positive_pct": 100,
+        "negative_listings": 0,
+        "negative_pct": 0,
+        "avg_listing_gain_pct": 17.14
+      }
+    }
+  },
+  "360 One WAM Ltd.": {
+    "segments": {
+      "mainboard_2026": {
+        "issues_2026": 2,
+        "amount_cr_2026": 5666.89,
+        "positive_listings": 1,
+        "positive_pct": 50,
+        "negative_listings": 1,
+        "negative_pct": 50,
+        "avg_listing_gain_pct": 16.61
+      }
+    }
+  },
+  "Morgan Stanley India Co.Pvt.Ltd.": {
+    "segments": {
+      "mainboard_2026": {
+        "issues_2026": 2,
+        "amount_cr_2026": 4741.17,
+        "positive_listings": 0,
+        "positive_pct": 0,
+        "negative_listings": 2,
+        "negative_pct": 100,
+        "avg_listing_gain_pct": -8.59
+      }
+    }
+  },
+  "Dam Capital Advisors Ltd.": {
+    "segments": {
+      "mainboard_2026": {
+        "issues_2026": 2,
+        "amount_cr_2026": 1170.0,
+        "positive_listings": 2,
+        "positive_pct": 100,
+        "negative_listings": 0,
+        "negative_pct": 0,
+        "avg_listing_gain_pct": 68.16
+      }
+    }
+  },
+  "Holani Consultants Pvt.Ltd.": {
+    "segments": {
+      "mainboard_2026": {
+        "issues_2026": 2,
+        "amount_cr_2026": 747.96,
+        "positive_listings": 1,
+        "positive_pct": 50,
+        "negative_listings": 1,
+        "negative_pct": 50,
+        "avg_listing_gain_pct": 10.52
+      }
+    }
+  },
+  "Keynote Financial Services Ltd.": {
+    "segments": {
+      "mainboard_2026": {
+        "issues_2026": 2,
+        "amount_cr_2026": 585.78,
+        "positive_listings": 0,
+        "positive_pct": 0,
+        "negative_listings": 2,
+        "negative_pct": 100,
+        "avg_listing_gain_pct": -10.05
+      }
+    }
+  },
+  "Smart Horizon Capital Advisors Pvt.Ltd.": {
+    "segments": {
+      "mainboard_2026": {
+        "issues_2026": 2,
+        "amount_cr_2026": 746.7,
+        "positive_listings": 2,
+        "positive_pct": 100,
+        "negative_listings": 0,
+        "negative_pct": 0,
+        "avg_listing_gain_pct": 4.31
+      },
+      "sme_2026": {
+        "issues_2026": 8,
+        "amount_cr_2026": 393.31,
+        "positive_listings": 6,
+        "positive_pct": 75,
+        "negative_listings": 2,
+        "negative_pct": 25,
+        "avg_listing_gain_pct": 3.55
+      }
+    }
+  },
+  "BOFA Securities India Ltd.": {
+    "segments": {
+      "mainboard_2026": {
+        "issues_2026": 2,
+        "amount_cr_2026": 11412.8,
+        "positive_listings": 2,
+        "positive_pct": 100,
+        "negative_listings": 0,
+        "negative_pct": 0,
+        "avg_listing_gain_pct": 27.06
+      }
+    }
+  },
+  "Arihant Capital Markets Ltd.": {
+    "segments": {
+      "mainboard_2026": {
+        "issues_2026": 1,
+        "amount_cr_2026": 408.79,
+        "positive_listings": 1,
+        "positive_pct": 100,
+        "negative_listings": 0,
+        "negative_pct": 0,
+        "avg_listing_gain_pct": 3.49
+      }
+    }
+  },
+  "Catalyst Capital Partners Pvt.Ltd.": {
+    "segments": {
+      "mainboard_2026": {
+        "issues_2026": 1,
+        "amount_cr_2026": 138.87,
+        "positive_listings": 1,
+        "positive_pct": 100,
+        "negative_listings": 0,
+        "negative_pct": 0,
+        "avg_listing_gain_pct": 18.2
+      }
+    }
+  },
+  "Aryaman Financial Services Ltd.": {
+    "segments": {
+      "mainboard_2026": {
+        "issues_2026": 1,
+        "amount_cr_2026": 367.18,
+        "positive_listings": 1,
+        "positive_pct": 100,
+        "negative_listings": 0,
+        "negative_pct": 0,
+        "avg_listing_gain_pct": 1.96
+      },
+      "sme_2026": {
+        "issues_2026": 2,
+        "amount_cr_2026": 59.51,
+        "positive_listings": 1,
+        "positive_pct": 50,
+        "negative_listings": 1,
+        "negative_pct": 50,
+        "avg_listing_gain_pct": -0.68
+      }
+    }
+  },
+  "Intensive Fiscal Services Pvt.Ltd.": {
+    "segments": {
+      "mainboard_2026": {
+        "issues_2026": 1,
+        "amount_cr_2026": 825.0,
+        "positive_listings": 1,
+        "positive_pct": 100,
+        "negative_listings": 0,
+        "negative_pct": 0,
+        "avg_listing_gain_pct": 15.25
+      }
+    }
+  },
+  "D&A Financial Services Pvt.Ltd.": {
+    "segments": {
+      "mainboard_2026": {
+        "issues_2026": 1,
+        "amount_cr_2026": 126.25,
+        "positive_listings": 0,
+        "positive_pct": 0,
+        "negative_listings": 1,
+        "negative_pct": 100,
+        "avg_listing_gain_pct": -5.0
+      }
+    }
+  },
+  "Beeline Capital Advisors Pvt.Ltd.": {
+    "segments": {
+      "mainboard_2026": {
+        "issues_2026": 1,
+        "amount_cr_2026": 150.06,
+        "positive_listings": 1,
+        "positive_pct": 100,
+        "negative_listings": 0,
+        "negative_pct": 0,
+        "avg_listing_gain_pct": 10.5
+      },
+      "sme_2026": {
+        "issues_2026": 1,
+        "amount_cr_2026": 37.67,
+        "positive_listings": 1,
+        "positive_pct": 100,
+        "negative_listings": 0,
+        "negative_pct": 0,
+        "avg_listing_gain_pct": 35.11
+      }
+    }
+  },
+  "BOI Merchant Bankers Ltd.": {
+    "segments": {
+      "mainboard_2026": {
+        "issues_2026": 1,
+        "amount_cr_2026": 170.0,
+        "positive_listings": 1,
+        "positive_pct": 100,
+        "negative_listings": 0,
+        "negative_pct": 0,
+        "avg_listing_gain_pct": 0.36
+      }
+    }
+  },
+  "PNB Investment Services Ltd.": {
+    "segments": {
+      "mainboard_2026": {
+        "issues_2026": 1,
+        "amount_cr_2026": 170.0,
+        "positive_listings": 1,
+        "positive_pct": 100,
+        "negative_listings": 0,
+        "negative_pct": 0,
+        "avg_listing_gain_pct": 0.36
+      }
+    }
+  },
+  "Monarch Networth Capital Ltd.": {
+    "segments": {
+      "mainboard_2026": {
+        "issues_2026": 1,
+        "amount_cr_2026": 700.0,
+        "positive_listings": 1,
+        "positive_pct": 100,
+        "negative_listings": 0,
+        "negative_pct": 0,
+        "avg_listing_gain_pct": 34.54
+      }
+    }
+  },
+  "HDFC Bank Ltd.": {
+    "segments": {
+      "mainboard_2026": {
+        "issues_2026": 1,
+        "amount_cr_2026": 3812.11,
+        "positive_listings": 1,
+        "positive_pct": 100,
+        "negative_listings": 0,
+        "negative_pct": 0,
+        "avg_listing_gain_pct": 52.94
+      }
+    }
+  },
+  "Share India Capital Services Pvt.Ltd.": {
+    "segments": {
+      "mainboard_2026": {
+        "issues_2026": 1,
+        "amount_cr_2026": 166.8,
+        "positive_listings": 1,
+        "positive_pct": 100,
+        "negative_listings": 0,
+        "negative_pct": 0,
+        "avg_listing_gain_pct": 1.73
+      },
+      "sme_2026": {
+        "issues_2026": 4,
+        "amount_cr_2026": 291.31,
+        "positive_listings": 3,
+        "positive_pct": 75,
+        "negative_listings": 1,
+        "negative_pct": 25,
+        "avg_listing_gain_pct": 15.07
+      }
+    }
+  },
+  "Sundae Capital Advisors Pvt.Ltd.": {
+    "segments": {
+      "mainboard_2026": {
+        "issues_2026": 1,
+        "amount_cr_2026": 290.0,
+        "positive_listings": 1,
+        "positive_pct": 100,
+        "negative_listings": 0,
+        "negative_pct": 0,
+        "avg_listing_gain_pct": 46.82
+      }
+    }
+  },
+  "GYR Capital Advisors Pvt.Ltd.": {
+    "segments": {
+      "mainboard_2026": {
+        "issues_2026": 1,
+        "amount_cr_2026": 282.14,
+        "positive_listings": 1,
+        "positive_pct": 100,
+        "negative_listings": 0,
+        "negative_pct": 0,
+        "avg_listing_gain_pct": 2.56
+      },
+      "sme_2026": {
+        "issues_2026": 9,
+        "amount_cr_2026": 503.12,
+        "positive_listings": 9,
+        "positive_pct": 100,
+        "negative_listings": 0,
+        "negative_pct": 0,
+        "avg_listing_gain_pct": 44.63
+      }
+    }
+  },
+  "Valmiki Leela Capital Pvt.Ltd.": {
+    "segments": {
+      "mainboard_2026": {
+        "issues_2026": 1,
+        "amount_cr_2026": 459.72,
+        "positive_listings": 1,
+        "positive_pct": 100,
+        "negative_listings": 0,
+        "negative_pct": 0,
+        "avg_listing_gain_pct": 9.81
+      }
+    }
+  },
+  "DBS Bank India Ltd.": {
+    "segments": {
+      "mainboard_2026": {
+        "issues_2026": 1,
+        "amount_cr_2026": 9275.22,
+        "positive_listings": 1,
+        "positive_pct": 100,
+        "negative_listings": 0,
+        "negative_pct": 0,
+        "avg_listing_gain_pct": 13.04
+      }
+    }
+  },
+  "Cumulative Capital Pvt.Ltd.": {
+    "segments": {
+      "mainboard_2026": {
+        "issues_2026": 1,
+        "amount_cr_2026": 138.87,
+        "positive_listings": 1,
+        "positive_pct": 100,
+        "negative_listings": 0,
+        "negative_pct": 0,
+        "avg_listing_gain_pct": 18.2
+      },
+      "sme_2026": {
+        "issues_2026": 2,
+        "amount_cr_2026": 37.34,
+        "positive_listings": 2,
+        "positive_pct": 100,
+        "negative_listings": 0,
+        "negative_pct": 0,
+        "avg_listing_gain_pct": 22.1
+      }
+    }
+  },
+  "Interactive Financial Services Ltd.": {
+    "segments": {
+      "mainboard_2026": {
+        "issues_2026": 1,
+        "amount_cr_2026": 110.24,
+        "positive_listings": 0,
+        "positive_pct": 0,
+        "negative_listings": 1,
+        "negative_pct": 100,
+        "avg_listing_gain_pct": -31.35
+      },
+      "sme_2026": {
+        "issues_2026": 4,
+        "amount_cr_2026": 111.46,
+        "positive_listings": 1,
+        "positive_pct": 25,
+        "negative_listings": 3,
+        "negative_pct": 75,
+        "avg_listing_gain_pct": 18.19
+      }
+    }
+  },
+  "New Berry Capitals Pvt.Ltd.": {
+    "segments": {
+      "mainboard_2026": {
+        "issues_2026": 1,
+        "amount_cr_2026": 135.73,
+        "positive_listings": 1,
+        "positive_pct": 100,
+        "negative_listings": 0,
+        "negative_pct": 0,
+        "avg_listing_gain_pct": 48.58
+      }
+    }
+  },
+  "Sarthi Capital Advisors Pvt.Ltd.": {
+    "segments": {
+      "mainboard_2026": {
+        "issues_2026": 1,
+        "amount_cr_2026": 165.0,
+        "positive_listings": 1,
+        "positive_pct": 100,
+        "negative_listings": 0,
+        "negative_pct": 0,
+        "avg_listing_gain_pct": 1.59
+      }
+    }
+  },
+  "Nirbhay Capital Services Pvt.Ltd.": {
+    "segments": {
+      "mainboard_2026": {
+        "issues_2026": 1,
+        "amount_cr_2026": 254.98,
+        "positive_listings": 0,
+        "positive_pct": 0,
+        "negative_listings": 1,
+        "negative_pct": 100,
+        "avg_listing_gain_pct": -7.35
+      }
+    }
+  },
+  "Centrum Capital Ltd.": {
+    "segments": {
+      "mainboard_2026": {
+        "issues_2026": 1,
+        "amount_cr_2026": 925.92,
+        "positive_listings": 1,
+        "positive_pct": 100,
+        "negative_listings": 0,
+        "negative_pct": 0,
+        "avg_listing_gain_pct": 22.01
+      }
+    }
+  },
+  "BOB Capital Markets Ltd.": {
+    "segments": {
+      "mainboard_2026": {
+        "issues_2026": 1,
+        "amount_cr_2026": 3079.88,
+        "positive_listings": 0,
+        "positive_pct": 0,
+        "negative_listings": 1,
+        "negative_pct": 100,
+        "avg_listing_gain_pct": -17.62
+      }
+    }
+  },
+  "BNP Paribas": {
+    "segments": {
+      "mainboard_2026": {
+        "issues_2026": 1,
+        "amount_cr_2026": 3079.88,
+        "positive_listings": 0,
+        "positive_pct": 0,
+        "negative_listings": 1,
+        "negative_pct": 100,
+        "avg_listing_gain_pct": -17.62
+      }
+    }
+  },
+  "Anand Rathi Advisors Ltd.": {
+    "segments": {
+      "mainboard_2026": {
+        "issues_2026": 1,
+        "amount_cr_2026": 1700.0,
+        "positive_listings": 1,
+        "positive_pct": 100,
+        "negative_listings": 0,
+        "negative_pct": 0,
+        "avg_listing_gain_pct": 23.6
+      }
+    }
+  },
+  "Khambatta Securities Ltd.": {
+    "segments": {
+      "mainboard_2026": {
+        "issues_2026": 1,
+        "amount_cr_2026": 251.88,
+        "positive_listings": 1,
+        "positive_pct": 100,
+        "negative_listings": 0,
+        "negative_pct": 0,
+        "avg_listing_gain_pct": 46.77
+      }
+    }
+  },
+  "Centrum Broking Ltd.": {
+    "segments": {
+      "mainboard_2026": {
+        "issues_2026": 1,
+        "amount_cr_2026": 585.0,
+        "positive_listings": 0,
+        "positive_pct": 0,
+        "negative_listings": 1,
+        "negative_pct": 100,
+        "avg_listing_gain_pct": -17.31
+      }
+    }
+  },
+  "Citigroup Global Markets India Pvt.Ltd.": {
+    "segments": {
+      "mainboard_2026": {
+        "issues_2026": 1,
+        "amount_cr_2026": 1788.62,
+        "positive_listings": 0,
+        "positive_pct": 0,
+        "negative_listings": 1,
+        "negative_pct": 100,
+        "avg_listing_gain_pct": -3.53
+      }
+    }
+  },
+  "Dolat Finserv Pvt.Ltd.": {
+    "segments": {
+      "mainboard_2026": {
+        "issues_2026": 1,
+        "amount_cr_2026": 582.8,
+        "positive_listings": 0,
+        "positive_pct": 0,
+        "negative_listings": 1,
+        "negative_pct": 100,
+        "avg_listing_gain_pct": -9.01
+      }
+    }
+  },
+  "Shannon Advisors Pvt.Ltd.": {
+    "segments": {
+      "mainboard_2026": {
+        "issues_2026": 1,
+        "amount_cr_2026": 582.8,
+        "positive_listings": 0,
+        "positive_pct": 0,
+        "negative_listings": 1,
+        "negative_pct": 100,
+        "avg_listing_gain_pct": -9.01
+      }
+    }
+  },
+  "Hem Securities Ltd.": {
+    "segments": {
+      "sme_2026": {
+        "issues_2026": 10,
+        "amount_cr_2026": 985.84,
+        "positive_listings": 9,
+        "positive_pct": 90,
+        "negative_listings": 1,
+        "negative_pct": 10,
+        "avg_listing_gain_pct": 35.92
+      }
+    }
+  },
+  "Corporate Makers Capital Ltd.": {
+    "segments": {
+      "sme_2026": {
+        "issues_2026": 7,
+        "amount_cr_2026": 237.52,
+        "positive_listings": 2,
+        "positive_pct": 29,
+        "negative_listings": 5,
+        "negative_pct": 71,
+        "avg_listing_gain_pct": -0.69
+      }
+    }
+  },
+  "NEXGEN Financial Solutions Pvt.Ltd.": {
+    "segments": {
+      "sme_2026": {
+        "issues_2026": 6,
+        "amount_cr_2026": 289.52,
+        "positive_listings": 4,
+        "positive_pct": 67,
+        "negative_listings": 2,
+        "negative_pct": 33,
+        "avg_listing_gain_pct": 18.89
+      }
+    }
+  },
+  "Horizon Management Pvt.Ltd.": {
+    "segments": {
+      "sme_2026": {
+        "issues_2026": 5,
+        "amount_cr_2026": 225.08,
+        "positive_listings": 3,
+        "positive_pct": 60,
+        "negative_listings": 2,
+        "negative_pct": 40,
+        "avg_listing_gain_pct": -2.4
+      }
+    }
+  },
+  "Finshore Management Services Ltd.": {
+    "segments": {
+      "sme_2026": {
+        "issues_2026": 5,
+        "amount_cr_2026": 187.37,
+        "positive_listings": 4,
+        "positive_pct": 80,
+        "negative_listings": 1,
+        "negative_pct": 20,
+        "avg_listing_gain_pct": 3.76
+      }
+    }
+  },
+  "Seren Capital Pvt.Ltd.": {
+    "segments": {
+      "sme_2026": {
+        "issues_2026": 5,
+        "amount_cr_2026": 225.53,
+        "positive_listings": 4,
+        "positive_pct": 80,
+        "negative_listings": 1,
+        "negative_pct": 20,
+        "avg_listing_gain_pct": 28.27
+      }
+    }
+  },
+  "Capital Square Advisors Pvt.Ltd.": {
+    "segments": {
+      "sme_2026": {
+        "issues_2026": 5,
+        "amount_cr_2026": 184.72,
+        "positive_listings": 1,
+        "positive_pct": 20,
+        "negative_listings": 4,
+        "negative_pct": 80,
+        "avg_listing_gain_pct": -7.19
+      }
+    }
+  },
+  "Marwadi Chandarana Intermediaries Brokers Pvt.Ltd.": {
+    "segments": {
+      "sme_2026": {
+        "issues_2026": 4,
+        "amount_cr_2026": 106.7,
+        "positive_listings": 3,
+        "positive_pct": 75,
+        "negative_listings": 1,
+        "negative_pct": 25,
+        "avg_listing_gain_pct": 4.64
+      }
+    }
+  },
+  "Wealth Mine Networks Ltd.": {
+    "segments": {
+      "sme_2026": {
+        "issues_2026": 4,
+        "amount_cr_2026": 138.86,
+        "positive_listings": 0,
+        "positive_pct": 0,
+        "negative_listings": 4,
+        "negative_pct": 100,
+        "avg_listing_gain_pct": -18.1
+      }
+    }
+  },
+  "Sobhagya Capital Options Pvt.Ltd.": {
+    "segments": {
+      "sme_2026": {
+        "issues_2026": 4,
+        "amount_cr_2026": 128.44,
+        "positive_listings": 1,
+        "positive_pct": 25,
+        "negative_listings": 3,
+        "negative_pct": 75,
+        "avg_listing_gain_pct": -0.24
+      }
+    }
+  },
+  "Socradamus Capital Pvt.Ltd.": {
+    "segments": {
+      "sme_2026": {
+        "issues_2026": 3,
+        "amount_cr_2026": 161.58,
+        "positive_listings": 1,
+        "positive_pct": 33,
+        "negative_listings": 2,
+        "negative_pct": 67,
+        "avg_listing_gain_pct": 20.66
+      }
+    }
+  },
+  "Affinity Global Capital Market Pvt.Ltd.": {
+    "segments": {
+      "sme_2026": {
+        "issues_2026": 2,
+        "amount_cr_2026": 94.38,
+        "positive_listings": 0,
+        "positive_pct": 0,
+        "negative_listings": 2,
+        "negative_pct": 100,
+        "avg_listing_gain_pct": -14.49
+      }
+    }
+  },
+  "Vivro Financial Services Pvt.Ltd.": {
+    "segments": {
+      "sme_2026": {
+        "issues_2026": 2,
+        "amount_cr_2026": 123.17,
+        "positive_listings": 1,
+        "positive_pct": 50,
+        "negative_listings": 1,
+        "negative_pct": 50,
+        "avg_listing_gain_pct": 47.31
+      }
+    }
+  },
+  "Choice Capital Advisors Pvt.Ltd.": {
+    "segments": {
+      "sme_2026": {
+        "issues_2026": 2,
+        "amount_cr_2026": 137.18,
+        "positive_listings": 1,
+        "positive_pct": 50,
+        "negative_listings": 1,
+        "negative_pct": 50,
+        "avg_listing_gain_pct": -0.46
+      }
+    }
+  },
+  "Corporate Capital Ventures Pvt.Ltd.": {
+    "segments": {
+      "sme_2026": {
+        "issues_2026": 2,
+        "amount_cr_2026": 67.31,
+        "positive_listings": 1,
+        "positive_pct": 50,
+        "negative_listings": 1,
+        "negative_pct": 50,
+        "avg_listing_gain_pct": 29.56
+      }
+    }
+  },
+  "Narnolia Financial Services Ltd.": {
+    "segments": {
+      "sme_2026": {
+        "issues_2026": 2,
+        "amount_cr_2026": 86.88,
+        "positive_listings": 1,
+        "positive_pct": 50,
+        "negative_listings": 1,
+        "negative_pct": 50,
+        "avg_listing_gain_pct": -5.91
+      }
+    }
+  },
+  "Rarever Financial Advisors Pvt.Ltd.": {
+    "segments": {
+      "sme_2026": {
+        "issues_2026": 2,
+        "amount_cr_2026": 92.47,
+        "positive_listings": 2,
+        "positive_pct": 100,
+        "negative_listings": 0,
+        "negative_pct": 0,
+        "avg_listing_gain_pct": 49.04
+      }
+    }
+  },
+  "Fintellectual Corporate Advisors Pvt.Ltd.": {
+    "segments": {
+      "sme_2026": {
+        "issues_2026": 2,
+        "amount_cr_2026": 49.11,
+        "positive_listings": 2,
+        "positive_pct": 100,
+        "negative_listings": 0,
+        "negative_pct": 0,
+        "avg_listing_gain_pct": 53.81
+      }
+    }
+  },
+  "Oneview Corporate Advisors Pvt.Ltd.": {
+    "segments": {
+      "sme_2026": {
+        "issues_2026": 2,
+        "amount_cr_2026": 117.51,
+        "positive_listings": 2,
+        "positive_pct": 100,
+        "negative_listings": 0,
+        "negative_pct": 0,
+        "avg_listing_gain_pct": 25.53
+      }
+    }
+  },
+  "Novus Capital Advisors Pvt.Ltd.": {
+    "segments": {
+      "sme_2026": {
+        "issues_2026": 2,
+        "amount_cr_2026": 33.16,
+        "positive_listings": 2,
+        "positive_pct": 100,
+        "negative_listings": 0,
+        "negative_pct": 0,
+        "avg_listing_gain_pct": 8.33
+      }
+    }
+  },
+  "Gretex Corporate Services Ltd.": {
+    "segments": {
+      "sme_2026": {
+        "issues_2026": 2,
+        "amount_cr_2026": 128.27,
+        "positive_listings": 2,
+        "positive_pct": 100,
+        "negative_listings": 0,
+        "negative_pct": 0,
+        "avg_listing_gain_pct": 7.09
+      }
+    }
+  },
+  "Sun Capital Advisory Services Pvt.Ltd.": {
+    "segments": {
+      "sme_2026": {
+        "issues_2026": 2,
+        "amount_cr_2026": 50.55,
+        "positive_listings": 0,
+        "positive_pct": 0,
+        "negative_listings": 2,
+        "negative_pct": 100,
+        "avg_listing_gain_pct": -15.0
+      }
+    }
+  },
+  "Unistone Capital Pvt.Ltd.": {
+    "segments": {
+      "sme_2026": {
+        "issues_2026": 2,
+        "amount_cr_2026": 54.36,
+        "positive_listings": 1,
+        "positive_pct": 50,
+        "negative_listings": 1,
+        "negative_pct": 50,
+        "avg_listing_gain_pct": -7.82
+      }
+    }
+  },
+  "SKI Capital Services Ltd.": {
+    "segments": {
+      "sme_2026": {
+        "issues_2026": 1,
+        "amount_cr_2026": 50.6,
+        "positive_listings": 0,
+        "positive_pct": 0,
+        "negative_listings": 1,
+        "negative_pct": 100,
+        "avg_listing_gain_pct": -5.0
+      }
+    }
+  },
+  "Comfort Securities Ltd.": {
+    "segments": {
+      "sme_2026": {
+        "issues_2026": 1,
+        "amount_cr_2026": 32.42,
+        "positive_listings": 0,
+        "positive_pct": 0,
+        "negative_listings": 1,
+        "negative_pct": 100,
+        "avg_listing_gain_pct": -6.8
+      }
+    }
+  },
+  "Inventure Merchant Banker Services Pvt.Ltd.": {
+    "segments": {
+      "sme_2026": {
+        "issues_2026": 1,
+        "amount_cr_2026": 29.89,
+        "positive_listings": 1,
+        "positive_pct": 100,
+        "negative_listings": 0,
+        "negative_pct": 0,
+        "avg_listing_gain_pct": 8.74
+      }
+    }
+  },
+  "Turnaround Corporate Advisors Pvt.Ltd.": {
+    "segments": {
+      "sme_2026": {
+        "issues_2026": 1,
+        "amount_cr_2026": 20.3,
+        "positive_listings": 1,
+        "positive_pct": 100,
+        "negative_listings": 0,
+        "negative_pct": 0,
+        "avg_listing_gain_pct": 24.48
+      }
+    }
+  },
+  "Master Capital Services Ltd.": {
+    "segments": {
+      "sme_2026": {
+        "issues_2026": 1,
+        "amount_cr_2026": 23.75,
+        "positive_listings": 1,
+        "positive_pct": 100,
+        "negative_listings": 0,
+        "negative_pct": 0,
+        "avg_listing_gain_pct": 3.79
+      }
+    }
+  },
+  "Navigant Corporate Advisors Ltd.": {
+    "segments": {
+      "sme_2026": {
+        "issues_2026": 1,
+        "amount_cr_2026": 38.45,
+        "positive_listings": 0,
+        "positive_pct": 0,
+        "negative_listings": 1,
+        "negative_pct": 100,
+        "avg_listing_gain_pct": -24.0
+      }
+    }
+  },
+  "JJ IPO Advisors Pvt.Ltd.": {
+    "segments": {
+      "sme_2026": {
+        "issues_2026": 1,
+        "amount_cr_2026": 40.21,
+        "positive_listings": 1,
+        "positive_pct": 100,
+        "negative_listings": 0,
+        "negative_pct": 0,
+        "avg_listing_gain_pct": 74.53
+      }
+    }
+  },
+  "Grow House Wealth Management Pvt.Ltd.": {
+    "segments": {
+      "sme_2026": {
+        "issues_2026": 1,
+        "amount_cr_2026": 33.56,
+        "positive_listings": 1,
+        "positive_pct": 100,
+        "negative_listings": 0,
+        "negative_pct": 0,
+        "avg_listing_gain_pct": 10.2
+      }
+    }
+  },
+  "GetFive Advisors Pvt.Ltd.": {
+    "segments": {
+      "sme_2026": {
+        "issues_2026": 1,
+        "amount_cr_2026": 47.63,
+        "positive_listings": 1,
+        "positive_pct": 100,
+        "negative_listings": 0,
+        "negative_pct": 0,
+        "avg_listing_gain_pct": 15.48
+      }
+    }
+  },
+  "Finaax Capital Advisors Pvt.Ltd.": {
+    "segments": {
+      "sme_2026": {
+        "issues_2026": 1,
+        "amount_cr_2026": 46.54,
+        "positive_listings": 1,
+        "positive_pct": 100,
+        "negative_listings": 0,
+        "negative_pct": 0,
+        "avg_listing_gain_pct": 0.72
+      }
+    }
+  },
+  "Khandwala Securities Ltd.": {
+    "segments": {
+      "sme_2026": {
+        "issues_2026": 1,
+        "amount_cr_2026": 25.89,
+        "positive_listings": 0,
+        "positive_pct": 0,
+        "negative_listings": 1,
+        "negative_pct": 100,
+        "avg_listing_gain_pct": -5.69
+      }
+    }
+  },
+  "LSI Financial Services Pvt.Ltd.": {
+    "segments": {
+      "sme_2026": {
+        "issues_2026": 1,
+        "amount_cr_2026": 97.65,
+        "positive_listings": 1,
+        "positive_pct": 100,
+        "negative_listings": 0,
+        "negative_pct": 0,
+        "avg_listing_gain_pct": 8.0
+      }
+    }
+  },
+  "Fedex Securities Pvt.Ltd.": {
+    "segments": {
+      "sme_2026": {
+        "issues_2026": 1,
+        "amount_cr_2026": 33.22,
+        "positive_listings": 0,
+        "positive_pct": 0,
+        "negative_listings": 1,
+        "negative_pct": 100,
+        "avg_listing_gain_pct": -7.79
+      }
+    }
+  },
+  "Corpwis Advisors Pvt.Ltd.": {
+    "segments": {
+      "sme_2026": {
+        "issues_2026": 1,
+        "amount_cr_2026": 32.83,
+        "positive_listings": 0,
+        "positive_pct": 0,
+        "negative_listings": 1,
+        "negative_pct": 100,
+        "avg_listing_gain_pct": -20.12
+      }
+    }
+  },
+  "ERUDORE CAPITAL Pvt.Ltd.": {
+    "segments": {
+      "sme_2026": {
+        "issues_2026": 1,
+        "amount_cr_2026": 84.43,
+        "positive_listings": 0,
+        "positive_pct": 0,
+        "negative_listings": 1,
+        "negative_pct": 100,
+        "avg_listing_gain_pct": -24.0
+      }
+    }
+  },
+  "Indcap Advisors Pvt.Ltd.": {
+    "segments": {
+      "sme_2026": {
+        "issues_2026": 1,
+        "amount_cr_2026": 33.45,
+        "positive_listings": 1,
+        "positive_pct": 100,
+        "negative_listings": 0,
+        "negative_pct": 0,
+        "avg_listing_gain_pct": 36.1
+      }
+    }
+  },
+  "Indorient Financial Services Ltd.": {
+    "segments": {
+      "sme_2026": {
+        "issues_2026": 1,
+        "amount_cr_2026": 76.94,
+        "positive_listings": 0,
+        "positive_pct": 0,
+        "negative_listings": 1,
+        "negative_pct": 100,
+        "avg_listing_gain_pct": -23.99
+      }
+    }
+  },
+  "3Dimension Capital Services Ltd.": {
+    "segments": {
+      "sme_2026": {
+        "issues_2026": 1,
+        "amount_cr_2026": 23.3,
+        "positive_listings": 0,
+        "positive_pct": 0,
+        "negative_listings": 1,
+        "negative_pct": 100,
+        "avg_listing_gain_pct": -5.82
+      }
+    }
+  },
+  "Expert Global Consultants Pvt.Ltd.": {
+    "segments": {
+      "sme_2026": {
+        "issues_2026": 1,
+        "amount_cr_2026": 66.24,
+        "positive_listings": 0,
+        "positive_pct": 0,
+        "negative_listings": 1,
+        "negative_pct": 100,
+        "avg_listing_gain_pct": -7.99
+      }
+    }
+  },
+  "Galactico Corporate Services Ltd.": {
+    "segments": {
+      "sme_2026": {
+        "issues_2026": 1,
+        "amount_cr_2026": 41.82,
+        "positive_listings": 1,
+        "positive_pct": 100,
+        "negative_listings": 0,
+        "negative_pct": 0,
+        "avg_listing_gain_pct": 17.37
+      }
+    }
+  },
+  "Mark Corporate Advisors Pvt.Ltd.": {
+    "segments": {
+      "sme_2026": {
+        "issues_2026": 1,
+        "amount_cr_2026": 28.65,
+        "positive_listings": 0,
+        "positive_pct": 0,
+        "negative_listings": 1,
+        "negative_pct": 100,
+        "avg_listing_gain_pct": -23.96
+      }
+    }
+  },
+  "PL Capital Markets Pvt.Ltd.": {
+    "segments": {},
+    "alltime_fallback": {
+      "issues_handled_alltime": 5,
+      "total_issue_size_cr": 1223,
+      "listed_count": 3,
+      "avg_listing_gain_pct": 5.3,
+      "mainboard": 4,
+      "sme": 1,
+      "note": "Mixed multi-year record: Gala Precision Engineering +36.3% (Sep 2024), Rajshree Polypack -7.5% (2018 SME), Laxmi India Finance -13.0% (Aug 2025). Small sample (3 listed), split results."
+    }
+  },
+  "Credora Partners Pvt.Ltd.": {
+    "segments": {},
+    "alltime_fallback": {
+      "issues_handled_alltime": 4,
+      "total_issue_size_cr": 18,
+      "listed_count": 0,
+      "avg_listing_gain_pct": null,
+      "mainboard": 1,
+      "sme": 3,
+      "note": "Brand-new merchant banker — Amtech Esters (17 Sep 2026 listing) is effectively its market debut; zero prior listed track record to judge by. Treat as an unknown quantity."
+    }
+  },
+  "SMC Capitals Ltd.": {
+    "segments": {},
+    "alltime_fallback": {
+      "issues_handled_alltime": 7,
+      "total_issue_size_cr": 521,
+      "listed_count": 4,
+      "avg_listing_gain_pct": 3.6,
+      "mainboard": 4,
+      "sme": 3,
+      "note": "Modest but consistently non-negative record: Denta Water +10.5% (Jan 2025), Venus Pipes +3.5% (May 2022), Oval Projects +0.3% (Sep 2025), Jinaam's Dress flat (2019). No negative listings in its history, but none are large gains either."
+    }
+  }
+}
