@@ -291,6 +291,69 @@
   tr.rank-buy .rank-score { color: var(--green); }
   tr.rank-watch .rank-score { color: var(--amber); }
   tr.rank-avoid .rank-score { color: var(--red); }
+
+  .sentiment-box {
+    background: #eef1f8;
+    border: 1px solid rgba(20,33,61,0.18);
+    border-left: 4px solid var(--navy);
+    padding: 16px 20px;
+    margin: 18px 0 0;
+    border-radius: 2px;
+  }
+  .sentiment-box h3 {
+    font-family: 'Source Serif 4', serif;
+    font-size: 1.08rem;
+    color: var(--navy);
+    margin: 0 0 8px;
+  }
+  .sentiment-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .sentiment-stat {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.76rem;
+    background: #fffdf6;
+    border: 1px solid rgba(20,33,61,0.12);
+    border-radius: 3px;
+    padding: 6px 10px;
+  }
+  .sentiment-stat .lbl { color: #7a7060; display:block; font-size:0.62rem; text-transform:uppercase; letter-spacing:0.5px; }
+  .sentiment-read {
+    font-size: 0.86rem;
+    color: #3a3226;
+    margin: 6px 0 0;
+  }
+  .read-tag {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.68rem;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-weight: 600;
+  }
+  .read-riskon { background: #dcefe0; color: var(--green); border: 1px solid var(--green); }
+  .read-neutral { background: #f5eccb; color: var(--amber); border: 1px solid var(--amber); }
+  .read-riskoff { background: #f3dcdc; color: var(--red); border: 1px solid var(--red); }
+  .key-points {
+    background: rgba(20,33,61,0.03);
+    border: 1px solid rgba(20,33,61,0.1);
+    border-radius: 3px;
+    padding: 8px 12px;
+    margin: 0 0 10px;
+  }
+  .key-points .kp-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.62rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--gold);
+    display: block;
+    margin-bottom: 4px;
+  }
+  .key-points ul { margin: 0; padding-left: 18px; }
+  .key-points li { font-size: 0.8rem; color: #2a2116; margin-bottom: 3px; }
 </style>
 </head>
 <body>
@@ -321,6 +384,19 @@
     </div>
     <div class="update-box">
       <strong>Update — 15 Sep 2026:</strong> Same-day catch-up rebuild after last night's scheduled 21:31 IST cron run timed out before completing. Cohort refreshed to 33 tracked issues (8 open &#8594; 11 open, 13 closed &#8212; awaiting listing, 9 upcoming). Four issues dropped as already listed since the 14 Sep version: Pranav Constructions (listed 15 Sep 2026), Deepa Jewellers and Rays of Belief/Mom&#8217;s Belief (both listed 8 Sep 2026), and Qualiance International (SME, listed 11 Sep 2026). Newly closed and now awaiting listing since 14 Sep: Veegaland Developers moved to open-and-closing-today status is unaffected, but Manika Plastech and the five 10&#8211;15 Sep SME issues (Maharaja &amp; Speedex India, Om Galaxy, Raksan Transformers, Panchatv Bharat) plus Century Business Media and Injecto Polymers remain open through 15&#8211;16 Sep. One issue newly added to the tracked cohort: Apana Logistics (SME, BSE-only, bid 7&#8211;9 Sep, listing today 15 Sep 2026) &#8212; its final-day subscription (1.26x) and financials were pulled fresh from its own chittorgarh.com detail page since it wasn&#8217;t carried in the 14 Sep ledger. Three SME issues opened for the first time this morning and have no subscription print yet: Quanto Agroworld, Shakti Polytarp, Vama Wovenfab (all bid 15&#8211;17 Sep) &#8212; flagged as pending in their scorecards and excluded from the ranked Buy/Watch/Avoid table pending a Day-1 book. GMP and cohort completeness re-checked against investorgain.com and cross-referenced with fresh NSE (nseindia.com/api/all-upcoming-issues) and BSE SME live-subscription pulls; no discrepancies found in price bands or bidding dates for the mainboard names still open or upcoming. The Analyst Comparison ranked table was fully regenerated for the 11-issue open cohort, not carried over from 14 Sep.
+
+    <div class="sentiment-box">
+      <h3>Market sentiment &amp; listing context <span class="read-tag read-riskoff">Cautious / Risk-off tilt</span></h3>
+      <div class="sentiment-grid">
+        <div class="sentiment-stat"><span class="lbl">Sensex (11 Sep 2026 close)</span>74,781.76 (&minus;0.16% day, &minus;4.08% 1-month)</div>
+        <div class="sentiment-stat"><span class="lbl">Nifty 50 (week of 7&ndash;11 Sep)</span>&minus;2.09% &mdash; 5th straight weekly decline</div>
+        <div class="sentiment-stat"><span class="lbl">FII/FPI net (11 Sep, cash)</span>&minus;₹930.9 Cr (net sellers)</div>
+        <div class="sentiment-stat"><span class="lbl">DII net (11 Sep, cash)</span>+₹1,968.17 Cr (net buyers, partial offset)</div>
+        <div class="sentiment-stat"><span class="lbl">Global backdrop</span>US equities weak (AI-slowdown fears hit chipmakers), 10-yr UST briefly &gt;5%, oil firmer, Fed meeting ahead</div>
+        <div class="sentiment-stat"><span class="lbl">India IPO-pipeline watch</span>Tata Sons listing facing RBI/charter-disclosure friction &mdash; timeline risk for a marquee name</div>
+      </div>
+      <p class="sentiment-read">Read for listing-day risk: five consecutive weekly declines in Nifty, net FII selling only partly offset by DII buying, and a jittery global tape (AI-stock drawdown, rising yields, pre-Fed caution) point to a <strong>risk-off-leaning</strong> backdrop. In this tape, grey-market premiums and listing-day pops tend to compress and issuers/GMP players turn conservative &mdash; strong-fundamentals, well-subscribed issues with a credible lead-manager bench are more likely to hold up than marginal, richly-priced or thinly-subscribed names. Treat the four-question filter scores below with extra weight on Valuation and Subscription for anything listing in the next 5&ndash;10 trading days. Sourced from tradingeconomics.com (index levels), nseindia.com/api/fiidiiTradeReact (FII/DII flows), and Zerodha Pulse market-news aggregation (pulse.zerodha.com) &mdash; refreshed each run; not a trading recommendation.</p>
+    </div>
     </div>
   </section>
 
@@ -344,7 +420,18 @@
       <span class="tag tag-sub-oversubscribed">Subscription: Oversubscribed</span>
       <span class="tag tag-weak">Lead mgr: Caution</span>
     </div>
-      <p class="card-prose">Revenue grew 44% and PAT 89% in the latest disclosed year (FY26), on a PAT margin of 19.01% (FY26) vs 14.49% (FY25) and EBITDA margin of 36.69% (FY26). Debt/equity is a clean 0.31x. ROE 33.82%, ROCE 45.00%, RoNW 33.82%. Post-issue P/E works out to 17.91x on disclosed EPS (P/BV 3.50); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn't confirmed. Fund usage: 100% fresh issue funding working capital and general corporate purposes for container-handling and transportation operations; no itemised capex table disclosed. Book closed/stands at 1.26x overall (Individual Investor 2.23x, NII 0.28x — QIB category not applicable/not disclosed for this fixed-price issue) as of 9 Sep 2026, 6:53 PM (Day 3, final). GMP not yet quoted. Listing scheduled 15 Sep 2026 (today) on BSE SME. Lead manager(s): Corporate Makers Capital Ltd. — track record read: Caution. Corporate Makers Capital Ltd.: 7 listed SME IPOs in 2026 excluding this one, only 2 closed positive (ENS Enterprises +9.6%, Vegorama Punjabi Angithi +61.0%) against 5 negative (Fly-Hi Maritime -24.0%, Q&amp;T Foods -5.0%, Sham Foam -24.0%, Jivial Industries -17.5%, Aureate Trade -5.0%), average listing-day gain roughly -0.7% — a genuine caution flag on the bench for this name.</p>
+            <div class="key-points">
+        <span class="kp-label">Key points</span>
+        <ul>
+        <li>Revenue 44% / PAT 89% growth in FY26</li>
+        <li>PAT margin 19.01% (FY26)</li>
+        <li>Debt/equity 0.31x</li>
+        <li>Post-issue P/E 17.91x</li>
+        <li>Fund usage: 100% fresh issue funding working capital and general corporate purposes for container-handling and transportation operations; no...</li>
+        <li>Subscription: 1.26x overall</li>
+        </ul>
+      </div>
+<p class="card-prose">Revenue grew 44% and PAT 89% in the latest disclosed year (FY26), on a PAT margin of 19.01% (FY26) vs 14.49% (FY25) and EBITDA margin of 36.69% (FY26). Debt/equity is a clean 0.31x. ROE 33.82%, ROCE 45.00%, RoNW 33.82%. Post-issue P/E works out to 17.91x on disclosed EPS (P/BV 3.50); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn't confirmed. Fund usage: 100% fresh issue funding working capital and general corporate purposes for container-handling and transportation operations; no itemised capex table disclosed. Book closed/stands at 1.26x overall (Individual Investor 2.23x, NII 0.28x — QIB category not applicable/not disclosed for this fixed-price issue) as of 9 Sep 2026, 6:53 PM (Day 3, final). GMP not yet quoted. Listing scheduled 15 Sep 2026 (today) on BSE SME. Lead manager(s): Corporate Makers Capital Ltd. — track record read: Caution. Corporate Makers Capital Ltd.: 7 listed SME IPOs in 2026 excluding this one, only 2 closed positive (ENS Enterprises +9.6%, Vegorama Punjabi Angithi +61.0%) against 5 negative (Fly-Hi Maritime -24.0%, Q&amp;T Foods -5.0%, Sham Foam -24.0%, Jivial Industries -17.5%, Aureate Trade -5.0%), average listing-day gain roughly -0.7% — a genuine caution flag on the bench for this name.</p>
     </div>
     
     <div class="ledger-card" id="card-Kanohar-Electricals">
@@ -363,7 +450,18 @@
       <span class="tag tag-sub-very-strong">Subscription: Very strong</span>
       <span class="tag tag-mixed">Lead mgr: Mixed bench</span>
     </div>
-      <p class="card-prose">Revenue grew 45% and PAT 99% in the latest disclosed year (FY26), on a PAT margin of 19.57% (FY26) and EBITDA margin of 27.59% (FY26). Debt/equity is a clean 0.1x. ROE 42.12%, ROCE 70.13%, RoNW 34.80%. Post-issue P/E works out to 38.58x on disclosed EPS (P/BV 12.62); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Capex ₹64.18 Cr + working capital ₹155 Cr (dominant use); balance general corporate. Large OFS (₹755.74 Cr) to promoter family trust. Book closed/stands at 90.59x overall (QIB 215.37x, NII 87.74x, Retail 20.51x) as of 10 Sep 2026, 6:54 PM (Day 3, final). Grey-market premium reads ₹241 (38.13%) as of 13 Sep 2026 (unofficial, unregulated, moves daily — sourced from investorgain.com, treated as sentiment color, not a fundamental). Lead manager(s): Nuvama Wealth Management Ltd., IIFL Capital Services Ltd. — track record read: Mixed bench. Nuvama Wealth Management Ltd.: 4 mainboard IPOs managed in 2026, 50% listed positive, average listing-day gain +9.0%. IIFL Capital Services Ltd.: 12 mainboard IPOs managed in 2026, 42% listed positive, average listing-day gain +7.9%.</p>
+            <div class="key-points">
+        <span class="kp-label">Key points</span>
+        <ul>
+        <li>Revenue 45% / PAT 99% growth in FY26</li>
+        <li>PAT margin 19.57% (FY26)</li>
+        <li>Debt/equity 0.1x</li>
+        <li>Post-issue P/E 38.58x</li>
+        <li>Fund usage: Capex ₹64.18 Cr + working capital ₹155 Cr (dominant use); balance general corporate</li>
+        <li>Subscription: 90.59x overall</li>
+        </ul>
+      </div>
+<p class="card-prose">Revenue grew 45% and PAT 99% in the latest disclosed year (FY26), on a PAT margin of 19.57% (FY26) and EBITDA margin of 27.59% (FY26). Debt/equity is a clean 0.1x. ROE 42.12%, ROCE 70.13%, RoNW 34.80%. Post-issue P/E works out to 38.58x on disclosed EPS (P/BV 12.62); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Capex ₹64.18 Cr + working capital ₹155 Cr (dominant use); balance general corporate. Large OFS (₹755.74 Cr) to promoter family trust. Book closed/stands at 90.59x overall (QIB 215.37x, NII 87.74x, Retail 20.51x) as of 10 Sep 2026, 6:54 PM (Day 3, final). Grey-market premium reads ₹241 (38.13%) as of 13 Sep 2026 (unofficial, unregulated, moves daily — sourced from investorgain.com, treated as sentiment color, not a fundamental). Lead manager(s): Nuvama Wealth Management Ltd., IIFL Capital Services Ltd. — track record read: Mixed bench. Nuvama Wealth Management Ltd.: 4 mainboard IPOs managed in 2026, 50% listed positive, average listing-day gain +9.0%. IIFL Capital Services Ltd.: 12 mainboard IPOs managed in 2026, 42% listed positive, average listing-day gain +7.9%.</p>
     </div>
     
     <div class="ledger-card" id="card-Prasol-Chemicals">
@@ -382,7 +480,18 @@
       <span class="tag tag-sub-oversubscribed">Subscription: Oversubscribed</span>
       <span class="tag tag-strong">Lead mgr: Strong bench</span>
     </div>
-      <p class="card-prose">Revenue grew 22% and PAT 91% in the latest disclosed year (FY26), on a PAT margin of 6.74% (FY26) and EBITDA margin of 11.30% (FY26). Debt/equity is a clean 0.19x. ROE 20.37%, ROCE 22.43%, RoNW 18.53%. Valuation multiples: EPS pre/post 14.33/pending, P/BV pending. Fund usage: Debt repayment ₹60 Cr out of ₹80 Cr fresh issue (75%); balance general corporate + issue expenses. OFS ₹420 Cr dominates total issue size (84%). Book closed/stands at 3.47x overall (QIB 7.59x, NII 1.89x, Retail 1.79x) as of 10 Sep 2026, 6:54 PM (Day 3, final). Grey-market premium reads ₹-15 (-2.22%) as of 13 Sep 2026 (unofficial, unregulated, moves daily — sourced from investorgain.com, treated as sentiment color, not a fundamental). Lead manager(s): Dam Capital Advisors Ltd. — track record read: Strong bench. Dam Capital Advisors Ltd.: 2 mainboard IPOs managed in 2026, 100% listed positive, average listing-day gain +68.2%.</p>
+            <div class="key-points">
+        <span class="kp-label">Key points</span>
+        <ul>
+        <li>Revenue 22% / PAT 91% growth in FY26</li>
+        <li>PAT margin 6.74% (FY26)</li>
+        <li>Debt/equity 0.19x</li>
+        <li>P/E: not yet fully disclosed (pending)</li>
+        <li>Fund usage: Debt repayment ₹60 Cr out of ₹80 Cr fresh issue (75%); balance general corporate + issue expenses</li>
+        <li>Subscription: 3.47x overall</li>
+        </ul>
+      </div>
+<p class="card-prose">Revenue grew 22% and PAT 91% in the latest disclosed year (FY26), on a PAT margin of 6.74% (FY26) and EBITDA margin of 11.30% (FY26). Debt/equity is a clean 0.19x. ROE 20.37%, ROCE 22.43%, RoNW 18.53%. Valuation multiples: EPS pre/post 14.33/pending, P/BV pending. Fund usage: Debt repayment ₹60 Cr out of ₹80 Cr fresh issue (75%); balance general corporate + issue expenses. OFS ₹420 Cr dominates total issue size (84%). Book closed/stands at 3.47x overall (QIB 7.59x, NII 1.89x, Retail 1.79x) as of 10 Sep 2026, 6:54 PM (Day 3, final). Grey-market premium reads ₹-15 (-2.22%) as of 13 Sep 2026 (unofficial, unregulated, moves daily — sourced from investorgain.com, treated as sentiment color, not a fundamental). Lead manager(s): Dam Capital Advisors Ltd. — track record read: Strong bench. Dam Capital Advisors Ltd.: 2 mainboard IPOs managed in 2026, 100% listed positive, average listing-day gain +68.2%.</p>
     </div>
     
     <div class="ledger-card" id="card-Glass-Wall-Systems-India">
@@ -401,7 +510,18 @@
       <span class="tag tag-sub-very-strong">Subscription: Very strong</span>
       <span class="tag tag-mixed">Lead mgr: Mixed bench</span>
     </div>
-      <p class="card-prose">Revenue grew 64% and PAT 46% in the latest disclosed year (FY26), on a PAT margin of 18.34% (FY26) and EBITDA margin of 23.02% (FY26). Debt/equity is a clean 0.03x. ROE 38.62%, ROCE 43.01%, RoNW 32.03%. Post-issue P/E works out to 19.1x on disclosed EPS (P/BV 9.00); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Glass processing unit capex ₹50 Cr (backward integration at Vile Bhagad); balance general corporate + issue expenses. Growth-oriented fresh issue; OFS ₹368 Cr is bulk of total issue. Book closed/stands at 81.65x overall (QIB 167.93x, NII 79.71x, Retail 33.18x) as of 10 Sep 2026, 6:54 PM (Day 3, final). Grey-market premium reads ₹52 (28.57%) as of 13 Sep 2026 (unofficial, unregulated, moves daily — sourced from investorgain.com, treated as sentiment color, not a fundamental). Lead manager(s): IIFL Capital Services Ltd., Motilal Oswal Investment Advisors Ltd. — track record read: Mixed bench. IIFL Capital Services Ltd.: 12 mainboard IPOs managed in 2026, 42% listed positive, average listing-day gain +7.9%. Motilal Oswal Investment Advisors Ltd.: 10 mainboard IPOs managed in 2026, 90% listed positive, average listing-day gain +18.2%.</p>
+            <div class="key-points">
+        <span class="kp-label">Key points</span>
+        <ul>
+        <li>Revenue 64% / PAT 46% growth in FY26</li>
+        <li>PAT margin 18.34% (FY26)</li>
+        <li>Debt/equity 0.03x</li>
+        <li>Post-issue P/E 19.1x</li>
+        <li>Fund usage: Glass processing unit capex ₹50 Cr (backward integration at Vile Bhagad); balance general corporate + issue expenses</li>
+        <li>Subscription: 81.65x overall</li>
+        </ul>
+      </div>
+<p class="card-prose">Revenue grew 64% and PAT 46% in the latest disclosed year (FY26), on a PAT margin of 18.34% (FY26) and EBITDA margin of 23.02% (FY26). Debt/equity is a clean 0.03x. ROE 38.62%, ROCE 43.01%, RoNW 32.03%. Post-issue P/E works out to 19.1x on disclosed EPS (P/BV 9.00); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Glass processing unit capex ₹50 Cr (backward integration at Vile Bhagad); balance general corporate + issue expenses. Growth-oriented fresh issue; OFS ₹368 Cr is bulk of total issue. Book closed/stands at 81.65x overall (QIB 167.93x, NII 79.71x, Retail 33.18x) as of 10 Sep 2026, 6:54 PM (Day 3, final). Grey-market premium reads ₹52 (28.57%) as of 13 Sep 2026 (unofficial, unregulated, moves daily — sourced from investorgain.com, treated as sentiment color, not a fundamental). Lead manager(s): IIFL Capital Services Ltd., Motilal Oswal Investment Advisors Ltd. — track record read: Mixed bench. IIFL Capital Services Ltd.: 12 mainboard IPOs managed in 2026, 42% listed positive, average listing-day gain +7.9%. Motilal Oswal Investment Advisors Ltd.: 10 mainboard IPOs managed in 2026, 90% listed positive, average listing-day gain +18.2%.</p>
     </div>
     
     <div class="ledger-card" id="card-Rentomojo">
@@ -420,7 +540,18 @@
       <span class="tag tag-sub-very-strong">Subscription: Very strong</span>
       <span class="tag tag-mixed">Lead mgr: Mixed bench</span>
     </div>
-      <p class="card-prose">Revenue grew 45% and PAT 142% in the latest disclosed year (FY26), on a PAT margin of 26.95% (FY26) and EBITDA margin of 41.48% (FY26). Debt/equity sits at a moderate 0.63x. ROE 43.51%, ROCE 25.34%, RoNW 43.51%. Post-issue P/E works out to 40.73x on disclosed EPS (P/BV 14.10); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Debt repayment ₹70 Cr + warehouse/store lease payments ₹42.5 Cr; balance general corporate. Large OFS component from VC investors (Accel, Edelweiss, IDG, ValueQuest). Book closed/stands at 72.89x overall (QIB pending breakout, NII pending breakout, Retail pending breakout) as of 11 Sep 2026, 6:53 PM (Day 3, final). Grey-market premium reads ₹157 (38.86%) as of 13 Sep 2026 (unofficial, unregulated, moves daily — sourced from investorgain.com, treated as sentiment color, not a fundamental). Lead manager(s): Motilal Oswal Investment Advisors Ltd., Axis Capital Ltd., IIFL Capital Services Ltd. — track record read: Mixed bench. Motilal Oswal Investment Advisors Ltd.: 10 mainboard IPOs managed in 2026, 90% listed positive, average listing-day gain +18.2%. Axis Capital Ltd.: 13 mainboard IPOs managed in 2026, 62% listed positive, average listing-day gain +16.1%. IIFL Capital Services Ltd.: 12 mainboard IPOs managed in 2026, 42% listed positive, average listing-day gain +7.9%.</p>
+            <div class="key-points">
+        <span class="kp-label">Key points</span>
+        <ul>
+        <li>Revenue 45% / PAT 142% growth in FY26</li>
+        <li>PAT margin 26.95% (FY26)</li>
+        <li>Debt/equity 0.63x</li>
+        <li>Post-issue P/E 40.73x</li>
+        <li>Fund usage: Debt repayment ₹70 Cr + warehouse/store lease payments ₹42.5 Cr; balance general corporate</li>
+        <li>Subscription: 72.89x overall</li>
+        </ul>
+      </div>
+<p class="card-prose">Revenue grew 45% and PAT 142% in the latest disclosed year (FY26), on a PAT margin of 26.95% (FY26) and EBITDA margin of 41.48% (FY26). Debt/equity sits at a moderate 0.63x. ROE 43.51%, ROCE 25.34%, RoNW 43.51%. Post-issue P/E works out to 40.73x on disclosed EPS (P/BV 14.10); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Debt repayment ₹70 Cr + warehouse/store lease payments ₹42.5 Cr; balance general corporate. Large OFS component from VC investors (Accel, Edelweiss, IDG, ValueQuest). Book closed/stands at 72.89x overall (QIB pending breakout, NII pending breakout, Retail pending breakout) as of 11 Sep 2026, 6:53 PM (Day 3, final). Grey-market premium reads ₹157 (38.86%) as of 13 Sep 2026 (unofficial, unregulated, moves daily — sourced from investorgain.com, treated as sentiment color, not a fundamental). Lead manager(s): Motilal Oswal Investment Advisors Ltd., Axis Capital Ltd., IIFL Capital Services Ltd. — track record read: Mixed bench. Motilal Oswal Investment Advisors Ltd.: 10 mainboard IPOs managed in 2026, 90% listed positive, average listing-day gain +18.2%. Axis Capital Ltd.: 13 mainboard IPOs managed in 2026, 62% listed positive, average listing-day gain +16.1%. IIFL Capital Services Ltd.: 12 mainboard IPOs managed in 2026, 42% listed positive, average listing-day gain +7.9%.</p>
     </div>
     
     <div class="ledger-card" id="card-Asset-Reconstruction-Co-India">
@@ -439,7 +570,18 @@
       <span class="tag tag-sub-very-strong">Subscription: Very strong</span>
       <span class="tag tag-mixed">Lead mgr: Mixed bench</span>
     </div>
-      <p class="card-prose">Revenue grew 26% and PAT 15% in the latest disclosed year (FY26), on a PAT margin of 51.95% (FY26) and EBITDA margin of 78.21% (FY26). Debt/equity sits at a moderate 0.39x. ROE pending, ROCE pending, RoNW 13.95%. Post-issue P/E works out to 11.08x on disclosed EPS (P/BV 1.70); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: 100% Offer for Sale — no funds to company; proceeds to Avenue India Resurgence, SBI, Lathe Investment and Federal Bank. Book closed/stands at 20.10x overall (QIB 52.65x, NII 15.69x, Retail 3.39x) as of 11 Sep 2026, 6:54 PM (Day 3, final). Grey-market premium reads ₹15 (10.79%) as of 13 Sep 2026 (unofficial, unregulated, moves daily — sourced from investorgain.com, treated as sentiment color, not a fundamental). Lead manager(s): IIFL Capital Services Ltd., IDBI Capital Markets &amp; Securities Ltd., JM Financial Ltd. — track record read: Mixed bench. IIFL Capital Services Ltd.: 12 mainboard IPOs managed in 2026, 42% listed positive, average listing-day gain +7.9%. IDBI Capital Markets &amp; Securities Ltd.: 3 mainboard IPOs managed in 2026, 67% listed positive, average listing-day gain +24.6%. JM Financial Ltd.: 15 mainboard IPOs managed in 2026, 67% listed positive, average listing-day gain +16.6%.</p>
+            <div class="key-points">
+        <span class="kp-label">Key points</span>
+        <ul>
+        <li>Revenue 26% / PAT 15% growth in FY26</li>
+        <li>PAT margin 51.95% (FY26)</li>
+        <li>Debt/equity 0.39x</li>
+        <li>Post-issue P/E 11.08x</li>
+        <li>Fund usage: 100% Offer for Sale — no funds to company; proceeds to Avenue India Resurgence, SBI, Lathe Investment and Federal Bank</li>
+        <li>Subscription: 20.10x overall</li>
+        </ul>
+      </div>
+<p class="card-prose">Revenue grew 26% and PAT 15% in the latest disclosed year (FY26), on a PAT margin of 51.95% (FY26) and EBITDA margin of 78.21% (FY26). Debt/equity sits at a moderate 0.39x. ROE pending, ROCE pending, RoNW 13.95%. Post-issue P/E works out to 11.08x on disclosed EPS (P/BV 1.70); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: 100% Offer for Sale — no funds to company; proceeds to Avenue India Resurgence, SBI, Lathe Investment and Federal Bank. Book closed/stands at 20.10x overall (QIB 52.65x, NII 15.69x, Retail 3.39x) as of 11 Sep 2026, 6:54 PM (Day 3, final). Grey-market premium reads ₹15 (10.79%) as of 13 Sep 2026 (unofficial, unregulated, moves daily — sourced from investorgain.com, treated as sentiment color, not a fundamental). Lead manager(s): IIFL Capital Services Ltd., IDBI Capital Markets &amp; Securities Ltd., JM Financial Ltd. — track record read: Mixed bench. IIFL Capital Services Ltd.: 12 mainboard IPOs managed in 2026, 42% listed positive, average listing-day gain +7.9%. IDBI Capital Markets &amp; Securities Ltd.: 3 mainboard IPOs managed in 2026, 67% listed positive, average listing-day gain +24.6%. JM Financial Ltd.: 15 mainboard IPOs managed in 2026, 67% listed positive, average listing-day gain +16.6%.</p>
     </div>
     
     <div class="ledger-card" id="card-Manipal-Payment--Identity-Solutions-Manipal-Cards">
@@ -458,7 +600,18 @@
       <span class="tag tag-sub-pending">Subscription: Pending</span>
       <span class="tag tag-mixed">Lead mgr: Mixed bench</span>
     </div>
-      <p class="card-prose">Revenue grew 6% and PAT -10% in the latest disclosed year (FY26), on a PAT margin of 18.68% (FY26) vs 22.10% (FY25) and EBITDA margin of 33.60% (FY26). Debt/equity is a clean 0.0x. ROE 29.35%, ROCE 32.69%, RoNW 22.93%. Post-issue P/E works out to 31.02x on disclosed EPS (P/BV 6.94); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Capital expenditure on equipment ₹238.43 Cr (100% of fresh issue); balance general corporate. PAT declined 10% YoY despite revenue growth — margin flag. Book closed/stands at pending overall (QIB pending, NII pending, Retail pending) as of pending final tally. Grey-market premium reads ₹-2 (-0.59%) as of 13 Sep 2026 (unofficial, unregulated, moves daily — sourced from investorgain.com, treated as sentiment color, not a fundamental). Lead manager(s): Motilal Oswal Investment Advisors Ltd., Axis Capital Ltd., ICICI Securities Ltd., IIFL Capital Services Ltd., Nuvama Wealth Management Ltd. — track record read: Mixed bench. Motilal Oswal Investment Advisors Ltd.: 10 mainboard IPOs managed in 2026, 90% listed positive, average listing-day gain +18.2%. Axis Capital Ltd.: 13 mainboard IPOs managed in 2026, 62% listed positive, average listing-day gain +16.1%. ICICI Securities Ltd.: 12 mainboard IPOs managed in 2026, 67% listed positive, average listing-day gain +22.4%. IIFL Capital Services Ltd.: 12 mainboard IPOs managed in 2026, 42% listed positive, average listing-day gain +7.9%. Nuvama Wealth Management Ltd.: 4 mainboard IPOs managed in 2026, 50% listed positive, average listing-day gain +9.0%.</p>
+            <div class="key-points">
+        <span class="kp-label">Key points</span>
+        <ul>
+        <li>Revenue 6% / PAT -10% growth in FY26</li>
+        <li>PAT margin 18.68% (FY26)</li>
+        <li>Debt/equity 0.0x</li>
+        <li>Post-issue P/E 31.02x</li>
+        <li>Fund usage: Capital expenditure on equipment ₹238.43 Cr (100% of fresh issue); balance general corporate</li>
+        <li>Subscription: book not yet closed / pending final tally</li>
+        </ul>
+      </div>
+<p class="card-prose">Revenue grew 6% and PAT -10% in the latest disclosed year (FY26), on a PAT margin of 18.68% (FY26) vs 22.10% (FY25) and EBITDA margin of 33.60% (FY26). Debt/equity is a clean 0.0x. ROE 29.35%, ROCE 32.69%, RoNW 22.93%. Post-issue P/E works out to 31.02x on disclosed EPS (P/BV 6.94); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Capital expenditure on equipment ₹238.43 Cr (100% of fresh issue); balance general corporate. PAT declined 10% YoY despite revenue growth — margin flag. Book closed/stands at pending overall (QIB pending, NII pending, Retail pending) as of pending final tally. Grey-market premium reads ₹-2 (-0.59%) as of 13 Sep 2026 (unofficial, unregulated, moves daily — sourced from investorgain.com, treated as sentiment color, not a fundamental). Lead manager(s): Motilal Oswal Investment Advisors Ltd., Axis Capital Ltd., ICICI Securities Ltd., IIFL Capital Services Ltd., Nuvama Wealth Management Ltd. — track record read: Mixed bench. Motilal Oswal Investment Advisors Ltd.: 10 mainboard IPOs managed in 2026, 90% listed positive, average listing-day gain +18.2%. Axis Capital Ltd.: 13 mainboard IPOs managed in 2026, 62% listed positive, average listing-day gain +16.1%. ICICI Securities Ltd.: 12 mainboard IPOs managed in 2026, 67% listed positive, average listing-day gain +22.4%. IIFL Capital Services Ltd.: 12 mainboard IPOs managed in 2026, 42% listed positive, average listing-day gain +7.9%. Nuvama Wealth Management Ltd.: 4 mainboard IPOs managed in 2026, 50% listed positive, average listing-day gain +9.0%.</p>
     </div>
     
     <div class="ledger-card" id="card-Steamhouse-India">
@@ -477,7 +630,18 @@
       <span class="tag tag-sub-very-strong">Subscription: Very strong</span>
       <span class="tag tag-strong">Lead mgr: Strong bench</span>
     </div>
-      <p class="card-prose">Revenue grew 24% and PAT 24% in the latest disclosed year (FY26), on a PAT margin of 7.81% (FY26) and EBITDA margin of 16.99% (FY26). Debt/equity of 1.57x is on the leveraged side for this cohort. ROE 22.36%, ROCE 16.06%, RoNW 23.60%. Post-issue P/E works out to 57.86x on disclosed EPS (P/BV 11.17); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Debt repayment ₹180 Cr + capex across 3 facilities (Ankleshwar, Panoli, Dahej SEZ) ₹114 Cr combined; balance general corporate. Mixed use, debt-heavy. Book closed/stands at 32.07x overall (QIB 46.19x, NII 46.60x, Retail 17.78x) as of 11 Sep 2026, 6:53 PM (Day 3, final). Grey-market premium reads ₹21 (25.93%) as of 13 Sep 2026 (unofficial, unregulated, moves daily — sourced from investorgain.com, treated as sentiment color, not a fundamental). Lead manager(s): Equirus Capital Ltd. — track record read: Strong bench. Equirus Capital Ltd.: 5 mainboard IPOs managed in 2026, 80% listed positive, average listing-day gain +13.4%.</p>
+            <div class="key-points">
+        <span class="kp-label">Key points</span>
+        <ul>
+        <li>Revenue 24% / PAT 24% growth in FY26</li>
+        <li>PAT margin 7.81% (FY26)</li>
+        <li>Debt/equity 1.57x</li>
+        <li>Post-issue P/E 57.86x</li>
+        <li>Fund usage: Debt repayment ₹180 Cr + capex across 3 facilities (Ankleshwar, Panoli, Dahej SEZ) ₹114 Cr combined; balance general corporate</li>
+        <li>Subscription: 32.07x overall</li>
+        </ul>
+      </div>
+<p class="card-prose">Revenue grew 24% and PAT 24% in the latest disclosed year (FY26), on a PAT margin of 7.81% (FY26) and EBITDA margin of 16.99% (FY26). Debt/equity of 1.57x is on the leveraged side for this cohort. ROE 22.36%, ROCE 16.06%, RoNW 23.60%. Post-issue P/E works out to 57.86x on disclosed EPS (P/BV 11.17); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Debt repayment ₹180 Cr + capex across 3 facilities (Ankleshwar, Panoli, Dahej SEZ) ₹114 Cr combined; balance general corporate. Mixed use, debt-heavy. Book closed/stands at 32.07x overall (QIB 46.19x, NII 46.60x, Retail 17.78x) as of 11 Sep 2026, 6:53 PM (Day 3, final). Grey-market premium reads ₹21 (25.93%) as of 13 Sep 2026 (unofficial, unregulated, moves daily — sourced from investorgain.com, treated as sentiment color, not a fundamental). Lead manager(s): Equirus Capital Ltd. — track record read: Strong bench. Equirus Capital Ltd.: 5 mainboard IPOs managed in 2026, 80% listed positive, average listing-day gain +13.4%.</p>
     </div>
     
     <div class="ledger-card" id="card-LCC-Projects">
@@ -496,7 +660,18 @@
       <span class="tag tag-sub-very-strong">Subscription: Very strong</span>
       <span class="tag tag-strong">Lead mgr: Strong bench</span>
     </div>
-      <p class="card-prose">Revenue grew 24% and PAT 28% in the latest disclosed year (FY26), on a PAT margin of 7.96% (FY26) and EBITDA margin of 14.44% (FY26). Debt/equity sits at a moderate 0.97x. ROE 32.24%, ROCE 27.13%, RoNW 32.24%. Post-issue P/E works out to 14.76x on disclosed EPS (P/BV 4.47); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Equipment purchase ₹14.69 Cr + debt repayment ₹180 Cr (majority); balance general corporate. Also OFS ₹169 Cr to 2 promoters. Book closed/stands at 49.57x overall (QIB 78.73x, NII 64.91x, Retail 26.34x) as of 11 Sep 2026, 6:52 PM (Day 3, final). Grey-market premium reads ₹64 (43.84%) as of 13 Sep 2026 (unofficial, unregulated, moves daily — sourced from investorgain.com, treated as sentiment color, not a fundamental). Lead manager(s): Motilal Oswal Investment Advisors Ltd. — track record read: Strong bench. Motilal Oswal Investment Advisors Ltd.: 10 mainboard IPOs managed in 2026, 90% listed positive, average listing-day gain +18.2%.</p>
+            <div class="key-points">
+        <span class="kp-label">Key points</span>
+        <ul>
+        <li>Revenue 24% / PAT 28% growth in FY26</li>
+        <li>PAT margin 7.96% (FY26)</li>
+        <li>Debt/equity 0.97x</li>
+        <li>Post-issue P/E 14.76x</li>
+        <li>Fund usage: Equipment purchase ₹14.69 Cr + debt repayment ₹180 Cr (majority); balance general corporate</li>
+        <li>Subscription: 49.57x overall</li>
+        </ul>
+      </div>
+<p class="card-prose">Revenue grew 24% and PAT 28% in the latest disclosed year (FY26), on a PAT margin of 7.96% (FY26) and EBITDA margin of 14.44% (FY26). Debt/equity sits at a moderate 0.97x. ROE 32.24%, ROCE 27.13%, RoNW 32.24%. Post-issue P/E works out to 14.76x on disclosed EPS (P/BV 4.47); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Equipment purchase ₹14.69 Cr + debt repayment ₹180 Cr (majority); balance general corporate. Also OFS ₹169 Cr to 2 promoters. Book closed/stands at 49.57x overall (QIB 78.73x, NII 64.91x, Retail 26.34x) as of 11 Sep 2026, 6:52 PM (Day 3, final). Grey-market premium reads ₹64 (43.84%) as of 13 Sep 2026 (unofficial, unregulated, moves daily — sourced from investorgain.com, treated as sentiment color, not a fundamental). Lead manager(s): Motilal Oswal Investment Advisors Ltd. — track record read: Strong bench. Motilal Oswal Investment Advisors Ltd.: 10 mainboard IPOs managed in 2026, 90% listed positive, average listing-day gain +18.2%.</p>
     </div>
     
     <div class="ledger-card" id="card-Karamtara-Engineering">
@@ -515,7 +690,18 @@
       <span class="tag tag-sub-very-strong">Subscription: Very strong</span>
       <span class="tag tag-mixed">Lead mgr: Mixed bench</span>
     </div>
-      <p class="card-prose">Revenue grew 36% and PAT 64% in the latest disclosed year (FY26), on a PAT margin of 5.30% (FY26) and EBITDA margin of 11.55% (FY26). Debt/equity sits at a moderate 0.84x. ROE 20.77%, ROCE 23.27%, RoNW 20.78%. Post-issue P/E works out to 35.72x on disclosed EPS (P/BV 6.09); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Debt repayment ₹600 Cr — 100% of fresh issue proceeds go to lender prepayment; no growth capex earmarked. Book closed/stands at 66.01x overall (QIB 168.19x, NII 51.17x, Retail 13.98x) as of 11 Sep 2026, 6:52 PM (Day 3, final). Grey-market premium reads ₹71 (27.95%) as of 13 Sep 2026 (unofficial, unregulated, moves daily — sourced from investorgain.com, treated as sentiment color, not a fundamental). Lead manager(s): JM Financial Ltd., ICICI Securities Ltd., IIFL Capital Services Ltd. — track record read: Mixed bench. JM Financial Ltd.: 15 mainboard IPOs managed in 2026, 67% listed positive, average listing-day gain +16.6%. ICICI Securities Ltd.: 12 mainboard IPOs managed in 2026, 67% listed positive, average listing-day gain +22.4%. IIFL Capital Services Ltd.: 12 mainboard IPOs managed in 2026, 42% listed positive, average listing-day gain +7.9%.</p>
+            <div class="key-points">
+        <span class="kp-label">Key points</span>
+        <ul>
+        <li>Revenue 36% / PAT 64% growth in FY26</li>
+        <li>PAT margin 5.30% (FY26)</li>
+        <li>Debt/equity 0.84x</li>
+        <li>Post-issue P/E 35.72x</li>
+        <li>Fund usage: Debt repayment ₹600 Cr — 100% of fresh issue proceeds go to lender prepayment; no growth capex earmarked</li>
+        <li>Subscription: 66.01x overall</li>
+        </ul>
+      </div>
+<p class="card-prose">Revenue grew 36% and PAT 64% in the latest disclosed year (FY26), on a PAT margin of 5.30% (FY26) and EBITDA margin of 11.55% (FY26). Debt/equity sits at a moderate 0.84x. ROE 20.77%, ROCE 23.27%, RoNW 20.78%. Post-issue P/E works out to 35.72x on disclosed EPS (P/BV 6.09); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Debt repayment ₹600 Cr — 100% of fresh issue proceeds go to lender prepayment; no growth capex earmarked. Book closed/stands at 66.01x overall (QIB 168.19x, NII 51.17x, Retail 13.98x) as of 11 Sep 2026, 6:52 PM (Day 3, final). Grey-market premium reads ₹71 (27.95%) as of 13 Sep 2026 (unofficial, unregulated, moves daily — sourced from investorgain.com, treated as sentiment color, not a fundamental). Lead manager(s): JM Financial Ltd., ICICI Securities Ltd., IIFL Capital Services Ltd. — track record read: Mixed bench. JM Financial Ltd.: 15 mainboard IPOs managed in 2026, 67% listed positive, average listing-day gain +16.6%. ICICI Securities Ltd.: 12 mainboard IPOs managed in 2026, 67% listed positive, average listing-day gain +22.4%. IIFL Capital Services Ltd.: 12 mainboard IPOs managed in 2026, 42% listed positive, average listing-day gain +7.9%.</p>
     </div>
     
     <div class="ledger-card" id="card-Infrax-Renewable">
@@ -534,7 +720,18 @@
       <span class="tag tag-sub-oversubscribed">Subscription: Oversubscribed</span>
       <span class="tag tag-mixed">Lead mgr: Mixed bench</span>
     </div>
-      <p class="card-prose">Revenue grew 206% and PAT 258% in the latest disclosed year (FY26), on a PAT margin of 10.94% (FY26) and EBITDA margin of 15.62% (FY26). Debt/equity sits at a moderate 0.44x. ROE 115.54%, ROCE 63.89%, RoNW 64.68%. Post-issue P/E works out to 14.5x on disclosed EPS (P/BV 6.59); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Machinery/equipment capex ₹12.29 Cr + working capital ₹17 Cr; growth-oriented, very small company (FY24 base ₹9.66 Cr revenue — treat growth rates with caution). Book closed/stands at 2.05x overall (QIB —, NII 1.39x, Retail 1.90x) as of 11 Sep 2026, 6:52 PM (Day 3, final). GMP not yet quoted. Lead manager(s): Smart Horizon Capital Advisors Pvt.Ltd. — track record read: Mixed bench. Smart Horizon Capital Advisors Pvt.Ltd.: 2 mainboard IPOs managed in 2026, 100% listed positive, average listing-day gain +4.3%.</p>
+            <div class="key-points">
+        <span class="kp-label">Key points</span>
+        <ul>
+        <li>Revenue 206% / PAT 258% growth in FY26</li>
+        <li>PAT margin 10.94% (FY26)</li>
+        <li>Debt/equity 0.44x</li>
+        <li>Post-issue P/E 14.5x</li>
+        <li>Fund usage: Machinery/equipment capex ₹12.29 Cr + working capital ₹17 Cr; growth-oriented, very small company (FY24 base ₹9.66 Cr revenue — treat...</li>
+        <li>Subscription: 2.05x overall</li>
+        </ul>
+      </div>
+<p class="card-prose">Revenue grew 206% and PAT 258% in the latest disclosed year (FY26), on a PAT margin of 10.94% (FY26) and EBITDA margin of 15.62% (FY26). Debt/equity sits at a moderate 0.44x. ROE 115.54%, ROCE 63.89%, RoNW 64.68%. Post-issue P/E works out to 14.5x on disclosed EPS (P/BV 6.59); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Machinery/equipment capex ₹12.29 Cr + working capital ₹17 Cr; growth-oriented, very small company (FY24 base ₹9.66 Cr revenue — treat growth rates with caution). Book closed/stands at 2.05x overall (QIB —, NII 1.39x, Retail 1.90x) as of 11 Sep 2026, 6:52 PM (Day 3, final). GMP not yet quoted. Lead manager(s): Smart Horizon Capital Advisors Pvt.Ltd. — track record read: Mixed bench. Smart Horizon Capital Advisors Pvt.Ltd.: 2 mainboard IPOs managed in 2026, 100% listed positive, average listing-day gain +4.3%.</p>
     </div>
     
     <div class="ledger-card" id="card-Vinod-Texworld">
@@ -553,7 +750,18 @@
       <span class="tag tag-sub-oversubscribed">Subscription: Oversubscribed</span>
       <span class="tag tag-strong">Lead mgr: Strong bench</span>
     </div>
-      <p class="card-prose">Revenue grew 2% and PAT 13% in the latest disclosed year (FY26), on a PAT margin of 3.04% (FY26) and EBITDA margin of 6.66% (FY26). Debt/equity of 1.65x is on the leveraged side for this cohort. ROE 24.31%, ROCE 31.80%, RoNW 24.31%. Post-issue P/E works out to 14.6x on disclosed EPS (P/BV 2.55); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Plant expansion ₹6.39 Cr + debt repayment ₹7.15 Cr + working capital ₹20.35 Cr; balance general corporate + issue expenses. Thin PAT margin (3%), elevated leverage. Book closed/stands at 1.60x overall (QIB —, NII 0.30x, Retail 2.91x) as of 11 Sep 2026, 6:54 PM (Day 3, final). Grey-market premium reads ₹1 (1.06%) as of 13 Sep 2026 (unofficial, unregulated, moves daily — sourced from investorgain.com, treated as sentiment color, not a fundamental). Lead manager(s): Novus Capital Advisors Pvt.Ltd. — track record read: Strong bench. Novus Capital Advisors Pvt.Ltd.: 2 SME IPOs managed in 2026, 100% listed positive, average listing-day gain +8.3%.</p>
+            <div class="key-points">
+        <span class="kp-label">Key points</span>
+        <ul>
+        <li>Revenue 2% / PAT 13% growth in FY26</li>
+        <li>PAT margin 3.04% (FY26)</li>
+        <li>Debt/equity 1.65x</li>
+        <li>Post-issue P/E 14.6x</li>
+        <li>Fund usage: Plant expansion ₹6.39 Cr + debt repayment ₹7.15 Cr + working capital ₹20.35 Cr; balance general corporate + issue expenses</li>
+        <li>Subscription: 1.60x overall</li>
+        </ul>
+      </div>
+<p class="card-prose">Revenue grew 2% and PAT 13% in the latest disclosed year (FY26), on a PAT margin of 3.04% (FY26) and EBITDA margin of 6.66% (FY26). Debt/equity of 1.65x is on the leveraged side for this cohort. ROE 24.31%, ROCE 31.80%, RoNW 24.31%. Post-issue P/E works out to 14.6x on disclosed EPS (P/BV 2.55); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Plant expansion ₹6.39 Cr + debt repayment ₹7.15 Cr + working capital ₹20.35 Cr; balance general corporate + issue expenses. Thin PAT margin (3%), elevated leverage. Book closed/stands at 1.60x overall (QIB —, NII 0.30x, Retail 2.91x) as of 11 Sep 2026, 6:54 PM (Day 3, final). Grey-market premium reads ₹1 (1.06%) as of 13 Sep 2026 (unofficial, unregulated, moves daily — sourced from investorgain.com, treated as sentiment color, not a fundamental). Lead manager(s): Novus Capital Advisors Pvt.Ltd. — track record read: Strong bench. Novus Capital Advisors Pvt.Ltd.: 2 SME IPOs managed in 2026, 100% listed positive, average listing-day gain +8.3%.</p>
     </div>
     
     <div class="ledger-card" id="card-Amtech-Esters">
@@ -572,7 +780,18 @@
       <span class="tag tag-sub-very-strong">Subscription: Very strong</span>
       <span class="tag tag-mixed">Lead mgr: Unproven</span>
     </div>
-      <p class="card-prose">Revenue grew 10% and PAT 13% in the latest disclosed year (FY26), on a PAT margin of 10.28% (FY26) and EBITDA margin of 18.41% (FY26). Debt/equity is a clean 0.17x. ROE 24.17%, ROCE 30.16%, RoNW 24.17%. Post-issue P/E works out to 15.69x on disclosed EPS (P/BV 2.47, computed from issue price ₹75 / NAV ₹30.38 — not independently peer-verified); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Investment in subsidiary (Croda Pigments) via debt for capex/working capital ₹8.81 Cr + debt repayment ₹4.20 Cr; balance for unidentified acquisitions. Small, clean balance sheet (D/E 0.17). Book closed/stands at 25.70x overall (QIB 15.07x, NII 32.32x, Retail 28.93x) as of 11 Sep 2026, 6:54 PM (Day 3, final). Grey-market premium reads ₹7 (9.33%) as of 13 Sep 2026 (unofficial, unregulated, moves daily — sourced from investorgain.com, treated as sentiment color, not a fundamental). Lead manager(s): Credora Partners Pvt.Ltd. — track record read: Unproven. Credora Partners Pvt.Ltd.: Brand-new merchant banker — Amtech Esters (17 Sep 2026 listing) is effectively its market debut; zero prior listed track record to judge by. Treat as an unknown quantity.</p>
+            <div class="key-points">
+        <span class="kp-label">Key points</span>
+        <ul>
+        <li>Revenue 10% / PAT 13% growth in FY26</li>
+        <li>PAT margin 10.28% (FY26)</li>
+        <li>Debt/equity 0.17x</li>
+        <li>Post-issue P/E 15.69x</li>
+        <li>Fund usage: Investment in subsidiary (Croda Pigments) via debt for capex/working capital ₹8.81 Cr + debt repayment ₹4.20 Cr; balance for...</li>
+        <li>Subscription: 25.70x overall</li>
+        </ul>
+      </div>
+<p class="card-prose">Revenue grew 10% and PAT 13% in the latest disclosed year (FY26), on a PAT margin of 10.28% (FY26) and EBITDA margin of 18.41% (FY26). Debt/equity is a clean 0.17x. ROE 24.17%, ROCE 30.16%, RoNW 24.17%. Post-issue P/E works out to 15.69x on disclosed EPS (P/BV 2.47, computed from issue price ₹75 / NAV ₹30.38 — not independently peer-verified); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Investment in subsidiary (Croda Pigments) via debt for capex/working capital ₹8.81 Cr + debt repayment ₹4.20 Cr; balance for unidentified acquisitions. Small, clean balance sheet (D/E 0.17). Book closed/stands at 25.70x overall (QIB 15.07x, NII 32.32x, Retail 28.93x) as of 11 Sep 2026, 6:54 PM (Day 3, final). Grey-market premium reads ₹7 (9.33%) as of 13 Sep 2026 (unofficial, unregulated, moves daily — sourced from investorgain.com, treated as sentiment color, not a fundamental). Lead manager(s): Credora Partners Pvt.Ltd. — track record read: Unproven. Credora Partners Pvt.Ltd.: Brand-new merchant banker — Amtech Esters (17 Sep 2026 listing) is effectively its market debut; zero prior listed track record to judge by. Treat as an unknown quantity.</p>
     </div>
     
     <div class="ledger-card" id="card-Veegaland-Developers">
@@ -591,7 +810,18 @@
       <span class="tag tag-sub-oversubscribed">Subscription: Oversubscribed</span>
       <span class="tag tag-strong">Lead mgr: Strong bench</span>
     </div>
-      <p class="card-prose">Revenue grew 30% and PAT 30% in the latest disclosed year (FY26), on a PAT margin of 10.47% (FY26) and EBITDA margin of 16.78% (FY26). Debt/equity sits at a moderate 0.32x. ROE 16.02%, ROCE 11.89%, RoNW 16.02%. Post-issue P/E works out to 25.64x on disclosed EPS (P/BV 1.77); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Project development funding ₹119.83 Cr (Ongoing + Upcoming Projects) + unidentified land acquisition/general corporate. 100% growth capex, no debt repayment or OFS component. Book closed/stands at 1.25x overall (QIB 0.49x, NII 1.01x, Retail 1.78x) as of 11 Sep 2026, 5:09 PM (Day 2). Grey-market premium reads ₹15 (10.71%) as of 13 Sep 2026 (unofficial, unregulated, moves daily — sourced from investorgain.com, treated as sentiment color, not a fundamental). BSE-only book (as of 9/12/2026 5:00:00 PM): 0.26x overall — QIB 0.00x, NII 0.12x, Retail 0.47x (BSE bids only, separate from the combined BSE+NSE multiples above). Bidding closes today, 15 Sep 2026 — final book not yet printed as of compile time. Lead manager(s): Cumulative Capital Pvt.Ltd. — track record read: Strong bench. Cumulative Capital Pvt.Ltd.: 1 mainboard IPOs managed in 2026, 100% listed positive, average listing-day gain +18.2%.</p>
+            <div class="key-points">
+        <span class="kp-label">Key points</span>
+        <ul>
+        <li>Revenue 30% / PAT 30% growth in FY26</li>
+        <li>PAT margin 10.47% (FY26)</li>
+        <li>Debt/equity 0.32x</li>
+        <li>Post-issue P/E 25.64x</li>
+        <li>Fund usage: Project development funding ₹119.83 Cr (Ongoing + Upcoming Projects) + unidentified land acquisition/general corporate</li>
+        <li>Subscription: 1.25x overall</li>
+        </ul>
+      </div>
+<p class="card-prose">Revenue grew 30% and PAT 30% in the latest disclosed year (FY26), on a PAT margin of 10.47% (FY26) and EBITDA margin of 16.78% (FY26). Debt/equity sits at a moderate 0.32x. ROE 16.02%, ROCE 11.89%, RoNW 16.02%. Post-issue P/E works out to 25.64x on disclosed EPS (P/BV 1.77); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Project development funding ₹119.83 Cr (Ongoing + Upcoming Projects) + unidentified land acquisition/general corporate. 100% growth capex, no debt repayment or OFS component. Book closed/stands at 1.25x overall (QIB 0.49x, NII 1.01x, Retail 1.78x) as of 11 Sep 2026, 5:09 PM (Day 2). Grey-market premium reads ₹15 (10.71%) as of 13 Sep 2026 (unofficial, unregulated, moves daily — sourced from investorgain.com, treated as sentiment color, not a fundamental). BSE-only book (as of 9/12/2026 5:00:00 PM): 0.26x overall — QIB 0.00x, NII 0.12x, Retail 0.47x (BSE bids only, separate from the combined BSE+NSE multiples above). Bidding closes today, 15 Sep 2026 — final book not yet printed as of compile time. Lead manager(s): Cumulative Capital Pvt.Ltd. — track record read: Strong bench. Cumulative Capital Pvt.Ltd.: 1 mainboard IPOs managed in 2026, 100% listed positive, average listing-day gain +18.2%.</p>
     </div>
     
     <div class="ledger-card" id="card-Maharaja--Speedex-India">
@@ -610,7 +840,18 @@
       <span class="tag tag-sub-undersubscribed">Subscription: Undersubscribed</span>
       <span class="tag tag-weak">Lead mgr: Caution</span>
     </div>
-      <p class="card-prose">Revenue grew 31% and PAT 175% in the latest disclosed year (FY26), on a PAT margin of 12.51% (FY26) and EBITDA margin of 18.36% (FY26). Debt/equity sits at a moderate 0.92x. ROE pending, ROCE 54.60%, RoNW 80.47%. Post-issue P/E works out to 19.81x on disclosed EPS (P/BV 8.97); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Debt repayment ₹24.10 Cr + capex on plant/machinery ₹21.42 Cr at subsidiary; balance general corporate. Mixed. Book closed/stands at 0.48x overall (QIB 0.10x, NII 0.80x, Retail 0.56x) as of 11 Sep 2026, 5:08 PM (Day 2). Grey-market premium reads ₹45 (24.19%) as of 13 Sep 2026 (unofficial, unregulated, moves daily — sourced from investorgain.com, treated as sentiment color, not a fundamental). BSE-only book (as of 9/12/2026 5:00:00 PM): 0.53x overall — QIB 0.10x, NII —, Retail 0.59x (BSE bids only, separate from the combined BSE+NSE multiples above). Bidding closes today, 15 Sep 2026 — final book not yet printed as of compile time. Lead manager(s): Choice Capital Advisors Pvt.Ltd. — track record read: Caution. Choice Capital Advisors Pvt.Ltd.: 2 SME IPOs managed in 2026, 50% listed positive, average listing-day gain -0.5%.</p>
+            <div class="key-points">
+        <span class="kp-label">Key points</span>
+        <ul>
+        <li>Revenue 31% / PAT 175% growth in FY26</li>
+        <li>PAT margin 12.51% (FY26)</li>
+        <li>Debt/equity 0.92x</li>
+        <li>Post-issue P/E 19.81x</li>
+        <li>Fund usage: Debt repayment ₹24.10 Cr + capex on plant/machinery ₹21.42 Cr at subsidiary; balance general corporate</li>
+        <li>Subscription: 0.48x overall</li>
+        </ul>
+      </div>
+<p class="card-prose">Revenue grew 31% and PAT 175% in the latest disclosed year (FY26), on a PAT margin of 12.51% (FY26) and EBITDA margin of 18.36% (FY26). Debt/equity sits at a moderate 0.92x. ROE pending, ROCE 54.60%, RoNW 80.47%. Post-issue P/E works out to 19.81x on disclosed EPS (P/BV 8.97); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Debt repayment ₹24.10 Cr + capex on plant/machinery ₹21.42 Cr at subsidiary; balance general corporate. Mixed. Book closed/stands at 0.48x overall (QIB 0.10x, NII 0.80x, Retail 0.56x) as of 11 Sep 2026, 5:08 PM (Day 2). Grey-market premium reads ₹45 (24.19%) as of 13 Sep 2026 (unofficial, unregulated, moves daily — sourced from investorgain.com, treated as sentiment color, not a fundamental). BSE-only book (as of 9/12/2026 5:00:00 PM): 0.53x overall — QIB 0.10x, NII —, Retail 0.59x (BSE bids only, separate from the combined BSE+NSE multiples above). Bidding closes today, 15 Sep 2026 — final book not yet printed as of compile time. Lead manager(s): Choice Capital Advisors Pvt.Ltd. — track record read: Caution. Choice Capital Advisors Pvt.Ltd.: 2 SME IPOs managed in 2026, 50% listed positive, average listing-day gain -0.5%.</p>
     </div>
     
     <div class="ledger-card" id="card-Om-Galaxy">
@@ -629,7 +870,18 @@
       <span class="tag tag-sub-undersubscribed">Subscription: Undersubscribed</span>
       <span class="tag tag-weak">Lead mgr: Caution</span>
     </div>
-      <p class="card-prose">Revenue grew 10% and PAT 5% in the latest disclosed year (FY26), on a PAT margin of 13.42% (FY26) and EBITDA margin of 26.33% (FY26). Debt/equity sits at a moderate 0.45x. ROE 22.13%, ROCE 20.39%, RoNW 22.13%. Post-issue P/E works out to 18.33x on disclosed EPS (P/BV 2.50); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: New manufacturing unit capex ₹74.66 Cr (consolidation + capacity expansion) + debt repayment ₹14 Cr; growth-tilted. Book closed/stands at 0.95x overall (QIB 3.11x, NII 0.05x, Retail 0.10x) as of 11 Sep 2026, 5:08 PM (Day 2). GMP not yet quoted. BSE-only book (as of 9/12/2026 5:00:00 PM): 0.95x overall — QIB 3.11x, NII —, Retail 0.10x (BSE bids only, separate from the combined BSE+NSE multiples above). Bidding closes today, 15 Sep 2026 — final book not yet printed as of compile time. Lead manager(s): Indorient Financial Services Ltd. — track record read: Caution. Indorient Financial Services Ltd.: 1 SME IPOs managed in 2026, 0% listed positive, average listing-day gain -24.0%.</p>
+            <div class="key-points">
+        <span class="kp-label">Key points</span>
+        <ul>
+        <li>Revenue 10% / PAT 5% growth in FY26</li>
+        <li>PAT margin 13.42% (FY26)</li>
+        <li>Debt/equity 0.45x</li>
+        <li>Post-issue P/E 18.33x</li>
+        <li>Fund usage: New manufacturing unit capex ₹74.66 Cr (consolidation + capacity expansion) + debt repayment ₹14 Cr; growth-tilted</li>
+        <li>Subscription: 0.95x overall</li>
+        </ul>
+      </div>
+<p class="card-prose">Revenue grew 10% and PAT 5% in the latest disclosed year (FY26), on a PAT margin of 13.42% (FY26) and EBITDA margin of 26.33% (FY26). Debt/equity sits at a moderate 0.45x. ROE 22.13%, ROCE 20.39%, RoNW 22.13%. Post-issue P/E works out to 18.33x on disclosed EPS (P/BV 2.50); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: New manufacturing unit capex ₹74.66 Cr (consolidation + capacity expansion) + debt repayment ₹14 Cr; growth-tilted. Book closed/stands at 0.95x overall (QIB 3.11x, NII 0.05x, Retail 0.10x) as of 11 Sep 2026, 5:08 PM (Day 2). GMP not yet quoted. BSE-only book (as of 9/12/2026 5:00:00 PM): 0.95x overall — QIB 3.11x, NII —, Retail 0.10x (BSE bids only, separate from the combined BSE+NSE multiples above). Bidding closes today, 15 Sep 2026 — final book not yet printed as of compile time. Lead manager(s): Indorient Financial Services Ltd. — track record read: Caution. Indorient Financial Services Ltd.: 1 SME IPOs managed in 2026, 0% listed positive, average listing-day gain -24.0%.</p>
     </div>
     
     <div class="ledger-card" id="card-Raksan-Transformers">
@@ -648,7 +900,18 @@
       <span class="tag tag-sub-oversubscribed">Subscription: Oversubscribed</span>
       <span class="tag tag-strong">Lead mgr: Strong bench</span>
     </div>
-      <p class="card-prose">Revenue grew 12% and PAT 65% in the latest disclosed year (FY26), on a PAT margin of 9.25% (FY26) and EBITDA margin of 12.87% (FY26). Debt/equity is a clean 0.27x. ROE 55.32%, ROCE 46.72%, RoNW 43.41%. Post-issue P/E works out to 16.98x on disclosed EPS (P/BV 18.98); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: New manufacturing facility capex (Sonepat, Haryana) ₹62.14 Cr + working capital ₹35 Cr + debt repayment ₹7.28 Cr. Growth-tilted. Book closed/stands at 1.31x overall (QIB 3.87x, NII 0.16x, Retail 0.35x) as of 11 Sep 2026, 5:09 PM (Day 2). Grey-market premium reads ₹30 (10.99%) as of 13 Sep 2026 (unofficial, unregulated, moves daily — sourced from investorgain.com, treated as sentiment color, not a fundamental). BSE-only book (as of 9/12/2026 5:00:00 PM): 1.30x overall — QIB 3.87x, NII —, Retail 0.36x (BSE bids only, separate from the combined BSE+NSE multiples above). Bidding closes today, 15 Sep 2026 — final book not yet printed as of compile time. Lead manager(s): Hem Securities Ltd. — track record read: Strong bench. Hem Securities Ltd.: 10 SME IPOs managed in 2026, 90% listed positive, average listing-day gain +35.9%.</p>
+            <div class="key-points">
+        <span class="kp-label">Key points</span>
+        <ul>
+        <li>Revenue 12% / PAT 65% growth in FY26</li>
+        <li>PAT margin 9.25% (FY26)</li>
+        <li>Debt/equity 0.27x</li>
+        <li>Post-issue P/E 16.98x</li>
+        <li>Fund usage: New manufacturing facility capex (Sonepat, Haryana) ₹62.14 Cr + working capital ₹35 Cr + debt repayment ₹7.28 Cr</li>
+        <li>Subscription: 1.31x overall</li>
+        </ul>
+      </div>
+<p class="card-prose">Revenue grew 12% and PAT 65% in the latest disclosed year (FY26), on a PAT margin of 9.25% (FY26) and EBITDA margin of 12.87% (FY26). Debt/equity is a clean 0.27x. ROE 55.32%, ROCE 46.72%, RoNW 43.41%. Post-issue P/E works out to 16.98x on disclosed EPS (P/BV 18.98); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: New manufacturing facility capex (Sonepat, Haryana) ₹62.14 Cr + working capital ₹35 Cr + debt repayment ₹7.28 Cr. Growth-tilted. Book closed/stands at 1.31x overall (QIB 3.87x, NII 0.16x, Retail 0.35x) as of 11 Sep 2026, 5:09 PM (Day 2). Grey-market premium reads ₹30 (10.99%) as of 13 Sep 2026 (unofficial, unregulated, moves daily — sourced from investorgain.com, treated as sentiment color, not a fundamental). BSE-only book (as of 9/12/2026 5:00:00 PM): 1.30x overall — QIB 3.87x, NII —, Retail 0.36x (BSE bids only, separate from the combined BSE+NSE multiples above). Bidding closes today, 15 Sep 2026 — final book not yet printed as of compile time. Lead manager(s): Hem Securities Ltd. — track record read: Strong bench. Hem Securities Ltd.: 10 SME IPOs managed in 2026, 90% listed positive, average listing-day gain +35.9%.</p>
     </div>
     
     <div class="ledger-card" id="card-Panchatv-Bharat">
@@ -667,7 +930,18 @@
       <span class="tag tag-sub-undersubscribed">Subscription: Undersubscribed</span>
       <span class="tag tag-weak">Lead mgr: Caution</span>
     </div>
-      <p class="card-prose">Revenue grew 16% and PAT 42% in the latest disclosed year (FY26), on a PAT margin of 7.09% (FY26) and EBITDA margin of 11.32% (FY26). Debt/equity of 2.26x is on the leveraged side for this cohort. ROE 89.99%, ROCE 24.01%, RoNW 31.93%. Post-issue P/E works out to 20.32x on disclosed EPS (P/BV 4.54); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Property purchase/renovation ₹6.00 Cr + working capital ₹11.50 Cr; balance general corporate + issue expenses. Growth-oriented, but high leverage (D/E 2.26). Book closed/stands at 0.04x overall (QIB —, NII —, Retail 0.07x) as of 11 Sep 2026, 5:08 PM (Day 2). Grey-market premium reads ₹11 (7.86%) as of 13 Sep 2026 (unofficial, unregulated, moves daily — sourced from investorgain.com, treated as sentiment color, not a fundamental). BSE-only book (as of 9/12/2026 5:00:00 PM): — overall — QIB —, NII —, Retail — (BSE bids only, separate from the combined BSE+NSE multiples above). Bidding closes today, 15 Sep 2026 — final book not yet printed as of compile time. Lead manager(s): Mark Corporate Advisors Pvt.Ltd. — track record read: Caution. Mark Corporate Advisors Pvt.Ltd.: 1 SME IPOs managed in 2026, 0% listed positive, average listing-day gain -24.0%.</p>
+            <div class="key-points">
+        <span class="kp-label">Key points</span>
+        <ul>
+        <li>Revenue 16% / PAT 42% growth in FY26</li>
+        <li>PAT margin 7.09% (FY26)</li>
+        <li>Debt/equity 2.26x</li>
+        <li>Post-issue P/E 20.32x</li>
+        <li>Fund usage: Property purchase/renovation ₹6.00 Cr + working capital ₹11.50 Cr; balance general corporate + issue expenses</li>
+        <li>Subscription: 0.04x overall</li>
+        </ul>
+      </div>
+<p class="card-prose">Revenue grew 16% and PAT 42% in the latest disclosed year (FY26), on a PAT margin of 7.09% (FY26) and EBITDA margin of 11.32% (FY26). Debt/equity of 2.26x is on the leveraged side for this cohort. ROE 89.99%, ROCE 24.01%, RoNW 31.93%. Post-issue P/E works out to 20.32x on disclosed EPS (P/BV 4.54); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Property purchase/renovation ₹6.00 Cr + working capital ₹11.50 Cr; balance general corporate + issue expenses. Growth-oriented, but high leverage (D/E 2.26). Book closed/stands at 0.04x overall (QIB —, NII —, Retail 0.07x) as of 11 Sep 2026, 5:08 PM (Day 2). Grey-market premium reads ₹11 (7.86%) as of 13 Sep 2026 (unofficial, unregulated, moves daily — sourced from investorgain.com, treated as sentiment color, not a fundamental). BSE-only book (as of 9/12/2026 5:00:00 PM): — overall — QIB —, NII —, Retail — (BSE bids only, separate from the combined BSE+NSE multiples above). Bidding closes today, 15 Sep 2026 — final book not yet printed as of compile time. Lead manager(s): Mark Corporate Advisors Pvt.Ltd. — track record read: Caution. Mark Corporate Advisors Pvt.Ltd.: 1 SME IPOs managed in 2026, 0% listed positive, average listing-day gain -24.0%.</p>
     </div>
     
     <div class="ledger-card" id="card-Manika-Plastech">
@@ -686,7 +960,18 @@
       <span class="tag tag-sub-oversubscribed">Subscription: Oversubscribed</span>
       <span class="tag tag-strong">Lead mgr: Strong bench</span>
     </div>
-      <p class="card-prose">Revenue grew 6% and PAT 16% in the latest disclosed year (FY26), on a PAT margin of 5.12% (FY26) and EBITDA margin of 13.34% (FY26). Debt/equity sits at a moderate 0.6x. ROE 15.18% (FY26), ROCE 18.77% (FY26), RoNW 15.18%. Post-issue P/E works out to 9.58x on disclosed EPS (P/BV 2.77); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Plant &amp; machinery capex ₹54.93 Cr + debt repayment ₹15 Cr; balance general corporate. Growth-oriented. Book closed/stands at 1.49x overall (QIB 0.36x, NII 1.26x, Retail 2.24x) as of 11 Sep 2026, 5:08 PM (Day 1). Grey-market premium reads ₹11 (25.58%) as of 13 Sep 2026 (unofficial, unregulated, moves daily — sourced from investorgain.com, treated as sentiment color, not a fundamental). BSE-only book (as of 9/12/2026 5:00:00 PM): 0.52x overall — QIB 0.35x, NII 0.27x, Retail 0.72x (BSE bids only, separate from the combined BSE+NSE multiples above). Lead manager(s): Pantomath Capital Advisors Pvt.Ltd. — track record read: Strong bench. Pantomath Capital Advisors Pvt.Ltd.: 2 mainboard IPOs managed in 2026, 100% listed positive, average listing-day gain +17.1%.</p>
+            <div class="key-points">
+        <span class="kp-label">Key points</span>
+        <ul>
+        <li>Revenue 6% / PAT 16% growth in FY26</li>
+        <li>PAT margin 5.12% (FY26)</li>
+        <li>Debt/equity 0.6x</li>
+        <li>Post-issue P/E 9.58x</li>
+        <li>Fund usage: Plant &amp; machinery capex ₹54.93 Cr + debt repayment ₹15 Cr; balance general corporate</li>
+        <li>Subscription: 1.49x overall</li>
+        </ul>
+      </div>
+<p class="card-prose">Revenue grew 6% and PAT 16% in the latest disclosed year (FY26), on a PAT margin of 5.12% (FY26) and EBITDA margin of 13.34% (FY26). Debt/equity sits at a moderate 0.6x. ROE 15.18% (FY26), ROCE 18.77% (FY26), RoNW 15.18%. Post-issue P/E works out to 9.58x on disclosed EPS (P/BV 2.77); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Plant &amp; machinery capex ₹54.93 Cr + debt repayment ₹15 Cr; balance general corporate. Growth-oriented. Book closed/stands at 1.49x overall (QIB 0.36x, NII 1.26x, Retail 2.24x) as of 11 Sep 2026, 5:08 PM (Day 1). Grey-market premium reads ₹11 (25.58%) as of 13 Sep 2026 (unofficial, unregulated, moves daily — sourced from investorgain.com, treated as sentiment color, not a fundamental). BSE-only book (as of 9/12/2026 5:00:00 PM): 0.52x overall — QIB 0.35x, NII 0.27x, Retail 0.72x (BSE bids only, separate from the combined BSE+NSE multiples above). Lead manager(s): Pantomath Capital Advisors Pvt.Ltd. — track record read: Strong bench. Pantomath Capital Advisors Pvt.Ltd.: 2 mainboard IPOs managed in 2026, 100% listed positive, average listing-day gain +17.1%.</p>
     </div>
     
     <div class="ledger-card" id="card-Injecto-Polymers">
@@ -705,7 +990,18 @@
       <span class="tag tag-sub-undersubscribed">Subscription: Undersubscribed</span>
       <span class="tag tag-strong">Lead mgr: Strong bench</span>
     </div>
-      <p class="card-prose">Revenue grew 44% and PAT 97% in the latest disclosed year (FY26), on a PAT margin of 4.26% (FY26) and EBITDA margin of 10.13% (FY26). Debt/equity of 2.61x is on the leveraged side for this cohort. ROE 28.94%, ROCE 15.64%, RoNW 41.73%. Post-issue P/E works out to 12.99x on disclosed EPS (P/BV 2.40); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Debt repayment ₹10 Cr + capex for Phase IV manufacturing expansion (West Bengal) ₹30.5 Cr; growth-tilted but elevated leverage (D/E 2.61). Book closed/stands at 0.29x overall (QIB 1.02x, NII 0.08x, Retail 0.26x) as of 11 Sep 2026, 5:09 PM (Day 1). GMP not yet quoted. BSE-only book (as of 9/12/2026 5:00:00 PM): 0.28x overall — QIB 1.02x, NII —, Retail 0.27x (BSE bids only, separate from the combined BSE+NSE multiples above). Lead manager(s): Indcap Advisors Pvt.Ltd. — track record read: Strong bench. Indcap Advisors Pvt.Ltd.: 1 SME IPOs managed in 2026, 100% listed positive, average listing-day gain +36.1%.</p>
+            <div class="key-points">
+        <span class="kp-label">Key points</span>
+        <ul>
+        <li>Revenue 44% / PAT 97% growth in FY26</li>
+        <li>PAT margin 4.26% (FY26)</li>
+        <li>Debt/equity 2.61x</li>
+        <li>Post-issue P/E 12.99x</li>
+        <li>Fund usage: Debt repayment ₹10 Cr + capex for Phase IV manufacturing expansion (West Bengal) ₹30.5 Cr; growth-tilted but elevated leverage (D/E 2.61)</li>
+        <li>Subscription: 0.29x overall</li>
+        </ul>
+      </div>
+<p class="card-prose">Revenue grew 44% and PAT 97% in the latest disclosed year (FY26), on a PAT margin of 4.26% (FY26) and EBITDA margin of 10.13% (FY26). Debt/equity of 2.61x is on the leveraged side for this cohort. ROE 28.94%, ROCE 15.64%, RoNW 41.73%. Post-issue P/E works out to 12.99x on disclosed EPS (P/BV 2.40); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Debt repayment ₹10 Cr + capex for Phase IV manufacturing expansion (West Bengal) ₹30.5 Cr; growth-tilted but elevated leverage (D/E 2.61). Book closed/stands at 0.29x overall (QIB 1.02x, NII 0.08x, Retail 0.26x) as of 11 Sep 2026, 5:09 PM (Day 1). GMP not yet quoted. BSE-only book (as of 9/12/2026 5:00:00 PM): 0.28x overall — QIB 1.02x, NII —, Retail 0.27x (BSE bids only, separate from the combined BSE+NSE multiples above). Lead manager(s): Indcap Advisors Pvt.Ltd. — track record read: Strong bench. Indcap Advisors Pvt.Ltd.: 1 SME IPOs managed in 2026, 100% listed positive, average listing-day gain +36.1%.</p>
     </div>
     
     <div class="ledger-card" id="card-Century-Business-Media">
@@ -724,7 +1020,18 @@
       <span class="tag tag-sub-oversubscribed">Subscription: Oversubscribed</span>
       <span class="tag tag-strong">Lead mgr: Strong bench</span>
     </div>
-      <p class="card-prose">Revenue grew 27% and PAT 18% in the latest disclosed year (FY26), on a PAT margin of 11.96% (FY26) and EBITDA margin of 18.47% (FY26). Debt/equity sits at a moderate 0.44x. ROE 36.44%, ROCE 30.06%, RoNW 30.83%. Post-issue P/E works out to 11.67x on disclosed EPS (P/BV 2.65); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Media asset purchase ₹4.21 Cr + airport ad-rights deposit ₹3.77 Cr + debt repayment ₹1.45 Cr + working capital ₹3.25 Cr. Balanced growth mix, small debt component. Book closed/stands at 1.15x overall (QIB 3.51x, NII 0.41x, Retail 0.12x) as of 11 Sep 2026, 5:09 PM (Day 1). GMP not yet quoted. BSE-only book (as of 9/12/2026 5:00:00 PM): 1.07x overall — QIB 3.51x, NII —, Retail 0.12x (BSE bids only, separate from the combined BSE+NSE multiples above). Lead manager(s): Hem Securities Ltd. — track record read: Strong bench. Hem Securities Ltd.: 10 SME IPOs managed in 2026, 90% listed positive, average listing-day gain +35.9%.</p>
+            <div class="key-points">
+        <span class="kp-label">Key points</span>
+        <ul>
+        <li>Revenue 27% / PAT 18% growth in FY26</li>
+        <li>PAT margin 11.96% (FY26)</li>
+        <li>Debt/equity 0.44x</li>
+        <li>Post-issue P/E 11.67x</li>
+        <li>Fund usage: Media asset purchase ₹4.21 Cr + airport ad-rights deposit ₹3.77 Cr + debt repayment ₹1.45 Cr + working capital ₹3.25 Cr</li>
+        <li>Subscription: 1.15x overall</li>
+        </ul>
+      </div>
+<p class="card-prose">Revenue grew 27% and PAT 18% in the latest disclosed year (FY26), on a PAT margin of 11.96% (FY26) and EBITDA margin of 18.47% (FY26). Debt/equity sits at a moderate 0.44x. ROE 36.44%, ROCE 30.06%, RoNW 30.83%. Post-issue P/E works out to 11.67x on disclosed EPS (P/BV 2.65); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Media asset purchase ₹4.21 Cr + airport ad-rights deposit ₹3.77 Cr + debt repayment ₹1.45 Cr + working capital ₹3.25 Cr. Balanced growth mix, small debt component. Book closed/stands at 1.15x overall (QIB 3.51x, NII 0.41x, Retail 0.12x) as of 11 Sep 2026, 5:09 PM (Day 1). GMP not yet quoted. BSE-only book (as of 9/12/2026 5:00:00 PM): 1.07x overall — QIB 3.51x, NII —, Retail 0.12x (BSE bids only, separate from the combined BSE+NSE multiples above). Lead manager(s): Hem Securities Ltd. — track record read: Strong bench. Hem Securities Ltd.: 10 SME IPOs managed in 2026, 90% listed positive, average listing-day gain +35.9%.</p>
     </div>
     
     <div class="ledger-card" id="card-Quanto-Agroworld">
@@ -743,7 +1050,18 @@
       <span class="tag tag-sub-pending">Subscription: Pending (Day 1)</span>
       <span class="tag tag-weak">Lead mgr: Caution</span>
     </div>
-      <p class="card-prose">Revenue grew 145% and PAT 26% in the latest disclosed year (FY26), on a PAT margin of 20.78% (FY26) and EBITDA margin of 29.54% (FY26). Debt/equity is a clean 0.16x. ROE 24.68%, ROCE 25.62%, RoNW 24.68%. Post-issue P/E works out to 13.99x on disclosed EPS (P/BV 2.53); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Distillation plant capex ₹3.79 Cr + farm expansion capex ₹15.23 Cr + debt repayment ₹3.63 Cr; balance general corporate + issue expenses. Growth-led, clean balance sheet (D/E 0.16). Bidding opened today, 15 Sep 2026 — no subscription print yet. GMP not yet quoted. Lead manager(s): Sobhagya Capital Options Pvt.Ltd. — track record read: Caution. Sobhagya Capital Options Pvt.Ltd.: 4 SME IPOs managed in 2026, 25% listed positive, average listing-day gain -0.2%.</p>
+            <div class="key-points">
+        <span class="kp-label">Key points</span>
+        <ul>
+        <li>Revenue 145% / PAT 26% growth in FY26</li>
+        <li>PAT margin 20.78% (FY26)</li>
+        <li>Debt/equity 0.16x</li>
+        <li>Post-issue P/E 13.99x</li>
+        <li>Fund usage: Distillation plant capex ₹3.79 Cr + farm expansion capex ₹15.23 Cr + debt repayment ₹3.63 Cr; balance general corporate + issue expenses</li>
+        <li>GMP: not yet quoted</li>
+        </ul>
+      </div>
+<p class="card-prose">Revenue grew 145% and PAT 26% in the latest disclosed year (FY26), on a PAT margin of 20.78% (FY26) and EBITDA margin of 29.54% (FY26). Debt/equity is a clean 0.16x. ROE 24.68%, ROCE 25.62%, RoNW 24.68%. Post-issue P/E works out to 13.99x on disclosed EPS (P/BV 2.53); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Distillation plant capex ₹3.79 Cr + farm expansion capex ₹15.23 Cr + debt repayment ₹3.63 Cr; balance general corporate + issue expenses. Growth-led, clean balance sheet (D/E 0.16). Bidding opened today, 15 Sep 2026 — no subscription print yet. GMP not yet quoted. Lead manager(s): Sobhagya Capital Options Pvt.Ltd. — track record read: Caution. Sobhagya Capital Options Pvt.Ltd.: 4 SME IPOs managed in 2026, 25% listed positive, average listing-day gain -0.2%.</p>
     </div>
     
     <div class="ledger-card" id="card-Shakti-Polytarp">
@@ -762,7 +1080,18 @@
       <span class="tag tag-sub-pending">Subscription: Pending (Day 1)</span>
       <span class="tag tag-strong">Lead mgr: Strong bench</span>
     </div>
-      <p class="card-prose">Revenue grew 30% and PAT 102% in the latest disclosed year (FY26), on a PAT margin of 4.66% (FY26) and EBITDA margin of 8.94% (FY26). Debt/equity of 2.6x is on the leveraged side for this cohort. ROE 44.04%, ROCE 17.87%, RoNW 44.04%. Post-issue P/E works out to 10.05x on disclosed EPS (P/BV 2.66); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Capital expenditure ₹20.88 Cr (100% of fresh issue); balance general corporate. Thin PAT margin, elevated leverage (D/E 2.60) — caution flag despite strong revenue growth. Bidding opened today, 15 Sep 2026 — no subscription print yet. GMP not yet quoted. Lead manager(s): NEXGEN Financial Solutions Pvt.Ltd. — track record read: Strong bench. NEXGEN Financial Solutions Pvt.Ltd.: 6 SME IPOs managed in 2026, 67% listed positive, average listing-day gain +18.9%.</p>
+            <div class="key-points">
+        <span class="kp-label">Key points</span>
+        <ul>
+        <li>Revenue 30% / PAT 102% growth in FY26</li>
+        <li>PAT margin 4.66% (FY26)</li>
+        <li>Debt/equity 2.6x</li>
+        <li>Post-issue P/E 10.05x</li>
+        <li>Fund usage: Capital expenditure ₹20.88 Cr (100% of fresh issue); balance general corporate</li>
+        <li>GMP: not yet quoted</li>
+        </ul>
+      </div>
+<p class="card-prose">Revenue grew 30% and PAT 102% in the latest disclosed year (FY26), on a PAT margin of 4.66% (FY26) and EBITDA margin of 8.94% (FY26). Debt/equity of 2.6x is on the leveraged side for this cohort. ROE 44.04%, ROCE 17.87%, RoNW 44.04%. Post-issue P/E works out to 10.05x on disclosed EPS (P/BV 2.66); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Capital expenditure ₹20.88 Cr (100% of fresh issue); balance general corporate. Thin PAT margin, elevated leverage (D/E 2.60) — caution flag despite strong revenue growth. Bidding opened today, 15 Sep 2026 — no subscription print yet. GMP not yet quoted. Lead manager(s): NEXGEN Financial Solutions Pvt.Ltd. — track record read: Strong bench. NEXGEN Financial Solutions Pvt.Ltd.: 6 SME IPOs managed in 2026, 67% listed positive, average listing-day gain +18.9%.</p>
     </div>
     
     <div class="ledger-card" id="card-Vama-Wovenfab">
@@ -781,7 +1110,18 @@
       <span class="tag tag-sub-pending">Subscription: Pending (Day 1)</span>
       <span class="tag tag-strong">Lead mgr: Strong bench</span>
     </div>
-      <p class="card-prose">Revenue grew 176% and PAT 69% in the latest disclosed year (FY26), on a PAT margin of 5.38% (FY26) and EBITDA margin of 8.32% (FY26). Debt/equity sits at a moderate 0.89x. ROE 50.37%, ROCE 31.94%, RoNW 50.37%. Post-issue P/E works out to 15.33x on disclosed EPS (P/BV 4.44); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Shed construction ₹1.36 Cr + machinery purchase ₹7.25 Cr + working capital ₹26.50 Cr (dominant); balance general corporate. Growth-led; revenue nearly tripled YoY — treat trend with some caution given the pace. Bidding opened today, 15 Sep 2026 — no subscription print yet. GMP not yet quoted. Lead manager(s): Gretex Corporate Services Ltd. — track record read: Strong bench. Gretex Corporate Services Ltd.: 2 SME IPOs managed in 2026, 100% listed positive, average listing-day gain +7.1%.</p>
+            <div class="key-points">
+        <span class="kp-label">Key points</span>
+        <ul>
+        <li>Revenue 176% / PAT 69% growth in FY26</li>
+        <li>PAT margin 5.38% (FY26)</li>
+        <li>Debt/equity 0.89x</li>
+        <li>Post-issue P/E 15.33x</li>
+        <li>Fund usage: Shed construction ₹1.36 Cr + machinery purchase ₹7.25 Cr + working capital ₹26.50 Cr (dominant); balance general corporate</li>
+        <li>GMP: not yet quoted</li>
+        </ul>
+      </div>
+<p class="card-prose">Revenue grew 176% and PAT 69% in the latest disclosed year (FY26), on a PAT margin of 5.38% (FY26) and EBITDA margin of 8.32% (FY26). Debt/equity sits at a moderate 0.89x. ROE 50.37%, ROCE 31.94%, RoNW 50.37%. Post-issue P/E works out to 15.33x on disclosed EPS (P/BV 4.44); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Shed construction ₹1.36 Cr + machinery purchase ₹7.25 Cr + working capital ₹26.50 Cr (dominant); balance general corporate. Growth-led; revenue nearly tripled YoY — treat trend with some caution given the pace. Bidding opened today, 15 Sep 2026 — no subscription print yet. GMP not yet quoted. Lead manager(s): Gretex Corporate Services Ltd. — track record read: Strong bench. Gretex Corporate Services Ltd.: 2 SME IPOs managed in 2026, 100% listed positive, average listing-day gain +7.1%.</p>
     </div>
     
     <div class="ledger-card" id="card-SS-Retail">
@@ -800,7 +1140,18 @@
       <span class="tag tag-sub-not-opened">Subscription: Not opened</span>
       <span class="tag tag-strong">Lead mgr: Strong bench</span>
     </div>
-      <p class="card-prose">Revenue grew 47% and PAT 49% in the latest disclosed year (FY26), on a PAT margin of 2.52% (FY26) and EBITDA margin of 5.32% (FY26). Debt/equity sits at a moderate 0.7x. ROE 30.60%, ROCE 29.30%, RoNW 32.60%. Post-issue P/E works out to 53.2x on disclosed EPS (P/BV 12.35); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: New store fit-outs ₹12.45 Cr + working capital ₹416.53 Cr (dominant use); OFS ₹140 Cr to promoters/other selling shareholder. Bidding has not opened yet. Grey-market premium reads ₹120 (28.30%) as of 13 Sep 2026 (unofficial, unregulated, moves daily — sourced from investorgain.com, treated as sentiment color, not a fundamental). Lead manager(s): Anand Rathi Advisors Ltd., Emkay Global Financial Services Ltd. — track record read: Strong bench. Anand Rathi Advisors Ltd.: 1 mainboard IPOs managed in 2026, 100% listed positive, average listing-day gain +23.6%. Emkay Global Financial Services Ltd.: 4 mainboard IPOs managed in 2026, 50% listed positive, average listing-day gain +10.8%.</p>
+            <div class="key-points">
+        <span class="kp-label">Key points</span>
+        <ul>
+        <li>Revenue 47% / PAT 49% growth in FY26</li>
+        <li>PAT margin 2.52% (FY26)</li>
+        <li>Debt/equity 0.7x</li>
+        <li>Post-issue P/E 53.2x</li>
+        <li>Fund usage: New store fit-outs ₹12.45 Cr + working capital ₹416.53 Cr (dominant use); OFS ₹140 Cr to promoters/other selling shareholder</li>
+        <li>GMP: ₹120 (28.30%) (unofficial, moves daily)</li>
+        </ul>
+      </div>
+<p class="card-prose">Revenue grew 47% and PAT 49% in the latest disclosed year (FY26), on a PAT margin of 2.52% (FY26) and EBITDA margin of 5.32% (FY26). Debt/equity sits at a moderate 0.7x. ROE 30.60%, ROCE 29.30%, RoNW 32.60%. Post-issue P/E works out to 53.2x on disclosed EPS (P/BV 12.35); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: New store fit-outs ₹12.45 Cr + working capital ₹416.53 Cr (dominant use); OFS ₹140 Cr to promoters/other selling shareholder. Bidding has not opened yet. Grey-market premium reads ₹120 (28.30%) as of 13 Sep 2026 (unofficial, unregulated, moves daily — sourced from investorgain.com, treated as sentiment color, not a fundamental). Lead manager(s): Anand Rathi Advisors Ltd., Emkay Global Financial Services Ltd. — track record read: Strong bench. Anand Rathi Advisors Ltd.: 1 mainboard IPOs managed in 2026, 100% listed positive, average listing-day gain +23.6%. Emkay Global Financial Services Ltd.: 4 mainboard IPOs managed in 2026, 50% listed positive, average listing-day gain +10.8%.</p>
     </div>
     
     <div class="ledger-card" id="card-Jindal-Supreme-India">
@@ -819,7 +1170,18 @@
       <span class="tag tag-sub-not-opened">Subscription: Not opened</span>
       <span class="tag tag-mixed">Lead mgr: Mixed bench</span>
     </div>
-      <p class="card-prose">Revenue grew 12% and PAT -7% in the latest disclosed year (FY26), on a PAT margin of 3.33% (FY26) vs 4.01% (FY25) and EBITDA margin of 6.16% (FY26). Debt/equity sits at a moderate 1.24x. ROE 26.28% (FY26), ROCE 16.78% (FY26), RoNW 26.28%. Post-issue P/E works out to 14.33x on disclosed EPS (P/BV 3.87); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Debt repayment ₹71 Cr out of ₹125 Cr issue (57%); balance general corporate purposes. Revenue up 12% but PAT down 7% YoY — margin compression flag. Bidding has not opened yet. Grey-market premium reads ₹27 (29.03%) as of 13 Sep 2026 (unofficial, unregulated, moves daily — sourced from investorgain.com, treated as sentiment color, not a fundamental). Lead manager(s): Sarthi Capital Advisors Pvt.Ltd. — track record read: Mixed bench. Sarthi Capital Advisors Pvt.Ltd.: 1 mainboard IPOs managed in 2026, 100% listed positive, average listing-day gain +1.6%.</p>
+            <div class="key-points">
+        <span class="kp-label">Key points</span>
+        <ul>
+        <li>Revenue 12% / PAT -7% growth in FY26</li>
+        <li>PAT margin 3.33% (FY26)</li>
+        <li>Debt/equity 1.24x</li>
+        <li>Post-issue P/E 14.33x</li>
+        <li>Fund usage: Debt repayment ₹71 Cr out of ₹125 Cr issue (57%); balance general corporate purposes</li>
+        <li>GMP: ₹27 (29.03%) (unofficial, moves daily)</li>
+        </ul>
+      </div>
+<p class="card-prose">Revenue grew 12% and PAT -7% in the latest disclosed year (FY26), on a PAT margin of 3.33% (FY26) vs 4.01% (FY25) and EBITDA margin of 6.16% (FY26). Debt/equity sits at a moderate 1.24x. ROE 26.28% (FY26), ROCE 16.78% (FY26), RoNW 26.28%. Post-issue P/E works out to 14.33x on disclosed EPS (P/BV 3.87); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Debt repayment ₹71 Cr out of ₹125 Cr issue (57%); balance general corporate purposes. Revenue up 12% but PAT down 7% YoY — margin compression flag. Bidding has not opened yet. Grey-market premium reads ₹27 (29.03%) as of 13 Sep 2026 (unofficial, unregulated, moves daily — sourced from investorgain.com, treated as sentiment color, not a fundamental). Lead manager(s): Sarthi Capital Advisors Pvt.Ltd. — track record read: Mixed bench. Sarthi Capital Advisors Pvt.Ltd.: 1 mainboard IPOs managed in 2026, 100% listed positive, average listing-day gain +1.6%.</p>
     </div>
     
     <div class="ledger-card" id="card-Hero-Motors">
@@ -838,7 +1200,18 @@
       <span class="tag tag-sub-not-opened">Subscription: Not opened</span>
       <span class="tag tag-strong">Lead mgr: Strong bench</span>
     </div>
-      <p class="card-prose">Revenue grew 9% and PAT 26% in the latest disclosed year (FY26), on a PAT margin of 3.46% (FY26) and EBITDA margin of 12.44% (FY26). Debt/equity sits at a moderate 0.83x. ROE 8.56%, ROCE 19.77%, RoNW 8.53%. Post-issue P/E works out to 92.31x on disclosed EPS (P/BV 6.60); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Debt repayment ₹190 Cr + capex ₹200 Cr (Gautam Buddha Nagar facility expansion); balance for inorganic growth/general purposes. Rich P/E (78–92x) vs thin PAT margin. Bidding has not opened yet. Grey-market premium reads ₹24 (28.57%) as of 13 Sep 2026 (unofficial, unregulated, moves daily — sourced from investorgain.com, treated as sentiment color, not a fundamental). Lead manager(s): ICICI Securities Ltd., Dam Capital Advisors Ltd., JM Financial Ltd. — track record read: Strong bench. ICICI Securities Ltd.: 12 mainboard IPOs managed in 2026, 67% listed positive, average listing-day gain +22.4%. Dam Capital Advisors Ltd.: 2 mainboard IPOs managed in 2026, 100% listed positive, average listing-day gain +68.2%. JM Financial Ltd.: 15 mainboard IPOs managed in 2026, 67% listed positive, average listing-day gain +16.6%.</p>
+            <div class="key-points">
+        <span class="kp-label">Key points</span>
+        <ul>
+        <li>Revenue 9% / PAT 26% growth in FY26</li>
+        <li>PAT margin 3.46% (FY26)</li>
+        <li>Debt/equity 0.83x</li>
+        <li>Post-issue P/E 92.31x</li>
+        <li>Fund usage: Debt repayment ₹190 Cr + capex ₹200 Cr (Gautam Buddha Nagar facility expansion); balance for inorganic growth/general purposes</li>
+        <li>GMP: ₹24 (28.57%) (unofficial, moves daily)</li>
+        </ul>
+      </div>
+<p class="card-prose">Revenue grew 9% and PAT 26% in the latest disclosed year (FY26), on a PAT margin of 3.46% (FY26) and EBITDA margin of 12.44% (FY26). Debt/equity sits at a moderate 0.83x. ROE 8.56%, ROCE 19.77%, RoNW 8.53%. Post-issue P/E works out to 92.31x on disclosed EPS (P/BV 6.60); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Debt repayment ₹190 Cr + capex ₹200 Cr (Gautam Buddha Nagar facility expansion); balance for inorganic growth/general purposes. Rich P/E (78–92x) vs thin PAT margin. Bidding has not opened yet. Grey-market premium reads ₹24 (28.57%) as of 13 Sep 2026 (unofficial, unregulated, moves daily — sourced from investorgain.com, treated as sentiment color, not a fundamental). Lead manager(s): ICICI Securities Ltd., Dam Capital Advisors Ltd., JM Financial Ltd. — track record read: Strong bench. ICICI Securities Ltd.: 12 mainboard IPOs managed in 2026, 67% listed positive, average listing-day gain +22.4%. Dam Capital Advisors Ltd.: 2 mainboard IPOs managed in 2026, 100% listed positive, average listing-day gain +68.2%. JM Financial Ltd.: 15 mainboard IPOs managed in 2026, 67% listed positive, average listing-day gain +16.6%.</p>
     </div>
     
     <div class="ledger-card" id="card-National-Stock-Exchange-of-India-NSE">
@@ -857,7 +1230,18 @@
       <span class="tag tag-sub-not-opened">Subscription: Not opened</span>
       <span class="tag tag-weak">Lead mgr: Caution</span>
     </div>
-      <p class="card-prose">Revenue grew -2% and PAT -15% in the latest disclosed year (FY26), on a PAT margin of 50.98% (FY26) and EBITDA margin of 59.31% (FY26; EBITDA ₹11,097.90 Cr / Total Income ₹18,713.37 Cr). Debt/equity is 0.00 — the company carries zero borrowings. ROE 32.98%, ROCE 42.80%, RoNW 33.21%. Post-issue P/E works out to 35.4x on disclosed EPS (P/BV 13.76); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: 100% Offer for Sale — company receives zero proceeds; entire ₹22,562 Cr flows to selling shareholders (SBI, MS Strategic, CPPIB, Aranda, BoB and others). Bidding has not opened yet. Grey-market premium reads ₹210 (11.76%) as of 13 Sep 2026 (unofficial, unregulated, moves daily — sourced from investorgain.com, treated as sentiment color, not a fundamental). Lead manager(s): Kotak Mahindra Capital Co.Ltd., Morgan Stanley India Co.Pvt.Ltd., HSBC Securities &amp; Capital Markets (India) Pvt.Ltd., Avendus Capital Pvt.Ltd., Dam Capital Advisors Ltd., HDFC Bank Ltd., IDBI Capital Markets &amp; Securities Ltd., Motilal Oswal Investment Advisors Ltd., Pantomath Capital Advisors Pvt.Ltd., JM Financial Ltd., Citigroup Global Markets India Pvt.Ltd., JP Morgan India Pvt.Ltd., Anand Rathi Advisors Ltd., Axis Capital Ltd., Equirus Capital Ltd., ICICI Securities Ltd., IIFL Capital Services Ltd., Nuvama Wealth Management Ltd., 360 One WAM Ltd. — track record read: Caution. Kotak Mahindra Capital Co.Ltd.: 9 mainboard IPOs managed in 2026, 78% listed positive, average listing-day gain +21.3%. Morgan Stanley India Co.Pvt.Ltd.: 2 mainboard IPOs managed in 2026, 0% listed positive, average listing-day gain -8.6%. HSBC Securities &amp; Capital Markets (India) Pvt.Ltd.: 4 mainboard IPOs managed in 2026, 75% listed positive, average listing-day gain +6.5%. Avendus Capital Pvt.Ltd.: 4 mainboard IPOs managed in 2026, 50% listed positive, average listing-day gain +1.5%. Dam Capital Advisors Ltd.: 2 mainboard IPOs managed in 2026, 100% listed positive, average listing-day gain +68.2%. HDFC Bank Ltd.: 1 mainboard IPOs managed in 2026, 100% listed positive, average listing-day gain +52.9%. IDBI Capital Markets &amp; Securities Ltd.: 3 mainboard IPOs managed in 2026, 67% listed positive, average listing-day gain +24.6%. Motilal Oswal Investment Advisors Ltd.: 10 mainboard IPOs managed in 2026, 90% listed positive, average listing-day gain +18.2%. Pantomath Capital Advisors Pvt.Ltd.: 2 mainboard IPOs managed in 2026, 100% listed positive, average listing-day gain +17.1%. JM Financial Ltd.: 15 mainboard IPOs managed in 2026, 67% listed positive, average listing-day gain +16.6%. Citigroup Global Markets India Pvt.Ltd.: 1 mainboard IPOs managed in 2026, 0% listed positive, average listing-day gain -3.5%. JP Morgan India Pvt.Ltd.: 2 mainboard IPOs managed in 2026, 50% listed positive, average listing-day gain -2.3%. Anand Rathi Advisors Ltd.: 1 mainboard IPOs managed in 2026, 100% listed positive, average listing-day gain +23.6%. Axis Capital Ltd.: 13 mainboard IPOs managed in 2026, 62% listed positive, average listing-day gain +16.1%. Equirus Capital Ltd.: 5 mainboard IPOs managed in 2026, 80% listed positive, average listing-day gain +13.4%. ICICI Securities Ltd.: 12 mainboard IPOs managed in 2026, 67% listed positive, average listing-day gain +22.4%. IIFL Capital Services Ltd.: 12 mainboard IPOs managed in 2026, 42% listed positive, average listing-day gain +7.9%. Nuvama Wealth Management Ltd.: 4 mainboard IPOs managed in 2026, 50% listed positive, average listing-day gain +9.0%. 360 One WAM Ltd.: 2 mainboard IPOs managed in 2026, 50% listed positive, average listing-day gain +16.6%.</p>
+            <div class="key-points">
+        <span class="kp-label">Key points</span>
+        <ul>
+        <li>Revenue -2% / PAT -15% growth in FY26</li>
+        <li>PAT margin 50.98% (FY26)</li>
+        <li>Post-issue P/E 35.4x</li>
+        <li>Fund usage: 100% Offer for Sale — company receives zero proceeds; entire ₹22,562 Cr flows to selling shareholders (SBI, MS Strategic, CPPIB, Aranda,...</li>
+        <li>GMP: ₹210 (11.76%) (unofficial, moves daily)</li>
+        <li>Lead manager bench: Caution</li>
+        </ul>
+      </div>
+<p class="card-prose">Revenue grew -2% and PAT -15% in the latest disclosed year (FY26), on a PAT margin of 50.98% (FY26) and EBITDA margin of 59.31% (FY26; EBITDA ₹11,097.90 Cr / Total Income ₹18,713.37 Cr). Debt/equity is 0.00 — the company carries zero borrowings. ROE 32.98%, ROCE 42.80%, RoNW 33.21%. Post-issue P/E works out to 35.4x on disclosed EPS (P/BV 13.76); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: 100% Offer for Sale — company receives zero proceeds; entire ₹22,562 Cr flows to selling shareholders (SBI, MS Strategic, CPPIB, Aranda, BoB and others). Bidding has not opened yet. Grey-market premium reads ₹210 (11.76%) as of 13 Sep 2026 (unofficial, unregulated, moves daily — sourced from investorgain.com, treated as sentiment color, not a fundamental). Lead manager(s): Kotak Mahindra Capital Co.Ltd., Morgan Stanley India Co.Pvt.Ltd., HSBC Securities &amp; Capital Markets (India) Pvt.Ltd., Avendus Capital Pvt.Ltd., Dam Capital Advisors Ltd., HDFC Bank Ltd., IDBI Capital Markets &amp; Securities Ltd., Motilal Oswal Investment Advisors Ltd., Pantomath Capital Advisors Pvt.Ltd., JM Financial Ltd., Citigroup Global Markets India Pvt.Ltd., JP Morgan India Pvt.Ltd., Anand Rathi Advisors Ltd., Axis Capital Ltd., Equirus Capital Ltd., ICICI Securities Ltd., IIFL Capital Services Ltd., Nuvama Wealth Management Ltd., 360 One WAM Ltd. — track record read: Caution. Kotak Mahindra Capital Co.Ltd.: 9 mainboard IPOs managed in 2026, 78% listed positive, average listing-day gain +21.3%. Morgan Stanley India Co.Pvt.Ltd.: 2 mainboard IPOs managed in 2026, 0% listed positive, average listing-day gain -8.6%. HSBC Securities &amp; Capital Markets (India) Pvt.Ltd.: 4 mainboard IPOs managed in 2026, 75% listed positive, average listing-day gain +6.5%. Avendus Capital Pvt.Ltd.: 4 mainboard IPOs managed in 2026, 50% listed positive, average listing-day gain +1.5%. Dam Capital Advisors Ltd.: 2 mainboard IPOs managed in 2026, 100% listed positive, average listing-day gain +68.2%. HDFC Bank Ltd.: 1 mainboard IPOs managed in 2026, 100% listed positive, average listing-day gain +52.9%. IDBI Capital Markets &amp; Securities Ltd.: 3 mainboard IPOs managed in 2026, 67% listed positive, average listing-day gain +24.6%. Motilal Oswal Investment Advisors Ltd.: 10 mainboard IPOs managed in 2026, 90% listed positive, average listing-day gain +18.2%. Pantomath Capital Advisors Pvt.Ltd.: 2 mainboard IPOs managed in 2026, 100% listed positive, average listing-day gain +17.1%. JM Financial Ltd.: 15 mainboard IPOs managed in 2026, 67% listed positive, average listing-day gain +16.6%. Citigroup Global Markets India Pvt.Ltd.: 1 mainboard IPOs managed in 2026, 0% listed positive, average listing-day gain -3.5%. JP Morgan India Pvt.Ltd.: 2 mainboard IPOs managed in 2026, 50% listed positive, average listing-day gain -2.3%. Anand Rathi Advisors Ltd.: 1 mainboard IPOs managed in 2026, 100% listed positive, average listing-day gain +23.6%. Axis Capital Ltd.: 13 mainboard IPOs managed in 2026, 62% listed positive, average listing-day gain +16.1%. Equirus Capital Ltd.: 5 mainboard IPOs managed in 2026, 80% listed positive, average listing-day gain +13.4%. ICICI Securities Ltd.: 12 mainboard IPOs managed in 2026, 67% listed positive, average listing-day gain +22.4%. IIFL Capital Services Ltd.: 12 mainboard IPOs managed in 2026, 42% listed positive, average listing-day gain +7.9%. Nuvama Wealth Management Ltd.: 4 mainboard IPOs managed in 2026, 50% listed positive, average listing-day gain +9.0%. 360 One WAM Ltd.: 2 mainboard IPOs managed in 2026, 50% listed positive, average listing-day gain +16.6%.</p>
     </div>
     
     <div class="ledger-card" id="card-Sonaselection-India">
@@ -876,7 +1260,18 @@
       <span class="tag tag-sub-not-opened">Subscription: Not opened</span>
       <span class="tag tag-weak">Lead mgr: Caution</span>
     </div>
-      <p class="card-prose">Revenue grew 64% and PAT 83% in the latest disclosed year (FY26), on a PAT margin of 6.58% (FY26) and EBITDA margin of 16.40% (FY26). Debt/equity of 2.48x is on the leveraged side for this cohort. ROE 39.05%, ROCE 19.69%, RoNW 39.05%. Post-issue P/E works out to 16.53x on disclosed EPS (P/BV 4.00); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Debt repayment ₹80 Cr + capex on plant/machinery ₹50.6 Cr at existing Bhilwara facility. Mixed debt-paydown/growth-capex. Bidding has not opened yet. GMP not yet quoted. Lead manager(s): Choice Capital Advisors Pvt.Ltd. — track record read: Caution. Choice Capital Advisors Pvt.Ltd.: 2 SME IPOs managed in 2026, 50% listed positive, average listing-day gain -0.5%.</p>
+            <div class="key-points">
+        <span class="kp-label">Key points</span>
+        <ul>
+        <li>Revenue 64% / PAT 83% growth in FY26</li>
+        <li>PAT margin 6.58% (FY26)</li>
+        <li>Debt/equity 2.48x</li>
+        <li>Post-issue P/E 16.53x</li>
+        <li>Fund usage: Debt repayment ₹80 Cr + capex on plant/machinery ₹50.6 Cr at existing Bhilwara facility</li>
+        <li>GMP: not yet quoted</li>
+        </ul>
+      </div>
+<p class="card-prose">Revenue grew 64% and PAT 83% in the latest disclosed year (FY26), on a PAT margin of 6.58% (FY26) and EBITDA margin of 16.40% (FY26). Debt/equity of 2.48x is on the leveraged side for this cohort. ROE 39.05%, ROCE 19.69%, RoNW 39.05%. Post-issue P/E works out to 16.53x on disclosed EPS (P/BV 4.00); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Debt repayment ₹80 Cr + capex on plant/machinery ₹50.6 Cr at existing Bhilwara facility. Mixed debt-paydown/growth-capex. Bidding has not opened yet. GMP not yet quoted. Lead manager(s): Choice Capital Advisors Pvt.Ltd. — track record read: Caution. Choice Capital Advisors Pvt.Ltd.: 2 SME IPOs managed in 2026, 50% listed positive, average listing-day gain -0.5%.</p>
     </div>
     
     <div class="ledger-card" id="card-Kheria-Autocomp">
@@ -895,7 +1290,18 @@
       <span class="tag tag-sub-not-opened">Subscription: Not opened</span>
       <span class="tag tag-mixed">Lead mgr: Mixed bench</span>
     </div>
-      <p class="card-prose">Revenue grew 30% and PAT 39% in the latest disclosed year (FY26), on a PAT margin of 9.52% (FY26) and EBITDA margin of 19.08% (FY26). Debt/equity sits at a moderate 0.89x. ROE 33.72%, ROCE 26.89%, RoNW 33.72%. Post-issue P/E works out to 14.01x on disclosed EPS (P/BV 2.87, computed from upper price band ₹101 / NAV ₹35.13 — Chittorgarh's own KPI table only carries a prior-year P/BV, not independently peer-verified); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: New manufacturing facility capex ₹39.96 Cr (plastic moulded auto components, Sanand GIDC); 100% growth capex, no debt repayment or OFS. Bidding has not opened yet. GMP not yet quoted. Lead manager(s): SMC Capitals Ltd. — track record read: Mixed bench. SMC Capitals Ltd.: all-time avg listing gain +3.6% across 4 listed issues. Modest but consistently non-negative record: Denta Water +10.5% (Jan 2025), Venus Pipes +3.5% (May 2022), Oval Projects +0.3% (Sep 2025), Jinaam&#x27;s Dress flat (2019). No negative listings in its history, but none are large gains either.</p>
+            <div class="key-points">
+        <span class="kp-label">Key points</span>
+        <ul>
+        <li>Revenue 30% / PAT 39% growth in FY26</li>
+        <li>PAT margin 9.52% (FY26)</li>
+        <li>Debt/equity 0.89x</li>
+        <li>Post-issue P/E 14.01x</li>
+        <li>Fund usage: New manufacturing facility capex ₹39.96 Cr (plastic moulded auto components, Sanand GIDC); 100% growth capex, no debt repayment or OFS</li>
+        <li>GMP: not yet quoted</li>
+        </ul>
+      </div>
+<p class="card-prose">Revenue grew 30% and PAT 39% in the latest disclosed year (FY26), on a PAT margin of 9.52% (FY26) and EBITDA margin of 19.08% (FY26). Debt/equity sits at a moderate 0.89x. ROE 33.72%, ROCE 26.89%, RoNW 33.72%. Post-issue P/E works out to 14.01x on disclosed EPS (P/BV 2.87, computed from upper price band ₹101 / NAV ₹35.13 — Chittorgarh's own KPI table only carries a prior-year P/BV, not independently peer-verified); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: New manufacturing facility capex ₹39.96 Cr (plastic moulded auto components, Sanand GIDC); 100% growth capex, no debt repayment or OFS. Bidding has not opened yet. GMP not yet quoted. Lead manager(s): SMC Capitals Ltd. — track record read: Mixed bench. SMC Capitals Ltd.: all-time avg listing gain +3.6% across 4 listed issues. Modest but consistently non-negative record: Denta Water +10.5% (Jan 2025), Venus Pipes +3.5% (May 2022), Oval Projects +0.3% (Sep 2025), Jinaam&#x27;s Dress flat (2019). No negative listings in its history, but none are large gains either.</p>
     </div>
     
     <div class="ledger-card" id="card-SpectraA-Technology-Solutions">
@@ -914,7 +1320,18 @@
       <span class="tag tag-sub-not-opened">Subscription: Not opened</span>
       <span class="tag tag-strong">Lead mgr: Strong bench</span>
     </div>
-      <p class="card-prose">Revenue grew 36% and PAT 135% in the latest disclosed year (FY26), on a PAT margin of 11.42% (FY26) and EBITDA margin of 19.04% (FY26). Debt/equity sits at a moderate 1.09x. ROE 60.95%, ROCE 37.61%, RoNW 46.59%. Post-issue P/E works out to 13.63x on disclosed EPS (P/BV 4.80); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Jaipur facility capex ₹11 Cr + term loan repayment ₹6.48 Cr + working capital ₹9.5 Cr; small OFS ₹4.11 Cr from 2 promoters. Growth-tilted. Bidding has not opened yet. Grey-market premium reads ₹27 (22.88%) as of 13 Sep 2026 (unofficial, unregulated, moves daily — sourced from investorgain.com, treated as sentiment color, not a fundamental). Lead manager(s): Indcap Advisors Pvt.Ltd. — track record read: Strong bench. Indcap Advisors Pvt.Ltd.: 1 SME IPOs managed in 2026, 100% listed positive, average listing-day gain +36.1%.</p>
+            <div class="key-points">
+        <span class="kp-label">Key points</span>
+        <ul>
+        <li>Revenue 36% / PAT 135% growth in FY26</li>
+        <li>PAT margin 11.42% (FY26)</li>
+        <li>Debt/equity 1.09x</li>
+        <li>Post-issue P/E 13.63x</li>
+        <li>Fund usage: Jaipur facility capex ₹11 Cr + term loan repayment ₹6.48 Cr + working capital ₹9.5 Cr; small OFS ₹4.11 Cr from 2 promoters</li>
+        <li>GMP: ₹27 (22.88%) (unofficial, moves daily)</li>
+        </ul>
+      </div>
+<p class="card-prose">Revenue grew 36% and PAT 135% in the latest disclosed year (FY26), on a PAT margin of 11.42% (FY26) and EBITDA margin of 19.04% (FY26). Debt/equity sits at a moderate 1.09x. ROE 60.95%, ROCE 37.61%, RoNW 46.59%. Post-issue P/E works out to 13.63x on disclosed EPS (P/BV 4.80); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Jaipur facility capex ₹11 Cr + term loan repayment ₹6.48 Cr + working capital ₹9.5 Cr; small OFS ₹4.11 Cr from 2 promoters. Growth-tilted. Bidding has not opened yet. Grey-market premium reads ₹27 (22.88%) as of 13 Sep 2026 (unofficial, unregulated, moves daily — sourced from investorgain.com, treated as sentiment color, not a fundamental). Lead manager(s): Indcap Advisors Pvt.Ltd. — track record read: Strong bench. Indcap Advisors Pvt.Ltd.: 1 SME IPOs managed in 2026, 100% listed positive, average listing-day gain +36.1%.</p>
     </div>
     
     <div class="ledger-card" id="card-Axiom-Gas-Engineering">
@@ -933,7 +1350,18 @@
       <span class="tag tag-sub-not-opened">Subscription: Not opened</span>
       <span class="tag tag-weak">Lead mgr: Caution</span>
     </div>
-      <p class="card-prose">Revenue grew 12% and PAT 22% in the latest disclosed year (FY26), on a PAT margin of 9.38% (FY25) and EBITDA margin of 15.36% (FY25). Debt/equity sits at a moderate 0.48x. ROE 28.40% (FY25), ROCE 28.90% (FY25), RoNW 28.40% (FY25). Post-issue P/E works out to 19.85x on disclosed EPS (P/BV 4.13); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Capex ₹27.60 Cr (majority) + debt repayment ₹9.12 Cr; balance general corporate. Growth-tilted. Bidding has not opened yet. GMP not yet quoted. Lead manager(s): SKI Capital Services Ltd. — track record read: Caution. SKI Capital Services Ltd.: 1 SME IPOs managed in 2026, 0% listed positive, average listing-day gain -5.0%.</p>
+            <div class="key-points">
+        <span class="kp-label">Key points</span>
+        <ul>
+        <li>Revenue 12% / PAT 22% growth in FY26</li>
+        <li>PAT margin 9.38% (FY25)</li>
+        <li>Debt/equity 0.48x</li>
+        <li>Post-issue P/E 19.85x</li>
+        <li>Fund usage: Capex ₹27.60 Cr (majority) + debt repayment ₹9.12 Cr; balance general corporate</li>
+        <li>GMP: not yet quoted</li>
+        </ul>
+      </div>
+<p class="card-prose">Revenue grew 12% and PAT 22% in the latest disclosed year (FY26), on a PAT margin of 9.38% (FY25) and EBITDA margin of 15.36% (FY25). Debt/equity sits at a moderate 0.48x. ROE 28.40% (FY25), ROCE 28.90% (FY25), RoNW 28.40% (FY25). Post-issue P/E works out to 19.85x on disclosed EPS (P/BV 4.13); no independently-verified listed-peer comparison is carried here — read this multiple against the sector on your own diligence rather than against a peer set this ledger hasn&#x27;t confirmed. Fund usage: Capex ₹27.60 Cr (majority) + debt repayment ₹9.12 Cr; balance general corporate. Growth-tilted. Bidding has not opened yet. GMP not yet quoted. Lead manager(s): SKI Capital Services Ltd. — track record read: Caution. SKI Capital Services Ltd.: 1 SME IPOs managed in 2026, 0% listed positive, average listing-day gain -5.0%.</p>
     </div>
     
     <div class="ledger-card" id="card-A-One-Steels-India">
@@ -952,7 +1380,18 @@
       <span class="tag tag-sub-not-opened">Subscription: Not opened</span>
       <span class="tag tag-mixed">Lead mgr: Mixed bench</span>
     </div>
-      <p class="card-prose">Revenue grew 18% and PAT 1553% in the latest disclosed year (FY26), on a PAT margin of 3.04% (FY26) vs 0.34% (FY25) and EBITDA margin of 7.29% (FY26) vs 4.91% (FY25). Debt/equity sits at a moderate 1.17x. ROE 14.70%, ROCE 12.86%, RoNW 15.43%. P/E is not computable yet — price band pending disclosure. Fund usage: Debt repayment ₹250 Cr (fresh issue of ₹355 Cr) + OFS ₹50 Cr (promoters); balance general corporate purposes. Skewed toward debt paydown. Bidding has not opened yet. GMP not yet quoted. Lead manager(s): PL Capital Markets Pvt.Ltd., Khambatta Securities Ltd. — track record read: Mixed bench. PL Capital Markets Pvt.Ltd.: all-time avg listing gain +5.3% across 3 listed issues. Mixed multi-year record: Gala Precision Engineering +36.3% (Sep 2024), Rajshree Polypack -7.5% (2018 SME), Laxmi India Finance -13.0% (Aug 2025). Small sample (3 listed), split results. Khambatta Securities Ltd.: 1 mainboard IPOs managed in 2026, 100% listed positive, average listing-day gain +46.8%.</p>
+            <div class="key-points">
+        <span class="kp-label">Key points</span>
+        <ul>
+        <li>Revenue 18% / PAT 1553% growth in FY26</li>
+        <li>PAT margin 3.04% (FY26)</li>
+        <li>Debt/equity 1.17x</li>
+        <li>Fund usage: Debt repayment ₹250 Cr (fresh issue of ₹355 Cr) + OFS ₹50 Cr (promoters); balance general corporate purposes</li>
+        <li>GMP: not yet quoted</li>
+        <li>Lead manager bench: Mixed bench</li>
+        </ul>
+      </div>
+<p class="card-prose">Revenue grew 18% and PAT 1553% in the latest disclosed year (FY26), on a PAT margin of 3.04% (FY26) vs 0.34% (FY25) and EBITDA margin of 7.29% (FY26) vs 4.91% (FY25). Debt/equity sits at a moderate 1.17x. ROE 14.70%, ROCE 12.86%, RoNW 15.43%. P/E is not computable yet — price band pending disclosure. Fund usage: Debt repayment ₹250 Cr (fresh issue of ₹355 Cr) + OFS ₹50 Cr (promoters); balance general corporate purposes. Skewed toward debt paydown. Bidding has not opened yet. GMP not yet quoted. Lead manager(s): PL Capital Markets Pvt.Ltd., Khambatta Securities Ltd. — track record read: Mixed bench. PL Capital Markets Pvt.Ltd.: all-time avg listing gain +5.3% across 3 listed issues. Mixed multi-year record: Gala Precision Engineering +36.3% (Sep 2024), Rajshree Polypack -7.5% (2018 SME), Laxmi India Finance -13.0% (Aug 2025). Small sample (3 listed), split results. Khambatta Securities Ltd.: 1 mainboard IPOs managed in 2026, 100% listed positive, average listing-day gain +46.8%.</p>
     </div>
       </div>
 
