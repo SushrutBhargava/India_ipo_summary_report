@@ -399,6 +399,25 @@
     .filter-grid, .sentiment-grid { grid-template-columns: 1fr; }
     h1 { font-size: 1.9rem; }
   }
+
+  table.sortable th {
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    padding-right: 20px;
+  }
+  table.sortable th:hover { background: var(--navy-light); }
+  table.sortable th .sort-arrow {
+    display: inline-block;
+    margin-left: 6px;
+    font-size: 0.6rem;
+    opacity: 0.4;
+  }
+  table.sortable th.sort-asc .sort-arrow,
+  table.sortable th.sort-desc .sort-arrow { opacity: 1; color: var(--gold-light); }
+  table.sortable th.sort-asc .sort-arrow::after { content: '\2191'; }
+  table.sortable th.sort-desc .sort-arrow::after { content: '\2193'; }
+  table.sortable th:not(.sort-asc):not(.sort-desc) .sort-arrow::after { content: '\2195'; }
 </style>
 </head>
 <body>
@@ -1412,7 +1431,7 @@
   <h2 class="section-title">Financial health &#8212; revenue, profit &amp; margins</h2>
   <p class="section-desc">Total income and profit after tax as disclosed in the restated financial statements in each prospectus, in &#8377; crore, FY24 &#8594; FY25 &#8594; FY26 (years ended 31 March) unless individually noted.</p>
   <div class="table-scroll">
-  <table class="ledger-table">
+  <table class="ledger-table sortable">
     <thead><tr><th>Company</th><th>Revenue (&#8377;Cr)</th><th>PAT (&#8377;Cr)</th><th>PAT Margin</th><th>EBITDA Margin</th></tr></thead>
     <tbody>
 <tr><td class='tcell-name'>Kanohar Electricals<br/><span class='tsub'>Mainboard</span></td><td>281.12 → 457.30 → 662.86</td><td>17.76 → 65.12 → 129.73</td><td>19.57% (FY26)</td><td>27.59% (FY26)</td></tr>
@@ -1454,7 +1473,7 @@
   <h2 class="section-title">Returns &amp; leverage &#8212; ROE, ROCE, RoNW, debt/equity</h2>
   <p class="section-desc">Latest disclosed year. A blank means only one year&#8217;s ratio block was disclosed on the company&#8217;s prospectus/tracker page.</p>
   <div class="table-scroll">
-  <table class="ledger-table">
+  <table class="ledger-table sortable">
     <thead><tr><th>Company</th><th>ROE</th><th>ROCE</th><th>RoNW</th><th>Debt/Equity</th></tr></thead>
     <tbody>
 <tr><td class='tcell-name'>Kanohar Electricals</td><td>42.12%</td><td>70.13%</td><td>34.80%</td><td>0.10</td></tr>
@@ -1496,7 +1515,7 @@
   <h2 class="section-title">Valuation &#8212; EPS, P/E, price-to-book and grey-market premium</h2>
   <p class="section-desc">Pre-issue figures use the pre-IPO share base; post-issue figures dilute for the new shares issued in the offer. Multiples for banded issues use the upper band. GMP is unofficial, unregulated, moves daily and is shown as sentiment color only &#8212; sourced from investorgain.com as of 13&#8211;14 Sep 2026 (most recent snapshot per issue), never substituted for a DRHP-disclosed ratio.</p>
   <div class="table-scroll">
-  <table class="ledger-table">
+  <table class="ledger-table sortable">
     <thead><tr><th>Company</th><th>EPS Pre &#8594; Post (&#8377;)</th><th>P/E Pre / Post</th><th>P/BV</th><th>GMP</th></tr></thead>
     <tbody>
 <tr><td class='tcell-name'>Kanohar Electricals</td><td>17.43 → 16.38</td><td>36.26 / 38.58</td><td>12.62</td><td>₹241 (38.13%)</td></tr>
@@ -1538,7 +1557,7 @@
   <h2 class="section-title">Fund usage &amp; promoter holding, pre- and post-issue</h2>
   <p class="section-desc">Net proceeds breakdown as itemized in each prospectus&#8217; Objects of the Issue section, and this ledger&#8217;s read of whether that skews toward growth, debt repayment, or a pure secondary sale.</p>
   <div class="table-scroll">
-  <table class="ledger-table">
+  <table class="ledger-table sortable">
     <thead><tr><th>Company</th><th>Net proceeds go to</th><th>Read on fund use</th><th>Promoter holding Pre &#8594; Post</th></tr></thead>
     <tbody>
 <tr><td class='tcell-name'>Kanohar Electricals</td><td>Capex ₹64.18 Cr + working capital ₹155 Cr (dominant use); balance general corporate. Large OFS (₹755.74 Cr) to promoter family trust.</td><td>Growth-led</td><td>95.47% → 74.65%</td></tr>
@@ -1582,7 +1601,7 @@
   <h2 class="section-title">Lead manager track record</h2>
   <p class="section-desc">Each issue&#8217;s Book Running Lead Manager(s) (BRLM), pulled from its own prospectus page, read against Chittorgarh&#8217;s 2026 lead-manager performance tracker (issues handled, % positive vs negative listing, average listing-day gain) &#8212; or, where a merchant banker has no 2026 mainboard/SME record on that tracker, its multi-year history sourced separately. &quot;Strong bench&quot; = every named lead manager individually clears &ge;70% positive listings and &ge;15% average listing-day gain (or an equivalent multi-year record); &quot;Solid&quot; a step below that; &quot;Mixed bench&quot; = the lead managers&#8217; records disagree or land in the middle; &quot;Caution&quot; = at least one named lead manager has a negative average listing-day gain in 2026; &quot;Unproven&quot; = no prior listed track record exists to judge by (a debut mandate). A strong or weak bench doesn&#8217;t override the fundamentals above &#8212; it&#8217;s one more input, not a verdict on its own.</p>
   <div class="table-scroll">
-  <table class="ledger-table">
+  <table class="ledger-table sortable">
     <thead><tr><th>Company</th><th>Lead manager(s)</th><th>Track record read</th></tr></thead>
     <tbody>
 <tr><td class='tcell-name'>Kanohar Electricals</td><td>Nuvama Wealth Management Ltd., IIFL Capital Services Ltd.</td><td>Mixed bench</td></tr>
@@ -1628,7 +1647,7 @@
     <h3>The actionable set: 6 issues open for bidding today</h3>
     <p>Of the 32 tracked, 6 are open for fresh applications today (15 Sep 2026) — three (Manika Plastech, Injecto Polymers, Century Business Media) run through 16 Sep with several bidding days already behind them, and three (Quanto Agroworld, Shakti Polytarp, Vama Wovenfab) opened for the first time this morning with only a thin Day-1 print so far. Five issues that were open at the last compile — Veegaland Developers, Maharaja &amp; Speedex India, Om Galaxy, Raksan Transformers and Panchatv Bharat — closed their books today and have moved to the closed-awaiting-listing table below. Ranked by the same composite read as the scorecards above — financial health, valuation, fund usage, and institutional demand where a book exists — with the caveat that early-bid multiples can swing hard into the closing session, as several now-closed issues in this cohort (Veegaland Developers 1.25x&rarr;13.83x, Raksan Transformers 1.31x&rarr;30.64x) just demonstrated again today.</p>
 
-    <table class="rank-table">
+    <table class="rank-table sortable">
       <thead><tr><th>Rank</th><th>Issue</th><th>Closes</th><th>Composite read</th><th>Why</th></tr></thead>
       <tbody>
         <tr class="rank-buy">
@@ -1691,7 +1710,7 @@
   <h2 class="section-title">Recently listed &mdash; listing-day &amp; current gains</h2>
   <p class="section-desc">The most recent mainboard and SME IPOs to complete listing, tracked from their own listing-day close and current market price against issue price. Of the last 15 listings: 11 closed listing day in the green, 4 in the red, 0 listed today with price not yet printed. Sourced from chittorgarh.com's IPO Performance Tracker (chittorgarh.com/report/ipo-performance-report-listing-current-gain), cross-checked against ipoplatform.com's performance tracker; current market price moves daily and is not a fundamental.</p>
   <div class="table-scroll">
-  <table class="ledger-table">
+  <table class="ledger-table sortable">
     <caption>Recently listed IPOs &mdash; issue price vs listing-day close vs current market price</caption>
     <thead><tr><th>Company</th><th>Issue price</th><th>Listing date</th><th>Close on listing</th><th>Listing-day gain</th><th>Current market price</th><th>Current gain vs issue</th></tr></thead>
     <tbody>
@@ -1839,5 +1858,60 @@
 <footer>
   IPO Fundamentals Ledger &middot; Figures sourced from company DRHP/RHP via chittorgarh.com; GMP and cohort completeness cross-checked against investorgain.com, ipoplatform.com, ipoji.com &middot; Not investment advice &middot; Data current as of compile date above
 </footer>
+<script>
+(function () {
+  function parseCell(text) {
+    var t = text.trim();
+    var num = t.replace(/[₹,%\u2191\u2193\u2195]/g, '').replace(/[+\u2212]/g, function(m){return m === '\u2212' ? '-' : '';}).trim();
+    var f = parseFloat(num);
+    if (!isNaN(f) && /^[-+]?[\d.]+\s*x?$/i.test(num.replace(/\s*x$/i,''))) return { isNum: true, val: f };
+    return { isNum: false, val: t.toLowerCase() };
+  }
+
+  document.querySelectorAll('table.sortable').forEach(function (table) {
+    var thead = table.querySelector('thead');
+    if (!thead) return;
+    var tbody = table.querySelector('tbody');
+    if (!tbody) return;
+    var originalRows = Array.prototype.slice.call(tbody.querySelectorAll('tr'));
+    var ths = Array.prototype.slice.call(thead.querySelectorAll('th'));
+
+    ths.forEach(function (th, colIndex) {
+      var arrow = document.createElement('span');
+      arrow.className = 'sort-arrow';
+      th.appendChild(arrow);
+      th.dataset.state = 'default';
+
+      th.addEventListener('click', function () {
+        var state = th.dataset.state;
+        var nextState = state === 'default' ? 'asc' : state === 'asc' ? 'desc' : 'default';
+
+        ths.forEach(function (other) {
+          other.classList.remove('sort-asc', 'sort-desc');
+          if (other !== th) other.dataset.state = 'default';
+        });
+        th.dataset.state = nextState;
+
+        var rows;
+        if (nextState === 'default') {
+          rows = originalRows.slice();
+        } else {
+          th.classList.add(nextState === 'asc' ? 'sort-asc' : 'sort-desc');
+          rows = originalRows.slice().sort(function (a, b) {
+            var ca = a.children[colIndex], cb = b.children[colIndex];
+            if (!ca || !cb) return 0;
+            var pa = parseCell(ca.textContent), pb = parseCell(cb.textContent);
+            var cmp;
+            if (pa.isNum && pb.isNum) cmp = pa.val - pb.val;
+            else cmp = String(pa.val).localeCompare(String(pb.val));
+            return nextState === 'asc' ? cmp : -cmp;
+          });
+        }
+        rows.forEach(function (r) { tbody.appendChild(r); });
+      });
+    });
+  });
+})();
+</script>
 </body>
 </html>
