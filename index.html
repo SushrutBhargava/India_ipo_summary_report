@@ -391,6 +391,10 @@
   .gain-neg { color: var(--red); font-weight: 700; }
   .gain-pending { color: #7a7060; font-style: italic; }
 
+  .pct-pos { color: var(--green); font-weight: 600; }
+  .pct-neg { color: var(--red); font-weight: 600; }
+  .pct-neutral { color: inherit; }
+
   @media (max-width: 900px) {
     .filter-grid { grid-template-columns: repeat(2, 1fr); }
     .sentiment-grid { grid-template-columns: repeat(2, 1fr); }
@@ -1859,6 +1863,23 @@
   IPO Fundamentals Ledger &middot; Figures sourced from company DRHP/RHP via chittorgarh.com; GMP and cohort completeness cross-checked against investorgain.com, ipoplatform.com, ipoji.com &middot; Not investment advice &middot; Data current as of compile date above
 </footer>
 <script>
+(function () {
+  function colorizePercents() {
+    var scope = document.querySelectorAll('table.ledger-table tbody td, table.rank-table tbody td');
+    scope.forEach(function (td) {
+      if (td.classList.contains('tcell-name')) return;
+      if (td.querySelector('span')) return;
+      var html = td.innerHTML;
+      var newHtml = html.replace(/([+\-\u2212]?\d+\.?\d*)%/g, function (match, num) {
+        var n = parseFloat(num.replace(/\u2212/g, '-'));
+        var cls = n > 0 ? 'pct-pos' : n < 0 ? 'pct-neg' : 'pct-neutral';
+        return '<span class="' + cls + '">' + match + '</span>';
+      });
+      if (newHtml !== html) td.innerHTML = newHtml;
+    });
+  }
+  colorizePercents();
+})();
 (function () {
   function parseCell(text) {
     var t = text.trim();
