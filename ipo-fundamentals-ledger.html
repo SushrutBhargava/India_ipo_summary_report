@@ -7,46 +7,54 @@
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600;700&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root {
-    --parchment: #f3ecd9;
-    --parchment-dark: #e8dfc4;
+    --parchment: #f6f1e2;
+    --parchment-dark: #ece2c6;
     --navy: #14213d;
-    --navy-light: #1f3059;
+    --navy-light: #23345c;
     --ink: #2a2116;
     --gold: #a9812f;
+    --gold-light: #c9a250;
     --green: #2f5d3a;
     --red: #8a2e2e;
     --amber: #9c6b1f;
+    --card-radius: 10px;
   }
   * { box-sizing: border-box; }
   body {
     margin: 0;
     background: var(--parchment);
-    background-image: radial-gradient(circle at 20% 10%, rgba(169,129,47,0.06), transparent 40%),
-                       radial-gradient(circle at 80% 90%, rgba(20,33,61,0.05), transparent 40%);
+    background-image: radial-gradient(circle at 15% 8%, rgba(169,129,47,0.08), transparent 42%),
+                       radial-gradient(circle at 85% 92%, rgba(20,33,61,0.06), transparent 42%);
     color: var(--ink);
     font-family: 'Public Sans', sans-serif;
-    line-height: 1.55;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
   }
   header {
-    background: var(--navy);
+    background: linear-gradient(160deg, var(--navy) 0%, #0f1830 100%);
     color: var(--parchment);
-    padding: 40px 24px 32px;
-    border-bottom: 6px double var(--gold);
+    padding: 48px 24px 36px;
+    border-bottom: 3px solid var(--gold);
+    box-shadow: 0 6px 24px rgba(20,33,61,0.25);
   }
   header .wrap { max-width: 1180px; margin: 0 auto; }
   h1 {
     font-family: 'Source Serif 4', serif;
-    font-size: 2.4rem;
-    margin: 0 0 6px;
-    letter-spacing: 0.5px;
+    font-size: 2.6rem;
+    margin: 0 0 8px;
+    letter-spacing: 0.3px;
+    font-weight: 700;
   }
   .eyebrow {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 0.72rem;
-    letter-spacing: 1.5px;
+    letter-spacing: 2px;
     text-transform: uppercase;
-    color: var(--gold);
-    margin-bottom: 10px;
+    color: var(--gold-light);
+    margin-bottom: 12px;
+    display: inline-block;
+    padding-bottom: 4px;
+    border-bottom: 1px solid rgba(201,162,80,0.35);
   }
   .compiled-badge {
     font-family: 'IBM Plex Mono', monospace;
@@ -54,42 +62,45 @@
     letter-spacing: 1px;
     text-transform: uppercase;
     color: #cdd6e8;
-    margin-bottom: 14px;
+    margin-bottom: 16px;
   }
-  .subtitle { font-size: 1rem; color: #cdd6e8; margin-bottom: 16px; max-width: 900px; }
+  .subtitle { font-size: 1.02rem; color: #d6dcec; margin-bottom: 20px; max-width: 900px; }
   .compiled-line {
     font-family: 'IBM Plex Mono', monospace;
-    font-size: 0.85rem;
-    color: var(--gold);
+    font-size: 0.82rem;
+    color: var(--gold-light);
     border-top: 1px solid rgba(255,255,255,0.15);
-    padding-top: 12px;
+    padding-top: 14px;
+    line-height: 1.7;
   }
   .summary-strip {
     display: flex;
-    gap: 24px;
-    margin-top: 16px;
+    gap: 12px;
+    margin-top: 20px;
     flex-wrap: wrap;
   }
   .summary-item {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 0.82rem;
-    background: rgba(255,255,255,0.06);
-    padding: 6px 12px;
-    border-radius: 3px;
-    border: 1px solid rgba(255,255,255,0.12);
+    background: rgba(255,255,255,0.07);
+    padding: 8px 14px;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.14);
+    transition: background 0.15s ease;
   }
-  main { max-width: 1180px; margin: 0 auto; padding: 32px 24px 80px; }
+  main { max-width: 1180px; margin: 0 auto; padding: 36px 24px 80px; }
   section.notes {
     background: var(--parchment-dark);
-    border: 1px solid rgba(20,33,61,0.15);
-    border-left: 4px solid var(--gold);
-    padding: 20px 24px;
-    margin-bottom: 30px;
-    border-radius: 2px;
+    border: 1px solid rgba(20,33,61,0.12);
+    border-left: 5px solid var(--gold);
+    padding: 24px 26px;
+    margin-bottom: 34px;
+    border-radius: var(--card-radius);
+    box-shadow: 0 2px 10px rgba(20,33,61,0.06);
   }
   section.notes h2 {
     font-family: 'Source Serif 4', serif;
-    font-size: 1.3rem;
+    font-size: 1.32rem;
     margin-top: 0;
     color: var(--navy);
   }
@@ -97,56 +108,64 @@
   section.notes li { margin-bottom: 6px; }
   .update-box {
     background: rgba(47,93,58,0.08);
-    border: 1px dashed var(--green);
-    padding: 12px 16px;
-    margin-top: 14px;
+    border: 1px solid rgba(47,93,58,0.35);
+    border-left: 4px solid var(--green);
+    padding: 14px 18px;
+    margin-top: 16px;
     font-size: 0.92rem;
+    border-radius: 6px;
   }
   .update-box strong { color: var(--green); }
   .filter-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 14px;
-    margin: 20px 0 0;
+    margin: 22px 0 0;
   }
   .filter-box {
     background: #fffdf6;
-    border: 1px solid rgba(20,33,61,0.15);
-    border-radius: 3px;
-    padding: 12px 14px;
+    border: 1px solid rgba(20,33,61,0.12);
+    border-radius: 8px;
+    padding: 14px 16px;
+    box-shadow: 0 1px 4px rgba(20,33,61,0.05);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
   }
-  .filter-box .fnum { font-family:'IBM Plex Mono',monospace; color: var(--gold); font-size:0.72rem; }
-  .filter-box h4 { font-family:'Source Serif 4',serif; margin: 4px 0 6px; font-size: 0.98rem; color: var(--navy); }
-  .filter-box p { font-size: 0.8rem; margin: 0; color: #4a4030; }
+  .filter-box:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(20,33,61,0.1); }
+  .filter-box .fnum { font-family:'IBM Plex Mono',monospace; color: var(--gold); font-size:0.72rem; letter-spacing: 0.5px; }
+  .filter-box h4 { font-family:'Source Serif 4',serif; margin: 6px 0 6px; font-size: 1rem; color: var(--navy); }
+  .filter-box p { font-size: 0.81rem; margin: 0; color: #4a4030; }
   h2.section-title {
     font-family: 'Source Serif 4', serif;
-    font-size: 1.6rem;
+    font-size: 1.65rem;
     color: var(--navy);
     border-bottom: 2px solid var(--gold);
-    padding-bottom: 8px;
-    margin: 42px 0 8px;
+    padding-bottom: 10px;
+    margin: 46px 0 8px;
   }
-  .section-desc { font-size: 0.86rem; color: #4a4030; margin-bottom: 20px; max-width: 900px; }
+  .section-desc { font-size: 0.87rem; color: #4a4030; margin-bottom: 22px; max-width: 900px; }
   .cards-col {
     display: flex;
     flex-direction: column;
-    gap: 14px;
-    margin-bottom: 20px;
+    gap: 16px;
+    margin-bottom: 22px;
   }
   .ledger-card {
     background: #fffdf6;
-    border: 1px solid rgba(20,33,61,0.18);
-    border-radius: 4px;
-    padding: 16px 18px;
-    box-shadow: 2px 2px 0 rgba(20,33,61,0.05);
+    border: 1px solid rgba(20,33,61,0.14);
+    border-left: 4px solid var(--navy);
+    border-radius: var(--card-radius);
+    padding: 18px 20px;
+    box-shadow: 0 2px 8px rgba(20,33,61,0.06);
+    transition: box-shadow 0.15s ease, transform 0.15s ease;
   }
+  .ledger-card:hover { box-shadow: 0 6px 18px rgba(20,33,61,0.1); transform: translateY(-1px); }
   .card-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; flex-wrap: wrap; }
   .card-head h3 {
     font-family: 'Source Serif 4', serif;
-    font-size: 1.12rem;
+    font-size: 1.15rem;
     margin: 0 0 4px;
     color: var(--navy);
-    line-height: 1.25;
+    line-height: 1.3;
   }
   .seg-label {
     font-family: 'IBM Plex Mono', monospace;
@@ -158,33 +177,35 @@
   .status-badge {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 0.68rem;
-    padding: 3px 8px;
-    border-radius: 10px;
+    padding: 4px 10px;
+    border-radius: 12px;
     white-space: nowrap;
-    font-weight: 500;
+    font-weight: 600;
   }
   .badge-open { background: #dcefe0; color: var(--green); border: 1px solid var(--green); }
   .badge-closed { background: #f0e6d2; color: var(--amber); border: 1px solid var(--amber); }
   .badge-upcoming { background: #e2e7f2; color: var(--navy); border: 1px solid var(--navy); }
   .card-meta-line {
     font-family: 'IBM Plex Mono', monospace;
-    font-size: 0.76rem;
+    font-size: 0.77rem;
     color: var(--navy-light);
     background: #eef1f8;
-    padding: 6px 8px;
-    border-radius: 3px;
-    margin: 8px 0 10px;
+    padding: 8px 10px;
+    border-radius: 6px;
+    margin: 10px 0 12px;
     border: 1px solid rgba(20,33,61,0.1);
+    line-height: 1.6;
   }
-  .card-tags { margin: 0 0 10px; display: flex; flex-wrap: wrap; gap: 6px; }
+  .card-tags { margin: 0 0 12px; display: flex; flex-wrap: wrap; gap: 6px; }
   .tag {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 0.65rem;
-    padding: 2px 7px;
-    border-radius: 3px;
+    padding: 3px 8px;
+    border-radius: 4px;
     background: #eee;
     color: #444;
     border: 1px solid #ccc;
+    font-weight: 500;
   }
   .tag-strong { background: #dcefe0; color: var(--green); border-color: var(--green); }
   .tag-mixed { background: #f5eccb; color: var(--amber); border-color: var(--amber); }
@@ -200,15 +221,18 @@
   .tag-sub-oversubscribed { background: #f5eccb; color: var(--amber); border-color: var(--amber); }
   .tag-sub-undersubscribed, .tag-sub-pending { background: #f3dcdc; color: var(--red); border-color: var(--red); }
   .tag-sub-not-opened { background: #eee; color: #777; }
-  .card-prose { font-size: 0.86rem; color: #3a3226; margin: 0; }
+  .card-prose { font-size: 0.87rem; color: #3a3226; margin: 0; }
   table.ledger-table {
     width: 100%;
     border-collapse: collapse;
     background: #fffdf6;
     font-size: 0.78rem;
-    margin-bottom: 40px;
+    margin-bottom: 42px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(20,33,61,0.06);
   }
-  table.ledger-table caption { text-align: left; font-family:'Source Serif 4',serif; font-size:1.05rem; margin-bottom:8px; color: var(--navy); }
+  table.ledger-table caption { text-align: left; font-family:'Source Serif 4',serif; font-size:1.08rem; margin-bottom:10px; color: var(--navy); }
   table.ledger-table th {
     background: var(--navy);
     color: var(--parchment);
@@ -216,45 +240,50 @@
     font-weight: 500;
     font-size: 0.68rem;
     text-align: left;
-    padding: 8px 10px;
+    padding: 9px 11px;
+    letter-spacing: 0.3px;
   }
   table.ledger-table td {
-    padding: 7px 10px;
-    border-bottom: 1px solid rgba(20,33,61,0.1);
+    padding: 8px 11px;
+    border-bottom: 1px solid rgba(20,33,61,0.08);
     vertical-align: top;
   }
   table.ledger-table tr:nth-child(even) { background: rgba(20,33,61,0.02); }
+  table.ledger-table tr:hover { background: rgba(169,129,47,0.06); }
   .tcell-name { font-weight: 600; color: var(--navy); white-space: nowrap; }
   .tsub { font-family: 'IBM Plex Mono', monospace; font-size: 0.62rem; color: #7a7060; font-weight: 400; }
-  .table-scroll { overflow-x: auto; }
-  .table-footnote { font-size: 0.78rem; color: #5a5040; margin: -20px 0 40px; padding: 10px 14px; background: rgba(20,33,61,0.03); border-left: 3px solid rgba(20,33,61,0.2); }
+  .table-scroll { overflow-x: auto; border-radius: 8px; }
+  .table-footnote { font-size: 0.78rem; color: #5a5040; margin: -22px 0 42px; padding: 12px 16px; background: rgba(20,33,61,0.03); border-left: 3px solid rgba(20,33,61,0.2); border-radius: 0 6px 6px 0; }
   footer {
     text-align: center;
-    padding: 24px;
+    padding: 28px;
     font-family: 'IBM Plex Mono', monospace;
     font-size: 0.75rem;
     color: #7a7060;
+    border-top: 1px solid rgba(20,33,61,0.1);
+    margin-top: 20px;
   }
 
   .analyst-note {
     background: #fffdf6;
-    border: 1px solid rgba(20,33,61,0.15);
-    border-radius: 4px;
-    padding: 18px 22px;
-    margin-bottom: 22px;
+    border: 1px solid rgba(20,33,61,0.13);
+    border-radius: var(--card-radius);
+    padding: 20px 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(20,33,61,0.06);
   }
   .analyst-note h3 {
     font-family: 'Source Serif 4', serif;
-    font-size: 1.1rem;
+    font-size: 1.12rem;
     color: var(--navy);
-    margin: 0 0 10px;
+    margin: 0 0 12px;
   }
   .analyst-note p { font-size: 0.88rem; margin: 0 0 10px; color: #3a3226; }
   .analyst-note ul { margin: 0 0 10px; padding-left: 20px; }
   .analyst-note li { font-size: 0.88rem; margin-bottom: 8px; color: #3a3226; }
   .verdict-box {
     border-left: 4px solid var(--gold);
-    background: rgba(169,129,47,0.06);
+    background: rgba(169,129,47,0.07);
   }
   .disclaimer-line {
     font-family: 'IBM Plex Mono', monospace;
@@ -268,7 +297,9 @@
     width: 100%;
     border-collapse: collapse;
     font-size: 0.82rem;
-    margin-top: 12px;
+    margin-top: 14px;
+    border-radius: 6px;
+    overflow: hidden;
   }
   table.rank-table th {
     background: var(--navy);
@@ -277,71 +308,72 @@
     font-weight: 500;
     font-size: 0.68rem;
     text-align: left;
-    padding: 8px 10px;
+    padding: 9px 11px;
   }
   table.rank-table td {
-    padding: 10px;
-    border-bottom: 1px solid rgba(20,33,61,0.1);
+    padding: 11px;
+    border-bottom: 1px solid rgba(20,33,61,0.08);
     vertical-align: top;
   }
-  table.rank-table tr.rank-buy { background: rgba(47,93,58,0.06); }
-  table.rank-table tr.rank-watch { background: rgba(156,107,31,0.06); }
-  table.rank-table tr.rank-avoid { background: rgba(138,46,46,0.05); }
-  .rank-score { font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; font-weight: 600; white-space: nowrap; }
+  table.rank-table tr.rank-buy { background: rgba(47,93,58,0.07); }
+  table.rank-table tr.rank-watch { background: rgba(156,107,31,0.07); }
+  table.rank-table tr.rank-avoid { background: rgba(138,46,46,0.06); }
+  .rank-score { font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; font-weight: 700; white-space: nowrap; }
   tr.rank-buy .rank-score { color: var(--green); }
   tr.rank-watch .rank-score { color: var(--amber); }
   tr.rank-avoid .rank-score { color: var(--red); }
 
   .sentiment-box {
     background: #eef1f8;
-    border: 1px solid rgba(20,33,61,0.18);
+    border: 1px solid rgba(20,33,61,0.16);
     border-left: 4px solid var(--navy);
-    padding: 16px 20px;
-    margin: 18px 0 0;
-    border-radius: 2px;
+    padding: 18px 22px;
+    margin: 20px 0 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(20,33,61,0.05);
   }
   .sentiment-box h3 {
     font-family: 'Source Serif 4', serif;
-    font-size: 1.08rem;
+    font-size: 1.1rem;
     color: var(--navy);
-    margin: 0 0 8px;
+    margin: 0 0 10px;
   }
   .sentiment-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
   }
   .sentiment-stat {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 0.76rem;
     background: #fffdf6;
-    border: 1px solid rgba(20,33,61,0.12);
-    border-radius: 3px;
-    padding: 6px 10px;
+    border: 1px solid rgba(20,33,61,0.1);
+    border-radius: 6px;
+    padding: 8px 11px;
   }
-  .sentiment-stat .lbl { color: #7a7060; display:block; font-size:0.62rem; text-transform:uppercase; letter-spacing:0.5px; }
+  .sentiment-stat .lbl { color: #7a7060; display:block; font-size:0.62rem; text-transform:uppercase; letter-spacing:0.5px; margin-bottom: 2px; }
   .sentiment-read {
-    font-size: 0.86rem;
+    font-size: 0.87rem;
     color: #3a3226;
-    margin: 6px 0 0;
+    margin: 8px 0 0;
   }
   .read-tag {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 0.68rem;
-    padding: 2px 8px;
-    border-radius: 10px;
-    font-weight: 600;
+    padding: 3px 9px;
+    border-radius: 12px;
+    font-weight: 700;
   }
   .read-riskon { background: #dcefe0; color: var(--green); border: 1px solid var(--green); }
   .read-neutral { background: #f5eccb; color: var(--amber); border: 1px solid var(--amber); }
   .read-riskoff { background: #f3dcdc; color: var(--red); border: 1px solid var(--red); }
   .key-points {
     background: rgba(20,33,61,0.03);
-    border: 1px solid rgba(20,33,61,0.1);
-    border-radius: 3px;
-    padding: 8px 12px;
-    margin: 0 0 10px;
+    border: 1px solid rgba(20,33,61,0.09);
+    border-radius: 6px;
+    padding: 10px 14px;
+    margin: 0 0 12px;
   }
   .key-points .kp-label {
     font-family: 'IBM Plex Mono', monospace;
@@ -350,17 +382,25 @@
     letter-spacing: 0.5px;
     color: var(--gold);
     display: block;
-    margin-bottom: 4px;
+    margin-bottom: 5px;
   }
   .key-points ul { margin: 0; padding-left: 18px; }
   .key-points li { font-size: 0.8rem; color: #2a2116; margin-bottom: 3px; }
 
-  .gain-pos { color: var(--green); font-weight: 600; }
-  .gain-neg { color: var(--red); font-weight: 600; }
+  .gain-pos { color: var(--green); font-weight: 700; }
+  .gain-neg { color: var(--red); font-weight: 700; }
   .gain-pending { color: #7a7060; font-style: italic; }
+
+  @media (max-width: 900px) {
+    .filter-grid { grid-template-columns: repeat(2, 1fr); }
+    .sentiment-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 560px) {
+    .filter-grid, .sentiment-grid { grid-template-columns: 1fr; }
+    h1 { font-size: 1.9rem; }
+  }
 </style>
 </head>
-<body>
 <body>
 <header>
   <div class="wrap">
@@ -399,7 +439,7 @@
         <div class="sentiment-stat"><span class="lbl">Global backdrop</span>Bond yields and oil prices rose further, spooking risk assets ahead of the Fed meeting; India VIX spiked, Asian markets broadly weak</div>
         <div class="sentiment-stat"><span class="lbl">India IPO-pipeline watch</span>NSE&#8217;s own ₹22,562cr mega-IPO opens 17 Sep into this volatile tape &mdash; a real test of listing-day appetite for the largest issue in this cohort</div>
       </div>
-      <p class="sentiment-read">Read for listing-day risk: the Sensex reversed a strong opening to close down roughly 1% today (15 Sep), extending a choppy, lower-trending stretch, with India VIX spiking and FIIs remaining net sellers even as DIIs continued to buy. Rising bond yields and oil prices ahead of the Fed meeting are the proximate global trigger. This remains a <strong>risk-off-leaning</strong> backdrop for primary-market entries: grey-market premiums have compressed on several names in this cohort since the last compile (Kanohar Electricals, Prasol Chemicals unchanged near flat/negative), even as a handful of SME books (Veegaland Developers, Raksan Transformers) saw outsized late-session institutional demand that doesn't necessarily translate into listing-day pops in this tape. Treat the four-question filter scores below with extra weight on Valuation and Subscription for anything listing in the next 5&ndash;10 trading days, and treat GMP moves as noisy day-to-day sentiment rather than a reliable listing-gain forecast right now. Sourced from live market reporting (Sensex/Nifty levels, India Today/Times of India/Business Standard live blogs — tradingeconomics.com returned a 403 today), nseindia.com/api/fiidiiTradeReact (FII/DII flows), and Zerodha Pulse market-news aggregation (pulse.zerodha.com) &mdash; refreshed each run; not a trading recommendation.</p>
+      <p class="sentiment-read">Read for listing-day risk: the Sensex reversed a strong opening to close down roughly 1% today (15 Sep), extending a choppy, lower-trending stretch, with India VIX spiking and FIIs remaining net sellers even as DIIs continued to buy. Rising bond yields and oil prices ahead of the Fed meeting are the proximate global trigger. This remains a <strong>risk-off-leaning</strong> backdrop for primary-market entries: grey-market premiums have compressed on several names in this cohort since the last compile (Kanohar Electricals, Prasol Chemicals unchanged near flat/negative), even as a handful of SME books (Veegaland Developers, Raksan Transformers) saw outsized late-session institutional demand that doesn't necessarily translate into listing-day pops in this tape. Treat the four-question filter scores below with extra weight on Valuation and Subscription for anything listing in the next 5&ndash;10 trading days, and treat GMP moves as noisy day-to-day sentiment rather than a reliable listing-gain forecast right now.</p>
     </div>
     </div>
   </section>
