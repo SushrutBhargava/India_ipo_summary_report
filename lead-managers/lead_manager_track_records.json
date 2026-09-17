@@ -31,5 +31,10 @@
   "SMC Capitals Ltd.": {"segment": "none_2026_multi_year_fallback", "issues_2026": 0, "all_time_avg_listing_gain_pct": 3.6, "note": "Denta Water +10.5% (Jan 2025), Venus Pipes +3.5% (May 2022), Oval Projects +0.3% (Sep 2025), Jinaam's Dress flat (2019); no negative listings, none large"},
   "PL Capital Markets Pvt.Ltd.": {"segment": "none_2026_multi_year_fallback", "issues_2026": 0, "all_time_avg_listing_gain_pct": 5.3, "note": "Gala Precision Engineering +36.3% (Sep 2024), Rajshree Polypack -7.5% (2018 SME), Laxmi India Finance -13.0% (Aug 2025); small sample, split results"},
   "Khambatta Securities Ltd.": {"segment": "mainboard", "issues_2026": 1, "pct_positive": 100, "avg_listing_gain_pct": 46.8},
-  "SKI Capital Services Ltd.": {"segment": "SME", "issues_2026": 1, "pct_positive": 0, "avg_listing_gain_pct": -5.0}
+  "SKI Capital Services Ltd.": {"segment": "SME", "issues_2026": 1, "pct_positive": 0, "avg_listing_gain_pct": -5.0},
+  "GYR Capital Advisors Pvt.Ltd.": {"segment": "none_2026_pending", "issues_2026": null, "all_time_ipos": 73, "note": "high-volume merchant banker across SME/mainboard; 2026-specific positive/avg-gain figures not yet pulled from the tracker"},
+  "Oneview Corporate Advisors Pvt.Ltd.": {"segment": "SME", "issues_2026": 2, "pct_positive": 50, "avg_listing_gain_pct": 19.5, "note": "Apsis Aerocom +39.1% (Mar 2026), CKK Retail Mart +0.0% (Feb 2026)"},
+  "Swastika Investmart Ltd.": {"segment": "none_2026_pending", "issues_2026": null, "all_time_ipos": 44, "win_rate_pct": 59, "avg_gain_apply_calls_pct": 12.6, "note": "large-volume merchant banker; 2026-specific mainboard/SME breakdown not yet pulled from the tracker"},
+  "Nirbhay Capital Services Pvt.Ltd.": {"segment": "none_2026_pending", "issues_2026": null, "all_time_ipos": 10, "note": "moderate-volume merchant banker; 2026-specific positive/avg-gain figures not yet pulled from the tracker"},
+  "Comfort Securities Ltd.": {"segment": "none", "issues_2026": 0, "all_time_ipos": 1, "note": "effectively a debut mandate, no established track record"}
 }
