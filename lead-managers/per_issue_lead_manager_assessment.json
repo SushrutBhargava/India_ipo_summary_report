@@ -1,39 +1,227 @@
 {
-  "Kanohar Electricals": {"lead_managers": ["Nuvama Wealth Management Ltd.", "IIFL Capital Services Ltd."], "reads": {"Nuvama Wealth Management Ltd.": "50% positive, +9.0% avg gain", "IIFL Capital Services Ltd.": "42% positive, +7.9% avg gain"}, "overall_label": "Mixed bench", "narrative": "Two mainboard-active LMs with middling and below-threshold records; neither individually clears Strong bench criteria."},
-  "Prasol Chemicals": {"lead_managers": ["Dam Capital Advisors Ltd."], "reads": {"Dam Capital Advisors Ltd.": "100% positive, +68.2% avg gain"}, "overall_label": "Strong bench", "narrative": "Sole LM clears both Strong bench thresholds comfortably."},
-  "Glass Wall Systems (India)": {"lead_managers": ["IIFL Capital Services Ltd.", "Motilal Oswal Investment Advisors Ltd."], "reads": {"IIFL Capital Services Ltd.": "42% positive, +7.9% avg gain", "Motilal Oswal Investment Advisors Ltd.": "90% positive, +18.2% avg gain"}, "overall_label": "Mixed bench", "narrative": "One strong LM (Motilal Oswal) offset by a weaker co-lead (IIFL)."},
-  "Rentomojo": {"lead_managers": ["Motilal Oswal Investment Advisors Ltd.", "Axis Capital Ltd.", "IIFL Capital Services Ltd."], "reads": {"Motilal Oswal Investment Advisors Ltd.": "90% positive, +18.2% avg gain", "Axis Capital Ltd.": "62% positive, +16.1% avg gain", "IIFL Capital Services Ltd.": "42% positive, +7.9% avg gain"}, "overall_label": "Mixed bench", "narrative": "Three LMs span a wide range; strongest and weakest disagree."},
-  "Asset Reconstruction Co. (India)": {"lead_managers": ["IIFL Capital Services Ltd.", "IDBI Capital Markets & Securities Ltd.", "JM Financial Ltd."], "reads": {"IIFL Capital Services Ltd.": "42% positive, +7.9% avg gain", "IDBI Capital Markets & Securities Ltd.": "67% positive, +24.6% avg gain", "JM Financial Ltd.": "67% positive, +16.6% avg gain"}, "overall_label": "Mixed bench", "narrative": "Two solid mid-tier LMs plus one below-threshold co-lead."},
-  "Manipal Payment & Identity Solutions (Manipal Cards)": {"lead_managers": ["Motilal Oswal Investment Advisors Ltd.", "Axis Capital Ltd.", "ICICI Securities Ltd.", "IIFL Capital Services Ltd.", "Nuvama Wealth Management Ltd."], "reads": {"Motilal Oswal Investment Advisors Ltd.": "90% positive, +18.2% avg gain", "Axis Capital Ltd.": "62% positive, +16.1% avg gain", "ICICI Securities Ltd.": "67% positive, +22.4% avg gain", "IIFL Capital Services Ltd.": "42% positive, +7.9% avg gain", "Nuvama Wealth Management Ltd.": "50% positive, +9.0% avg gain"}, "overall_label": "Mixed bench", "narrative": "Large 5-LM syndicate with a wide spread of individual track records."},
-  "Steamhouse India": {"lead_managers": ["Equirus Capital Ltd."], "reads": {"Equirus Capital Ltd.": "80% positive, +13.4% avg gain"}, "overall_label": "Strong bench", "narrative": "Sole LM clears Strong bench thresholds."},
-  "LCC Projects": {"lead_managers": ["Motilal Oswal Investment Advisors Ltd."], "reads": {"Motilal Oswal Investment Advisors Ltd.": "90% positive, +18.2% avg gain"}, "overall_label": "Strong bench", "narrative": "Sole LM clears Strong bench thresholds."},
-  "Karamtara Engineering": {"lead_managers": ["JM Financial Ltd.", "ICICI Securities Ltd.", "IIFL Capital Services Ltd."], "reads": {"JM Financial Ltd.": "67% positive, +16.6% avg gain", "ICICI Securities Ltd.": "67% positive, +22.4% avg gain", "IIFL Capital Services Ltd.": "42% positive, +7.9% avg gain"}, "overall_label": "Mixed bench", "narrative": "Two solid co-leads plus one weaker LM below threshold."},
-  "Infrax Renewable": {"lead_managers": ["Smart Horizon Capital Advisors Pvt.Ltd."], "reads": {"Smart Horizon Capital Advisors Pvt.Ltd.": "100% positive, but only +4.3% avg gain"}, "overall_label": "Mixed bench", "narrative": "High positive-listing rate but below the 15% avg-gain Strong bench bar."},
-  "Vinod Texworld": {"lead_managers": ["Novus Capital Advisors Pvt.Ltd."], "reads": {"Novus Capital Advisors Pvt.Ltd.": "100% positive, +8.3% avg gain"}, "overall_label": "Strong bench", "narrative": "Sole LM clears Strong bench thresholds (small sample, 2 SME issues in 2026)."},
-  "Amtech Esters": {"lead_managers": ["Credora Partners Pvt.Ltd."], "reads": {"Credora Partners Pvt.Ltd.": "no prior listed track record"}, "overall_label": "Unproven", "narrative": "Debut mandate for this merchant banker; zero prior listed track record to judge by."},
-  "Veegaland Developers": {"lead_managers": ["Cumulative Capital Pvt.Ltd."], "reads": {"Cumulative Capital Pvt.Ltd.": "100% positive, +18.2% avg gain"}, "overall_label": "Strong bench", "narrative": "Sole LM clears Strong bench thresholds on a thin (1-issue) 2026 sample."},
-  "Maharaja & Speedex India": {"lead_managers": ["Choice Capital Advisors Pvt.Ltd."], "reads": {"Choice Capital Advisors Pvt.Ltd.": "50% positive, -0.5% avg gain"}, "overall_label": "Caution", "narrative": "Negative average listing-day gain in 2026."},
-  "Om Galaxy": {"lead_managers": ["Indorient Financial Services Ltd."], "reads": {"Indorient Financial Services Ltd.": "0% positive, -24.0% avg gain"}, "overall_label": "Caution", "narrative": "Sole 2026 mandate listed negative; genuine red flag."},
-  "Raksan Transformers": {"lead_managers": ["Hem Securities Ltd."], "reads": {"Hem Securities Ltd.": "90% positive, +35.9% avg gain"}, "overall_label": "Strong bench", "narrative": "Busiest SME BRLM in this cohort with a genuinely strong record."},
-  "Panchatv Bharat": {"lead_managers": ["Mark Corporate Advisors Pvt.Ltd."], "reads": {"Mark Corporate Advisors Pvt.Ltd.": "0% positive, -24.0% avg gain"}, "overall_label": "Caution", "narrative": "Sole 2026 mandate also listed negative."},
-  "Manika Plastech": {"lead_managers": ["Pantomath Capital Advisors Pvt.Ltd."], "reads": {"Pantomath Capital Advisors Pvt.Ltd.": "100% positive, +17.1% avg gain"}, "overall_label": "Strong bench", "narrative": "Sole LM clears Strong bench thresholds."},
-  "Injecto Polymers": {"lead_managers": ["Indcap Advisors Pvt.Ltd."], "reads": {"Indcap Advisors Pvt.Ltd.": "100% positive, +36.1% avg gain"}, "overall_label": "Strong bench", "narrative": "Sole LM's only 2026 track record is genuinely strong."},
-  "Century Business Media": {"lead_managers": ["Hem Securities Ltd."], "reads": {"Hem Securities Ltd.": "90% positive, +35.9% avg gain"}, "overall_label": "Strong bench", "narrative": "Same strong SME bench as Raksan Transformers."},
-  "Quanto Agroworld": {"lead_managers": ["Sobhagya Capital Options Pvt.Ltd."], "reads": {"Sobhagya Capital Options Pvt.Ltd.": "25% positive, -0.2% avg gain"}, "overall_label": "Caution", "narrative": "Weak 2026 SME record layered on top of a very thin Day-1 book."},
-  "Shakti Polytarp": {"lead_managers": ["NEXGEN Financial Solutions Pvt.Ltd."], "reads": {"NEXGEN Financial Solutions Pvt.Ltd.": "67% positive, +18.9% avg gain"}, "overall_label": "Strong bench", "narrative": "Genuinely strong bench, a positive counterweight to the issue's own leverage concerns."},
-  "Vama Wovenfab": {"lead_managers": ["Gretex Corporate Services Ltd."], "reads": {"Gretex Corporate Services Ltd.": "100% positive, +7.1% avg gain"}, "overall_label": "Strong bench", "narrative": "Clean 2026 record, though it doesn't offset the issue's near-empty Day-1 demand."},
-  "SS Retail": {"lead_managers": ["Anand Rathi Advisors Ltd.", "Emkay Global Financial Services Ltd."], "reads": {"Anand Rathi Advisors Ltd.": "100% positive, +23.6% avg gain", "Emkay Global Financial Services Ltd.": "50% positive, +10.8% avg gain"}, "overall_label": "Strong bench", "narrative": "Lead LM (Anand Rathi) clears Strong thresholds; co-lead is a step below but doesn't drag the overall read down."},
-  "Jindal Supreme (India)": {"lead_managers": ["Sarthi Capital Advisors Pvt.Ltd."], "reads": {"Sarthi Capital Advisors Pvt.Ltd.": "100% positive, +1.6% avg gain"}, "overall_label": "Mixed bench", "narrative": "High positive-listing rate but well below the 15% avg-gain Strong bench bar."},
-  "Hero Motors": {"lead_managers": ["ICICI Securities Ltd.", "Dam Capital Advisors Ltd.", "JM Financial Ltd."], "reads": {"ICICI Securities Ltd.": "67% positive, +22.4% avg gain", "Dam Capital Advisors Ltd.": "100% positive, +68.2% avg gain", "JM Financial Ltd.": "67% positive, +16.6% avg gain"}, "overall_label": "Strong bench", "narrative": "All three named LMs individually clear Strong bench thresholds."},
-  "National Stock Exchange of India (NSE)": {"lead_managers": ["Kotak Mahindra Capital Co.Ltd.", "Morgan Stanley India Co.Pvt.Ltd.", "HSBC Securities & Capital Markets (India) Pvt.Ltd.", "Avendus Capital Pvt.Ltd.", "Dam Capital Advisors Ltd.", "HDFC Bank Ltd.", "IDBI Capital Markets & Securities Ltd.", "Motilal Oswal Investment Advisors Ltd.", "Pantomath Capital Advisors Pvt.Ltd.", "JM Financial Ltd.", "Citigroup Global Markets India Pvt.Ltd.", "JP Morgan India Pvt.Ltd.", "Anand Rathi Advisors Ltd.", "Axis Capital Ltd.", "Equirus Capital Ltd.", "ICICI Securities Ltd.", "IIFL Capital Services Ltd.", "Nuvama Wealth Management Ltd.", "360 One WAM Ltd."], "reads": {"Kotak Mahindra Capital Co.Ltd.": "78% positive, +21.3% avg gain", "Morgan Stanley India Co.Pvt.Ltd.": "0% positive, -8.6% avg gain"}, "overall_label": "Caution", "narrative": "19-name syndicate; at least one named LM (Morgan Stanley India) has a negative average listing-day gain in 2026, triggering the Caution label per this ledger's rule even amid several strong co-leads."},
-  "Sonaselection India": {"lead_managers": ["Choice Capital Advisors Pvt.Ltd."], "reads": {"Choice Capital Advisors Pvt.Ltd.": "50% positive, -0.5% avg gain"}, "overall_label": "Caution", "narrative": "Same negative-average LM as Maharaja & Speedex India."},
-  "Kheria Autocomp": {"lead_managers": ["SMC Capitals Ltd."], "reads": {"SMC Capitals Ltd.": "no 2026 mainboard/SME record; multi-year all-time avg +3.6% across 4 listed issues"}, "overall_label": "Mixed bench", "narrative": "Modest but consistently non-negative multi-year record; none of the four listings were large gains."},
-  "SpectraA Technology Solutions": {"lead_managers": ["Indcap Advisors Pvt.Ltd."], "reads": {"Indcap Advisors Pvt.Ltd.": "100% positive, +36.1% avg gain"}, "overall_label": "Strong bench", "narrative": "Same strong LM as Injecto Polymers."},
-  "Axiom Gas Engineering": {"lead_managers": ["SKI Capital Services Ltd."], "reads": {"SKI Capital Services Ltd.": "0% positive, -5.0% avg gain"}, "overall_label": "Caution", "narrative": "Sole 2026 mandate listed negative."},
-  "A-One Steels India": {"lead_managers": ["PL Capital Markets Pvt.Ltd.", "Khambatta Securities Ltd."], "reads": {"PL Capital Markets Pvt.Ltd.": "no 2026 record; multi-year all-time avg +5.3% across 3 listed issues, mixed (split positive/negative)", "Khambatta Securities Ltd.": "100% positive, +46.8% avg gain"}, "overall_label": "Mixed bench", "narrative": "One genuinely strong 2026 co-lead paired with a mixed multi-year fallback record."},
-  "Robokidz Eduventures": {"lead_managers": ["GYR Capital Advisors Pvt.Ltd."], "reads": {"GYR Capital Advisors Pvt.Ltd.": "73 IPOs handled all-time as lead manager; 2026-specific positive/gain figures pending fuller tracker pull"}, "overall_label": "Mixed bench", "narrative": "High-volume merchant banker; specific 2026 positive-listing rate not yet confirmed against the tracker."},
-  "FX Multitech": {"lead_managers": ["Oneview Corporate Advisors Pvt.Ltd."], "reads": {"Oneview Corporate Advisors Pvt.Ltd.": "2 IPOs managed, +19.5% avg listing gain (Apsis Aerocom +39.1%, CKK Retail Mart +0.0%)"}, "overall_label": "Mixed bench", "narrative": "Small 2-issue sample split between one strong and one flat listing."},
-  "Vivekanand Cotspin": {"lead_managers": ["Swastika Investmart Ltd."], "reads": {"Swastika Investmart Ltd.": "44 IPOs handled all-time as lead manager; 59% win rate and +12.6% avg gain on Apply-rated calls"}, "overall_label": "Mixed bench", "narrative": "Large-volume merchant banker with a middling win rate, below Strong bench thresholds."},
-  "Himalaya Nutravedics India": {"lead_managers": ["Nirbhay Capital Services Pvt.Ltd."], "reads": {"Nirbhay Capital Services Pvt.Ltd.": "10 IPOs handled all-time as lead manager; 2026-specific positive/gain figures pending fuller tracker pull"}, "overall_label": "Mixed bench", "narrative": "Moderate-volume merchant banker; specific 2026 positive-listing rate not yet confirmed against the tracker."},
-  "S.K.Offset": {"lead_managers": ["Comfort Securities Ltd."], "reads": {"Comfort Securities Ltd.": "1 IPO managed to date, no established track record"}, "overall_label": "Unproven", "narrative": "Effectively a debut mandate; too small a sample to judge."}
+  "National Stock Exchange of India (NSE)": {
+    "lead_managers": [
+      "Kotak Mahindra Capital Co.Ltd.",
+      "Morgan Stanley India Co.Pvt.Ltd.",
+      "HSBC Securities & Capital Markets (India) Pvt.Ltd.",
+      "Avendus Capital Pvt.Ltd.",
+      "Dam Capital Advisors Ltd.",
+      "HDFC Bank Ltd.",
+      "IDBI Capital Markets & Securities Ltd.",
+      "Motilal Oswal Investment Advisors Ltd.",
+      "Pantomath Capital Advisors Pvt.Ltd.",
+      "JM Financial Ltd.",
+      "Citigroup Global Markets India Pvt.Ltd.",
+      "JP Morgan India Pvt.Ltd.",
+      "Anand Rathi Advisors Ltd.",
+      "Axis Capital Ltd.",
+      "Equirus Capital Ltd.",
+      "ICICI Securities Ltd.",
+      "IIFL Capital Services Ltd.",
+      "Nuvama Wealth Management Ltd.",
+      "360 One WAM Ltd."
+    ],
+    "reads": {},
+    "overall_label": "Caution",
+    "narrative": "Lead manager bench read: Caution for National Stock Exchange of India (NSE)."
+  },
+  "Sonaselection India": {
+    "lead_managers": [
+      "Choice Capital Advisors Pvt.Ltd."
+    ],
+    "reads": {},
+    "overall_label": "Caution",
+    "narrative": "Lead manager bench read: Caution for Sonaselection India."
+  },
+  "Kheria Autocomp": {
+    "lead_managers": [
+      "SMC Capitals Ltd."
+    ],
+    "reads": {},
+    "overall_label": "Mixed bench",
+    "narrative": "Lead manager bench read: Mixed bench for Kheria Autocomp."
+  },
+  "SpectraA Technology Solutions": {
+    "lead_managers": [
+      "Indcap Advisors Pvt.Ltd."
+    ],
+    "reads": {},
+    "overall_label": "Strong bench",
+    "narrative": "Lead manager bench read: Strong bench for SpectraA Technology Solutions."
+  },
+  "Axiom Gas Engineering": {
+    "lead_managers": [
+      "SKI Capital Services Ltd."
+    ],
+    "reads": {},
+    "overall_label": "Caution",
+    "narrative": "Lead manager bench read: Caution for Axiom Gas Engineering."
+  },
+  "Manika Plastech": {
+    "lead_managers": [
+      "Pantomath Capital Advisors Pvt.Ltd."
+    ],
+    "reads": {},
+    "overall_label": "Strong bench",
+    "narrative": "Lead manager bench read: Strong bench for Manika Plastech."
+  },
+  "Injecto Polymers": {
+    "lead_managers": [
+      "Indcap Advisors Pvt.Ltd."
+    ],
+    "reads": {},
+    "overall_label": "Strong bench",
+    "narrative": "Lead manager bench read: Strong bench for Injecto Polymers."
+  },
+  "Century Business Media": {
+    "lead_managers": [
+      "Hem Securities Ltd."
+    ],
+    "reads": {},
+    "overall_label": "Strong bench",
+    "narrative": "Lead manager bench read: Strong bench for Century Business Media."
+  },
+  "Quanto Agroworld": {
+    "lead_managers": [
+      "Sobhagya Capital Options Pvt.Ltd."
+    ],
+    "reads": {},
+    "overall_label": "Caution",
+    "narrative": "Lead manager bench read: Caution for Quanto Agroworld."
+  },
+  "Shakti Polytarp": {
+    "lead_managers": [
+      "NEXGEN Financial Solutions Pvt.Ltd."
+    ],
+    "reads": {},
+    "overall_label": "Strong bench",
+    "narrative": "Lead manager bench read: Strong bench for Shakti Polytarp."
+  },
+  "Vama Wovenfab": {
+    "lead_managers": [
+      "Gretex Corporate Services Ltd."
+    ],
+    "reads": {},
+    "overall_label": "Strong bench",
+    "narrative": "Lead manager bench read: Strong bench for Vama Wovenfab."
+  },
+  "SS Retail": {
+    "lead_managers": [
+      "Anand Rathi Advisors Ltd.",
+      "Emkay Global Financial Services Ltd."
+    ],
+    "reads": {},
+    "overall_label": "Strong bench",
+    "narrative": "Lead manager bench read: Strong bench for SS Retail."
+  },
+  "Jindal Supreme (India)": {
+    "lead_managers": [
+      "Sarthi Capital Advisors Pvt.Ltd."
+    ],
+    "reads": {},
+    "overall_label": "Mixed bench",
+    "narrative": "Lead manager bench read: Mixed bench for Jindal Supreme (India)."
+  },
+  "Hero Motors": {
+    "lead_managers": [
+      "ICICI Securities Ltd.",
+      "Dam Capital Advisors Ltd.",
+      "JM Financial Ltd."
+    ],
+    "reads": {},
+    "overall_label": "Strong bench",
+    "narrative": "Lead manager bench read: Strong bench for Hero Motors."
+  },
+  "A-One Steels India": {
+    "lead_managers": [
+      "PL Capital Markets Pvt.Ltd.",
+      "Khambatta Securities Ltd."
+    ],
+    "reads": {},
+    "overall_label": "Mixed bench",
+    "narrative": "Lead manager bench read: Mixed bench for A-One Steels India."
+  },
+  "Robokidz Eduventures": {
+    "lead_managers": [
+      "GYR Capital Advisors Pvt.Ltd."
+    ],
+    "reads": {},
+    "overall_label": "Mixed bench",
+    "narrative": "Lead manager bench read: Mixed bench for Robokidz Eduventures."
+  },
+  "FX Multitech": {
+    "lead_managers": [
+      "Oneview Corporate Advisors Pvt.Ltd."
+    ],
+    "reads": {},
+    "overall_label": "Mixed bench",
+    "narrative": "Lead manager bench read: Mixed bench for FX Multitech."
+  },
+  "Vivekanand Cotspin": {
+    "lead_managers": [
+      "Swastika Investmart Ltd."
+    ],
+    "reads": {},
+    "overall_label": "Mixed bench",
+    "narrative": "Lead manager bench read: Mixed bench for Vivekanand Cotspin."
+  },
+  "Himalaya Nutravedics India": {
+    "lead_managers": [
+      "Nirbhay Capital Services Pvt.Ltd."
+    ],
+    "reads": {},
+    "overall_label": "Mixed bench",
+    "narrative": "Lead manager bench read: Mixed bench for Himalaya Nutravedics India."
+  },
+  "S.K.Offset": {
+    "lead_managers": [
+      "Comfort Securities Ltd."
+    ],
+    "reads": {},
+    "overall_label": "Unproven",
+    "narrative": "Lead manager bench read: Unproven for S.K.Offset."
+  },
+  "Varmora Granito": {
+    "lead_managers": [
+      "Not yet disclosed"
+    ],
+    "reads": {},
+    "overall_label": "Mixed bench",
+    "narrative": "Lead manager bench read: Mixed bench for Varmora Granito."
+  },
+  "ArMee Infotech": {
+    "lead_managers": [
+      "Khandwala Securities Ltd.",
+      "Saffron Capital Advisors Pvt.Ltd."
+    ],
+    "reads": {},
+    "overall_label": "Mixed bench",
+    "narrative": "Lead manager bench read: Mixed bench for ArMee Infotech."
+  },
+  "Elevate Campuses": {
+    "lead_managers": [
+      "JM Financial Ltd.",
+      "IIFL Capital Services Ltd.",
+      "Morgan Stanley India Co.Pvt.Ltd."
+    ],
+    "reads": {},
+    "overall_label": "Strong bench",
+    "narrative": "Lead manager bench read: Strong bench for Elevate Campuses."
+  },
+  "Adroit Industries (India)": {
+    "lead_managers": [
+      "Not yet disclosed"
+    ],
+    "reads": {},
+    "overall_label": "Unproven",
+    "narrative": "Lead manager bench read: Unproven for Adroit Industries (India)."
+  },
+  "Swastika Infra": {
+    "lead_managers": [
+      "Not yet disclosed"
+    ],
+    "reads": {},
+    "overall_label": "Unproven",
+    "narrative": "Lead manager bench read: Unproven for Swastika Infra."
+  }
 }

@@ -1,40 +1,247 @@
 {
-  "Nuvama Wealth Management Ltd.": {"segment": "mainboard", "issues_2026": 4, "pct_positive": 50, "avg_listing_gain_pct": 9.0},
-  "IIFL Capital Services Ltd.": {"segment": "mainboard", "issues_2026": 12, "pct_positive": 42, "avg_listing_gain_pct": 7.9},
-  "Dam Capital Advisors Ltd.": {"segment": "mainboard", "issues_2026": 2, "pct_positive": 100, "avg_listing_gain_pct": 68.2},
-  "Motilal Oswal Investment Advisors Ltd.": {"segment": "mainboard", "issues_2026": 10, "pct_positive": 90, "avg_listing_gain_pct": 18.2},
-  "Axis Capital Ltd.": {"segment": "mainboard", "issues_2026": 13, "pct_positive": 62, "avg_listing_gain_pct": 16.1},
-  "IDBI Capital Markets & Securities Ltd.": {"segment": "mainboard", "issues_2026": 3, "pct_positive": 67, "avg_listing_gain_pct": 24.6},
-  "JM Financial Ltd.": {"segment": "mainboard", "issues_2026": 15, "pct_positive": 67, "avg_listing_gain_pct": 16.6},
-  "ICICI Securities Ltd.": {"segment": "mainboard", "issues_2026": 12, "pct_positive": 67, "avg_listing_gain_pct": 22.4},
-  "Equirus Capital Ltd.": {"segment": "mainboard", "issues_2026": 5, "pct_positive": 80, "avg_listing_gain_pct": 13.4},
-  "Smart Horizon Capital Advisors Pvt.Ltd.": {"segment": "mainboard", "issues_2026": 2, "pct_positive": 100, "avg_listing_gain_pct": 4.3},
-  "Novus Capital Advisors Pvt.Ltd.": {"segment": "SME", "issues_2026": 2, "pct_positive": 100, "avg_listing_gain_pct": 8.3},
-  "Credora Partners Pvt.Ltd.": {"segment": "none", "issues_2026": 0, "pct_positive": null, "avg_listing_gain_pct": null, "note": "brand-new merchant banker, market debut via Amtech Esters (17 Sep 2026 listing)"},
-  "Cumulative Capital Pvt.Ltd.": {"segment": "mainboard", "issues_2026": 1, "pct_positive": 100, "avg_listing_gain_pct": 18.2},
-  "Choice Capital Advisors Pvt.Ltd.": {"segment": "SME", "issues_2026": 2, "pct_positive": 50, "avg_listing_gain_pct": -0.5},
-  "Indorient Financial Services Ltd.": {"segment": "SME", "issues_2026": 1, "pct_positive": 0, "avg_listing_gain_pct": -24.0},
-  "Hem Securities Ltd.": {"segment": "SME", "issues_2026": 10, "pct_positive": 90, "avg_listing_gain_pct": 35.9},
-  "Mark Corporate Advisors Pvt.Ltd.": {"segment": "SME", "issues_2026": 1, "pct_positive": 0, "avg_listing_gain_pct": -24.0},
-  "Pantomath Capital Advisors Pvt.Ltd.": {"segment": "mainboard", "issues_2026": 2, "pct_positive": 100, "avg_listing_gain_pct": 17.1},
-  "Indcap Advisors Pvt.Ltd.": {"segment": "SME", "issues_2026": 1, "pct_positive": 100, "avg_listing_gain_pct": 36.1},
-  "Sobhagya Capital Options Pvt.Ltd.": {"segment": "SME", "issues_2026": 4, "pct_positive": 25, "avg_listing_gain_pct": -0.2},
-  "NEXGEN Financial Solutions Pvt.Ltd.": {"segment": "SME", "issues_2026": 6, "pct_positive": 67, "avg_listing_gain_pct": 18.9},
-  "Gretex Corporate Services Ltd.": {"segment": "SME", "issues_2026": 2, "pct_positive": 100, "avg_listing_gain_pct": 7.1},
-  "Anand Rathi Advisors Ltd.": {"segment": "mainboard", "issues_2026": 1, "pct_positive": 100, "avg_listing_gain_pct": 23.6},
-  "Emkay Global Financial Services Ltd.": {"segment": "mainboard", "issues_2026": 4, "pct_positive": 50, "avg_listing_gain_pct": 10.8},
-  "Sarthi Capital Advisors Pvt.Ltd.": {"segment": "mainboard", "issues_2026": 1, "pct_positive": 100, "avg_listing_gain_pct": 1.6},
-  "Kotak Mahindra Capital Co.Ltd.": {"segment": "mainboard", "issues_2026": 9, "pct_positive": 78, "avg_listing_gain_pct": 21.3},
-  "Morgan Stanley India Co.Pvt.Ltd.": {"segment": "mainboard", "issues_2026": 2, "pct_positive": 0, "avg_listing_gain_pct": -8.6},
-  "HSBC Securities & Capital Markets (India) Pvt.Ltd.": {"segment": "mainboard", "issues_2026": 4, "pct_positive": 75, "avg_listing_gain_pct": 6.5},
-  "Avendus Capital Pvt.Ltd.": {"segment": "mainboard", "issues_2026": 4, "pct_positive": 50, "avg_listing_gain_pct": null, "note": "record only partially captured in source ledger prose (truncated); refresh in next run"},
-  "SMC Capitals Ltd.": {"segment": "none_2026_multi_year_fallback", "issues_2026": 0, "all_time_avg_listing_gain_pct": 3.6, "note": "Denta Water +10.5% (Jan 2025), Venus Pipes +3.5% (May 2022), Oval Projects +0.3% (Sep 2025), Jinaam's Dress flat (2019); no negative listings, none large"},
-  "PL Capital Markets Pvt.Ltd.": {"segment": "none_2026_multi_year_fallback", "issues_2026": 0, "all_time_avg_listing_gain_pct": 5.3, "note": "Gala Precision Engineering +36.3% (Sep 2024), Rajshree Polypack -7.5% (2018 SME), Laxmi India Finance -13.0% (Aug 2025); small sample, split results"},
-  "Khambatta Securities Ltd.": {"segment": "mainboard", "issues_2026": 1, "pct_positive": 100, "avg_listing_gain_pct": 46.8},
-  "SKI Capital Services Ltd.": {"segment": "SME", "issues_2026": 1, "pct_positive": 0, "avg_listing_gain_pct": -5.0},
-  "GYR Capital Advisors Pvt.Ltd.": {"segment": "none_2026_pending", "issues_2026": null, "all_time_ipos": 73, "note": "high-volume merchant banker across SME/mainboard; 2026-specific positive/avg-gain figures not yet pulled from the tracker"},
-  "Oneview Corporate Advisors Pvt.Ltd.": {"segment": "SME", "issues_2026": 2, "pct_positive": 50, "avg_listing_gain_pct": 19.5, "note": "Apsis Aerocom +39.1% (Mar 2026), CKK Retail Mart +0.0% (Feb 2026)"},
-  "Swastika Investmart Ltd.": {"segment": "none_2026_pending", "issues_2026": null, "all_time_ipos": 44, "win_rate_pct": 59, "avg_gain_apply_calls_pct": 12.6, "note": "large-volume merchant banker; 2026-specific mainboard/SME breakdown not yet pulled from the tracker"},
-  "Nirbhay Capital Services Pvt.Ltd.": {"segment": "none_2026_pending", "issues_2026": null, "all_time_ipos": 10, "note": "moderate-volume merchant banker; 2026-specific positive/avg-gain figures not yet pulled from the tracker"},
-  "Comfort Securities Ltd.": {"segment": "none", "issues_2026": 0, "all_time_ipos": 1, "note": "effectively a debut mandate, no established track record"}
+  "Kotak Mahindra Capital Co.Ltd.": {
+    "issues_seen_this_run": [
+      "National Stock Exchange of India (NSE)"
+    ],
+    "read": "Caution"
+  },
+  "Morgan Stanley India Co.Pvt.Ltd.": {
+    "issues_seen_this_run": [
+      "National Stock Exchange of India (NSE)",
+      "Elevate Campuses"
+    ],
+    "read": "Caution"
+  },
+  "HSBC Securities & Capital Markets (India) Pvt.Ltd.": {
+    "issues_seen_this_run": [
+      "National Stock Exchange of India (NSE)"
+    ],
+    "read": "Caution"
+  },
+  "Avendus Capital Pvt.Ltd.": {
+    "issues_seen_this_run": [
+      "National Stock Exchange of India (NSE)"
+    ],
+    "read": "Caution"
+  },
+  "Dam Capital Advisors Ltd.": {
+    "issues_seen_this_run": [
+      "National Stock Exchange of India (NSE)",
+      "Hero Motors"
+    ],
+    "read": "Caution"
+  },
+  "HDFC Bank Ltd.": {
+    "issues_seen_this_run": [
+      "National Stock Exchange of India (NSE)"
+    ],
+    "read": "Caution"
+  },
+  "IDBI Capital Markets & Securities Ltd.": {
+    "issues_seen_this_run": [
+      "National Stock Exchange of India (NSE)"
+    ],
+    "read": "Caution"
+  },
+  "Motilal Oswal Investment Advisors Ltd.": {
+    "issues_seen_this_run": [
+      "National Stock Exchange of India (NSE)"
+    ],
+    "read": "Caution"
+  },
+  "Pantomath Capital Advisors Pvt.Ltd.": {
+    "issues_seen_this_run": [
+      "National Stock Exchange of India (NSE)",
+      "Manika Plastech"
+    ],
+    "read": "Caution"
+  },
+  "JM Financial Ltd.": {
+    "issues_seen_this_run": [
+      "National Stock Exchange of India (NSE)",
+      "Hero Motors",
+      "Elevate Campuses"
+    ],
+    "read": "Caution"
+  },
+  "Citigroup Global Markets India Pvt.Ltd.": {
+    "issues_seen_this_run": [
+      "National Stock Exchange of India (NSE)"
+    ],
+    "read": "Caution"
+  },
+  "JP Morgan India Pvt.Ltd.": {
+    "issues_seen_this_run": [
+      "National Stock Exchange of India (NSE)"
+    ],
+    "read": "Caution"
+  },
+  "Anand Rathi Advisors Ltd.": {
+    "issues_seen_this_run": [
+      "National Stock Exchange of India (NSE)",
+      "SS Retail"
+    ],
+    "read": "Caution"
+  },
+  "Axis Capital Ltd.": {
+    "issues_seen_this_run": [
+      "National Stock Exchange of India (NSE)"
+    ],
+    "read": "Caution"
+  },
+  "Equirus Capital Ltd.": {
+    "issues_seen_this_run": [
+      "National Stock Exchange of India (NSE)"
+    ],
+    "read": "Caution"
+  },
+  "ICICI Securities Ltd.": {
+    "issues_seen_this_run": [
+      "National Stock Exchange of India (NSE)",
+      "Hero Motors"
+    ],
+    "read": "Caution"
+  },
+  "IIFL Capital Services Ltd.": {
+    "issues_seen_this_run": [
+      "National Stock Exchange of India (NSE)",
+      "Elevate Campuses"
+    ],
+    "read": "Caution"
+  },
+  "Nuvama Wealth Management Ltd.": {
+    "issues_seen_this_run": [
+      "National Stock Exchange of India (NSE)"
+    ],
+    "read": "Caution"
+  },
+  "360 One WAM Ltd.": {
+    "issues_seen_this_run": [
+      "National Stock Exchange of India (NSE)"
+    ],
+    "read": "Caution"
+  },
+  "Choice Capital Advisors Pvt.Ltd.": {
+    "issues_seen_this_run": [
+      "Sonaselection India"
+    ],
+    "read": "Caution"
+  },
+  "SMC Capitals Ltd.": {
+    "issues_seen_this_run": [
+      "Kheria Autocomp"
+    ],
+    "read": "Mixed bench"
+  },
+  "Indcap Advisors Pvt.Ltd.": {
+    "issues_seen_this_run": [
+      "SpectraA Technology Solutions",
+      "Injecto Polymers"
+    ],
+    "read": "Strong bench"
+  },
+  "SKI Capital Services Ltd.": {
+    "issues_seen_this_run": [
+      "Axiom Gas Engineering"
+    ],
+    "read": "Caution"
+  },
+  "Hem Securities Ltd.": {
+    "issues_seen_this_run": [
+      "Century Business Media"
+    ],
+    "read": "Strong bench"
+  },
+  "Sobhagya Capital Options Pvt.Ltd.": {
+    "issues_seen_this_run": [
+      "Quanto Agroworld"
+    ],
+    "read": "Caution"
+  },
+  "NEXGEN Financial Solutions Pvt.Ltd.": {
+    "issues_seen_this_run": [
+      "Shakti Polytarp"
+    ],
+    "read": "Strong bench"
+  },
+  "Gretex Corporate Services Ltd.": {
+    "issues_seen_this_run": [
+      "Vama Wovenfab"
+    ],
+    "read": "Strong bench"
+  },
+  "Emkay Global Financial Services Ltd.": {
+    "issues_seen_this_run": [
+      "SS Retail"
+    ],
+    "read": "Strong bench"
+  },
+  "Sarthi Capital Advisors Pvt.Ltd.": {
+    "issues_seen_this_run": [
+      "Jindal Supreme (India)"
+    ],
+    "read": "Mixed bench"
+  },
+  "PL Capital Markets Pvt.Ltd.": {
+    "issues_seen_this_run": [
+      "A-One Steels India"
+    ],
+    "read": "Mixed bench"
+  },
+  "Khambatta Securities Ltd.": {
+    "issues_seen_this_run": [
+      "A-One Steels India"
+    ],
+    "read": "Mixed bench"
+  },
+  "GYR Capital Advisors Pvt.Ltd.": {
+    "issues_seen_this_run": [
+      "Robokidz Eduventures"
+    ],
+    "read": "Mixed bench"
+  },
+  "Oneview Corporate Advisors Pvt.Ltd.": {
+    "issues_seen_this_run": [
+      "FX Multitech"
+    ],
+    "read": "Mixed bench"
+  },
+  "Swastika Investmart Ltd.": {
+    "issues_seen_this_run": [
+      "Vivekanand Cotspin"
+    ],
+    "read": "Mixed bench"
+  },
+  "Nirbhay Capital Services Pvt.Ltd.": {
+    "issues_seen_this_run": [
+      "Himalaya Nutravedics India"
+    ],
+    "read": "Mixed bench"
+  },
+  "Comfort Securities Ltd.": {
+    "issues_seen_this_run": [
+      "S.K.Offset"
+    ],
+    "read": "Unproven"
+  },
+  "Not yet disclosed": {
+    "issues_seen_this_run": [
+      "Varmora Granito",
+      "Adroit Industries (India)",
+      "Swastika Infra"
+    ],
+    "read": "Mixed bench"
+  },
+  "Khandwala Securities Ltd.": {
+    "issues_seen_this_run": [
+      "ArMee Infotech"
+    ],
+    "read": "Mixed bench"
+  },
+  "Saffron Capital Advisors Pvt.Ltd.": {
+    "issues_seen_this_run": [
+      "ArMee Infotech"
+    ],
+    "read": "Mixed bench"
+  }
 }
