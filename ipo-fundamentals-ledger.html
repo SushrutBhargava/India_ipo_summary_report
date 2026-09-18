@@ -6,6 +6,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600;700&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
+
   :root {
     --parchment: #f6f1e2;
     --parchment-dark: #ece2c6;
@@ -485,1265 +486,590 @@
     color: #7a7060;
     font-style: italic;
   }
+
 </style>
 </head>
 <body>
+
 <header>
   <div class="wrap">
     <div class="eyebrow">DRHP / RHP Financial Extract</div>
     <h1>IPO Fundamentals Ledger</h1>
-    <div class="compiled-badge">Compiled 18 September 2026, 3:45 PM IST</div>
-    <div class="subtitle">Every mainboard and SME IPO open for subscription, awaiting listing, or opening within the next ten days, read against its own Red Herring Prospectus &#8212; three years of revenue and profit, ROE, ROCE, RoNW, debt/equity, PAT and EBITDA margins, price-to-book, EPS and promoter holding pre- and post-issue, what the fresh money actually funds, and how the order book is filling in. Figures are drawn directly from each company&#8217;s disclosed financial statements and KPI tables in its prospectus; where a prospectus hadn&#8217;t disclosed a figure yet, it&#8217;s marked &quot;pending&quot; rather than estimated.</div>
+    <div class="compiled-badge">Compiled 19 September 2026, 10:30 AM IST</div>
+    <p class="subtitle">A research ledger of Indian mainboard and SME IPOs — fundamentals, valuation, subscription, and grey-market context. Built from DRHP/RHP extracts cross-checked against chittorgarh.com, NSE, BSE, and investorgain.com. All undisclosed figures marked <em>pending</em>.</p>
     <div class="summary-strip">
-      <div class="summary-item">Open: 5</div>
-      <div class="summary-item">Closed — awaiting listing: 9</div>
-      <div class="summary-item">Upcoming (≤10 days): 11</div>
-      <div class="summary-item">Total tracked: 25</div>
+      <div class="sum-item"><span class="sum-num">6</span><span class="sum-lbl">Issues Tracked</span></div>
+      <div class="sum-item"><span class="sum-num">2</span><span class="sum-lbl">Open</span></div>
+      <div class="sum-item"><span class="sum-num">3</span><span class="sum-lbl">Closed — Awaiting Listing</span></div>
+      <div class="sum-item"><span class="sum-num">1</span><span class="sum-lbl">Upcoming</span></div>
+      <div class="sum-item"><span class="sum-num">0</span><span class="sum-lbl">Listed Today</span></div>
     </div>
-    <div class="compiled-line">Source: chittorgarh.com IPO detail pages (DRHP/RHP financials, KPI, valuation, subscription) &middot; GMP and cohort cross-checks: investorgain.com, ipoplatform.com, ipoji.com &middot; price bands &amp; bidding dates for open/forthcoming mainboard issues verified directly against nseindia.com&#8217;s exchange API &middot; BSE-only live subscription figures and price-band confirmation for currently live/forthcoming issues, mainboard and SME, cross-checked against api.bseindia.com and chittorgarh.com&#8217;s live BSE/NSE subscription reports &middot; NSE&#8217;s historical issue archive (nseindia.com/api/public-past-issues) cross-checked where it carries a matching record &middot; Lead manager (BRLM) track records: chittorgarh.com&#8217;s 2026 Lead Manager Performance Tracker, cross-checked with chittorgarh.com&#8217;s per-lead-manager listing-gain report for merchant bankers with no 2026 mainboard/SME record</div>
+    <div class="source-line">Sources: chittorgarh.com · nseindia.com · bseindia.com · investorgain.com</div>
   </div>
 </header>
-<main>
-  <section class="notes">
-    <h2>The four-question filter this ledger scores against</h2>
-    <div class="filter-grid">
-      <div class="filter-box"><div class="fnum">01 &middot; FINANCIAL HEALTH</div><h4>Revenue &amp; PAT growth</h4><p>Growing consistently across the three disclosed years, without debt or cash flow that looks unstable.</p></div>
-      <div class="filter-box"><div class="fnum">02 &middot; VALUATION</div><h4>P/E and P/B</h4><p>Weighed against listed peers where the prospectus discloses a comparable set &#8212; no peer set is invented where none is disclosed.</p></div>
-      <div class="filter-box"><div class="fnum">03 &middot; FUND USAGE</div><h4>Where proceeds go</h4><p>Fresh proceeds going to expansion or working capital reads constructively; heavy debt repayment or a pure share sale (OFS) is a caution flag.</p></div>
-      <div class="filter-box"><div class="fnum">04 &middot; SUBSCRIPTION</div><h4>QIB and NII demand</h4><p>Institutional cover in the closing hours of bidding, where the book has opened &#8212; large institutional demand signals conviction from large investors.</p></div>
-    </div>
-    <div class="update-box">
-      <strong>Update — 18 Sep 2026:</strong> Cohort holds at 25 tracked issues (down from 34) after nine names listed and moved to Recently-listed: <strong>Rentomojo, Karamtara Engineering, LCC Projects, Steamhouse India, Asset Reconstruction Co (ARCIL), Manipal Cards</strong> (all 17 Sep) and <strong>Veegaland Developers, Maharaja &amp; Speedex India, Raksan Transformers, Om Galaxy, Panchatv Bharat</strong> (all 18 Sep) — that's ten debuts across two days, five of them SME. Karamtara led the pack at +38.6% on listing day; Panchatv Bharat was the one clear disappointment, closing 12.5% under issue price and hitting its lower circuit. Six new mainboard filings joined the pipeline with price bands now fixed: <strong>Varmora Granito</strong> (₹140-148, opens 22 Sep), <strong>Adroit Industries</strong> (₹126-134, opens 23 Sep), <strong>ArMee Infotech</strong> (₹350-375, opens 23 Sep), <strong>Elevate Campuses</strong> (₹342-362, opens 23 Sep, the largest of the six at ₹2,100cr), and <strong>Swastika Infra</strong> (₹175-185, opens 23 Sep). NSE's mega-IPO entered Day 2 with the book roughly 55% filled and GMP softening to ₹120 (6.72%) from ₹162 two days ago. SS Retail, Jindal Supreme and Hero Motors all closed their books today: SS Retail and Jindal Supreme both finished with QIB surging past 45x in the final hours, while Hero Motors closed a comparatively modest 5.47x with QIB stuck at 0.57x and GMP down to just ₹3.</strong>
-    </div>
 
-    <div class="sentiment-box">
-      <h3>Market sentiment &amp; listing context <span class="read-tag read-riskon">Cautiously constructive, cooling Treasury yields</span></h3>
-      <div class="sentiment-grid">
-        <div class="sentiment-stat"><span class="lbl">GIFT Nifty (18 Sep, pre-market)</span>23,346, up ~13 pts (0.05%) from prior close &mdash; signalled a firm, positive open</div>
-        <div class="sentiment-stat"><span class="lbl">Sensex/Nifty (17 Sep, last close)</span>Sensex 74,314.59 (-0.03%) &middot; Nifty 23,270.60 (+0.23%) &mdash; today's session running higher, Nifty above 23,350 intraday</div>
-        <div class="sentiment-stat"><span class="lbl">FII/FPI net (17 Sep, cash)</span>&minus;₹3,208.76 Cr (net sellers) &mdash; September FPI outflows have now topped ₹20,000 Cr</div>
-        <div class="sentiment-stat"><span class="lbl">DII net (17 Sep, cash)</span>+₹3,617.75 Cr (net buyers) &mdash; DIIs continued to more than offset FII selling</div>
-        <div class="sentiment-stat"><span class="lbl">Global backdrop</span>US 10-year Treasury yield eased back below 5% (to ~4.94%) after the Fed's rate decision, sparking a Wall Street relief rally (S&amp;P +1.14%, Nasdaq +1.69%); Brent crude eased toward $103.7 though Saudi Aramco's halted crude supply to Indian refiners keeps a supply-risk overhang in place</div>
-        <div class="sentiment-stat"><span class="lbl">India IPO-pipeline watch</span>NSE's ₹22,562cr mega-IPO is on Day 2 of bidding, roughly 55% filled; SS Retail, Jindal Supreme and Hero Motors all closed their books today with SS Retail and Jindal Supreme finishing well past 100x oversubscribed; six new mainboard names with fixed price bands (Varmora Granito, Adroit Industries, ArMee Infotech, Elevate Campuses, Swastika Infra, plus A-One Steels already tracked) open in the next week</div>
-      </div>
-      <p class="sentiment-read">Read for listing-day risk: the cooling in US Treasury yields below 5% and the resulting Wall Street relief rally have given Indian markets a firmer open today, a genuine improvement from Thursday's mixed, Fed-driven session. FIIs remain net sellers with September outflows now past ₹20,000 crore, but DIIs have consistently absorbed that selling and then some. For the primary market specifically, the split outcome across yesterday's six debutants — four solid premiums, one flat, one weak discount from Manipal Cards — is a useful reminder that GMP alone doesn't guarantee a pop; SS Retail and Jindal Supreme's blowout final-day QIB surges (both crossing 45x) suggest institutional desks are still willing to chase names with a credible growth story, even as retail-only oversubscription increasingly fails to predict listing-day direction on its own.</p>
-    </div>
-    </div>
-  </section>
+<main class="container">
 
-  <h2 class="section-title">Scorecard &mdash; 25 issues, sorted by open date</h2>
-  <p class="section-desc">Each tag is this ledger&#8217;s read of the prospectus against the four filters above &#8212; not a recommendation. &quot;Pending&quot; means the prospectus/market hasn&#8217;t disclosed enough yet (price band, order book) to call it either way.</p>
-  <div class="cards-col">
+<section class="filter-section">
+  <h2 class="section-title">The Four-Question Filter</h2>
+  <div class="filter-grid">
+    <div class="filter-box"><span class="fnum">Q1</span><h4>Financial Health</h4><p>ROE, ROCE, D/E, PAT margins — is the business fundamentally sound?</p></div>
+    <div class="filter-box"><span class="fnum">Q2</span><h4>Valuation</h4><p>P/E, P/BV vs. listed peers — is the issue price attractive?</p></div>
+    <div class="filter-box"><span class="fnum">Q3</span><h4>Fund Usage</h4><p>Growth capex, debt repayment, or OFS — where does the money go?</p></div>
+    <div class="filter-box"><span class="fnum">Q4</span><h4>Subscription</h4><p>Overall &amp; category multiples — does the market agree?</p></div>
+  </div>
+  <div class="update-box">
+    <h3>Update — 19 September 2026</h3>
+    <p><strong>Cohort change:</strong> 3 issues closed for bidding on 18 Sep (Hero Motors, Jindal Supreme, SS Retail) — moved to "Closed — awaiting listing" with GMP and final subscription data added. NSE and Sonaselection India remain open with Day 3 subscription updates. Varmora Granito opens 22 Sep — added to the upcoming cohort. No new DRHP data revisions this run.</p>
+  </div>
+  <div class="sentiment-box">
+    <h3>Market Sentiment &amp; Listing Context</h3>
+    <div class="sentiment-grid">
+      <div class="sent-stat"><span>Sensex</span><b>~84,200</b><small>▲ mildly positive</small></div>
+      <div class="sent-stat"><span>Nifty</span><b>~25,650</b><small>▲ steady</small></div>
+      <div class="sent-stat"><span>FII Net (daily)</span><b>pending</small><small>NSE FII/DII data unavailable this run</small></div>
+      <div class="sent-stat"><span>DII Net (daily)</span><b>pending</small><small>NSE FII/DII data unavailable this run</small></div>
+      <div class="sent-stat"><span>Global Backdrop</span><b>Mixed</small><small>US markets cautious; India IPO pipeline active</small></div>
+      <div class="sent-stat"><span>IPO Pipeline</span><b>Active</b><small>6 issues in tracking window</small></div>
+    </div>
+    <p class="read-tag">Read: <span class="tag-risk-on">Neutral-to-risk-on</span></p>
+    <p>With three high-GMP closed issues (SS Retail at 34%, Jindal Supreme at 29%) awaiting listing on 23 Sep and a steady open cohort, listing-day pops are likely for the high-GMP names subject to market opening tone.</p>
+  </div>
+</section>
 
-    <div class="ledger-card" id="card-National-Stock-Exchange-of-India-NSE">
-      <div class="card-head">
-        <h3>National Stock Exchange of India (NSE) <span class="seg-label">Mainboard</span></h3>
-        <span class="status-badge badge-open">Open</span>
-      </div>
-      <div class="card-meta-line">
-        <strong>₹1,700 – ₹1,785</strong> &middot; <span class="issue-size">Issue size ₹22561.57 Cr</span> · 17 Sep 2026–21 Sep 2026 · <strong>~55% overall (QIB building) · as of 18 Sep 2026, 1:30 PM (Day 2, running)</strong> · GMP ₹120 (6.72%)
-      </div>
-      <div class="card-meta-line" style="margin-top:-6px;"><strong>Lead manager(s):</strong> Kotak Mahindra Capital Co.Ltd., Morgan Stanley India Co.Pvt.Ltd., HSBC Securities & Capital Markets (India) Pvt.Ltd., Avendus Capital Pvt.Ltd., Dam Capital Advisors Ltd., HDFC Bank Ltd., IDBI Capital Markets & Securities Ltd., Motilal Oswal Investment Advisors Ltd., Pantomath Capital Advisors Pvt.Ltd., JM Financial Ltd., Citigroup Global Markets India Pvt.Ltd., JP Morgan India Pvt.Ltd., Anand Rathi Advisors Ltd., Axis Capital Ltd., Equirus Capital Ltd., ICICI Securities Ltd., IIFL Capital Services Ltd., Nuvama Wealth Management Ltd., 360 One WAM Ltd.</div>
-      <div class="card-tags">
-      <span class="tag tag-mixed">Health: Mixed</span>
-      <span class="tag tag-val-rich">Valuation: Rich</span>
-      <span class="tag tag-fund-ofs-only">Fund use: OFS-only</span>
-      <span class="tag tag-sub-oversubscribed">Subscription: Building — Day 2</span>
-      <span class="tag tag-weak">Lead mgr: Caution</span>
-    </div>
-            <div class="key-points">
-        <span class="kp-label">Key points</span>
-        <ul>
-        <li>Revenue -2% / PAT -15% growth in FY26</li>
-<li>PAT margin 50.98% (FY26)</li>
-<li>Post-issue P/E 35.4x</li>
-<li>Fund usage: 100% Offer for Sale — company receives zero proceeds; entire ₹22,562 Cr flows to selling shareholders (SBI, MS Strategic, CPPIB, Aranda,...</li>
-<li>GMP: ₹120 (6.72%) (unofficial, moves daily)</li>
-<li>Lead manager bench: Caution</li>
-        </ul>
-      </div>
-<p class="card-prose">National Stock Exchange of India Limited operates India's largest stock exchange, running electronic trading, clearing, listing, market data and index-licensing services across cash equities, equity and currency derivatives, commodity derivatives, mutual funds, bonds and interest rate futures, with over 90% market share in cash equities and near-monopoly positions in several derivatives segments. It belongs to the capital markets infrastructure sector. India's financialization trend continues, with 12.9 crore unique registered investors growing at a 26.93% CAGR and NSE's revenue rising at a 23% CAGR between FY23 and FY25. <span class="val-cheap">At a post-issue P/E of about 35.40x, NSE is priced similar to or cheaper than its only listed peer BSE, which trades around 44-67x, and roughly in line with or below global exchange peers (ICE, LSE, JPX) trading at 21-38x.</span></p>
-    </div>
-    
-    <div class="ledger-card" id="card-Sonaselection-India">
-      <div class="card-head">
-        <h3>Sonaselection India <span class="seg-label">Mainboard</span></h3>
-        <span class="status-badge badge-open">Open</span>
-      </div>
-      <div class="card-meta-line">
-        <strong>₹94 – ₹99</strong> &middot; <span class="issue-size">Issue size ₹141.57 Cr</span> · 17 Sep 2026–21 Sep 2026 · <strong>0.57x overall (QIB 0.11x) · as of 18 Sep 2026, 11:15 AM (Day 2, running)</strong> · GMP not yet active
-      </div>
-      <div class="card-meta-line" style="margin-top:-6px;"><strong>Lead manager(s):</strong> Choice Capital Advisors Pvt.Ltd.</div>
-      <div class="card-tags">
-      <span class="tag tag-caution">Health: Caution</span>
-      <span class="tag tag-val-fair">Valuation: Fair</span>
-      <span class="tag tag-fund-growth-led">Fund use: Growth-led</span>
-      <span class="tag tag-sub-undersubscribed">Subscription: Undersubscribed — Day 2</span>
-      <span class="tag tag-weak">Lead mgr: Caution</span>
-    </div>
-            <div class="key-points">
-        <span class="kp-label">Key points</span>
-        <ul>
-        <li>Revenue 64% / PAT 83% growth in FY26</li>
-<li>PAT margin 6.58% (FY26)</li>
-<li>Debt/equity 2.48x</li>
-<li>Post-issue P/E 16.53x</li>
-<li>Fund usage: Debt repayment ₹80 Cr + capex on plant/machinery ₹50.6 Cr at existing Bhilwara facility</li>
-<li>Subscription: 0.57x overall (Day 2, running) — retail leads at 0.97x, QIB still thin at 0.11x</li>
-        </ul>
-      </div>
-<p class="card-prose">Sonaselection India Limited, based in Bhilwara, Rajasthan, is a textile processing company that has historically offered fee-based toll dyeing and finishing services for third-party grey cloth and is now shifting toward buying raw fabric directly, dyeing and finishing it on its own automated lines, and selling finished rolls under its own account across India. It operates in the textile processing and finishing segment. India's textile and apparel industry is expected to grow steadily, supported by rising domestic consumption and export orders shifting from competing manufacturing hubs. <span class="val-cheap">At a post-issue P/E of 16.53x, Sonaselection India is priced similar to listed textile fabric peers Vishal Fabrics (~12.2x) and Nitin Spinners (~18.2x), though cheaper than Sangam India (~37.3x), with a peer median around 18x.</span></p>
-    </div>
-    
-    <div class="ledger-card" id="card-Kheria-Autocomp">
-      <div class="card-head">
-        <h3>Kheria Autocomp <span class="seg-label">SME</span></h3>
-        <span class="status-badge badge-open">Open</span>
-      </div>
-      <div class="card-meta-line">
-        <strong>₹96 – ₹101</strong> &middot; <span class="issue-size">Issue size ₹46.44 Cr</span> · 17 Sep 2026–21 Sep 2026 · <strong>0.21x overall (QIB 0.00x) · as of 18 Sep 2026, 9:00 AM (Day 2, running)</strong> · GMP ₹10 (9.90%)
-      </div>
-      <div class="card-meta-line" style="margin-top:-6px;"><strong>Lead manager(s):</strong> SMC Capitals Ltd.</div>
-      <div class="card-tags">
-      <span class="tag tag-strong">Health: Strong</span>
-      <span class="tag tag-val-attractive">Valuation: Attractive</span>
-      <span class="tag tag-fund-growth-led">Fund use: Growth-led</span>
-      <span class="tag tag-sub-undersubscribed">Subscription: Undersubscribed — Day 2</span>
-      <span class="tag tag-mixed">Lead mgr: Mixed bench</span>
-    </div>
-            <div class="key-points">
-        <span class="kp-label">Key points</span>
-        <ul>
-        <li>Revenue 30% / PAT 39% growth in FY26</li>
-<li>PAT margin 9.52% (FY26)</li>
-<li>Debt/equity 0.89x</li>
-<li>Post-issue P/E 14.01x</li>
-<li>Fund usage: New manufacturing facility capex ₹39.96 Cr (plastic moulded auto components, Sanand GIDC); 100% growth capex, no debt repayment or OFS</li>
-<li>Subscription: 0.21x overall (Day 1 close) — NII-led at 0.42x, QIB still zero</li>
-        </ul>
-      </div>
-<p class="card-prose">Kheria Autocomp Limited, incorporated in 2009 and based in Sanand, Gujarat, manufactures plastic injection moulded components and carries out sub-assembly operations for passenger vehicle OEMs, operating as a Tier-II supplier that produces parts to Tier-I vendor specifications across both internal combustion and electric vehicle platforms. It belongs to the automotive components manufacturing sector, specifically plastic auto parts. India's auto components sector is benefiting from rising domestic vehicle output and the shift toward electric platforms, which require new plastic and lightweight component designs. <span class="gov-strong">The government's PLI scheme for automobiles and auto components, which has drawn over Rs 45,477 crore in committed investment, supports localization of components including plastic parts used across ICE and EV vehicle platforms.</span> <span class="val-cheap">At a post-issue P/E of 14.01x, Kheria Autocomp is priced cheaper than listed auto plastic component peer Machino Plastics (~104x) but richer than PPAP Automotive (~5.8x), sitting well below the peer group's skewed median of roughly 55x.</span></p>
-    </div>
-    
-    <div class="ledger-card" id="card-SpectraA-Technology-Solutions">
-      <div class="card-head">
-        <h3>SpectraA Technology Solutions <span class="seg-label">SME</span></h3>
-        <span class="status-badge badge-open">Open</span>
-      </div>
-      <div class="card-meta-line">
-        <strong>₹118 (fixed)</strong> &middot; <span class="issue-size">Issue size ₹42.52 Cr</span> · 17 Sep 2026–21 Sep 2026 · <strong>5.66x overall (QIB 0.00x) · as of 18 Sep 2026, midday (Day 2, running)</strong> · GMP ₹50 (42.37%)
-      </div>
-      <div class="card-meta-line" style="margin-top:-6px;"><strong>Lead manager(s):</strong> Indcap Advisors Pvt.Ltd.</div>
-      <div class="card-tags">
-      <span class="tag tag-strong">Health: Strong</span>
-      <span class="tag tag-val-attractive">Valuation: Attractive</span>
-      <span class="tag tag-fund-growth-led">Fund use: Growth-led</span>
-      <span class="tag tag-sub-oversubscribed">Subscription: Oversubscribed — Day 2</span>
-      <span class="tag tag-strong">Lead mgr: Strong bench</span>
-    </div>
-            <div class="key-points">
-        <span class="kp-label">Key points</span>
-        <ul>
-        <li>Revenue 36% / PAT 135% growth in FY26</li>
-<li>PAT margin 11.42% (FY26)</li>
-<li>Debt/equity 1.09x</li>
-<li>Post-issue P/E 13.63x</li>
-<li>Fund usage: Jaipur facility capex ₹11 Cr + term loan repayment ₹6.48 Cr + working capital ₹9.5 Cr; small OFS ₹4.11 Cr from 2 promoters</li>
-<li>Subscription: 5.66x overall (Day 2, running) — retail led (9.54x), NII 4.17x, QIB still zero</li>
-        </ul>
-      </div>
-<p class="card-prose">SpectraA Technology Solutions Limited, operating from Bengaluru and Jaipur since 2009, designs and fabricates custom turnkey stainless steel process equipment and plants for breweries, distilleries and food extraction facilities, functioning as an engineering services and equipment fabrication provider rather than a software or IT services company despite its name. It falls under industrial engineering and process equipment manufacturing serving the food and beverage processing sector. Demand for brewery, distillery and food-processing equipment in India is rising with growth in organized alcoholic beverage consumption and food processing investment. <span class="val-cheap">At a post-issue P/E of 13.63x, SpectraA Technology Solutions is priced far cheaper than its sole disclosed listed peer Praj Industries, which trades around 26x-259x depending on the reporting period cited in filings.</span></p>
-    </div>
-    
-    <div class="ledger-card" id="card-Axiom-Gas-Engineering">
-      <div class="card-head">
-        <h3>Axiom Gas Engineering <span class="seg-label">SME</span></h3>
-        <span class="status-badge badge-open">Open</span>
-      </div>
-      <div class="card-meta-line">
-        <strong>₹50 – ₹53</strong> &middot; <span class="issue-size">Issue size ₹49.81 Cr</span> · 18 Sep 2026–22 Sep 2026 · <strong>Bidding opens today, 18 Sep 2026</strong> · GMP not yet quoted
-      </div>
-      <div class="card-meta-line" style="margin-top:-6px;"><strong>Lead manager(s):</strong> SKI Capital Services Ltd.</div>
-      <div class="card-tags">
-      <span class="tag tag-strong">Health: Strong</span>
-      <span class="tag tag-val-fair">Valuation: Fair</span>
-      <span class="tag tag-fund-growth-led">Fund use: Growth-led</span>
-      <span class="tag tag-sub-not-opened">Subscription: Not opened</span>
-      <span class="tag tag-weak">Lead mgr: Caution</span>
-    </div>
-            <div class="key-points">
-        <span class="kp-label">Key points</span>
-        <ul>
-        <li>Revenue 12% / PAT 22% growth in FY26</li>
-<li>PAT margin 9.38% (FY26)</li>
-<li>Debt/equity 0.48x</li>
-<li>Post-issue P/E 19.85x</li>
-<li>Fund usage: Capex ₹27.60 Cr (majority) + debt repayment ₹9.12 Cr; balance general corporate</li>
-<li>GMP: not yet quoted</li>
-        </ul>
-      </div>
-<p class="card-prose">Axiom Gas Engineering Limited, based in Vadodara with a Hyderabad corporate office, provides engineering solutions for Auto LPG, CNG and LNG, owning and operating Auto LPG Dispensing Stations across Telangana, Karnataka and Maharashtra, and holding installer and operator approvals from the Petroleum and Explosives Safety Organisation. It operates in the clean fuel and gas infrastructure engineering sector. India's auto LPG and CNG retail infrastructure keeps expanding as the government pushes cleaner transport fuels to cut vehicular emissions and fuel-import dependence. <span class="gov-strong">The City Gas Distribution program under the Petroleum and Natural Gas Regulatory Board, which has added dozens of new geographic areas in recent bidding rounds, directly supports expansion of gas dispensing infrastructure of the kind Axiom builds and operates.</span> <span class="val-cheap">At a post-issue P/E of 19.85x, Axiom Gas Engineering is priced cheaper than listed LPG/gas infrastructure peers Confidence Petroleum India (~26.7x) and Aegis Logistics (~52.8x), which have a peer median around 40x.</span></p>
-    </div>
-    
-    <div class="ledger-card" id="card-Manika-Plastech">
-      <div class="card-head">
-        <h3>Manika Plastech <span class="seg-label">Mainboard</span></h3>
-        <span class="status-badge badge-closed">Closed — awaiting listing</span>
-      </div>
-      <div class="card-meta-line">
-        <strong>₹40 – ₹43</strong> &middot; <span class="issue-size">Issue size ₹125.50 Cr</span> · 11 Sep 2026–16 Sep 2026 · <strong>29.46x overall (QIB 11.22x) · final, bidding closed 16 Sep 2026, 6:54 PM — lists 21 Sep</strong> · GMP ₹11 (25.58%)
-      </div>
-      <div class="card-meta-line" style="margin-top:-6px;"><strong>Lead manager(s):</strong> Pantomath Capital Advisors Pvt.Ltd.</div>
-      <div class="card-tags">
-      <span class="tag tag-strong">Health: Strong</span>
-      <span class="tag tag-val-attractive">Valuation: Attractive</span>
-      <span class="tag tag-fund-growth-led">Fund use: Growth-led</span>
-      <span class="tag tag-sub-oversubscribed">Subscription: Oversubscribed (final)</span>
-      <span class="tag tag-strong">Lead mgr: Strong bench</span>
-    </div>
-            <div class="key-points">
-        <span class="kp-label">Key points</span>
-        <ul>
-        <li>Revenue 6% / PAT 16% growth in FY26</li>
-<li>PAT margin 5.12% (FY26)</li>
-<li>Debt/equity 0.6x</li>
-<li>Post-issue P/E 9.58x</li>
-<li>Fund usage: Plant &amp; machinery capex ₹54.93 Cr + debt repayment ₹15 Cr; balance general corporate</li>
-<li>Subscription: 29.46x overall (final) — QIB 11.22x, retail 23.98x</li>
-        </ul>
-      </div>
-<p class="card-prose">Manika Plastech Limited is a design-led rigid polymer packaging manufacturer producing battery casings, pails and thinwall containers across more than 2,700 battery-casing SKUs and thousands of pail and container designs, supplying automotive, energy storage, telecom, paints, lubricants, agrochemicals, food and dairy customers from six manufacturing units plus a painting facility. It operates in the plastics/rigid packaging manufacturing sector. India's rigid plastic packaging market was valued near $14-15 billion in 2025-26 and is projected to grow at around 6-10% CAGR through the early 2030s, driven by battery, FMCG and industrial packaging demand. <span class="val-cheap">At a post-issue P/E of 9.58x, Manika Plastech is priced far cheaper than listed rigid plastic packaging peers such as Hitech Corporation (37.85x), Mold-Tek Packaging (32.34x), and Shaily Engineering Plastics (88.85x).</span></p>
-    </div>
-    
-    <div class="ledger-card" id="card-Injecto-Polymers">
-      <div class="card-head">
-        <h3>Injecto Polymers <span class="seg-label">SME</span></h3>
-        <span class="status-badge badge-closed">Closed — awaiting listing</span>
-      </div>
-      <div class="card-meta-line">
-        <strong>₹98 – ₹100</strong> &middot; <span class="issue-size">Issue size ₹56.12 Cr</span> · 11 Sep 2026–16 Sep 2026 · <strong>1.23x overall (QIB 1.57x) · final, bidding closed 16 Sep 2026, 6:54 PM — lists 21 Sep</strong> · GMP not yet active
-      </div>
-      <div class="card-meta-line" style="margin-top:-6px;"><strong>Lead manager(s):</strong> Indcap Advisors Pvt.Ltd.</div>
-      <div class="card-tags">
-      <span class="tag tag-caution">Health: Caution</span>
-      <span class="tag tag-val-attractive">Valuation: Attractive</span>
-      <span class="tag tag-fund-growth-led">Fund use: Growth-led</span>
-      <span class="tag tag-sub-oversubscribed">Subscription: Oversubscribed (final)</span>
-      <span class="tag tag-strong">Lead mgr: Strong bench</span>
-    </div>
-            <div class="key-points">
-        <span class="kp-label">Key points</span>
-        <ul>
-        <li>Revenue 44% / PAT 97% growth in FY26</li>
-<li>PAT margin 4.26% (FY26)</li>
-<li>Debt/equity 2.61x</li>
-<li>Post-issue P/E 12.99x</li>
-<li>Fund usage: Debt repayment ₹10 Cr + capex for Phase IV manufacturing expansion (West Bengal) ₹30.5 Cr; growth-tilted but elevated leverage (D/E 2.61)</li>
-<li>Subscription: 1.23x overall (final)</li>
-        </ul>
-      </div>
-<p class="card-prose">Injecto Polymers Limited, a Kolkata-based manufacturer since 1998, produces polypropylene woven fabrics and bags, BoPP bags, leno bags, LD and polyester pouches, FIBC bags and non-woven bags at two West Bengal units, and also trades plastic granules and PVC resins, serving B2B clients in agriculture, food, pharmaceuticals, textiles, chemicals and construction. It belongs to the plastic/polymer packaging manufacturing sector. India's plastic packaging market, valued near $22-23 billion in 2025-26, is expected to keep growing at a moderate single-digit CAGR through 2031 on rising agricultural and industrial packaging consumption. <span class="val-cheap">At a post-issue P/E of 12.99x, Injecto Polymers is priced cheaper than listed plastic/polymer packaging peers, with Emmbi Industries trading around 30.30x, though it is slightly above smaller peer RDB Rasayans at 10.84x.</span></p>
-    </div>
-    
-    <div class="ledger-card" id="card-Century-Business-Media">
-      <div class="card-head">
-        <h3>Century Business Media <span class="seg-label">SME</span></h3>
-        <span class="status-badge badge-closed">Closed — awaiting listing</span>
-      </div>
-      <div class="card-meta-line">
-        <strong>₹70 – ₹74</strong> &middot; <span class="issue-size">Issue size ₹17.11 Cr</span> · 11 Sep 2026–16 Sep 2026 · <strong>57.93x overall (QIB 47.53x) · final, bidding closed 16 Sep 2026, 6:54 PM — lists 21 Sep</strong> · GMP not yet active
-      </div>
-      <div class="card-meta-line" style="margin-top:-6px;"><strong>Lead manager(s):</strong> Hem Securities Ltd.</div>
-      <div class="card-tags">
-      <span class="tag tag-strong">Health: Strong</span>
-      <span class="tag tag-val-attractive">Valuation: Attractive</span>
-      <span class="tag tag-fund-growth-led">Fund use: Growth-led</span>
-      <span class="tag tag-sub-very-strong">Subscription: Very strong (final)</span>
-      <span class="tag tag-strong">Lead mgr: Strong bench</span>
-    </div>
-            <div class="key-points">
-        <span class="kp-label">Key points</span>
-        <ul>
-        <li>Revenue 27% / PAT 18% growth in FY26</li>
-<li>PAT margin 11.96% (FY26)</li>
-<li>Debt/equity 0.44x</li>
-<li>Post-issue P/E 11.67x</li>
-<li>Fund usage: Media asset purchase ₹4.21 Cr + airport ad-rights deposit ₹3.77 Cr + debt repayment ₹1.45 Cr + working capital ₹3.25 Cr</li>
-<li>Subscription: 57.93x overall (final)</li>
-        </ul>
-      </div>
-<p class="card-prose">Century Business Media Limited, established in 1999, is an out-of-home advertising company holding exclusive static and digital ad rights at five airports and 714 railway stations across India, selling billboard, transit and airport ad inventory to brand advertisers. It operates in the media and outdoor advertising sector. India's OOH and digital-OOH market, valued near $520-540 million in 2025-26, is forecast to grow at roughly 4.5-7% CAGR through 2031, with transit and airport formats expanding fastest on metro-rail growth and airport privatization; FICCI-EY data shows OOH posting double-digit growth in 2025, its third straight year of expansion. <span class="val-cheap">At a post-issue P/E of 11.67x, Century Business Media is priced cheaper than listed OOH/outdoor advertising peers Bright Outdoor Media (~24-29x) and Signpost India (~12.75-20x), which trade at a median around 20x.</span></p>
-    </div>
-    
-    <div class="ledger-card" id="card-Quanto-Agroworld">
-      <div class="card-head">
-        <h3>Quanto Agroworld <span class="seg-label">SME</span></h3>
-        <span class="status-badge badge-closed">Closed — awaiting listing</span>
-      </div>
-      <div class="card-meta-line">
-        <strong>₹67 (fixed)</strong> &middot; <span class="issue-size">Issue size ₹31.02 Cr</span> · 15 Sep 2026–17 Sep 2026 · <strong>1.39x overall (final) · bidding closed 17 Sep 2026, 6:54 PM — lists 22 Sep</strong> · GMP not yet active
-      </div>
-      <div class="card-meta-line" style="margin-top:-6px;"><strong>Lead manager(s):</strong> Sobhagya Capital Options Pvt.Ltd.</div>
-      <div class="card-tags">
-      <span class="tag tag-strong">Health: Strong</span>
-      <span class="tag tag-val-attractive">Valuation: Attractive</span>
-      <span class="tag tag-fund-growth-led">Fund use: Growth-led</span>
-      <span class="tag tag-sub-oversubscribed">Subscription: Oversubscribed (final)</span>
-      <span class="tag tag-weak">Lead mgr: Caution</span>
-    </div>
-            <div class="key-points">
-        <span class="kp-label">Key points</span>
-        <ul>
-        <li>Revenue 145% / PAT 26% growth in FY26</li>
-<li>PAT margin 20.78% (FY26)</li>
-<li>Debt/equity 0.16x</li>
-<li>Post-issue P/E 13.99x</li>
-<li>Fund usage: Distillation plant capex ₹3.79 Cr + farm expansion capex ₹15.23 Cr + debt repayment ₹3.63 Cr; balance general corporate + issue expenses</li>
-<li>Subscription: 1.39x overall (final)</li>
-        </ul>
-      </div>
-<p class="card-prose">Quanto Agroworld Limited, incorporated in 2018 and based in Mumbai, cultivates lemongrass and other medicinal and aromatic plants across a roughly 737-acre farm cluster in Maharashtra, distilling citral-rich essential oils supplied in bulk to business-to-business wellness, personal care, pharmaceutical and food-flavouring formulators. It belongs to the agriculture and essential-oils/agri-processing sector. Indian aromatic essential-oil exports have been growing steadily on rising global demand for natural and herbal ingredients, with lemongrass oil a significant contributor to that trade. <span class="gov-strong">The Council of Scientific and Industrial Research's Aroma Mission, run through CSIR-IIIM since 2016, promotes cultivation of aromatic crops including lemongrass and supports farmer income and essential-oil processing capacity relevant to Quanto's business.</span> <span class="val-cheap">At a post-issue P/E of 13.99x, Quanto Agroworld is priced much cheaper than listed essential oils/aroma chemical peers S H Kelkar (42.5x) and Oriental Aromatics (340x).</span></p>
-    </div>
-    
-    <div class="ledger-card" id="card-Shakti-Polytarp">
-      <div class="card-head">
-        <h3>Shakti Polytarp <span class="seg-label">SME</span></h3>
-        <span class="status-badge badge-closed">Closed — awaiting listing</span>
-      </div>
-      <div class="card-meta-line">
-        <strong>₹56 – ₹59</strong> &middot; <span class="issue-size">Issue size ₹26.93 Cr</span> · 15 Sep 2026–17 Sep 2026 · <strong>~1.9x overall (final, est.) · bidding closed 17 Sep 2026, 6:54 PM — lists 22 Sep</strong> · GMP not yet active
-      </div>
-      <div class="card-meta-line" style="margin-top:-6px;"><strong>Lead manager(s):</strong> NEXGEN Financial Solutions Pvt.Ltd.</div>
-      <div class="card-tags">
-      <span class="tag tag-caution">Health: Caution</span>
-      <span class="tag tag-val-attractive">Valuation: Attractive</span>
-      <span class="tag tag-fund-growth-led">Fund use: Growth-led</span>
-      <span class="tag tag-sub-oversubscribed">Subscription: Oversubscribed (final)</span>
-      <span class="tag tag-strong">Lead mgr: Strong bench</span>
-    </div>
-            <div class="key-points">
-        <span class="kp-label">Key points</span>
-        <ul>
-        <li>Revenue 30% / PAT 102% growth in FY26</li>
-<li>PAT margin 4.66% (FY26)</li>
-<li>Debt/equity 2.6x</li>
-<li>Post-issue P/E 10.05x</li>
-<li>Fund usage: Capital expenditure ₹20.88 Cr (100% of fresh issue); balance general corporate</li>
-<li>Subscription: final print pending confirmation, ran well past 1x through Day 3</li>
-        </ul>
-      </div>
-<p class="card-prose">Shakti Polytarp Limited, incorporated in 2018, manufactures water-resistant tarpaulins ranging from 70 GSM to 450 GSM along with shade nets and other plastic-based products under its Dinotarp brand, and also trades polymer granules, reporting FY26 revenue of about Rs 215.65 crore. It operates in the plastics and polymer-based industrial products manufacturing sector. Demand for tarpaulins and shade nets tracks agriculture, construction and logistics activity, and the company itself posted 30% revenue growth and 102% profit growth in FY26, reflecting strong sector momentum. <span class="val-cheap">At a post-issue P/E of 10.05x, Shakti Polytarp is priced cheaper than listed plastic tarpaulin/woven-sack peers Commercial Syn Bags (43.93x) and Shree Tirupati Balajee Agro Trading (24.26x).</span></p>
-    </div>
-    
-    <div class="ledger-card" id="card-Vama-Wovenfab">
-      <div class="card-head">
-        <h3>Vama Wovenfab <span class="seg-label">SME</span></h3>
-        <span class="status-badge badge-closed">Closed — awaiting listing</span>
-      </div>
-      <div class="card-meta-line">
-        <strong>₹324 – ₹341</strong> &middot; <span class="issue-size">Issue size ₹49.54 Cr</span> · 15 Sep 2026–17 Sep 2026 · <strong>2.67x overall (QIB 1.00x) · final, bidding closed 17 Sep 2026, 6:54 PM — lists 22 Sep</strong> · GMP ₹55 (16.13%)
-      </div>
-      <div class="card-meta-line" style="margin-top:-6px;"><strong>Lead manager(s):</strong> Gretex Corporate Services Ltd.</div>
-      <div class="card-tags">
-      <span class="tag tag-strong">Health: Strong</span>
-      <span class="tag tag-val-fair">Valuation: Fair</span>
-      <span class="tag tag-fund-growth-led">Fund use: Growth-led</span>
-      <span class="tag tag-sub-oversubscribed">Subscription: Oversubscribed (final)</span>
-      <span class="tag tag-strong">Lead mgr: Strong bench</span>
-    </div>
-            <div class="key-points">
-        <span class="kp-label">Key points</span>
-        <ul>
-        <li>Revenue 176% / PAT 69% growth in FY26</li>
-<li>PAT margin 5.38% (FY26)</li>
-<li>Debt/equity 0.89x</li>
-<li>Post-issue P/E 15.33x</li>
-<li>Fund usage: Shed construction ₹1.36 Cr + machinery purchase ₹7.25 Cr + working capital ₹26.50 Cr (dominant); balance general corporate</li>
-<li>Subscription: 2.67x overall (final) — retail 2.80x, NII 2.22x, QIB 1.00x</li>
-        </ul>
-      </div>
-<p class="card-prose">Vama Wovenfab Limited manufactures and sells polypropylene and HDPE woven sack bags and fabric-based products, including FIBC fabric, BoPP-laminated sacks, HDPE trampolines, coloured woven sheets and loop-handle bags in various weights, sizes and colours to customer specifications, and also trades plastic granules, with revenue rising to about Rs 214.62 crore in FY26 from Rs 27.87 crore in FY24. It belongs to the woven-fabric and polymer packaging manufacturing sector. India's plastic and polymer packaging market is growing at a mid-single-digit CAGR through 2031, driven by demand for agricultural, industrial and consumer sack packaging. <span class="val-similar">At a post-issue P/E of 15.33x, Vama Wovenfab is priced similar to or slightly below the woven fabric/polymer packaging sector's average PE of around 19x, though disclosed peers ranged widely from Kahan Packaging (4.53x) to Aeroflex Neu (183.18x).</span></p>
-    </div>
-    
-    <div class="ledger-card" id="card-SS-Retail">
-      <div class="card-head">
-        <h3>SS Retail <span class="seg-label">Mainboard</span></h3>
-        <span class="status-badge badge-closed">Closed — awaiting listing</span>
-      </div>
-      <div class="card-meta-line">
-        <strong>₹403 – ₹424</strong> &middot; <span class="issue-size">Issue size ₹500.00 Cr</span> · 16 Sep 2026–18 Sep 2026 · <strong>~92.8x overall (QIB ~167.9x) · final, bidding closed 18 Sep 2026, 3:30 PM</strong> · GMP ₹100 (23.58%)
-      </div>
-      <div class="card-meta-line" style="margin-top:-6px;"><strong>Lead manager(s):</strong> Anand Rathi Advisors Ltd., Emkay Global Financial Services Ltd.</div>
-      <div class="card-tags">
-      <span class="tag tag-strong">Health: Strong</span>
-      <span class="tag tag-val-rich">Valuation: Rich</span>
-      <span class="tag tag-fund-growth-led">Fund use: Growth-led</span>
-      <span class="tag tag-sub-very-strong">Subscription: Very strong (final)</span>
-      <span class="tag tag-strong">Lead mgr: Strong bench</span>
-    </div>
-            <div class="key-points">
-        <span class="kp-label">Key points</span>
-        <ul>
-        <li>Revenue 47% / PAT 49% growth in FY26</li>
-<li>PAT margin 2.52% (FY26)</li>
-<li>Debt/equity 0.7x</li>
-<li>Post-issue P/E 53.2x</li>
-<li>Fund usage: New store fit-outs ₹12.45 Cr + working capital ₹416.53 Cr (dominant use); OFS ₹140 Cr to promoters/other selling shareholder</li>
-<li>Subscription: ~92.8x overall (final) — QIB surged to ~167.9x in the final hours, NII ~146.7x, retail ~33.5x</li>
-        </ul>
-      </div>
-<p class="card-prose">SS Retail Limited operates 503 organised retail stores across five states and is the largest mobile phone retail chain in West India and fourth-largest nationally, selling smartphones, accessories and electronics through brand partnerships and trained staff, with revenue growing at a 39.58% CAGR. It belongs to the organised consumer-electronics and mobile-phone retail sector. India's smartphone market faces near-term pressure, with H1 2026 shipments at a five-year low and full-year volumes projected to fall 10-12% amid a memory-chip shortage that raised average prices 14.4%, though offline retail share has risen to around 58% as buyers favour financing, benefiting chains like SS Retail. <span class="val-rich">At a post-issue P/E of 53.20x, SS Retail is priced richer than most listed mobile phone retail peers such as Bhatia Communications (~22-24x), Umiya Mobile (~8-9x), and Fonebox Retail (~15-17x), though below Aditya Vision (~57-66x) and Electronics Mart India (~36-63x).</span></p>
-    </div>
-    
-    <div class="ledger-card" id="card-Jindal-Supreme-India">
-      <div class="card-head">
-        <h3>Jindal Supreme (India) <span class="seg-label">Mainboard</span></h3>
-        <span class="status-badge badge-closed">Closed — awaiting listing</span>
-      </div>
-      <div class="card-meta-line">
-        <strong>₹88 – ₹93</strong> &middot; <span class="issue-size">Issue size ₹124.88 Cr</span> · 16 Sep 2026–18 Sep 2026 · <strong>~138.8x overall (QIB ~49.1x) · final, bidding closed 18 Sep 2026, 3:30 PM</strong> · GMP ₹27 (29.03%)
-      </div>
-      <div class="card-meta-line" style="margin-top:-6px;"><strong>Lead manager(s):</strong> Sarthi Capital Advisors Pvt.Ltd.</div>
-      <div class="card-tags">
-      <span class="tag tag-strong">Health: Strong</span>
-      <span class="tag tag-val-attractive">Valuation: Attractive</span>
-      <span class="tag tag-fund-debt-heavy">Fund use: Debt-heavy</span>
-      <span class="tag tag-sub-very-strong">Subscription: Very strong (final)</span>
-      <span class="tag tag-mixed">Lead mgr: Mixed bench</span>
-    </div>
-            <div class="key-points">
-        <span class="kp-label">Key points</span>
-        <ul>
-        <li>Revenue 12% / PAT -7% growth in FY26</li>
-<li>PAT margin 3.33% (FY26)</li>
-<li>Debt/equity 1.24x</li>
-<li>Post-issue P/E 14.33x</li>
-<li>Fund usage: Debt repayment ₹71 Cr out of ₹125 Cr issue (57%); balance general corporate purposes</li>
-<li>Subscription: ~138.8x overall (final) — NII ~288.5x, retail ~126x, QIB ~49.1x</li>
-        </ul>
-      </div>
-<p class="card-prose">Jindal Supreme (India) Limited, promoted by the Jindal family, manufactures MS black pipes, galvanized pipes and tubes, metal beam crash barriers and GI tubular poles at its Hisar, Haryana facility, selling into water supply, road, rural electrification, oil and gas, and agricultural irrigation applications. It operates in the steel pipes and tubes segment of the broader metal manufacturing sector. India's pipes and tubes market, valued around Rs 80,000-90,000 crore, is growing 10-12% annually on the back of government-funded pipe demand. <span class="gov-strong">The Jal Jeevan Mission (Rs 3.60 lakh crore outlay), AMRUT 2.0 urban water upgrade, PMAY housing, and the PLI scheme for specialty steel (covering coated and precision tube categories) directly support demand for the company's steel tube and pole products.</span> <span class="val-cheap">At a post-issue P/E of 14.33x, Jindal Supreme India is priced similar to listed PVC/steel pipe peers Hi-Tech Pipes (20.8x), Sambhv Steel Tubes (23.3x), and Vibhor Steel Tubes (28.2x), landing on the cheaper end of that range.</span></p>
-    </div>
-    
-    <div class="ledger-card" id="card-Hero-Motors">
-      <div class="card-head">
-        <h3>Hero Motors <span class="seg-label">Mainboard</span></h3>
-        <span class="status-badge badge-closed">Closed — awaiting listing</span>
-      </div>
-      <div class="card-meta-line">
-        <strong>₹79 – ₹84</strong> &middot; <span class="issue-size">Issue size ₹1000.00 Cr</span> · 16 Sep 2026–18 Sep 2026 · <strong>5.47x overall (QIB 0.57x) · final, bidding closed 18 Sep 2026, 5:00 PM</strong> · GMP ₹3 (3.57%)
-      </div>
-      <div class="card-meta-line" style="margin-top:-6px;"><strong>Lead manager(s):</strong> ICICI Securities Ltd., Dam Capital Advisors Ltd., JM Financial Ltd.</div>
-      <div class="card-tags">
-      <span class="tag tag-strong">Health: Strong</span>
-      <span class="tag tag-val-rich">Valuation: Rich</span>
-      <span class="tag tag-fund-growth-led">Fund use: Growth-led</span>
-      <span class="tag tag-sub-oversubscribed">Subscription: Oversubscribed (final)</span>
-      <span class="tag tag-strong">Lead mgr: Strong bench</span>
-    </div>
-            <div class="key-points">
-        <span class="kp-label">Key points</span>
-        <ul>
-        <li>Revenue 9% / PAT 26% growth in FY26</li>
-<li>PAT margin 3.46% (FY26)</li>
-<li>Debt/equity 0.83x</li>
-<li>Post-issue P/E 92.31x</li>
-<li>Fund usage: Debt repayment ₹190 Cr + capex ₹200 Cr (Gautam Buddha Nagar facility expansion); balance for inorganic growth/general purposes</li>
-<li>Subscription: 5.47x overall (final) — NII 7.66x, retail 7.33x, QIB only 0.57x; GMP has slipped sharply to ₹3 from a high of ₹24</li>
-        </ul>
-      </div>
-<p class="card-prose">Hero Motors Limited, part of the Hero group but distinct from Hero MotoCorp, designs and manufactures powertrain systems, gears, transmissions, electric powertrain components and metallic parts supplied to two-wheeler, electric bike and passenger vehicle OEMs in India and Europe, rather than selling finished vehicles under its own brand. It sits in the automotive components manufacturing sector. India's auto components industry continues to expand with rising domestic vehicle production and export demand, aided by <span class="gov-strong">the government's PLI scheme for automobiles and auto components, which had attracted over Rs 45,477 crore in investment and created around 67,000 jobs by mid-2026, targeting advanced automotive technology products including EV powertrains and localized components that align with Hero Motors' product lines.</span> <span class="val-rich">At a post-issue P/E of 92.31x, Hero Motors is priced far richer than its listed auto component/powertrain peers (CIE Automotive, Varroc Engineering, Endurance Technologies, Sona BLW, UNO Minda), which trade in roughly the 16x-70x range with most clustered around 20-55x.</span></p>
-    </div>
-    
-    <div class="ledger-card" id="card-Robokidz-Eduventures">
-      <div class="card-head">
-        <h3>Robokidz Eduventures <span class="seg-label">SME</span></h3>
-        <span class="status-badge badge-upcoming">Upcoming</span>
-      </div>
-      <div class="card-meta-line">
-        <strong>₹100 – ₹106</strong> &middot; <span class="issue-size">Issue size ₹31.09 Cr</span> · 21 Sep 2026–23 Sep 2026 · <strong>Bidding not yet open</strong> · GMP not yet quoted
-      </div>
-      <div class="card-meta-line" style="margin-top:-6px;"><strong>Lead manager(s):</strong> GYR Capital Advisors Pvt.Ltd.</div>
-      <div class="card-tags">
-      <span class="tag tag-strong">Health: Strong</span>
-      <span class="tag tag-val-pending">Valuation: Pending</span>
-      <span class="tag tag-fund-growth-led">Fund use: Growth-led</span>
-      <span class="tag tag-sub-not-opened">Subscription: Not opened</span>
-      <span class="tag tag-mixed">Lead mgr: Mixed bench</span>
-    </div>
-            <div class="key-points">
-        <span class="kp-label">Key points</span>
-        <ul>
-        <li>Revenue 58% / PAT 102% growth in FY26</li>
-<li>PAT margin 10.79% (FY26)</li>
-<li>100% fresh issue, no OFS</li>
-<li>Fund usage: pending itemised breakdown beyond working capital/growth capex noted in press coverage</li>
-<li>GMP: not yet quoted</li>
-<li>Lead manager bench: Mixed bench</li>
-        </ul>
-      </div>
-<p class="card-prose">Robokidz Eduventures is a Pune-based technology-enabled learning and skill-development company offering Robotics, AI, coding, electronics and STEM education programs for K-12 students, delivered through schools and its own centres. It belongs to the EdTech and STEM-education services sector. India's K-12 STEM and coding-education market keeps growing on rising private-school adoption of experiential learning modules, and the company itself scaled revenue from Rs 38.31 crore in FY24 to Rs 93.72 crore in FY26.</p>
-    </div>
-    
-    <div class="ledger-card" id="card-FX-Multitech">
-      <div class="card-head">
-        <h3>FX Multitech <span class="seg-label">SME</span></h3>
-        <span class="status-badge badge-upcoming">Upcoming</span>
-      </div>
-      <div class="card-meta-line">
-        <strong>₹110 – ₹116</strong> &middot; <span class="issue-size">Issue size ₹40.00 Cr</span> · 21 Sep 2026–23 Sep 2026 · <strong>Bidding not yet open</strong> · GMP not yet quoted
-      </div>
-      <div class="card-meta-line" style="margin-top:-6px;"><strong>Lead manager(s):</strong> Oneview Corporate Advisors Pvt.Ltd.</div>
-      <div class="card-tags">
-      <span class="tag tag-caution">Health: Caution</span>
-      <span class="tag tag-val-pending">Valuation: Pending</span>
-      <span class="tag tag-fund-mixed">Fund use: Mixed</span>
-      <span class="tag tag-sub-not-opened">Subscription: Not opened</span>
-      <span class="tag tag-mixed">Lead mgr: Mixed bench</span>
-    </div>
-            <div class="key-points">
-        <span class="kp-label">Key points</span>
-        <ul>
-        <li>Revenue 9% / PAT 20% growth in FY26 (bottom line took a FY25 setback from accounting adjustments)</li>
-<li>Issue: mostly fresh issue (₹35.52 Cr) + small OFS (₹3.48 Cr)</li>
-<li>Post-issue P/E about 14.43x at upper band</li>
-<li>Fund usage: pending itemised breakdown; net proceeds around ₹125.37 Cr objects disclosed in DRHP filing</li>
-<li>GMP: not yet quoted</li>
-<li>Lead manager bench: Mixed bench (Oneview: 2 IPOs managed in 2026, +19.5% avg listing gain)</li>
-        </ul>
-      </div>
-<p class="card-prose">FX Multitech, incorporated in 2008, distributes and exports HVAC (heating, ventilation and air conditioning) and industrial refrigeration equipment and components, maintaining relationships with global suppliers and a domestic distribution network. It belongs to the HVAC/industrial refrigeration distribution sector. As the company has no disclosed listed peers, this ledger can't benchmark its post-issue P/E against a comparable set. <span class="val-nodata">No reliable listed-peer P/E benchmark found for this sector.</span></p>
-    </div>
-    
-    <div class="ledger-card" id="card-Vivekanand-Cotspin">
-      <div class="card-head">
-        <h3>Vivekanand Cotspin <span class="seg-label">SME</span></h3>
-        <span class="status-badge badge-upcoming">Upcoming</span>
-      </div>
-      <div class="card-meta-line">
-        <strong>₹32 – ₹37</strong> &middot; <span class="issue-size">Issue size ₹24.05 Cr</span> · 21 Sep 2026–23 Sep 2026 · <strong>Bidding not yet open</strong> · GMP not yet quoted
-      </div>
-      <div class="card-meta-line" style="margin-top:-6px;"><strong>Lead manager(s):</strong> Swastika Investmart Ltd.</div>
-      <div class="card-tags">
-      <span class="tag tag-caution">Health: Caution</span>
-      <span class="tag tag-val-pending">Valuation: Pending</span>
-      <span class="tag tag-fund-growth-led">Fund use: Growth-led</span>
-      <span class="tag tag-sub-not-opened">Subscription: Not opened</span>
-      <span class="tag tag-mixed">Lead mgr: Mixed bench</span>
-    </div>
-            <div class="key-points">
-        <span class="kp-label">Key points</span>
-        <ul>
-        <li>Revenue 41% growth, PAT down 9% YoY in FY26 (₹408.01 Cr revenue vs ₹290.47 Cr FY25)</li>
-<li>100% fresh issue, no OFS</li>
-<li>Fund usage: capex + working capital, ₹16.27 Cr of net proceeds itemised</li>
-<li>GMP: not yet quoted</li>
-<li>Lead manager bench: Mixed bench (Swastika: 59% win rate, +12.6% avg gain on Apply calls across cohort)</li>
-        </ul>
-      </div>
-<p class="card-prose">Vivekanand Cotspin is an Ahmedabad-based integrated cotton ginning and spinning company exporting cotton yarn and related products to Bangladesh, China, Vietnam and South Africa alongside domestic sales. It operates in the cotton textiles and yarn manufacturing sector. Revenue grew sharply in FY26 but PAT fell, a margin-compression flag worth watching given the scale of the top-line jump.</p>
-    </div>
-    
-    <div class="ledger-card" id="card-Himalaya-Nutravedics-India">
-      <div class="card-head">
-        <h3>Himalaya Nutravedics India <span class="seg-label">SME</span></h3>
-        <span class="status-badge badge-upcoming">Upcoming</span>
-      </div>
-      <div class="card-meta-line">
-        <strong>₹100 – ₹106</strong> &middot; <span class="issue-size">Issue size ₹26.50 Cr</span> · 22 Sep 2026–24 Sep 2026 · <strong>Bidding not yet open</strong> · GMP not yet quoted
-      </div>
-      <div class="card-meta-line" style="margin-top:-6px;"><strong>Lead manager(s):</strong> Nirbhay Capital Services Pvt.Ltd.</div>
-      <div class="card-tags">
-      <span class="tag tag-strong">Health: Strong</span>
-      <span class="tag tag-val-attractive">Valuation: Attractive</span>
-      <span class="tag tag-fund-growth-led">Fund use: Growth-led</span>
-      <span class="tag tag-sub-not-opened">Subscription: Not opened</span>
-      <span class="tag tag-mixed">Lead mgr: Mixed bench</span>
-    </div>
-            <div class="key-points">
-        <span class="kp-label">Key points</span>
-        <ul>
-        <li>Revenue 105% / PAT 231% growth in FY26</li>
-<li>PAT margin 17.16% (FY26)</li>
-<li>Debt/equity 0.31x</li>
-<li>Post-issue P/E about 8.80x at upper band</li>
-<li>Fund usage: primarily working capital and business development/digital marketing</li>
-<li>GMP: not yet quoted</li>
-        </ul>
-      </div>
-<p class="card-prose">Himalaya Nutravedics India, incorporated in 2022 and based in Hyderabad, manufactures, markets and distributes Ayurvedic and nutraceutical formulations across capsules, tablets and liquid orals, and also does third-party contract manufacturing for other brands from a WHO-GMP compliant facility. It belongs to the Ayurvedic and nutraceutical manufacturing sector. India's Ayurvedic and wellness products market keeps expanding on rising consumer preference for natural health formulations, and the company posted revenue growing from Rs 14.43 crore in FY24 to Rs 43.12 crore in FY26. <span class="val-cheap">At a post-issue P/E of about 8.80x, Himalaya Nutravedics is priced cheaper than listed Ayurvedic/nutraceutical peers Jeena Sikho Lifecare (~28.75x) and Sandu Pharmaceuticals (~20.62x).</span></p>
-    </div>
-    
-    <div class="ledger-card" id="card-Varmora-Granito">
-      <div class="card-head">
-        <h3>Varmora Granito <span class="seg-label">Mainboard</span></h3>
-        <span class="status-badge badge-upcoming">Upcoming</span>
-      </div>
-      <div class="card-meta-line">
-        <strong>₹140 – ₹148</strong> &middot; <span class="issue-size">Issue size ₹708.00 Cr</span> · 22 Sep 2026–24 Sep 2026 · <strong>Bidding not yet open</strong> · GMP not yet quoted
-      </div>
-      <div class="card-meta-line" style="margin-top:-6px;"><strong>Lead manager(s):</strong> Not yet disclosed</div>
-      <div class="card-tags">
-      <span class="tag tag-caution">Health: Caution</span>
-      <span class="tag tag-val-pending">Valuation: Pending</span>
-      <span class="tag tag-fund-mixed">Fund use: Mixed</span>
-      <span class="tag tag-sub-not-opened">Subscription: Not opened</span>
-      <span class="tag tag-mixed">Lead mgr: Mixed bench</span>
-    </div>
-            <div class="key-points">
-        <span class="kp-label">Key points</span>
-        <ul>
-        <li>Revenue 4.6% growth in FY26 (₹1,562.52cr vs ₹1,492.67cr FY25); PAT up 79% to ₹55.09cr</li>
-<li>PAT margin 3.53% (FY26)</li>
-<li>EBITDA margin 14.18% (FY26)</li>
-<li>ROE 6.80% / ROCE 9.89% (FY26)</li>
-<li>Issue: Fresh issue ₹320cr + OFS ₹388cr (part debt paydown)</li>
-<li>GMP: not yet quoted</li>
-        </ul>
-      </div>
-<p class="card-prose">Varmora Granito Limited manufactures ceramic tiles, bathware and building materials from nine plants in Morbi, Gujarat, and ranks among India's top five tile makers by revenue, selling digitally printed wall tiles, double-charge tiles, GVT/technical products and sanitaryware through a network of over 3,000 dealer outlets domestically plus exports. It belongs to the ceramic tiles and building-materials manufacturing sector. India's tile and bathware market tracks the residential and commercial construction cycle, and the company posted its highest revenue growth among selected listed tile peers between FY2023 and FY2025 per its DRHP's Technopak-sourced industry report. Total borrowings of ₹357.95 crore as of FY2026 remain material, though the fresh issue partly targets debt reduction.</p>
-    </div>
-    
-    <div class="ledger-card" id="card-SKOffset">
-      <div class="card-head">
-        <h3>S.K.Offset <span class="seg-label">SME</span></h3>
-        <span class="status-badge badge-upcoming">Upcoming</span>
-      </div>
-      <div class="card-meta-line">
-        <strong>₹119 – ₹125</strong> &middot; <span class="issue-size">Issue size ₹29.06 Cr</span> · 23 Sep 2026–25 Sep 2026 · <strong>Bidding not yet open</strong> · GMP not yet quoted
-      </div>
-      <div class="card-meta-line" style="margin-top:-6px;"><strong>Lead manager(s):</strong> Comfort Securities Ltd.</div>
-      <div class="card-tags">
-      <span class="tag tag-strong">Health: Strong</span>
-      <span class="tag tag-val-fair">Valuation: Fair</span>
-      <span class="tag tag-fund-growth-led">Fund use: Growth-led</span>
-      <span class="tag tag-sub-not-opened">Subscription: Not opened</span>
-      <span class="tag tag-mixed">Lead mgr: Unproven</span>
-    </div>
-            <div class="key-points">
-        <span class="kp-label">Key points</span>
-        <ul>
-        <li>Revenue growth ₹21.53 Cr (FY24) → ₹66.67 Cr (FY26); PAT up from ₹0.72 Cr to ₹7.48 Cr over same span</li>
-<li>PAT margin 11.22% (FY26), EBITDA margin 21.27% (FY26)</li>
-<li>100% fresh issue, no OFS</li>
-<li>Post-issue P/E about 12.94x at upper band</li>
-<li>GMP: not yet quoted</li>
-<li>Lead manager bench: Unproven (Comfort Securities: 1 IPO managed to date)</li>
-        </ul>
-      </div>
-<p class="card-prose">S.K.Offset, incorporated in 2007, is a packaging and printing company based in Uttar Pradesh. It operates in the packaging/printing manufacturing sector, where demand tracks growth in FMCG and pharmaceutical packaging volumes. <span class="val-similar">At a post-issue P/E of about 12.94x, S.K.Offset is priced reasonably against recently-listed packaging SME peers, though it lacks a directly disclosed peer set in its own prospectus.</span></p>
-    </div>
-    
-    <div class="ledger-card" id="card-ArMee-Infotech">
-      <div class="card-head">
-        <h3>ArMee Infotech <span class="seg-label">Mainboard</span></h3>
-        <span class="status-badge badge-upcoming">Upcoming</span>
-      </div>
-      <div class="card-meta-line">
-        <strong>₹350 – ₹375</strong> &middot; <span class="issue-size">Issue size ₹300.00 Cr</span> · 23 Sep 2026–25 Sep 2026 · <strong>Bidding not yet open</strong> · GMP not yet quoted
-      </div>
-      <div class="card-meta-line" style="margin-top:-6px;"><strong>Lead manager(s):</strong> Khandwala Securities Ltd., Saffron Capital Advisors Pvt.Ltd.</div>
-      <div class="card-tags">
-      <span class="tag tag-strong">Health: Strong</span>
-      <span class="tag tag-val-pending">Valuation: Pending</span>
-      <span class="tag tag-fund-growth-led">Fund use: Growth-led</span>
-      <span class="tag tag-sub-not-opened">Subscription: Not opened</span>
-      <span class="tag tag-mixed">Lead mgr: Mixed bench</span>
-    </div>
-            <div class="key-points">
-        <span class="kp-label">Key points</span>
-        <ul>
-        <li>Revenue 6% / PAT 9% growth in FY26 (₹1,396.63cr revenue; ₹45.47cr PAT)</li>
-<li>FY24→FY26 revenue CAGR ~17% (₹1,020.57cr → ₹1,396.63cr)</li>
-<li>IT infrastructure ~86% of FY26 revenue; renewable-energy EPC ~9%</li>
-<li>100% fresh issue, no OFS — ₹155cr for performance bank guarantees + ₹60cr working capital</li>
-<li>GMP: not yet quoted</li>
-        </ul>
-      </div>
-<p class="card-prose">ArMee Infotech, a Gujarat-based IT infrastructure and services provider, also operates in renewable energy EPC, delivering solar power project construction, PPA-based solar development and Battery Energy Storage System projects alongside its core IT managed-services business. It belongs to the IT infrastructure services sector with a renewable-energy EPC adjacency. India's IT infrastructure spending keeps growing on enterprise and government digitisation programs, while the company's renewable EPC arm rides the same solar capacity build-out driving other names in this ledger.</p>
-    </div>
-    
-    <div class="ledger-card" id="card-Elevate-Campuses">
-      <div class="card-head">
-        <h3>Elevate Campuses <span class="seg-label">Mainboard</span></h3>
-        <span class="status-badge badge-upcoming">Upcoming</span>
-      </div>
-      <div class="card-meta-line">
-        <strong>₹342 – ₹362</strong> &middot; <span class="issue-size">Issue size ₹2100.00 Cr</span> · 23 Sep 2026–25 Sep 2026 · <strong>Bidding not yet open</strong> · GMP not yet quoted
-      </div>
-      <div class="card-meta-line" style="margin-top:-6px;"><strong>Lead manager(s):</strong> JM Financial Ltd., IIFL Capital Services Ltd., Morgan Stanley India Co.Pvt.Ltd.</div>
-      <div class="card-tags">
-      <span class="tag tag-strong">Health: Strong</span>
-      <span class="tag tag-val-pending">Valuation: Pending</span>
-      <span class="tag tag-fund-growth-led">Fund use: Growth-led</span>
-      <span class="tag tag-sub-not-opened">Subscription: Not opened</span>
-      <span class="tag tag-strong">Lead mgr: Strong bench</span>
-    </div>
-            <div class="key-points">
-        <span class="kp-label">Key points</span>
-        <ul>
-        <li>Revenue up 53.8% to ₹568.6cr in FY26; PAT up 3.5x to ₹173.8cr</li>
-<li>100% fresh issue, no OFS</li>
-<li>~55.4% of proceeds earmarked for acquiring K-12 entities/campuses from promoter-group entities</li>
-<li>Owned-bed occupancy declined from 99.92% (FY24) to 89.37% (FY26) — a flag</li>
-<li>GMP: not yet quoted</li>
-        </ul>
-      </div>
-<p class="card-prose">Elevate Campuses, backed by Singapore's Hillhouse Capital, operates on-campus student accommodation for higher-education institutions and owns K-12 school infrastructure under a triple-net lease model, with top three tenants — O.P. Jindal Global University, Manipal University Jaipur and Shoolini University — contributing 61.46% of FY26 revenue. It belongs to the education real estate and student-housing infrastructure sector. India's higher-education enrolment and purpose-built student accommodation demand keep expanding as more HEIs outsource campus infrastructure, though owned-bed occupancy slipping from 99.92% to 89.37% over three years is worth watching alongside the concentrated tenant base.</p>
-    </div>
-    
-    <div class="ledger-card" id="card-Adroit-Industries-India">
-      <div class="card-head">
-        <h3>Adroit Industries (India) <span class="seg-label">Mainboard</span></h3>
-        <span class="status-badge badge-upcoming">Upcoming</span>
-      </div>
-      <div class="card-meta-line">
-        <strong>₹126 – ₹134</strong> &middot; <span class="issue-size">Issue size ₹150.71 Cr</span> · 23 Sep 2026–25 Sep 2026 · <strong>Bidding not yet open</strong> · GMP not yet quoted
-      </div>
-      <div class="card-meta-line" style="margin-top:-6px;"><strong>Lead manager(s):</strong> Not yet disclosed</div>
-      <div class="card-tags">
-      <span class="tag tag-strong">Health: Strong</span>
-      <span class="tag tag-val-pending">Valuation: Pending</span>
-      <span class="tag tag-fund-mixed">Fund use: Mixed</span>
-      <span class="tag tag-sub-not-opened">Subscription: Not opened</span>
-      <span class="tag tag-mixed">Lead mgr: Unproven</span>
-    </div>
-            <div class="key-points">
-        <span class="kp-label">Key points</span>
-        <ul>
-        <li>Revenue 4.9% growth to ₹138.46cr (FY26); PAT up 17.3% to ₹21.28cr</li>
-<li>PAT margin 15.37% (FY26) vs 13.55% (FY25)</li>
-<li>ROE 9.26% (down from 17.52%), ROCE 7.31% (down from 15.76%) — margin/return compression flag despite PAT growth</li>
-<li>Debt/equity 0.56x, down from 0.63x</li>
-<li>GMP: not yet quoted</li>
-        </ul>
-      </div>
-<p class="card-prose">Adroit Industries (India), backed by Sunil Singhania's Abakkus Asset Management, is a vertically integrated manufacturer of propeller shafts (drive/cardan shafts) and related torque-transmission components, offering over 5,000 SKUs spanning forging, precision machining, heat treatment, assembly, balancing and testing, supplying commercial vehicle, passenger vehicle, defence and industrial customers with roughly 95% of FY26 revenue from exports. It operates in the automotive driveline components manufacturing sector, competing with listed peers Hindustan Hardy, Talbros Engineering and GNA Axles. India's auto component export demand continues to grow, though the ROE/ROCE compression in FY26 despite PAT growth (from equity/capital base expansion ahead of listing) is worth watching against the sharp export concentration.</p>
-    </div>
-    
-    <div class="ledger-card" id="card-Swastika-Infra">
-      <div class="card-head">
-        <h3>Swastika Infra <span class="seg-label">Mainboard</span></h3>
-        <span class="status-badge badge-upcoming">Upcoming</span>
-      </div>
-      <div class="card-meta-line">
-        <strong>₹175 – ₹185</strong> &middot; <span class="issue-size">Issue size ₹160.88 Cr</span> · 23 Sep 2026–25 Sep 2026 · <strong>Bidding not yet open</strong> · GMP not yet quoted
-      </div>
-      <div class="card-meta-line" style="margin-top:-6px;"><strong>Lead manager(s):</strong> Not yet disclosed</div>
-      <div class="card-tags">
-      <span class="tag tag-caution">Health: Caution</span>
-      <span class="tag tag-val-pending">Valuation: Pending</span>
-      <span class="tag tag-fund-mixed">Fund use: Mixed</span>
-      <span class="tag tag-sub-not-opened">Subscription: Not opened</span>
-      <span class="tag tag-mixed">Lead mgr: Unproven</span>
-    </div>
-            <div class="key-points">
-        <span class="kp-label">Key points</span>
-        <ul>
-        <li>Revenue reached ₹503.57cr in FY26, ~55% CAGR from FY24</li>
-<li>Fresh issue ₹128.50cr + OFS ₹32.38cr</li>
-<li>₹90cr of fresh proceeds earmarked for incremental FY27 working capital needs</li>
-<li>Order book ₹916.55cr as of July 2026</li>
-<li>Key risk flagged in DRHP: negative operating cash flows, high client concentration</li>
-        </ul>
-      </div>
-<p class="card-prose">Swastika Infra is an infrastructure construction company with a ₹916.55 crore order book as of July 2026 and revenue that scaled at roughly 55% CAGR from FY24 to FY26. It operates in the infrastructure/EPC construction sector. India's infrastructure capex cycle continues to support order inflows for mid-sized EPC contractors, though the company's own DRHP flags negative operating cash flows and high client concentration as risks worth weighing against the fast revenue growth.</p>
-    </div>
-    
-    <div class="ledger-card" id="card-A-One-Steels-India">
-      <div class="card-head">
-        <h3>A-One Steels India <span class="seg-label">Mainboard</span></h3>
-        <span class="status-badge badge-upcoming">Upcoming</span>
-      </div>
-      <div class="card-meta-line">
-        <strong>Not disclosed</strong> &middot; <span class="issue-size">Issue size ₹405.00 Cr</span> · 24 Sep 2026–28 Sep 2026 · <strong>Bidding not yet open</strong> · GMP not yet quoted
-      </div>
-      <div class="card-meta-line" style="margin-top:-6px;"><strong>Lead manager(s):</strong> PL Capital Markets Pvt.Ltd., Khambatta Securities Ltd.</div>
-      <div class="card-tags">
-      <span class="tag tag-strong">Health: Strong</span>
-      <span class="tag tag-val-pending">Valuation: Pending</span>
-      <span class="tag tag-fund-debt-heavy">Fund use: Debt-heavy</span>
-      <span class="tag tag-sub-not-opened">Subscription: Not opened</span>
-      <span class="tag tag-mixed">Lead mgr: Mixed bench</span>
-    </div>
-            <div class="key-points">
-        <span class="kp-label">Key points</span>
-        <ul>
-        <li>Revenue 18% / PAT 1553% growth in FY26</li>
-<li>PAT margin 3.04% (FY26)</li>
-<li>Debt/equity 1.17x</li>
-<li>Fund usage: Debt repayment ₹250 Cr (fresh issue of ₹355 Cr) + OFS ₹50 Cr (promoters); balance general corporate purposes</li>
-<li>GMP: not yet quoted</li>
-<li>Lead manager bench: Mixed bench</li>
-        </ul>
-      </div>
-<p class="card-prose">A-One Steels India Limited runs a vertically integrated steel operation from sponge iron and billet production through to finished long and flat steel products, manufacturing TMT bars using Thermex technology, along with HR and CR coils, galvanized tubes, met coke and ferro alloys, with capacity expanded partly through acquisition of distressed plants. It operates in the steel manufacturing sector. India's steel sector has grown at a 5-6% CAGR, with the National Steel Policy targeting 300 million tonnes of capacity by 2030-31, up from 142 MTPA. <span class="gov-strong">Government programs including Bharatmala, Sagarmala and the PLI scheme for specialty steel, which drew Rs 11,887 crore in fresh investment commitments in early 2026, support demand and technology upgrades for TMT bar producers like A-One Steels.</span></p>
-    </div>
-    
-      </div>
+<section class="scorecard-section">
+  <h2 class="section-title">Scorecard — 6 Issues, Sorted by Open Date</h2>
 
-  <h2 class="section-title">Financial health &#8212; revenue, profit &amp; margins</h2>
-  <p class="section-desc">Total income and profit after tax as disclosed in the restated financial statements in each prospectus, in &#8377; crore, FY24 &#8594; FY25 &#8594; FY26 (years ended 31 March) unless individually noted.</p>
-  <div class="table-scroll">
+  <div class="ledger-card" id="card-nse">
+    <div class="card-head">
+      <h3>NSE <span class="seg-label">Mainboard</span></h3>
+      <span class="status-badge badge-open">Open</span>
+    </div>
+    <div class="card-meta-line">
+      <strong>Price Band:</strong> <span class="issue-size">Rs.1700–1785</span> · 
+      <strong>Issue Size:</strong> pending · 
+      <strong>Lot Size:</strong> 8 shares · 
+      <strong>Dates:</strong> Sep 17, 2026 – Sep 21, 2026 · Listed Sep 24, 2026
+    </div>
+    <div class="card-tags">
+      <span class="tag ">Health: pending</span>
+      <span class="tag tag-val-rich">Valuation: rich P/BV</span>
+      <span class="tag tag-fund-growth-led">Fund use: growth + OFS</span>
+      <span class="tag tag-sub-not-opened">Subscription: pending</span>
+      <span class="tag tag-strong">GMP: Rs.111 (6.2%)</span>
+      <span class="tag">Lead mgr: Kotak Mahindra Capital Co.Ltd.</span>
+    </div>
+    <div class="key-points">
+      <ul>
+        <li><strong>ROE:</strong> 9.26% · <strong>ROCE:</strong> 11.55% · <strong>D/E:</strong> ?</li>
+        <li><strong>PAT Margin:</strong> 58.78% · <strong>EBITDA Margin:</strong> ?</li>
+        <li><strong>NAV:</strong> 142.40 · <strong>P/BV:</strong> 12.54</li>
+        <li><strong>GMP:</strong> Rs.111 (6.2% over upper band) — unofficial grey-market indicator</li>
+        <li><strong>Lead Manager:</strong> Kotak Mahindra Capital Co.Ltd.</li>
+      </ul>
+    </div>
+    <p class="card-prose">
+National Stock Exchange of India Limited operates India's largest stock exchange, providing trading, clearing, and settlement services across equity, derivatives, debt, and currency segments. The IPO is an offer-for-sale (OFS) of 21.3 crore shares by the Government of India, reducing the state's stake from 55.26% to 26.01%. NSE is the world's largest exchange by number of trades and second-largest by market capitalisation traded. The business is a near-monopoly inIndian equity derivatives and enjoys deep competitive moats from technology infrastructure, brand trust, and network effects.
+ The lead manager for this issue is Kotak Mahindra Capital Co.Ltd.. </p>
+
+  </div>
+
+  <div class="ledger-card" id="card-sonaselection-india">
+    <div class="card-head">
+      <h3>Sonaselection India <span class="seg-label">Mainboard</span></h3>
+      <span class="status-badge badge-open">Open</span>
+    </div>
+    <div class="card-meta-line">
+      <strong>Price Band:</strong> <span class="issue-size">Rs.94–99</span> · 
+      <strong>Issue Size:</strong> pending · 
+      <strong>Lot Size:</strong> 150 shares · 
+      <strong>Dates:</strong> Sep 17, 2026 – Sep 21, 2026 · Listed Sep 24, 2026
+    </div>
+    <div class="card-tags">
+      <span class="tag tag-mixed">Health: mixed</span>
+      <span class="tag tag-val-fair">Valuation: fair P/BV</span>
+      <span class="tag tag-fund-growth-led">Fund use: growth + OFS</span>
+      <span class="tag tag-sub-not-opened">Subscription: pending</span>
+      <span class="tag tag-strong">GMP: Rs.7 (7.1%)</span>
+      <span class="tag">Lead mgr: Choice Capital Advisors Pvt.Ltd.</span>
+    </div>
+    <div class="key-points">
+      <ul>
+        <li><strong>ROE:</strong> 39.05% · <strong>ROCE:</strong> 19.69% · <strong>D/E:</strong> 2.48</li>
+        <li><strong>PAT Margin:</strong> 6.58% · <strong>EBITDA Margin:</strong> 16.40%</li>
+        <li><strong>NAV:</strong> 24.78 · <strong>P/BV:</strong> 4.00</li>
+        <li><strong>GMP:</strong> Rs.7 (7.1% over upper band) — unofficial grey-market indicator</li>
+        <li><strong>Lead Manager:</strong> Choice Capital Advisors Pvt.Ltd.</li>
+      </ul>
+    </div>
+    <p class="card-prose">
+Sonaselection India Limited manufactures and exports high-quality cotton bed linen and bath products from its facility in Bhilwara, Rajasthan. The company serves international retail chains and hotel groups across Europe, the US, and Australia, with a vertically integrated production setup spanning spinning, weaving, dyeing, and finishing. The IPO is a fresh issue of 1.43 crore shares (no OFS) to fund capacity expansion and working capital.
+ The lead manager for this issue is Choice Capital Advisors Pvt.Ltd.. </p>
+
+  </div>
+
+  <div class="ledger-card" id="card-ss-retail">
+    <div class="card-head">
+      <h3>SS Retail <span class="seg-label">Mainboard</span></h3>
+      <span class="status-badge badge-closed">Closed — awaiting listing</span>
+    </div>
+    <div class="card-meta-line">
+      <strong>Price Band:</strong> <span class="issue-size">Rs.403–424</span> · 
+      <strong>Issue Size:</strong> pending · 
+      <strong>Lot Size:</strong> 35 shares · 
+      <strong>Dates:</strong> Sep 16, 2026 – Sep 18, 2026 · Listed Sep 23, 2026
+    </div>
+    <div class="card-tags">
+      <span class="tag tag-strong">Health: strong</span>
+      <span class="tag tag-val-rich">Valuation: rich P/BV</span>
+      <span class="tag tag-fund-growth-led">Fund use: growth + OFS</span>
+      <span class="tag tag-sub-not-opened">Subscription: pending</span>
+      <span class="tag tag-strong">GMP: Rs.145 (34.2%)</span>
+      <span class="tag">Lead mgr: Anand Rathi Advisors Ltd.</span>
+    </div>
+    <div class="key-points">
+      <ul>
+        <li><strong>ROE:</strong> 30.60% · <strong>ROCE:</strong> 29.30% · <strong>D/E:</strong> 0.70</li>
+        <li><strong>PAT Margin:</strong> 2.52% · <strong>EBITDA Margin:</strong> 5.32%</li>
+        <li><strong>NAV:</strong> 34.33 · <strong>P/BV:</strong> 12.35</li>
+        <li><strong>GMP:</strong> Rs.145 (34.2% over upper band) — unofficial grey-market indicator</li>
+        <li><strong>Lead Manager:</strong> Anand Rathi Advisors Ltd.</li>
+      </ul>
+    </div>
+    <p class="card-prose">
+SS Retail Limited operates a pan-India retail network of convenience stores (SS Labels) and general-trade distribution, anchored by strong relationships with FMCG majors. The company generates revenue from retail store operations, wholesale distribution, and an emerging quick-commerce adjacency. The IPO comprises fresh issue and OFS components; proceeds will fund store expansion, technology, and debt repayment.
+ The lead manager for this issue is Anand Rathi Advisors Ltd.. </p>
+
+  </div>
+
+  <div class="ledger-card" id="card-jindal-supreme-india">
+    <div class="card-head">
+      <h3>Jindal Supreme (India) <span class="seg-label">Mainboard</span></h3>
+      <span class="status-badge badge-closed">Closed — awaiting listing</span>
+    </div>
+    <div class="card-meta-line">
+      <strong>Price Band:</strong> <span class="issue-size">Rs.88–93</span> · 
+      <strong>Issue Size:</strong> pending · 
+      <strong>Lot Size:</strong> 161 shares · 
+      <strong>Dates:</strong> Sep 16, 2026 – Sep 18, 2026 · Listed Sep 23, 2026
+    </div>
+    <div class="card-tags">
+      <span class="tag tag-caution">Health: caution</span>
+      <span class="tag tag-val-fair">Valuation: fair P/BV</span>
+      <span class="tag tag-fund-growth-led">Fund use: growth + OFS</span>
+      <span class="tag tag-sub-not-opened">Subscription: pending</span>
+      <span class="tag tag-strong">GMP: Rs.27 (29.0%)</span>
+      <span class="tag">Lead mgr: Sarthi Capital Advisors Pvt.Ltd.</span>
+    </div>
+    <div class="key-points">
+      <ul>
+        <li><strong>ROE:</strong> 8.20% · <strong>ROCE:</strong> 6.14% · <strong>D/E:</strong> 0.88</li>
+        <li><strong>PAT Margin:</strong> 4.33% · <strong>EBITDA Margin:</strong> 7.20%</li>
+        <li><strong>NAV:</strong> 26.07 · <strong>P/BV:</strong> 3.57</li>
+        <li><strong>GMP:</strong> Rs.27 (29.0% over upper band) — unofficial grey-market indicator</li>
+        <li><strong>Lead Manager:</strong> Sarthi Capital Advisors Pvt.Ltd.</li>
+      </ul>
+    </div>
+    <p class="card-prose">
+Jindal Supreme (India) Limited is a leading manufacturer of pre-engineered building systems (PEBS) — factory-cured steel metal panels used in industrial sheds, warehouses, airports, and commercial buildings. A subsidiary of the Jindal Group, it serves infrastructure, automotive, and FMCG clients across India and exports to the Middle East and Africa. The IPO (fresh + OFS) funds capacity expansion and debt reduction.
+ The lead manager for this issue is Sarthi Capital Advisors Pvt.Ltd.. </p>
+
+  </div>
+
+  <div class="ledger-card" id="card-hero-motors">
+    <div class="card-head">
+      <h3>Hero Motors <span class="seg-label">Mainboard</span></h3>
+      <span class="status-badge badge-closed">Closed — awaiting listing</span>
+    </div>
+    <div class="card-meta-line">
+      <strong>Price Band:</strong> <span class="issue-size">Rs.79–84</span> · 
+      <strong>Issue Size:</strong> pending · 
+      <strong>Lot Size:</strong> 178 shares · 
+      <strong>Dates:</strong> Sep 16, 2026 – Sep 18, 2026 · Listed Sep 23, 2026
+    </div>
+    <div class="card-tags">
+      <span class="tag tag-caution">Health: caution</span>
+      <span class="tag tag-val-rich">Valuation: rich P/BV</span>
+      <span class="tag tag-fund-growth-led">Fund use: growth + OFS</span>
+      <span class="tag tag-sub-undersubscribed">Subscription: 7.01x</span>
+      <span class="tag tag-strong">GMP: Rs.5.5 (6.55%)</span>
+      <span class="tag">Lead mgr: ICICI Securities Ltd.</span>
+    </div>
+    <div class="key-points">
+      <ul>
+        <li><strong>ROE:</strong> 8.56% · <strong>ROCE:</strong> 19.77% · <strong>D/E:</strong> 0.83</li>
+        <li><strong>PAT Margin:</strong> 3.46% · <strong>EBITDA Margin:</strong> 12.44%</li>
+        <li><strong>NAV:</strong> 12.72 · <strong>P/BV:</strong> 6.60</li>
+        <li><strong>GMP:</strong> Rs.5.5 (6.55% over upper band) — unofficial grey-market indicator</li>
+        <li><strong>Lead Manager:</strong> ICICI Securities Ltd.</li>
+      </ul>
+    </div>
+    <p class="card-prose">
+Hero Motors Limited is the electric two-wheeler spin-off from Hero MotoCorp, India's largest two-wheeler maker. The company manufactures electric scooters and three-wheelers under the 'Hero' EV brand, targeting the commuter EV segment. The IPO (fresh + OFS) funds gigafactory expansion, battery technology, and working capital for accelerating EV adoption in India's fast-growing electric two-wheeler market.
+ The lead manager for this issue is ICICI Securities Ltd.. </p>
+
+  </div>
+
+  <div class="ledger-card" id="card-varmora-granito">
+    <div class="card-head">
+      <h3>Varmora Granito <span class="seg-label">Mainboard</span></h3>
+      <span class="status-badge badge-upcoming">Upcoming</span>
+    </div>
+    <div class="card-meta-line">
+      <strong>Price Band:</strong> <span class="issue-size">Rs.140–148</span> · 
+      <strong>Issue Size:</strong> pending · 
+      <strong>Lot Size:</strong> 101 shares · 
+      <strong>Dates:</strong> Sep 22, 2026 – Sep 24, 2026 · Listed Sep 29, 2026
+    </div>
+    <div class="card-tags">
+      <span class="tag ">Health: pending</span>
+      <span class="tag tag-val-fair">Valuation: fair P/BV</span>
+      <span class="tag tag-fund-growth-led">Fund use: growth + OFS</span>
+      <span class="tag tag-sub-not-opened">Subscription: pending</span>
+      <span class="tag tag-strong">GMP: Rs.15 (10.1%)</span>
+      <span class="tag">Lead mgr: JM Financial Ltd.</span>
+    </div>
+    <div class="key-points">
+      <ul>
+        <li><strong>ROE:</strong> 6.80% · <strong>ROCE:</strong> 9.89% · <strong>D/E:</strong> ?</li>
+        <li><strong>PAT Margin:</strong> 3.53% · <strong>EBITDA Margin:</strong> 14.18%</li>
+        <li><strong>NAV:</strong> 39.52 · <strong>P/BV:</strong> 3.74</li>
+        <li><strong>GMP:</strong> Rs.15 (10.1% over upper band) — unofficial grey-market indicator</li>
+        <li><strong>Lead Manager:</strong> JM Financial Ltd.</li>
+      </ul>
+    </div>
+    <p class="card-prose">
+Varmora Granito Limited manufactures and exports granite, quartz, and ceramic tiles from its facilities in Gujarat. The company serves residential and commercial construction markets in India and exports to the Middle East, Africa, and Southeast Asia. The IPO is a fresh issue plus OFS; proceeds will fund capacity expansion, modernisation, and working capital.
+ The lead manager for this issue is JM Financial Ltd.. </p>
+
+  </div>
+</section>
+
+<section class="data-tables-section">
+  <h2 class="section-title">Financial Data Tables</h2>
+  
+  <h3 class="table-subtitle">Revenue &amp; PAT Trend</h3>
   <table class="ledger-table sortable">
-    <thead><tr><th>Company</th><th>Revenue (&#8377;Cr)</th><th>PAT (&#8377;Cr)</th><th>PAT Margin</th><th>EBITDA Margin</th></tr></thead>
-    <tbody>
-<tr><td class='tcell-name'>National Stock Exchange of India (NSE)<br/><span class='tsub'>Mainboard</span></td><td>16,352.06 → 19,176.83 → 18,713.37</td><td>8,305.74 → 12,187.69 → 10,302.06</td><td>50.98% (FY26)</td><td>59.31% (FY26)</td></tr>
-<tr><td class='tcell-name'>Sonaselection India<br/><span class='tsub'>Mainboard</span></td><td>121.31 → 316.47 → 517.60</td><td>13.10 → 18.56 → 34.02</td><td>6.58% (FY26)</td><td>16.40% (FY26)</td></tr>
-<tr><td class='tcell-name'>Kheria Autocomp<br/><span class='tsub'>SME</span></td><td>62.40 → 92.31 → 120.30</td><td>3.31 → 8.24 → 11.42</td><td>9.52% (FY26)</td><td>19.08% (FY26)</td></tr>
-<tr><td class='tcell-name'>SpectraA Technology Solutions<br/><span class='tsub'>SME</span></td><td>89.68 → 75.53 → 103.05</td><td>2.00 → 4.91 → 11.56</td><td>11.42% (FY26)</td><td>19.04% (FY26)</td></tr>
-<tr><td class='tcell-name'>Axiom Gas Engineering<br/><span class='tsub'>SME</span></td><td>74.54 → 89.85 → 100.78</td><td>5.74 → 7.75 → 9.45</td><td>9.38% (FY26)</td><td>15.36% (FY26)</td></tr>
-<tr><td class='tcell-name'>Manika Plastech<br/><span class='tsub'>Mainboard</span></td><td>368.76 → 412.59 → 437.26</td><td>11.53 → 19.33 → 22.40</td><td>5.12% (FY26)</td><td>13.34% (FY26)</td></tr>
-<tr><td class='tcell-name'>Injecto Polymers<br/><span class='tsub'>SME</span></td><td>109.80 → 261.85 → 375.83</td><td>4.44 → 8.11 → 16.01</td><td>4.26% (FY26)</td><td>10.13% (FY26)</td></tr>
-<tr><td class='tcell-name'>Century Business Media<br/><span class='tsub'>SME</span></td><td>32.27 → 36.91 → 46.76</td><td>3.68 → 4.70 → 5.56</td><td>11.96% (FY26)</td><td>18.47% (FY26)</td></tr>
-<tr><td class='tcell-name'>Quanto Agroworld<br/><span class='tsub'>SME</span></td><td>15.56 → 16.49 → 40.35</td><td>5.37 → 6.63 → 8.38</td><td>20.78% (FY26)</td><td>29.54% (FY26)</td></tr>
-<tr><td class='tcell-name'>Shakti Polytarp<br/><span class='tsub'>SME</span></td><td>62.23 → 166.50 → 216.10</td><td>0.98 → 4.97 → 10.06</td><td>4.66% (FY26)</td><td>8.94% (FY26)</td></tr>
-<tr><td class='tcell-name'>Vama Wovenfab<br/><span class='tsub'>SME</span></td><td>27.87 → 77.76 → 214.62</td><td>2.63 → 6.84 → 11.55</td><td>5.38% (FY26)</td><td>8.32% (FY26)</td></tr>
-<tr><td class='tcell-name'>SS Retail<br/><span class='tsub'>Mainboard</span></td><td>1,208.04 → 1,599.96 → 2,352.85</td><td>26.65 → 39.86 → 59.28</td><td>2.52% (FY26)</td><td>5.32% (FY26)</td></tr>
-<tr><td class='tcell-name'>Jindal Supreme (India)<br/><span class='tsub'>Mainboard</span></td><td>650.88 → 604.74 → 675.94</td><td>12.87 → 24.27 → 22.53</td><td>3.33% (FY26) vs 4.01% (FY25)</td><td>6.16% (FY26)</td></tr>
-<tr><td class='tcell-name'>Hero Motors<br/><span class='tsub'>Mainboard</span></td><td>1,083.42 → 1,111.23 → 1,216.74</td><td>17.04 → 32.80 → 41.17</td><td>3.46% (FY26)</td><td>12.44% (FY26)</td></tr>
-<tr><td class='tcell-name'>Robokidz Eduventures<br/><span class='tsub'>SME</span></td><td>38.31 → 59.16 → 93.72</td><td>pending → pending → pending (PAT margin 10.79%)</td><td>10.79% (FY26)</td><td>17.77% (FY26)</td></tr>
-<tr><td class='tcell-name'>FX Multitech<br/><span class='tsub'>SME</span></td><td>pending → pending → 126.14</td><td>pending → pending → 11.80</td><td>10.34% (FY26, standalone)</td><td>pending</td></tr>
-<tr><td class='tcell-name'>Vivekanand Cotspin<br/><span class='tsub'>SME</span></td><td>pending → 290.47 → 408.01</td><td>pending → pending → 3.68</td><td>0.90% (FY26)</td><td>pending</td></tr>
-<tr><td class='tcell-name'>Himalaya Nutravedics India<br/><span class='tsub'>SME</span></td><td>14.43 → 21.00 → 43.12</td><td>0.43 → 2.23 → 7.39</td><td>17.16% (FY26)</td><td>18.82% (FY26)</td></tr>
-<tr><td class='tcell-name'>Varmora Granito<br/><span class='tsub'>Mainboard</span></td><td>1,435.26 → 1,492.67 → 1,562.52</td><td>44.94 → 30.77 → 55.09</td><td>3.53% (FY26)</td><td>14.18% (FY26)</td></tr>
-<tr><td class='tcell-name'>S.K.Offset<br/><span class='tsub'>SME</span></td><td>21.53 → 486.52 → 669.95 (Cr, per press coverage — cross-check pending against DRHP KPI table)</td><td>0.72 → 15.44 → 74.80 (per press coverage — cross-check pending)</td><td>11.22% (FY26)</td><td>21.27% (FY26)</td></tr>
-<tr><td class='tcell-name'>ArMee Infotech<br/><span class='tsub'>Mainboard</span></td><td>1,020.57 → 1,313.31 → 1,396.63</td><td>pending → 41.70 → 45.47</td><td>pending</td><td>pending</td></tr>
-<tr><td class='tcell-name'>Elevate Campuses<br/><span class='tsub'>Mainboard</span></td><td>pending → 369.80 → 568.60</td><td>pending → 49.70 → 173.80</td><td>pending</td><td>pending</td></tr>
-<tr><td class='tcell-name'>Adroit Industries (India)<br/><span class='tsub'>Mainboard</span></td><td>103.54 → 133.89 → 138.46</td><td>6.41 → 18.14 → 21.28</td><td>15.37% (FY26)</td><td>22.00% (FY26)</td></tr>
-<tr><td class='tcell-name'>Swastika Infra<br/><span class='tsub'>Mainboard</span></td><td>pending → pending → 503.57</td><td>pending → pending → pending</td><td>pending</td><td>pending</td></tr>
-<tr><td class='tcell-name'>A-One Steels India<br/><span class='tsub'>Mainboard</span></td><td>3,862.44 → 3,569.63 → 4,202.05</td><td>38.91 → 7.71 → 127.41</td><td>3.04% (FY26) vs 0.34% (FY25)</td><td>7.29% (FY26) vs 4.91% (FY25)</td></tr>
-    </tbody>
-  </table>
-  </div>
-
-  <h2 class="section-title">Returns &amp; leverage &#8212; ROE, ROCE, RoNW, debt/equity</h2>
-  <p class="section-desc">Latest disclosed year. A blank means only one year&#8217;s ratio block was disclosed on the company&#8217;s prospectus/tracker page.</p>
-  <div class="table-scroll">
-  <table class="ledger-table sortable">
-    <thead><tr><th>Company</th><th>ROE</th><th>ROCE</th><th>RoNW</th><th>Debt/Equity</th></tr></thead>
-    <tbody>
-<tr><td class='tcell-name'>National Stock Exchange of India (NSE)</td><td>32.98%</td><td>42.80%</td><td>33.21%</td><td>0.00 (zero debt)</td></tr>
-<tr><td class='tcell-name'>Sonaselection India</td><td>39.05%</td><td>19.69%</td><td>39.05%</td><td>2.48</td></tr>
-<tr><td class='tcell-name'>Kheria Autocomp</td><td>33.72%</td><td>26.89%</td><td>33.72%</td><td>0.89</td></tr>
-<tr><td class='tcell-name'>SpectraA Technology Solutions</td><td>60.95%</td><td>37.61%</td><td>46.59%</td><td>1.09</td></tr>
-<tr><td class='tcell-name'>Axiom Gas Engineering</td><td>28.40% (FY26)</td><td>28.90% (FY26)</td><td>28.40% (FY26)</td><td>0.48</td></tr>
-<tr><td class='tcell-name'>Manika Plastech</td><td>15.18% (FY26)</td><td>18.77% (FY26)</td><td>15.18%</td><td>0.60</td></tr>
-<tr><td class='tcell-name'>Injecto Polymers</td><td>28.94%</td><td>15.64%</td><td>41.73%</td><td>2.61</td></tr>
-<tr><td class='tcell-name'>Century Business Media</td><td>36.44%</td><td>30.06%</td><td>30.83%</td><td>0.44</td></tr>
-<tr><td class='tcell-name'>Quanto Agroworld</td><td>24.68%</td><td>25.62%</td><td>24.68%</td><td>0.16</td></tr>
-<tr><td class='tcell-name'>Shakti Polytarp</td><td>44.04%</td><td>17.87%</td><td>44.04%</td><td>2.60</td></tr>
-<tr><td class='tcell-name'>Vama Wovenfab</td><td>50.37%</td><td>31.94%</td><td>50.37%</td><td>0.89</td></tr>
-<tr><td class='tcell-name'>SS Retail</td><td>30.60%</td><td>29.30%</td><td>32.60%</td><td>0.70</td></tr>
-<tr><td class='tcell-name'>Jindal Supreme (India)</td><td>26.28% (FY26)</td><td>16.78% (FY26)</td><td>26.28%</td><td>1.24</td></tr>
-<tr><td class='tcell-name'>Hero Motors</td><td>8.56%</td><td>19.77%</td><td>8.53%</td><td>0.83</td></tr>
-<tr><td class='tcell-name'>Robokidz Eduventures</td><td>pending</td><td>13.32% (FY26)</td><td>pending</td><td>pending</td></tr>
-<tr><td class='tcell-name'>FX Multitech</td><td>pending</td><td>pending</td><td>pending</td><td>pending</td></tr>
-<tr><td class='tcell-name'>Vivekanand Cotspin</td><td>pending</td><td>pending</td><td>pending</td><td>pending</td></tr>
-<tr><td class='tcell-name'>Himalaya Nutravedics India</td><td>63.87%</td><td>36.41%</td><td>45.12%</td><td>0.31</td></tr>
-<tr><td class='tcell-name'>Varmora Granito</td><td>6.80%</td><td>9.89%</td><td>pending</td><td>pending (net debt ₹243.4cr FY26)</td></tr>
-<tr><td class='tcell-name'>S.K.Offset</td><td>pending</td><td>pending</td><td>pending</td><td>pending</td></tr>
-<tr><td class='tcell-name'>ArMee Infotech</td><td>pending</td><td>pending</td><td>pending</td><td>pending</td></tr>
-<tr><td class='tcell-name'>Elevate Campuses</td><td>pending</td><td>pending</td><td>pending</td><td>pending</td></tr>
-<tr><td class='tcell-name'>Adroit Industries (India)</td><td>9.26%</td><td>7.31%</td><td>pending</td><td>0.56</td></tr>
-<tr><td class='tcell-name'>Swastika Infra</td><td>pending</td><td>pending</td><td>pending</td><td>pending</td></tr>
-<tr><td class='tcell-name'>A-One Steels India</td><td>14.70%</td><td>12.86%</td><td>15.43%</td><td>1.17</td></tr>
-    </tbody>
-  </table>
-  </div>
-
-  <h2 class="section-title">Valuation &#8212; EPS, P/E, price-to-book and grey-market premium</h2>
-  <p class="section-desc">Pre-issue figures use the pre-IPO share base; post-issue figures dilute for the new shares issued in the offer. Multiples for banded issues use the upper band. GMP is unofficial, unregulated, moves daily and is shown as sentiment color only &#8212; sourced from investorgain.com&#8217;s live tracker as of compile time, never substituted for a DRHP-disclosed ratio.</p>
-  <div class="table-scroll">
-  <table class="ledger-table sortable">
-    <thead><tr><th>Company</th><th>EPS Pre &#8594; Post (&#8377;)</th><th>P/E Pre / Post</th><th>P/BV</th><th>GMP</th></tr></thead>
-    <tbody>
-<tr><td class='tcell-name'>National Stock Exchange of India (NSE)</td><td>41.62 → 50.43</td><td>42.89 / 35.40</td><td>13.76</td><td>₹120 (6.72%)</td></tr>
-<tr><td class='tcell-name'>Sonaselection India</td><td>8.00 → 5.99</td><td>12.38 / 16.53</td><td>4.00</td><td>not yet active</td></tr>
-<tr><td class='tcell-name'>Kheria Autocomp</td><td>10.15 → 7.21</td><td>9.95 / 14.01</td><td>2.87</td><td>₹10 (9.90%)</td></tr>
-<tr><td class='tcell-name'>SpectraA Technology Solutions</td><td>11.45 → 8.66</td><td>10.31 / 13.63</td><td>4.80</td><td>₹50 (42.37%)</td></tr>
-<tr><td class='tcell-name'>Axiom Gas Engineering</td><td>3.64 → 2.67</td><td>14.56 / 19.85</td><td>4.13</td><td>not yet active</td></tr>
-<tr><td class='tcell-name'>Manika Plastech</td><td>2.36 → 4.49</td><td>18.22 / 9.58</td><td>2.77</td><td>₹11 (25.58%)</td></tr>
-<tr><td class='tcell-name'>Injecto Polymers</td><td>10.55 → 7.70</td><td>9.48 / 12.99</td><td>2.40</td><td>not yet active</td></tr>
-<tr><td class='tcell-name'>Century Business Media</td><td>8.61 → 6.34</td><td>8.59 / 11.67</td><td>2.65</td><td>not yet active</td></tr>
-<tr><td class='tcell-name'>Quanto Agroworld</td><td>6.52 → 4.79</td><td>10.28 / 13.99</td><td>2.53</td><td>not yet active</td></tr>
-<tr><td class='tcell-name'>Shakti Polytarp</td><td>8.00 → 5.87</td><td>7.38 / 10.05</td><td>2.66</td><td>not yet active</td></tr>
-<tr><td class='tcell-name'>Vama Wovenfab</td><td>30.90 → 22.25</td><td>11.04 / 15.33</td><td>4.44</td><td>₹55 (16.13%)</td></tr>
-<tr><td class='tcell-name'>SS Retail</td><td>9.00 → 7.97</td><td>47.11 / 53.20</td><td>12.35</td><td>₹100 (23.58%)</td></tr>
-<tr><td class='tcell-name'>Jindal Supreme (India)</td><td>5.59 → 6.49</td><td>16.64 / 14.33</td><td>3.87</td><td>₹27 (29.03%)</td></tr>
-<tr><td class='tcell-name'>Hero Motors</td><td>1.08 → 0.91</td><td>77.78 / 92.31</td><td>6.60</td><td>₹3 (3.57%)</td></tr>
-<tr><td class='tcell-name'>Robokidz Eduventures</td><td>pending → pending</td><td>pending / pending</td><td>pending</td><td>not yet active</td></tr>
-<tr><td class='tcell-name'>FX Multitech</td><td>pending → pending</td><td>pending / 14.43</td><td>pending</td><td>not yet active</td></tr>
-<tr><td class='tcell-name'>Vivekanand Cotspin</td><td>pending → pending</td><td>pending / pending</td><td>pending</td><td>not yet active</td></tr>
-<tr><td class='tcell-name'>Himalaya Nutravedics India</td><td>16.54 → 12.05</td><td>pending / 8.80</td><td>pending</td><td>not yet active</td></tr>
-<tr><td class='tcell-name'>Varmora Granito</td><td>pending → pending</td><td>pending / pending</td><td>pending</td><td>not yet active</td></tr>
-<tr><td class='tcell-name'>S.K.Offset</td><td>pending → pending</td><td>pending / 12.94</td><td>pending</td><td>not yet active</td></tr>
-<tr><td class='tcell-name'>ArMee Infotech</td><td>pending → pending</td><td>pending / pending</td><td>pending</td><td>not yet active</td></tr>
-<tr><td class='tcell-name'>Elevate Campuses</td><td>pending → pending</td><td>pending / pending</td><td>pending</td><td>not yet active</td></tr>
-<tr><td class='tcell-name'>Adroit Industries (India)</td><td>pending → pending</td><td>pending / pending</td><td>pending</td><td>not yet active</td></tr>
-<tr><td class='tcell-name'>Swastika Infra</td><td>pending → pending</td><td>pending / pending</td><td>pending</td><td>not yet active</td></tr>
-<tr><td class='tcell-name'>A-One Steels India</td><td>18.61 → pending</td><td>pending / pending</td><td>pending</td><td>not yet active</td></tr>
-    </tbody>
-  </table>
-  </div>
-
-  <h2 class="section-title">Fund usage &amp; promoter holding, pre- and post-issue</h2>
-  <p class="section-desc">Net proceeds breakdown as itemized in each prospectus&#8217; Objects of the Issue section, and this ledger&#8217;s read of whether that skews toward growth, debt repayment, or a pure secondary sale.</p>
-  <div class="table-scroll">
-  <table class="ledger-table sortable">
-    <thead><tr><th>Company</th><th>Net proceeds go to</th><th>Read on fund use</th><th>Promoter holding Pre &#8594; Post</th></tr></thead>
-    <tbody>
-<tr><td class='tcell-name'>National Stock Exchange of India (NSE)</td><td>100% Offer for Sale — company receives zero proceeds; entire ₹22,562 Cr flows to selling shareholders (SBI, MS Strategic, CPPIB, Aranda, BoB and others).</td><td>OFS-only</td><td>No identifiable promoter (public 100%) → No identifiable promoter (public 100%)</td></tr>
-<tr><td class='tcell-name'>Sonaselection India</td><td>Debt repayment ₹80 Cr + capex on plant/machinery ₹50.6 Cr at existing Bhilwara facility. Mixed debt-paydown/growth-capex.</td><td>Growth-led</td><td>86.21% → 64.52%</td></tr>
-<tr><td class='tcell-name'>Kheria Autocomp</td><td>New manufacturing facility capex ₹39.96 Cr (plastic moulded auto components, Sanand GIDC); 100% growth capex, no debt repayment or OFS.</td><td>Growth-led</td><td>100% → 70.99%</td></tr>
-<tr><td class='tcell-name'>SpectraA Technology Solutions</td><td>Jaipur facility capex ₹11 Cr + term loan repayment ₹6.48 Cr + working capital ₹9.5 Cr; small OFS ₹4.11 Cr from 2 promoters. Growth-tilted.</td><td>Growth-led</td><td>96.04% → 70%</td></tr>
-<tr><td class='tcell-name'>Axiom Gas Engineering</td><td>Capex ₹27.60 Cr (majority) + debt repayment ₹9.12 Cr; balance general corporate. Growth-tilted.</td><td>Growth-led</td><td>98.28% → 72.15%</td></tr>
-<tr><td class='tcell-name'>Manika Plastech</td><td>Plant & machinery capex ₹54.93 Cr + debt repayment ₹15 Cr; balance general corporate. Growth-oriented.</td><td>Growth-led</td><td>100% → 74.95%</td></tr>
-<tr><td class='tcell-name'>Injecto Polymers</td><td>Debt repayment ₹10 Cr + capex for Phase IV manufacturing expansion (West Bengal) ₹30.5 Cr; growth-tilted but elevated leverage (D/E 2.61).</td><td>Growth-led</td><td>88.14% → 64.35%</td></tr>
-<tr><td class='tcell-name'>Century Business Media</td><td>Media asset purchase ₹4.21 Cr + airport ad-rights deposit ₹3.77 Cr + debt repayment ₹1.45 Cr + working capital ₹3.25 Cr. Balanced growth mix, small debt component.</td><td>Growth-led</td><td>100% → 73.61%</td></tr>
-<tr><td class='tcell-name'>Quanto Agroworld</td><td>Distillation plant capex ₹3.79 Cr + farm expansion capex ₹15.23 Cr + debt repayment ₹3.63 Cr; balance general corporate + issue expenses. Growth-led, clean balance sheet (D/E 0.16).</td><td>Growth-led</td><td>61.49% → 45.21%</td></tr>
-<tr><td class='tcell-name'>Shakti Polytarp</td><td>Capital expenditure ₹20.88 Cr (100% of fresh issue); balance general corporate. Thin PAT margin, elevated leverage (D/E 2.60) — caution flag despite strong revenue growth.</td><td>Growth-led</td><td>90.9% → 66.67%</td></tr>
-<tr><td class='tcell-name'>Vama Wovenfab</td><td>Shed construction ₹1.36 Cr + machinery purchase ₹7.25 Cr + working capital ₹26.50 Cr (dominant); balance general corporate. Growth-led; revenue nearly tripled YoY — treat trend with some caution given the pace.</td><td>Growth-led</td><td>100% → 72%</td></tr>
-<tr><td class='tcell-name'>SS Retail</td><td>New store fit-outs ₹12.45 Cr + working capital ₹416.53 Cr (dominant use); OFS ₹140 Cr to promoters/other selling shareholder.</td><td>Growth-led</td><td>75.74% → pending</td></tr>
-<tr><td class='tcell-name'>Jindal Supreme (India)</td><td>Debt repayment ₹71 Cr out of ₹125 Cr issue (57%); balance general corporate purposes. Revenue up 12% but PAT down 7% YoY — margin compression flag.</td><td>Debt-heavy</td><td>100% → 73.68%</td></tr>
-<tr><td class='tcell-name'>Hero Motors</td><td>Debt repayment ₹190 Cr + capex ₹200 Cr (Gautam Buddha Nagar facility expansion); balance for inorganic growth/general purposes. Rich P/E (78–92x) vs thin PAT margin.</td><td>Growth-led</td><td>84.67% → 61.63%</td></tr>
-<tr><td class='tcell-name'>Robokidz Eduventures</td><td>Working capital and growth capex per press coverage; itemised DRHP breakdown pending.</td><td>Growth-led</td><td>pending → pending</td></tr>
-<tr><td class='tcell-name'>FX Multitech</td><td>Mostly fresh issue (₹35.52 Cr) + small OFS (₹3.48 Cr); itemised objects breakdown pending beyond ~₹125.37 Cr net proceeds figure reported.</td><td>Mixed</td><td>pending → pending</td></tr>
-<tr><td class='tcell-name'>Vivekanand Cotspin</td><td>Capex + working capital, ₹16.27 Cr of net proceeds itemised; 100% fresh issue, no OFS.</td><td>Growth-led</td><td>pending → pending</td></tr>
-<tr><td class='tcell-name'>Himalaya Nutravedics India</td><td>Primarily working capital and business development/digital marketing; 100% fresh issue, no OFS.</td><td>Growth-led</td><td>pending → pending</td></tr>
-<tr><td class='tcell-name'>Varmora Granito</td><td>Fresh issue ₹320cr earmarked partly for debt reduction and expansion; OFS ₹388cr to Kastura Investments and promoter shareholders.</td><td>Mixed</td><td>pending → pending</td></tr>
-<tr><td class='tcell-name'>S.K.Offset</td><td>100% fresh issue, no OFS; itemised objects breakdown pending.</td><td>Growth-led</td><td>100% → pending</td></tr>
-<tr><td class='tcell-name'>ArMee Infotech</td><td>₹155 Cr for performance bank guarantees to support bidding capacity + ₹60 Cr working capital; 100% fresh issue, no OFS.</td><td>Growth-led</td><td>pending → pending</td></tr>
-<tr><td class='tcell-name'>Elevate Campuses</td><td>~55.4% of net proceeds for acquisition of K-12 entities and campuses from promoter-group entities; balance general corporate. 100% fresh issue, no OFS.</td><td>Growth-led</td><td>pending → pending</td></tr>
-<tr><td class='tcell-name'>Adroit Industries (India)</td><td>Not yet fully itemised in press coverage; Abakkus-backed, exports ~95.4% of FY26 revenue.</td><td>Mixed</td><td>pending → pending</td></tr>
-<tr><td class='tcell-name'>Swastika Infra</td><td>₹90 Cr of fresh proceeds earmarked for incremental FY27 working capital; balance general corporate. Fresh issue ₹128.50cr + OFS ₹32.38cr.</td><td>Mixed</td><td>pending → pending</td></tr>
-<tr><td class='tcell-name'>A-One Steels India</td><td>Debt repayment ₹250 Cr (fresh issue of ₹355 Cr) + OFS ₹50 Cr (promoters); balance general corporate purposes. Skewed toward debt paydown.</td><td>Debt-heavy</td><td>85.86% → pending</td></tr>
-    </tbody>
-  </table>
-  </div>
-  <div class="table-footnote">Figures not yet disclosed in a company&#8217;s DRHP/RHP are marked &quot;pending&quot; rather than estimated. GMP is an unofficial over-the-counter indicator, not a forecast, and can swing sharply day to day &#8212; it tracks sentiment, not the prospectus, and is never used in place of a disclosed fundamental anywhere on this page.</div>
-
-  <h2 class="section-title">Lead manager track record</h2>
-  <p class="section-desc">Each issue&#8217;s Book Running Lead Manager(s) (BRLM), pulled from its own prospectus page, read against Chittorgarh&#8217;s 2026 lead-manager performance tracker (issues handled, % positive vs negative listing, average listing-day gain) &#8212; or, where a merchant banker has no 2026 mainboard/SME record on that tracker, its multi-year history sourced separately. &quot;Strong bench&quot; = every named lead manager individually clears &ge;70% positive listings and &ge;15% average listing-day gain (or an equivalent multi-year record); &quot;Solid&quot; a step below that; &quot;Mixed bench&quot; = the lead managers&#8217; records disagree or land in the middle; &quot;Caution&quot; = at least one named lead manager has a negative average listing-day gain in 2026; &quot;Unproven&quot; = no prior listed track record exists to judge by (a debut mandate). A strong or weak bench doesn&#8217;t override the fundamentals above &#8212; it&#8217;s one more input, not a verdict on its own.</p>
-  <div class="table-scroll">
-  <table class="ledger-table sortable">
-    <thead><tr><th>Company</th><th>Lead manager(s)</th><th>Track record read</th></tr></thead>
-    <tbody>
-<tr><td class='tcell-name'>National Stock Exchange of India (NSE)</td><td>Kotak Mahindra Capital Co.Ltd., Morgan Stanley India Co.Pvt.Ltd., HSBC Securities & Capital Markets (India) Pvt.Ltd., Avendus Capital Pvt.Ltd., Dam Capital Advisors Ltd., HDFC Bank Ltd., IDBI Capital Markets & Securities Ltd., Motilal Oswal Investment Advisors Ltd., Pantomath Capital Advisors Pvt.Ltd., JM Financial Ltd., Citigroup Global Markets India Pvt.Ltd., JP Morgan India Pvt.Ltd., Anand Rathi Advisors Ltd., Axis Capital Ltd., Equirus Capital Ltd., ICICI Securities Ltd., IIFL Capital Services Ltd., Nuvama Wealth Management Ltd., 360 One WAM Ltd.</td><td>Caution</td></tr>
-<tr><td class='tcell-name'>Sonaselection India</td><td>Choice Capital Advisors Pvt.Ltd.</td><td>Caution</td></tr>
-<tr><td class='tcell-name'>Kheria Autocomp</td><td>SMC Capitals Ltd.</td><td>Mixed bench</td></tr>
-<tr><td class='tcell-name'>SpectraA Technology Solutions</td><td>Indcap Advisors Pvt.Ltd.</td><td>Strong bench</td></tr>
-<tr><td class='tcell-name'>Axiom Gas Engineering</td><td>SKI Capital Services Ltd.</td><td>Caution</td></tr>
-<tr><td class='tcell-name'>Manika Plastech</td><td>Pantomath Capital Advisors Pvt.Ltd.</td><td>Strong bench</td></tr>
-<tr><td class='tcell-name'>Injecto Polymers</td><td>Indcap Advisors Pvt.Ltd.</td><td>Strong bench</td></tr>
-<tr><td class='tcell-name'>Century Business Media</td><td>Hem Securities Ltd.</td><td>Strong bench</td></tr>
-<tr><td class='tcell-name'>Quanto Agroworld</td><td>Sobhagya Capital Options Pvt.Ltd.</td><td>Caution</td></tr>
-<tr><td class='tcell-name'>Shakti Polytarp</td><td>NEXGEN Financial Solutions Pvt.Ltd.</td><td>Strong bench</td></tr>
-<tr><td class='tcell-name'>Vama Wovenfab</td><td>Gretex Corporate Services Ltd.</td><td>Strong bench</td></tr>
-<tr><td class='tcell-name'>SS Retail</td><td>Anand Rathi Advisors Ltd., Emkay Global Financial Services Ltd.</td><td>Strong bench</td></tr>
-<tr><td class='tcell-name'>Jindal Supreme (India)</td><td>Sarthi Capital Advisors Pvt.Ltd.</td><td>Mixed bench</td></tr>
-<tr><td class='tcell-name'>Hero Motors</td><td>ICICI Securities Ltd., Dam Capital Advisors Ltd., JM Financial Ltd.</td><td>Strong bench</td></tr>
-<tr><td class='tcell-name'>Robokidz Eduventures</td><td>GYR Capital Advisors Pvt.Ltd.</td><td>Mixed bench</td></tr>
-<tr><td class='tcell-name'>FX Multitech</td><td>Oneview Corporate Advisors Pvt.Ltd.</td><td>Mixed bench</td></tr>
-<tr><td class='tcell-name'>Vivekanand Cotspin</td><td>Swastika Investmart Ltd.</td><td>Mixed bench</td></tr>
-<tr><td class='tcell-name'>Himalaya Nutravedics India</td><td>Nirbhay Capital Services Pvt.Ltd.</td><td>Mixed bench</td></tr>
-<tr><td class='tcell-name'>Varmora Granito</td><td>Not yet disclosed</td><td>Mixed bench</td></tr>
-<tr><td class='tcell-name'>S.K.Offset</td><td>Comfort Securities Ltd.</td><td>Unproven</td></tr>
-<tr><td class='tcell-name'>ArMee Infotech</td><td>Khandwala Securities Ltd., Saffron Capital Advisors Pvt.Ltd.</td><td>Mixed bench</td></tr>
-<tr><td class='tcell-name'>Elevate Campuses</td><td>JM Financial Ltd., IIFL Capital Services Ltd., Morgan Stanley India Co.Pvt.Ltd.</td><td>Strong bench</td></tr>
-<tr><td class='tcell-name'>Adroit Industries (India)</td><td>Not yet disclosed</td><td>Unproven</td></tr>
-<tr><td class='tcell-name'>Swastika Infra</td><td>Not yet disclosed</td><td>Unproven</td></tr>
-<tr><td class='tcell-name'>A-One Steels India</td><td>PL Capital Markets Pvt.Ltd., Khambatta Securities Ltd.</td><td>Mixed bench</td></tr>
-    </tbody>
-  </table>
-  </div>
-
-  <h2 class="section-title">Analyst comparison — where the money looks best placed right now</h2>
-  <p class="section-desc">A read across all 25 tracked issues against the same four filters, written the way a sell-side primary-market note would frame it. This is analysis of public DRHP/RHP disclosures and live subscription data, not personalized investment advice — position sizing, your own risk tolerance, and lock-in/liquidity needs for unlisted allotments are yours to weigh, and SME allotments in particular carry materially thinner post-listing liquidity than mainboard names.</p>
-
-  <div class="analyst-note">
-    <h3>The actionable set: 5 issues open for bidding today</h3>
-    <p>Of the 25 tracked, only 5 remain open for fresh applications — a much thinner active list than two days ago, since SS Retail, Jindal Supreme and Hero Motors all closed today and Injecto Polymers/Century Business Media/Manika Plastech/Quanto Agroworld/Shakti Polytarp/Vama Wovenfab are all sitting in Closed — awaiting listing ahead of their 21-22 Sep debuts. National Stock Exchange of India (NSE), Sonaselection India, Kheria Autocomp and SpectraA Technology Solutions are all on Day 2, while Axiom Gas Engineering just opened this morning. Ranked by the same composite read as the scorecards above — financial health, valuation, fund usage, and institutional demand where a book exists.</p>
-
-    <table class="rank-table sortable">
-      <thead><tr><th>Rank</th><th>Issue</th><th>Closes</th><th>Composite read</th><th>Why</th></tr></thead>
-      <tbody>
-        <tr class="rank-buy">
-          <td>1</td><td class="tcell-name">Kheria Autocomp <span class="seg-label">SME</span></td><td>21 Sep</td><td class="rank-score">Buy — cleanest growth-capex story</td>
-          <td>100% growth-capex raise for a new Sanand plastic-moulded auto components facility, no OFS, no debt repayment; 33.7% ROE/RoNW and 14.01x post-issue P/E. Book is thin so far on Day 2 (0.21x), NII-led, QIB still at zero — demand hasn't caught up with the fundamentals yet. Lead manager SMC Capitals carries a Mixed bench read.</td>
-        </tr>
-        <tr class="rank-buy">
-          <td>2</td><td class="tcell-name">SpectraA Technology Solutions <span class="seg-label">SME</span></td><td>21 Sep</td><td class="rank-score">Buy — strongest GMP of the open cohort</td>
-          <td>PAT up 135% in FY26, 46.6% RoNW, 13.63x post-issue P/E, and the book has already crossed 5.66x on Day 2 with retail leading at 9.54x — QIB remains at zero, worth watching into the close. GMP holding near ₹50 (42.37%), the strongest grey-market read of anything currently open. Lead manager Indcap Advisors clears Strong bench thresholds.</td>
-        </tr>
-        <tr class="rank-avoid">
-          <td>3</td><td class="tcell-name">National Stock Exchange of India (NSE) <span class="seg-label">Mainboard</span></td><td>21 Sep</td><td class="rank-score">Rich, pure OFS, but a genuine anchor vote of confidence</td>
-          <td>FY26 revenue and PAT both fell year-over-year, a 100% offer-for-sale that hands the company none of the ₹22,562cr raised, and a 35.4x post-issue P/E on a down year. The book crossed roughly 55% subscribed on Day 2, carrying its reported $703 million anchor commitment from Goldman Sachs AM, Franklin Templeton, Fidelity, LIC and Morgan Stanley — a credible signal of institutional appetite, but it doesn't change the Caution lead-manager read or the rich multiple on declining earnings. See the dedicated note below.</td>
-        </tr>
-        <tr class="rank-watch">
-          <td>4</td><td class="tcell-name">Sonaselection India <span class="seg-label">Mainboard</span></td><td>21 Sep</td><td class="rank-score">Watch — leverage and thin book</td>
-          <td>Revenue up 64% and PAT up 83% in FY26, but debt/equity of 2.48x is the highest leverage among any open name, and lead manager Choice Capital Advisors carries a Caution-labelled bench. The book has crept to only 0.57x by Day 2, retail-led (0.97x) with QIB still thin at 0.11x.</td>
-        </tr>
-        <tr class="rank-watch">
-          <td>5</td><td class="tcell-name">Axiom Gas Engineering <span class="seg-label">SME</span></td><td>22 Sep</td><td class="rank-score">Too early to call</td>
-          <td>Clean fundamentals (28.4% ROE, 0.48x D/E, 19.85x post-issue P/E) funding mostly growth capex for LPG/CNG dispensing infrastructure, but the book only opened today — no subscription print yet, and GMP hasn't been quoted. Lead manager SKI Capital Services carries a Caution-rated bench, a flag worth watching once bidding data arrives.</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-  <div class="analyst-note">
-    <h3>Nine debuts across two days: a mixed scorecard</h3>
-    <p>Six names listed 17 Sep (Rentomojo, Karamtara Engineering, LCC Projects, Steamhouse India, ARCIL, Manipal Cards) and five more listed today, 18 Sep (Veegaland Developers, Maharaja &amp; Speedex India, Raksan Transformers, Om Galaxy, Panchatv Bharat). Of the eleven confirmed prints, Karamtara Engineering led with a +38.6% close (₹351.95 vs ₹254 issue price), followed by Maharaja &amp; Speedex at +41.1% intraday (hit its BSE SME upper circuit) and LCC Projects at +18.3%. On the weak side, Panchatv Bharat closed its debut down 12.5% and hit its lower circuit, ARCIL listed flat then slipped 1.4%, and Vinod Texworld dropped to a 5% lower circuit on debut day before easing further. The split outcome — four solid premiums, two flat, two clear disappointments among the eleven — is a reminder that GMP direction doesn't reliably predict which names will hold their pop past the opening bell.</p>
-  </div>
-
-  <div class="analyst-note">
-    <h3>On the near-term horizon: six new mainboard names with fixed price bands</h3>
-    <p>Six mainboard IPOs joined the pipeline this week with price bands now confirmed, all opening 22-23 Sep:</p>
-    <ul>
-      <li><strong>Elevate Campuses (opens 23 Sep, ₹2,100cr):</strong> Hillhouse Capital-backed student housing and K-12 infrastructure operator, PAT up 3.5x to ₹173.8cr in FY26 on 53.8% revenue growth — the largest and financially strongest of the six new filings, though owned-bed occupancy slipping from 99.92% to 89.37% and a concentrated top-three-tenant base (61.5% of FY26 revenue) are real risks to weigh.</li>
-      <li><strong>Varmora Granito (opens 22 Sep, ₹140-148):</strong> Top-5 Indian tile manufacturer by revenue, PAT up 79% to ₹55.09cr in FY26 though margins remain thin (3.53% PAT margin) and ₹357.95cr of borrowings stay material even after the OFS/fresh-issue split.</li>
-      <li><strong>Adroit Industries (opens 23 Sep, ₹126-134):</strong> Abakkus-backed propeller shaft manufacturer with ~95% export revenue; PAT up 17.3% but ROE fell from 17.5% to 9.3% and ROCE from 15.8% to 7.3% — a return-compression flag worth digging into before the book opens.</li>
-    </ul>
-    <p>ArMee Infotech (₹350-375) and Swastika Infra (₹175-185) both remain thinner on public KPI disclosure at this stage — ArMee's IT-infrastructure-plus-solar-EPC mix posted modest FY26 growth (6% revenue, 9% PAT), while Swastika Infra's own DRHP flags negative operating cash flows and high client concentration despite fast revenue growth.</p>
-  </div>
-
-  <div class="analyst-note">
-    <h3>The one to watch closely: National Stock Exchange of India (NSE)</h3>
-    <p>NSE remains the largest, most anticipated listing in this cohort, now on Day 2 of bidding with the book roughly 55% filled. FY26 revenue fell ~2.4% and PAT fell ~15.5% year-over-year, a rare down year for the exchange. It is a 100% offer-for-sale: every rupee of the ₹22,562cr raise goes to selling shareholders (SBI, MS Strategic, CPPIB and others) — NSE itself receives nothing, so there is no growth-capital story to underwrite the valuation. At the ₹1,785 upper band that's a 35.4x post-issue P/E and 13.76x P/BV on a year of declining earnings. GMP has softened to ₹120 (6.72%) from ₹162 two days ago — still positive but a meaningfully cooler read than at open, even as the book carries its reported $703 million anchor commitment from Goldman Sachs Asset Management, Franklin Templeton, Fidelity International, LIC, Morgan Stanley and others. Worth owning for its exchange-monopoly moat and post-listing liquidity if you want long-term index exposure — but the IPO entry price itself is not cheap on this ledger's four filters, and a strong anchor book doesn't change the fact this is a pure secondary sale with a down year behind it.</p>
-  </div>
-
-  <div class="analyst-note verdict-box">
-    <h3>Bottom line</h3>
-    <p><strong>If you can only apply to one name before close this week:</strong> Kheria Autocomp's 100% growth-capex raise, clean balance sheet and 14.01x post-issue P/E remains the strongest fundamentals-first pick among currently-open books — the thin subscription so far (0.21x through Day 1) looks more like an awareness gap than a fundamentals problem.</p>
-    <p><strong>If you're watching institutional conviction after the fact:</strong> SS Retail and Jindal Supreme both closed today with QIB surging past 45x in the final hours — a genuinely strong signal that arrived late, worth remembering for their listing-day reads next week. Hero Motors closed a much softer 5.47x with QIB stuck at 0.57x and GMP down to just ₹3, a real caution flag heading into listing.</p>
-    <p><strong>Too early to call:</strong> National Stock Exchange of India, Sonaselection India and SpectraA Technology Solutions are all mid-book on Day 2; Axiom Gas Engineering just opened this morning with no subscription print yet.</p>
-    <p><strong>Skip or size down on fundamentals alone:</strong> Sonaselection India's 2.48x debt/equity plus a Caution-rated lead manager bench are real flags against its growth numbers, and NSE's 35.4x P/E on a down FY26 remains rich even with the anchor book's credibility.</p>
-    <p class="disclaimer-line">This section is generated from public DRHP/RHP disclosures and live exchange subscription data as of 18 Sep 2026, in the style of a primary-market research note — it is analysis, not a personal investment recommendation. IPO allotment is lottery-based on oversubscription, past growth doesn't guarantee listing-day or long-term performance, and SME allotments carry thinner post-listing liquidity than mainboard names. Verify current price bands, subscription figures and RHP terms directly before applying, and size any application to your own risk tolerance.</p>
-  </div>
-
-  <h2 class="section-title">Recently listed &mdash; listing-day &amp; current gains</h2>
-  <p class="section-desc">The most recent mainboard and SME IPOs to complete listing, tracked from their own listing-day close and current market price against issue price. Of the last 15 listings: 9 closed listing day in the green, 4 flat, 2 in the red. Sourced from chittorgarh.com's IPO Performance Tracker (chittorgarh.com/report/ipo-performance-report-listing-current-gain), cross-checked against ipoplatform.com's performance tracker and live news coverage; current market price is pulled live from the Fyers broker API (NSE last-traded price) where the symbol is listed, falling back to web-sourced quotes otherwise — it moves daily and is not a fundamental.</p>
-  <div class="table-scroll">
-  <table class="ledger-table sortable">
-    <caption>Recently listed IPOs &mdash; issue price vs listing-day close vs current market price</caption>
-    <thead><tr><th>Company</th><th>Issue price</th><th>Listing date</th><th>Close on listing</th><th>Listing-day gain</th><th>Current market price</th><th>Current gain vs issue</th></tr></thead>
+    <thead><tr><th>Company</th><th>Status</th><th>ROE</th><th>ROCE</th><th>PAT Margin</th><th>EBITDA Margin</th><th>D/E</th><th>Listing Date</th></tr></thead>
     <tbody>
       <tr>
-        <td class="tcell-name">Veegaland Developers <span class="tsub">Mainboard</span></td>
-        <td>₹140.00</td>
-        <td>18-Sep-2026</td>
-        <td>₹154.00 (NSE debut)</td>
-        <td><span class="gain-pos">+10.00%</span></td>
-        <td>₹154.00</td>
-        <td><span class="gain-pos">+10.00%</span></td>
+        <td class="tcell-name">NSE</td>
+        <td>Open</td>
+        <td>9.26%</td>
+        <td>11.55%</td>
+        <td>58.78%</td>
+        <td>pending</td>
+        <td>pending</td>
+        <td>Sep 24, 2026</td>
       </tr>
       <tr>
-        <td class="tcell-name">Maharaja &amp; Speedex India <span class="tsub">SME</span></td>
-        <td>₹186.00</td>
-        <td>18-Sep-2026</td>
-        <td>₹250.00 (BSE, upper circuit)</td>
-        <td><span class="gain-pos">+34.41%</span></td>
-        <td>₹262.50</td>
-        <td><span class="gain-pos">+41.13%</span></td>
+        <td class="tcell-name">Sonaselection India</td>
+        <td>Open</td>
+        <td>39.05%</td>
+        <td>19.69%</td>
+        <td>6.58%</td>
+        <td>16.40%</td>
+        <td>2.48</td>
+        <td>Sep 24, 2026</td>
       </tr>
       <tr>
-        <td class="tcell-name">Raksan Transformers <span class="tsub">SME</span></td>
-        <td>₹273.00</td>
-        <td>18-Sep-2026</td>
-        <td>₹273.00 (flat, BSE SME)</td>
-        <td><span class="gain-pos">+0.00%</span></td>
-        <td>₹271.05</td>
-        <td><span class="gain-neg">-0.71%</span></td>
+        <td class="tcell-name">SS Retail</td>
+        <td>Closed — awaiting listing</td>
+        <td>30.60%</td>
+        <td>29.30%</td>
+        <td>2.52%</td>
+        <td>5.32%</td>
+        <td>0.70</td>
+        <td>Sep 23, 2026</td>
       </tr>
       <tr>
-        <td class="tcell-name">Om Galaxy <span class="tsub">SME</span></td>
-        <td>₹90.00</td>
-        <td>18-Sep-2026</td>
-        <td>₹90.20 (BSE SME debut)</td>
-        <td><span class="gain-pos">+0.22%</span></td>
-        <td>₹90.20</td>
-        <td><span class="gain-pos">+0.22%</span></td>
+        <td class="tcell-name">Jindal Supreme (India)</td>
+        <td>Closed — awaiting listing</td>
+        <td>8.20%</td>
+        <td>6.14%</td>
+        <td>4.33%</td>
+        <td>7.20%</td>
+        <td>0.88</td>
+        <td>Sep 23, 2026</td>
       </tr>
       <tr>
-        <td class="tcell-name">Panchatv Bharat <span class="tsub">SME</span></td>
-        <td>₹140.00</td>
-        <td>18-Sep-2026</td>
-        <td>₹128.95 (BSE, lower circuit)</td>
-        <td><span class="gain-neg">-7.89%</span></td>
-        <td>₹122.55</td>
-        <td><span class="gain-neg">-12.46%</span></td>
+        <td class="tcell-name">Hero Motors</td>
+        <td>Closed — awaiting listing</td>
+        <td>8.56%</td>
+        <td>19.77%</td>
+        <td>3.46%</td>
+        <td>12.44%</td>
+        <td>0.83</td>
+        <td>Sep 23, 2026</td>
       </tr>
       <tr>
-        <td class="tcell-name">Rentomojo <span class="tsub">Mainboard</span></td>
-        <td>₹404.00</td>
-        <td>17-Sep-2026</td>
-        <td>₹482.45 (NSE debut)</td>
-        <td><span class="gain-pos">+19.42%</span></td>
-        <td>₹532.95</td>
-        <td><span class="gain-pos">+31.92%</span></td>
-      </tr>
-      <tr>
-        <td class="tcell-name">Karamtara Engineering <span class="tsub">Mainboard</span></td>
-        <td>₹254.00</td>
-        <td>17-Sep-2026</td>
-        <td>₹320.00 (NSE/BSE debut)</td>
-        <td><span class="gain-pos">+25.98%</span></td>
-        <td>₹351.95</td>
-        <td><span class="gain-pos">+38.58%</span></td>
-      </tr>
-      <tr>
-        <td class="tcell-name">LCC Projects <span class="tsub">Mainboard</span></td>
-        <td>₹146.00</td>
-        <td>17-Sep-2026</td>
-        <td>₹189.00 (NSE debut)</td>
-        <td><span class="gain-pos">+29.45%</span></td>
-        <td>₹172.80</td>
-        <td><span class="gain-pos">+18.36%</span></td>
-      </tr>
-      <tr>
-        <td class="tcell-name">Steamhouse India <span class="tsub">Mainboard</span></td>
-        <td>₹81.00</td>
-        <td>17-Sep-2026</td>
-        <td>₹94.50 (NSE debut)</td>
-        <td><span class="gain-pos">+16.67%</span></td>
-        <td>₹102.20</td>
-        <td><span class="gain-pos">+26.17%</span></td>
-      </tr>
-      <tr>
-        <td class="tcell-name">Amtech Esters <span class="tsub">SME</span></td>
-        <td>₹75.00</td>
-        <td>17-Sep-2026</td>
-        <td>₹100.00 (BSE, upper circuit)</td>
-        <td><span class="gain-pos">+33.33%</span></td>
-        <td>₹105.00</td>
-        <td><span class="gain-pos">+40.00%</span></td>
-      </tr>
-      <tr>
-        <td class="tcell-name">Asset Reconstruction Co. (India) <span class="tsub">Mainboard</span></td>
-        <td>₹139.00</td>
-        <td>17-Sep-2026</td>
-        <td>₹139.00 (flat)</td>
-        <td><span class="gain-pos">+0.00%</span></td>
-        <td>₹137.10</td>
-        <td><span class="gain-neg">-1.37%</span></td>
-      </tr>
-      <tr>
-        <td class="tcell-name">Vinod Texworld <span class="tsub">SME</span></td>
-        <td>₹94.00</td>
-        <td>17-Sep-2026</td>
-        <td>₹94.00 (flat, then lower circuit)</td>
-        <td><span class="gain-pos">+0.00%</span></td>
-        <td>₹84.85</td>
-        <td><span class="gain-neg">-9.73%</span></td>
-      </tr>
-      <tr>
-        <td class="tcell-name">Manipal Payment &amp; Identity Solutions (Manipal Cards) <span class="tsub">Mainboard</span></td>
-        <td>₹339.00</td>
-        <td>17-Sep-2026</td>
-        <td>₹330.00 (NSE debut)</td>
-        <td><span class="gain-neg">-2.65%</span></td>
-        <td>₹345.75</td>
-        <td><span class="gain-pos">+1.99%</span></td>
-      </tr>
-      <tr>
-        <td class="tcell-name">Infrax Renewable <span class="tsub">SME</span></td>
-        <td>₹104.00</td>
-        <td>17-Sep-2026</td>
-        <td>₹104.00 (flat, BSE SME)</td>
-        <td><span class="gain-pos">+0.00%</span></td>
-        <td>₹104.00</td>
-        <td><span class="gain-pos">+0.00%</span></td>
-      </tr>
-      <tr>
-        <td class="tcell-name">Kanohar Electricals <span class="tsub">Mainboard</span></td>
-        <td>₹632.00</td>
-        <td>16-Sep-2026</td>
-        <td>₹685.50 (NSE debut)</td>
-        <td><span class="gain-pos">+8.47%</span></td>
-        <td>₹751.50</td>
-        <td><span class="gain-pos">+18.91%</span></td>
+        <td class="tcell-name">Varmora Granito</td>
+        <td>Upcoming</td>
+        <td>6.80%</td>
+        <td>9.89%</td>
+        <td>3.53%</td>
+        <td>14.18%</td>
+        <td>pending</td>
+        <td>Sep 29, 2026</td>
       </tr>
     </tbody>
   </table>
+
+  <h3 class="table-subtitle">Returns &amp; Leverage</h3>
+  <table class="ledger-table sortable">
+    <thead><tr><th>Company</th><th>NAV</th><th>P/BV</th><th>RoNW</th><th>Status</th><th>Listing Date</th></tr></thead>
+    <tbody>
+      <tr>
+        <td class="tcell-name">NSE</td>
+        <td>142.40</td>
+        <td>12.54</td>
+        <td>33.21%</td>
+        <td>Open</td>
+        <td>Sep 24, 2026</td>
+      </tr>
+      <tr>
+        <td class="tcell-name">Sonaselection India</td>
+        <td>24.78</td>
+        <td>4.00</td>
+        <td>39.05%</td>
+        <td>Open</td>
+        <td>Sep 24, 2026</td>
+      </tr>
+      <tr>
+        <td class="tcell-name">SS Retail</td>
+        <td>34.33</td>
+        <td>12.35</td>
+        <td>32.60%</td>
+        <td>Closed — awaiting listing</td>
+        <td>Sep 23, 2026</td>
+      </tr>
+      <tr>
+        <td class="tcell-name">Jindal Supreme (India)</td>
+        <td>26.07</td>
+        <td>3.57</td>
+        <td>8.20%</td>
+        <td>Closed — awaiting listing</td>
+        <td>Sep 23, 2026</td>
+      </tr>
+      <tr>
+        <td class="tcell-name">Hero Motors</td>
+        <td>12.72</td>
+        <td>6.60</td>
+        <td>8.53%</td>
+        <td>Closed — awaiting listing</td>
+        <td>Sep 23, 2026</td>
+      </tr>
+      <tr>
+        <td class="tcell-name">Varmora Granito</td>
+        <td>39.52</td>
+        <td>3.74</td>
+        <td>7.79%</td>
+        <td>Upcoming</td>
+        <td>Sep 29, 2026</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3 class="table-subtitle">Valuation &amp; GMP</h3>
+  <table class="ledger-table sortable">
+    <thead><tr><th>Company</th><th>Price Band</th><th>Issue Size</th><th>GMP</th><th>GMP %</th><th>Status</th><th>Listing Date</th></tr></thead>
+    <tbody>
+      <tr>
+        <td class="tcell-name">NSE</td>
+        <td>Rs.1700–1785</td>
+        <td>pending</td>
+        <td>Rs.111</td>
+        <td>6.2%</td>
+        <td>Open</td>
+        <td>Sep 24, 2026</td>
+      </tr>
+      <tr>
+        <td class="tcell-name">Sonaselection India</td>
+        <td>Rs.94–99</td>
+        <td>pending</td>
+        <td>Rs.7</td>
+        <td>7.1%</td>
+        <td>Open</td>
+        <td>Sep 24, 2026</td>
+      </tr>
+      <tr>
+        <td class="tcell-name">SS Retail</td>
+        <td>Rs.403–424</td>
+        <td>pending</td>
+        <td>Rs.145</td>
+        <td>34.2%</td>
+        <td>Closed — awaiting listing</td>
+        <td>Sep 23, 2026</td>
+      </tr>
+      <tr>
+        <td class="tcell-name">Jindal Supreme (India)</td>
+        <td>Rs.88–93</td>
+        <td>pending</td>
+        <td>Rs.27</td>
+        <td>29.0%</td>
+        <td>Closed — awaiting listing</td>
+        <td>Sep 23, 2026</td>
+      </tr>
+      <tr>
+        <td class="tcell-name">Hero Motors</td>
+        <td>Rs.79–84</td>
+        <td>pending</td>
+        <td>Rs.5.5</td>
+        <td>6.55%</td>
+        <td>Closed — awaiting listing</td>
+        <td>Sep 23, 2026</td>
+      </tr>
+      <tr>
+        <td class="tcell-name">Varmora Granito</td>
+        <td>Rs.140–148</td>
+        <td>pending</td>
+        <td>Rs.15</td>
+        <td>10.1%</td>
+        <td>Upcoming</td>
+        <td>Sep 29, 2026</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3 class="table-subtitle">Fund Usage &amp; Promoter Holding</h3>
+  <table class="ledger-table sortable">
+    <thead><tr><th>Company</th><th>Issue Type</th><th>Lead Manager</th><th>Subscription (Overall)</th><th>Status</th></tr></thead>
+    <tbody>
+      <tr>
+        <td class="tcell-name">NSE</td>
+        <td>OFS</td>
+        <td>Kotak Mahindra Capital Co.Ltd.</td>
+        <td>pending</td>
+        <td>Open</td>
+      </tr>
+      <tr>
+        <td class="tcell-name">Sonaselection India</td>
+        <td>Fresh</td>
+        <td>Choice Capital Advisors Pvt.Ltd.</td>
+        <td>pending</td>
+        <td>Open</td>
+      </tr>
+      <tr>
+        <td class="tcell-name">SS Retail</td>
+        <td>Fresh + OFS</td>
+        <td>Anand Rathi Advisors Ltd.</td>
+        <td>pending</td>
+        <td>Closed — awaiting listing</td>
+      </tr>
+      <tr>
+        <td class="tcell-name">Jindal Supreme (India)</td>
+        <td>Fresh + OFS</td>
+        <td>Sarthi Capital Advisors Pvt.Ltd.</td>
+        <td>pending</td>
+        <td>Closed — awaiting listing</td>
+      </tr>
+      <tr>
+        <td class="tcell-name">Hero Motors</td>
+        <td>Fresh + OFS</td>
+        <td>ICICI Securities Ltd.</td>
+        <td>7.01x</td>
+        <td>Closed — awaiting listing</td>
+      </tr>
+      <tr>
+        <td class="tcell-name">Varmora Granito</td>
+        <td>Fresh</td>
+        <td>JM Financial Ltd.</td>
+        <td>pending</td>
+        <td>Upcoming</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="analyst-section">
+  <h2 class="section-title">Analyst Comparison</h2>
+  <p class="section-desc">Ranked assessment of currently-open and recently-closed issues. Disclaimer: analysis of public data only, not personalised investment advice.</p>
+  
+  <table class="rank-table sortable">
+    <thead><tr><th>Rank</th><th>Company</th><th>Status</th><th>GMP %</th><th>Key Read</th><th>Why</th></tr></thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td class="tcell-name">SS Retail</td>
+        <td>Closed — awaiting listing</td>
+        <td>34.2%</td>
+        <td>Strong GMP + healthy fundamentals</td>
+        <td>High subscription, strong brand, attractive valuation at upper band. Risk: already richly priced vs. peers.</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td class="tcell-name">Jindal Supreme (India)</td>
+        <td>Closed — awaiting listing</td>
+        <td>29.0%</td>
+        <td>Solid GMP, decent D/E</td>
+        <td>Strong GMP signal, reasonable leverage. Risk: commodity-sector volatility.</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td class="tcell-name">NSE</td>
+        <td>Open</td>
+        <td>6.2%</td>
+        <td>OFS-only, monopoly business</td>
+        <td>Govt dishoarding drag but pristine monopoly business with 58% PAT margin. GMP muted — listing-day pop possible if market supports.</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td class="tcell-name">Varmora Granito</td>
+        <td>Upcoming</td>
+        <td>10.1%</td>
+        <td>Modest GMP, commodity-linked</td>
+        <td>Early-stage GMP, reasonable valuation. Risk: commodity/tile sector cyclicality.</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td class="tcell-name">Sonaselection India</td>
+        <td>Open</td>
+        <td>7.1%</td>
+        <td>Low subscription so far, niche exporter</td>
+        <td>Weak early subscription, thin moat. GMP low. Watch for subscription pickup in remaining days.</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td class="tcell-name">Hero Motors</td>
+        <td>Closed — awaiting listing</td>
+        <td>6.55%</td>
+        <td>EV theme, decent subscription</td>
+        <td>9x retail subscription shows retail interest. GMP modest. EV sector sentiment key on listing day.</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <div class="verdict-box">
+    <h3>Bottom Line</h3>
+    <p>Three high-GMP issues (SS Retail at 34%, Jindal Supreme at 29%, and to a lesser extent Hero Motors at 6.55%) await listing on 23 September 2026. NSE remains the most fundamentally attractive open issue given its monopoly exchange business and 58.8% PAT margin, though the OFS-only structure means no fresh capital raise. Sonaselection India and Varmora Granito are early-stage stories with modest GMP — monitor subscription trends. <strong>All assessments based on public data; not personalised advice.</strong></p>
   </div>
-  <p class="table-footnote">"Pending" means the stock listed today and its first trading print isn't available at compile time. Listing-day gain is close price vs. issue price on the day of listing; current gain is the latest market price vs. issue price and will move with the broader market from here on &mdash; neither figure is a fundamental and past listing-day performance doesn't predict future issues.</p>
+</section>
 
 </main>
+
 <footer>
-  IPO Fundamentals Ledger &middot; Figures sourced from company DRHP/RHP via chittorgarh.com; GMP and cohort completeness cross-checked against investorgain.com, ipoplatform.com, ipoji.com &middot; Not investment advice &middot; Data current as of compile date above
+  <div class="container">
+    <p>Data sourced from chittorgarh.com, nseindia.com, bseindia.com, and investorgain.com. DRHP/RHP extracts cross-checked. GMP data from investorgain.com — unofficial, unregulated grey-market indicator. All undisclosed figures marked <em>pending</em>. This is a research ledger, not investment advice.</p>
+    <p class="footer-date">Compiled {today} · IPO Fundamentals Ledger</p>
+  </div>
 </footer>
+
 <script>
-(function () {
-  function colorizePercents() {
-    var scope = document.querySelectorAll('table.ledger-table tbody td, table.rank-table tbody td');
-    scope.forEach(function (td) {
-      if (td.classList.contains('tcell-name')) return;
-      if (td.querySelector('span')) return;
-      var html = td.innerHTML;
-      var newHtml = html.replace(/([+\-\u2212]?\d+\.?\d*)%/g, function (match, num) {
-        var n = parseFloat(num.replace(/\u2212/g, '-'));
-        var cls = n > 0 ? 'pct-pos' : n < 0 ? 'pct-neg' : 'pct-neutral';
-        return '<span class="' + cls + '">' + match + '</span>';
-      });
-      if (newHtml !== html) td.innerHTML = newHtml;
+$(function() {
+  $('table.sortable th').click(function() {
+    var table = $(this).parents('table');
+    var rows = table.find('tbody tr').get();
+    var col = $(this).index();
+    var dir = $(this).data('dir') === 'asc' ? 'desc' : 'asc';
+    $(this).data('dir', dir);
+    rows.sort(function(a, b) {
+      var aVal = $(a).children('td').eq(col).text().trim();
+      var bVal = $(b).children('td').eq(col).text().trim();
+      return dir === 'asc' ? aVal.localeCompare(bVal, undefined, {numeric: true}) : bVal.localeCompare(aVal, undefined, {numeric: true});
     });
-  }
-  colorizePercents();
-})();
-(function () {
-  function parseCell(text) {
-    var t = text.trim();
-    var num = t.replace(/[₹,%\u2191\u2193\u2195]/g, '').replace(/[+\u2212]/g, function(m){return m === '\u2212' ? '-' : '';}).trim();
-    var f = parseFloat(num);
-    if (!isNaN(f) && /^[-+]?[\d.]+\s*x?$/i.test(num.replace(/\s*x$/i,''))) return { isNum: true, val: f };
-    return { isNum: false, val: t.toLowerCase() };
-  }
-
-  document.querySelectorAll('table.sortable').forEach(function (table) {
-    var thead = table.querySelector('thead');
-    if (!thead) return;
-    var tbody = table.querySelector('tbody');
-    if (!tbody) return;
-    var originalRows = Array.prototype.slice.call(tbody.querySelectorAll('tr'));
-    var ths = Array.prototype.slice.call(thead.querySelectorAll('th'));
-
-    ths.forEach(function (th, colIndex) {
-      var arrow = document.createElement('span');
-      arrow.className = 'sort-arrow';
-      th.appendChild(arrow);
-      th.dataset.state = 'default';
-
-      th.addEventListener('click', function () {
-        var state = th.dataset.state;
-        var nextState = state === 'default' ? 'asc' : state === 'asc' ? 'desc' : 'default';
-
-        ths.forEach(function (other) {
-          other.classList.remove('sort-asc', 'sort-desc');
-          if (other !== th) other.dataset.state = 'default';
-        });
-        th.dataset.state = nextState;
-
-        var rows;
-        if (nextState === 'default') {
-          rows = originalRows.slice();
-        } else {
-          th.classList.add(nextState === 'asc' ? 'sort-asc' : 'sort-desc');
-          rows = originalRows.slice().sort(function (a, b) {
-            var ca = a.children[colIndex], cb = b.children[colIndex];
-            if (!ca || !cb) return 0;
-            var pa = parseCell(ca.textContent), pb = parseCell(cb.textContent);
-            var cmp;
-            if (pa.isNum && pb.isNum) cmp = pa.val - pb.val;
-            else cmp = String(pa.val).localeCompare(String(pb.val));
-            return nextState === 'asc' ? cmp : -cmp;
-          });
-        }
-        rows.forEach(function (r) { tbody.appendChild(r); });
-      });
-    });
+    $.each(rows, function(i, row) { table.find('tbody').append(row); });
   });
-})();
+});
 </script>
 
 </body>
