@@ -1,0 +1,9 @@
+{
+  "NSE": {"gmp_rs": 61, "gmp_pct": 3.42, "sub": "1.04x", "price": 1785, "status": "Open", "updated": "19-Sep 23:37", "anchor": true},
+  "Sonaselection India": {"gmp_rs": 2, "gmp_pct": 2.02, "sub": "0.47x", "price": 99, "status": "Open", "updated": "19-Sep 23:37", "anchor": true},
+  "SS Retail": {"gmp_rs": 147, "gmp_pct": 34.67, "sub": "107.41x", "price": 424, "status": "Closed", "updated": "19-Sep 23:37", "anchor": true},
+  "Jindal Supreme (India)": {"gmp_rs": 29, "gmp_pct": 31.18, "sub": "177.03x", "price": 93, "status": "Closed", "updated": "19-Sep 23:37", "anchor": true},
+  "Hero Motors": {"gmp_rs": -2, "gmp_pct": -2.38, "sub": "7.01x", "price": 84, "status": "Closed", "updated": "19-Sep 23:37", "anchor": true},
+  "Varmora Granito": {"gmp_rs": 12, "gmp_pct": 8.11, "sub": "pending", "price": 148, "status": "Upcoming", "updated": "19-Sep 23:37", "anchor": true},
+  "Pooja Logistics": {"gmp_rs": 0, "gmp_pct": 0.0, "sub": "pending", "price": 115, "status": "Upcoming", "updated": "19-Sep 23:32", "anchor": true, "sme": true, "price_band": "109-115", "issue_size_cr": 44.23, "lot": 1200, "open_date": "23-Sep", "close_date": "25-Sep", "listing": "30-Sep"}
+}

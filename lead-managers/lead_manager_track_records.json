@@ -1,247 +1,62 @@
 {
   "Kotak Mahindra Capital Co.Ltd.": {
-    "issues_seen_this_run": [
-      "National Stock Exchange of India (NSE)"
-    ],
-    "read": "Caution"
-  },
-  "Morgan Stanley India Co.Pvt.Ltd.": {
-    "issues_seen_this_run": [
-      "National Stock Exchange of India (NSE)",
-      "Elevate Campuses"
-    ],
-    "read": "Caution"
-  },
-  "HSBC Securities & Capital Markets (India) Pvt.Ltd.": {
-    "issues_seen_this_run": [
-      "National Stock Exchange of India (NSE)"
-    ],
-    "read": "Caution"
-  },
-  "Avendus Capital Pvt.Ltd.": {
-    "issues_seen_this_run": [
-      "National Stock Exchange of India (NSE)"
-    ],
-    "read": "Caution"
-  },
-  "Dam Capital Advisors Ltd.": {
-    "issues_seen_this_run": [
-      "National Stock Exchange of India (NSE)",
-      "Hero Motors"
-    ],
-    "read": "Caution"
-  },
-  "HDFC Bank Ltd.": {
-    "issues_seen_this_run": [
-      "National Stock Exchange of India (NSE)"
-    ],
-    "read": "Caution"
-  },
-  "IDBI Capital Markets & Securities Ltd.": {
-    "issues_seen_this_run": [
-      "National Stock Exchange of India (NSE)"
-    ],
-    "read": "Caution"
-  },
-  "Motilal Oswal Investment Advisors Ltd.": {
-    "issues_seen_this_run": [
-      "National Stock Exchange of India (NSE)"
-    ],
-    "read": "Caution"
-  },
-  "Pantomath Capital Advisors Pvt.Ltd.": {
-    "issues_seen_this_run": [
-      "National Stock Exchange of India (NSE)",
-      "Manika Plastech"
-    ],
-    "read": "Caution"
-  },
-  "JM Financial Ltd.": {
-    "issues_seen_this_run": [
-      "National Stock Exchange of India (NSE)",
-      "Hero Motors",
-      "Elevate Campuses"
-    ],
-    "read": "Caution"
-  },
-  "Citigroup Global Markets India Pvt.Ltd.": {
-    "issues_seen_this_run": [
-      "National Stock Exchange of India (NSE)"
-    ],
-    "read": "Caution"
-  },
-  "JP Morgan India Pvt.Ltd.": {
-    "issues_seen_this_run": [
-      "National Stock Exchange of India (NSE)"
-    ],
-    "read": "Caution"
-  },
-  "Anand Rathi Advisors Ltd.": {
-    "issues_seen_this_run": [
-      "National Stock Exchange of India (NSE)",
-      "SS Retail"
-    ],
-    "read": "Caution"
-  },
-  "Axis Capital Ltd.": {
-    "issues_seen_this_run": [
-      "National Stock Exchange of India (NSE)"
-    ],
-    "read": "Caution"
-  },
-  "Equirus Capital Ltd.": {
-    "issues_seen_this_run": [
-      "National Stock Exchange of India (NSE)"
-    ],
-    "read": "Caution"
-  },
-  "ICICI Securities Ltd.": {
-    "issues_seen_this_run": [
-      "National Stock Exchange of India (NSE)",
-      "Hero Motors"
-    ],
-    "read": "Caution"
-  },
-  "IIFL Capital Services Ltd.": {
-    "issues_seen_this_run": [
-      "National Stock Exchange of India (NSE)",
-      "Elevate Campuses"
-    ],
-    "read": "Caution"
-  },
-  "Nuvama Wealth Management Ltd.": {
-    "issues_seen_this_run": [
-      "National Stock Exchange of India (NSE)"
-    ],
-    "read": "Caution"
-  },
-  "360 One WAM Ltd.": {
-    "issues_seen_this_run": [
-      "National Stock Exchange of India (NSE)"
-    ],
-    "read": "Caution"
+    "segment": "mainboard",
+    "label": "Strong",
+    "basis": "Large 2026 mainboard book; multiple listed issues with gains across the year",
+    "source": "chittorgarh.com performance tracker"
   },
   "Choice Capital Advisors Pvt.Ltd.": {
-    "issues_seen_this_run": [
-      "Sonaselection India"
-    ],
-    "read": "Caution"
+    "segment": "mainboard",
+    "label": "Unproven",
+    "basis": "No 2026 mainboard track record found on chittorgarh tracker or ipomarkets.com; debut mandate",
+    "source": "chittorgarh.com + ipomarkets.com fallback"
   },
-  "SMC Capitals Ltd.": {
-    "issues_seen_this_run": [
-      "Kheria Autocomp"
-    ],
-    "read": "Mixed bench"
-  },
-  "Indcap Advisors Pvt.Ltd.": {
-    "issues_seen_this_run": [
-      "SpectraA Technology Solutions",
-      "Injecto Polymers"
-    ],
-    "read": "Strong bench"
-  },
-  "SKI Capital Services Ltd.": {
-    "issues_seen_this_run": [
-      "Axiom Gas Engineering"
-    ],
-    "read": "Caution"
-  },
-  "Hem Securities Ltd.": {
-    "issues_seen_this_run": [
-      "Century Business Media"
-    ],
-    "read": "Strong bench"
-  },
-  "Sobhagya Capital Options Pvt.Ltd.": {
-    "issues_seen_this_run": [
-      "Quanto Agroworld"
-    ],
-    "read": "Caution"
-  },
-  "NEXGEN Financial Solutions Pvt.Ltd.": {
-    "issues_seen_this_run": [
-      "Shakti Polytarp"
-    ],
-    "read": "Strong bench"
-  },
-  "Gretex Corporate Services Ltd.": {
-    "issues_seen_this_run": [
-      "Vama Wovenfab"
-    ],
-    "read": "Strong bench"
+  "Anand Rathi Advisors Ltd.": {
+    "segment": "mainboard",
+    "label": "Solid",
+    "basis": "Solid 2026 mainboard book with several listed gains",
+    "source": "chittorgarh.com performance tracker"
   },
   "Emkay Global Financial Services Ltd.": {
-    "issues_seen_this_run": [
-      "SS Retail"
-    ],
-    "read": "Strong bench"
+    "segment": "mainboard",
+    "label": "Mixed",
+    "basis": "Moderate record, some flat listings in 2026 book",
+    "source": "chittorgarh.com performance tracker"
   },
   "Sarthi Capital Advisors Pvt.Ltd.": {
-    "issues_seen_this_run": [
-      "Jindal Supreme (India)"
-    ],
-    "read": "Mixed bench"
+    "segment": "mainboard",
+    "label": "Unproven",
+    "basis": "No 2026 mainboard track record found; debut mandate",
+    "source": "chittorgarh.com tracker"
   },
-  "PL Capital Markets Pvt.Ltd.": {
-    "issues_seen_this_run": [
-      "A-One Steels India"
-    ],
-    "read": "Mixed bench"
+  "ICICI Securities Ltd.": {
+    "segment": "mainboard",
+    "label": "Strong",
+    "basis": "Active 2026 mainboard mandates with positive listing-day records",
+    "source": "chittorgarh.com performance tracker"
   },
-  "Khambatta Securities Ltd.": {
-    "issues_seen_this_run": [
-      "A-One Steels India"
-    ],
-    "read": "Mixed bench"
+  "Dam Capital Advisors Ltd.": {
+    "segment": "mainboard",
+    "label": "Strong",
+    "basis": "Active 2026 mainboard mandates with positive listing-day records",
+    "source": "chittorgarh.com performance tracker"
   },
-  "GYR Capital Advisors Pvt.Ltd.": {
-    "issues_seen_this_run": [
-      "Robokidz Eduventures"
-    ],
-    "read": "Mixed bench"
+  "JM Financial Ltd.": {
+    "segment": "mainboard",
+    "label": "Strong",
+    "basis": "Active 2026 mainboard mandates with positive listing-day records; multiple issues with gains",
+    "source": "chittorgarh.com performance tracker"
   },
-  "Oneview Corporate Advisors Pvt.Ltd.": {
-    "issues_seen_this_run": [
-      "FX Multitech"
-    ],
-    "read": "Mixed bench"
+  "Goldman Sachs (India) Securities Pvt.Ltd.": {
+    "segment": "mainboard",
+    "label": "Strong",
+    "basis": "Well-established 2026 mainboard book with consistent positive listing records",
+    "source": "chittorgarh.com performance tracker"
   },
-  "Swastika Investmart Ltd.": {
-    "issues_seen_this_run": [
-      "Vivekanand Cotspin"
-    ],
-    "read": "Mixed bench"
-  },
-  "Nirbhay Capital Services Pvt.Ltd.": {
-    "issues_seen_this_run": [
-      "Himalaya Nutravedics India"
-    ],
-    "read": "Mixed bench"
-  },
-  "Comfort Securities Ltd.": {
-    "issues_seen_this_run": [
-      "S.K.Offset"
-    ],
-    "read": "Unproven"
-  },
-  "Not yet disclosed": {
-    "issues_seen_this_run": [
-      "Varmora Granito",
-      "Adroit Industries (India)",
-      "Swastika Infra"
-    ],
-    "read": "Mixed bench"
-  },
-  "Khandwala Securities Ltd.": {
-    "issues_seen_this_run": [
-      "ArMee Infotech"
-    ],
-    "read": "Mixed bench"
-  },
-  "Saffron Capital Advisors Pvt.Ltd.": {
-    "issues_seen_this_run": [
-      "ArMee Infotech"
-    ],
-    "read": "Mixed bench"
+  "SBI Capital Markets Ltd.": {
+    "segment": "mainboard",
+    "label": "Strong",
+    "basis": "Well-established 2026 mainboard book with consistent positive listing records",
+    "source": "chittorgarh.com performance tracker"
   }
 }
