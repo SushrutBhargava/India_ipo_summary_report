@@ -190,5 +190,13 @@
     "neg": "pending",
     "avg_gain": "pending",
     "read": "Unproven \u2014 IPORise shows 8 total IPOs (6 mainboard, 2 SME), avg listing -2.9%; Sotefin Bharat +9.63%, Genxai Analytics -20% in 2026"
+  },
+  "Share India Capital Services Pvt.Ltd.": {
+    "issues": 4,
+    "amount": "291.31 Cr",
+    "pos": "75%",
+    "neg": "25%",
+    "avg_gain": "15.07%",
+    "read": "Solid (2026 SME tracker)"
   }
 }
