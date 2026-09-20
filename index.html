@@ -203,6 +203,16 @@
     border: 1px solid rgba(20,33,61,0.1);
     line-height: 1.6;
   }
+  .lead-manager-box {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 0.8rem;
+    color: var(--navy);
+    background: #fbf8ef;
+    padding: 7px 10px;
+    border-radius: 6px;
+    margin: 0 0 12px;
+    border: 1px solid var(--gold);
+  }
   .card-tags { margin: 0 0 12px; display: flex; flex-wrap: wrap; gap: 6px; }
   .tag {
     font-family: 'IBM Plex Mono', monospace;
@@ -500,7 +510,7 @@
   <div class="wrap">
     <div class="eyebrow">DRHP / RHP Financial Extract</div>
     <h1>IPO Fundamentals Ledger</h1>
-    <div class="compiled-badge">Compiled 21 September 2026, 2:35 AM IST</div>
+    <div class="compiled-badge">Compiled 21 September 2026, 3:15 AM IST</div>
     <p class="subtitle">A research ledger of Indian mainboard and SME IPOs — fundamentals, valuation, subscription, and grey-market context. Built from DRHP/RHP extracts cross-checked against chittorgarh.com, NSE, BSE, and investorgain.com. All undisclosed figures marked <em>pending</em>.</p>
     <div class="summary-strip">
       <div class="summary-item"><span class="sum-num">7</span><span class="sum-lbl">Issues Tracked</span></div>
@@ -524,8 +534,8 @@
     <div class="filter-box"><span class="fnum">Q4</span><h4>Subscription</h4><p>Overall &amp; category multiples — does the market agree?</p></div>
   </div>
   <div class="update-box">
-    <h3>Update — 21 September 2026 (early morning check)</h3>
-    <p>No new adds or drops since the last run. <span class="sub-hot">SS Retail</span>, <span class="sub-hot">Jindal Supreme (India)</span>, and <span class="sub-warm">Hero Motors</span> remain Closed — awaiting listing, all three listing 23 Sep. <span class="sub-warm">NSE</span> and <span class="sub-cold">Sonaselection India</span> both moved to Closed — awaiting listing after their books closed 21 Sep, listing 24 Sep. <span class="sub-cold">Varmora Granito</span> stays Upcoming, opening 22 Sep with its price band already fixed at ₹140–148. <span class="sub-cold">Pooja Logistics</span> stays Upcoming, opening 23 Sep with its price band fixed at ₹109–115. Cohort holds at 7 tracked issues.</p>
+    <h3>Update — 21 September 2026 (card layout rebuild)</h3>
+    <p>Scorecard cards rebuilt to new layout: single-word status pill, one-line meta sentence, dedicated Lead manager(s) box, exactly 5 tags. No new adds or drops since the last run. <span class="sub-hot">SS Retail</span>, <span class="sub-hot">Jindal Supreme (India)</span>, and <span class="sub-warm">Hero Motors</span> remain Closed — awaiting listing, all three listing 23 Sep. <span class="sub-warm">NSE</span> and <span class="sub-cold">Sonaselection India</span> both moved to Closed — awaiting listing after their books closed 21 Sep, listing 24 Sep. <span class="sub-cold">Varmora Granito</span> stays Upcoming, opening 22 Sep with its price band already fixed at ₹140–148. <span class="sub-cold">Pooja Logistics</span> stays Upcoming, opening 23 Sep with its price band fixed at ₹109–115. Cohort holds at 7 tracked issues.</p>
   </div>
   <div class="sentiment-box">
     <h3>Market Sentiment &amp; Listing Context</h3>
@@ -550,24 +560,17 @@
   <div class="ledger-card" id="card-ss-retail">
     <div class="card-head">
       <h3>SS Retail <span class="seg-label">Mainboard</span></h3>
-      <span class="status-badge badge-closed">Closed — awaiting listing</span>
+      <span class="status-badge badge-closed">Closed</span>
     </div>
-    <div class="card-meta-line">
-      <strong>Price Band:</strong> <span class="issue-size">Rs.403–424</span> ·
-      <strong>Issue Price:</strong> ₹424 ·
-      <strong>Issue Size:</strong> ₹500 Cr (Fresh + OFS) ·
-      <strong>Lot Size:</strong> 35 shares ·
-      <strong>Dates:</strong> Sep 16–Sep 18, 2026 · Listed Sep 23, 2026 · BSE, NSE ·
-      <strong>Subscription (Overall):</strong> 107.41x
-    </div>
-    <div class="card-tags">
+<div class="card-meta-line">Rs.403-424 · Issue size <span class="issue-size">Rs.500 Cr</span> · 16 Sep-18 Sep 2026 · 107.41x (QIB 246.90x) · as of 21 Sep 2026, 2:35 AM IST (Day 3, listing pending 23 Sep) · GMP Rs.147 (34.67%)</div>
+    <div class="lead-manager-box"><strong>Lead manager(s):</strong> Anand Rathi Advisors Ltd., Emkay Global Financial Services Ltd.</div>
+<div class="card-tags">
       
       <span class="tag tag-mixed">Health: Mixed</span>
       <span class="tag tag-val-rich">Valuation: rich P/BV (12.35x)</span>
       <span class="tag tag-fund-growth-led">Fund use: Fresh + OFS</span>
       <span class="tag tag-sub-very-strong">Subscription: 107.41x</span>
-      <span class="tag tag-strong">GMP: ₹147 (34.67%)</span>
-      <span class="tag">Lead mgr: Anand Rathi Advisors Ltd.</span>
+      <span class="tag">Lead mgr: Mixed bench</span>
     </div>
     <div class="key-points">
       <ul>
@@ -593,24 +596,17 @@ The lead manager bench — Anand Rathi Advisors Ltd., Emkay Global Financial Ser
   <div class="ledger-card" id="card-jindal-supreme-india">
     <div class="card-head">
       <h3>Jindal Supreme (India) <span class="seg-label">Mainboard</span></h3>
-      <span class="status-badge badge-closed">Closed — awaiting listing</span>
+      <span class="status-badge badge-closed">Closed</span>
     </div>
-    <div class="card-meta-line">
-      <strong>Price Band:</strong> <span class="issue-size">Rs.88–93</span> ·
-      <strong>Issue Price:</strong> ₹93 ·
-      <strong>Issue Size:</strong> ₹125 Cr (Fresh + OFS) ·
-      <strong>Lot Size:</strong> 161 shares ·
-      <strong>Dates:</strong> Sep 16–Sep 18, 2026 · Listed Sep 23, 2026 · BSE, NSE ·
-      <strong>Subscription (Overall):</strong> 177.03x
-    </div>
-    <div class="card-tags">
+<div class="card-meta-line">Rs.88-93 · Issue size <span class="issue-size">Rs.125 Cr</span> · 16 Sep-18 Sep 2026 · 177.03x (QIB building) · as of 21 Sep 2026, 2:35 AM IST (Day 3, listing pending 23 Sep) · GMP Rs.29 (31.18%)</div>
+    <div class="lead-manager-box"><strong>Lead manager(s):</strong> Sarthi Capital Advisors Pvt.Ltd.</div>
+<div class="card-tags">
       
       <span class="tag tag-caution">Health: Unproven</span>
       <span class="tag tag-val-fair">Valuation: fair P/BV (3.87x)</span>
       <span class="tag tag-fund-mixed">Fund use: Fresh + OFS</span>
       <span class="tag tag-sub-very-strong">Subscription: 177.03x</span>
-      <span class="tag tag-strong">GMP: ₹29 (31.18%)</span>
-      <span class="tag">Lead mgr: Sarthi Capital Advisors Pvt.Ltd.</span>
+      <span class="tag">Lead mgr: Unproven</span>
     </div>
     <div class="key-points">
       <ul>
@@ -636,24 +632,17 @@ The lead manager bench — Sarthi Capital Advisors Pvt.Ltd. — is assessed as U
   <div class="ledger-card" id="card-hero-motors">
     <div class="card-head">
       <h3>Hero Motors <span class="seg-label">Mainboard</span></h3>
-      <span class="status-badge badge-closed">Closed — awaiting listing</span>
+      <span class="status-badge badge-closed">Closed</span>
     </div>
-    <div class="card-meta-line">
-      <strong>Price Band:</strong> <span class="issue-size">Rs.79–84</span> ·
-      <strong>Issue Price:</strong> ₹84 ·
-      <strong>Issue Size:</strong> ₹1,000 Cr (Fresh + OFS) ·
-      <strong>Lot Size:</strong> 178 shares ·
-      <strong>Dates:</strong> Sep 16–Sep 18, 2026 · Listed Sep 23, 2026 · BSE, NSE ·
-      <strong>Subscription (Overall):</strong> 7.01x
-    </div>
-    <div class="card-tags">
+<div class="card-meta-line">Rs.79-84 · Issue size <span class="issue-size">Rs.1,000 Cr</span> · 16 Sep-18 Sep 2026 · 7.01x (QIB oversubscribed) · as of 21 Sep 2026, 2:35 AM IST (Day 3, listing pending 23 Sep) · GMP -Rs.2 (-2.38%)</div>
+    <div class="lead-manager-box"><strong>Lead manager(s):</strong> ICICI Securities Ltd., Dam Capital Advisors Ltd., JM Financial Ltd.</div>
+<div class="card-tags">
       
       <span class="tag tag-strong">Health: Strong</span>
       <span class="tag tag-val-fair">Valuation: fair P/BV (6.6x)</span>
       <span class="tag tag-fund-growth-led">Fund use: Fresh + OFS</span>
       <span class="tag tag-sub-oversubscribed">Subscription: 7.01x</span>
-      <span class="tag tag-caution">GMP: ₹-2 (-2.38%)</span>
-      <span class="tag">Lead mgr: ICICI Securities Ltd.</span>
+      <span class="tag">Lead mgr: Strong bench</span>
     </div>
     <div class="key-points">
       <ul>
@@ -679,23 +668,17 @@ The lead manager bench — ICICI Securities Ltd., Dam Capital Advisors Ltd., JM 
   <div class="ledger-card" id="card-nse">
     <div class="card-head">
       <h3>NSE <span class="seg-label">Mainboard</span></h3>
-      <span class="status-badge badge-closed">Closed — awaiting listing</span>
+      <span class="status-badge badge-closed">Closed</span>
     </div>
-    <div class="card-meta-line">
-      <strong>Price Band:</strong> <span class="issue-size">Rs.1700–1785</span> ·
-      <strong>Issue Size:</strong> ₹22,562 Cr (OFS) ·
-      <strong>Lot Size:</strong> 8 shares ·
-      <strong>Dates:</strong> Sep 17–Sep 21, 2026 · Listed Sep 24, 2026 · BSE ·
-      <strong>Subscription (Overall):</strong> 1.04x
-    </div>
-    <div class="card-tags">
+<div class="card-meta-line">Rs.1,700-1,785 · Issue size <span class="issue-size">Rs.22,562 Cr</span> · 17 Sep-21 Sep 2026 · 1.04x (QIB building) · as of 21 Sep 2026, 2:35 AM IST (Day 5, book closed, listing pending 24 Sep) · GMP Rs.48 (2.69%)</div>
+    <div class="lead-manager-box"><strong>Lead manager(s):</strong> Kotak Mahindra Capital Co.Ltd., Morgan Stanley India Co.Pvt.Ltd., HSBC Securities & Capital Markets (India) Pvt.Ltd., Avendus Capital Pvt.Ltd., Dam Capital Advisors Ltd., HDFC Bank Ltd., IDBI Capital Markets & Securities Ltd., Motilal Oswal Investment Advisors Ltd., Pantomath Capital Advisors Pvt.Ltd., JM Financial Ltd., Citigroup Global Markets India Pvt.Ltd., JP Morgan India Pvt.Ltd., Anand Rathi Advisors Ltd., Axis Capital Ltd., Equirus Capital Ltd., ICICI Securities Ltd., IIFL Capital Services Ltd., Nuvama Wealth Management Ltd., 360 One WAM Ltd.</div>
+<div class="card-tags">
       
       <span class="tag tag-strong">Health: Strong</span>
       <span class="tag tag-val-rich">Valuation: rich P/BV (13.76x)</span>
       <span class="tag tag-fund-ofs-only">Fund use: OFS only</span>
       <span class="tag tag-sub-oversubscribed">Subscription: 1.04x</span>
-      <span class="tag tag-mixed">GMP: ₹48 (2.69%)</span>
-      <span class="tag">Lead mgr: Kotak Mahindra Capital Co.Ltd.</span>
+      <span class="tag">Lead mgr: Strong bench</span>
     </div>
     <div class="key-points">
       <ul>
@@ -721,23 +704,17 @@ The lead manager bench — Kotak Mahindra Capital Co.Ltd., Morgan Stanley India 
   <div class="ledger-card" id="card-sonaselection-india">
     <div class="card-head">
       <h3>Sonaselection India <span class="seg-label">Mainboard</span></h3>
-      <span class="status-badge badge-closed">Closed — awaiting listing</span>
+      <span class="status-badge badge-closed">Closed</span>
     </div>
-    <div class="card-meta-line">
-      <strong>Price Band:</strong> <span class="issue-size">Rs.94–99</span> ·
-      <strong>Issue Size:</strong> ₹142 Cr (Fresh) ·
-      <strong>Lot Size:</strong> 150 shares ·
-      <strong>Dates:</strong> Sep 17–Sep 21, 2026 · Listed Sep 24, 2026 · BSE, NSE ·
-      <strong>Subscription (Overall):</strong> 0.20x
-    </div>
-    <div class="card-tags">
+<div class="card-meta-line">Rs.94-99 · Issue size <span class="issue-size">Rs.142 Cr</span> · 17 Sep-21 Sep 2026 · 0.20x (QIB undersubscribed) · as of 21 Sep 2026, 2:35 AM IST (Day 5, book closed, listing pending 24 Sep) · GMP pending (not yet active)</div>
+    <div class="lead-manager-box"><strong>Lead manager(s):</strong> Choice Capital Advisors Pvt.Ltd.</div>
+<div class="card-tags">
       
       <span class="tag tag-caution">Health: Unproven</span>
       <span class="tag tag-val-fair">Valuation: fair P/BV (4.0x)</span>
       <span class="tag tag-fund-growth-led">Fund use: Fresh only</span>
       <span class="tag tag-sub-undersubscribed">Subscription: 0.20x</span>
-      <span class="tag tag-mixed">GMP: pending (not yet active)</span>
-      <span class="tag">Lead mgr: Choice Capital Advisors Pvt.Ltd.</span>
+      <span class="tag">Lead mgr: Unproven</span>
     </div>
     <div class="key-points">
       <ul>
@@ -765,21 +742,15 @@ The lead manager bench — Choice Capital Advisors Pvt.Ltd. — is assessed as U
       <h3>Varmora Granito <span class="seg-label">Mainboard</span></h3>
       <span class="status-badge badge-upcoming">Upcoming</span>
     </div>
-    <div class="card-meta-line">
-      <strong>Price Band:</strong> <span class="issue-size">Rs.140–148</span> ·
-      <strong>Issue Size:</strong> ₹708 Cr (Fresh + OFS) ·
-      <strong>Lot Size:</strong> 101 shares ·
-      <strong>Dates:</strong> Sep 22–Sep 24, 2026 · Listed Sep 29, 2026 · BSE, NSE ·
-      <strong>Subscription:</strong> pending (book not yet open)
-    </div>
-    <div class="card-tags">
+<div class="card-meta-line">Rs.140-148 · Issue size <span class="issue-size">Rs.708 Cr</span> · 22 Sep-24 Sep 2026 · pending (book not yet open) · as of 21 Sep 2026, 2:35 AM IST (Day 0, opens 22 Sep) · GMP Rs.9 (6.08%)</div>
+    <div class="lead-manager-box"><strong>Lead manager(s):</strong> JM Financial Ltd., Goldman Sachs (India) Securities Pvt.Ltd., SBI Capital Markets Ltd.</div>
+<div class="card-tags">
       
       <span class="tag tag-strong">Health: Strong</span>
       <span class="tag tag-val-fair">Valuation: fair P/BV (3.74x)</span>
       <span class="tag tag-fund-growth-led">Fund use: Fresh + OFS</span>
       <span class="tag tag-sub-not-opened">Subscription: pending</span>
-      <span class="tag tag-mixed">GMP: ₹9 (6.08%)</span>
-      <span class="tag">Lead mgr: JM Financial Ltd.</span>
+      <span class="tag">Lead mgr: Strong bench</span>
     </div>
     <div class="key-points">
       <ul>
@@ -806,20 +777,14 @@ The lead manager bench — JM Financial Ltd., Goldman Sachs (India) Securities P
       <h3>Pooja Logistics <span class="seg-label">SME</span></h3>
       <span class="status-badge badge-upcoming">Upcoming</span>
     </div>
-    <div class="card-meta-line">
-      <strong>Price Band:</strong> <span class="issue-size">Rs.109–115</span> ·
-      <strong>Issue Size:</strong> ₹44.23 Cr (Fresh) ·
-      <strong>Lot Size:</strong> 1,200 shares ·
-      <strong>Dates:</strong> Sep 23–Sep 25, 2026 · Listed Sep 30, 2026 · NSE SME ·
-      <strong>Subscription:</strong> pending (book not yet open)
-    </div>
-    <div class="card-tags">
+<div class="card-meta-line">Rs.109-115 · Issue size <span class="issue-size">Rs.44.23 Cr</span> · 23 Sep-25 Sep 2026 · pending (book not yet open) · as of 21 Sep 2026, 2:35 AM IST (Day 0, opens 23 Sep) · GMP not yet active</div>
+    <div class="lead-manager-box"><strong>Lead manager(s):</strong> Share India Capital Services Pvt.Ltd.</div>
+<div class="card-tags">
       <span class="tag tag-strong">Health: Strong</span>
       <span class="tag tag-val-fair">Valuation: fair P/BV (4.45x)</span>
       <span class="tag tag-fund-growth-led">Fund use: Fresh only</span>
       <span class="tag tag-sub-not-opened">Subscription: pending</span>
-      <span class="tag tag-mixed">GMP: not yet active</span>
-      <span class="tag">Lead mgr: Share India Capital Services Pvt.Ltd.</span>
+      <span class="tag">Lead mgr: Solid</span>
     </div>
     <div class="key-points">
       <ul>
