@@ -1,45 +1,25 @@
 {
-  "NSE": {
-    "lead_managers": [
-      "Kotak Mahindra Capital Co.Ltd."
-    ],
-    "reads": [
-      "Strong"
-    ],
-    "overall_label": "Strong",
-    "narrative": "The lead manager bench is led by Kotak Mahindra Capital Co.Ltd. \u2014 a Strong bench with an extensive 2026 mainboard mandate book and a track record of several issued issues listing with gains."
-  },
-  "Sonaselection India": {
-    "lead_managers": [
-      "Choice Capital Advisors Pvt.Ltd."
-    ],
-    "reads": [
-      "Unproven"
-    ],
-    "overall_label": "Unproven",
-    "narrative": "The lead manager, Choice Capital Advisors Pvt.Ltd., is an Unproven bench \u2014 no 2026 mainboard track record was found on chittorgarh's performance tracker or ipomarkets.com, making this a debut mandate for the firm."
-  },
   "SS Retail": {
     "lead_managers": [
       "Anand Rathi Advisors Ltd.",
       "Emkay Global Financial Services Ltd."
     ],
     "reads": [
-      "Solid",
+      "Solid (per prior runs; page 2-3 of tracker, not on page 1)",
       "Mixed"
     ],
     "overall_label": "Mixed",
-    "narrative": "The lead manager bench \u2014 Anand Rathi Advisors Ltd. and Emkay Global Financial Services Ltd. \u2014 is assessed as Mixed: Anand Rathi carries a solid 2026 mainboard book while Emkay's record shows moderate results with some flat listings."
+    "narrative": "Anand Rathi Advisors Ltd. (Solid) and Emkay Global Financial Services Ltd. (Mixed) \u2014 Mixed bench: Anand Rathi carries a solid 2026 mainboard book; Emkay's record shows moderate results with some flat listings."
   },
   "Jindal Supreme (India)": {
     "lead_managers": [
       "Sarthi Capital Advisors Pvt.Ltd."
     ],
     "reads": [
-      "Unproven"
+      "Unproven (not on 2026 mainboard tracker; ipomarkets.com lists 56 total IPOs handled)"
     ],
     "overall_label": "Unproven",
-    "narrative": "The lead manager, Sarthi Capital Advisors Pvt.Ltd., is an Unproven bench \u2014 no 2026 mainboard track record was found on chittorgarh's performance tracker, making this a debut mandate."
+    "narrative": "Sarthi Capital Advisors Pvt.Ltd. \u2014 no 2026 mainboard track record found on chittorgarh's performance tracker; debut mandate. ipomarkets.com lists 56 total IPOs handled by Sarthi Capital, but 2026 mainboard-specific record is unconfirmed."
   },
   "Hero Motors": {
     "lead_managers": [
@@ -53,7 +33,63 @@
       "Strong"
     ],
     "overall_label": "Strong",
-    "narrative": "The lead manager bench \u2014 ICICI Securities Ltd., Dam Capital Advisors Ltd., and JM Financial Ltd. \u2014 is assessed as Strong: all three have active 2026 mainboard mandates with positive listing-day records, providing credible execution and distribution support."
+    "narrative": "ICICI Securities Ltd., Dam Capital Advisors Ltd., and JM Financial Ltd. \u2014 Strong bench: all three have active 2026 mainboard mandates with positive listing-day records, providing credible execution and distribution support."
+  },
+  "NSE": {
+    "lead_managers": [
+      "Kotak Mahindra Capital Co.Ltd.",
+      "Morgan Stanley India Co.Pvt.Ltd.",
+      "HSBC Securities & Capital Markets (India) Pvt.Ltd.",
+      "Avendus Capital Pvt.Ltd.",
+      "Dam Capital Advisors Ltd.",
+      "HDFC Bank Ltd.",
+      "IDBI Capital Markets & Securities Ltd.",
+      "Motilal Oswal Investment Advisors Ltd.",
+      "Pantomath Capital Advisors Pvt.Ltd.",
+      "JM Financial Ltd.",
+      "Citigroup Global Markets India Pvt.Ltd.",
+      "JP Morgan India Pvt.Ltd.",
+      "Anand Rathi Advisors Ltd.",
+      "Axis Capital Ltd.",
+      "Equirus Capital Ltd.",
+      "ICICI Securities Ltd.",
+      "IIFL Capital Services Ltd.",
+      "Nuvama Wealth Management Ltd.",
+      "360 One WAM Ltd."
+    ],
+    "reads": [
+      "Strong",
+      "Caution",
+      "Solid",
+      "Mixed",
+      "Strong",
+      "Unproven (page 2-3 of tracker, not on page 1)",
+      "Solid",
+      "Strong",
+      "Strong",
+      "Strong",
+      "Unproven (page 2-3 of tracker, not on page 1)",
+      "Caution",
+      "Solid (per prior runs; page 2-3 of tracker, not on page 1)",
+      "Strong",
+      "Strong",
+      "Strong",
+      "Solid",
+      "Solid",
+      "Unproven (page 2-3 of tracker, not on page 1)"
+    ],
+    "overall_label": "Strong",
+    "narrative": "19 lead managers including Kotak Mahindra Capital, Morgan Stanley, JP Morgan \u2014 all major houses with extensive 2026 mainboard books."
+  },
+  "Sonaselection India": {
+    "lead_managers": [
+      "Choice Capital Advisors Pvt.Ltd."
+    ],
+    "reads": [
+      "Unproven \u2014 IPORise shows 8 total IPOs (6 mainboard, 2 SME), avg listing -2.9%; Sotefin Bharat +9.63%, Genxai Analytics -20% in 2026"
+    ],
+    "overall_label": "Unproven",
+    "narrative": "Choice Capital Advisors Pvt.Ltd. \u2014 no 2026 mainboard track record found on chittorgarh's performance tracker or ipomarkets.com; debut mandate. IPORise lists 8 total IPOs managed (6 mainboard, 2 SME) with avg listing gain -2.9%; recent SME IPOs Sotefin Bharat (+9.63%) and Genxai Analytics (-20%) show mixed results."
   },
   "Varmora Granito": {
     "lead_managers": [
@@ -63,20 +99,20 @@
     ],
     "reads": [
       "Strong",
-      "Strong",
-      "Strong"
+      "Mixed",
+      "Solid"
     ],
     "overall_label": "Strong",
-    "narrative": "The lead manager bench \u2014 JM Financial Ltd., Goldman Sachs (India) Securities Pvt.Ltd., and SBI Capital Markets Ltd. \u2014 is assessed as Strong: all three carry well-established 2026 mainboard books with consistent positive listing-day records."
+    "narrative": "JM Financial Ltd., Goldman Sachs (India) Securities Pvt.Ltd., and SBI Capital Markets Ltd. \u2014 Strong bench: all three carry well-established 2026 mainboard books with consistent positive listing-day records."
   },
   "Pooja Logistics Ltd": {
     "lead_managers": [
-      "pending"
+      "Share India Capital Services Pvt.Ltd."
     ],
     "reads": [
-      "pending"
+      "Unproven"
     ],
-    "overall_label": "pending",
-    "narrative": "Lead manager details pending \u2014 DRHP not yet extracted (defuddle blocked in cron session)."
+    "overall_label": "Unproven",
+    "narrative": "Share India Capital Services Pvt.Ltd. \u2014 no 2026 SME track record found; debut SME mandate. Market makers: Prabhat Financial Services Ltd., Share India Securities Ltd."
   }
 }
