@@ -95,6 +95,7 @@
     font-weight: 700;
     color: var(--gold-light);
     margin-right: 6px;
+    font-variant-numeric: tabular-nums;
   }
   .summary-item .sum-lbl {
     color: #d6dcec;
@@ -115,6 +116,7 @@
     font-size: 1.32rem;
     margin-top: 0;
     color: var(--navy);
+    text-wrap: balance;
   }
   section.notes ul { margin: 8px 0; padding-left: 20px; }
   section.notes li { margin-bottom: 6px; }
@@ -156,6 +158,7 @@
     border-bottom: 2px solid var(--gold);
     padding-bottom: 10px;
     margin: 46px 0 8px;
+    text-wrap: balance;
   }
   .section-desc { font-size: 0.87rem; color: #4a4030; margin-bottom: 22px; max-width: 900px; }
   .cards-col {
@@ -308,6 +311,7 @@
     font-size: 1.12rem;
     color: var(--navy);
     margin: 0 0 12px;
+    text-wrap: balance;
   }
   .analyst-note p { font-size: 0.88rem; margin: 0 0 10px; color: #3a3226; }
   .analyst-note ul { margin: 0 0 10px; padding-left: 20px; }
@@ -350,6 +354,10 @@
   table.rank-table tr.rank-buy { background: rgba(47,93,58,0.07); }
   table.rank-table tr.rank-watch { background: rgba(156,107,31,0.07); }
   table.rank-table tr.rank-avoid { background: rgba(138,46,46,0.06); }
+  table.rank-table tbody tr { transition-property: background; transition-duration: 0.15s; transition-timing-function: ease-out; }
+  table.rank-table tr.rank-buy:hover { background: rgba(47,93,58,0.13); }
+  table.rank-table tr.rank-watch:hover { background: rgba(156,107,31,0.13); }
+  table.rank-table tr.rank-avoid:hover { background: rgba(138,46,46,0.12); }
   .rank-score { font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; font-weight: 700; white-space: nowrap; }
   tr.rank-buy .rank-score { color: var(--green); }
   tr.rank-watch .rank-score { color: var(--amber); }
@@ -369,6 +377,7 @@
     font-size: 1.1rem;
     color: var(--navy);
     margin: 0 0 10px;
+    text-wrap: balance;
   }
   .sentiment-grid {
     display: grid;
@@ -385,7 +394,7 @@
     padding: 8px 11px;
   }
   .sentiment-stat .lbl { color: #7a7060; display:block; font-size:0.62rem; text-transform:uppercase; letter-spacing:0.5px; margin-bottom: 2px; }
-  .sentiment-stat b { display: block; font-size: 0.92rem; color: var(--navy); margin-bottom: 2px; }
+  .sentiment-stat b { display: block; font-size: 0.92rem; color: var(--navy); margin-bottom: 2px; font-variant-numeric: tabular-nums; }
   .sentiment-stat small { display: block; color: #6b6353; font-size: 0.7rem; line-height: 1.35; }
   .sentiment-read {
     font-size: 0.87rem;
@@ -517,6 +526,37 @@
     color: #7a7060;
     font-style: italic;
   }
+
+  /* Visual polish pass — see make-interfaces-feel-better skill.
+     .actionable-box was referenced in markup 5x (analyst-comparison
+     callout + 4 follow-up boxes) with no matching CSS rule at all,
+     rendering as plain unstyled text. Styled consistently with the
+     existing .sentiment-box/.update-box card language: shadow-as-border
+     for elevation, gold left accent to match the ledger's ruled-margin
+     motif, concentric radius (8px outer, no nested inner surface here
+     so a single radius is correct). */
+  .actionable-box {
+    background: #fffdf6;
+    border: 1px solid rgba(20,33,61,0.14);
+    border-left: 4px solid var(--gold);
+    border-radius: 8px;
+    padding: 18px 22px;
+    margin: 16px 0 22px;
+    box-shadow: 0 2px 8px rgba(20,33,61,0.06);
+    transition-property: box-shadow, transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-out;
+  }
+  .actionable-box:hover { box-shadow: 0 5px 16px rgba(20,33,61,0.1); transform: translateY(-1px); }
+  .actionable-box h3 {
+    font-family: 'Source Serif 4', serif;
+    font-size: 1.1rem;
+    color: var(--navy);
+    margin: 0 0 10px;
+    text-wrap: balance;
+  }
+  .actionable-box p { font-size: 0.88rem; color: #3a3226; margin: 0; }
+  .actionable-box p + p { margin-top: 10px; }
 
 
 </style>
