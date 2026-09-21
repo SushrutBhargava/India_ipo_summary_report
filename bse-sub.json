@@ -1,0 +1,5 @@
+{
+  "Sonaselection India (BSE-only)": {"QIB": 0.0, "NII": 0.0762, "RII": 0.4031, "total": 0.2179, "note": "BSE-only, partial — combined BSE+NSE from chittorgarh authoritative"},
+  "NSE (BSE-only)": {"QIB": 1.3021, "NII": 0.3764, "RII": 0.2076, "total": 0.5562, "note": "BSE-only, partial — combined BSE+NSE from chittorgarh authoritative"},
+  "Varmora Granito (BSE-only)": {"QIB": 0.0, "NII": 0.0, "RII": 0.0, "total": 0.0, "note": "Book not yet opened (opens 22 Sep)"}
+}

@@ -1,0 +1,30 @@
+{
+  "Hero Motors": {
+    "lead_managers": [
+      "ICICI Securities Ltd.",
+      "Dam Capital Advisors Ltd.",
+      "JM Financial Ltd."
+    ],
+    "reads": {
+      "ICICI Securities Ltd.": "Strong",
+      "Dam Capital Advisors Ltd.": "Strong",
+      "JM Financial Ltd.": "Strong"
+    },
+    "overall_label": "Strong",
+    "narrative": "Lead manager bench read: Strong for Hero Motors. ICICI Securities Ltd., Dam Capital Advisors Ltd., and JM Financial Ltd. all carry active 2026 mainboard mandates with positive listing-day records, providing credible execution and distribution support."
+  },
+  "Varmora Granito": {
+    "lead_managers": [
+      "JM Financial Ltd.",
+      "Goldman Sachs (India) Securities Pvt.Ltd.",
+      "SBI Capital Markets Ltd."
+    ],
+    "reads": {
+      "JM Financial Ltd.": "Strong",
+      "Goldman Sachs (India) Securities Pvt.Ltd.": "Strong",
+      "SBI Capital Markets Ltd.": "Strong"
+    },
+    "overall_label": "Strong",
+    "narrative": "Lead manager bench read: Strong for Varmora Granito. JM Financial Ltd., Goldman Sachs (India) Securities Pvt.Ltd., and SBI Capital Markets Ltd. all carry well-established 2026 mainboard books with consistent positive listing-day records."
+  }
+}
