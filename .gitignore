@@ -1,12 +1,6 @@
-# Obsidian vault internals — never public
-.DS_Store
-.obsidian/
-*.canvas
-
-# Personal vault notes — not part of the public IPO ledger repo
-Welcome.md
-Untitled.md
-2026-*.md
-IPO Ledger Task.md
-iPO summary/
-# (personal-note patterns; add more here as needed)
+*.log
+fyers-prices.txt
+bse-sub.json
+ipo-fundamentals-ledger-new.html
+listing-risk-desk-*.md
+lead-managers/
