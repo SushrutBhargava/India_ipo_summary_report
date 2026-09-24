@@ -1,0 +1,2243 @@
+   General Information Document for Investing in Public Offers
+
+This General Information Document highlights certain key rules, processes and procedures applicable to public
+issues in accordance with the provisions of the Companies Act, 2013 the Securities Contracts (Regulation) Act,
+1956 (“SCRA”), the Securities Contracts (Regulation) Rules, 1957 (“SCRR”), the Securities and Exchange
+Board of India (Issue of Capital and Disclosure Requirements) Regulations, 2018, as amended (“SEBI ICDR
+Regulations”). Bidders/Applicants should not construe the contents of this General Information Document as
+legal advice and should consult their own legal counsel and other advisors in relation to the legal matters
+concerning the Offer. For taking an investment decision, the Bidders/Applicants should rely on their own
+examination of the Issuer and the Offer, and should carefully read the Red Herring Prospectus/Prospectus before
+investing in the Offer.
+
+SEBI through its circular no. SEBI/HO/CFD/DIL2/CIR/P/2018/138 dated November 1, 2018, and as modified
+though its circular SEBI/HO/CFD/DIL2/CIR/P/2019/50 dated April 3, 2019, circular no.
+SEBI/HO/CFD/DIL2/CIR/P/2019/76 dated June 28, 2019, circular no. SEBI/HO/CFD/DIL2/CIR/P/2019/85
+dated July 26, 2019 and circular no. SEBI/HO/CFD/DCR2/CIR/P/2019/133 dated November 8, 2019 (together,
+the “UPI Circular”) has proposed to introduce an alternate payment mechanism using Unified Payments
+Interface (“UPI”) and consequent reduction in timelines for listing in a phased manner. From January 1, 2019,
+the UPI mechanism for RIIs applying through Designated Intermediaries have been made effective along with the
+existing process and existing timeline of T+6 days. The same was applicable until June 30, 2019 (“UPI Phase
+I”). Currently, for application by RIIs through Designated Intermediaries, the existing process of physical
+movement of forms from Designated Intermediaries to SCSBs for blocking of funds is discontinued and RIIs
+submitting their Application Forms through Designated Intermediaries (other than SCSBs) can only use the UPI
+mechanism with existing timeline of T+6 days until March 31, 2020 (“UPI Phase II”). Subsequently, the final
+reduced timeline will be made effective using the UPI mechanism for applications by RIIs (“UPI Phase III”), as
+may be prescribed by SEBI.
+
+Merchant Banker shall be the nodal entity for any issues arising out of public issuance process.
+
+In terms of regulation23(5) and regulation 271 of SEBI (Issue of Capital and Disclosure Requirements)
+Regulations,    2018,      the    timelines     and     processes      mentioned      in SEBI Circular.
+No. SEBI/HO/CFD/DCR2/CIR/P/2019/133 dated November 08, 2019 shall continue to form part of the
+agreements being signed between the intermediaries involved in the public issuance process and lead
+managers shall continue to coordinate with intermediaries involved in the said process.
+
+
+
+
+                                                        1
+                 TABLE OF CONTENTS
+
+
+SECTION 1: PURPOSE OF THE GENERAL INFORMATION DOCUMENT …………………3
+
+SECTION 2: BRIEF INTRODUCTION TO IPOs/FPOs…………………………………………..4
+
+SECTION 3: CATEGORY OF INVESTORS ELIGIBLE TO PARTICIPATE IN AN OFFER..…7
+
+SECTION 4: APPLYING IN THE OFFER..……………………………………………………….8
+
+SECTION 5: OFFER PROCEDURE IN BOOK BUILT OFFER………………………………….30
+
+SECTION 6: ISSUE PROCEDURE IN FIXED PRICE OFFER……………………..…………….35
+
+SECTION 7: ALLOTMENT PROCEDURE AND BASIS OF ALLOTMENT……………….…...36
+
+SECTION 8: INTEREST AND REFUNDS…………………………………….…………………..39
+
+SECTION 9: GLOSSARY AND ABBREVATIONS……………………………………………….42
+
+
+
+
+                                    2
+           SECTION 1: PURPOSE OF THE GENERAL INFORMATION DOCUMENT (GID)
+
+This document is applicable to the public issues undertaken through the Book-Building Process as well as to the
+Fixed Price Offers. The purpose of the “General Information Document for Investing in Public Issues” is to
+provide general guidance to potential Bidders/Applicants in IPOs and FPOs, and on the processes and procedures
+governing IPOs and FPOs, undertaken in accordance with the provisions of the SEBI ICDR Regulations.
+
+Bidders/Applicants should note that investment in equity and equity related securities involves risk and
+Bidder/Applicant should not invest any funds in the Offer unless they can afford to take the risk of losing their
+investment. The specific terms relating to securities and/or for subscribing to securities in an Offer and the relevant
+information about the Issuer undertaking the Offer are set out in the Red Herring Prospectus (“RHP”)/ Prospectus
+filed by the Issuer with the Registrar of Companies (“RoC”). Bidders/Applicants should carefully read the entire
+RHP/Prospectus, the Bid cum Application Form/Application Form and the Abridged Prospectus of the Issuer in
+which they are proposing to invest through the Offer. In case of any difference in interpretation or conflict and/or
+overlap between the disclosure included in this document and the RHP/Prospectus, the disclosures in the
+RHP/Prospectus shall prevail. The RHP/Prospectus of the Issuer is available on the websites of stock exchanges,
+on the website(s) of the BRLM(s) to the Offer and on the website of Securities and Exchange Board of India
+(“SEBI”) at www.sebi.gov.in.
+
+For the definitions of capitalized terms and abbreviations used herein Bidders/Applicants may refer to the section
+“Glossary and Abbreviations”.
+
+
+
+
+                                                          3
+                        SECTION 2: BRIEF INTRODUCTION TO IPOs/FPOs
+
+2.1   Initial public offer (IPO)
+
+      An IPO means an offer of specified securities by an unlisted Issuer to the public for subscription and may
+      include an Offer for Sale of specified securities to the public by any existing holder of such securities in
+      an unlisted Issuer.
+
+2.2   Further public offer (FPO)
+
+      An FPO means an offer of specified securities by a listed Issuer to the public for subscription and may
+      include Offer for Sale of specified securities to the public by any existing holder of such securities in a
+      listed Issuer.
+
+2.3   Other Eligibility Requirements:
+
+      An Issuer proposing to undertake an IPO or an FPO is required to comply with various other requirements
+      as specified in the SEBI ICDR Regulations, the SEBI LODR Regulations, the Companies Act, 2013 (to
+      the extent notified and in effect), the SCRR, industry-specific regulations, if any, and other applicable
+      laws for the time being in force.
+
+      For details in relation to the above Bidders/Applicants may refer to the RHP/Prospectus.
+
+2.4   Types of Public Offers – Fixed Price Offers and Book Built Offers
+
+      In accordance with the provisions of the SEBI ICDR Regulations, an Issuer can either determine the
+      Offer Price through the Book Building Process (“Book Built Offer”) or undertake a Fixed Price Offer
+      (“Fixed Price Offer”).
+
+      The cap on the Price Band should be less than or equal to 120% of the Floor Price. The Issuer shall
+      announce the Price or the Floor Price or the Price Band through advertisement in all newspapers in which
+      the pre-offer advertisement was given at least two Working Days before the Bid/Offer Opening Date, in
+      case of an IPO and at least one Working Day before the Bid/Offer Opening Date, in case of an FPO and
+      determine the Offer Price at a later date before registering the Prospectus with the Registrar of
+      Companies.
+
+      The Floor Price or the Offer price cannot be lesser than the face value of the securities.
+
+      Bidders/Applicants should refer to the RHP/Prospectus or Offer advertisements to check whether the
+      Offer is a Book Built Offer or a Fixed Price Offer.
+
+2.5   OFFER PERIOD
+
+      The Offer shall be kept open for a minimum of three Working Days (for all categories of
+      Bidders/Applicants) and not more than ten Working Days. Bidders/Applicants are advised to refer to the
+      Bid cum Application Form and Abridged Prospectus or RHP/Prospectus for details of the Bid/Offer
+      Period. Details of Bid/Offer Period are also available on the website of the Stock Exchange(s).
+
+      In case of a Book Built Offer, the Issuer may close the Bid/Offer Period for QIBs one Working Day prior
+      to the Bid/Offer Closing Date if disclosures to that effect are made in the RHP. In case of revision in the
+      Price Band in Book Built Offers the Bid/Offer Period may be extended by at least three Working Days,
+      subject to the total Bid/Offer Period not exceeding ten Working Days. For details of any revision of the
+      Price Band, Bidders/Applicants may check the announcements made by the Issuer on the websites of the
+      Stock Exchanges and the BRLM(s), and the advertisement in the newspaper(s) issued in this regard.
+
+      In case of force majeure, banking strike or similar circumstances, the Issuer may, for reasons to be
+      recorded in writing, extend the bidding (Offer) period for a minimum period of three working days,
+      subject to the total Bid/Offer Period not exceeding 10 Working Days.
+
+
+
+
+                                                      4
+2.6   FLOWCHART OF TIMELINES
+
+      A flow chart of process flow in Fixed Price and Book Built Offers is as follows. Bidders/Applicants may
+      note that this is not applicable for Fast Track FPOs.:
+
+
+
+
+                                                    5
+Flow chart of timeline for Phase II
+
+
+
+
+                6
+      SECTION 3: CATEGORY OF INVESTORS ELIGIBLE TO PARTICIPATE IN AN OFFER
+
+Each Bidder/Applicant should check whether it is eligible to apply under applicable law. Furthermore, certain
+categories of Bidders/Applicants, such as NRIs, FPIs and FVCIs may not be allowed to Bid/Apply in the Offer or
+to hold Equity Shares, in excess of certain limits or in specific sectors as specified under applicable law.
+Bidders/Applicants are requested to refer to the RHP/Prospectus for more details.
+
+Subject to the above, an illustrative list of Bidders/Applicants is as follows:
+
+        Indian nationals resident in India who are competent to contract under the Indian Contract Act, 1872, in
+         single or joint names (not more than three);
+
+        Bids/Applications belonging to an account for the benefit of a minor (under guardianship);
+
+        Hindu Undivided Families or HUFs, in the individual name of the Karta. The Bidder/Applicant should
+         specify that the Bid is being made in the name of the HUF in the Bid cum Application Form/Application
+         Form as follows: “Name of sole or first Bidder/Applicant: XYZ Hindu Undivided Family applying
+         through XYZ, where XYZ is the name of the Karta”. Bids/Applications by HUFs may be considered at
+         par with Bids/Applications from individuals;
+
+        Companies, corporate bodies and societies registered under applicable law in India and authorised to
+         hold and invest in equity shares;
+
+        QIBs;
+
+        NRIs on a repatriation basis or on a non-repatriation basis subject to applicable law;
+
+        Indian Financial Institutions, regional rural banks, co-operative banks (subject to RBI regulations and
+         the SEBI ICDR Regulations and other laws, as applicable);
+
+        FPIs other than FPIs which are individuals, corporate bodies and family offices Bidding under the QIBs
+         category;
+
+        FPIs which are individuals, corporate bodies and family offices, Bidding under the NIIs category;
+
+        Trusts/societies registered under the Societies Registration Act, 1860, or under any other law relating to
+         trusts/societies and who are authorised under their respective constitutions to hold and invest in equity
+         shares;
+
+        National Investment Fund set up by resolution no. F. No. 2/3/2005-DD-II dated November 23, 2005 of
+         the GoI published in the Gazette of India;
+
+        Limited liability partnerships registered under the Limited Liability Partnership Act, 2008;
+
+        Any other person eligible to Bid/Apply in the Offer, under the laws, rules, regulations, guidelines and
+         policies applicable to them and under Indian laws; and
+
+        As per the existing regulations, OCBs are not allowed to participate in an Offer.
+
+
+
+
+                                                          7
+                                    SECTION 4: APPLYING IN THE OFFER
+
+Book Built Offer: Bidders should only use the specified Bid cum Application Form bearing stamp of a Designated
+Intermediary as available or downloaded from the websites of the Stock Exchanges.
+
+Bid cum Application Forms are available with the Designated Intermediaries at the Bidding Centres and at the
+registered office of the Issuer. Electronic Bid cum Application Forms will be available on the websites of the
+Stock Exchanges at least one day prior to the Bid/Offer Opening Date. For further details regarding availability
+of Bid cum Application Forms, Bidders may refer to the RHP/Prospectus and advertisements in the newspaper(s).
+For Anchor Investors, Bid cum Application Forms shall be available at the offices of the BRLMs.
+
+Fixed Price Offer: Applicants should only use the specified Bid cum Application Form bearing the stamp of the
+Designated Intermediary as available or downloaded from the websites of the Stock Exchanges. Application
+Forms will also be available with the Designated Branches of the SCSBs and at the registered office of the Issuer.
+For further details regarding availability of Application Forms, Applicants may refer to the Prospectus.
+
+Bidders/Applicants should ensure that they apply in the appropriate category. The prescribed color of the Bid cum
+Application Form for various categories of Bidders/Applicants is as follows:
+
+                                         Category                                         Color of the Bid cum
+                                                                                            Application Form
+ Resident Indian, Eligible NRIs applying on a non repatriation basis                    White
+ NRIs applying on a repatriation basis, FPIs                                            Blue
+ Anchor Investors (where applicable)                                                    As specified by the Issuer
+ Reserved Category                                                                      As specified by the Issuer
+
+Securities issued in an IPO can only be in dematerialized form in accordance with Section 29 of the Companies
+Act, 2013. Bidders/Applicants will not have the option of getting the Allotment of specified securities in physical
+form.
+
+4.1      INSTRUCTIONS FOR FILLING THE BID CUM APPLICATION FORM/ APPLICATION
+         FORM
+
+         Bidders/Applicants may note that Bid cum Application Form not filled completely or correctly as per
+         instructions provided in this GID, the RHP/Prospectus and the Bid cum Application Form/Application
+         Form are liable to be rejected.
+
+         Instructions to fill each field of the Bid cum Application Form can be found on the reverse side of the
+         Bid cum Application Form.
+
+         The samples of the Bid cum Application Form for resident Bidders and the Bid cum Application Form
+         for non-resident Bidders are reproduced below:
+
+
+
+
+                                                             8
+Application Form – For Residents
+
+
+
+
+             9
+                                 Application Form – For Non – Residents
+
+
+
+
+Specific instructions for filling various fields of the Resident Bid cum Application Form and Non-Resident Bid
+cum Application Form and samples are provided below.
+
+
+
+
+                                                     10
+4.1.1   FIELD NUMBER 1:          NAME       AND     CONTACT        DETAILS       OF    THE     SOLE/FIRST
+        BIDDER/APPLICANT
+
+        (a)   Bidders/Applicants should ensure that the name provided in this field is exactly the same as the
+              name in which the Depository Account is held.
+
+        (b)   Mandatory Fields: Bidders/Applicants should note that the name and address fields are
+              compulsory and e-mail and/or telephone number/mobile number fields are optional.
+              Bidders/Applicants should note that the contact details mentioned in the Bid-cum Application
+              Form/Application Form may be used to dispatch communications (including letters notifying
+              the unblocking of the bank accounts of Bidders (other than Anchor Investors) in case the
+              communication sent to the address available with the Depositories are returned undelivered or
+              are not available. The contact details provided in the Bid cum Application Form may be used
+              by the Issuer, Designated Intermediaries and the Registrar to the Offer only for
+              correspondence(s) related to an Offer and for no other purposes.
+
+        (c)   Joint Bids/Applications: In the case of Joint Bids/Applications, the Bids /Applications should
+              be made in the name of the Bidder/Applicant whose name appears first in the Depository
+              account. The name so entered should be the same as it appears in the Depository records. The
+              signature of only such first Bidder/Applicant would be required in the Bid cum Application
+              Form/Application Form and such first Bidder/Applicant would be deemed to have signed on
+              behalf of the joint holders. All communications may be addressed to such first Bidder/Applicant
+              and may be dispatched to his or her address as per the Demographic Details received from the
+              Depositories.
+
+        (d)   Impersonation: Attention of the Bidders/Applicants is specifically drawn to the provisions of
+              sub-section (1) of Section 38 of the Companies Act, 2013 which is reproduced below:
+
+              “Any person who:
+
+              (a)     makes or abets making of an application in a fictitious name to a company for
+                      acquiring, or subscribing for, its securities; or
+
+              (b)      makes or abets making of multiple applications to a company in different names or
+                       in different combinations of his name or surname for acquiring or subscribing for
+                       its securities; or
+
+              (c)      otherwise induces directly or indirectly a company to allot, or register any transfer
+                       of, securities to him, or to any other person in a fictitious name,
+
+              shall be liable for action under Section 447.”
+
+              The liability prescribed under Section 447 of the Companies Act, 2013 includes imprisonment
+              for a term which shall not be less than six months extending up to 10 years (provided that where
+              the fraud involves public interest, such term shall not be less than three years) and fine of an
+              amount not less than the amount involved in the fraud, extending up to three times of such
+              amount.
+
+        (e)   Nomination Facility to Bidder/Applicant: Nomination facility is available in accordance with
+              the provisions of Section 72 of the Companies Act, 2013. For Allotment of the Equity Shares
+              in dematerialized form, there will be no separate nomination as the nomination registered with
+              the Depository may prevail. For changing nominations, the Bidders/Applicants should inform
+              their respective DP.
+
+4.1.2   FIELD NUMBER 2: PAN OF SOLE/FIRST BIDDER/APPLICANT
+
+        (a)   PAN (of the sole/ first Bidder/Applicant) provided in the Bid cum Application
+              Form/Application Form should be exactly the same as the PAN of the person(s) in whose name
+              the relevant beneficiary account is held as per the Depositories’ records.
+
+        (b)   PAN is the sole identification number for participants transacting in the securities market
+              irrespective of the amount of transaction except for Bids/Applications on behalf of the Central
+
+
+
+                                                   11
+              or State Government, Bids/Applications by officials appointed by the courts and
+              Bids/Applications by Bidders/Applicants residing in Sikkim (“PAN Exempted
+              Bidders/Applicants”). Consequently, all Bidders/Applicants, other than the PAN Exempted
+              Bidders/Applicants, are required to disclose their PAN in the Bid cum Application
+              Form/Application Form, irrespective of the Bid/Application Amount. A Bid cum Application
+              Form/Application Form without PAN, except in case of PAN Exempted Bidders/Applicants, is
+              liable to be rejected. Bids/Applications by the Bidders/Applicants whose PAN is not available
+              as per the Demographic Details available in their Depository records, are liable to be rejected.
+
+        (c)   The exemption for the PAN Exempted Bidders/Applicants is subject to (a) the Demographic
+              Details received from the respective Depositories confirming the exemption granted to the
+              beneficial owner by a suitable description in the PAN field and the beneficiary account
+              remaining in “active status”; and (b) in the case of residents of Sikkim, the address as per the
+              Demographic Details evidencing the same.
+
+        (d)   Bid cum Application Forms/Application Forms which provide the General Index Register
+              Number instead of PAN may be rejected.
+
+        (e)   Bids/Applications by Bidders whose demat accounts have been ‘suspended for credit’ are liable
+              to be rejected pursuant to the circular issued by SEBI on July 29, 2010, bearing number
+              CIR/MRD/DP/22/2010. Such accounts are classified as “Inactive demat accounts” and
+              Demographic Details are not provided by depositories.
+
+4.1.3   FIELD NUMBER 3: BIDDERS/APPLICANTS DEPOSITORY ACCOUNT DETAILS
+
+        (a)   Bidders/Applicants should ensure that DP ID and the Client ID are correctly filled in the Bid
+              cum Application Form/Application Form. The DP ID and Client ID provided in the Bid cum
+              Application Form/Application Form should match with the DP ID and Client ID available in
+              the Depository database, otherwise, the Bid cum Application Form/Application Form is
+              liable to be rejected.
+
+        (b)   Bidders/Applicants should ensure that the beneficiary account provided in the Bid cum
+              Application Form/Application Form is active.
+
+        (c)   Bidders/Applicants should note that on the basis of the PAN, DP ID and Client ID as provided
+              in the Bid cum Application Form/Application Form, the Bidder/Applicant may be deemed to
+              have authorized the Depositories to provide to the Registrar to the Offer, any requested
+              Demographic Details of the Bidder/Applicant as available on the records of the depositories.
+              These Demographic Details may be used, among other things, for any correspondence(s) related
+              to the Offer.
+
+        (d)   Bidders/Applicants are, advised to update any changes to their Demographic Details as available
+              in the records of the Depository Participant to ensure accuracy of records. Any delay resulting
+              from failure to update the Demographic Details would be at the Bidders/Applicants’ sole risk.
+
+4.1.4   FIELD NUMBER 4: BID OPTIONS
+
+        (a)   Price or Floor Price or Price Band, minimum Bid Lot and Discount (if applicable) may be
+              disclosed in the Prospectus/RHP by the Issuer. The Issuer is required to announce the Floor
+              Price or Price Band, minimum Bid Lot and Discount (if applicable) by way of an advertisement
+              in at least one English, one Hindi and one regional newspaper, with wide circulation at the place
+              where the Issuer’s registered office is situated, at least two Working Days before Bid/Offer
+              Opening Date in case of an IPO, and at least one Working Day before Bid/Offer Opening Date
+              in case of an FPO.
+
+        (b)   The Bidders may Bid at or above Floor Price or within the Price Band for IPOs /FPOs
+              undertaken through the Book Building Process. In the case of Alternate Book Building Process
+              for an FPO, the Bidders may Bid at Floor Price or any price above the Floor Price (For further
+              details Bidders may refer to (Section 5.6 (e))
+
+        (c)   Cut-Off Price: Retail Individual Investors or Employees or Retail Individual Shareholders in
+              the Shareholder Reservation Portion (if any) can Bid at the Cut-off Price indicating their
+
+
+                                                    12
+              agreement to Bid for and purchase the Equity Shares at the Offer Price as determined at the end
+              of the Book Building Process. Bidding at the Cut-off Price is prohibited for QIBs and NIIs and
+              such Bids from QIBs and NIIs are liable to be rejected.
+
+       (d)    Minimum Application Value and Bid Lot: The Issuer in consultation with the Book Running
+              Lead Managers may decide the minimum number of Equity Shares for each Bid to ensure that
+              the minimum application value is within the range of ₹ 10,000 to ₹15,000. The minimum Bid
+              Lot is accordingly determined by an Issuer on the basis of such minimum application value.
+
+       (e)    Allotment: The Allotment of specified securities to each RII shall not be less than the minimum
+              Bid Lot, subject to availability of shares in the Retail Category, and the remaining available
+              shares, if any, shall be Allotted on a proportionate basis. For details of the minimum Bid Lot,
+              Bidders may refer to the RHP/Prospectus or the advertisement regarding the Price Band
+              published by the Issuer.
+
+4.1.4.1 Maximum and Minimum Bid Size
+
+       (a)    The Bidder may Bid for the desired number of Equity Shares at a specific price. Bids by Retail
+              Individual Investors and Retail Individual Shareholders must be for such number of shares so
+              as to ensure that the Bid Amount less Discount (as applicable), payable by the Bidder does not
+              exceed ₹ 200,000.
+
+              In case the Bid Amount exceeds ₹ 200,000 due to revision of the Bid or any other reason, the
+              Bid may be considered for allocation under the Non-Institutional Category, with it not being
+              eligible for Discount then such Bid may be rejected if it is at the Cut-off Price.
+
+              The maximum bid Amount under the Employee Reservation Portion by an Eligible Employee
+              could not exceed ₹ 500,000. However, the initial Allotment to an Eligible Employee in the
+              Employee Reservation Portion could not exceed ₹ 200,000. Only in the event of an under-
+              subscription in the Employee Reservation Portion post the initial Allotment, such unsubscribed
+              portion may be Allotted on a proportionate basis to Eligible Employees Bidding in the
+              Employee Reservation Portion, for a value in excess of ₹ 200,000, subject to the total Allotment
+              to an Eligible Employee not exceeding ₹ 500,000.
+
+       (b)    For NRIs, a Bid Amount of up to ₹ 200,000 may be considered under the Retail Category for
+              the purposes of allocation and a Bid Amount exceeding ₹ 200,000 may be considered under the
+              Non-Institutional Category for the purposes of allocation.
+
+       (c)    Bids by QIBs and NIIs must be for such minimum number of shares such that the Bid Amount
+              exceeds ₹ 200,000 and in multiples of such number of Equity Shares thereafter, as may be
+              disclosed in the Bid cum Application Form and the RHP/Prospectus, or as advertised by the
+              Issuer, as the case may be. Non-Institutional Investors and QIBs are not allowed to Bid at ‘Cut-
+              off Price’.
+
+       (d)    RIIs may revise or withdraw their bids until the Bid/Offer Closing Date. QIBs and NII’s cannot
+              withdraw or lower their Bids (in terms of quantity of Equity Shares or the Bid Amount) at any
+              stage after bidding and all categories of investors are required to pay the Bid Amount upon
+              submission of the Bid.
+
+       (e)    In case the Bid Amount reduces to ₹ 200,000 or less due to a revision of the Price Band, Bids
+              by the Non-Institutional Investors who are eligible for allocation in the Retail Category would
+              be considered for allocation under the Retail Category.
+
+       (f)    For Anchor Investors, if applicable, the Bid Amount shall be least ₹ 10 crores. One-third of the
+              Anchor Investor Portion shall be reserved for domestic Mutual Funds, subject to valid Bids
+              being received from domestic Mutual Funds at or above the price at which allocation is being
+              done to other Anchor Investors. Bids by various schemes of a Mutual Fund shall be aggregated
+              to determine the Bid Amount. A Bid cannot be submitted for more than 60% of the QIB
+              Category under the Anchor Investor Portion. Anchor Investors cannot withdraw their Bids or
+              lower the size of their Bids (in terms of quantity of Equity Shares or the Bid Amount) at any
+              stage after the Anchor Investor Bid/Offer Period and are required to pay the Bid Amount at the
+              time of submission of the Bid. In case the Anchor Investor Allocation Price is lower than the
+
+
+                                                   13
+                Offer Price, the balance amount shall be payable as per the pay-in-date mentioned in the revised
+                CAN. In case the Offer Price is lower than the Anchor Investor Allocation Price, the amount in
+                excess of the Offer Price paid by the Anchor Investors shall not be refunded to them.
+
+        (g)     A Bid by QIB bidder cannot be submitted for more than the Offer size.
+
+        (h)     The maximum Bid by any Bidder including QIB Bidder should not exceed the investment limits
+                prescribed for them under the applicable laws. It is clarified that, multiple Bids by a FPI Bidder
+                utilising the multi investment manager structure shall be aggregated for determining the
+                permissible maximum Bid.
+
+        (i)     A Bid by NII bidder cannot be submitted for more than the Offer size excluding QIB portion.
+
+        (j)     The price and quantity options submitted by the Bidder in the Bid cum Application Form may
+                be treated as optional bids from the Bidder and may not be cumulated. After determination of
+                the Offer Price, the number of Equity Shares Bid for by a Bidder at or above the Offer Price
+                may be considered for Allotment and the rest of the Bid(s), irrespective of the Bid Amount may
+                automatically become invalid. This is not applicable in case of FPOs undertaken through
+                Alternate Book Building Process (For details of Bidders may refer to (Section 5.6 (e)).
+
+4.1.4.2 Multiple Bids
+
+        (a)     Bidder should submit only one Bid cum Application Form. Bidder shall have the option to make
+                a maximum of Bids at three different price levels in the Bid cum Application Form and such
+                options are not considered as multiple Bids.
+
+                Submission of a second Bid cum Application Form to either the same or to another Designated
+                Intermediary and duplicate copies of Bid cum Application Forms bearing the same application
+                number shall be treated as multiple Bids and are liable to be rejected.
+
+        (b)     Bidders are requested to note the following procedures may be followed by the Registrar to the
+                Offer to detect multiple Bids:
+
+                i.       All Bids may be checked for common PAN as per the records of the Depository. For
+                         Bidders other than Mutual Funds and FPIs which utilise the multi investment manager
+                         structure of the same beneficial owner as provided under Regulation 20 (4)(d)(xiii) of
+                         the SEBI Foreign Portfolio Regulations, 2019, Bids bearing the same PAN may be
+                         treated as multiple Bids by a Bidder and may be rejected.
+
+                ii.      For Bids from Mutual Funds and FPIs that utilise the multi investment manager
+                         structure, submitted under the same PAN, as well as Bids on behalf of the PAN
+                         Exempted Bidders/ Applicants, the Bid cum Application Forms may be checked for
+                         common DP ID and Client ID. Such Bids which have the same DP ID and Client ID
+                         may be treated as multiple Bids and are liable to be rejected.
+
+        (c)     The following Bids may not be treated as multiple Bids:
+
+                i.       Bids by Eligible Employees and Retail Individual Shareholders in their respective
+                         Reservation Portion as well as Bids made by them in the Net Offer portion in the public
+                         category.
+
+                ii.      Separate Bids by Mutual Funds in respect of more than one scheme of the Mutual Fund
+                         provided that the Bids clearly indicate the scheme for which the Bid has been made.
+
+                iii.     Bids by Mutual Funds submitted with the same PAN but with different beneficiary
+                         account numbers, Client IDs and DP IDs.
+
+                iv.      Bids by FPIs which utilise the multi investment manager structure , submitted with the
+                         same PAN but with different beneficiary account numbers, Client IDs and DP IDs.
+
+                v.       Bids by Anchor Investors under the Anchor Investor Portion and the QIB Category.
+
+
+
+
+                                                      14
+4.1.5   FIELD NUMBER 5 : CATEGORY OF BIDDERS
+
+        (a)   The categories of Bidders identified as per the SEBI ICDR Regulations for the purpose of
+              Bidding, allocation and allotment in the Offer are RIIs, NIIs and QIBs.
+
+        (b)   Up to 60% of the QIB Category can be allocated by the Issuer, on a discretionary basis subject
+              to the criteria of minimum and maximum number of Anchor Investors based on allocation size,
+              to the Anchor Investors, in accordance with SEBI ICDR Regulations, with one-third of the
+              Anchor Investor Portion reserved for domestic Mutual Funds subject to valid Bids being
+              received at or above the Offer Price. For details regarding allocation to Anchor Investors,
+              Bidders may refer to the RHP/Prospectus.
+
+        (c)   An Issuer can make reservation for certain categories of Bidders/Applicants as permitted under
+              the SEBI ICDR Regulations. For details of any reservations made in the Offer,
+              Bidders/Applicants may refer to the RHP/Prospectus.
+
+        (d)   The SEBI ICDR Regulations, specify the allocation or Allotment that may be made to various
+              categories of Bidders in an Offer depending upon compliance with the eligibility conditions.
+              Details pertaining to allocation are disclosed on reverse side of the Revision Form. For Offer
+              specific details in relation to allocation Bidder/Applicant may refer to the RHP/Prospectus.
+
+4.1.6   FIELD NUMBER 6: BIDDER STATUS
+
+        (a)   Each Bidder/Applicant should check whether it is eligible to apply under applicable law and
+              ensure that any prospective Allotment to it in the Offer is in compliance with the investment
+              restrictions under applicable law.
+
+        (b)   Certain categories of Bidders/Applicants, such as NRIs, FPIs and FVCIs may not be allowed to
+              Bid/Apply in the Offer or hold Equity Shares exceeding certain limits specified under applicable
+              law. Bidders/Applicants are requested to refer to the RHP/Prospectus for more details.
+
+        (c)   Bidders/Applicants should check whether they are eligible to apply on non-repatriation basis or
+              repatriation basis and should accordingly provide the investor status. Details regarding investor
+              status are different in the Resident Bid cum Application Form and Non-Resident Bid cum
+              Application Form.
+
+        (d)   Bidders/Applicants should ensure that their investor status is updated in the Depository records.
+
+4.1.7   FIELD NUMBER 7: PAYMENT DETAILS
+
+        (a)   Bidders are required to enter either the ASBA Bank account details or the UPI ID in this field.
+              In case the Bidder doesn’t provide any of the ASBA Bank account details or the UPI ID then
+              the application would be rejected. For application submitted by RIIs to Designated
+              Intermediaries (other than SCSBs), RIIs providing both, the ASBA Bank account details as well
+              as the UPI ID, the UPI ID will be considered for processing of the application. NRIs applying
+              in the Offer through the UPI mechanism are advised to enquire with the relevant Bank, whether
+              their account is UPI linked, prior to making such application through Channel III.
+
+        (b)   The full Bid Amount (net of any Discount, as applicable) shall be blocked based on the
+              authorization provided in the Bid cum Application Form. If the Discount is applicable in the
+              Offer, the RIIs and Retail Individual Shareholders and Employees Bidding in the Employee
+              Reservation Portion (if any) should indicate the full Bid Amount in the Bid cum Application
+              Form and the payment shall be blocked for the Bid Amount net of Discount. Only in cases
+              where the RHP/Prospectus indicates that part payment may be made, such an option can be
+              exercised by the Bidder. In case of Bidders specifying more than one Bid Option in the Bid cum
+              Application Form, the total Bid Amount may be calculated for the highest of three options at
+              net price, i.e. Bid price less Discount offered, if any.
+
+        (c)   RIIs bidding at Cut-off price, the amount shall be blocked based on the Cap Price .
+
+        (d)   All QIB and NII Bidders (other than Anchor Investors) can participate in the Offer only through
+              the ASBA mechanism
+
+
+
+                                                    15
+        (e)     RIIs submitting their applications through Designated Intermediaries (other than SCSBs) can
+                participate in the Offer only through the UPI mechanism, using their UPI ID linked with their
+                bank account. RIIs applying in the Offer through the UPI mechanism shall ensure that the name
+                of the bank, with which the RII maintains his account, appears in the list of SCSBs displayed
+                on the SEBI website, which are live on UPI. RIIs shall also ensure that the name of the mobile
+                application and the UPI handle being used for making the application in the Offer are also
+                appearing in the “list of mobile applications for using UPI in public issues” displayed on the
+                SEBI website. NRIs applying in the Offer through the UPI mechanism are advised to enquire
+                with the relevant Bank, whether their account is UPI linked, prior to making such application
+                through Channel III.
+
+        (f)     Bid Amount cannot be paid in cash, cheque, demand draft, through money order or through
+                postal order.
+
+4.1.7.1. Instructions for Anchor Investors:
+
+        (a)     Anchor Investors shall submit their Bids only with any of the BRLMs to the Offer.
+
+        (b)     Payments should be made either by direct credit, RTGS, NACH or NEFT.
+
+        (c)     The Anchor Escrow Bank(s) shall maintain the monies in the Anchor Escrow Account for and
+                on behalf of the Anchor Investors until the Designated Date.
+
+4.1.7.2. Payment instructions for Bidders (other than Anchor Investors)
+
+        (a)     RIIs bidding through Designated Intermediaries should note that with the introduction of
+                UPI as a payment mechanism, there are three channels of making applications in public issues
+                available to them in UPI Phase II (i.e., from July 1, 2019 until March 31, 2020). The three
+                channels for making applications in public issues available to RIIs bidding through Designated
+                Intermediaries are as follows:
+
+                         Channel I                       Channel II                    Channel III
+
+                 RIIs may submit the Bid       RIIs may submit the Bid cum    RIIs may submit the Bid cum
+                 cum Application Form          Application Form online        Application Form with any of
+                 with ASBA as the sole         using the facility of linked   the Designated Intermediaries
+                 mechanism for making          online trading, demat and      (other than SCSBs) and use
+                 payment either physically     bank account (3-in-1 type      his/her UPI ID for the purpose
+                 (at the branch of the SCSB)   accounts) provided by some     of blocking of funds.
+                 or online.                    of the brokers.
+
+                 For such applications the
+                 existing    process    of
+                 uploading the bid and
+                 blocking of funds in the
+                 RIIs account by the SCSB
+                 would continue.
+
+
+
+                RIIs bidding in the Offer through UPI shall make such applications only through the
+                SCSBs/mobile applications whose name appears on the SEBI website – www.sebi.gov.in at the
+                following path:
+
+                Home » Intermediaries/Market Infrastructure Institutions » Recognised Intermediaries » Self
+                Certified Syndicate Banks eligible as Issuer Banks for UPI
+
+                Home » Intermediaries/Market Infrastructure Institutions » Recognised Intermediaries » list of
+                mobile applications for using UPI in public issues
+
+
+
+
+                                                    16
+RIIs whose bank is not live on UPI may use the other alternate channels available to them, i.e.,
+submission of application form with SCSB (Channel I) or using the facility of linked online
+trading, demat and bank account (Channel II).
+
+NRIs applying in the Offer through the UPI mechanism are advised to enquire with the relevant
+Bank, whether their account is UPI linked, prior to making such application through Channel
+III.
+
+For UPI Phase III, RIIs will also have the option to use the same channels (as described above)
+for making applications in a public issue.
+
+Please see below a graphical illustrative process of the investor receiving and approving the UPI
+Mandate Request.
+
+
+
+
+                                      17
+18
+19
+(b)   QIB and NII Bidders may submit the Bid cum Application Form either
+
+      i.       to SCSBs in physical or electronic mode through the internet banking facility offered
+               by an SCSB authorizing blocking of funds that are available in the ASBA account
+               specified in the Bid cum Application Form, or
+
+      ii.      in physical mode to any Designated Intermediary.
+
+(c)   Bidders must specify the Bank Account number or the UPI ID (for RIIs bidding using the UPI
+      mechanism), as applicable, in the Bid cum Application Form. The Bid cum Application Form
+      submitted by a Bidder and which is accompanied by cash, demand draft, cheque, money order,
+      postal order or any mode of payment other than blocked amounts in the ASBA Account, may
+      not be accepted.
+
+(d)   Bidders should note that application made using third party UPI ID or ASBA Account is liable
+      to be rejected.
+
+(e)   NRIs applying in the Offer through the UPI mechanism are advised to enquire with the relevant
+      Bank, whether their account is UPI linked, prior to making such application through Channel
+      III.
+
+(f)   Bidders shall note that for the purpose of blocking funds under ASBA facility clearly
+      demarcated funds shall be available in the ASBA Account.
+
+(g)   Bidders (other than RIIs bidding through the non-UPI mechanism) should submit the Bid cum
+      Application Form only at the Bidding Centers, i.e. to the respective member of the Syndicate at
+      the Specified Locations, the SCSBs, the Registered Broker at the Broker Centres, the CRTA at
+      the Designated RTA Locations or CDP at the Designated CDP Locations. RIIs bidding through
+      the non-UPI mechanism should either submit the physical Bid cum Application Form with the
+      SCSBs or Designated Branches of SCSBs under Channel I or submit the Bid cum Application
+      Form online using the facility of 3-in1 type accounts under Channel II.
+
+(h)   Bidders (other than RIIs bidding through the non-UPI mechanism) bidding through
+      Designated Intermediaries other than a SCSB, should note that ASBA Forms submitted to
+      such Designated Intermediary may not be accepted, if the SCSB where the ASBA Account, as
+      specified in the Bid cum Application Form, is maintained has not named at least one branch at
+      that location for such Designated Intermediary, to deposit ASBA Forms.
+
+(i)   Bidders bidding directly through the SCSBs should ensure that the Bid cum Application
+      Form is submitted to a Designated Branch of a SCSB where the ASBA Account is maintained.
+
+(j)   Upon receipt of the Bid cum Application Form, the Designated Branch of the SCSB may verify
+      if sufficient funds equal to the Bid Amount are available in the ASBA Account, as mentioned
+      in the Bid cum Application Form.
+
+(k)   If sufficient funds are available in the ASBA Account, the SCSB may block an amount
+      equivalent to the Bid Amount mentioned in the Bid cum Application Form and for application
+      directly submitted to SCSB by investor, may enter each Bid option into the electronic bidding
+      system as a separate Bid.
+
+(l)   If sufficient funds are not available in the ASBA Account, the Designated Branch of the SCSB
+      may not upload such Bids on the Stock Exchange platform and such bids are liable to be
+      rejected.
+
+(m)   Upon submission of a completed Bid cum Application Form each Bidder (not being a RII who
+      has opted for the UPI mechanism and provided a UPI ID with the Bid cum Application Form)
+      may be deemed to have agreed to block the entire Bid Amount and authorized the Designated
+      Branch of the SCSB to block the Bid Amount specified in the Bid cum Application Form in the
+      ASBA Account maintained with the SCSBs. For details regarding blocking of Bid Amount for
+      RIIs who have provided a UPI ID with the Application Form please refer to paragraph 4.1.7.4.
+
+
+
+                                           20
+        (n)     The Bid Amount may remain blocked in the aforesaid ASBA Account until finalisation of the
+                Basis of Allotment and consequent transfer of the Bid Amount against the Allotted Equity
+                Shares to the Public Offer Account, or until withdrawal or failure of the Offer, or until
+                withdrawal or rejection of the Bid, as the case may be.
+
+        (o)     SCSBs bidding in the Offer must apply through an Account maintained with any other SCSB;
+                else their Bids are liable to be rejected.
+
+4.1.7.3. Unblocking of ASBA Account
+
+        (a)     Once the Basis of Allotment is approved by the Designated Stock Exchange, the Registrar to
+                the Offer may provide the following details to the controlling branches of each SCSB or the
+                Sponsor Bank, as the case may be, along with instructions to unblock the relevant ASBA
+                Accounts and for successful applications transfer the requisite money to the Public Offer
+                Account designated for this purpose, within the specified timelines: (i) the number of Equity
+                Shares to be Allotted against each Bid, (ii) the amount to be transferred from the relevant ASBA
+                Account to the Public Offer Account, for each Bid, (iii) the date by which funds referred to in
+                (ii) above may be transferred to the Public Offer Account, (iv) the amount to be unblocked, if
+                any in case of partial allotments and (v) details of rejected ASBA Bids, if any, along with
+                reasons for rejection and details of withdrawn or unsuccessful Bids, if any, to enable the SCSBs
+                or the Sponsor Bank, as the case may be, to unblock the respective ASBA Accounts.
+
+        (b)     On the basis of instructions from the Registrar to the Offer, the SCSBs or the Sponsor Bank, as
+                the case may be, may transfer the requisite amount against each successful Bidder to the Public
+                Offer Account and may unblock the excess amount, if any, in the ASBA Account.
+
+        (c)     In the event of withdrawal or rejection of the Bid cum Application Form and for unsuccessful
+                Bids, the Registrar to the Offer may give instructions to the SCSB or to the Sponsor Bank to
+                revoke the mandate and, as the case may be, to unblock the Bid Amount in the relevant account
+                within four Working Days of the Bid/Offer Closing Date.
+
+4.1.7.4. Additional Payment Instructions for RIIs bidding through Designated Intermediaries (other than
+         SCSBs) using the UPI mechanism
+
+        (a)     Before submission of the application form with the Designated Intermediary, an RII shall
+                download the mobile application, associated with the UPI ID linked bank account, for UPI and
+                create a UPI ID (xyz@bankname) of not more than 45 characters with its bank and link it to
+                his/ her bank account where the funds equivalent to the application amount is available. RIIs
+                shall also ensure that the name of the mobile application and the UPI handle being used for
+                making the application in the Offer are appearing in the following path on SEBI website –
+                www.sebi.gov.in:
+
+                Home » Intermediaries/Market Infrastructure Institutions » Recognised Intermediaries » list of
+                mobile applications for using UPI in public issues
+
+                It is clarified that if a RII makes an application through a UPI handle not covered in the
+                prescribed list (as mentioned in the path above), such an application is liable to be rejected.
+
+        (b)     RIIs shall ensure that the bank, with which it has its bank account, where the funds equivalent
+                to the application amount is available for blocking has been notified as Issuer Banks for UPI.
+                A list of such banks is available at the following path on SEBI website – www.sebi.gov.in:
+
+                Home » Intermediaries/Market Infrastructure Institutions » Recognised Intermediaries » Self
+                Certified Syndicate Banks eligible as Issuer Banks for UPI
+
+                It is clarified that if a RII makes an application using a bank account of an SCSB or bank which
+                is not covered in the prescribed list (as mentioned in the path above), such an application is
+                liable to be rejected.
+
+        (c)     RIIs shall mention his / her UPI ID along with the bid details in the Bid cum Application Form
+
+
+
+                                                     21
+                 in capital letters and submit the Bid cum Application Form to any of the Designated
+                 Intermediaries (other than SCSBs). It is clarified that if an RII submits a third party UPI ID
+                 instead of his/her own UPI ID in the Bid cum Application Form, the application is liable to be
+                 rejected.
+
+        (d)      The Designated Intermediary (other than SCSBs) upon receipt of the Bid cum Application Form
+                 will upload the bid details along with UPI ID in the stock exchange bidding platform.
+
+        (e)      Once the bid has been entered into the Stock Exchange bidding platform, the stock exchange
+                 will validate the PAN and Demat Account details of the RII with the Depository. The
+                 Depository will validate the aforesaid details on a real time basis and send a response to the
+                 stock exchange which will be shared by the stock exchange with the respective Designated
+                 Intermediary through its bidding platform, for corrections, if any.
+
+        (f)      Once the bid details have been validated by the Depository, the stock exchange will, on a
+                 continuous basis, electronically share the bid details along with the UPI ID of the concerned RII
+                 with the Sponsor Bank appointed by the Issuer.
+
+        (g)      The Sponsor Bank will validate the UPI ID of the RII before initiating the Mandate request.
+
+        (h)      The Sponsor Bank after validating the UPI ID will initiate a UPI Mandate Request for valid UPI
+                 ID on the RII which will be electronically received by the RII as an SMS / intimation on his /
+                 her mobile number / mobile app associated with the UPI ID linked account. The RII shall ensure
+                 that the details of the Bid are correct by opening the attachment in the UPI Mandate Request
+                 and then proceed to authorise the UPI Mandate Request using his/her UPI PIN. Upon the
+                 authorization of the mandate using his/her UPI PIN, an RII may be deemed to have verified the
+                 attachment containing the application details of the RII in the UPI Mandate Request and have
+                 agreed to block the entire Bid Amount mentioned in the Bid Cum Application Form and
+                 subsequent debit in case of Allotment.
+
+        (i)      Upon successful validation of the block request by the RII, the said information would be
+                 electronically received by the RII’s bank, where the funds, equivalent to the application amount
+                 would get blocked in the ASBA Account of the RII. Intimation regarding confirmation of such
+                 blocking of funds in the ASBA Account of the RII would also be received by the RII.
+                 Information on the block status request would be shared with the Sponsor Bank which in turn
+                 would share it with the stock exchange which in turn would share it with the Registrar in the
+                 form of a file for the purpose of reconciliation and display it on the stock exchange bidding
+                 platform for the information of the Designated Intermediary.
+
+        (j)      RIIs may continue to modify or withdraw the Bid till the closure of the Bidding Period. For
+                 each modification of the Bid, the RII will submit a revised Bid and will receive a UPI Mandate
+                 Request from the Sponsor Bank to be validated as per the process indicated above.
+
+        (k)      RIIs to check the correctness of the details on the mandate received before approving the
+                 Mandate Request.
+
+        (l)      Post closure of the Offer, the stock exchange will share the Bid details with the Registrar along
+                 with the final file received from the Sponsor Bank containing status of blocked funds or
+                 otherwise, along with the ASBA Account details with respect to applications made by RIIs
+                 using UPI ID.
+
+4.1.7.5. Discount (if applicable)
+
+        (a)      The Discount is stated in absolute rupee terms.
+
+        (b)      Bidders applying under Retail Category, Retail Individual Shareholder and Employees under
+                 Employee Reservation Portion are only eligible for discount. For Discounts offered in the Offer,
+                 Bidders may refer to the RHP/Prospectus.
+
+
+
+                                                       22
+        (c)      The Bidders entitled to the applicable Discount in the Offer may block their ASBA Account for
+                 an amount i.e. the Bid Amount less Discount (if applicable).
+
+        Bidder (other than employees) may note that in case the net amount blocked (post Discount) is more than
+        two lakh Rupees, the Bidding system automatically considers such applications for allocation under Non-
+        Institutional Category. These applications are neither eligible for Discount nor fall under Retail Category.
+
+4.1.8   FIELD NUMBER 8: SIGNATURES AND OTHER AUTHORISATIONS
+
+        (a)      Only the First Bidder/Applicant is required to sign the Bid cum Application Form/Application
+                 Form. Bidders/Applicants should ensure that signatures are in one of the languages specified in
+                 the Eighth Schedule to the Constitution of India.
+
+        (b)      The signature has to be correctly affixed in the authorization/undertaking box in the Bid cum
+                 Application Form/Application Form, or an authorisation has to be provided to the SCSB or
+                 using the UPI to the Sponsor Bank, via the electronic mode, for blocking funds in the ASBA
+                 Account equivalent to the Bid Amount mentioned in the Bid cum Application Form/Application
+                 Form.
+
+        (c)      Bidders/Applicants must note that Bid cum Application Form/Application Form without
+                 signature of Bidder/Applicant and /or ASBA Account holder is liable to be rejected.
+
+4.1.9   ACKNOWLEDGEMENT AND FUTURE COMMUNICATION
+
+        (a)      Bidders should ensure that they receive the Acknowledgment slip or the acknowledgement
+                 number duly signed and stamped by a Designated Intermediary, as applicable, for submission
+                 of the Bid cum Application Form.
+
+        (b)      All communications in connection with Bids/Applications made in the Offer should be
+                 addressed as under:
+
+                 i.       In case of queries related to Allotment, non-receipt of Allotment Advice, credit of
+                          Allotted Equity Shares, unblocking of funds, the Bidders/Applicants should contact
+                          the Registrar to the Offer.
+
+                 ii.      In case of Bids submitted to the Designated Branches of the SCSBs, the
+                          Bidders/Applicants should contact the relevant Designated Branch of the SCSB.
+
+                 iii.     In case of queries relating to uploading of Syndicate ASBA Bids, the
+                          Bidders/Applicants should contact the relevant Syndicate Member.
+
+                 iv.      In case of queries relating to uploading of Bids by a Designated Intermediary, the
+                          Bidders/Applicants should contact the relevant Designated Intermediary.
+
+                 v.       In case of queries relating to uploading of Bids through the UPI Mechanism, the
+                          Bidders/Applicants should contact the Designated Intermediary/BRLM.
+
+                 vi.      Bidder/Applicant may contact the Company Secretary and Compliance Officer or
+                          BRLM(s) in case of any other complaints in relation to the Offer.
+
+        (c)      The following details (as applicable) should be quoted while making any queries –
+
+                 i.       full name of the sole or First Bidder/Applicant, Bid cum Application Form number,
+                          Applicants’/Bidders’ DP ID, Client ID, PAN, number of Equity Shares applied for,
+                          amount paid on application.
+
+                 ii.      name and address of the Designated Intermediary, where the Bid was submitted along
+                          with the acknowledgment slip from Designated Intermediary or
+
+                 iii.     Bids, ASBA Account number or the UPI ID (for RIIs who make the payment of Bid
+                          Amount through the UPI mechanism) linked to the ASBA Account where the Bid
+                          Amount was blocked.
+
+
+
+                                                        23
+      For further details, Bidder/Applicant may refer to the RHP/Prospectus and the Bid cum Application
+      Form.
+
+4.2   INSTRUCTIONS FOR FILING THE REVISION FORM
+
+      (a)     During the Bid/Offer Period, any Bidder/Applicant (other than QIBs and NIIs, who can only
+              revise their bid upwards) who has registered his or her interest in the Equity Shares at a
+              particular price level is free to revise his or her Bid within the Price Band using the Revision
+              Form, which is a part of the Bid cum Application Form.
+
+      (b)     RII may revise their Bids or withdraw their bids until Bid/Offer Closing date.
+
+      (c)     Revisions can be made in both the desired number of Equity Shares and the Bid Amount by
+              using the Revision Form.
+
+      (d)     The Bidder/Applicant can make this revision any number of times during the Bid/ Offer Period.
+              However, for any revision(s) in the Bid, the Bidders/Applicants will have to use the services of
+              the same Designated Intermediary through which such Bidder/Applicant had placed the original
+              Bid. It is clarified that RIIs whose original Bid is made using the UPI mechanism can make
+              revision(s) to their Bid using the UPI mechanism only, whereby each time the Sponsor Bank
+              will initiate a new UPI Mandate Request. Bidders/Applicants are advised to retain copies of the
+              blank Revision Form and the Bid(s) must be made only in such Revision Form or copies thereof.
+
+
+
+
+                                                   24
+A sample revision form is reproduced below:
+
+
+
+
+Instructions to fill each field of the Revision Form can be found on the reverse side of the Revision Form.
+Other than instructions already highlighted at paragraph 4.1 above, point wise instructions regarding
+filling up various fields of the Revision Form are provided below:
+
+
+
+
+                                               25
+4.2.1   FIELDS 1, 2 AND 3: NAME AND CONTACT DETAILS OF SOLE/FIRST
+        BIDDER/APPLICANT, PAN OF SOLE/FIRST BIDDER/APPLICANT & DEPOSITORY
+        ACCOUNT DETAILS OF THE BIDDER/APPLICANT
+
+        Bidders/Applicants should refer to instructions contained in paragraphs 4.1.1, 4.1.2 and 4.1.3.
+
+4.2.2   FIELD 4 & 5: BID OPTIONS REVISION ‘FROM’ AND ‘TO’
+
+        (a)      Apart from mentioning the revised options in the Revision Form, the Bidder/Applicant must
+                 also mention the details of all the bid options given in his or her Bid cum Application Form or
+                 earlier Revision Form. For example, if a Bidder/Applicant has Bid for three options in the Bid
+                 cum Application Form and such Bidder/Applicant is changing only one of the options in the
+                 Revision Form, the Bidder/Applicant must still fill the details of the other two options that are
+                 not being revised, in the Revision Form. The Designated Intermediaries may not accept
+                 incomplete or inaccurate Revision Forms.
+
+        (b)      In case of revision, Bid options should be provided by Bidders/Applicants in the same order as
+                 provided in the Bid cum Application Form.
+
+        (c)      In case of revision of Bids by RIIs and Retail Individual Shareholders, such Bidders/Applicants
+                 should ensure that the Bid Amount, subsequent to revision, does not exceed ₹ 200,000. In case
+                 the Bid Amount exceeds ₹ 200,000 due to revision of the Bid or for any other reason, the Bid
+                 may be considered, subject to eligibility, for allocation under the Non-Institutional Category,
+                 not being eligible for Discount (if applicable) and such Bid may be rejected if it is at the Cut-
+                 off Price. The Cut-off Price option is given only to the RIIs, Employees and Retail Individual
+                 Shareholders indicating their agreement to Bid for and purchase the Equity Shares at the Offer
+                 Price as determined at the end of the Book Building Process.
+
+        (d)      In case of revision of Bids by Employees, such Bidders/Applicants should ensure that the Bid
+                 Amount, subsequent to revision, does not exceed ₹ 500,000.
+
+        (e)      If, however, the RII does not either revise the Bid or make additional payment and the Offer
+                 Price is higher than the cap of the Price Band prior to revision, the number of Equity Shares Bid
+                 for shall be adjusted downwards for the purpose of allocation, such that no additional payment
+                 would be required from the RII and the RII is deemed to have approved such revised Bid at Cut-
+                 off Price.
+
+        (f)      In case of a downward revision in the Price Band, RIIs and Bids by Employees and Retail
+                 Individual Shareholders under the Reservation Portion, who have bid at the Cut-off Price could
+                 either revise their Bid or the excess amount paid at the time of Bidding will be unblocked.
+
+4.2.3   FIELD 6: PAYMENT DETAILS
+
+        (a)      All Bidders/Applicants are required to authorize blocking of the full Bid Amount (less Discount
+                 (if applicable) at the time of submitting the Bid Revision Form. In case of Bidders/Applicants
+                 specifying more than one Bid Option in the Bid cum Application Form, the total Bid Amount
+                 may be calculated for the highest of three options at net price, i.e. Bid price less discount offered,
+                 if any.
+
+        (b)      Bidder/Applicant may issue instructions to block the revised amount based on cap of the revised
+                 Price Band (adjusted for the Discount (if applicable) in the ASBA Account, to the same
+                 Designated Intermediary through whom such Bidder/Applicant had placed the original Bid to
+                 enable the relevant SCSB to block the additional Bid Amount, if any.
+
+        (c)      In case of a downward revision in the Price Band, RIIs, Employees and Retail Individual
+                 Shareholders, who have bid at the Cut-off Price, could either revise their Bid or the excess
+                 amount paid at the time of Bidding may be unblocked.
+
+
+
+4.2.4   FIELD 7 : SIGNATURES AND ACKNOWLEDGEMENTS
+
+
+
+
+                                                         26
+        Bidders/Applicants may refer to instructions contained at paragraphs 4.1.8 and 4.1.9 for this purpose.
+
+4.3     INSTRUCTIONS FOR FILING APPLICATION FORM IN ISSUES MADE OTHER THAN
+        THROUGH THE BOOK BUILDING PROCESS (FIXED PRICE OFFER)
+
+4.3.1   FIELDS 1, 2, 3 NAME AND CONTACT DETAILS OF SOLE/FIRST BIDDER/APPLICANT,
+        PAN OF SOLE/FIRST BIDDER/APPLICANT & DEPOSITORY ACCOUNT DETAILS OF THE
+        BIDDER/APPLICANT
+
+        Applicants should refer to instructions contained in paragraphs 4.1.1, 4.1.2 and 4.1.3.
+
+4.3.2   FIELD 4: PRICE, APPLICATION QUANTITY & AMOUNT
+
+        (a)      The Issuer may mention Price or Price Band in the draft Prospectus. However a prospectus
+                 registered with RoC contains one price or coupon rate (as applicable).
+
+        (b)      Minimum Application Value and Bid Lot: The Issuer in consultation with the Book Running
+                 Lead Manager to the Offer (LM) may decide the minimum number of Equity Shares for each
+                 Bid to ensure that the minimum application value is within the range of ₹ 10,000 to ₹ 15,000.
+                 The minimum Lot size is accordingly determined by an Issuer on basis of such minimum
+                 application value.
+
+        (c)      Applications by RIIs and Retail Individual Shareholders, must be for such number of shares so
+                 as to ensure that the application amount less Discount (as applicable) payable does not exceed
+                 ₹ 200,000.
+
+        (d)      Applications by Employees must be for such number of shares that the application amount
+                 payable less Discount (as applicable) does not exceed ₹ 500,000.
+
+        (e)      Applications by other investors must be for such minimum number of shares such that the
+                 application amount exceeds ₹ 200,000 and in multiples of such number of Equity Shares
+                 thereafter, as may be disclosed in the application form and the Prospectus, or as advertised by
+                 the Issuer, as the case may be.
+
+        (f)      An application cannot be submitted for more than the Offer size.
+
+        (g)      The maximum application by any Applicant should not exceed the investment limits prescribed
+                 for them under the applicable laws.
+
+        (h)      Multiple Applications: An Applicant should submit only one Application Form. Submission
+                 of a second Application Form to either the same or other SCSB and duplicate copies of
+                 Application Forms bearing the same application number shall be treated as multiple applications
+                 and are liable to be rejected.
+
+        (i)      For details regarding the procedures to be followed by the Registrar to detect multiple
+                 applications. Applicants should refer to paragraphs 4.1.4.2(b) and 4.1.4.2(c).
+
+4.3.3   FIELD NUMBER 5 : CATEGORY OF APPLICANTS
+
+        (a)      The categories of applicants identified as per the SEBI ICDR Regulations for the purpose of
+                 Bidding, allocation and Allotment in the Offer are RIIs, individual applicants other than RII’s
+                 and other investors (including corporate bodies or institutions, irrespective of the number of
+                 specified securities applied for).
+
+        (b)      An Issuer can make reservation for certain categories of Applicants permitted under the SEBI
+                 ICDR Regulations. For details of any reservations made in the Offer, applicants may refer to
+                 the Prospectus.
+
+        (c)      The SEBI ICDR Regulations specify the allocation or Allotment that may be made to various
+                 categories of applicants in an Offer depending upon compliance with the eligibility conditions.
+                 Details pertaining to allocation are disclosed on reverse side of the Revision Form. For Offer
+                 specific details in relation to allocation applicant may refer to the Prospectus.
+
+
+
+                                                       27
+4.3.4   FIELD NUMBER 6: INVESTOR STATUS
+
+        Applicants should refer to instructions contained in paragraphs 4.1.6.
+
+4.3.5   FIELD 7: PAYMENT DETAILS
+
+        (a)      Bidders are required to enter either the ASBA Bank account details or the UPI ID in this field.
+                 In case the Bidder doesn’t provide any of the ASBA Bank account details or the UPI ID then
+                 the application would be rejected. For application submitted to Designated Intermediaries
+                 (other than SCSBs), Bidder providing both the ASBA Bank account details as well as the UPI
+                 ID, the UPI ID will be considered for processing of the application.
+
+        (b)      All Applicants (other than Anchor Investors) are required to make use of ASBA for applying
+                 in the Offer.
+
+        (c)      RIIs applying through Designated Intermediaries (other than SCSBs) may make use of the UPI
+                 mechanism for applying in the Offer. If RIIs are applying in the Offer through non-UPI
+                 mechanism then it shall either submit physical Bid cum Application Form with the SCSBs or
+                 the Designated Branches of the SCSBs under Channel I or submit the Bid cum Application
+                 Form online using the facility of 3-in1 type accounts under Channel II.
+
+        (d)      Application Amount cannot be paid in cash, cheques or demand drafts through money order or
+                 through postal order or through stock invest.
+
+4.3.5.1 Payment instructions for Applicants
+
+        Applicants should refer to instructions contained in paragraphs 4.1.7.2.
+
+4.3.5.2 Unblocking of ASBA Account
+
+        Applicants should refer to instructions contained in paragraph 4.1.7.3.
+
+4.3.5.3 Additional Payment Instructions for RIIs bidding through Designated Intermediaries using the
+        UPI mechanism
+
+        Applicants should refer to instructions contained in paragraph 4.1.7.4.
+
+4.3.5.4 Discount (if applicable)
+
+        Applicants should refer to instructions contained in paragraph 4.1.7.5.
+
+4.3.6   FIELD NUMBER  8:  SIGNATURES  AND   OTHER                                     AUTHORISATIONS                  &
+        ACKNOWLEDGEMENT AND FUTURE COMMUNICATION
+
+        Applicants should refer to instructions contained in paragraphs 4.1.8 & 4.1.9.
+
+4.4     SUBMISSION OF BID CUM APPLICATION FORM/ REVISION FORM/APPLICATION
+        FORM
+
+4.4.1   Bidders/Applicants may submit completed Bid-cum-application form / Revision Form in the
+        following manner:-
+
+          Mode of Application                        Submission of Bid cum Application Form
+         Anchor Investors          To one of the Book Running Lead Managers at the Specified Locations mentioned
+         Application Form          in the Bid cum Application Form
+
+
+         Applications from QIBs    (a)   To members of the Syndicate in the Specified Locations or Registered
+         and NIIs                        Brokers at the Broker Centres or the CRTAs at the Designated RTA
+                                         Locations or the CDPs at the Designated CDP Locations; and
+                                   (b)   To the Designated Branches of the SCSBs where the ASBA Account is
+                                         maintained
+         Applications from RIIs    (a) To members of the Syndicate in the Specified Locations or Registered Brokers
+
+
+
+
+                                                       28
+  Mode of Application                       Submission of Bid cum Application Form
+ applying through UPI         at the Broker Centres or the CRTAs at the Designated RTA Locations or the
+ mechanism                    CDPs at the Designated CDP Locations; and
+ Applications from RIIs   (a)     To the Designated Branches of the SCSBs where the ASBA Account is
+ applying through non-           maintained
+ UPI mechanism            (b)    To the Brokers providing the facility of linked online trading, demat and
+                              bank account (3-in-1 type accounts) online
+
+(a)     Bidders/Applicants should submit the Revision Form to the same Designated Intermediary
+        through which such Bidder/Applicant had submitted the original Bid.
+
+(b)     Upon submission of the Bid-cum-Application Form, the Bidder/Applicant will be deemed to
+        have authorized the Issuer to make the necessary changes in the RHP and the Bid cum
+        Application Form as would be required for filing Prospectus with the Registrar of Companies
+        (RoC) and as would be required by the RoC after such filing, without prior or subsequent notice
+        of such changes to the relevant Bidder/Applicant.
+
+(c)     Upon determination of the Offer Price and filing of the Prospectus with the RoC, the Bid-cum-
+        Application Form will be considered as the application form.
+
+
+
+
+                                              29
+                      SECTION 5: OFFER PROCEDURE IN BOOK BUILT OFFER
+
+Book Building, in the context of the Offer, refers to the process of collection of Bids within the Price Band or
+above the Floor Price and determining the Offer Price based on the Bids received as detailed in Schedule XIII of
+SEBI ICDR Regulations 2018. The Offer Price is finalised after the Bid/Offer Closing Date. Valid Bids received
+at or above the Offer Price are considered for allocation in the Offer, subject to applicable regulations and other
+terms and conditions.
+
+5.1      SUBMISSION OF BIDS
+
+         (a)      During the Bid/Offer Period, ASBA Bidders/Applicants may approach any of the Designated
+                  Intermediary to register and submit their Bids. Anchor Investors who are interested in
+                  subscribing for the Equity Shares should approach one of the Book Running Lead Managers on
+                  the Anchor Investor Bidding Date to register and submit their Bid.
+
+         (b)      In case of Bidders/Applicants (excluding NIIs and QIBs) bidding at Cut-off Price, the
+                  Bidders/Applicants may instruct the SCSBs or the Sponsor Bank, as applicable, to block Bid
+                  Amount based on the Cap Price less discount (if applicable).
+
+         (c)      For details of the timing on acceptance and upload of Bids in the Stock Exchanges Platform
+                  Bidders/Applicants are requested to refer to the RHP.
+
+5.2      ELECTRONIC REGISTRATION OF BIDS
+
+         (a)      The Designated Intermediary may register the Bids using the on-line facility of the Stock
+                  Exchanges. The Designated Intermediaries can also set up facilities for off-line electronic
+                  registration of Bids, subject to the condition that they may subsequently upload the off-line data
+                  file into the on-line facilities for Book Building on a regular basis before the closure of the issue.
+
+         (b)      On the Bid/Offer Closing Date, the Designated Intermediaries may upload the Bids till such
+                  time as may be permitted by the Stock Exchanges.
+
+         (c)      Only Bids that are uploaded on the Stock Exchanges Platform would be considered for
+                  allocation/ Allotment. In UPI Phase II, the Designated Intermediaries are given time till the
+                  Bid/Offer Closing Date to modify select fields uploaded in the Stock Exchange Platform during
+                  the Bid/Offer Period after which the Stock Exchange(s) send the bid information to the Registrar
+                  to the Offer for further processing.
+
+5.3      BUILD UP OF THE BOOK
+
+         (a)      Bids received from various Bidders/Applicants through the Designated Intermediaries may be
+                  electronically uploaded on the Bidding Platform of the Stock Exchanges’ on a regular basis.
+                  The book gets built up at various price levels. This information may be available with the Book
+                  Running Lead Managers at the end of the Bid/Offer Period.
+
+         (b)      Based on the aggregate demand and price for Bids registered on the Stock Exchanges Platform,
+                  a graphical representation of consolidated demand and price as available on the websites of the
+                  Stock Exchanges may be made available at the Bidding centres during the Bid/Offer Period.
+
+5.4      WITHDRAWAL OF BIDS
+
+         (a)      RIIs can withdraw their Bids until Bid/Offer Closing Date. In case a RII wishes to withdraw the
+                  Bid, the same can be done by submitting a request for the same to the concerned Designated
+                  Intermediary, who shall do the requisite, including unblocking of the funds in the ASBA
+                  Account.
+
+         (b)      The Registrar to the Offer shall give instruction to the SCSB or the Sponsor Bank, as applicable,
+                  for unblocking the ASBA Account upon or after the finalization of basis of Allotment. QIBs
+                  and NIIs can neither withdraw nor lower the size of their Bids at any stage.
+
+
+
+
+                                                         30
+5.5     REJECTION & RESPONSIBILITY FOR UPLOAD OF BIDS
+
+        (a)      The Designated Intermediaries are individually responsible for the acts, mistakes or errors or
+                 omission in relation to
+
+                 i.        the Bids accepted by the Designated Intermediary;
+
+                 ii.       the Bids (including UP ID, as applicable) uploaded by the Designated Intermediary;
+                           and
+
+                 iii.      the Bid cum application forms accepted but not uploaded by the Designated
+                           Intermediaries.
+
+        (b)      The Book Running Lead Managers and their affiliate Syndicate Members, as the case may be,
+                 may reject Bids if all the information required is not provided and the Bid cum Application
+                 Form is incomplete in any respect.
+
+        (c)      The SCSBs or the Sponsor Banks, as applicable, shall have no right to reject Bids, except in
+                 case of unavailability of adequate funds in the ASBA Account or on technical grounds.
+
+        (d)      In case of QIB Bidders, only the (i) SCSBs (for Bids other than the Bids by Anchor Investors);
+                 and (ii) Book Running Lead Managers and their affiliate Syndicate Members (only in the
+                 specified locations) have the right to reject bids. However, such rejection shall be made at the
+                 time of receiving the Bid and only after assigning a reason for such rejection in writing.
+
+        (e)      All bids by QIBs, NIIs & RIIs Bids can be rejected on technical grounds listed herein.
+
+5.5.1   GROUNDS FOR TECHNICAL REJECTIONS
+
+        Bid cum Application Forms/Application Form can be rejected on the below mentioned technical grounds
+        either at the time of their submission to any of the Designated Intermediaries, or at the time of finalisation
+        of the Basis of Allotment. Bidders/Applicants are advised to note that the Bids/Applications are liable to
+        be rejected, among other things, on the following grounds, which have been detailed at various places in
+        this GID:-
+
+        (a)      Bid/Application by persons not competent to contract under the Indian Contract Act, 1872, as
+                 amended, (other than minors having valid Depository Account as per Demographic Details
+                 provided by Depositories);
+
+        (b)      Bids/Applications of Bidders (other than Anchor Investors) accompanied by cash, draft,
+                 cheques, money order or any other mode of payment other than amounts blocked in the Bidders’
+                 ASBA Account;
+
+        (c)      Bids/Applications by OCBs;
+
+        (d)      In case of partnership firms, Bid/Application for Equity Shares made in the name of the firm.
+                 However, a limited liability partnership can apply in its own name;
+
+        (e)      In case of Bids/Applications under power of attorney or by limited companies, corporate, trust
+                 etc., relevant documents are not being submitted along with the Bid cum application
+                 form/Application Form;
+
+        (f)      Bids/Applications by persons prohibited from buying, selling or dealing in the shares directly
+                 or indirectly by SEBI or any other regulatory authority;
+
+        (g)      Bids/Applications by any person outside India if not in compliance with applicable foreign and
+                 Indian laws;
+
+        (h)      DP ID and Client ID not mentioned in the Bid cum Application Form/Application Form;
+
+        (i)      ASBA Account number or UPI ID not mentioned or incorrectly mentioned in the Bid cum
+                 Application Form/Application Form;
+
+
+
+
+                                                        31
+(j)    In case of Bids by RIIs (applying through the UPI mechanism) through a UPI handle not covered
+       in the prescribed list of SEBI.
+
+(k)    In case of Bids by RIIs (applying through the UPI mechanism) using a bank account of an SCSB
+       or bank which is not covered in the prescribed list of SEBI.
+
+(l)    PAN not mentioned in the Bid cum Application Form/Application Form except for
+       Bids/Applications by or on behalf of the Central or State Government and officials appointed
+       by the court and by the investors residing in the State of Sikkim, provided such claims have
+       been verified by the Depository Participant;
+
+(m)    In case no corresponding record is available with the Depositories that matches the DP ID, the
+       Client ID and the PAN;
+
+(n)    Bids/Applications for lower number of Equity Shares than the minimum specified for that
+       category of investors;
+
+(o)    Bids/Applications at a price less than the Floor Price & Bids/Applications at a price more than
+       the Cap Price;
+
+(p)    Bids/Applications at Cut-off Price by NIIs and QIBs;
+
+(q)    The amounts mentioned in the Bid cum Application Form/Application Form does not tally with
+       the amount payable for the value of the Equity Shares Bid/Applied for;
+
+(r)    Bids/Applications for amounts greater than the maximum permissible amounts prescribed by
+       the regulations;
+
+(s)    Submission of Bid cum Application Forms/Application Form using third party UPI ID or ASBA
+       Bank Account;
+
+(t)    Submission of more than one Bid cum Application Form per UPI ID by RIIs bidding through
+       Designated Intermediaries other than SCSBs (except for RIIs applying as Retail Individual
+       Shareholders also);
+
+(u)    Submission of more than one Bid cum Application Form per ASBA Account by Bidders bidding
+       through Designated Intermediaries (except in case of joint account holders);
+
+(v)    In case of joint Bids, submission of Bid cum Application Forms/Application Form using second
+       or third party’s UPI ID or ASBA Bank Account;
+
+(w)    Bids/Applications for number of Equity Shares which are not in multiples of Equity Shares as
+       specified in the RHP;
+
+(x)    Multiple Bids/Applications as defined in this GID and the RHP/Prospectus;
+
+(y)    Bid cum Application Forms/Application Forms are not delivered by the Bidders/Applicants
+       within the time prescribed as per the Bid cum Application Forms/Application Form, Bid/Offer
+       Opening Date advertisement and as per the instructions in the RHP and the Bid cum Application
+       Forms;
+
+(z)    Bank account mentioned in the Bid cum Application Form (for Bidders applying through the
+       non-UPI mechanism) may not be an account maintained by SCSB. Inadequate funds in the
+       ASBA Account to block the Bid/Application Amount specified in the Bid cum Application
+       Form/ Application Form at the time of blocking such Bid/Application Amount in the ASBA
+       Account;
+
+(aa)   In case of Bids by RIIs (applying through the UPI mechanism), the UPI ID mentioned in the
+       Bid cum Application Form is linked to a third party bank account;
+
+(bb)   In case of Bids by RIIs (applying through the UPI mechanism), the UPI ID is not mentioned in
+       the Bid cum Application Form;
+
+
+
+                                            32
+      (cc)   In case of Anchor Investors, Bids/Applications where sufficient funds are not available in
+             Escrow Accounts as per final certificate from the Anchor Escrow Bank;
+
+      (dd)   Where no confirmation is received from SCSB or the Sponsor Bank, as applicable, for blocking
+             of funds;
+
+      (ee)   Bids/Applications by QIB and NII Bidders (other than Anchor Investors) not submitted
+             through ASBA process;
+
+      (ff)   Bid cum Application Form submitted to Designated Intermediaries at locations other than the
+             Bidding Centers or to the Anchor Escrow Bank (assuming that such bank is not a SCSB where
+             the ASBA Account is maintained), to the issuer or the Registrar to the Offer;
+
+      (gg)   Bid cum Application Form submitted physically by RIIs bidding through the non-UPI
+             mechanism to Designated Intermediaries other than SCSBs;
+
+      (hh)   Bids/Applications not uploaded on the terminals of the Stock Exchanges;
+
+      (ii)   Bids/Applications by SCSBs wherein a separate account in its own name held with any other
+             SCSB is not mentioned as the ASBA Account in the Bid cum Application Form/Application
+             Form.
+
+      (jj)   The UPI Mandate is not approved by Retail Individual Investor; and
+
+      (kk)   The original Bid/Application is made using the UPI mechanism and revision(s) to the
+             Bid/Application is made using ASBA either physically or online through the SCSB, and vice-
+             versa.
+
+      (ll)   Bidders are required to enter either the ASBA Bank account details or the UPI ID in the Bid
+             cum Application Form. In case the Bidder doesn’t provide any of the ASBA Bank account
+             details or the UPI ID then the application would be rejected. For application submitted to
+             Designated Intermediaries (other than SCSBs), Bidder providing both the ASBA Bank account
+             details as well as the UPI ID, the UPI ID will be considered for processing of the application.
+
+      (m)    RIIs shall ensure that the bank, with which they have their bank account, where the funds
+             equivalent to the application amount is available for blocking, has been notified as Issuer
+             Banks for UPI. A list of such banks is available on SEBI website – www.sebi.gov.in:
+
+             Home » Intermediaries/Market Infrastructure Institutions » Recognised Intermediaries » Self
+             Certified Syndicate Banks eligible as Issuer Banks for UPI
+
+      (mm)   In case of revision of Bids by RII Bidders, if UPI Mandate Request for the revised Bid is not
+             approved, the Application is liable to be rejected.
+
+5.6   BASIS OF ALLOCATION
+
+      (a)    The SEBI ICDR Regulations specify the allocation or Allotment that may be made to various
+             categories of Bidders/Applicants in an Offer depending on compliance with the applicable
+             eligibility conditions. Certain details pertaining to the percentage of Offer size available for
+             allocation to each category is disclosed overleaf of the Bid cum Application Form and in the
+             RHP / Prospectus. For details in relation to allocation, the Bidder/Applicant may refer to the
+             RHP / Prospectus.
+
+      (b)    Under-subscription in any category (except QIB category) is allowed to be met with spill-over
+             from any other category or combination of categories at the discretion of the Issuer and in
+             consultation with the Book Running Lead Managers and the Designated Stock Exchange and
+             in accordance with the SEBI ICDR Regulations. Unsubscribed portion in QIB Category is not
+             available for subscription to other categories.
+
+      (c)    In case of under subscription in the Net Offer, spill-over to the extent of such under-subscription
+             may be permitted from the Reserved Portion to the Net Offer. For allocation in the event of an
+             under-subscription applicable to the Issuer, Bidders/Applicants may refer to the RHP.
+
+
+
+                                                   33
+(d)   Illustration of the Book Building and Price Discovery Process
+
+      Bidders should note that this example is solely for illustrative purposes and is not specific to the
+      Offer; it also excludes Bidding by Anchor Investors.
+
+      Bidders can bid at any price within the price band. For instance, assume a price band of ₹ 20 to
+      ₹ 24 per share, issue size of 3,000 equity shares and receipt of five bids from Bidders, details of
+      which are shown in the table below. The illustrative book given below shows the demand for
+      the equity shares of the issuer at various prices and is collated from bids received from various
+      bidders.
+
+          Bid Quantity         Bid Amount (₹)          Cumulative Quantity             Subscription
+                    500                         24                        500                    16.67%
+                  1,000                         23                     1,500                     50.00%
+                  1,500                         22                     3,000                   100.00%
+                  2,000                         21                     5,000                   166.67%
+                  2,500                         20                     7,500                   250.00%
+
+      The price discovery is a function of demand at various prices. The highest price at which the
+      Issuer is able to offer the desired number of equity shares is the price at which the book cuts off,
+      i.e., ₹ 22.00 in the above example. The issuer, in consultation with the Book Running Lead
+      Managers, may finalise the Offer Price at or below such cut-off price, i.e., at or below ₹ 22.00.
+      All bids at or above this Offer Price and cut-off bids are valid bids and are considered for
+      allocation in the respective categories.
+
+(e)   Alternate Method of Book Building
+
+      In case of FPOs, Issuers may opt for an alternate method of Book Building in which only the
+      Floor Price is specified for the purposes of Bidding (“Alternate Book Building Process”).
+
+      The Issuer may specify the Floor Price in the RHP or advertise the Floor Price at least one
+      Working Day prior to the Bid/Offer Opening Date. QIBs may Bid at a price higher than the
+      Floor Price and the Allotment to the QIBs is made on a price priority basis. The Bidder with the
+      highest Bid Amount is allotted the number of Equity Shares Bid for and then the second highest
+      Bidder is Allotted Equity Shares and this process continues until all the Equity Shares have been
+      allotted. RIIs, NIIs and Employees are Allotted Equity Shares at the Floor Price and allotment
+      to these categories of Bidders is made proportionately. If the number of Equity Shares Bid for
+      at a price is more than available quantity then the Allotment may be done on a proportionate
+      basis. Further, the Issuer may place a cap either in terms of number of specified securities or
+      percentage of issued capital of the Issuer that may be Allotted to a single Bidder, decide whether
+      a Bidder be allowed to revise the bid upwards or downwards in terms of price and/or quantity
+      and also decide whether a Bidder be allowed single or multiple bids.
+
+
+
+
+                                             34
+                      SECTION 6: OFFER PROCEDURE IN FIXED PRICE OFFER
+
+Applicants may note that there is no Bid cum Application Form in a Fixed Price Offer. As the Offer Price is
+mentioned in the Fixed Price Offer therefore on filing of the Prospectus with the RoC, the Application so submitted
+is considered as the application form.
+
+Applicants may only use the specified Application Form for the purpose of making an Application in terms of the
+Prospectus which may be submitted through the Designated Intermediary.
+
+ASBA Applicants may submit an Application Form either in physical form to the Designated Intermediaries or
+in the electronic form to the SCSB or the Designated Branches of the SCSBs authorising blocking of funds that
+are available in the bank account specified in the Application Form only (“ASBA Account”). The Application
+Form is also made available on the websites of the Stock Exchanges at least one day prior to the Bid/Offer Opening
+Date.
+
+In a fixed price Offer, allocation in the net offer to the public category is made as follows: minimum fifty per cent
+to Retail Individual Investors; and remaining to (i) individual bidders other than Retail Individual Investors; and
+(ii) other Applicants including corporate bodies or institutions, irrespective of the number of specified securities
+applied for. The unsubscribed portion in either of the categories specified above may be allocated to the Applicants
+in the other category.
+
+For details of instructions in relation to the Application Form, Bidders/Applicants may refer to the relevant section
+of the GID.
+
+
+
+
+                                                         35
+               SECTION 7: ALLOTMENT PROCEDURE AND BASIS OF ALLOTMENT
+
+The Allotment of Equity Shares to Bidders/Applicants other than Retail Individual Investors and Anchor Investors
+may be on proportionate basis. For Basis of Allotment to Anchor Investors, Bidders/Applicants may refer to
+RHP/Prospectus. No Retail Individual Investor will be allotted less than the minimum Bid Lot subject to
+availability of shares in Retail Individual Investor Category and the remaining available shares, if any will be
+Allotted on a proportionate basis. The Issuer is required to receive a minimum subscription of 90% of the Issue
+(excluding any Offer for Sale of specified securities). However, in case the Offer is in the nature of Offer for Sale
+only, then minimum subscription may not be applicable.
+
+7.1      ALLOTMENT TO RIIs
+
+         Bids received from the RIIs at or above the Offer Price may be grouped together to determine the total
+         demand under this category. If the aggregate demand in this category is less than or equal to the Retail
+         Category at or above the Offer Price, full Allotment may be made to the RIIs to the extent of the valid
+         Bids. If the aggregate demand in this category is greater than the allocation in the Retail Category at or
+         above the Offer Price, then the maximum number of RIIs who can be Allotted the minimum Bid Lot will
+         be computed by dividing the total number of Equity Shares available for Allotment to RIIs by the
+         minimum Bid Lot (“Maximum RII Allottees”). The Allotment to the RIIs will then be made in the
+         following manner:
+
+         (a)      In the event the number of RIIs who have submitted valid Bids in the Offer is equal to or less
+                  than Maximum RII Allottees; (i) all such RIIs shall be Allotted the minimum Bid Lot; and (ii)
+                  the balance available Equity Shares, if any, remaining in the Retail Category shall be Allotted
+                  on a proportionate basis to the RIIs who have received Allotment as per (i) above for the balance
+                  demand of the Equity Shares Bid by them (i.e. who have Bid for more than the minimum Bid
+                  Lot).
+
+         (b)      In the event the number of RIIs who have submitted valid Bids in the Offer is more than
+                  Maximum RII Allottees, the RIIs (in that category) who will then be Allotted minimum Bid Lot
+                  shall be determined on the basis of draw of lots.
+
+7.2      ALLOTMENT TO NIIs
+
+         Bids received from NIIs at or above the Offer Price may be grouped together to determine the total
+         demand under this category. The Allotment to all successful NIIs may be made at or above the Offer
+         Price. If the aggregate demand in this category is less than or equal to the Non-Institutional Category at
+         or above the Offer Price, full Allotment may be made to NIIs to the extent of their demand. In case the
+         aggregate demand in this category is greater than the Non-Institutional Category at or above the Offer
+         Price, Allotment may be made on a proportionate basis up to a minimum of the Non-Institutional
+         Category.
+
+7.3      ALLOTMENT TO QIBs
+
+         For the Basis of Allotment to Anchor Investors, Bidders/Applicants may refer to the SEBI ICDR
+         Regulations or RHP / Prospectus. Bids received from QIBs Bidding in the QIB Category (net of Anchor
+         Portion) at or above the Offer Price may be grouped together to determine the total demand under this
+         category. The QIB Category may be available for Allotment to QIBs who have Bid at a price that is equal
+         to or greater than the Offer Price. Allotment may be undertaken in the following manner:
+
+         (a)      In the first instance allocation to Mutual Funds for up to 5% of the QIB Category may be
+                  determined as follows: (i) In the event that Bids by Mutual Fund exceeds 5% of the QIB
+                  Category, allocation to Mutual Funds may be done on a proportionate basis for up to 5% of the
+                  QIB Category; (ii) In the event that the aggregate demand from Mutual Funds is less than 5%
+                  of the QIB Category then all Mutual Funds may get full allotment to the extent of valid Bids
+                  received above the Offer Price; and (iii) Equity Shares remaining unsubscribed, if any and not
+                  allocated to Mutual Funds may be available for allotment to all QIBs as set out at paragraph
+                  7.4(b) below.
+
+         (b)      In the second instance, allotment to all QIBs may be determined as follows: (i) In the event of
+
+
+                                                         36
+              oversubscription in the QIB Category, all QIBs who have submitted Bids above the Offer Price
+              may be Allotted Equity Shares on a proportionate basis for up to 95% of the QIB Category; (ii)
+              Mutual Funds, who have received allocation as per (a) above, for less than the number of Equity
+              Shares Bid for by them, are eligible to receive Equity Shares on a proportionate basis along with
+              other QIBs; and (iii) Under-subscription below 5% of the QIB Category, if any, from Mutual
+              Funds, may be included for allocation to the remaining QIBs on a proportionate basis.
+
+7.4   ALLOTMENT TO ANCHOR INVESTOR (IF APPLICABLE)
+
+      (a)     Allocation of Equity Shares to Anchor Investors at the Anchor Investor Offer Price will be at
+              the discretion of the issuer subject to compliance with the following requirements:
+
+              i.       not more than 60% of the QIB Category will be allocated to Anchor Investors;
+
+              ii.      one-third of the Anchor Investor Portion shall be reserved for domestic Mutual Funds,
+                       subject to valid Bids being received from domestic Mutual Funds at or above the price
+                       at which allocation is being done to other Anchor Investors; and
+
+              iii.     allocation to Anchor Investors shall be on a discretionary basis and subject to:
+
+                               a maximum number of two Anchor Investors for allocation up to ₹ 10 crores;
+
+                               a minimum number of two Anchor Investors and maximum number of 15
+                                Anchor Investors for allocation of more than ₹ 10 crores and up to ₹ 250
+                                crores subject to minimum allotment of ₹ 5 crores per such Anchor Investor;
+                                and
+
+                               in case of allocation above two hundred fifty crore rupees; a minimum
+                                number of five Anchor Investors and a maximum number of 15 Anchor
+                                Investors for allocation up to ₹ 250 crores and an additional 10 Anchor
+                                Investors for every additional ₹ 250 crores or part thereof, subject to minimum
+                                allotment of ₹ 5 crores per such Anchor Investor.
+
+      (b)     A physical book is prepared by the Registrar on the basis of the Bid cum Application Forms
+              received from Anchor Investors. Based on the physical book and at the discretion of the issuer
+              in consultation with the BRLMs, selected Anchor Investors will be sent a CAN and if required,
+              a revised CAN.
+
+      (c)     In the event that the Offer Price is higher than the Anchor Investor Offer Price: Anchor
+              Investors will be sent a revised CAN within one day of the Pricing Date indicating the number
+              of Equity Shares allocated to such Anchor Investor and the pay-in date for payment of the
+              balance amount. Anchor Investors are then required to pay any additional amounts, being the
+              difference between the Offer Price and the Anchor Investor Offer Price, as indicated in the
+              revised CAN within the pay-in date referred to in the revised CAN. Thereafter, the Allotment
+              Advice will be issued to such Anchor Investors.
+
+      (d)     In the event the Offer Price is lower than the Anchor Investor Offer Price: Anchor Investors
+              who have been Allotted Equity Shares will directly receive Allotment Advice.
+
+7.5   BASIS OF ALLOTMENT FOR QIBs (OTHER THAN ANCHOR INVESTORS), NIIs AND
+      RESERVED CATEGORY IN CASE OF OVER-SUBSCRIBED OFFER
+
+      In the event of the Offer being over-subscribed, the Issuer may finalise the Basis of Allotment in
+      consultation with the Designated Stock Exchange in accordance with the SEBI ICDR Regulations.
+
+      The allocation may be made in marketable lots, on a proportionate basis as explained below:
+
+      (a)     Bidders may be categorized according to the number of Equity Shares applied for.
+
+
+
+
+                                                    37
+      (b)   The total number of Equity Shares to be Allotted to each category as a whole may be arrived at
+            on a proportionate basis, which is the total number of Equity Shares applied for in that category
+            (number of Bidders in the category multiplied by the number of Equity Shares applied for)
+            multiplied by the inverse of the over-subscription ratio.
+
+      (c)   The number of Equity Shares to be Allotted to the successful Bidders may be arrived at on a
+            proportionate basis, which is total number of Equity Shares applied for by each Bidder in that
+            category multiplied by the inverse of the over-subscription ratio.
+
+      (d)   In all Bids where the proportionate Allotment is less than the minimum Bid Lot decided per
+            Bidder, the Allotment may be made as follows: the successful Bidders out of the total Bidders
+            for a category may be determined by a draw of lots in a manner such that the total number of
+            Equity Shares Allotted in that category is equal to the number of Equity Shares calculated in
+            accordance with (b) above; and each successful Bidder may be Allotted a minimum of such
+            Equity Shares equal to the minimum Bid Lot finalised by the Issuer.
+
+      (e)   If the proportionate Allotment to a Bidder is a number that is more than the minimum Bid Lot
+            but is not a multiple of one (which is the marketable lot), the decimal may be rounded off to the
+            higher whole number if that decimal is 0.5 or higher. If that number is lower than 0.5 it may be
+            rounded off to the lower whole number. Allotment to all Bidders in such categories may be
+            arrived at after such rounding off.
+
+      (f)   If the Equity Shares allocated on a proportionate basis to any category are more than the Equity
+            Shares Allotted to the Bidders in that category, the remaining Equity Shares available for
+            allotment may be first adjusted against any other category, where the Allotted Equity Shares are
+            not sufficient for proportionate Allotment to the successful Bidders in that category. The balance
+            Equity Shares, if any, remaining after such adjustment may be added to the category comprising
+            Bidders applying for minimum number of Equity Shares.
+
+7.6   DESIGNATED DATE AND ALLOTMENT OF EQUITY SHARES
+
+      (a)   Designated Date: On the Designated Date, the Anchor Escrow Bank shall transfer the funds
+            represented by allocation of Equity Shares to Anchor Investors from the Escrow Accounts, as
+            per the terms of the Cash Escrow Agreement, into the Public Offer Account with the Bankers
+            to the Offer. The balance amount after transfer to the Public Offer Account shall be transferred
+            to the Refund Account. Payments of refund to the Bidders applying in the Anchor Investor
+            Portion shall be made from the Refund Account as per the terms of the Cash Escrow
+            Agreement and the RHP. On the Designated Date, the Registrar to the Offer shall instruct the
+            SCSBs or the Sponsor Bank, as applicable, to transfer funds represented by allocation of
+            Equity Shares from ASBA Accounts into the Public Offer Account.
+
+      (b)   Issuance of Allotment Advice: Upon approval of the Basis of Allotment by the Designated
+            Stock Exchange, the Registrar shall upload the same on its website. On the basis of the approved
+            Basis of Allotment, the Issuer shall pass necessary resolutions and undertake corporate actions
+            to facilitate the Allotment and credit of Equity Shares to successful Bidders/Applicants.
+            Bidders/Applicants are advised to instruct their Depository Participant to accept the Equity
+            Shares that may be allotted to them pursuant to the Offer.
+
+            Pursuant to confirmation of such corporate actions, the Registrar will dispatch Allotment
+            Advice to the Bidders/Applicants who have been Allotted Equity Shares in the Offer.
+
+      (c)   The dispatch of Allotment Advice shall be deemed a valid, binding and irrevocable contract.
+
+      (d)   Issuer will ensure that: (i) the Allotment of Equity Shares; and (ii) credit of shares to the
+            successful Bidders/Applicants Depository Account will be completed within five Working Days
+            of the Bid/Offer Closing Date.
+
+
+
+
+                                                  38
+                                 SECTION 8: INTEREST AND REFUNDS
+
+8.1     COMPLETION OF FORMALITIES FOR LISTING & COMMENCEMENT OF TRADING
+
+        The Issuer may ensure that all steps for the completion of the necessary formalities for listing and
+        commencement of trading at all the Stock Exchanges are taken within six Working Days of the Bid/Offer
+        Closing Date.
+
+8.2     GROUNDS FOR REFUND
+
+8.2.1   NON RECEIPT OF LISTING PERMISSION
+
+        An Issuer makes an application to the Stock Exchange(s) for permission to deal in/list and for an official
+        quotation of the Equity Shares. All the Stock Exchanges from where such permission is sought are
+        disclosed in RHP/Prospectus. The Designated Stock Exchange will be disclosed in the RHP/Prospectus
+        with which the Basis of Allotment may be finalised.
+
+        If the Issuer fails to make application to the Stock Exchange(s) and obtain permission for listing of the
+        Equity Shares, in accordance with the provisions of Section 40 of the Companies Act, 2013, the Issuer
+        may be punishable with a fine which shall not be less than ₹ 5 lakhs but which may extend to ₹ 50 lakhs
+        and every officer of the Issuer who is in default shall be punishable with imprisonment for a term which
+        may extend to one year or with fine which shall not be less than ₹ 50,000 but which may extend to ₹ 3
+        lakhs, or with both.
+
+        If the permissions to deal in and for an official quotation of the Equity Shares are not granted by any of
+        the Stock Exchange(s), the Issuer may forthwith take steps to refund, without interest, all moneys
+        received from the Bidders/Applicants in pursuance of the RHP/Prospectus.
+
+        If such money is not refunded to Bidders within the prescribed time after the Issuer becomes liable to
+        repay it, then the Issuer and every director of the Issuer who is an officer in default may, on and from
+        such expiry of such period, be liable to repay the money, with interest at such rate, as disclosed in the
+        RHP/Prospectus.
+
+8.2.2   NON RECEIPT OF MINIMUM SUBSCRIPTION
+
+        If the Issuer does not receive a minimum subscription of 90% of the Net Offer (excluding any offer for
+        sale of specified securities), including devolvement to the Underwriters, as applicable, the Issuer may
+        forthwith, take steps to unblock the entire subscription amount received within six Working Days of
+        the Bid/ Offer Closing Date and repay, without interest, all moneys received from Anchor Investors.
+        This is further subject to the compliance with Rule 19(2) (b) of the SCRR. In case the Offer is in the
+        nature of Offer for Sale only, then minimum subscription may not be applicable. In case of under-
+        subscription in the Offer, the Equity Shares in the Offer will be issued prior to the sale of Equity Shares
+        in the Offer for Sale.
+
+        If there is a delay beyond the prescribed time after the Issuer becomes liable to pay or unblock the
+        amount received from Bidders, then the Issuer and every director of the Issuer who is an officer in
+        default may on and from expiry of prescribed time period under applicable laws, be jointly and severally
+        liable to repay the money, with interest at the rate of 15% per annum in accordance with the Companies
+        (Prospectus and Allotment of Securities) Rules, 2014, as amended.
+
+8.2.3   MINIMUM NUMBER OF ALLOTTEES
+
+        The Issuer may ensure that the number of prospective Allottees to whom Equity Shares may be allotted
+        may not be less than 1,000 failing which the entire application monies may be refunded forthwith.
+
+8.2.4   IN CASE OF OFFERS MADE UNDER COMPULSORY BOOK BUILDING
+
+        In case an Issuer not eligible under Regulation 6(1) of the SEBI ICDR Regulations comes for an Offer
+        under Regulation 6(2) of SEBI ICDR Regulations but fails to Allot at least 75% of the Offer to QIBs, in
+        such case full subscription money is to be refunded.
+
+
+
+
+                                                        39
+8.3     MODE OF REFUND
+
+        1.      In case of ASBA Bids: Within six Working Days of the Bid/Offer Closing Date, the Registrar
+                to the Offer may give instructions to SCSBs or in case of Bids by RIIs applying through the UPI
+                mechanism to the Sponsor Bank to revoke the mandate and for unblocking the amount for
+                unsuccessful Bids or for any excess amount blocked on Bidding.
+
+        2.      In case of Anchor Investors: Within six Working Days of the Bid/Offer Closing Date, the
+                Registrar to the Offer may dispatch the refund orders for all amounts payable to unsuccessful
+                Anchor Investors.
+
+        3.      In case of Anchor Investors, the Registrar to the Offer may obtain from the depositories the
+                Bidders’ bank account details, including the MICR code, on the basis of the DP ID, Client ID
+                and PAN provided by the Anchor Investors in their Bid cum Application Forms for refunds.
+                Accordingly, Anchor Investors are advised to immediately update their details as appearing on
+                the records of their depositories. Failure to do so may result in delays in dispatch of refund
+                orders or refunds through electronic transfer of funds, as applicable, and any such delay may be
+                at the Anchor Investors’ sole risk and neither the Issuer, the Registrar to the Offer, the Escrow
+                Collection Banks, or the Syndicate, may be liable to compensate the Anchor Investors for any
+                losses caused to them due to any such delay, or liable to pay any interest for such delay. Please
+                note that refunds shall be credited only to the bank account from which the Bid Amount was
+                remitted to the Escrow Bank.
+
+        4.      In the case of Bids from Eligible NRI Bidders and FPIs, refunds, if any, may generally be
+                payable in Indian Rupees only and net of bank charges and/or commission. If so desired, such
+                payments in Indian Rupees may be converted into U.S. Dollars or any other freely convertible
+                currency as may be permitted by the RBI at the rate of exchange prevailing at the time of
+                remittance and may be dispatched by registered post. The Company may not be responsible for
+                loss, if any, incurred by the Bidder/Applicant on account of conversion of foreign currency.
+
+8.3.1   Electronic mode of making refunds for Anchor Investors
+
+        The payment of refund, if any, may be done through various electronic modes as mentioned below:
+
+        i.      NACH—National Automated Clearing House is a consolidated system of ECS. Payment of
+                refund would be done through NACH for Anchor Investors having an account at any of the
+                centres specified by the RBI where such facility has been made available. This would be subject
+                to availability of complete bank account details including Magnetic Ink Character Recognition
+                (MICR) code wherever applicable from the depository. The payment of refund through NACH
+                is mandatory for Anchor Investors having a bank account at any of the centres where NACH
+                facility has been made available by the RBI (subject to availability of all information for
+                crediting the refund through NACH including the MICR code as appearing on a cheque leaf,
+                from the depositories), except where the applicant is otherwise disclosed as eligible to get
+                refunds through NEFT or Direct Credit or RTGS.
+
+        ii.     NEFT—Payment of refund may be undertaken through NEFT wherever the branch of the
+                Anchor Investors’ bank is NEFT enabled and has been assigned the Indian Financial System
+                Code (“IFSC”), which can be linked to the MICR of that particular branch. The IFSC may be
+                obtained from the website of RBI as at a date prior to the date of payment of refund, duly mapped
+                with MICR numbers. Wherever the Anchor Investors have registered their nine- digit MICR
+                number and their bank account number while opening and operating the demat account, the
+                same may be duly mapped with the IFSC of that particular bank branch and the payment of
+                refund may be made to the Anchor Investors through this method. In the event NEFT is not
+                operationally feasible, the payment of refunds may be made through any one of the other
+                modes as discussed in this section.
+
+        iii.    Direct Credit—Anchor Investors having their bank account with the Refund Banker may be
+                eligible to receive refunds, if any, through direct credit to such bank account.
+
+        iv.     RTGS—Anchor Investors having a bank account with a bank branch which is RTGS enabled
+                as per the information available on the website of RBI and whose refund amount exceeds ₹ 0.2
+
+
+
+                                                      40
+               million, shall be eligible to receive refund through RTGS, provided the Demographic Details
+               downloaded from the Depositories contain the nine digit MICR code of the Anchor Investor’s
+               bank which can be mapped with the RBI data to obtain the corresponding IFSC. Charges, if
+               any, levied by the Anchor Escrow Bank for the same would be borne by our Company. Charges,
+               if any, levied by the Anchor Investor’s bank receiving the credit would be borne by the Anchor
+               Investor.
+
+      Please note that refunds through the abovementioned modes shall be credited only to the bank account
+      from which the Bid Amount was remitted to the Escrow Bank.
+
+      For details of levy of charges, if any, for any of the above methods, Bank charges, if any, for cashing
+      such cheques, pay orders or demand drafts at other centers etc. Bidders/Applicants may refer to
+      RHP/Prospectus.
+
+8.4   INTEREST IN CASE OF DELAY IN ALLOTMENT OR REFUND
+
+      The Issuer may pay interest at the rate of 15% per annum if refund orders, as applicable, are not
+      dispatched or if, in a case where the refund or portion thereof is made in electronic manner, the refund
+      instructions have not been given to the clearing system in the disclosed manner and/or demat credits are
+      not made to Bidders/Applicants or instructions for unblocking of funds in the ASBA Account are not
+      dispatched within the six Working Days of the Bid/Offer Closing Date.
+
+      The Issuer may pay interest at 15% per annum for any delay beyond 15 days from the Bid/ Offer Closing
+      Date, if Allotment is not made.
+
+
+
+
+                                                    41
+                              SECTION 9: GLOSSARY AND ABBREVIATIONS
+
+Unless the context otherwise indicates or implies, certain definitions and abbreviations used in this document may
+have the meaning as provided below. References to any legislation, act or regulation may be to such legislation,
+act or regulation as amended from time to time. In case of inconsistency in the description of a term mentioned
+herein below and the description ascribed to such term in the Red Herring Prospectus, the description as ascribed
+to such term in the Red Herring Prospectus/ Prospectus shall prevail.
+
+ Term                             Description
+ Allotment/Allot/Allotted         The allotment of Equity Shares pursuant to the Offer to successful Bidders/Applicants
+ Allotment Advice                 Note or advice or intimation of Allotment sent to the Bidders/Applicants who have been
+                                  Allotted Equity Shares after the Basis of Allotment has been approved by the designated
+                                  Stock Exchanges
+ Allottee                         A Bidder/Applicant to whom the Equity Shares are Allotted
+ Anchor Investor Allocation       The price at which Equity Shares will be allocated to Anchor Investors at the end of the
+ Price                            Anchor Investor Bid/Offer Period in terms of the Red Herring Prospectus and the
+                                  Prospectus, which will be decided by the Company, in consultation with the BRLMs
+ Anchor Escrow Account            Account opened with the Anchor Collection Bank and in whose favour the Anchor
+                                  Investors may transfer money through NEFT/RTGS/direct credit in respect of the Bid
+                                  Amount when submitting a Bid
+
+ Anchor Escrow Bank               Refer to definition of Banker(s) to the Offer
+ Anchor Investor                  A Qualified Institutional Buyer, applying under the Anchor Investor Portion in
+                                  accordance with the requirements specified in SEBI ICDR Regulations and the Red
+                                  Herring Prospectus
+ Anchor Investor Portion          Up to 60% of the QIB Category which may be allocated by the Issuer in consultation with
+                                  the BRLMs, to Anchor Investors on a discretionary basis. One-third of the Anchor
+                                  Investor Portion is reserved for domestic Mutual Funds, subject to valid Bids being
+                                  received from domestic Mutual Funds at or above the price at which allocation is being
+                                  done to Anchor Investors
+ Application Form                 The form in terms of which the Applicant should make an application for Allotment in
+                                  case of issues other than Book Built Offers, includes Fixed Price Offer
+ Application Supported by         An application, whether physical or electronic, used by Bidders/Applicants, other than
+ Blocked Amount /ASBA             Anchor Investors, to make a Bid and authorising an SCSB to block the Bid Amount in
+                                  the specified bank account maintained with such SCSB and will include amounts blocked
+                                  by RIIs using the UPI mechanism
+ ASBA Account                     Account maintained with an SCSB which may be blocked by such SCSB or the account
+                                  of the RII Bidder blocked upon acceptance of UPI Mandate Request by RIIs using the
+                                  UPI Mechanism to the extent of the Bid Amount of the Bidder/Applicant
+ Banker(s) to the Offer/ Anchor   The banks which are clearing members and registered with SEBI as Banker to the Offer
+ Escrow     Bank(s)/Collecting    with whom the Anchor Escrow Accounts for Anchor Investors may be opened, and as
+ Banker                           disclosed in the RHP/Prospectus and Bid cum Application Form of the Issuer
+ Basis of Allotment               The basis on which the Equity Shares may be Allotted to successful Bidders/Applicants
+                                  under the Offer
+ Bid                              An indication to make an offer during the Bid/Offer Period by a prospective Bidder
+                                  pursuant to submission of Bid cum Application Form or during the Anchor Investor Bid/
+                                  Offer Date by the Anchor Investors, to subscribe for or purchase the Equity Shares of the
+                                  Issuer at a price within the Price Band, including all revisions and modifications thereto.
+                                  In case of issues undertaken through the fixed price process, all references to a Bid should
+                                  be construed to mean an Application
+ Bid Amount                       The highest value of the optional Bids indicated in the Bid cum Application Form and
+                                  payable by the Bidder/Applicant upon submission of the Bid (except for Anchor
+                                  Investors), less discounts (if applicable). In case of issues undertaken through the fixed
+                                  price process, all references to the Bid Amount should be construed to mean the
+                                  Application Amount
+ Bid/Offer Closing Date           Except in the case of Anchor Investors (if applicable), the date after which the Designated
+                                  Intermediaries may not accept any Bids for the Offer, which may be notified in an English
+                                  national daily, a Hindi national daily and a regional language newspaper at the place
+                                  where the registered office of the Issuer is situated, each with wide circulation.
+                                  Applicants/Bidders may refer to the RHP/Prospectus for the Bid/Offer Closing Date
+ Bid/Offer Opening Date           The date on which the Designated Intermediaries may start accepting Bids for the Offer,
+                                  which may be the date notified in an English national daily, a Hindi national daily and a
+
+
+
+                                                             42
+Term                             Description
+                                 regional language newspaper at the place where the registered office of the Issuer is
+                                 situated, each with wide circulation. Applicants/Bidders may refer to the RHP/Prospectus
+                                 for the Bid/Offer Opening Date
+Bid/Offer Period                 Except in the case of Anchor Investors (if applicable), the period between the Bid/ Offer
+                                 Opening Date and the Bid/Offer Closing Date inclusive of both days and during which
+                                 prospective Bidders/Applicants (other than Anchor Investors) can submit their Bids,
+                                 inclusive of any revisions thereof. The Issuer may consider closing the Bid/ Offer Period
+                                 for QIBs one working day prior to the Bid/Offer Closing Date in accordance with the
+                                 SEBI ICDR Regulations. Applicants/Bidders may refer to the RHP/Prospectus for the
+                                 Bid/Offer Period
+Bid cum Application Form         An application form, whether physical or electronic, used by Bidders, other than Anchor
+                                 Investors, to make a Bid and which will be considered as the application for Allotment in
+                                 terms of the Red Herring Prospectus and the Prospectus
+Bidder/Applicant                 Any prospective investor who makes a Bid/Application pursuant to the terms of the
+                                 RHP/Prospectus and the Bid cum Application Form. In case of issues undertaken through
+                                 the fixed price process, all references to a Bidder/Applicant should be construed to mean
+                                 an Bidder/Applicant
+Book Built Process/Book          The book building process as provided under SEBI ICDR Regulations, in terms of which
+Building       Process/Book      the Offer is being made
+Building Method
+BRLM(s)/Book       Running       The Book Running Lead Manager to the Offer as disclosed in the RHP/Prospectus and
+Lead        Manager(s)/Lead      the Bid cum Application Form of the Issuer. In case of issues undertaken through the
+Manager/LM                       fixed price process, all references to the Book Running Lead Manager should be
+                                 construed to mean the Lead Manager or LM
+Broker Centres                   Broker centres notified by the Stock Exchanges, where Bidders/Applicants can submit
+                                 the Bid cum Application Forms to a Registered Broker. The details of such broker centres,
+                                 along with the names and contact details of the Registered Brokers are available on the
+                                 websites of the Stock Exchanges
+Business Day                     Monday to Saturday (except 2nd and 4th Saturday of a month and public holidays)
+CAN/Confirmation of              The note or advice or intimation sent to each successful Bidder/Applicant indicating the
+Allotment Note                   Equity Shares which may be Allotted, after approval of Basis of Allotment by the
+                                 Designated Stock Exchange
+Cap Price                        The higher end of the Price Band, above which the Offer Price and the Anchor Investor
+                                 Offer Price may not be finalised and above which no Bids may be accepted
+Cash Escrow Agreement            Agreement to be entered into among the Issuer, the Registrar to the Offer, the Book
+                                 Running Lead Manager(s), the Anchor Escrow Bank and the Refund Bank(s) for
+                                 collection of the Bid Amounts from Anchor Investors and where applicable, remitting
+                                 refunds of the amounts collected to the Anchor Investors on the terms and conditions
+                                 thereof
+Client ID                        Client Identification Number maintained with one of the Depositories in relation to demat
+                                 account
+Collecting Depository            A depository participant as defined under the Depositories Act, 1996, registered with
+Participant or CDPs              SEBI and who is eligible to procure Bids at the Designated CDP Locations in terms of
+                                 circular no. CIR/CFD/POLICYCELL/11/2015 dated November 10, 2015 issued by SEBI
+Collecting Registrar and Share   Registrar and share transfer agents registered with SEBI and eligible to procure Bids at
+Transfer Agents or CRTAs         the Designated RTA Locations in terms of the Circular on Streamlining of Public Issues
+Cut-off Price                    Offer Price, finalised by the Issuer in consultation with the Book Running Lead
+                                 Manager(s), which can be any price within the Price Band (inclusive of the floor price
+                                 and cap price). Only RIIs, Retail Individual Shareholders and employees are entitled to
+                                 Bid at the Cut-off Price. No other category of Bidders/Applicants are entitled to Bid at
+                                 the Cut-off Price
+DP                               Depository Participant
+DP ID                            Depository Participant’s Identification Number
+Depositories                     National Securities Depository Limited and Central Depository Services (India) Limited
+Demographic Details              Details of the Bidders/Applicants including the Bidder/Applicant’s address, name of the
+                                 Applicant’s father/husband, investor status, occupation and bank account details
+Designated Branches              Such branches of the SCSBs which may collect the Bid cum Application Forms used by
+                                 Bidders/Applicants (excluding Anchor Investors) and a list of which is available on
+                                 http://www.sebi.gov.in/sebiweb/other/OtherAction.do?doRecognised=yes
+Designated CDP Locations         Such locations of the CDPs where Bidders can submit the Bid cum Application Forms to
+                                 Collecting Depository Participants.
+
+
+
+                                                           43
+Term                            Description
+
+                                The details of such Designated CDP Locations, along with names and contact details of
+                                the Collecting Depository Participants eligible to accept Bid cum Application Forms are
+                                available on the respective websites of the Stock Exchanges (www.bseindia.com and
+                                www.nseindia.com)
+Designated Date                 The date on which funds are transferred by the Anchor Escrow Bank from the Anchor
+                                Escrow Account and the amounts blocked by the SCSBs are transferred from the ASBA
+                                Accounts, as the case may be, to the Public Offer Account or the Refund Account, as
+                                appropriate, after the Prospectus is filed with the RoC, following which the board of
+                                directors may Allot Equity Shares to successful Bidders/Applicants in the Fresh Issue
+                                may give delivery instructions for the transfer of the Equity Shares constituting the Offer
+                                for Sale
+Designated Intermediaries       Syndicate Members, sub-syndicate/Agents, SCSBs, Registered Brokers, Brokers, the
+/Collecting Agent               CDPs and CRTAs, who are authorized to collect Bid cum Application Forms from the
+                                Bidders, in relation to the Offer
+Designated RTA Locations        Such locations of the CRTAs where Bidders can submit the Bid cum Application Forms
+                                to CRTAs.
+
+                                The details of such Designated RTA Locations, along with names and contact details of
+                                the CRTAs eligible to accept Bid cum Application Forms are available on the respective
+                                websites of the Stock Exchanges (www.bseindia.com and www.nseindia.com)
+
+Designated Stock                The designated stock exchange as disclosed in the RHP/Prospectus of the Issuer
+Exchange
+Discount                        Discount to the Offer Price that may be provided to Bidders/Applicants in accordance
+                                with the SEBI ICDR Regulations
+Draft Prospectus                The draft prospectus filed with SEBI in case of Fixed Price Offers and which may mention
+                                a price or a Price Band
+Employees/Eligible              Employees of an Issuer as defined under SEBI ICDR Regulations and including, in case
+Employees                       of a new company, persons in the permanent and full time employment of the promoting
+                                companies excluding the promoters and immediate relatives of the promoters. For further
+                                details, Bidder/Applicant may refer to the RHP/Prospectus
+Employees Reserved Portion      Equity Shares reserved for the Eligible Employees
+Equity Shares                   Equity Shares of the Issuer
+FCNR Account                    Foreign Currency Non-Resident Account
+First Bidder/Applicant          The Bidder/Applicant whose name appears first in the Bid cum Application Form or
+                                Revision Form
+Fixed Price Issue/Fixed Price   The Fixed Price process as provided under SEBI ICDR Regulations, in terms of which
+Process/Fixed Price Method      the Offer is being made
+Floor Price                     The lower end of the Price Band, at or above which the Offer Price and the Anchor
+                                Investor Offer Price may be finalised and below which no Bids may be accepted, subject
+                                to any revision thereto
+FPIs                            Foreign Portfolio Investors as defined under the Securities and Exchange Board of India
+                                (Foreign Portfolio Investors) Regulations, 2019, as amended from time to time
+FPO                             Further public offering
+Foreign Venture Capital         Foreign Venture Capital Investors as defined and registered with SEBI under the SEBI
+Investors or FVCIs              (Foreign Venture Capital Investors) Regulations, 2000
+IPO                             Initial public offering
+Issuer/Company                  The Issuer proposing the initial public offering/further public offering as applicable
+Maximum RII Allottees           The maximum number of RIIs who can be Allotted the minimum Bid Lot. This is
+                                computed by dividing the total number of Equity Shares available for Allotment to RIIs
+                                by the minimum Bid Lot.
+MICR                            Magnetic Ink Character Recognition - nine-digit code as appearing on a cheque leaf
+Mutual Fund                     A mutual fund registered with SEBI under the SEBI (Mutual Funds) Regulations, 1996
+Mutual Funds Portion            5% of the QIB Category (excluding the Anchor Investor Portion) available for allocation
+                                to Mutual Funds only, being such number of equity shares as disclosed in the
+                                RHP/Prospectus and Bid cum Application Form
+NACH                            National Automated Clearing House which is a consolidated system of ECS. Payment of
+                                refund would be done through NACH for Applicants having an account at one of the
+                                centres specified by the RBI, where such facility has been made available. This would be
+                                subject to availability of complete bank account details including Magnetic Ink Character
+
+
+
+                                                          44
+Term                             Description
+                                 Recognition (MICR) code wherever applicable from the depository. The payment of
+                                 refund through NACH is mandatory for Applicants having a bank account at any of the
+                                 centres where NACH facility has been made available by the RBI (subject to availability
+                                 of all information for crediting the refund through NACH including the MICR code as
+                                 appearing on a cheque leaf, from the depositories), except where applicant is otherwise
+                                 disclosed as eligible to get refunds through NEFT or Direct Credit or RTGS
+NEFT                             National Electronic Fund Transfer
+NRE Account                      Non-Resident External Account
+NRI                              NRIs from such jurisdictions outside India where it is not unlawful to make an offer or
+                                 invitation under the Offer and in relation to whom the RHP/Prospectus constitutes an
+                                 invitation to subscribe to or purchase the Equity Shares
+NRO Account                      Non-Resident Ordinary Account
+Net Offer                        The Offer less reservation portion
+Non-Institutional Investors or   All Bidders/Applicants, including FPIs which are individuals, corporate bodies and
+NIIs                             family offices, that are not QIBs or RIBs and who have Bid for Equity Shares for an
+                                 amount of more than ₹200,000 (but not including NRIs other than Eligible NRIs)
+Non-Institutional Category       The portion of the Offer being such number of Equity Shares available for allocation to
+                                 NIIs on a proportionate basis and as disclosed in the RHP/Prospectus and the Bid cum
+                                 Application Form
+Non-Resident                     A person resident outside India, as defined under FEMA and includes Eligible NRIs, FPIs
+                                 and FVCIs registered with SEBI
+OCB/Overseas Corporate           A company, partnership, society or other corporate body owned directly or indirectly to
+Body                             the extent of at least 60% by NRIs including overseas trusts, in which not less than 60%
+                                 of beneficial interest is irrevocably held by NRIs directly or indirectly and which was in
+                                 existence on October 3, 2003 and immediately before such date had taken benefits under
+                                 the general permission granted to OCBs under FEMA
+Offer                            Public issue of Equity Shares of the Issuer including the Offer for Sale, if applicable
+Offer for Sale                   Public offer of such number of Equity Shares as disclosed in the RHP/Prospectus through
+                                 an offer for sale by the Selling Shareholders
+Offer Price                      The final price, less discount (if applicable) at which the Equity Shares may be Allotted
+                                 to Bidders other than Anchor Investors, in terms of the Prospectus. Equity Shares will be
+                                 Allotted to Anchor Investors at the Anchor Investor Offer Price The Offer Price may be
+                                 decided by the Issuer in consultation with the Book Running Lead Manager(s)
+Other Investors                  Investors other than Retail Individual Investors in a Fixed Price Offer. These include
+                                 individual applicants other than retail individual investors and other investors including
+                                 corporate bodies or institutions irrespective of the number of specified securities applied
+                                 for
+PAN                              Permanent Account Number allotted under the Income Tax Act, 1961
+Price Band                       Price Band with a minimum price, being the Floor Price and the maximum price, being
+                                 the Cap Price and includes revisions thereof. The Price Band and the minimum Bid lot
+                                 size for the Offer may be decided by the Issuer in consultation with the Book Running
+                                 Lead Manager(s) and advertised, at least two working days in case of an IPO and one
+                                 working day in case of FPO, prior to the Bid/Offer Opening Date, in English national
+                                 daily, Hindi national daily and regional language at the place where the registered office
+                                 of the Issuer is situated, newspaper each with wide circulation
+Pricing Date                     The date on which the Issuer in consultation with the Book Lead Manager(s) finalise the
+                                 Offer Price
+Prospectus                       The prospectus to be filed with the RoC in accordance with Section 26 of the Companies
+                                 Act, 2013 after the Pricing Date, containing the Offer Price, the size of the Offer and
+                                 certain other information
+Public Offer Account             An account opened with the Banker to the Offer to receive monies from the Anchor
+                                 Escrow Account and from the ASBA Accounts on the Designated Date
+QIB Category                     The portion of the Offer being such number of Equity Shares to be Allotted to QIBs on a
+                                 proportionate basis
+Qualified Institutional          As defined under SEBI ICDR Regulations
+Buyers or QIBs
+RTGS                             Real Time Gross Settlement
+Red Herring                      The red herring prospectus issued in accordance with Section 32 of the Companies Act,
+Prospectus/RHP                   2013, which does not have complete particulars of the price at which the Equity Shares
+                                 are offered and the size of the Offer. The RHP may be filed with the RoC at least three
+                                 days before the Bid/ Offer Opening Date and may become a Prospectus upon filing with
+
+
+
+                                                           45
+Term                         Description
+                             the RoC after the Pricing Date. In case of issues undertaken through the fixed price
+                             process, all references to the RHP should be construed to mean the Prospectus
+Refund Account(s)            The account opened with Refund Bank(s), from which refunds to Anchor Investors, if
+                             any, of the whole or part of the Bid Amount may be made
+Refund Bank(s)               Refund bank(s) as disclosed in the RHP/Prospectus and Bid cum Application Form of the
+                             Issuer
+Refunds through electronic   Refunds through Direct Credit, NEFT, RTGS or ASBA, as applicable
+transfer of funds
+Registered Broker            Stock Brokers registered with the Stock Exchanges having nationwide terminals, other
+                             than the members of the Syndicate
+Registrar to the Offer/RTO   The Registrar to the Offer as disclosed in the RHP/Prospectus and Bid cum
+                             Application Form
+Reserved                     Categories of persons eligible for making application/Bidding under reservation portion
+Category/Categories
+Reservation Portion          The portion of the Offer reserved for such category of eligible Bidders/Applicants as
+                             provided under the SEBI ICDR Regulations
+Retail Individual            Investors who applies or bids for a value of not more than ₹ 200,000 (including HUFs
+Investors/RIIs               applying through their karta and eligible NRIs and does not include NRIs other than
+                             Eligible NRIs.
+Retail Individual            Shareholders of a listed Issuer who applies or bids for a value of not more than ₹ 200,000.
+Shareholders
+Retail Category              The portion of the Offer being such number of Equity Shares available for allocation to
+                             RIIs which shall not be less than the minimum Bid Lot, subject to availability in RII
+                             category and the remaining shares to be Allotted on proportionate basis.
+Revision Form                The form used by the Bidders in an issue through Book Building Process to modify the
+                             quantity of Equity Shares and/or bid price indicated therein in any of their Bid cum
+                             Application Forms or any previous Revision Form(s)
+RoC                          The Registrar of Companies
+SEBI                         The Securities and Exchange Board of India constituted under the Securities and
+                             Exchange Board of India Act, 1992
+SEBI ICDR Regulations        The Securities and Exchange Board of India (Issue of Capital and Disclosure
+                             Requirements) Regulations, 2018 as amended
+Self Certified Syndicate     The banks registered with the SEBI which offers the facility of ASBA and the list of which
+Bank(s) or SCSB(s)           is available on the website of the http://www.sebi.gov.in/sebiweb/other/OtherAction.do?
+                             doRecognised=yes
+Specified Locations          Bidding centres where the Syndicate shall accept Bid cum Application Forms, a list of
+                             which is included in the Bid cum Application Form
+Sponsor Bank                 The Banker to the Offer registered with SEBI which is appointed by the Issuer/Offeror to
+                             act as a conduit between the Stock Exchanges and the National Payments Corporation of
+                             India in order to push the mandate collect requests and / or payment instructions of the
+                             RIIs into the UPI
+Stock Exchanges/SEs          The stock exchanges as disclosed in the RHP/Prospectus of the Issuer where the Equity
+                             Shares Allotted pursuant to the Offer are proposed to be listed
+Syndicate                    The Book Running Lead Manager(s) and the Syndicate Member
+Syndicate Agreement          The agreement to be entered into among the Issuer, and the Syndicate in relation to
+                             collection of Bid cum Application Forms by Syndicate Members
+Syndicate Member(s)/SM(s)    The Syndicate Member(s) as disclosed in the RHP/Prospectus
+Underwriters                 The Book Running Lead Manager(s) and the Syndicate Member(s)
+Underwriting Agreement       The agreement amongst the Issuer, and the Underwriters to be entered into on or after the
+                             Pricing Date
+UPI ID                       ID created on Unified Payment Interface (UPI) for single-window mobile payment
+                             system developed by the National Payments Corporation of India (NPCI).
+UPI Mandate Request          A request (intimating the RII by way of a notification on the UPI application and by way
+                             of a SMS directing the RII to such UPI application) to the RII initiated by the Sponsor
+                             Bank to authorise blocking of funds on the UPI application equivalent to Bid Amount and
+                             subsequent debit of funds in case of Allotment
+UPI PIN                      Password to authenticate UPI transaction
+Working Day                  All days on which commercial banks in Mumbai are open for business. In respect of
+                             announcement of Price Band and Bid / Offer Period, Working Day shall mean all days,
+                             excluding Saturdays, Sundays and public holidays, on which commercial banks in
+
+
+
+
+                                                       46
+Term   Description
+       Mumbai are open for business. In respect of the time period between the Bid/Offer
+       Closing Date and the listing of the Equity Shares on the Stock Exchanges, Working Day
+       shall mean all trading days of the Stock Exchanges, excluding Sundays and bank holidays,
+       as per circulars issued by SEBI.
+
+
+
+
+                                 47
+
