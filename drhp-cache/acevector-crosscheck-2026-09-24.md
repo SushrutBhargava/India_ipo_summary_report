@@ -36,6 +36,7 @@ FY25 was restated between the two documents: current tax rose by 3.68, and the l
 - Shares: 454,499,270 pre-offer (RHP p73). Post-offer shares are "[●]" in the RHP; chittorgarh gives 544,186,770, which equals 454,499,270 + 89,687,500 fresh shares at ₹32 (computed).
 - At ₹32 (computed): fresh ₹2,870,000,000; OFS 41,562,500 × 32 = ₹1,330,000,000; total ₹4,200,000,000.
 - **P/E: not meaningful.** FY26 basic/diluted EPS is (1.32), and the RHP marks P/E "[●]", to be populated in the Prospectus.
+- **24 Sep 2026 ledger cross-check note:** Revenue FY26 in the ledger is stated on a Total Income basis (₹537.67 Cr = ₹5,376.65 mn from the RHP's Summary of P&L, matching chittorgarh's own convention), not Revenue-from-Operations alone (₹510.38 Cr). Both figures trace to the RHP; the ledger uses Total Income for consistency with every other card on the page.
 - Market cap at ₹32 (computed): pre-offer ₹14,543,976,640; post-offer ₹17,413,976,640.
 - P/BV at ₹32 on FY26 NAV 2.21 (fully diluted, parent equity): 14.48x (computed).
 - **Price vs revenue at ₹32 (computed): post-offer market cap / FY26 revenue from operations 5,103.81 = 3.41x.**
