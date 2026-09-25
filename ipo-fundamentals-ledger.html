@@ -151,6 +151,114 @@
   .filter-box .fnum { font-family:'IBM Plex Mono',monospace; color: var(--gold); font-size:0.72rem; letter-spacing: 0.5px; }
   .filter-box h4 { font-family:'Source Serif 4',serif; margin: 6px 0 6px; font-size: 1rem; color: var(--navy); }
   .filter-box p { font-size: 0.81rem; margin: 0; color: #4a4030; }
+  .filter-box {
+    cursor: pointer;
+    user-select: none;
+    transition-property: transform, box-shadow, border-color;
+    transition-duration: 0.15s;
+    transition-timing-function: ease;
+  }
+  .filter-box:active { transform: translateY(-2px) scale(0.97); }
+  .filter-box:focus-visible {
+    outline: 2px solid var(--gold);
+    outline-offset: 2px;
+  }
+  .filter-box.is-open {
+    border-color: var(--gold);
+    box-shadow: 0 4px 12px rgba(20,33,61,0.12);
+  }
+  .filter-box .fexpand-cue {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.66rem;
+    letter-spacing: 0.4px;
+    color: var(--gold);
+    margin-top: 8px;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .filter-box .fexpand-cue svg {
+    width: 9px; height: 9px;
+    transition-property: transform;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+  }
+  .filter-box.is-open .fexpand-cue svg { transform: rotate(180deg); }
+  .filter-detail-row {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-rows: 0fr;
+    opacity: 0;
+    transition-property: grid-template-rows, opacity, margin-top;
+    transition-duration: 0.25s;
+    transition-timing-function: cubic-bezier(0.2, 0, 0, 1);
+    margin-top: 0;
+  }
+  .filter-detail-row.is-open {
+    grid-template-rows: 1fr;
+    opacity: 1;
+    margin-top: 4px;
+  }
+  .filter-detail-row > div { overflow: hidden; }
+  .filter-detail {
+    background: #fffdf6;
+    border: 1px solid rgba(20,33,61,0.12);
+    border-left: 3px solid var(--gold);
+    border-radius: 8px;
+    padding: 18px 22px;
+    box-shadow: 0 1px 4px rgba(20,33,61,0.05);
+  }
+  .filter-detail h5 {
+    font-family: 'Source Serif 4', serif;
+    font-size: 1.02rem;
+    color: var(--navy);
+    margin: 0 0 10px;
+  }
+  .filter-detail .fmetric-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 12px 20px;
+    margin-bottom: 12px;
+  }
+  .filter-detail .fmetric {
+    border-top: 1px solid rgba(20,33,61,0.1);
+    padding-top: 8px;
+  }
+  .filter-detail .fmetric .fm-name {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.74rem;
+    font-weight: 600;
+    color: var(--navy);
+    display: block;
+    margin-bottom: 3px;
+  }
+  .filter-detail .fmetric .fm-formula {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.7rem;
+    color: var(--gold);
+    display: block;
+    margin-bottom: 4px;
+    font-variant-numeric: tabular-nums;
+  }
+  .filter-detail .fmetric p {
+    font-size: 0.79rem;
+    color: #4a4030;
+    margin: 0;
+  }
+  .filter-detail .fread-note {
+    font-size: 0.79rem;
+    color: #4a4030;
+    background: rgba(169,129,47,0.08);
+    border-radius: 6px;
+    padding: 10px 14px;
+    margin: 0;
+  }
+  .filter-detail .fread-note b { color: var(--navy); }
+  @media (prefers-reduced-motion: reduce) {
+    .filter-box, .filter-box .fexpand-cue svg, .filter-detail-row {
+      transition-duration: 0.001ms !important;
+    }
+  }
   h2.section-title {
     font-family: 'Source Serif 4', serif;
     font-size: 1.65rem;
@@ -617,10 +725,147 @@
 <section class="filter-section">
   <h2 class="section-title">The Four-Question Filter</h2>
   <div class="filter-grid">
-    <div class="filter-box"><span class="fnum">Q1</span><h4>Financial Health</h4><p>ROE, ROCE, D/E, PAT margins — is the business fundamentally sound?</p></div>
-    <div class="filter-box"><span class="fnum">Q2</span><h4>Valuation</h4><p>P/E, P/BV weighed against listed peers — but only where the prospectus itself discloses a comparable set. No peer set is invented where none is disclosed; the multiple is then read on its own, not against a fabricated comparison.</p></div>
-    <div class="filter-box"><span class="fnum">Q3</span><h4>Fund Usage</h4><p>Growth capex, debt repayment, or OFS — where does the money go?</p></div>
-    <div class="filter-box"><span class="fnum">Q4</span><h4>Subscription</h4><p>Overall &amp; category multiples — does the market agree?</p></div>
+    <div class="filter-box" role="button" tabindex="0" aria-expanded="false" aria-controls="detail-health" data-detail="detail-health">
+      <span class="fnum">Q1</span><h4>Financial Health</h4>
+      <p>ROE, ROCE, D/E, PAT margins - is the business fundamentally sound?</p>
+      <span class="fexpand-cue">What do these mean <svg viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+    </div>
+    <div class="filter-box" role="button" tabindex="0" aria-expanded="false" aria-controls="detail-valuation" data-detail="detail-valuation">
+      <span class="fnum">Q2</span><h4>Valuation</h4>
+      <p>P/E, P/BV weighed against listed peers, but only where the prospectus itself discloses a comparable set. No peer set is invented where none is disclosed; the multiple is then read on its own, not against a fabricated comparison.</p>
+      <span class="fexpand-cue">What do these mean <svg viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+    </div>
+    <div class="filter-box" role="button" tabindex="0" aria-expanded="false" aria-controls="detail-fundusage" data-detail="detail-fundusage">
+      <span class="fnum">Q3</span><h4>Fund Usage</h4>
+      <p>Growth capex, debt repayment, or OFS - where does the money go?</p>
+      <span class="fexpand-cue">What do these mean <svg viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+    </div>
+    <div class="filter-box" role="button" tabindex="0" aria-expanded="false" aria-controls="detail-subscription" data-detail="detail-subscription">
+      <span class="fnum">Q4</span><h4>Subscription</h4>
+      <p>Overall &amp; category multiples - does the market agree?</p>
+      <span class="fexpand-cue">What do these mean <svg viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+    </div>
+
+    <div class="filter-detail-row" id="row-detail-health"><div>
+      <div class="filter-detail" id="detail-health">
+        <h5>Financial Health, what each metric measures</h5>
+        <div class="fmetric-grid">
+          <div class="fmetric">
+            <span class="fm-name">ROE (Return on Equity)</span>
+            <span class="fm-formula">Net Profit / Shareholders' Equity</span>
+            <p>How much profit the company generates for every rupee shareholders have invested. Higher is generally better; compare against the sector, not in isolation.</p>
+          </div>
+          <div class="fmetric">
+            <span class="fm-name">ROCE (Return on Capital Employed)</span>
+            <span class="fm-formula">EBIT / (Total Assets - Current Liabilities)</span>
+            <p>Return on all capital deployed in the business, both debt and equity. A better read than ROE alone for capital-intensive or leveraged businesses.</p>
+          </div>
+          <div class="fmetric">
+            <span class="fm-name">RoNW (Return on Net Worth)</span>
+            <span class="fm-formula">PAT / Net Worth</span>
+            <p>Similar to ROE; SEBI disclosures typically report this figure directly in the restated financial statements.</p>
+          </div>
+          <div class="fmetric">
+            <span class="fm-name">D/E (Debt-to-Equity)</span>
+            <span class="fm-formula">Total Debt / Shareholders' Equity</span>
+            <p>How leveraged the company is. Zero debt renders as "0.00 (zero debt)" in the tables below. Rising D/E year over year is a leverage flag worth weighing against the issue's stated use of proceeds.</p>
+          </div>
+          <div class="fmetric">
+            <span class="fm-name">PAT Margin</span>
+            <span class="fm-formula">Net Profit / Revenue</span>
+            <p>How much of every rupee of revenue converts to bottom-line profit. Thin margins on a large revenue base signal a low-margin, high-volume business model.</p>
+          </div>
+          <div class="fmetric">
+            <span class="fm-name">EBITDA Margin</span>
+            <span class="fm-formula">EBITDA / Revenue</span>
+            <p>Operating profitability before interest, tax, depreciation and amortisation; strips out capital-structure and accounting effects to compare core operating performance.</p>
+          </div>
+        </div>
+        <p class="fread-note"><b>How the Health tag is set:</b> each card's "Health: Strong / Mixed / Caution" tag comes from the 3-year revenue and PAT trend (growing, flat, or declining) combined with the D/E trajectory, read together rather than off any single ratio.</p>
+      </div>
+    </div></div>
+
+    <div class="filter-detail-row" id="row-detail-valuation"><div>
+      <div class="filter-detail" id="detail-valuation">
+        <h5>Valuation, what each metric measures</h5>
+        <div class="fmetric-grid">
+          <div class="fmetric">
+            <span class="fm-name">EPS (Earnings Per Share)</span>
+            <span class="fm-formula">Net Profit / Shares Outstanding</span>
+            <p>Shown pre and post issue in the Valuation &amp; GMP table; post-issue EPS accounts for the new shares created by the fresh issue, so it is typically lower than pre-issue EPS.</p>
+          </div>
+          <div class="fmetric">
+            <span class="fm-name">P/E (Price-to-Earnings)</span>
+            <span class="fm-formula">Issue Price / EPS</span>
+            <p>What multiple of earnings an investor pays at the issue price. Shown pre and post issue; the post-issue figure is the more relevant one since it reflects the diluted share base after listing.</p>
+          </div>
+          <div class="fmetric">
+            <span class="fm-name">P/BV (Price-to-Book Value)</span>
+            <span class="fm-formula">Issue Price / Book Value per Share</span>
+            <p>What multiple of net asset value an investor pays. A P/BV above 1 means the market is pricing in future earnings power beyond the company's stated net worth.</p>
+          </div>
+          <div class="fmetric">
+            <span class="fm-name">Peer comparison</span>
+            <span class="fm-formula">Verbatim from RHP only</span>
+            <p>A peer multiple is cited only when that specific issue's own RHP discloses a "Comparison with Listed Industry Peers" table. No peer set is researched or guessed; where none is disclosed, the multiple is presented as a standalone read.</p>
+          </div>
+        </div>
+        <p class="fread-note"><b>How the Valuation tag is set:</b> "Attractive / Fair / Rich" reflects where the post-issue P/E (and P/BV) sits, benchmarked against the disclosed peer set when one exists, or read on its own merits when it does not.</p>
+      </div>
+    </div></div>
+
+    <div class="filter-detail-row" id="row-detail-fundusage"><div>
+      <div class="filter-detail" id="detail-fundusage">
+        <h5>Fund Usage, what each term means</h5>
+        <div class="fmetric-grid">
+          <div class="fmetric">
+            <span class="fm-name">Fresh Issue</span>
+            <span class="fm-formula">New shares, new capital</span>
+            <p>New shares are created and sold; the money raised goes directly to the company's own balance sheet to fund whatever the prospectus names (capex, debt repayment, working capital, acquisitions).</p>
+          </div>
+          <div class="fmetric">
+            <span class="fm-name">OFS (Offer for Sale)</span>
+            <span class="fm-formula">Existing shares, no new capital to the company</span>
+            <p>Existing shareholders (promoters, early investors) sell part of their own holding. The proceeds go to those sellers, not to the company; a pure-OFS issue raises no fresh capital for the business at all.</p>
+          </div>
+          <div class="fmetric">
+            <span class="fm-name">Objects of the Issue</span>
+            <span class="fm-formula">From the DRHP, verbatim</span>
+            <p>The specific line items the fresh-issue proceeds are earmarked for: growth capex, debt repayment, working capital, or general corporate purposes. Sourced from each prospectus's own "Objects of the Issue" section.</p>
+          </div>
+        </div>
+        <p class="fread-note"><b>How the Fund Use tag is set:</b> "Growth-led" means proceeds go mainly to expansion or capex; "Debt-heavy" means mainly loan repayment; "OFS-only" means no fresh capital reaches the company at all; "Mixed" spans more than one of these.</p>
+      </div>
+    </div></div>
+
+    <div class="filter-detail-row" id="row-detail-subscription"><div>
+      <div class="filter-detail" id="detail-subscription">
+        <h5>Subscription, what each term means</h5>
+        <div class="fmetric-grid">
+          <div class="fmetric">
+            <span class="fm-name">Overall subscription</span>
+            <span class="fm-formula">Shares bid for / Shares on offer</span>
+            <p>The headline multiple, e.g. "3.00x" means bids came in for three times the shares actually on offer, across all investor categories combined.</p>
+          </div>
+          <div class="fmetric">
+            <span class="fm-name">QIB (Qualified Institutional Buyers)</span>
+            <span class="fm-formula">Mutual funds, banks, insurers, FIIs</span>
+            <p>Large institutional investors. QIB demand is often read as the most informed vote of confidence, since these are professional investors with deeper access to management and diligence.</p>
+          </div>
+          <div class="fmetric">
+            <span class="fm-name">NII (Non-Institutional Investors)</span>
+            <span class="fm-formula">HNIs bidding above the retail limit</span>
+            <p>High-net-worth individuals and corporates bidding above the retail cap. Often the most leverage-sensitive and sentiment-driven category.</p>
+          </div>
+          <div class="fmetric">
+            <span class="fm-name">Retail</span>
+            <span class="fm-formula">Individual investors, up to the retail limit</span>
+            <p>Individual applicants bidding within the retail investment cap. Broad retail enthusiasm does not by itself confirm institutional conviction; the QIB read matters more for fundamentals-driven demand.</p>
+          </div>
+        </div>
+        <p class="fread-note"><b>How the Subscription tag is set:</b> "Very strong" and "Oversubscribed" reflect high overall and QIB multiples; "Building - Day N" marks a book still filling during bidding; "Undersubscribed" or "Not opened" mark weak or pre-bidding states.</p>
+      </div>
+    </div></div>
   </div>
   <div class="update-box">
     <h3>Update — 25 September 2026</h3>
@@ -2527,6 +2772,30 @@ function colorizePercents() {
   });
 }
 $(function() { colorizePercents(); });
+
+// Four-Question Filter: click-to-expand metric explainers
+$(function() {
+  $('.filter-box').on('click', function() {
+    var $box = $(this);
+    var detailId = $box.data('detail');
+    var $row = $('#row-' + detailId);
+    var isOpen = $box.hasClass('is-open');
+    // Close any other open box first (one explainer open at a time)
+    $('.filter-box.is-open').not($box).each(function() {
+      $(this).removeClass('is-open').attr('aria-expanded', 'false');
+      $('#row-' + $(this).data('detail')).removeClass('is-open');
+    });
+    $box.toggleClass('is-open', !isOpen);
+    $box.attr('aria-expanded', String(!isOpen));
+    $row.toggleClass('is-open', !isOpen);
+  });
+  $('.filter-box').on('keydown', function(e) {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      $(this).trigger('click');
+    }
+  });
+});
 </script>
 
 </body>
