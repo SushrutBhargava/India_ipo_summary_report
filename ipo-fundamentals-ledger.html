@@ -699,6 +699,24 @@
   .actionable-box p + p { margin-top: 10px; }
 
 
+
+  /* Market-moving news section */
+  .news-section { margin: 0 0 40px; }
+  .news-section .news-head { display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:8px; }
+  .news-asof { font-family:'IBM Plex Mono',monospace; font-size:0.7rem; color:#7a7060; letter-spacing:0.5px; text-transform:uppercase; }
+  .news-snapshot { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin:0 0 22px; }
+  .news-snapshot .sentiment-stat { background:#fffdf6; }
+  .news-section h3 { font-family:'Source Serif 4',serif; font-size:1.08rem; color:var(--navy); margin:26px 0 10px; text-wrap:balance; }
+  .news-section table.ledger-table { margin-bottom:18px; }
+  .news-section td.nw-date { font-family:'IBM Plex Mono',monospace; font-size:0.72rem; white-space:nowrap; color:var(--navy); font-weight:600; }
+  .impact { font-family:'IBM Plex Mono',monospace; font-size:0.64rem; padding:2px 8px; border-radius:10px; font-weight:700; white-space:nowrap; border:1px solid; display:inline-block; }
+  .impact-neg { background:#f3dcdc; color:var(--red); border-color:var(--red); }
+  .impact-pos { background:#dcefe0; color:var(--green); border-color:var(--green); }
+  .impact-mixed { background:#f5eccb; color:var(--amber); border-color:var(--amber); }
+  .nw-status { font-family:'IBM Plex Mono',monospace; font-size:0.64rem; padding:2px 8px; border-radius:10px; background:#eef1f8; color:var(--navy); border:1px solid rgba(20,33,61,0.25); white-space:nowrap; display:inline-block; }
+  .news-bottom { background:var(--parchment-dark); border-left:4px solid var(--gold); border-radius:0 8px 8px 0; padding:14px 18px; font-size:0.87rem; color:#3a3226; margin:22px 0 10px; }
+  .news-sources { font-size:0.74rem; color:#5a5040; margin:8px 0 0; }
+  @media (max-width: 760px) { .news-snapshot { grid-template-columns:repeat(2,1fr); } }
 </style>
 </head>
 <body>
@@ -884,6 +902,53 @@
     <p class="read-tag">Read: <span class="read-tag read-neutral">Neutral</span></p>
     <p>Both benchmarks bounced back today — Sensex +0.43% to 73,895.74, Nifty +0.34% to 23,140.50 — clawing back roughly a third of yesterday's sharp sell-off. DII buying (+₹4,301.18 Cr on 24 Sep, the latest arrear-published print) continued to offset FII selling (-₹5,027.36 Cr same day), the same domestic-cushion pattern that's held for several sessions now. With a heavy 28-issue tracked cohort — 18 currently open across four mainboard names (Runwal Enterprises, Orient Cables, German Green Steel &amp; Power, Acevector) that opened today plus a wide SME slate — and no fresh macro shock reported, the setup for listing-day pops over the next 5-10 sessions is mixed-to-supportive: a steadying index gives room for GMP and subscription strength to translate into real listing gains, but yesterday's volatility is a reminder that gap-ups on thin demand can reverse fast.</p>
   </div>
+</section>
+
+<section class="news-section" id="market-news">
+  <div class="news-head">
+    <h2 class="section-title">Market-Moving News — Next 2–5 Weeks</h2>
+    <span class="news-asof">As of 25 Sep 2026, 10:48 PM IST</span>
+  </div>
+  <p class="section-desc">Scheduled events, policy changes and laws that can move Indian equities, and so listing-day demand for the IPOs above. Tone is risk-off: seven straight weekly losses, Brent near $105, rupee near 96/$, and steady FII selling.</p>
+  <div class="news-snapshot">
+    <div class="sentiment-stat"><span class="lbl">Nifty 50 (25 Sep)</span><b>23,140.50</b><small>7th straight weekly fall (−0.9% week)</small></div>
+    <div class="sentiment-stat"><span class="lbl">Brent crude</span><b>~$105.5/bbl</b><small>Hormuz risk, Houthi attacks; US-Iran truce talk is the upside</small></div>
+    <div class="sentiment-stat"><span class="lbl">Rupee (25 Sep close)</span><b>95.81/$</b><small>Record low 96.39 (May); RBI defending near 96</small></div>
+    <div class="sentiment-stat"><span class="lbl">FPI flows, Sep to date</span><b>−₹23,676 Cr</b><small>Through exchanges, up to 19 Sep (NSDL)</small></div>
+  </div>
+
+  <h3>Event calendar</h3>
+  <div class="table-scroll"><table class="ledger-table">
+    <thead><tr><th>Date</th><th>Event</th><th>Most exposed</th><th>What to watch</th><th>Likely bias</th></tr></thead>
+    <tbody>
+      <tr><td class="nw-date">29 Sep</td><td>NSE monthly F&amp;O expiry</td><td>Index-wide; India VIX jumped ~23% on 24 Sep</td><td>Expect wide swings around expiry</td><td><span class="impact impact-mixed">Mixed</span></td></tr>
+      <tr><td class="nw-date">1 Oct</td><td>Auto sales and GST collection data</td><td>Autos, consumption</td><td>Read on demand despite high fuel prices</td><td><span class="impact impact-mixed">Mixed</span></td></tr>
+      <tr><td class="nw-date">5–7 Oct</td><td>RBI monetary policy (repo 5.25%, neutral stance)</td><td>Banks, NBFCs, real estate, autos</td><td>Cut unlikely with crude &gt;$100 and rupee near 96/$; tone on inflation and rupee matters most</td><td><span class="impact impact-mixed">Mixed</span></td></tr>
+      <tr><td class="nw-date">7 Oct</td><td>GST Council meeting</td><td>Broad</td><td>Sources say process reforms only, no rate change expected</td><td><span class="impact impact-mixed">Mixed</span></td></tr>
+      <tr><td class="nw-date">8 Oct</td><td>TCS Q2 FY27 results (HCLTech, Infosys, HDFC Bank, Axis Bank follow)</td><td>IT, banks</td><td>IT fell 2.4% this week, 4th weekly loss; guidance sets sector tone</td><td><span class="impact impact-mixed">Mixed</span></td></tr>
+      <tr><td class="nw-date">15 Oct</td><td>0.4% MDR on UPI merchant payments above ₹2,000</td><td>Paytm, Pine Labs, banks</td><td>Payer does not pay; brokerages call it a revenue pool for payments firms</td><td><span class="impact impact-pos">Positive</span></td></tr>
+      <tr><td class="nw-date">~18 Oct</td><td>US Russia-sanctions tariffs can start (30 days after 18 Sep signing)</td><td>Exporters (textiles, apparel), refiners/OMCs, metals</td><td>Up to 100% tariff on top buyers of Russian crude; India #2. Not automatic; waiver possible</td><td><span class="impact impact-neg">Negative</span></td></tr>
+      <tr><td class="nw-date">25 Oct</td><td>IRDAI commission/expense-cap comments close</td><td>HDFC Life, ICICI Pru Life, Max Financial, PB Fintech</td><td>Implementation proposed from FY28; any softening is an upside trigger</td><td><span class="impact impact-neg">Negative</span></td></tr>
+      <tr><td class="nw-date">28 Oct</td><td>US Fed FOMC decision</td><td>FII flows, rupee, IT</td><td>Futures price hikes toward ~4.3% by December; hike = stronger dollar, more FII selling</td><td><span class="impact impact-neg">Negative</span></td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>Policy, regulation and legislation</h3>
+  <div class="table-scroll"><table class="ledger-table">
+    <thead><tr><th>Item</th><th>Status</th><th>What it does</th><th>Market bias</th></tr></thead>
+    <tbody>
+      <tr><td class="tcell-name" style="white-space:normal">US Sanctioning Russia and Iran Act, 2026</td><td><span class="nw-status">Signed 18 Sep</span></td><td>Power to tariff top-5 Russian oil/gas buyers up to 100%, stacked on 10% Section 301 and 50% Section 232 duties. Russia was ~45–51% of India's crude imports (Aug/Jul).</td><td><span class="impact impact-neg">Negative</span></td></tr>
+      <tr><td class="tcell-name" style="white-space:normal">IRDAI "Recalibrating Economics of Insurance Distribution"</td><td><span class="nw-status">Consultation to 25 Oct</span></td><td>Life EoM cap 15% of GDPI in 2 yrs, 12.5% in 5 yrs; single-premium credit-life commission 2%; health renewal commission 5% (entity) / 10% (agent). 24 Sep: Max Financial −9.7%, HDFC Life −5.0%, ICICI Pru Life −3.4%, SBI Life −0.1%.</td><td><span class="impact impact-neg">Negative</span></td></tr>
+      <tr><td class="tcell-name" style="white-space:normal">SEBI board decisions, 24 Sep 2026</td><td><span class="nw-status">Approved</span></td><td>New PMS regulations (PMS can buy IPOs, overseas securities, up to 10% in unlisted investment-grade debt); FPIs allowed in non-agri commodity derivatives; depository receipts for REITs/InvITs.</td><td><span class="impact impact-pos">Positive</span></td></tr>
+      <tr><td class="tcell-name" style="white-space:normal">Taxation and Other Laws (Amendment) Act, 2026</td><td><span class="nw-status">Law since 17 Aug</span></td><td>Tax exemptions for certain foreign investors in government securities; gives government power to set payment MDR (legal basis for the UPI levy).</td><td><span class="impact impact-pos">Positive</span></td></tr>
+      <tr><td class="tcell-name" style="white-space:normal">Securities Markets Code, 2025</td><td><span class="nw-status">Committee report 23 Jul</span></td><td>Merges SEBI Act, SCRA and Depositories Act. Money penalties replace jail for most violations; 8-year limit on new SEBI probes; government can exempt PSUs from SEBI governance rules. Likely next session.</td><td><span class="impact impact-mixed">Mixed</span></td></tr>
+      <tr><td class="tcell-name" style="white-space:normal">US HIRE Act (S. 2976)</td><td><span class="nw-status">Stalled in Senate</span></td><td>Proposed 25% excise tax on outsourcing payments. No progress found since Feb 2026; headline risk for IT only.</td><td><span class="impact impact-mixed">Mixed</span></td></tr>
+      <tr><td class="tcell-name" style="white-space:normal">US government funding (H.R. 6500)</td><td><span class="nw-status">Law since 2 Sep</span></td><td>Funds US government to 11 Dec; no shutdown on 30 Sep.</td><td><span class="impact impact-pos">Positive</span></td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="news-bottom"><strong>What it means for IPO listings:</strong> Listing-day pops need a steady index. The three dates most likely to swing sentiment are RBI on 7 Oct, TCS on 8 Oct, and the possible US tariff start around 18 Oct. Issues from export-heavy, oil-linked, insurance or fintech businesses carry extra exposure to the items above. Upside triggers: a US-Iran truce, Brent back below $100, or FII buying.</div>
+  <p class="news-sources">Sources: BusinessLine market wrap (25 Sep); SEBI press release PR 59/2026 and Moneycontrol, Fortune India, New Indian Express coverage; PRS Legislative Research (Securities Markets Code); EcoNiti brief on the US sanctions law; Business Today and RetailIntel on IRDAI. Fed odds, FPI totals, UPI MDR, RBI and results dates come from search-result summaries, not full articles. Not investment advice.</p>
 </section>
 
 
@@ -2761,6 +2826,8 @@ function colorizePercents() {
     // a <br><span class="tsub">) — rewriting via .text()/.html() would
     // destroy that markup. Only touch cells whose content is plain text.
     if ($(this).children().length > 0) return;
+    // News tables quote caps/limits (e.g. "100% tariff"), not gains; leave uncoloured.
+    if ($(this).closest('.news-section').length) return;
     var txt = $(this).text();
     if (txt.indexOf('%') === -1) return;
     txt = txt.replace(/(\+?\d+\.?\d*%)(\s|$)/g, function(m, p1, p2) {
