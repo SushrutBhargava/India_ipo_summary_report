@@ -717,6 +717,33 @@
   .news-bottom { background:var(--parchment-dark); border-left:4px solid var(--gold); border-radius:0 8px 8px 0; padding:14px 18px; font-size:0.87rem; color:#3a3226; margin:22px 0 10px; }
   .news-sources { font-size:0.74rem; color:#5a5040; margin:8px 0 0; }
   @media (max-width: 760px) { .news-snapshot { grid-template-columns:repeat(2,1fr); } }
+
+  /* Collapsible scorecard cards */
+  .scorecard-controls { display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap; margin:-6px 0 16px; }
+  .scorecard-hint { font-size:0.8rem; color:#6a6050; }
+  .card-toggle-all {
+    font-family:'IBM Plex Mono',monospace; font-size:0.72rem; letter-spacing:0.3px;
+    background:#fffdf6; color:var(--navy); border:1px solid rgba(20,33,61,0.3); border-radius:14px;
+    padding:5px 12px; cursor:pointer;
+    transition-property: background-color, transform; transition-duration: 0.15s; transition-timing-function: ease;
+  }
+  .card-toggle-all:hover { background:#eef1f8; }
+  .card-toggle-all:active { transform: scale(0.98); }
+  .ledger-card { padding: 0; }
+  .card-summary { padding: 14px 20px 12px; cursor: pointer; border-radius: var(--card-radius); outline: none; }
+  .card-summary:focus-visible { box-shadow: 0 0 0 2px var(--gold); }
+  .card-summary .card-head h3 { margin-bottom: 2px; }
+  .card-summary .card-suggestion { margin: 8px 0 6px; }
+  .card-expand-cue { display:inline-flex; align-items:center; gap:5px; font-family:'IBM Plex Mono',monospace; font-size:0.7rem; color:var(--gold); letter-spacing:0.3px; }
+  .card-expand-cue svg { width:11px; height:11px; transition: transform 0.2s ease; }
+  .card-expand-cue .cue-less { display:none; }
+  .ledger-card.is-open .card-expand-cue .cue-more { display:none; }
+  .ledger-card.is-open .card-expand-cue .cue-less { display:inline; }
+  .ledger-card.is-open .card-expand-cue svg { transform: rotate(180deg); }
+  .card-details { display:none; padding: 0 20px 18px; border-top: 1px dashed rgba(20,33,61,0.15); padding-top: 12px; }
+  .ledger-card.is-open .card-details { display:block; }
+  @media print { .card-details { display:block !important; } .card-expand-cue, .scorecard-controls { display:none; } }
+  .card-summary .card-meta-line { margin: 4px 0 2px; }
 </style>
 </head>
 <body>
@@ -954,12 +981,22 @@
 
 <section class="scorecard-section">
   <h2 class="section-title">Scorecard — 25 Issues, Sorted by Status (Open → Upcoming → Closed)</h2>
+  <div class="scorecard-controls">
+    <span class="scorecard-hint">Click any card to see its full analysis.</span>
+    <button type="button" class="card-toggle-all" aria-pressed="false">Expand all</button>
+  </div>
 <div class="ledger-card" id="card-moneyview">
+  <div class="card-summary" role="button" tabindex="0" aria-expanded="false" aria-controls="details-moneyview">
     <div class="card-head">
       <h3>Moneyview <span class="seg-label">Mainboard</span></h3>
       <span class="status-badge badge-open">Open</span>
     </div>
-<div class="card-meta-line">₹32-34 · Issue size <span class="issue-size">₹1,092 Cr</span> · 24 Sep-28 Sep 2026 · 6.22x overall (QIB 0.26x) · as of 25 Sep 2026, 5:07 PM IST (Day 2 close, bidding ends 28 Sep) · GMP ₹13.5 (39.71%)</div>
+    <div class="card-meta-line">₹32-34 · Issue size <span class="issue-size">₹1,092 Cr</span> · 24 Sep-28 Sep 2026 · 6.22x overall (QIB 0.26x) · as of 25 Sep 2026, 5:07 PM IST (Day 2 close, bidding ends 28 Sep) · GMP ₹13.5 (39.71%)</div>
+    <p class="card-suggestion"><strong>Suggestion:</strong> Strong GMP (39.71%) and a 6.22x book on an attractive valuation, but QIBs have barely bid (0.26x) — apply for listing gains; size any long-term position cautiously</p>
+    <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+  </div>
+  <div class="card-details" id="details-moneyview">
+
     <div class="lead-manager-box lmbox-mixed"><strong>Lead manager(s):</strong> Axis Capital Ltd., BOFA Securities India Ltd., IIFL Capital Services Ltd., Kotak Mahindra Capital Co.Ltd.</div>
 <div class="card-tags">
       <span class="tag tag-mixed">Health: Mixed</span>
@@ -985,15 +1022,21 @@
     <p class="card-prose">
 Moneyview Ltd. is a digital-lending fintech platform offering personal loans as its flagship product, alongside credit tracking, insurance, credit cards, digital gold, payments and earned-wage-access services delivered through a mobile app, with 140.28 million registered users and 48 integrated financial partners (banks, NBFCs, insurers) as of June 2026. <span class="highlight-dev">More than 50% of the company's workforce is engaged in technology and data roles, and net IPO proceeds of ₹325 Cr are earmarked specifically to drive growth in loan disbursals under default-loss-guarantee (DLG) arrangements with lending partners — a direct, quantified growth-capital use rather than generic working capital.</span> India's digital lending and consumer-fintech sector continues to expand rapidly on smartphone penetration and formal-credit outreach into underserved "Middle India" borrowers, though the segment also faces tightening RBI digital-lending-guideline scrutiny. <span class="val-nodata">The prospectus's own valuation table does not carry a current-year comparable listed-fintech-peer P/E table alongside the post-issue 8.61x multiple, so this is presented as a standalone read on the multiple rather than a peer comparison.</span> The four-bank lead-manager bench — Axis Capital, BOFA Securities India, IIFL Capital Services, and Kotak Mahindra Capital — is assessed as Mixed: two of the four (BOFA, Kotak) carry Strong 2026 mainboard records while the other two (Axis, IIFL) are a step behind at Solid.
 </p>
-    <p class="card-suggestion"><strong>Suggestion:</strong> Strong GMP (39.71%) and a 6.22x book on an attractive valuation, but QIBs have barely bid (0.26x) — apply for listing gains; size any long-term position cautiously</p>
   </div>
+</div>
 
 <div class="ledger-card" id="card-a-one-steels-india">
+  <div class="card-summary" role="button" tabindex="0" aria-expanded="false" aria-controls="details-a-one-steels-india">
     <div class="card-head">
       <h3>A-One Steels India <span class="seg-label">Mainboard</span></h3>
       <span class="status-badge badge-open">Open</span>
     </div>
-<div class="card-meta-line">₹385-405 · Issue size <span class="issue-size">₹405 Cr</span> · 24 Sep-28 Sep 2026 · 1.43x overall (QIB 0.10x) · as of 25 Sep 2026, 5:06 PM IST (Day 2 close, bidding ends 28 Sep) · GMP ₹51 (12.59%)</div>
+    <div class="card-meta-line">₹385-405 · Issue size <span class="issue-size">₹405 Cr</span> · 24 Sep-28 Sep 2026 · 1.43x overall (QIB 0.10x) · as of 25 Sep 2026, 5:06 PM IST (Day 2 close, bidding ends 28 Sep) · GMP ₹51 (12.59%)</div>
+    <p class="card-suggestion"><strong>Suggestion:</strong> Decent GMP but debt-heavy fund use and mixed fundamentals — listing gains only</p>
+    <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+  </div>
+  <div class="card-details" id="details-a-one-steels-india">
+
     <div class="lead-manager-box lmbox-mixed"><strong>Lead manager(s):</strong> PL Capital Markets Pvt.Ltd.</div>
 <div class="card-tags">
       <span class="tag tag-mixed">Health: Mixed</span>
@@ -1019,15 +1062,21 @@ Moneyview Ltd. is a digital-lending fintech platform offering personal loans as 
     <p class="card-prose">
 A-One Steels India Ltd. is a backward-integrated steel manufacturer producing a diversified mix of long and flat steel products — TMT bars, HR and CR coils, pipes and galvanized tubes — plus industrial by-products (sponge iron, met coke, silicon manganese/ferrosilicon) across six plants in Karnataka and Andhra Pradesh, serving construction, infrastructure and industrial end-markets. <span class="highlight-dev">The company is setting up a 10 MW waste-heat-recovery power plant on 39.29 acres at its Koppal facility, and already sources a materially higher share of green power than peers via 15-to-25-year solar and wind power-purchase agreements — a concrete captive-energy and sustainability build-out beyond core steelmaking.</span> India's steel sector continues to benefit from sustained infrastructure and construction capex, though it remains a cyclical, commodity-priced business exposed to raw-material and freight-cost swings. <span class="val-nodata">The prospectus's own disclosed valuation table does not carry a comparable listed-steel-peer P/E set alongside its own multiples, so the post-issue P/E of 24.55x is presented as a standalone read, not a peer comparison.</span> The lead manager — PL Capital Markets Pvt.Ltd. — is assessed as Mixed bench: of its 3 previously listed mandates, only 1 closed positive (Gala Precision Engineering +36.3%), against two negative closes (Laxmi India Finance -13.0%, Rajshree Polypack -7.5%).
 </p>
-    <p class="card-suggestion"><strong>Suggestion:</strong> Decent GMP but debt-heavy fund use and mixed fundamentals — listing gains only</p>
   </div>
+</div>
 
 <div class="ledger-card" id="card-peshwa-wheat">
+  <div class="card-summary" role="button" tabindex="0" aria-expanded="false" aria-controls="details-peshwa-wheat">
     <div class="card-head">
       <h3>Peshwa Wheat <span class="seg-label">SME</span></h3>
       <span class="status-badge badge-open">Open</span>
     </div>
-<div class="card-meta-line">₹95-101 · Issue size <span class="issue-size">₹54 Cr</span> · 24 Sep-28 Sep 2026 · 2.03x overall (QIB 177.12x) · as of 25 Sep 2026, 5:07 PM IST (Day 2 close, bidding ends 28 Sep) · GMP not yet active</div>
+    <div class="card-meta-line">₹95-101 · Issue size <span class="issue-size">₹54 Cr</span> · 24 Sep-28 Sep 2026 · 2.03x overall (QIB 177.12x) · as of 25 Sep 2026, 5:07 PM IST (Day 2 close, bidding ends 28 Sep) · GMP not yet active</div>
+    <p class="card-suggestion"><strong>Suggestion:</strong> Strong fundamentals and a healthy 2.03x book despite no GMP print yet — apply for long term, watch for GMP before a listing-gains flip</p>
+    <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+  </div>
+  <div class="card-details" id="details-peshwa-wheat">
+
     <div class="lead-manager-box lmbox-mixed"><strong>Lead manager(s):</strong> Finaax Capital Advisors Pvt.Ltd.</div>
 <div class="card-tags">
       <span class="tag tag-strong">Health: Strong</span>
@@ -1053,15 +1102,21 @@ A-One Steels India Ltd. is a backward-integrated steel manufacturer producing a 
     <p class="card-prose">
 Peshwa Wheat Ltd. processes wheat into Atta, Sortex Wheat, Broken Wheat and other flour products including gram flour and maize flour at an integrated milling facility in Indore, Madhya Pradesh, with wheat-bran by-product sold as cattle feed to run a zero-waste operation. <span class="highlight-dev">Net proceeds of ₹6.69 Cr are earmarked for new plant-and-machinery capex and ₹5.01 Cr for civil construction to expand the Indore facility, alongside ₹26.50 Cr for working capital — a fully fresh-issue, growth-capex-led use of proceeds with no debt repayment or promoter cash-out.</span> India's packaged wheat-flour and staples-processing sector continues to formalise and consolidate as branded, quality-certified millers take share from unorganised local mills, supported by rising urban demand for packaged atta. <span class="val-nodata">The prospectus does not disclose a comparable listed-peer set for this regional flour-milling business, so the post-issue P/E of 12.15x is a standalone read.</span> The lead manager — Finaax Capital Advisors Pvt.Ltd. — is assessed as Mixed bench: its single 2026 SME mandate listed positively but at only a +0.72% average gain, too small a sample to call it Strong or Solid outright.
 </p>
-    <p class="card-suggestion"><strong>Suggestion:</strong> Strong fundamentals and a healthy 2.03x book despite no GMP print yet — apply for long term, watch for GMP before a listing-gains flip</p>
   </div>
+</div>
 
 <div class="ledger-card" id="card-roopa-screen">
+  <div class="card-summary" role="button" tabindex="0" aria-expanded="false" aria-controls="details-roopa-screen">
     <div class="card-head">
       <h3>Roopa Screen <span class="seg-label">SME</span></h3>
       <span class="status-badge badge-open">Open</span>
     </div>
-<div class="card-meta-line">₹60-64 · Issue size <span class="issue-size">₹19 Cr</span> · 24 Sep-28 Sep 2026 · 5.35x overall (QIB 2.57x) · as of 25 Sep 2026, 5:07 PM IST (Day 2 close, bidding ends 28 Sep) · GMP ₹0 (0.00%, peaked at ₹14)</div>
+    <div class="card-meta-line">₹60-64 · Issue size <span class="issue-size">₹19 Cr</span> · 24 Sep-28 Sep 2026 · 5.35x overall (QIB 2.57x) · as of 25 Sep 2026, 5:07 PM IST (Day 2 close, bidding ends 28 Sep) · GMP ₹0 (0.00%, peaked at ₹14)</div>
+    <p class="card-suggestion"><strong>Suggestion:</strong> Cheap valuation, Strong-bench lead manager and a 5.35x book, but GMP has faded to zero — apply for long term on fundamentals, not for listing gains</p>
+    <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+  </div>
+  <div class="card-details" id="details-roopa-screen">
+
     <div class="lead-manager-box lmbox-strong"><strong>Lead manager(s):</strong> Seren Capital Pvt.Ltd.</div>
 <div class="card-tags">
       <span class="tag tag-strong">Health: Strong</span>
@@ -1087,15 +1142,21 @@ Peshwa Wheat Ltd. processes wheat into Atta, Sortex Wheat, Broken Wheat and othe
     <p class="card-prose">
 Roopa Screen Ltd. manufactures rotary nickel screens — cylindrical, perforated metal stencils used in rotary screen-printing machines for continuous fabric printing — at its Ahmedabad facility, supplying over 200 textile-printing customers across India, mainly in Gujarat, Maharashtra, Haryana, Punjab and Tamil Nadu, and also trades nickel cathodes as a supporting raw material for its own production. <span class="highlight-dev">Net proceeds of ₹9.90 Cr fund a new manufacturing facility, on top of ₹6.00 Cr for working capital — a fully fresh-issue capacity-expansion raise with no OFS component and no promoter cash-out.</span> India's textile-printing industry, which this business supplies as a B2B input manufacturer, continues to benefit from steady domestic fabric-printing demand and export order flow from the Gujarat textile hub. <span class="val-nodata">The prospectus does not disclose a comparable listed-peer set for this specialised rotary-screen manufacturing niche, so the post-issue P/E of 10.92x is a standalone read.</span> The lead manager — Seren Capital Pvt.Ltd. — is assessed as Strong bench: 5 SME IPOs in 2026, 80% positive listings, +28.27% average listing-day gain.
 </p>
-    <p class="card-suggestion"><strong>Suggestion:</strong> Cheap valuation, Strong-bench lead manager and a 5.35x book, but GMP has faded to zero — apply for long term on fundamentals, not for listing gains</p>
   </div>
+</div>
 
 <div class="ledger-card" id="card-acevector">
+  <div class="card-summary" role="button" tabindex="0" aria-expanded="false" aria-controls="details-acevector">
     <div class="card-head">
       <h3>Acevector Ltd <span class="seg-label">Mainboard</span></h3>
       <span class="status-badge badge-open">Open</span>
     </div>
-<div class="card-meta-line">Rs.30-32 · Issue size <span class="issue-size">Rs.420 Cr</span> · 25 Sep-29 Sep 2026 · 0.24x overall (QIB 0.00x) · as of 25 Sep 2026, 5:06 PM IST (Day 1 close, bidding ends 29 Sep) · GMP ₹2 (6.25%)</div>
+    <div class="card-meta-line">Rs.30-32 · Issue size <span class="issue-size">Rs.420 Cr</span> · 25 Sep-29 Sep 2026 · 0.24x overall (QIB 0.00x) · as of 25 Sep 2026, 5:06 PM IST (Day 1 close, bidding ends 29 Sep) · GMP ₹2 (6.25%)</div>
+    <p class="card-suggestion"><strong>Suggestion:</strong> Listing gains only, small stake, high risk — skip for long term</p>
+    <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+  </div>
+  <div class="card-details" id="details-acevector">
+
     <div class="lead-manager-box lmbox-mixed"><strong>Lead manager(s):</strong> IIFL Capital Services Ltd., CLSA India Pvt.Ltd., Systematix Corporate Services Ltd.</div>
 <div class="card-tags">
       <span class="tag tag-weak">Health: Caution</span>
@@ -1120,15 +1181,21 @@ Roopa Screen Ltd. manufactures rotary nickel screens — cylindrical, perforated
     <p class="card-prose">
 EBITDA and PAT both negative (loss-making, cash-burn business with Snapdeal/Uniware/Stellaro Brands verticals); GMP only ₹2 (6.25%), a thin cushion. No lender confidence for loss-making issuers. Price band Rs.30-32 is attractive/cheap in absolute terms and a modest listing pop is plausible if allotted, but the business shows no path to profitability disclosed in the RHP — not suited for a long-term hold. The lead-manager bench (IIFL Solid, CLSA and Systematix Strong-but-thin-sample) is genuinely mixed, adding no extra conviction either way.
 </p>
-    <p class="card-suggestion"><strong>Suggestion:</strong> Listing gains only, small stake, high risk — skip for long term</p>
   </div>
+</div>
 
 <div class="ledger-card" id="card-runwal-enterprises">
+  <div class="card-summary" role="button" tabindex="0" aria-expanded="false" aria-controls="details-runwal-enterprises">
     <div class="card-head">
       <h3>Runwal Enterprises Ltd <span class="seg-label">Mainboard</span></h3>
       <span class="status-badge badge-open">Open</span>
     </div>
-<div class="card-meta-line">Rs.290-305 · Issue size <span class="issue-size">Rs.499.83 Cr</span> · 25 Sep-29 Sep 2026 · 0.44x overall (QIB 1.01x) · as of 25 Sep 2026, 5:05 PM IST (Day 1 close, bidding ends 29 Sep) · GMP ₹16 (5.25%)</div>
+    <div class="card-meta-line">Rs.290-305 · Issue size <span class="issue-size">Rs.499.83 Cr</span> · 25 Sep-29 Sep 2026 · 0.44x overall (QIB 1.01x) · as of 25 Sep 2026, 5:05 PM IST (Day 1 close, bidding ends 29 Sep) · GMP ₹16 (5.25%)</div>
+    <p class="card-suggestion"><strong>Suggestion:</strong> Listing gains, not long term</p>
+    <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+  </div>
+  <div class="card-details" id="details-runwal-enterprises">
+
     <div class="lead-manager-box lmbox-mixed"><strong>Lead manager(s):</strong> ICICI Securities Ltd., Jefferies India Pvt. Ltd.</div>
 <div class="card-tags">
       <span class="tag tag-strong">Health: Strong</span>
@@ -1153,15 +1220,21 @@ EBITDA and PAT both negative (loss-making, cash-burn business with Snapdeal/Uniw
     <p class="card-prose">
 Mumbai real-estate developer (19 completed, 28 ongoing, 33 upcoming projects), ranked 3rd in its core Mumbai submarket by new launches. GMP of ₹16 (5.25%, down from a ₹37 high) shows only modest listing-day demand and margins (19.44% EBITDA) are decent for the sector. But this is a fully fresh-issue raise used mainly to cut debt, not fund growth, and real-estate earnings are cyclical/lumpy (revenue base itself grew from a small prior-year print). At best a small listing-day flip; not a conviction long-term hold on the disclosed financials alone. Lead manager ICICI Securities has a strong 2026 book (75% positive, +20.52% avg gain), but co-manager Jefferies India has no listed track record yet — a mixed bench overall.
 </p>
-    <p class="card-suggestion"><strong>Suggestion:</strong> Listing gains, not long term</p>
   </div>
+</div>
 
 <div class="ledger-card" id="card-orient-cables">
+  <div class="card-summary" role="button" tabindex="0" aria-expanded="false" aria-controls="details-orient-cables">
     <div class="card-head">
       <h3>Orient Cables (India) Ltd <span class="seg-label">Mainboard</span></h3>
       <span class="status-badge badge-open">Open</span>
     </div>
-<div class="card-meta-line">Rs.258-272 · Issue size <span class="issue-size">Rs.552 Cr</span> · 25 Sep-29 Sep 2026 · 2.07x overall (QIB 0.01x) · as of 25 Sep 2026, 5:07 PM IST (Day 1 close, bidding ends 29 Sep) · GMP ₹80 (29.41%)</div>
+    <div class="card-meta-line">Rs.258-272 · Issue size <span class="issue-size">Rs.552 Cr</span> · 25 Sep-29 Sep 2026 · 2.07x overall (QIB 0.01x) · as of 25 Sep 2026, 5:07 PM IST (Day 1 close, bidding ends 29 Sep) · GMP ₹80 (29.41%)</div>
+    <p class="card-suggestion"><strong>Suggestion:</strong> Apply for both listing gains and long term</p>
+    <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+  </div>
+  <div class="card-details" id="details-orient-cables">
+
     <div class="lead-manager-box lmbox-strong"><strong>Lead manager(s):</strong> IIFL Capital Services Ltd., JM Financial Ltd.</div>
 <div class="card-tags">
       <span class="tag tag-strong">Health: Strong</span>
@@ -1186,15 +1259,21 @@ Mumbai real-estate developer (19 completed, 28 ongoing, 33 upcoming projects), r
     <p class="card-prose">
 India's #4 networking-cable maker (~22.9% share, up from ~16% in FY22), 97% domestic revenue, diversified end-markets (telecom, broadband, data centres, defence). Strongest GMP of the four (₹80, 29.41%) and healthiest growth/margin profile the host cited. Caveat from primary-source RHP data not in the video: the RHP shows a rich 51.81x P/E and 11.77x P/BV (on FY26 year-end NAV of Rs.23.11) — materially higher than the video's quoted 23.61x, so the valuation is not as cheap as the video implies; still the most fundamentally solid of the four on RoNW (25.84% FY26) and moderate leverage (0.94x net debt/equity), but size the long-term position with that richer multiple in mind. Both lead managers (IIFL, JM Financial) run Solid 2026 books, just under the Strong threshold.
 </p>
-    <p class="card-suggestion"><strong>Suggestion:</strong> Apply for both listing gains and long term</p>
   </div>
+</div>
 
 <div class="ledger-card" id="card-german-green-steel">
+  <div class="card-summary" role="button" tabindex="0" aria-expanded="false" aria-controls="details-german-green-steel">
     <div class="card-head">
       <h3>German Green Steel & Power Ltd <span class="seg-label">Mainboard</span></h3>
       <span class="status-badge badge-open">Open</span>
     </div>
-<div class="card-meta-line">Rs.132-139 · Issue size <span class="issue-size">Rs.303.90 Cr</span> · 25 Sep-29 Sep 2026 · 1.82x overall (QIB 1.39x) · as of 25 Sep 2026, 5:07 PM IST (Day 1 close, bidding ends 29 Sep) · GMP ₹26 (18.71%)</div>
+    <div class="card-meta-line">Rs.132-139 · Issue size <span class="issue-size">Rs.303.90 Cr</span> · 25 Sep-29 Sep 2026 · 1.82x overall (QIB 1.39x) · as of 25 Sep 2026, 5:07 PM IST (Day 1 close, bidding ends 29 Sep) · GMP ₹26 (18.71%)</div>
+    <p class="card-suggestion"><strong>Suggestion:</strong> Listing gains, moderate long-term potential</p>
+    <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+  </div>
+  <div class="card-details" id="details-german-green-steel">
+
     <div class="lead-manager-box lmbox-mixed"><strong>Lead manager(s):</strong> Systematix Corporate Services Ltd., Emkay Global Financial Services Ltd., Pantomath Capital Advisors Pvt. Ltd.</div>
 <div class="card-tags">
       <span class="tag tag-strong">Health: Strong</span>
@@ -1219,15 +1298,21 @@ India's #4 networking-cable maker (~22.9% share, up from ~16% in FY22), 97% dome
     <p class="card-prose">
 Gujarat-based TMT bar / MS billet / sponge iron maker under the 'German TMT' brand, ~98% revenue from Gujarat. Cheapest valuation of the four on primary-source data — 9.48x P/E, 1.79x P/BV, materially cheaper than the video's quoted 13.1x. GMP of ₹26 (18.71%) signals genuine demand. Commodity steel business with thin differentiation and cyclical demand — decent for listing gains, worth only a small long-term allocation given the low-moat product line. Lead-manager bench is mixed: Systematix's strong record rests on only 3 prior mandates, while co-managers Emkay and Pantomath are Solid but not standout.
 </p>
-    <p class="card-suggestion"><strong>Suggestion:</strong> Listing gains, moderate long-term potential</p>
   </div>
+</div>
 
 <div class="ledger-card" id="card-bench-mark-infotech-services">
+  <div class="card-summary" role="button" tabindex="0" aria-expanded="false" aria-controls="details-bench-mark-infotech-services">
     <div class="card-head">
       <h3>Bench Mark Infotech Services <span class="seg-label">SME</span></h3>
       <span class="status-badge badge-open">Open</span>
     </div>
-<div class="card-meta-line">₹104-110 · Issue size <span class="issue-size">₹42.44 Cr</span> · 25 Sep-29 Sep 2026 · 0.26x overall (QIB 0.00x) · as of 25 Sep 2026, 6:54 PM IST (Day 1 close, bidding ends 29 Sep) · GMP ₹16 (14.55%)</div>
+    <div class="card-meta-line">₹104-110 · Issue size <span class="issue-size">₹42.44 Cr</span> · 25 Sep-29 Sep 2026 · 0.26x overall (QIB 0.00x) · as of 25 Sep 2026, 6:54 PM IST (Day 1 close, bidding ends 29 Sep) · GMP ₹16 (14.55%)</div>
+    <p class="card-suggestion"><strong>Suggestion:</strong> Strong fundamentals and lead-manager bench, GMP 14.55% signals demand, but the book is still thin (0.26x) and valuation rich — small stake, watch subscription before committing</p>
+    <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+  </div>
+  <div class="card-details" id="details-bench-mark-infotech-services">
+
     <div class="lead-manager-box lmbox-strong"><strong>Lead manager(s):</strong> GYR Capital Advisors Pvt.Ltd.</div>
 <div class="card-tags">
       <span class="tag tag-strong">Health: Strong</span>
@@ -1253,15 +1338,21 @@ Gujarat-based TMT bar / MS billet / sponge iron maker under the 'German TMT' bra
     <p class="card-prose">
 Bench Mark Infotech Services Ltd. is an integrated IT and digital-infrastructure solutions provider delivering turnkey networking, structured cabling, fibre-optic, surveillance, audio-visual, and data-centre infrastructure projects to government departments, PSUs, and institutional and private-sector clients across India. <span class="highlight-dev">The company has begun offering Artificial Intelligence (AI) Lab Solutions — setting up AI labs with GPU-enabled computing platforms, enterprise storage and high-performance networking — a forward move from traditional IT-infrastructure integration into AI-ready data infrastructure.</span> India's government-led digital-infrastructure push (data centres, fibre backbone, e-governance networks) continues to expand the addressable market for turnkey system integrators serving the public sector. <span class="val-nodata">The prospectus does not disclose a comparable listed-peer set for this integrated IT-infrastructure segment, so the post-issue P/E of 15.36x is a standalone read, not a peer comparison.</span> The lead manager — GYR Capital Advisors Pvt.Ltd. — is assessed as Strong bench: 9 SME IPOs managed in 2026, 100% positive listings, +44.63% average listing-day gain.
 </p>
-    <p class="card-suggestion"><strong>Suggestion:</strong> Strong fundamentals and lead-manager bench, GMP 14.55% signals demand, but the book is still thin (0.26x) and valuation rich — small stake, watch subscription before committing</p>
   </div>
+</div>
 
 <div class="ledger-card" id="card-himalayan-solar">
+  <div class="card-summary" role="button" tabindex="0" aria-expanded="false" aria-controls="details-himalayan-solar">
     <div class="card-head">
       <h3>Himalayan Solar <span class="seg-label">SME</span></h3>
       <span class="status-badge badge-open">Open</span>
     </div>
-<div class="card-meta-line">₹98-103 · Issue size <span class="issue-size">₹68 Cr</span> · 25 Sep-29 Sep 2026 · 0.51x overall (QIB 0.85x) · as of 25 Sep 2026, 6:54 PM IST (Day 1 close, bidding ends 29 Sep) · GMP ₹0 (not active)</div>
+    <div class="card-meta-line">₹98-103 · Issue size <span class="issue-size">₹68 Cr</span> · 25 Sep-29 Sep 2026 · 0.51x overall (QIB 0.85x) · as of 25 Sep 2026, 6:54 PM IST (Day 1 close, bidding ends 29 Sep) · GMP ₹0 (not active)</div>
+    <p class="card-suggestion"><strong>Suggestion:</strong> Solid fundamentals; the book is at 0.51x after Day 1 with no GMP — small stake, watch demand before committing</p>
+    <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+  </div>
+  <div class="card-details" id="details-himalayan-solar">
+
     <div class="lead-manager-box lmbox-mixed"><strong>Lead manager(s):</strong> Finshore Management Services Ltd.</div>
 <div class="card-tags">
       <span class="tag tag-strong">Health: Strong</span>
@@ -1287,15 +1378,21 @@ Bench Mark Infotech Services Ltd. is an integrated IT and digital-infrastructure
     <p class="card-prose">
 Himalayan Solar Ltd. provides turnkey solar-energy solutions with a primary focus on Solar Water Pumping Systems, alongside Solar Inverter Charge Systems, rooftop power systems, and OEM-manufactured solar pumps and controllers sold under its own brand — as of March 2026 it has implemented over 85,000 HP of Solar Water Pumping capacity under government projects across India. <span class="highlight-dev">The company has signed an MoU with NSDC as the industry-exclusive franchise partner for solar under the "National Entrepreneurship Drive," aiming to onboard up to 2,00,000 Panchayat-level micro-entrepreneurs under its brand — a concrete distribution and skilling tie-up beyond its core EPC/manufacturing business.</span> India's solar sector continues to see strong policy tailwinds via rural electrification and irrigation-linked solar-pump subsidy schemes (PM-KUSUM and state variants), a direct source of project demand for this business. <span class="val-nodata">The prospectus does not disclose a comparable listed-peer set for this turnkey solar EPC-and-manufacturing hybrid, so the post-issue P/E of 11.02x is a standalone read.</span> The lead manager — Finshore Management Services Ltd. — is assessed as Mixed bench: 5 SME IPOs in 2026, 80% positive listings but a thin +3.76% average listing-day gain.
 </p>
-    <p class="card-suggestion"><strong>Suggestion:</strong> Solid fundamentals; the book is at 0.51x after Day 1 with no GMP — small stake, watch demand before committing</p>
   </div>
+</div>
 
 <div class="ledger-card" id="card-sai-urja-indo-ventures">
+  <div class="card-summary" role="button" tabindex="0" aria-expanded="false" aria-controls="details-sai-urja-indo-ventures">
     <div class="card-head">
       <h3>Sai Urja Indo Ventures <span class="seg-label">SME</span></h3>
       <span class="status-badge badge-open">Open</span>
     </div>
-<div class="card-meta-line">₹107-113 · Issue size <span class="issue-size">₹25 Cr</span> · 25 Sep-29 Sep 2026 · 0.04x overall (QIB 0.00x) · as of 25 Sep 2026, 5:05 PM IST (Day 1 close, bidding ends 29 Sep) · GMP ₹0 (not active)</div>
+    <div class="card-meta-line">₹107-113 · Issue size <span class="issue-size">₹25 Cr</span> · 25 Sep-29 Sep 2026 · 0.04x overall (QIB 0.00x) · as of 25 Sep 2026, 5:05 PM IST (Day 1 close, bidding ends 29 Sep) · GMP ₹0 (not active)</div>
+    <p class="card-suggestion"><strong>Suggestion:</strong> Rich valuation, mixed health, a Caution-rated lead manager and almost no demand (0.04x) — skip</p>
+    <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+  </div>
+  <div class="card-details" id="details-sai-urja-indo-ventures">
+
     <div class="lead-manager-box lmbox-caution"><strong>Lead manager(s):</strong> Shannon Advisors Pvt.Ltd.</div>
 <div class="card-tags">
       <span class="tag tag-mixed">Health: Mixed</span>
@@ -1321,15 +1418,21 @@ Himalayan Solar Ltd. provides turnkey solar-energy solutions with a primary focu
     <p class="card-prose">
 Sai Urja Indo Ventures Ltd. provides Operation &amp; Maintenance (O&amp;M) and industrial support services — electrical and control-instrumentation maintenance, coal-handling and merry-go-round plant operations, boiler-turbine-generator operations, and industrial housekeeping — primarily to power-generation plants and also to iron &amp; steel and agrochemical facilities, via Annual Maintenance Contracts, Performance-Based Contracts and manpower-supply arrangements. <span class="highlight-dev">The company reports a disclosed order book of 17 ongoing projects worth ₹71.65 Cr and 4 further projects worth ₹25.37 Cr yet to commence, as of June 2026 — a concrete, quantified pipeline for a business otherwise reliant on contract renewals.</span> India's power-sector O&amp;M outsourcing market continues to grow as utilities and industrial plants increasingly contract out specialised maintenance rather than run it in-house. <span class="val-nodata">The prospectus does not disclose a comparable listed-peer set for this diversified industrial O&amp;M services niche, so the post-issue P/E of 27.56x is a standalone read on a thin-margin (4.98% PAT margin) services business.</span> The lead manager — Shannon Advisors Pvt.Ltd. — is assessed as Caution: its only prior listed mandate, Globtier Infotech (Sept 2025), closed down 20.0% on listing day.
 </p>
-    <p class="card-suggestion"><strong>Suggestion:</strong> Rich valuation, mixed health, a Caution-rated lead manager and almost no demand (0.04x) — skip</p>
   </div>
+</div>
 
 <div class="ledger-card" id="card-pooja-logistics">
+  <div class="card-summary" role="button" tabindex="0" aria-expanded="false" aria-controls="details-pooja-logistics">
     <div class="card-head">
       <h3>Pooja Logistics <span class="seg-label">SME</span></h3>
       <span class="status-badge badge-closed">Closed</span>
     </div>
-<div class="card-meta-line">Rs.109-115 · Issue size <span class="issue-size">Rs.44.23 Cr</span> · 23 Sep-25 Sep 2026 · 3.11x overall (QIB 2.50x, final) · as of 25 Sep 2026, 6:55 PM IST (Closed, listing 30 Sep) · GMP ₹0 (0.00%)</div>
+    <div class="card-meta-line">Rs.109-115 · Issue size <span class="issue-size">Rs.44.23 Cr</span> · 23 Sep-25 Sep 2026 · 3.11x overall (QIB 2.50x, final) · as of 25 Sep 2026, 6:55 PM IST (Closed, listing 30 Sep) · GMP ₹0 (0.00%)</div>
+    <p class="card-suggestion"><strong>Suggestion:</strong> Book closed 3.11x with strong fundamentals but zero GMP — hold a small stake for the long term; don't expect a listing pop</p>
+    <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+  </div>
+  <div class="card-details" id="details-pooja-logistics">
+
     <div class="lead-manager-box lmbox-strong"><strong>Lead manager(s):</strong> Share India Capital Services Pvt.Ltd.</div>
 <div class="card-tags">
       <span class="tag tag-strong">Health: Strong</span>
@@ -1359,15 +1462,21 @@ India's cold chain logistics market is expanding on rising frozen-food consumpti
 <span class="val-similar">Post-issue P/E of 13.31x — the prospectus does not disclose a comparable listed-peer set for this logistics operator, so no peer valuation read is offered; 13.31x on its own sits below the broader listed logistics sector's typical mid-20s-to-30s range, without claiming a specific comparable.</span>
 The lead manager bench — Share India Capital Services Pvt.Ltd. — is assessed as Solid: 4 SME issues managed in 2026, 75% positive listings, 15.07% average listing-day gain — a solid, not yet strong, track record.
 </p>
-    <p class="card-suggestion"><strong>Suggestion:</strong> Book closed 3.11x with strong fundamentals but zero GMP — hold a small stake for the long term; don't expect a listing pop</p>
   </div>
+</div>
 
 <div class="ledger-card" id="card-elevate-campuses">
+  <div class="card-summary" role="button" tabindex="0" aria-expanded="false" aria-controls="details-elevate-campuses">
     <div class="card-head">
       <h3>Elevate Campuses Ltd <span class="seg-label">Mainboard</span></h3>
       <span class="status-badge badge-closed">Closed</span>
     </div>
-<div class="card-meta-line">Rs.343-362 · Issue size <span class="issue-size">Rs.2,100 Cr</span> · 23 Sep-25 Sep 2026 · 1.89x overall (QIB 2.66x, final) · as of 25 Sep 2026, 6:52 PM IST (Closed, listing 30 Sep) · GMP ₹4 (1.10%)</div>
+    <div class="card-meta-line">Rs.343-362 · Issue size <span class="issue-size">Rs.2,100 Cr</span> · 23 Sep-25 Sep 2026 · 1.89x overall (QIB 2.66x, final) · as of 25 Sep 2026, 6:52 PM IST (Closed, listing 30 Sep) · GMP ₹4 (1.10%)</div>
+    <p class="card-suggestion"><strong>Suggestion:</strong> Book closed only 1.89x with a very thin GMP (1.10%) despite a strong lead-manager bench — no listing-gain case; long term only for patient investors given the leverage</p>
+    <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+  </div>
+  <div class="card-details" id="details-elevate-campuses">
+
     <div class="lead-manager-box lmbox-strong"><strong>Lead manager(s):</strong> JM Financial Ltd., IIFL Capital Services Ltd., Morgan Stanley India Company Pvt.Ltd.</div>
 <div class="card-tags">
       <span class="tag tag-mixed">Health: Mixed</span>
@@ -1390,15 +1499,21 @@ The lead manager bench — Share India Capital Services Pvt.Ltd. — is assessed
     <p class="card-prose">
 Elevate Campuses Ltd. (formerly Good Host Spaces Ltd.) owns and operates on-campus student housing under the Good Host Spaces and ScholarZ brands, alongside K-12 school assets, spanning a combined 80,255-student capacity across 15 Indian cities and one UAE city as of March 2026, with 89.37% occupancy in academic year 2025-26. <span class="highlight-dev">At Rs.2,100 Cr this is by far the largest issue in this ledger's current tracked cohort — nearly three times the next-largest mainboard book — and the fresh-issue proceeds fund a concrete acquisition pipeline of K-12 campuses plus meaningful deleveraging across four named subsidiaries.</span> India's student-housing and K-12 infrastructure sector is expanding on rising urban enrolment and organised-operator consolidation of a historically fragmented market. <span class="gov-none">No specific government scheme identified directly supporting this student-housing/K-12 infrastructure segment.</span> <span class="val-nodata">No reliable listed-peer P/E benchmark found for this niche — the prospectus does not disclose a comparable listed-peer set for this combination of student housing and K-12 school assets, so the 35.11x post-issue P/E is a standalone read; D/E of 4.98x (up from 2.71x in FY25) is a real leverage flag worth weighing against the debt-repayment use of proceeds.</span> The lead manager bench — JM Financial Ltd., IIFL Capital Services Ltd., and Morgan Stanley India Co.Pvt.Ltd. — is assessed as Strong bench: JM Financial and IIFL both carry large, consistently positive 2026 mainboard books, while Morgan Stanley's smaller 2-IPO 2026 sample runs negative on average — net a strong-to-mixed combined read anchored by the two larger banks.
 </p>
-    <p class="card-suggestion"><strong>Suggestion:</strong> Book closed only 1.89x with a very thin GMP (1.10%) despite a strong lead-manager bench — no listing-gain case; long term only for patient investors given the leverage</p>
   </div>
+</div>
 
 <div class="ledger-card" id="card-sk-offset">
+  <div class="card-summary" role="button" tabindex="0" aria-expanded="false" aria-controls="details-sk-offset">
     <div class="card-head">
       <h3>S.K. Offset Ltd <span class="seg-label">SME</span></h3>
       <span class="status-badge badge-closed">Closed</span>
     </div>
-<div class="card-meta-line">Rs.119-125 · Issue size <span class="issue-size">Rs.29.06 Cr (incl. Market Maker)</span> · 23 Sep-25 Sep 2026 · 1.18x overall (QIB 2.61x, final) · as of 25 Sep 2026, 6:53 PM IST (Closed, listing 30 Sep) · GMP ₹0 (0.00%)</div>
+    <div class="card-meta-line">Rs.119-125 · Issue size <span class="issue-size">Rs.29.06 Cr (incl. Market Maker)</span> · 23 Sep-25 Sep 2026 · 1.18x overall (QIB 2.61x, final) · as of 25 Sep 2026, 6:53 PM IST (Closed, listing 30 Sep) · GMP ₹0 (0.00%)</div>
+    <p class="card-suggestion"><strong>Suggestion:</strong> Strong profit growth, but the book closed only 1.18x with no GMP and a Caution-rated lead manager — minimal stake only</p>
+    <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+  </div>
+  <div class="card-details" id="details-sk-offset">
+
     <div class="lead-manager-box lmbox-caution"><strong>Lead manager(s):</strong> Comfort Securities Ltd.</div>
 <div class="card-tags">
       <span class="tag tag-strong">Health: Strong</span>
@@ -1421,15 +1536,21 @@ Elevate Campuses Ltd. (formerly Good Host Spaces Ltd.) owns and operates on-camp
     <p class="card-prose">
 S.K. Offset Ltd. is an integrated printing and packaging company providing commercial offset printing, labels, mono cartons, master cartons, and customised packaging, alongside design and graphics services, printing books, magazines, journals, and brochures out of its Meerut, Uttar Pradesh facility. <span class="highlight-dev">PAT jumped 384.6% year-over-year (FY25 to FY26, from Rs.1.54 Cr to Rs.7.48 Cr) on a 38.4% revenue increase — profit growing roughly ten times faster than revenue is a striking margin-expansion signal worth scrutinising for sustainability.</span> India's commercial printing and packaging sector benefits from steady FMCG and e-commerce packaging demand, alongside rising branded-packaging premiumisation. <span class="gov-none">No specific government scheme identified directly supporting this commercial printing/packaging segment.</span> <span class="val-nodata">No reliable listed-peer P/E benchmark found for this niche — the prospectus does not disclose a comparable listed-peer set for this scale of integrated printing/packaging business, so the 12.94x post-issue P/E is a standalone read.</span> The lead manager — Comfort Securities Ltd. — is assessed as Caution: 1 IPO handled all-time, listed negative at -6.80% average listing gain — a thin, single-issue sample that ran negative on its only prior print.
 </p>
-    <p class="card-suggestion"><strong>Suggestion:</strong> Strong profit growth, but the book closed only 1.18x with no GMP and a Caution-rated lead manager — minimal stake only</p>
   </div>
+</div>
 
 <div class="ledger-card" id="card-unitec-fibres">
+  <div class="card-summary" role="button" tabindex="0" aria-expanded="false" aria-controls="details-unitec-fibres">
     <div class="card-head">
       <h3>Unitec Fibres Ltd <span class="seg-label">SME</span></h3>
       <span class="status-badge badge-closed">Closed</span>
     </div>
-<div class="card-meta-line">Rs.83-88 · Issue size <span class="issue-size">Rs.34.47 Cr</span> · 23 Sep-25 Sep 2026 · 3.92x overall (QIB 5.30x, final) · as of 25 Sep 2026, 6:53 PM IST (Closed, listing 30 Sep) · GMP ₹0 (0.00%)</div>
+    <div class="card-meta-line">Rs.83-88 · Issue size <span class="issue-size">Rs.34.47 Cr</span> · 23 Sep-25 Sep 2026 · 3.92x overall (QIB 5.30x, final) · as of 25 Sep 2026, 6:53 PM IST (Closed, listing 30 Sep) · GMP ₹0 (0.00%)</div>
+    <p class="card-suggestion"><strong>Suggestion:</strong> Debt-heavy fund use and mixed health; the book closed 3.92x but with no GMP — small stake only, no listing-gain case</p>
+    <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+  </div>
+  <div class="card-details" id="details-unitec-fibres">
+
     <div class="lead-manager-box lmbox-strong"><strong>Lead manager(s):</strong> Smart Horizon Capital Advisors Pvt.Ltd.</div>
 <div class="card-tags">
       <span class="tag tag-mixed">Health: Mixed</span>
@@ -1452,15 +1573,21 @@ S.K. Offset Ltd. is an integrated printing and packaging company providing comme
     <p class="card-prose">
 Unitec Fibres Ltd., incorporated in February 2005 and converted to a public company in 2024, manufactures Recycled Polyester Staple Fibre (RPSF) from recycled PET flakes, PET chips, and other post-consumer polyester waste, supplying automobile, home-furnishing, and textile customers for use in carpets, roof liners, trunks, sofas, curtains, and spinning applications. The company operates two facilities at MIDC Tarapur, Maharashtra with a combined 27,984 MTPA capacity, and <span class="highlight-dev">is establishing a third manufacturing unit in Valsad, Gujarat to expand production capacity, a concrete capacity-expansion move beyond its existing Tarapur base.</span> India's recycled-polyester and sustainable-textile-input sector is growing on rising demand for eco-friendly materials across automotive and furnishing supply chains. <span class="gov-none">No specific government scheme identified directly supporting this recycled-polyester-fibre segment.</span> Revenue and PAT both declined slightly year-over-year (revenue -1%, PAT -8%, FY25 to FY26), a flat-to-softening trend rather than the growth story typical of this cohort. <span class="val-nodata">No reliable listed-peer P/E benchmark found for this niche — the prospectus does not disclose a comparable listed-peer set for RPSF manufacturing, so the 16.70x post-issue P/E is a standalone read.</span> The lead manager — Smart Horizon Capital Advisors Pvt.Ltd. — is assessed as Solid: 9 SME IPOs handled in 2026, 78% positive listings, +44.63% average listing-day gain.
 </p>
-    <p class="card-suggestion"><strong>Suggestion:</strong> Debt-heavy fund use and mixed health; the book closed 3.92x but with no GMP — small stake only, no listing-gain case</p>
   </div>
+</div>
 
 <div class="ledger-card" id="card-liqvd-digital-india">
+  <div class="card-summary" role="button" tabindex="0" aria-expanded="false" aria-controls="details-liqvd-digital-india">
     <div class="card-head">
       <h3>Liqvd Digital India Ltd <span class="seg-label">SME</span></h3>
       <span class="status-badge badge-closed">Closed</span>
     </div>
-<div class="card-meta-line">Rs.51-54 · Issue size <span class="issue-size">Rs.26.16 Cr</span> · 23 Sep-25 Sep 2026 · 5.08x overall (QIB 1.00x, final) · as of 25 Sep 2026, 6:52 PM IST (Closed, listing 30 Sep) · GMP ₹0 (0.00%)</div>
+    <div class="card-meta-line">Rs.51-54 · Issue size <span class="issue-size">Rs.26.16 Cr</span> · 23 Sep-25 Sep 2026 · 5.08x overall (QIB 1.00x, final) · as of 25 Sep 2026, 6:52 PM IST (Closed, listing 30 Sep) · GMP ₹0 (0.00%)</div>
+    <p class="card-suggestion"><strong>Suggestion:</strong> Attractive valuation and a 5.08x closing book, but a Caution-rated lead manager and no GMP — small stake for long term, no listing-gain case</p>
+    <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+  </div>
+  <div class="card-details" id="details-liqvd-digital-india">
+
     <div class="lead-manager-box lmbox-caution"><strong>Lead manager(s):</strong> Indorient Financial Services Ltd.</div>
 <div class="card-tags">
       <span class="tag tag-strong">Health: Strong</span>
@@ -1483,15 +1610,21 @@ Unitec Fibres Ltd., incorporated in February 2005 and converted to a public comp
     <p class="card-prose">
 Liqvd Digital India Ltd., incorporated in 2013 and converted to a public company in 2025, is a digital marketing and content agency operating internationally through its subsidiary AdLift Inc. <span class="highlight-dev">Net proceeds fund the acquisition of a stake in AdLift Marketing Pvt.Ltd. and the build-out of a Full-Scale Video Content Production Hub — a genuine forward-integration and M&amp;A move into owned content-production capacity, not just working-capital growth.</span> India's digital marketing and content-production sector is expanding on rising ad-tech and influencer/brand-content spend. <span class="gov-none">No specific government scheme identified directly supporting this digital-marketing/content-agency segment.</span> Only FY26 consolidated financials are currently available from the prospectus; FY24 and FY25 figures sit on a different (pre-consolidation) basis and are not merged here to avoid a misleading trend line — treat FY26 as a standalone data point until earlier-year consolidated figures are confirmed. <span class="val-nodata">No reliable listed-peer P/E benchmark found for this niche — the prospectus does not disclose a comparable listed-peer set for this digital-agency business, so the 14.96x post-issue P/E is a standalone read.</span> The lead manager — Indorient Financial Services Ltd. — is assessed as Caution: 2 SME IPOs handled in 2026, 50% positive listings, -11.57% average listing-day gain.
 </p>
-    <p class="card-suggestion"><strong>Suggestion:</strong> Attractive valuation and a 5.08x closing book, but a Caution-rated lead manager and no GMP — small stake for long term, no listing-gain case</p>
   </div>
+</div>
 
 <div class="ledger-card" id="card-armee-infotech">
+  <div class="card-summary" role="button" tabindex="0" aria-expanded="false" aria-controls="details-armee-infotech">
     <div class="card-head">
       <h3>ArMee Infotech Ltd <span class="seg-label">Mainboard</span></h3>
       <span class="status-badge badge-closed">Closed</span>
     </div>
-<div class="card-meta-line">Rs.350-375 · Issue size <span class="issue-size">Rs.300 Cr (100% fresh issue)</span> · 23 Sep-25 Sep 2026 · 2.62x overall (QIB 3.20x, final) · as of 25 Sep 2026, 6:54 PM IST (Closed, listing 30 Sep) · GMP ₹8 (2.13%)</div>
+    <div class="card-meta-line">Rs.350-375 · Issue size <span class="issue-size">Rs.300 Cr (100% fresh issue)</span> · 23 Sep-25 Sep 2026 · 2.62x overall (QIB 3.20x, final) · as of 25 Sep 2026, 6:54 PM IST (Closed, listing 30 Sep) · GMP ₹8 (2.13%)</div>
+    <p class="card-suggestion"><strong>Suggestion:</strong> Book closed 2.62x and GMP has faded to 2.13%; mixed fundamentals and rich valuation — skip for long term, little listing cushion left</p>
+    <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+  </div>
+  <div class="card-details" id="details-armee-infotech">
+
     <div class="lead-manager-box lmbox-mixed"><strong>Lead manager(s):</strong> Khandwala Securities Ltd., Saffron Capital Advisors Pvt.Ltd.</div>
 <div class="card-tags">
       <span class="tag tag-mixed">Health: Mixed</span>
@@ -1514,15 +1647,21 @@ Liqvd Digital India Ltd., incorporated in 2013 and converted to a public company
     <p class="card-prose">
 ArMee Infotech Ltd., operating since 2003 out of Ahmedabad, provides IT infrastructure solutions and managed services for Government, PSU, BFSI, and education clients, and has diversified into retail electronics and renewable energy (solar EPC/PPA, battery energy storage systems). <span class="highlight-dev">The company had 99 ongoing projects as of June 2026 — 65 IT infrastructure, 21 managed services, and 13 renewable-energy projects — though concentrated in Gujarat (74) and Maharashtra (11), a real geographic-concentration point alongside the order-book scale.</span> India's IT-infrastructure and government-managed-services sector benefits from ongoing digital-governance spend, while its renewable-energy diversification taps rising solar EPC/BESS demand. <span class="gov-none">No specific government scheme identified directly supporting this IT-infrastructure/renewable-diversification mix, though the business itself already serves Government/PSU clients directly.</span> PAT margin is thin at 3.26% on a large Rs.1,410 Cr revenue base — a low-margin, high-volume services model. <span class="val-nodata">No reliable listed-peer P/E benchmark found for this diversified IT-infra-plus-renewables mix — the prospectus does not disclose a comparable listed-peer set, so the 26.17x post-issue P/E is a standalone read.</span> The lead manager bench — Khandwala Securities Ltd. and Saffron Capital Advisors Pvt.Ltd. — is assessed as Mixed bench: Khandwala's larger sample runs solidly positive (+16.8% avg gain, 13 listed) while Saffron's runs thinner (+4.7% avg gain, 8 listed).
 </p>
-    <p class="card-suggestion"><strong>Suggestion:</strong> Book closed 2.62x and GMP has faded to 2.13%; mixed fundamentals and rich valuation — skip for long term, little listing cushion left</p>
   </div>
+</div>
 
 <div class="ledger-card" id="card-swastika-infra">
+  <div class="card-summary" role="button" tabindex="0" aria-expanded="false" aria-controls="details-swastika-infra">
     <div class="card-head">
       <h3>Swastika Infra Ltd <span class="seg-label">Mainboard</span></h3>
       <span class="status-badge badge-closed">Closed</span>
     </div>
-<div class="card-meta-line">Rs.175-185 · Issue size <span class="issue-size">Rs.160.88 Cr (fresh ~Rs.129 Cr + OFS ~Rs.32 Cr)</span> · 23 Sep-25 Sep 2026 · 7.91x overall (QIB 3.31x, final) · as of 25 Sep 2026, 6:53 PM IST (Closed, listing 30 Sep) · GMP ₹4.5 (2.43%)</div>
+    <div class="card-meta-line">Rs.175-185 · Issue size <span class="issue-size">Rs.160.88 Cr (fresh ~Rs.129 Cr + OFS ~Rs.32 Cr)</span> · 23 Sep-25 Sep 2026 · 7.91x overall (QIB 3.31x, final) · as of 25 Sep 2026, 6:53 PM IST (Closed, listing 30 Sep) · GMP ₹4.5 (2.43%)</div>
+    <p class="card-suggestion"><strong>Suggestion:</strong> Fair valuation, strong health and a well oversubscribed close (7.91x), but GMP is thin at 2.43% — small stake, moderate long-term potential</p>
+    <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+  </div>
+  <div class="card-details" id="details-swastika-infra">
+
     <div class="lead-manager-box lmbox-mixed"><strong>Lead manager(s):</strong> Srujan Alpha Capital Advisors LLP, PhillipCapital India Pvt.Ltd.</div>
 <div class="card-tags">
       <span class="tag tag-strong">Health: Strong</span>
@@ -1545,15 +1684,21 @@ ArMee Infotech Ltd., operating since 2003 out of Ahmedabad, provides IT infrastr
     <p class="card-prose">
 Swastika Infra Ltd., operating since August 2019 on an asset-light EPC model, executes power transmission and distribution infrastructure projects — underground cabling, gas/air insulated substations, rural and urban electrification, street lighting, and renewable-energy works — for government utilities. <span class="highlight-dev">The company has completed 36 EPC projects spanning 18,579.47 km of distribution lines across 6 states as of July 2026, and carries an order book of 18 ongoing projects worth Rs.2,03,665 lakh, with named clients WBSEDCL, MGVCL, and APDCL, some funded by the World Bank and Ministry of Power — a real, disclosed order-book scale and marquee-client roster.</span> India's power T&amp;D infrastructure sector benefits from sustained rural/urban electrification spend and renewable-integration grid upgrades. <span class="gov-strong">Some of the company's projects are directly funded by the World Bank and India's Ministry of Power, a genuine named-scheme tailwind rather than an indirect sector-level one.</span> <span class="val-nodata">No reliable listed-peer P/E benchmark found for this niche — the prospectus does not disclose a comparable listed-peer set for this asset-light power-T&amp;D EPC model, so the 15.24x post-issue P/E is a standalone read.</span> The lead manager bench — Srujan Alpha Capital Advisors LLP and PhillipCapital India Pvt.Ltd. — is assessed as Mixed bench: Srujan Alpha carries a genuinely strong record (9 IPOs, 7 listed, +17.3% avg gain) while PhillipCapital India appears to be on its debut mandate with no prior track record found.
 </p>
-    <p class="card-suggestion"><strong>Suggestion:</strong> Fair valuation, strong health and a well oversubscribed close (7.91x), but GMP is thin at 2.43% — small stake, moderate long-term potential</p>
   </div>
+</div>
 
 <div class="ledger-card" id="card-himalaya-nutravedics-india">
+  <div class="card-summary" role="button" tabindex="0" aria-expanded="false" aria-controls="details-himalaya-nutravedics-india">
     <div class="card-head">
       <h3>Himalaya Nutravedics India Ltd <span class="seg-label">SME</span></h3>
       <span class="status-badge badge-closed">Closed</span>
     </div>
-<div class="card-meta-line">Rs.100-106 · Issue size <span class="issue-size">Rs.26.50 Cr</span> · 22 Sep-24 Sep 2026 · 2.33x overall (QIB 1.00x, final) · as of 24 Sep 2026, 6:54 PM IST (Closed, listing 29 Sep) · GMP ₹0 (0.00%)</div>
+    <div class="card-meta-line">Rs.100-106 · Issue size <span class="issue-size">Rs.26.50 Cr</span> · 22 Sep-24 Sep 2026 · 2.33x overall (QIB 1.00x, final) · as of 24 Sep 2026, 6:54 PM IST (Closed, listing 29 Sep) · GMP ₹0 (0.00%)</div>
+    <p class="card-suggestion"><strong>Suggestion:</strong> Book closed 2.33x subscribed with strong fundamentals but zero GMP — small stake for long term, skip for listing gains</p>
+    <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+  </div>
+  <div class="card-details" id="details-himalaya-nutravedics-india">
+
     <div class="lead-manager-box lmbox-strong"><strong>Lead manager(s):</strong> Nirbhay Capital Services Pvt.Ltd.</div>
 <div class="card-tags">
       <span class="tag tag-strong">Health: Strong</span>
@@ -1576,15 +1721,21 @@ Swastika Infra Ltd., operating since August 2019 on an asset-light EPC model, ex
     <p class="card-prose">
 Himalaya Nutravedics India Ltd. runs a hybrid Ayurvedic and nutraceutical business — manufacturing both own-brand supplements and formulations and contract-manufacturing products for third-party brands — out of a WHO-GMP-certified facility in Hyderabad, Telangana, holding AYUSH, FSSAI, and ISO certifications. <span class="highlight-dev">Own-brand products already account for roughly 51% of FY26 revenue, a meaningful shift away from pure contract manufacturing toward higher-margin, company-owned product lines.</span> India's Ayurvedic and nutraceutical sector is growing on rising wellness spending and government AYUSH-sector promotion. <span class="gov-strong">The company's WHO-GMP facility and AYUSH/FSSAI/ISO certifications position it to benefit from the Ministry of AYUSH's push to formalise and export-certify Ayurvedic manufacturing, a direct policy tailwind for GMP-certified operators like this one.</span> <span class="val-nodata">No reliable listed-peer P/E benchmark found for this sector — the prospectus does not disclose a comparable listed-peer set, so post-issue P/E of 12.63x is read on a standalone basis only.</span> The lead manager — Nirbhay Capital Services Pvt.Ltd. — is assessed as Solid: 11 IPOs handled all-time (8 SME, 3 mainboard), 6 listed, +2.5% average listing gain — a moderate, high-volume SME bench without a standout track record.
 </p>
-    <p class="card-suggestion"><strong>Suggestion:</strong> Book closed 2.33x subscribed with strong fundamentals but zero GMP — small stake for long term, skip for listing gains</p>
   </div>
+</div>
 
 <div class="ledger-card" id="card-anand-seamless">
+  <div class="card-summary" role="button" tabindex="0" aria-expanded="false" aria-controls="details-anand-seamless">
     <div class="card-head">
       <h3>Anand Seamless Ltd <span class="seg-label">SME</span></h3>
       <span class="status-badge badge-closed">Closed</span>
     </div>
-<div class="card-meta-line">Rs.72 (fixed) · Issue size <span class="issue-size">Rs.25.52 Cr</span> · 22 Sep-24 Sep 2026 · 1.47x overall (no QIB portion, final) · as of 24 Sep 2026, 6:53 PM IST (Closed, listing 29 Sep) · GMP ₹0 (0.00%)</div>
+    <div class="card-meta-line">Rs.72 (fixed) · Issue size <span class="issue-size">Rs.25.52 Cr</span> · 22 Sep-24 Sep 2026 · 1.47x overall (no QIB portion, final) · as of 24 Sep 2026, 6:53 PM IST (Closed, listing 29 Sep) · GMP ₹0 (0.00%)</div>
+    <p class="card-suggestion"><strong>Suggestion:</strong> Book closed 1.47x subscribed but zero GMP, rich valuation and a Caution-rated lead manager — avoid</p>
+    <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+  </div>
+  <div class="card-details" id="details-anand-seamless">
+
     <div class="lead-manager-box lmbox-caution"><strong>Lead manager(s):</strong> Aftertrade Broking Pvt.Ltd.</div>
 <div class="card-tags">
       <span class="tag tag-mixed">Health: Mixed</span>
@@ -1607,15 +1758,21 @@ Himalaya Nutravedics India Ltd. runs a hybrid Ayurvedic and nutraceutical busine
     <p class="card-prose">
 Anand Seamless Ltd. manufactures seamless steel tubes and pipes — including finned tubes and heat-exchanger tubes in carbon and alloy steel — for the oil &amp; gas, petrochemicals, and power sectors, operating two manufacturing units in Kadi, Gujarat since 2005. <span class="gov-none">No specific government scheme identified directly supporting this seamless-tube manufacturing segment.</span> India's seamless-tube demand tracks capex cycles in oil &amp; gas and power infrastructure, both areas of sustained government and private investment. The FY26 figure disclosed in the prospectus is actually a period ending 30 September 2025, not a full fiscal year — a caveat worth noting when comparing it against the FY25 full-year print, since PAT margin, EBITDA margin, ROE, ROCE, RoNW and D/E all shift meaningfully between the two bases (full-year FY25 PAT margin was 7.88% versus the period's 9.31%). <span class="val-nodata">No reliable listed-peer P/E benchmark found for this niche — the prospectus does not disclose a comparable listed-peer set, so the 15.72x post-issue P/E is a standalone read.</span> The lead manager — Aftertrade Broking Pvt.Ltd. — is assessed as Caution: 5 IPOs handled all-time, 1 listed, -20.0% average listing gain — a thin sample, but the one prior listing came in negative.
 </p>
-    <p class="card-suggestion"><strong>Suggestion:</strong> Book closed 1.47x subscribed but zero GMP, rich valuation and a Caution-rated lead manager — avoid</p>
   </div>
+</div>
 
 <div class="ledger-card" id="card-adroit-industries-india">
+  <div class="card-summary" role="button" tabindex="0" aria-expanded="false" aria-controls="details-adroit-industries-india">
     <div class="card-head">
       <h3>Adroit Industries (India) Ltd <span class="seg-label">Mainboard</span></h3>
       <span class="status-badge badge-closed">Closed</span>
     </div>
-<div class="card-meta-line">Rs.126-134 · Issue size <span class="issue-size">Rs.150.71 Cr (fresh Rs.132.62 Cr + OFS Rs.18.09 Cr)</span> · 23 Sep-25 Sep 2026 · 176.85x overall (QIB 195.04x, final) · as of 25 Sep 2026, 6:54 PM IST (Closed, listing 30 Sep) · GMP ₹47 (35.07%)</div>
+    <div class="card-meta-line">Rs.126-134 · Issue size <span class="issue-size">Rs.150.71 Cr (fresh Rs.132.62 Cr + OFS Rs.18.09 Cr)</span> · 23 Sep-25 Sep 2026 · 176.85x overall (QIB 195.04x, final) · as of 25 Sep 2026, 6:54 PM IST (Closed, listing 30 Sep) · GMP ₹47 (35.07%)</div>
+    <p class="card-suggestion"><strong>Suggestion:</strong> Book closed very heavily oversubscribed (176.85x) with GMP at 35.07% — strong listing-gain setup; rich valuation caps long-term conviction</p>
+    <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+  </div>
+  <div class="card-details" id="details-adroit-industries-india">
+
     <div class="lead-manager-box lmbox-strong"><strong>Lead manager(s):</strong> Choice Capital Advisors Pvt.Ltd.</div>
 <div class="card-tags">
       <span class="tag tag-strong">Health: Strong</span>
@@ -1638,15 +1795,21 @@ Anand Seamless Ltd. manufactures seamless steel tubes and pipes — including fi
     <p class="card-prose">
 Adroit Industries (India) Ltd., operating since 1995, is a vertically integrated manufacturer of propeller shafts and torque-transmission components for driveline systems, carrying 5,000+ SKUs and supplying commercial-vehicle, SUV, defence, and heavy-equipment OEMs across 32+ export countries via its subsidiary Adroit Driveshafts Pvt.Ltd. <span class="highlight-dev">A substantial share of fresh-issue proceeds (Rs.43.96 Cr) funds new Pithampur capex at subsidiary Adroit Driveshafts, alongside further Dewas facility capex — a concrete capacity-expansion program across two manufacturing sites, not just working capital.</span> India's driveline-component and auto-ancillary sector benefits from steady domestic CV/SUV demand and rising export orders from global OEMs diversifying supply chains. <span class="gov-none">No specific government scheme identified directly supporting this driveline-components manufacturing segment.</span> <span class="val-nodata">No reliable listed-peer P/E benchmark found for this niche — the prospectus does not disclose a comparable listed-peer set for propeller-shaft/driveline-component manufacturing, so the 22.95x post-issue P/E is a standalone read; at 3.64x P/BV it looks priced for continued execution rather than a bargain entry.</span> The lead manager — Choice Capital Advisors Pvt.Ltd. — is assessed as Solid: 24 IPOs handled all-time (12 mainboard, 12 SME), 16 listed, +16.6% average listing gain.
 </p>
-    <p class="card-suggestion"><strong>Suggestion:</strong> Book closed very heavily oversubscribed (176.85x) with GMP at 35.07% — strong listing-gain setup; rich valuation caps long-term conviction</p>
   </div>
+</div>
 
 <div class="ledger-card" id="card-vivekanand-cotspin">
+  <div class="card-summary" role="button" tabindex="0" aria-expanded="false" aria-controls="details-vivekanand-cotspin">
     <div class="card-head">
       <h3>Vivekanand Cotspin <span class="seg-label">SME</span></h3>
       <span class="status-badge badge-closed">Closed</span>
     </div>
-<div class="card-meta-line">₹32-37 · Issue size <span class="issue-size">₹22.20 Cr</span> · 21 Sep-23 Sep 2026 · 1.79x overall (QIB 1.26x, final) · as of 23 Sep 2026, 6:54 PM IST (Closed, listing 28 Sep) · GMP ₹0 (0.00%)</div>
+    <div class="card-meta-line">₹32-37 · Issue size <span class="issue-size">₹22.20 Cr</span> · 21 Sep-23 Sep 2026 · 1.79x overall (QIB 1.26x, final) · as of 23 Sep 2026, 6:54 PM IST (Closed, listing 28 Sep) · GMP ₹0 (0.00%)</div>
+    <p class="card-suggestion"><strong>Suggestion:</strong> Closed book only modestly subscribed (1.79x) with zero GMP and a Caution health rating — skip</p>
+    <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+  </div>
+  <div class="card-details" id="details-vivekanand-cotspin">
+
     <div class="lead-manager-box lmbox-strong"><strong>Lead manager(s):</strong> Swastika Investmart Ltd.</div>
 <div class="card-tags">
       <span class="tag tag-weak">Health: Caution</span>
@@ -1673,15 +1836,21 @@ Adroit Industries (India) Ltd., operating since 1995, is a vertically integrated
     <p class="card-prose">
 Vivekanand Cotspin Ltd. spins clean cotton fibres into carded and combed cotton yarn for domestic and export fabric-production customers, operating a spinning mill in Rangpurda, Kadi (Mahesana district, Gujarat) with an annual capacity of roughly 4,550 tons of cotton yarn and 8,000 tons of cotton bales, close to the cotton-growing belts of Gujarat and Maharashtra. India's cotton-yarn spinning industry is a large but low-margin, commodity-priced sector where profitability tracks raw-cotton price cycles closely rather than company-specific execution. <span class="gov-none">No specific government scheme identified directly supporting this segment — cotton textile PLI incentives are largely targeted at MMF and technical textiles rather than conventional cotton spinning.</span> <span class="val-rich">Post-issue P/E of 22.84x is expensive for a spinner running a 0.90% PAT margin — the prospectus does not disclose a comparable listed-peer set for this scale of cotton-yarn spinner, so this reflects a standalone read on the margin/multiple mismatch, not a peer comparison.</span> Revenue grew 41% but PAT actually fell 9% year-over-year — a classic low-margin commodity-spinning pattern where top-line growth doesn't reliably convert to profit growth. The lead manager bench — Swastika Investmart Ltd. — is assessed as Solid: 44 IPOs handled all-time (43 SME, 1 mainboard), 36 listed, +12.1% average listing gain — an experienced, high-volume SME bench with a reasonably positive track record.
 </p>
-    <p class="card-suggestion"><strong>Suggestion:</strong> Closed book only modestly subscribed (1.79x) with zero GMP and a Caution health rating — skip</p>
   </div>
+</div>
 
 <div class="ledger-card" id="card-fx-multitech">
+  <div class="card-summary" role="button" tabindex="0" aria-expanded="false" aria-controls="details-fx-multitech">
     <div class="card-head">
       <h3>FX Multitech <span class="seg-label">SME</span></h3>
       <span class="status-badge badge-closed">Closed</span>
     </div>
-<div class="card-meta-line">₹110-116 · Issue size <span class="issue-size">₹42.96 Cr</span> · 21 Sep-23 Sep 2026 · 17.72x overall (QIB 20.95x, final) · as of 23 Sep 2026, 6:53 PM IST (Closed, listing 28 Sep) · GMP ₹6 (5.17%)</div>
+    <div class="card-meta-line">₹110-116 · Issue size <span class="issue-size">₹42.96 Cr</span> · 21 Sep-23 Sep 2026 · 17.72x overall (QIB 20.95x, final) · as of 23 Sep 2026, 6:53 PM IST (Closed, listing 28 Sep) · GMP ₹6 (5.17%)</div>
+    <p class="card-suggestion"><strong>Suggestion:</strong> Oversubscribed 17.72x with strong fundamentals but thin GMP (3.45%) — apply small for listing gains, moderate long-term potential</p>
+    <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+  </div>
+  <div class="card-details" id="details-fx-multitech">
+
     <div class="lead-manager-box lmbox-mixed"><strong>Lead manager(s):</strong> Oneview Corporate Advisors Pvt.Ltd.</div>
 <div class="card-tags">
       <span class="tag tag-strong">Health: Strong</span>
@@ -1708,15 +1877,21 @@ Vivekanand Cotspin Ltd. spins clean cotton fibres into carded and combed cotton 
     <p class="card-prose">
 FX Multitech Ltd. distributes and exports HVAC and industrial-refrigeration equipment — compressors, refrigeration controls, variable frequency drives, heat exchangers, cold-room evaporators and refrigerants — sourced from global manufacturers including Danfoss, Honeywell Automation India, and Testo India, serving customers pan-India from warehouses in Ahmedabad, Hyderabad, Thane, Kolkata, and Bangalore. <span class="highlight-dev">In January 2025 the company acquired a 51% equity stake in Everestt Chillers Private Limited, which manufactures customised industrial chillers, glycol chillers, and chilled-water air conditioners — a genuine forward-integration move from pure distribution into in-house manufacturing that expands FX Multitech's product depth beyond a trading/distribution model.</span> India's industrial refrigeration and HVAC market is expanding on cold-chain, pharma, and data-centre cooling demand, plus rising commercial/industrial construction. <span class="gov-none">No specific government scheme identified directly supporting this distribution-led HVAC segment.</span> <span class="val-fair">Post-issue P/E of 14.43x — the prospectus does not disclose a comparable listed-peer set for this distribution-led HVAC business, so no peer valuation read is offered; 14.43x on its own sits well below the large-cap HVAC/industrial-equipment names' typical 40x+ multiples, without claiming those names as direct comparables.</span> The lead manager bench — Oneview Corporate Advisors Pvt.Ltd. — is assessed as Solid: 2 SME issues managed in 2026, both listed positively, +25.53% average listing-day gain.
 </p>
-    <p class="card-suggestion"><strong>Suggestion:</strong> Oversubscribed 17.72x with strong fundamentals but thin GMP (3.45%) — apply small for listing gains, moderate long-term potential</p>
   </div>
+</div>
 
 <div class="ledger-card" id="card-robokidz-eduventures">
+  <div class="card-summary" role="button" tabindex="0" aria-expanded="false" aria-controls="details-robokidz-eduventures">
     <div class="card-head">
       <h3>Robokidz Eduventures <span class="seg-label">SME</span></h3>
       <span class="status-badge badge-closed">Closed</span>
     </div>
-<div class="card-meta-line">₹100-106 · Issue size <span class="issue-size">₹29.37 Cr</span> · 21 Sep-23 Sep 2026 · 833.56x overall (QIB 306.73x, final) · as of 23 Sep 2026, 6:54 PM IST (Closed, listing 28 Sep) · GMP ₹77 (72.64%)</div>
+    <div class="card-meta-line">₹100-106 · Issue size <span class="issue-size">₹29.37 Cr</span> · 21 Sep-23 Sep 2026 · 833.56x overall (QIB 306.73x, final) · as of 23 Sep 2026, 6:54 PM IST (Closed, listing 28 Sep) · GMP ₹77 (72.64%)</div>
+    <p class="card-suggestion"><strong>Suggestion:</strong> Apply for both listing gains and long term</p>
+    <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+  </div>
+  <div class="card-details" id="details-robokidz-eduventures">
+
     <div class="lead-manager-box lmbox-strong"><strong>Lead manager(s):</strong> GYR Capital Advisors Pvt.Ltd.</div>
 <div class="card-tags">
       <span class="tag tag-strong">Health: Strong</span>
@@ -1743,15 +1918,21 @@ FX Multitech Ltd. distributes and exports HVAC and industrial-refrigeration equi
     <p class="card-prose">
 Robokidz Eduventures Ltd. is an ed-tech company delivering technology-enabled K-12 learning in Robotics, AI, Coding, Electronics, and STEM through end-to-end educational-lab setup projects, subscription-based "Young Engineers Garage" programs, STEM workshops, teacher training, and franchise-based "Young Engineers Academy" activity centres, serving schools, educational institutions, and government bodies pan-India. <span class="highlight-dev">The company's proprietary digital learning platforms and coding solutions are built around the National Education Policy (NEP) 2020 framework, positioning it directly inside India's formal STEM-curriculum push into K-12 schools rather than as an optional add-on — a structural tailwind if NEP implementation continues expanding STEM lab mandates in government and private schools.</span> India's K-12 ed-tech and STEM-lab market is growing on rising private-school STEM adoption and government digital-education initiatives. <span class="gov-strong">The company's learning platforms are explicitly aligned with the National Education Policy (NEP) 2020's experiential, application-based STEM learning mandate, and it already serves government organizations directly — a genuine, named policy tailwind rather than an indirect one.</span> <span class="val-cheap">Post-issue P/E of 11.45x is the cheapest in this open SME cohort — the prospectus does not disclose a comparable listed-peer set for this K-12 ed-tech niche, so this reflects an intra-cohort comparison only, not a peer valuation read. It pairs the strongest PAT growth in the set (+102%) with the lowest multiple, though D/E of 1.19x and small scale (24 employees) mean execution risk stays real.</span> The lead manager bench — GYR Capital Advisors Pvt.Ltd. — is assessed as Strong bench: 9 SME issues managed in 2026, 100% positive listings, 44.63% average listing-day gain — the strongest lead-manager track record in this open cohort.
 </p>
-    <p class="card-suggestion"><strong>Suggestion:</strong> Apply for both listing gains and long term</p>
   </div>
+</div>
 
 <div class="ledger-card" id="card-varmora-granito">
+  <div class="card-summary" role="button" tabindex="0" aria-expanded="false" aria-controls="details-varmora-granito">
     <div class="card-head">
       <h3>Varmora Granito <span class="seg-label">Mainboard</span></h3>
       <span class="status-badge badge-closed">Closed</span>
     </div>
-<div class="card-meta-line">Rs.140-148 · Issue size <span class="issue-size">Rs.708.02 Cr</span> · 22 Sep-24 Sep 2026 · 1.60x overall (QIB 3.10x, final) · as of 24 Sep 2026, 6:53 PM IST (Closed, listing 29 Sep) · GMP ₹0.5 (0.34%)</div>
+    <div class="card-meta-line">Rs.140-148 · Issue size <span class="issue-size">Rs.708.02 Cr</span> · 22 Sep-24 Sep 2026 · 1.60x overall (QIB 3.10x, final) · as of 24 Sep 2026, 6:53 PM IST (Closed, listing 29 Sep) · GMP ₹0.5 (0.34%)</div>
+    <p class="card-suggestion"><strong>Suggestion:</strong> Strong fundamentals and lead-manager bench, but only a 1.60x book and near-flat GMP — modest listing gains at best, moderate long-term potential</p>
+    <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+  </div>
+  <div class="card-details" id="details-varmora-granito">
+
     <div class="lead-manager-box lmbox-strong"><strong>Lead manager(s):</strong> JM Financial Ltd., Goldman Sachs (India) Securities Pvt.Ltd., SBI Capital Markets Ltd.</div>
 <div class="card-tags">
       
@@ -1784,8 +1965,8 @@ India's ceramic tile sector is consolidating around organised players as real es
 <span class="val-rich">Post-issue P/E of 60.66x is richer than the RHP's own disclosed listed-peer set — Kajaria Ceramics (40.27x), Somany Ceramics (28.55x), Asian Granito India (72.00x), and Orient Bell (47.67x) — sitting inside that range but toward the pricier end. At 3.74x P/BV the issue appears expensive for a low-3.53% PAT margin, cyclical tiles business.</span>
 The lead manager bench — JM Financial Ltd., Goldman Sachs (India) Securities Pvt.Ltd., SBI Capital Markets Ltd. — is assessed as Strong: JM Financial Ltd., Goldman Sachs (India) Securities Pvt.Ltd., and SBI Capital Markets Ltd. — Strong bench: all three carry well-established 2026 mainboard books with consistent positive listing-day records..
 </p>
-    <p class="card-suggestion"><strong>Suggestion:</strong> Strong fundamentals and lead-manager bench, but only a 1.60x book and near-flat GMP — modest listing gains at best, moderate long-term potential</p>
   </div>
+</div>
 
 </section>
 
@@ -2454,6 +2635,34 @@ $(function() {
       $(this).trigger('click');
     }
   });
+});
+
+// Scorecard: collapsible cards (name + suggestion visible, full analysis on click)
+$(function() {
+  function setCard($card, open) {
+    $card.toggleClass('is-open', open);
+    $card.find('.card-summary').attr('aria-expanded', String(open));
+  }
+  $('.card-summary').on('click', function(e) {
+    if ($(e.target).closest('a').length) return;
+    var $card = $(this).closest('.ledger-card');
+    setCard($card, !$card.hasClass('is-open'));
+  });
+  $('.card-summary').on('keydown', function(e) {
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); $(this).trigger('click'); }
+  });
+  $('.card-toggle-all').on('click', function() {
+    var open = $(this).attr('aria-pressed') !== 'true';
+    $('.scorecard-section .ledger-card').each(function() { setCard($(this), open); });
+    $(this).attr('aria-pressed', String(open)).text(open ? 'Collapse all' : 'Expand all');
+  });
+  // Opening a link like #card-moneyview expands that card
+  function openFromHash() {
+    var id = (location.hash || '').slice(1);
+    if (id.indexOf('card-') === 0) { var $c = $('#' + id); if ($c.length) setCard($c, true); }
+  }
+  openFromHash();
+  $(window).on('hashchange', openFromHash);
 });
 </script>
 
