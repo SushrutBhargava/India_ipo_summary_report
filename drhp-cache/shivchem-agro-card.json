@@ -1,0 +1,73 @@
+{
+  "slug": "shivchem-agro",
+  "name": "Shivchem Agro",
+  "segment": "SME",
+  "exchange": "BSE SME",
+  "price_band": "₹59-62",
+  "issue_size": "₹14.01 Cr (fresh ₹14.01 Cr + OFS ₹0.00 Cr)",
+  "open": "28 Sep",
+  "close": "30 Sep",
+  "listing": "6 Oct",
+  "lot": "2,000 shares",
+  "lead_managers": [
+    "Shannon Advisors Pvt.Ltd."
+  ],
+  "lm_label": "Caution",
+  "lm_rationale": "Shannon Advisors: 2 IPOs all-time (1 SME, 1 mainboard), both listed at a loss (0% positive). Chittorgarh 2026 mainboard tracker: 1 issue (Skyways Air Services, ₹582.80 Cr), -9.01% avg listing gain. Its SME issue Globtier Infotech (Sep 2025) listed -20%. Not on the 2026 SME tracker.",
+  "health": "Strong",
+  "valuation_text": "fair P/E (14.38x post-issue; RHP peer avg 21.52x)",
+  "valuation_class": "fair",
+  "fund_use_text": "Growth-led",
+  "fund_use_class": "growth-led",
+  "revenue": {
+    "FY24": "10.94",
+    "FY25": "27.47",
+    "FY26": "33.82"
+  },
+  "pat": {
+    "FY24": "1.29",
+    "FY25": "2.60",
+    "FY26": "3.25"
+  },
+  "revenue_growth_pct": "+23.12%",
+  "pat_growth_pct": "+24.87%",
+  "roe": "28.76%",
+  "roce": "30.04%",
+  "ronw": "28.76%",
+  "de": "0.56",
+  "pat_margin": "9.60%",
+  "ebitda_margin": "17.69%",
+  "nav": "₹24.50",
+  "pbv": "2.53",
+  "eps_pre": "6.16",
+  "eps_post": "4.31",
+  "pe_pre": "10.06",
+  "pe_post": "14.38",
+  "promoter_pre": "92.73%",
+  "promoter_post": "64.91%",
+  "net_proceeds": "₹6.90 Cr for working capital and ₹3.50 Cr to repay or prepay loans (₹10.40 Cr identified). The balance goes to general corporate purposes, capped at 15% of the issue, after issue expenses that the RHP leaves blank.",
+  "key_risks": "Business depends on CIBRC/FCO product licences and one Jhajjar plant. Operating cash flow was negative in FY24 (-₹4.34 Cr) and FY25 (-₹3.00 Cr). The company has ₹1.36 Cr of capital advances outstanding to promoter Sachin Agarwal for a property purchase that is not yet complete.",
+  "market_moat": "Licensed for 176 agrochemical products under the Insecticides Act and 82 fertilizers under the FCO. Sells through 685 distributors backed by five godowns and field demonstrations, with PAT margin of 9.61% against 3.95% and 7.85% for the two listed peers.",
+  "management": "Promoters Rohit Agarwal, Sachin Agarwal and Deepa Agarwal; 92.73% pre-issue promoter holding drops to 64.91% post-issue.",
+  "prose_business": "Shivchem Agro makes and distributes crop-protection formulations (insecticides, fungicides, herbicides, plant growth regulators, rodenticides) and some fertilizers from a single plant in Jhajjar, Haryana. All revenue is domestic, mainly from Assam, Haryana, Telangana and Andhra Pradesh, sold through 685 distributors.",
+  "highlight_dev": "The distributor network grew from 516 to 685 in FY26 (+32.75%), and the sales team from 22 to 39.",
+  "sector_outlook": "The RHP, citing Technaivo/EMIS, puts India's agrochemical market at USD 22.56 billion in 2024, growing at an 11.8% CAGR to USD 39.40 billion by 2029. It puts the pesticide segment at USD 8.76 billion, growing at a 13.5% CAGR.",
+  "gov_scheme": null,
+  "peer_sentence": "At 14.38x post-issue P/E, the issue is below both peers in the RHP table: Super Crop Safe Ltd at 27.83x and Sikko Industries Ltd at 15.21x (industry average 21.52x).",
+  "peer_class": "val-cheap",
+  "verdict": "Watch",
+  "verdict_reason": "23% revenue growth and 14.38x P/E, but a weak LM record and cash-flow and promoter-advance flags",
+  "why": "Revenue grew from ₹10.94 Cr to ₹33.82 Cr over FY24-FY26 and PAT from ₹1.29 Cr to ₹3.25 Cr. EBITDA margin is 17.69% and D/E has come down to 0.56. At the upper band the post-issue P/E is 14.38x and P/BV is 2.53x, below the RHP peer average of 21.52x. Two-thirds of the ₹10.40 Cr identified use goes to working capital, which fits a business with 383 inventory days and negative operating cash flow in two of three years. Shannon Advisors' only two listed IPOs both opened below issue price. The ₹1.36 Cr advance to a promoter for property is a governance point to track.",
+  "suggestion": "Watch; consider only for the long term, since the lead manager has no positive listings and the minimum application is ₹2,48,000",
+  "doc_verified": true,
+  "documents": [
+    "drhp-cache/shivchem-agro-rhp.pdf (RHP dated 22 Sep 2026, 494 pages; source shivchemagro.com)"
+  ],
+  "discrepancies": [
+    "chittorgarh post-issue P/E 14.39x vs 14.38x computed from RHP PAT ₹324.86 lakh / 75,32,873 shares (EPS 4.3126); rounding only",
+    "chittorgarh PAT margin 9.61% is on revenue from operations (RHP KPI); on total income ₹3,383.86 lakh it is 9.60%. Card uses 9.60% per brief",
+    "chittorgarh says licensed to sell in eight states; RHP operational KPI shows 6 states covered in FY26 (revenue table lists 8 states incl. minor ones)",
+    "RHP KPI peer table spells peer as 'Super Corp Safe Limited'; peer P/E table uses 'Super Crop Safe Limited'",
+    "Issue price, NAV post-issue, GCP amount and issue expenses are [●] in RHP; P/E and P/BV at ₹62 computed"
+  ]
+}

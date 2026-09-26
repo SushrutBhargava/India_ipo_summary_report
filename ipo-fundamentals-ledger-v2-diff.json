@@ -1,0 +1,132 @@
+{
+  "generated": "2026-09-25",
+  "comparison_baseline": "production ipo-fundamentals-ledger.html (28 cards) cross-checked against live investorgain.com/ipoji.com/chittorgarh.com fetches",
+  "added": [
+    {
+      "slug": "acme-universal-safezone-9",
+      "name": "Acme Universal Safezone 9 Ltd",
+      "reason": "new issue not present in production ledger's 28-card baseline"
+    },
+    {
+      "slug": "black-opal-consultants",
+      "name": "Black Opal Consultants Ltd",
+      "reason": "new issue not present in production ledger's 28-card baseline"
+    },
+    {
+      "slug": "core-integra-consulting",
+      "name": "Core Integra Consulting Services Ltd",
+      "reason": "new issue not present in production ledger's 28-card baseline"
+    },
+    {
+      "slug": "dove-soft",
+      "name": "Dove Soft Ltd",
+      "reason": "new issue not present in production ledger's 28-card baseline"
+    },
+    {
+      "slug": "dudani-retail",
+      "name": "Dudani Retail Ltd",
+      "reason": "new issue not present in production ledger's 28-card baseline"
+    },
+    {
+      "slug": "everestims-technologies",
+      "name": "EverestIMS Technologies Ltd",
+      "reason": "new issue not present in production ledger's 28-card baseline"
+    },
+    {
+      "slug": "green-asia-impex",
+      "name": "Green Asia Impex Ltd",
+      "reason": "new issue not present in production ledger's 28-card baseline"
+    },
+    {
+      "slug": "omara-ventures-india",
+      "name": "Omara Ventures India Ltd",
+      "reason": "new issue not present in production ledger's 28-card baseline"
+    },
+    {
+      "slug": "papadmalji-agro-foods",
+      "name": "Papadmalji Agro Foods Ltd",
+      "reason": "new issue not present in production ledger's 28-card baseline"
+    },
+    {
+      "slug": "paramount-syntex",
+      "name": "Paramount Syntex Ltd",
+      "reason": "new issue not present in production ledger's 28-card baseline"
+    },
+    {
+      "slug": "pind-hospitality",
+      "name": "Pind Hospitality Ltd",
+      "reason": "new issue not present in production ledger's 28-card baseline"
+    },
+    {
+      "slug": "shah-investors-home",
+      "name": "Shah Investor's Home Ltd",
+      "reason": "new issue not present in production ledger's 28-card baseline"
+    },
+    {
+      "slug": "shivchem-agro",
+      "name": "Shivchem Agro Ltd",
+      "reason": "new issue not present in production ledger's 28-card baseline"
+    },
+    {
+      "slug": "shree-tnb-polymers",
+      "name": "Shree TNB Polymers Ltd",
+      "reason": "new issue not present in production ledger's 28-card baseline"
+    },
+    {
+      "slug": "srit-india",
+      "name": "SRIT India Ltd",
+      "reason": "new issue not present in production ledger's 28-card baseline"
+    },
+    {
+      "slug": "vans-electroengineerings",
+      "name": "Vans Electroengineerings Ltd",
+      "reason": "new issue not present in production ledger's 28-card baseline"
+    }
+  ],
+  "dropped_because_listed": [
+    {
+      "slug": "kheria-autocomp",
+      "name": "Kheria Autocomp",
+      "reason": "moved from Closed/Open to Listed since production ledger snapshot; now covered only in Recently-Listed table"
+    },
+    {
+      "slug": "spectraa-technology-solutions",
+      "name": "SpectraA Technology Solutions",
+      "reason": "moved from Closed/Open to Listed since production ledger snapshot; now covered only in Recently-Listed table"
+    }
+  ],
+  "status_changed": [
+    {
+      "slug": "himalaya-nutravedics-india",
+      "name": "Himalaya Nutravedics India Ltd",
+      "production_ledger_status": "Open",
+      "live_status": "Closed"
+    },
+    {
+      "slug": "spectraa-technology-solutions",
+      "name": "SpectraA Technology Solutions",
+      "production_ledger_status": "Closed",
+      "live_status": "Listed"
+    },
+    {
+      "slug": "kheria-autocomp",
+      "name": "Kheria Autocomp",
+      "production_ledger_status": "Closed",
+      "live_status": "Listed"
+    },
+    {
+      "slug": "anand-seamless",
+      "name": "Anand Seamless Ltd",
+      "production_ledger_status": "Open",
+      "live_status": "Closed"
+    }
+  ],
+  "summary": {
+    "total_companies_this_run": 50,
+    "open_upcoming_closed_cards": 42,
+    "recently_listed_entries": 8,
+    "added_count": 16,
+    "dropped_because_listed_count": 2,
+    "status_changed_count": 4
+  }
+}

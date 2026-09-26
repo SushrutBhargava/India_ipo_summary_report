@@ -1,0 +1,73 @@
+{
+  "slug": "papadmalji-agro-foods",
+  "name": "Papadmalji Agro Foods",
+  "segment": "SME",
+  "exchange": "NSE SME",
+  "price_band": "₹69-72",
+  "issue_size": "₹20.18 Cr (fresh ₹18.52 Cr + OFS ₹1.66 Cr)",
+  "open": "29 Sep",
+  "close": "1 Oct",
+  "listing": "7 Oct",
+  "lot": "1,600 shares (min 2 lots / 3,200 shares = ₹2,30,400)",
+  "lead_managers": [
+    "Kreo Capital Pvt.Ltd."
+  ],
+  "lm_label": "Caution",
+  "lm_rationale": "Kreo Capital Pvt.Ltd. — no 2026 record on chittorgarh's SME tracker; RHP past-issue table lists 3 listed SME IPOs (3C IT Solutions -17.29%, Active Infrastructures 0.00%, Shree Kanha Stainless -2.22% open vs issue price), 0 of 3 positive, -6.50% avg listing-day open; all three were down 6-70% by day 30.",
+  "health": "Strong",
+  "valuation_text": "fair P/E (12.97x post), P/BV 3.04x",
+  "valuation_class": "fair",
+  "fund_use_text": "Mixed (capex ₹7.90 Cr + debt ₹5.80 Cr)",
+  "fund_use_class": "mixed",
+  "revenue": {
+    "FY24": "26.29",
+    "FY25": "31.76",
+    "FY26": "33.54"
+  },
+  "pat": {
+    "FY24": "2.11",
+    "FY25": "4.72",
+    "FY26": "5.21"
+  },
+  "revenue_growth_pct": "+5.59%",
+  "pat_growth_pct": "+10.33%",
+  "roe": "38.51%",
+  "roce": "46.47%",
+  "ronw": "32.29%",
+  "de": "0.62",
+  "pat_margin": "15.54%",
+  "ebitda_margin": "25.16%",
+  "nav": "₹23.67",
+  "pbv": "3.04",
+  "eps_pre": "7.64",
+  "eps_post": "5.55",
+  "pe_pre": "9.42",
+  "pe_post": "12.97",
+  "promoter_pre": "60.98%",
+  "promoter_post": "44.28%",
+  "net_proceeds": "₹7.90 Cr for a new 45,000 sq ft rice-papad/machine-made unit at Bachhasar, Bikaner (₹4.41 Cr building, ₹2.81 Cr machinery, ₹0.68 Cr 250 kW rooftop solar) and ₹5.80 Cr to repay bank borrowings; the rest is general corporate purposes. The ₹1.66 Cr OFS goes to India Customer Insight Fund, not the company.",
+  "key_risks": "Working capital is heavy, with inventory of ₹24.99 Cr against FY26 revenue of ₹33.53 Cr, and the top 10 customers made up 45.94% of FY26 revenue. There is also a ₹2.77 Cr income-tax reassessment demand under appeal.",
+  "market_moat": "Its own brands (Zhakaas, Vishal, Rozana, Diamond, Papadmalji) are sold in 21 states and 3 UTs through general trade, modern trade, quick commerce and D2C. Hand-made papads come from a women-led Batara-Batari home-rolling network in Bikaner.",
+  "management": "Promoters Jai Agarwal, Prem Lata Agarwal and Aanya Agarwal; 60.98% pre-issue promoter holding drops to 44.28% post-issue.",
+  "prose_business": "Papadmalji makes hand-made, machine-made and rice (khichiya) papads, vrat papads and moongodi at two FSSAI-licensed units in Bikaner. It also does white-label hand-made papad manufacturing and trades cereal pellets. FY26 revenue from operations was ₹33.53 Cr.",
+  "highlight_dev": "A new ₹7.90 Cr Bachhasar, Bikaner unit will take over rice-papad (khichiya) production, where FY26 utilisation was 93.15%, and add 5\"/7\" rice papads and mini machine-made papads. The rented Karni unit then closes.",
+  "sector_outlook": "The RHP's industry section puts India's food processing market at Rs. 33,052.5 billion in FY25 and expects Rs. 65,835 billion by FY34. It also describes papad as a fragmented, price-sensitive segment dominated by unorganised players.",
+  "gov_scheme": "The company says it is eligible for a capital subsidy under the Rajasthan Investment Promotion Scheme, 2024 (RIPS 2024): 50% of capital investment, capped at ₹1.50 crore and paid at 5% a year for 10 years. Sanction and timing are not assured.",
+  "peer_sentence": "The RHP has no peer comparison. It says no listed company in India is exclusively in papad manufacturing or of comparable size, so the 12.97x post-issue P/E cannot be benchmarked against a document peer set.",
+  "peer_class": "val-nodata",
+  "verdict": "Watch",
+  "verdict_reason": "12.97x post-issue P/E is reasonable, but FY26 revenue grew only 5.59%, inventory is heavy and the LM record is negative",
+  "why": "FY26 total income rose 5.59% to ₹33.54 Cr and PAT 10.33% to ₹5.21 Cr. PBT grew 53.46% (₹4.72 Cr to ₹7.24 Cr), but FY25 carried no current tax, which flattens reported PAT growth. At ₹72 the issue is priced at 12.97x FY26 EPS on post-issue shares and 3.04x NAV, with D/E of 0.62. About 58% of the itemised proceeds fund a new Bikaner unit and the rest repays bank debt. Kreo Capital's three prior SME listings opened flat-to-negative on average (-6.50%). Promoters fall to 44.28% post-issue. The main risk is working capital: FY26 inventory was ₹24.99 Cr.",
+  "suggestion": "Watch: apply only for the long term if subscription is strong. The lead manager's record and minority promoter stake make listing gains uncertain.",
+  "doc_verified": true,
+  "documents": [
+    "drhp-cache/papadmalji-agro-foods-rhp.pdf (RHP dated 23 Sep 2026, 461 pages; source papadmalji.com link from chittorgarh)"
+  ],
+  "discrepancies": [
+    "No chittorgarh figure conflicts with the RHP. Financials, KPIs, EPS, NAV and promoter % all match. chittorgarh's P/E 9.42/12.97 uses FY26 EPS on pre-issue and post-issue shares, so it is correct.",
+    "The RHP leaves issue amounts as [●]. The ₹18.52 Cr fresh and ₹1.66 Cr OFS figures are 25,72,800 and 2,30,400 shares × ₹72, and they match chittorgarh.",
+    "The RHP is internally inconsistent: DSCR for FY25/FY24 is 2.45/2.50 on p130 but 0.13/0.06 on p134. Rice papad FY26 production is 1,02,031 kg on p130 but 10,20,031 kg on p134; the 93.15% utilisation matches 10,20,031.",
+    "The RHP's working-capital risk factor shows FY26 inventory as ₹2,416.62 lakh, but the restated balance sheet shows ₹2,498.61 lakh. The balance-sheet figure is used.",
+    "PAT growth of +10.33% understates the operating trend: PBT rose 53.46% because FY25 had zero current tax and FY26 had ₹178.61 lakh current tax plus ₹20.69 lakh earlier-year tax."
+  ]
+}

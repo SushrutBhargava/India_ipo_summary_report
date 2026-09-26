@@ -1,0 +1,72 @@
+{
+  "slug": "black-opal-consultants",
+  "name": "Black Opal Consultants",
+  "segment": "SME",
+  "exchange": "BSE SME",
+  "price_band": "₹185-197",
+  "issue_size": "₹55.08 Cr (fresh ₹44.09 Cr + OFS ₹10.99 Cr)",
+  "open": "29 Sep",
+  "close": "1 Oct",
+  "listing": "7 Oct",
+  "lot": "600 shares",
+  "lead_managers": [
+    "Khambatta Securities Ltd."
+  ],
+  "lm_label": "Strong",
+  "lm_rationale": "Khambatta Securities Ltd.: 23 IPOs handled all-time (17 SME, 6 mainboard) per IPOMarkets (not on chittorgarh's 2026 SME tracker, which lists this as its only 2026 SME mandate to date). Of the 16 listed issues with recorded listing-day gain, 13 (81%) listed positive, only 3 negative (Rachit Prints -20.0%, Aaradhya Disposal Industries -4.3%, Icon Facilitators -1.1%), with an overall average listing gain of +49.7%. Its mainboard mandate Technocraft Ventures (Aug 2026) listed +34.0% and Vibhor Steel Tubes (Feb 2024) listed +181.5%. Meets this ledger's 'Strong' bar (≥70% positive and ≥15% avg gain).",
+  "health": "Strong",
+  "valuation_text": "P/E not meaningfully comparable — RHP's sole disclosed peer (Homesfy Realty) posted a FY26 loss, so peer P/E is NA; on its own FY26 numbers the issue prices at 17.07x post-issue P/E and roughly 5.03x P/BV against FY26 NAV",
+  "valuation_class": "rich",
+  "fund_use_text": "Mixed (66% into a group-entity real-estate project)",
+  "fund_use_class": "mixed",
+  "revenue": {
+    "FY24": "19.91",
+    "FY25": "33.04",
+    "FY26": "42.34"
+  },
+  "pat": {
+    "FY24": "4.32",
+    "FY25": "11.48",
+    "FY26": "12.20"
+  },
+  "revenue_growth_pct": "+28.15%",
+  "pat_growth_pct": "+6.44%",
+  "roe": "46.03%",
+  "roce": "40.12%",
+  "ronw": "46.03%",
+  "de": "0.29",
+  "pat_margin": "29.11%",
+  "ebitda_margin": "40.62%",
+  "nav": "₹39.17",
+  "pbv": "5.03",
+  "eps_pre": "14.65",
+  "eps_post": "11.54",
+  "pe_pre": "13.47",
+  "pe_post": "17.07",
+  "promoter_pre": "98.6%",
+  "promoter_post": "72.46%",
+  "net_proceeds": "₹7.00 Cr for funding sales/marketing mandates (developer security advances) and ₹26.00 Cr as investment in Aurika Developers LLP, a Group Entity, to finance its Ayodhya (\"Veda\") commercial/hospitality project (₹33.00 Cr identified total, ≈75% of the ₹44.09 Cr fresh-issue portion). Balance to general corporate purposes, capped at 15% of the fresh issue or ₹10 Cr, whichever is lower. The company also carries out a ₹10.99 Cr OFS by promoter Prasoon Chauhan (5,58,000 shares), from which the company receives no proceeds.",
+  "key_risks": "₹26.00 Cr (59% of the identified use of net proceeds) funds a Group Entity's (Aurika Developers LLP) real-estate project rather than the issuer's own core brokerage business — a related-party capital-allocation flag. The Ayodhya project's land is held not by Aurika Developers LLP itself but by a further Group Entity, Advika Buildtech LLP, in which Aurika Developers LLP holds only a 44.92% partnership interest (RHP risk factor 17) — an indirect and partial claim on the underlying land. Company does not own its registered/corporate office premises, which are shared with multiple group entities/subsidiary under separate lease arrangements. UP RERA real-estate-agent registration has expired and renewal is pending. Revenue concentration: top-5 customers were 67.69% of FY26 revenue (up from 71.87% FY25, but down from 87.53% FY24); no long-term customer contracts. Company issued a 9:1 bonus share (75,05,271 bonus shares on a base of 8,33,919) during FY26, which materially changes per-share metrics year-on-year — pre-bonus NAV was ₹244.76/share (FY25) vs post-bonus ₹39.17/share (FY26); comparisons across FY25/FY26 per-share figures must account for this.",
+  "market_moat": "Real-estate sales/marketing intermediary working on exclusive or semi-exclusive mandates with developers including Gaurs Group, SKA, Galaxy, Shapoorji Pallonji, Max Estates and M3M, plus a Group Entity (Aurika Homes). Revenue model: brokerage/commission income, loan syndication fees, and (via Aurika Developers LLP) a foray into real-estate development in Tier-II cities. Network of 200+ brokers; operations concentrated in Noida and Gurugram (Uttar Pradesh and Haryana).",
+  "management": "Promoters: Prasoon Chauhan (94.18% pre-issue, also the OFS selling shareholder) and Sheikh Arfeen Ahmed (1.00%). Promoter Group adds Rafat Jahan Siddiqui (1.92%) and Narendra Kumar (1.50%). Combined promoter + promoter group pre-issue holding 98.6%, falling to 72.46% post-issue.",
+  "prose_business": "Black Opal Consultants, incorporated in 2020, is a Delhi/Noida-based real estate sales and marketing consultancy that signs exclusive or semi-exclusive mandates with developers to market and sell residential and commercial inventory for brokerage income, and has begun its own real-estate development via a Group Entity's Ayodhya project.",
+  "highlight_dev": "The company issued a 9:1 bonus share (75,05,271 new shares against 8,33,919 outstanding) during FY26, taking outstanding shares from 8,33,919 to 83,39,190 — the single largest driver of the year-on-year change in every per-share metric (EPS, NAV, P/E, P/BV).",
+  "sector_outlook": null,
+  "gov_scheme": null,
+  "peer_sentence": "RHP 'Comparison with Listed Industry Peer' table (p.134) names exactly one listed peer, Homesfy Realty Limited, which posted a FY26 loss (PAT -₹2,048.49 lakh, EBITDA margin -45.71%, ROE -51.26%, ROCE -53.88%) against Black Opal's FY26 PAT of ₹1,221.55 lakh, EBITDA margin 40.62%, ROE 46.03% and ROCE 40.12%. Because the peer's diluted EPS is negative, the RHP itself states peer P/E is 'NA' and cannot be used for a valuation comparison; the RHP's own 'Industry Peer Group P/E ratio' box (Highest/Lowest/Average) is accordingly also NA for FY26. In FY25 Homesfy Realty was also weaker on RoNW (3.07% vs Black Opal's 78.24%) and PAT margin (2.34% vs 34.93%), though it had far higher revenue (₹58.67 Cr vs ₹32.86 Cr). No like-for-like listed-peer P/E multiple is available for this issue.",
+  "peer_class": "val-no-peer",
+  "verdict": "Watch",
+  "verdict_reason": "strong lead-manager track record and FY26 profitability, but no usable peer P/E, a materially bonus-share-distorted per-share history, and 59% of net proceeds funding a related group entity's project on land it only partially and indirectly controls",
+  "why": "Revenue from operations grew from ₹19.75 Cr (FY24) to ₹32.86 Cr (FY25) to ₹41.97 Cr (FY26), roughly +67% then +28%; total income moved ₹19.91 Cr → ₹33.04 Cr → ₹42.34 Cr, +28.15% in FY26. PAT rose ₹4.32 Cr → ₹11.48 Cr → ₹12.20 Cr, +6.44% in FY26 (a slower rate than revenue, consistent with EBITDA margin compressing from 47.63% (FY25) to 40.62% (FY26)). FY26 D/E is 0.29 (up from 0.01 in FY25, after the company drew ₹5.04 Cr of net debt). At the upper band, post-issue P/E is 17.07x on FY26 EPS of ₹11.54 and P/BV is roughly 5.03x FY26 NAV of ₹39.17 — both up sharply from the pre-bonus FY25 basis (NAV ₹244.76/share, giving a much lower apparent 0.80x P/BV) that chittorgarh's KPI table still displays. The RHP's sole disclosed peer, Homesfy Realty, posted a FY26 loss, so there is no usable peer P/E for comparison. Of the ₹33.00 Cr identified use of net proceeds, ₹26.00 Cr (79%) funds a Group Entity's Ayodhya real-estate project rather than the issuer's own brokerage operations, and that Group Entity itself holds only a 44.92% indirect interest in the entity that owns the underlying land. Lead manager Khambatta Securities has a strong track record: 81% positive listings and +49.7% average listing-day gain across 16 listed issues.",
+  "suggestion": "Watch; the lead-manager track record and FY26 profitability are genuine positives, but confirm you are comfortable with a no-peer-P/E valuation and with 79% of net proceeds flowing into a related group entity's project before treating this as a straightforward subscribe.",
+  "doc_verified": true,
+  "documents": [
+    "drhp-cache/black-opal-consultants-rhp.pdf (Red Herring Prospectus, issue size and promoter/OFS structure match chittorgarh's current cohort listing)"
+  ],
+  "discrepancies": [
+    "chittorgarh's Key Performance Indicator table is headed 'Mar 31, 2025' (not 2026) and shows ROE 56.25%, ROCE 75.05%, D/E 0.01, RoNW 56.25%, PAT Margin 34.94%, EBITDA Margin 47.07%, NAV ₹244.76, P/BV 0.80 — these are FY25 (pre-9:1-bonus-share) figures, not the latest FY26 figures the RHP itself discloses (ROE 46.03%, ROCE 40.12%, D/E 0.29, PAT Margin 29.11%, EBITDA Margin 40.62%, NAV ₹39.17). The card uses the RHP's FY26 figures as current; readers comparing this card to chittorgarh's own page will see a large apparent gap in NAV/P-BV/D-E that is fully explained by the FY26 bonus share issue plus chittorgarh presenting the older fiscal year",
+    "chittorgarh's IPO Valuation table (EPS pre/post 14.63/11.54, P/E pre/post 13.47/17.07) DOES use FY26 (post-bonus) figures correctly and is internally consistent with the RHP's Basis-for-Offer-Price FY26 EPS of ₹14.65 (minor rounding gap of ₹0.02, likely a weighted-share-count difference) — so only chittorgarh's separate KPI table, not its valuation table, carries the stale FY25 vintage",
+    "RHP 'Industry Peer Group P/E ratio' table for FY26 states Highest/Lowest/Average all as 'NA' because the sole peer's diluted EPS is negative; chittorgarh's page does not surface a peer-comparison caveat, it simply omits the peer table filter link output — confirmed no listed-peer P/E is computable for this issue, not an omission on this ledger's part",
+    "Chittorgarh's headline paragraph states revenue growth of 28% and PAT growth of 6%; this card computes +28.15% (total income basis) / +27.71% (revenue-from-operations basis) and +6.44% PAT growth from the RHP's lakh-precision figures — consistent with chittorgarh's crore-rounded figures, no material disagreement"
+  ]
+}

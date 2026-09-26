@@ -1,0 +1,72 @@
+{
+  "slug": "eventions",
+  "name": "Eventions Ltd",
+  "segment": "SME",
+  "exchange": "NSE SME",
+  "price_band": "₹112-118",
+  "issue_size": "₹38.12 Cr (fresh ₹38.12 Cr + OFS ₹0.00 Cr)",
+  "open": "30 Sep",
+  "close": "5 Oct",
+  "listing": "8 Oct",
+  "lot": "1,200 shares",
+  "lead_managers": [
+    "Corporate Professionals Capital Pvt.Ltd."
+  ],
+  "lm_label": "Strong (small sample)",
+  "lm_rationale": "Not in chittorgarh's 2026 SME lead-manager tracker (no current-year listed mandate besides this one). IPOMarkets multi-year record: 5 SME IPOs handled (₹131 Cr total), 2 with listing data so far — Diensten Tech +140.0% (Jul 2024) and Ashwini Container Movers +3.5% (Dec 2025) — both positive, average +71.8%. Sample is thin (2 of 5 mandates have listed); Maxwell Life Sciences and Alde Medi Impex have not yet listed.",
+  "health": "Mixed",
+  "valuation_text": "18.61x post-issue P/E vs RHP peer average 16.71x; rich P/BV of 5.64x",
+  "valuation_class": "rich",
+  "fund_use_text": "Growth-led",
+  "fund_use_class": "growth-led",
+  "revenue": {
+    "FY24": "86.57",
+    "FY25": "87.53",
+    "FY26": "99.74"
+  },
+  "pat": {
+    "FY24": "3.29",
+    "FY25": "5.13",
+    "FY26": "7.72"
+  },
+  "revenue_growth_pct": "+13.95%",
+  "pat_growth_pct": "+50.61%",
+  "roe": "55.16%",
+  "roce": "48.76%",
+  "ronw": "55.16%",
+  "de": "0.52",
+  "pat_margin": "7.67%",
+  "ebitda_margin": "10.22%",
+  "nav": "₹20.92",
+  "pbv": "5.64",
+  "eps_pre": "8.62",
+  "eps_post": "6.34",
+  "pe_pre": "13.69",
+  "pe_post": "18.61",
+  "promoter_pre": "99.96%",
+  "promoter_post": "73.46%",
+  "net_proceeds": "₹7.00 Cr to repay/prepay borrowings, ₹1.40 Cr to invest in subsidiary Gantu Online Pvt Ltd, ₹18.80 Cr for working capital (₹27.20 Cr identified). Remainder is General Corporate Purpose, capped at the lower of 15% of gross proceeds or ₹10 Cr — undisclosed as an exact figure ([●] in RHP).",
+  "key_risks": "Customer concentration is high and worsening in relative terms even as revenue grows: top 1 customer was 42.72% of FY26 revenue (down from 63.21% in FY24, but still concentrated), top 10 customers were 84.59% of FY26 revenue. RHP risk factor 2 explicitly flags that the FY25-FY26 PAT-margin surge (3.77%→5.82%→7.67%) came from a shift toward higher-ticket international events (49 events ≥₹50 lakh in FY26 vs 31 in FY25) and may not be sustainable. The 'EVENTIONS' trademark is still registered in promoter Cristoo Arora's name, pending assignment to the company. Promoter Ravi Rajak previously directed Aadvik Traders Pvt Ltd, now under voluntary strike-off. Litigation: 6 tax proceedings against the company (₹83.03 lakh) and 10 against promoters (₹188.11 lakh).",
+  "market_moat": "Asset-light MICE (Meetings, Incentives, Conferences, Exhibitions) and corporate event-management company, B2B model plus execution support for other event companies. Executed 107 events with individual billing over ₹50 lakh across FY24-FY26 and international events in Spain, France, Netherlands, Switzerland, Hungary, UAE, Azerbaijan, Singapore and Indonesia. MICE contributed 91.29% of FY26 revenue from operations. Subsidiary Gantu Online Pvt Ltd runs a B2C travel booking platform.",
+  "management": "Promoters Cristoo Arora, Ravi Rajak and Kirat Ahluwalia; 99.96% pre-issue promoter holding drops to 73.46% post-issue.",
+  "prose_business": "Eventions Limited plans, coordinates and executes corporate events, conferences, incentive travel and brand activations for institutional clients, operating an asset-light model that coordinates hospitality, logistics and production vendors rather than owning them. It won 'India's Leading MICE & Event Brand of the Year' for 2024-25.",
+  "highlight_dev": "The company allotted a 45,29,200-share bonus issue on 5 Mar 2026 (roughly 4.36:1) and a smaller bonus/rights issue in Sep 2025, both reflected in the RHP's restated per-share figures.",
+  "sector_outlook": "Not separately quantified with third-party industry data in the RHP sections reviewed; the RHP instead emphasises the company's own event-count growth (107 large-format events over FY24-FY26, individual billing >₹50 lakh) as the basis for its qualitative factors.",
+  "gov_scheme": "None disclosed — the RHP does not describe the company as availing any government incentive/export scheme.",
+  "peer_sentence": "RHP peer table (p.107-108, based on Mar-26 FY-end data): Mach Conferences & Events Ltd trades at 22.44x P/E (EPS ₹7.16, RoNW 12.99%, NAV ₹58.47) and E-Factor Experiences Ltd at 10.98x P/E (EPS ₹15.03, RoNW 24.25%, NAV ₹69.41); industry average P/E is 16.71x. At the ₹118 upper band, Eventions prices at 13.69x pre-issue and 18.61x post-issue EPS — below Mach Conferences but above E-Factor and above the RHP's own stated industry average, despite far higher RoNW (55.16%) than either peer.",
+  "peer_class": "val-mixed",
+  "verdict": "Watch",
+  "verdict_reason": "Very high RoNW (55.16%) and ROCE (48.76%) but thin PAT margin (7.67%), heavy customer concentration (top 10 = 84.59% of FY26 revenue), and a post-issue P/E (18.61x) above the RHP's own stated industry average (16.71x)",
+  "why": "Revenue grew 13.95% to ₹99.74 Cr in FY26 and PAT grew 50.61% to ₹7.72 Cr, but the RHP itself warns (Risk Factor 2) that this margin expansion came from an unusually large mix of high-ticket international events and may not repeat. RoNW of 55.16% and ROCE of 48.76% are very high for the sector, but PAT margin is a thin 7.67% and D/E of 0.52 reflects working-capital-heavy borrowings that rose from ₹2.01 Cr to ₹9.44 Cr over three years. Net proceeds go mostly to debt repayment (₹7.00 Cr), a subsidiary investment (₹1.40 Cr) and working capital (₹18.80 Cr) — growth-led, no OFS. At ₹118 the post-issue P/E of 18.61x sits above the RHP's own peer-table industry average of 16.71x, though below Mach Conferences & Events' 22.44x. Lead manager Corporate Professionals Capital has no 2026 chittorgarh-tracked mandate; its longer IPOMarkets record shows only 2 of 5 handled SME IPOs listed so far, both positive (+140.0% and +3.5%). No GMP was reported as of 26 Sep 2026 (issue opens 30 Sep).",
+  "suggestion": "Watch; strong returns ratios and growth are real, but the RHP's own risk factor questions the sustainability of the recent margin surge, and the post-issue P/E is already above the RHP's disclosed peer average",
+  "doc_verified": true,
+  "documents": [
+    "drhp-cache/eventions-rhp.pdf (Red Herring Prospectus dated 22 Sep 2026, source: page footer confirms NSE SME listing, 32,30,400 fresh shares, matching chittorgarh's live cohort)"
+  ],
+  "discrepancies": [
+    "RHP leaves Price Band, Issue Price, P/E ratios and post-issue NAV/promoter % as [●] throughout (standard pre-price-band-finalisation RHP placeholders); chittorgarh's finalised ₹112-118 band, P/E and promoter % are used, cross-checked against multiple independent sources (chittorgarh, ipowatch, hdfcsky, indiaipo.in) which all agree on ₹112-118 and ₹38.12 Cr",
+    "RHP Basis-for-Issue-Price 'Basic EPS' for FY26 is ₹8.90 (AS-20 weighted-average-shares-during-the-year method, reflecting the in-year Mar-2026 bonus issue), while chittorgarh's Pre-IPO EPS is ₹8.62 (FY26 PAT ÷ pre-issue share count as of the RHP date). Both are internally consistent with their own denominators; this card uses chittorgarh's ₹8.62 for pre-issue P/E since it matches the pre-issue share count used for the post-issue calculation",
+    "RHP's own peer-comparison table (p.107-108) leaves Eventions' own CMP and P/E as '[●]/[●]^' pending price finalisation; this card's post-issue P/E of 18.61x is computed at the ₹118 upper band using RHP FY26 PAT (₹772.01 lakh) ÷ post-issue shares (1,21,83,909), consistent with chittorgarh's 18.61x",
+    "D/E of 0.52 (₹9.44 Cr debt / ₹18.13 Cr net worth) is presented as a ratio; RHP's own KPI table states it as '52.07%' (i.e., the same ratio expressed as a percentage) — same underlying number, different notation"
+  ]
+}
