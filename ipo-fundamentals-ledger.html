@@ -704,7 +704,7 @@
   .news-section { margin: 0 0 40px; }
   .news-section .news-head { display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:8px; }
   .news-asof { font-family:'IBM Plex Mono',monospace; font-size:0.7rem; color:#7a7060; letter-spacing:0.5px; text-transform:uppercase; }
-  .news-snapshot { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin:0 0 22px; }
+  .news-snapshot { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:10px; margin:0 0 22px; }
   .news-snapshot .sentiment-stat { background:#fffdf6; }
   .news-section h3 { font-family:'Source Serif 4',serif; font-size:1.08rem; color:var(--navy); margin:26px 0 10px; text-wrap:balance; }
   .news-section table.ledger-table { margin-bottom:18px; }
@@ -717,6 +717,7 @@
   .news-bottom { background:var(--parchment-dark); border-left:4px solid var(--gold); border-radius:0 8px 8px 0; padding:14px 18px; font-size:0.87rem; color:#3a3226; margin:22px 0 10px; }
   .news-sources { font-size:0.74rem; color:#5a5040; margin:8px 0 0; }
   @media (max-width: 760px) { .news-snapshot { grid-template-columns:repeat(2,1fr); } }
+  .gold-alert-pill { font-size:0.68rem; padding:1px 7px; }
 
   /* Collapsible scorecard cards */
   .scorecard-controls { display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap; margin:-6px 0 16px; }
@@ -938,7 +939,9 @@
   </div>
   <p class="section-desc">Scheduled events, policy changes and laws that can move Indian equities, and so listing-day demand for the IPOs above. Tone is risk-off: seven straight weekly losses, Brent near $105, rupee near 96/$, and steady FII selling.</p>
   <div class="news-snapshot">
-    <div class="sentiment-stat"><span class="lbl">Nifty 50 (25 Sep)</span><b>23,140.50</b><small>7th straight weekly fall (−0.9% week)</small></div>
+    <div class="sentiment-stat"><span class="lbl">Gold — MCX (Oct fut)</span><b>₹1,50,700/10g</b><small>−0.01% day · rolling to Dec ahead of 5 Oct expiry</small></div>
+    <div class="sentiment-stat"><span class="lbl">Gold — International (COMEX spot)</span><b>$4,284.2/oz</b><small>+0.25% day · Kitco, 26 Sep 7:23am ET</small></div>
+    <div class="sentiment-stat"><span class="lbl">Gold flow alert</span><b><span class="impact impact-pos gold-alert-pill">No alert</span></b><small>Oct-fut open interest −16% is expiry rollover, not distress selling; day's price move under 0.3% both markets</small></div>
     <div class="sentiment-stat"><span class="lbl">Brent crude</span><b>~$105.5/bbl</b><small>Hormuz risk, Houthi attacks; US-Iran truce talk is the upside</small></div>
     <div class="sentiment-stat"><span class="lbl">Rupee (25 Sep close)</span><b>95.81/$</b><small>Record low 96.39 (May); RBI defending near 96</small></div>
     <div class="sentiment-stat"><span class="lbl">FPI flows, Sep to date</span><b>−₹23,676 Cr</b><small>Through exchanges, up to 19 Sep (NSDL)</small></div>
