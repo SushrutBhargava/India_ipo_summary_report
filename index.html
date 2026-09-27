@@ -756,6 +756,11 @@
 .card-predicted.conf-pending { border-left-color: #8a8a8a; color: #666; }
 .card-predicted .pred-note { color: #6b6b6b; font-size: 0.8rem; }
 .predict-note { font-size: 0.8rem; color: #5b5b5b; margin: 4px 0 12px; }
+.pred-cell { font-variant-numeric: tabular-nums; white-space: nowrap; }
+.pred-cell small { font-size: 0.74rem; color: #6b6b6b; }
+.pred-cell > span:first-child { font-weight: 700; }
+.pred-cell.conf-high .pred-conf { color: var(--green); } .pred-cell.conf-medium .pred-conf { color: var(--amber); } .pred-cell.conf-low .pred-conf { color: var(--red); }
+.pred-cell.pred-none { color: #8a8a8a; }
 /* end Predicted gains */
 </style>
 </head>
@@ -4393,13 +4398,14 @@ Coreintegra Consulting Services Ltd. (formerly Coreintegra Consulting Services P
   <div class="table-scroll">
   <table class="ledger-table sortable">
     <caption>Recently listed IPOs &mdash; issue price vs listing price vs current market price</caption>
-    <thead><tr><th>Company</th><th>Issue price</th><th>Listing date</th><th>Listing price</th><th>Listing gains</th><th>Current market price</th><th>Current gain vs issue</th></tr></thead>
+    <thead><tr><th>Company</th><th>Issue price</th><th>Listing date</th><th>Listing price</th><th>Predicted gains</th><th>Listing gains</th><th>Current market price</th><th>Current gain vs issue</th></tr></thead>
     <tbody>
       <tr>
         <td class="tcell-name">Axiom Gas Engineering Ltd. <span class="tsub">SME</span></td>
         <td>&#8377;54.00</td>
         <td>25-Sep-2026</td>
         <td>&#8377;54.75</td>
+        <td data-sort="-999"><span class="pred-cell pred-none">no call<br><small>no GMP quoted</small></span></td>
         <td><span class="gain-pos">+1.39%</span></td>
         <td>&#8377;54.05</td>
         <td><span class="gain-pos">+0.09%</span></td>
@@ -4409,6 +4415,7 @@ Coreintegra Consulting Services Ltd. (formerly Coreintegra Consulting Services P
         <td>&#8377;118.00</td>
         <td>24-Sep-2026</td>
         <td>&#8377;224.20</td>
+        <td data-sort="68.6"><span class="pred-cell conf-low"><span class="gain-pos">+69%</span><br><small>range +42% to +90% · <span class="pred-conf">Low</span></small></span></td>
         <td><span class="gain-pos">+90.00%</span></td>
         <td>&#8377;247.15</td>
         <td><span class="gain-pos">+109.45%</span></td>
@@ -4418,6 +4425,7 @@ Coreintegra Consulting Services Ltd. (formerly Coreintegra Consulting Services P
         <td>&#8377;101.00</td>
         <td>24-Sep-2026</td>
         <td>&#8377;104.90</td>
+        <td data-sort="3.0"><span class="pred-cell conf-medium"><span class="gain-pos">+3.0%</span><br><small>range -13% to +13% · <span class="pred-conf">Medium</span></small></span></td>
         <td><span class="gain-pos">+3.86%</span></td>
         <td>&#8377;99.60</td>
         <td><span class="gain-neg">-1.39%</span></td>
@@ -4427,6 +4435,7 @@ Coreintegra Consulting Services Ltd. (formerly Coreintegra Consulting Services P
         <td>&#8377;1,785.00</td>
         <td>24-Sep-2026</td>
         <td>&#8377;1,800.00</td>
+        <td data-sort="2.2"><span class="pred-cell conf-high"><span class="gain-pos">+2.2%</span><br><small>range -8.0% to +9.0% · <span class="pred-conf">High</span></small></span></td>
         <td><span class="gain-pos">+0.84%</span></td>
         <td>&#8377;1,792.65</td>
         <td><span class="gain-pos">+0.43%</span></td>
@@ -4436,6 +4445,7 @@ Coreintegra Consulting Services Ltd. (formerly Coreintegra Consulting Services P
         <td>&#8377;99.00</td>
         <td>24-Sep-2026</td>
         <td>&#8377;102.21</td>
+        <td data-sort="0.0"><span class="pred-cell conf-high"><span class="">+0.0%</span><br><small>range -10% to +7.0% · <span class="pred-conf">High</span></small></span></td>
         <td><span class="gain-pos">+3.24%</span></td>
         <td>&#8377;102.05</td>
         <td><span class="gain-pos">+3.08%</span></td>
@@ -4445,6 +4455,7 @@ Coreintegra Consulting Services Ltd. (formerly Coreintegra Consulting Services P
         <td>&#8377;424.00</td>
         <td>23-Sep-2026</td>
         <td>&#8377;624.00</td>
+        <td data-sort="37.7"><span class="pred-cell conf-low"><span class="gain-pos">+38%</span><br><small>range +17% to +53% · <span class="pred-conf">Low</span></small></span></td>
         <td><span class="gain-pos">+47.17%</span></td>
         <td>&#8377;728.20</td>
         <td><span class="gain-pos">+71.75%</span></td>
@@ -4454,6 +4465,7 @@ Coreintegra Consulting Services Ltd. (formerly Coreintegra Consulting Services P
         <td>&#8377;93.00</td>
         <td>23-Sep-2026</td>
         <td>&#8377;120.00</td>
+        <td data-sort="31.2"><span class="pred-cell conf-low"><span class="gain-pos">+31%</span><br><small>range +10% to +47% · <span class="pred-conf">Low</span></small></span></td>
         <td><span class="gain-pos">+29.03%</span></td>
         <td>&#8377;138.91</td>
         <td><span class="gain-pos">+49.37%</span></td>
@@ -4463,12 +4475,14 @@ Coreintegra Consulting Services Ltd. (formerly Coreintegra Consulting Services P
         <td>&#8377;84.00</td>
         <td>23-Sep-2026</td>
         <td>&#8377;82.00</td>
+        <td data-sort="-3.6"><span class="pred-cell conf-high"><span class="gain-neg">-3.6%</span><br><small>range -14% to +3.0% · <span class="pred-conf">High</span></small></span></td>
         <td><span class="gain-neg">-2.38%</span></td>
         <td>&#8377;141.69</td>
         <td><span class="gain-pos">+68.68%</span></td>
       </tr>
     </tbody>
   </table>
+  <p class="predict-note"><strong>Predicted gains</strong> column = what the method on the scorecards would have called from each issue's final GMP the day before listing (point, 10th–90th percentile range, confidence). Compare it with Listing gains to see how the call did. "no call" = no GMP was quoted (SME GMP of ₹0 counts as none).</p>
   </div>
 </section>
 
