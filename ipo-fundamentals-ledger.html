@@ -761,6 +761,8 @@
 .pred-cell > span:first-child { font-weight: 700; }
 .pred-cell.conf-high .pred-conf { color: var(--green); } .pred-cell.conf-medium .pred-conf { color: var(--amber); } .pred-cell.conf-low .pred-conf { color: var(--red); }
 .pred-cell.pred-none { color: #8a8a8a; }
+.pred-cell small { white-space: normal; }
+.pred-flag { font-size: 0.7rem; font-weight: 600; color: var(--amber); border: 1px solid currentColor; border-radius: 8px; padding: 0 5px; }
 /* end Predicted gains */
 </style>
 </head>
@@ -1005,7 +1007,7 @@
     <span class="scorecard-hint">Click any card to see its full analysis.</span>
     <button type="button" class="card-toggle-all" aria-pressed="false">Expand all</button>
   </div>
-  <p class="predict-note"><strong>Predicted gains</strong> = expected listing-day open vs the upper price band, from the final grey-market premium, with a range covering about 8 in 10 past IPOs of the same kind (backtest on 1,337 IPOs listed 2022-01 to 2026-09). Confidence: <b>High</b> mainboard GMP under 25% (avg miss 5.8pp), <b>Medium</b> SME GMP 1–9% (avg miss 8.4pp), <b>Low</b> everything else. Lead managers whose past listings often missed GMP lower the confidence one step. Market, news and sentiment inputs were tested and did not help. GMP is unofficial; not investment advice.</p>
+  <p class="predict-note"><strong>Predicted gains</strong> = expected listing-day open vs the upper price band, from the final grey-market premium, with a range covering about 8 in 10 past IPOs of the same kind (backtest on 1,337 IPOs listed 2022-01 to 2026-09). Confidence: <b>High</b> mainboard GMP under 25% (avg miss 5.8pp), <b>Medium</b> SME GMP 1–9% (avg miss 8.4pp), <b>Low</b> everything else. Lead managers whose past listings often missed GMP lower the confidence one step. GMP is read from three trackers (investorgain, ipowatch, ipogyani); investorgain is used when it quotes (most accurate of the three in backtest; average and majority were worse), else the median of the others. If the three differ by more than 5% of the issue price, confidence drops one step (past calls missed by 17.1pp on average in that case vs 7.6pp when they agree). Market, news and sentiment inputs were tested and did not help. GMP is unofficial; not investment advice.</p>
 <div class="ledger-card" id="card-moneyview">
   <div class="card-summary" role="button" tabindex="0" aria-expanded="false" aria-controls="details-moneyview">
     <div class="card-head">
@@ -1013,7 +1015,7 @@
       <span class="status-badge badge-open">Open</span>
     </div>
     <div class="card-meta-line">₹32-34 · Issue size <span class="issue-size">₹1,092 Cr</span> · 24 Sep-28 Sep 2026 · 6.22x overall (QIB 0.26x) · as of 25 Sep 2026, 5:07 PM IST (Day 2 close, bidding ends 28 Sep) · GMP ₹13.5 (39.71%)</div>
-    <p class="card-predicted conf-low"><strong>Predicted gains:</strong> <span class="pred-num">+40%</span> (≈₹47.5 vs issue ₹34) · range +19% to +55% · <span class="pred-conf">Low confidence</span><span class="pred-note"> · past avg miss 13.5pp for this kind of issue; hot issue: pre-open auction often departs from GMP</span></p>
+    <p class="card-predicted conf-low"><strong>Predicted gains:</strong> <span class="pred-num">+41%</span> (≈₹48 vs issue ₹34) · range +20% to +57% · <span class="pred-conf">Low confidence</span><span class="pred-note"> · past avg miss 13.5pp for this kind of issue; hot issue: pre-open auction often departs from GMP<br>GMP investorgain ₹14 · ipowatch ₹14 · ipogyani ₹14</span></p>
     <p class="card-suggestion"><strong>Suggestion:</strong> Strong GMP (39.71%) and a 6.22x book on an attractive valuation, but QIBs have barely bid (0.26x) — apply for listing gains; size any long-term position cautiously</p>
     <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
   </div>
@@ -1054,7 +1056,7 @@ Moneyview Ltd. is a digital-lending fintech platform offering personal loans as 
       <span class="status-badge badge-open">Open</span>
     </div>
     <div class="card-meta-line">₹385-405 · Issue size <span class="issue-size">₹405 Cr</span> · 24 Sep-28 Sep 2026 · 1.43x overall (QIB 0.10x) · as of 25 Sep 2026, 5:06 PM IST (Day 2 close, bidding ends 28 Sep) · GMP ₹51 (12.59%)</div>
-    <p class="card-predicted conf-high"><strong>Predicted gains:</strong> <span class="pred-num">+13%</span> (≈₹456 vs issue ₹405) · range +2.0% to +19% · <span class="pred-conf">High confidence</span><span class="pred-note"> · past avg miss 5.8pp for this kind of issue</span></p>
+    <p class="card-predicted conf-high"><strong>Predicted gains:</strong> <span class="pred-num">+14%</span> (≈₹461 vs issue ₹405) · range +4.0% to +21% · <span class="pred-conf">High confidence</span><span class="pred-note"> · past avg miss 5.8pp for this kind of issue<br>GMP investorgain ₹56 · ipowatch ₹51 · ipogyani ₹40</span></p>
     <p class="card-suggestion"><strong>Suggestion:</strong> Decent GMP but debt-heavy fund use and mixed fundamentals — listing gains only</p>
     <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
   </div>
@@ -1095,7 +1097,7 @@ A-One Steels India Ltd. is a backward-integrated steel manufacturer producing a 
       <span class="status-badge badge-open">Open</span>
     </div>
     <div class="card-meta-line">₹95-101 · Issue size <span class="issue-size">₹54 Cr</span> · 24 Sep-28 Sep 2026 · 2.03x overall (QIB 177.12x) · as of 25 Sep 2026, 5:07 PM IST (Day 2 close, bidding ends 28 Sep) · GMP not yet active</div>
-    <p class="card-predicted conf-pending"><strong>Predicted gains:</strong> pending — no GMP quoted yet; a number appears once the grey market starts trading.</p>
+    <p class="card-predicted conf-pending"><strong>Predicted gains:</strong> pending — no GMP quoted yet; a number appears once the grey market starts trading.<span class="pred-note"> · GMP investorgain – · ipowatch ₹0 (not counted) · ipogyani ₹0 (not counted)</span></p>
     <p class="card-suggestion"><strong>Suggestion:</strong> Strong fundamentals and a healthy 2.03x book despite no GMP print yet — apply for long term, watch for GMP before a listing-gains flip</p>
     <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
   </div>
@@ -1136,7 +1138,7 @@ Peshwa Wheat Ltd. processes wheat into Atta, Sortex Wheat, Broken Wheat and othe
       <span class="status-badge badge-open">Open</span>
     </div>
     <div class="card-meta-line">₹60-64 · Issue size <span class="issue-size">₹19 Cr</span> · 24 Sep-28 Sep 2026 · 5.35x overall (QIB 2.57x) · as of 25 Sep 2026, 5:07 PM IST (Day 2 close, bidding ends 28 Sep) · GMP ₹0 (0.00%, peaked at ₹14)</div>
-    <p class="card-predicted conf-low"><strong>Predicted gains:</strong> <span class="pred-num">+0.0%</span> (≈₹64 vs issue ₹64) · range -20% to +20% · <span class="pred-conf">Low confidence</span><span class="pred-note"> · past avg miss 13.4pp for this kind of issue</span></p>
+    <p class="card-predicted conf-low"><strong>Predicted gains:</strong> <span class="pred-num">+50%</span> (≈₹96 vs issue ₹64) · range +24% to +90% · <span class="pred-conf">Low confidence</span><span class="pred-note"> · past avg miss 23.7pp for this kind of issue; hot issue: pre-open auction often departs from GMP<br>GMP investorgain ₹32 · ipowatch ₹0 (not counted) · ipogyani ₹0 (not counted)</span></p>
     <p class="card-suggestion"><strong>Suggestion:</strong> Cheap valuation, Strong-bench lead manager and a 5.35x book, but GMP has faded to zero — apply for long term on fundamentals, not for listing gains</p>
     <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
   </div>
@@ -1177,7 +1179,7 @@ Roopa Screen Ltd. manufactures rotary nickel screens — cylindrical, perforated
       <span class="status-badge badge-open">Open</span>
     </div>
     <div class="card-meta-line">Rs.30-32 · Issue size <span class="issue-size">Rs.420 Cr</span> · 25 Sep-29 Sep 2026 · 0.24x overall (QIB 0.00x) · as of 25 Sep 2026, 5:06 PM IST (Day 1 close, bidding ends 29 Sep) · GMP ₹2 (6.25%)</div>
-    <p class="card-predicted conf-high"><strong>Predicted gains:</strong> <span class="pred-num">+6.2%</span> (≈₹34 vs issue ₹32) · range -4.0% to +13% · <span class="pred-conf">High confidence</span><span class="pred-note"> · past avg miss 5.8pp for this kind of issue</span></p>
+    <p class="card-predicted conf-high"><strong>Predicted gains:</strong> <span class="pred-num">+6.2%</span> (≈₹34 vs issue ₹32) · range -4.0% to +13% · <span class="pred-conf">High confidence</span><span class="pred-note"> · past avg miss 5.8pp for this kind of issue<br>GMP investorgain ₹2 · ipowatch ₹2 · ipogyani ₹2</span></p>
     <p class="card-suggestion"><strong>Suggestion:</strong> Listing gains only, small stake, high risk — skip for long term</p>
     <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
   </div>
@@ -1217,7 +1219,7 @@ EBITDA and PAT both negative (loss-making, cash-burn business with Snapdeal/Uniw
       <span class="status-badge badge-open">Open</span>
     </div>
     <div class="card-meta-line">Rs.290-305 · Issue size <span class="issue-size">Rs.499.83 Cr</span> · 25 Sep-29 Sep 2026 · 0.44x overall (QIB 1.01x) · as of 25 Sep 2026, 5:05 PM IST (Day 1 close, bidding ends 29 Sep) · GMP ₹16 (5.25%)</div>
-    <p class="card-predicted conf-high"><strong>Predicted gains:</strong> <span class="pred-num">+5.2%</span> (≈₹321 vs issue ₹305) · range -5.0% to +12% · <span class="pred-conf">High confidence</span><span class="pred-note"> · past avg miss 5.8pp for this kind of issue</span></p>
+    <p class="card-predicted conf-medium"><strong>Predicted gains:</strong> <span class="pred-num">+4.8%</span> (≈₹319.5 vs issue ₹305) · range -5.0% to +12% · <span class="pred-conf">Medium confidence</span><span class="pred-note"> · past avg miss 5.8pp for this kind of issue<br>GMP investorgain ₹14.5 · ipowatch ₹30 · ipogyani ₹14.5; sources differ by 5.1pp of issue price, confidence lowered one step</span></p>
     <p class="card-suggestion"><strong>Suggestion:</strong> Listing gains, not long term</p>
     <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
   </div>
@@ -1257,7 +1259,7 @@ Mumbai real-estate developer (19 completed, 28 ongoing, 33 upcoming projects), r
       <span class="status-badge badge-open">Open</span>
     </div>
     <div class="card-meta-line">Rs.258-272 · Issue size <span class="issue-size">Rs.552 Cr</span> · 25 Sep-29 Sep 2026 · 2.07x overall (QIB 0.01x) · as of 25 Sep 2026, 5:07 PM IST (Day 1 close, bidding ends 29 Sep) · GMP ₹80 (29.41%)</div>
-    <p class="card-predicted conf-low"><strong>Predicted gains:</strong> <span class="pred-num">+29%</span> (≈₹352 vs issue ₹272) · range +9.0% to +45% · <span class="pred-conf">Low confidence</span><span class="pred-note"> · past avg miss 13.5pp for this kind of issue; hot issue: pre-open auction often departs from GMP</span></p>
+    <p class="card-predicted conf-low"><strong>Predicted gains:</strong> <span class="pred-num">+33%</span> (≈₹362 vs issue ₹272) · range +12% to +49% · <span class="pred-conf">Low confidence</span><span class="pred-note"> · past avg miss 13.5pp for this kind of issue; hot issue: pre-open auction often departs from GMP<br>GMP investorgain ₹90 · ipowatch ₹80 · ipogyani ₹90</span></p>
     <p class="card-suggestion"><strong>Suggestion:</strong> Apply for both listing gains and long term</p>
     <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
   </div>
@@ -1297,7 +1299,7 @@ India's #4 networking-cable maker (~22.9% share, up from ~16% in FY22), 97% dome
       <span class="status-badge badge-open">Open</span>
     </div>
     <div class="card-meta-line">Rs.132-139 · Issue size <span class="issue-size">Rs.303.90 Cr</span> · 25 Sep-29 Sep 2026 · 1.82x overall (QIB 1.39x) · as of 25 Sep 2026, 5:07 PM IST (Day 1 close, bidding ends 29 Sep) · GMP ₹26 (18.71%)</div>
-    <p class="card-predicted conf-high"><strong>Predicted gains:</strong> <span class="pred-num">+19%</span> (≈₹165 vs issue ₹139) · range +9.0% to +26% · <span class="pred-conf">High confidence</span><span class="pred-note"> · past avg miss 5.8pp for this kind of issue</span></p>
+    <p class="card-predicted conf-high"><strong>Predicted gains:</strong> <span class="pred-num">+20%</span> (≈₹166.5 vs issue ₹139) · range +10% to +27% · <span class="pred-conf">High confidence</span><span class="pred-note"> · past avg miss 5.8pp for this kind of issue<br>GMP investorgain ₹27.5 · ipowatch ₹28 · ipogyani ₹27.5</span></p>
     <p class="card-suggestion"><strong>Suggestion:</strong> Listing gains, moderate long-term potential</p>
     <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
   </div>
@@ -1337,7 +1339,7 @@ Gujarat-based TMT bar / MS billet / sponge iron maker under the 'German TMT' bra
       <span class="status-badge badge-open">Open</span>
     </div>
     <div class="card-meta-line">₹104-110 · Issue size <span class="issue-size">₹42.44 Cr</span> · 25 Sep-29 Sep 2026 · 0.26x overall (QIB 0.00x) · as of 25 Sep 2026, 6:54 PM IST (Day 1 close, bidding ends 29 Sep) · GMP ₹16 (14.55%)</div>
-    <p class="card-predicted conf-low"><strong>Predicted gains:</strong> <span class="pred-num">+14%</span> (≈₹126 vs issue ₹110) · range -12% to +57% · <span class="pred-conf">Low confidence</span><span class="pred-note"> · past avg miss 23.7pp for this kind of issue; lead manager history: listings often miss GMP (GYR avg miss 29pp); hot issue: pre-open auction often departs from GMP</span></p>
+    <p class="card-predicted conf-low"><strong>Predicted gains:</strong> <span class="pred-num">+14%</span> (≈₹126 vs issue ₹110) · range -12% to +57% · <span class="pred-conf">Low confidence</span><span class="pred-note"> · past avg miss 23.7pp for this kind of issue; lead manager history: listings often miss GMP (GYR avg miss 29pp); hot issue: pre-open auction often departs from GMP<br>GMP investorgain ₹16 · ipowatch ₹16 · ipogyani ₹16</span></p>
     <p class="card-suggestion"><strong>Suggestion:</strong> Strong fundamentals and lead-manager bench, GMP 14.55% signals demand, but the book is still thin (0.26x) and valuation rich — small stake, watch subscription before committing</p>
     <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
   </div>
@@ -1378,7 +1380,7 @@ Bench Mark Infotech Services Ltd. is an integrated IT and digital-infrastructure
       <span class="status-badge badge-open">Open</span>
     </div>
     <div class="card-meta-line">₹98-103 · Issue size <span class="issue-size">₹68 Cr</span> · 25 Sep-29 Sep 2026 · 0.51x overall (QIB 0.85x) · as of 25 Sep 2026, 6:54 PM IST (Day 1 close, bidding ends 29 Sep) · GMP ₹0 (not active)</div>
-    <p class="card-predicted conf-pending"><strong>Predicted gains:</strong> pending — no GMP quoted yet; a number appears once the grey market starts trading.</p>
+    <p class="card-predicted conf-pending"><strong>Predicted gains:</strong> pending — no GMP quoted yet; a number appears once the grey market starts trading.<span class="pred-note"> · GMP investorgain – · ipowatch ₹0 (not counted) · ipogyani ₹0 (not counted)</span></p>
     <p class="card-suggestion"><strong>Suggestion:</strong> Solid fundamentals; the book is at 0.51x after Day 1 with no GMP — small stake, watch demand before committing</p>
     <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
   </div>
@@ -1419,7 +1421,7 @@ Himalayan Solar Ltd. provides turnkey solar-energy solutions with a primary focu
       <span class="status-badge badge-open">Open</span>
     </div>
     <div class="card-meta-line">₹107-113 · Issue size <span class="issue-size">₹25 Cr</span> · 25 Sep-29 Sep 2026 · 0.04x overall (QIB 0.00x) · as of 25 Sep 2026, 5:05 PM IST (Day 1 close, bidding ends 29 Sep) · GMP ₹0 (not active)</div>
-    <p class="card-predicted conf-pending"><strong>Predicted gains:</strong> pending — no GMP quoted yet; a number appears once the grey market starts trading.</p>
+    <p class="card-predicted conf-pending"><strong>Predicted gains:</strong> pending — no GMP quoted yet; a number appears once the grey market starts trading.<span class="pred-note"> · GMP investorgain – · ipowatch ₹0 (not counted) · ipogyani ₹0 (not counted)</span></p>
     <p class="card-suggestion"><strong>Suggestion:</strong> Rich valuation, mixed health, a Caution-rated lead manager and almost no demand (0.04x) — skip</p>
     <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
   </div>
@@ -1460,7 +1462,7 @@ Sai Urja Indo Ventures Ltd. provides Operation &amp; Maintenance (O&amp;M) and i
       <span class="status-badge badge-open">Open</span>
     </div>
     <div class="card-meta-line">₹85-90 · Issue size <span class="issue-size">₹60.00 Cr (fresh ₹53.05 Cr + OFS ₹6.96 Cr)</span> · 24 Sep-28 Sep 2026 · Building — Day 1 (0.03x) · as of 26 Sep 2026, 1:00 PM IST (Day 1 close, bidding ends 28 Sep) · GMP not yet active</div>
-    <p class="card-predicted conf-pending"><strong>Predicted gains:</strong> pending — no GMP quoted yet; a number appears once the grey market starts trading.</p>
+    <p class="card-predicted conf-pending"><strong>Predicted gains:</strong> pending — no GMP quoted yet; a number appears once the grey market starts trading.<span class="pred-note"> · GMP investorgain – · ipowatch ₹0 (not counted) · ipogyani ₹0 (not counted)</span></p>
     <p class="card-suggestion"><strong>Suggestion:</strong> Watch — 12.31x P/E below 16.92x peer average, but D/E 2.40 and 0.03x Day-2 demand</p>
     <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
   </div>
@@ -1501,7 +1503,7 @@ Green Asia Impex processes and sells frozen shrimp (Vannamei, Black Tiger and fr
       <span class="status-badge badge-open">Open</span>
     </div>
     <div class="card-meta-line">₹29 (fixed) · Issue size <span class="issue-size">₹10.54 Cr (fresh ₹10.54 Cr, no OFS)</span> · 25 Sep-29 Sep 2026 · Building — Day 1 (0.08x) · as of 26 Sep 2026, 1:00 PM IST (Day 1 close, bidding ends 29 Sep) · GMP ₹3 (10.34%)</div>
-    <p class="card-predicted conf-low"><strong>Predicted gains:</strong> <span class="pred-num">+10%</span> (≈₹32 vs issue ₹29) · range -16% to +53% · <span class="pred-conf">Low confidence</span><span class="pred-note"> · past avg miss 23.7pp for this kind of issue; hot issue: pre-open auction often departs from GMP</span></p>
+    <p class="card-predicted conf-low"><strong>Predicted gains:</strong> <span class="pred-num">+10%</span> (≈₹32 vs issue ₹29) · range -16% to +53% · <span class="pred-conf">Low confidence</span><span class="pred-note"> · past avg miss 23.7pp for this kind of issue; hot issue: pre-open auction often departs from GMP<br>GMP investorgain ₹3 · ipowatch ₹3 · ipogyani ₹3</span></p>
     <p class="card-suggestion"><strong>Suggestion:</strong> Watch — 1.90x book and 15.84x P/E, but flat revenue and 37% one-customer exposure</p>
     <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
   </div>
@@ -1542,7 +1544,7 @@ Dudani Retail designs and makes women's ethnic and fusion wear (suit sets, kurta
       <span class="status-badge badge-upcoming">Upcoming</span>
     </div>
     <div class="card-meta-line">₹123-130 · Issue size <span class="issue-size">₹218.40 Cr (fresh ₹218.40 Cr + OFS ₹0.00 Cr)</span> · 28 Sep-30 Sep 2026 · not opened · as of 26 Sep 2026, 1:00 PM IST (Upcoming, opens 28 Sep) · GMP ₹32 (24.62%)</div>
-    <p class="card-predicted conf-high"><strong>Predicted gains:</strong> <span class="pred-num">+25%</span> (≈₹162 vs issue ₹130) · range +14% to +31% · <span class="pred-conf">High confidence</span><span class="pred-note"> · past avg miss 5.8pp for this kind of issue</span></p>
+    <p class="card-predicted conf-high"><strong>Predicted gains:</strong> <span class="pred-num">+25%</span> (≈₹162 vs issue ₹130) · range +14% to +31% · <span class="pred-conf">High confidence</span><span class="pred-note"> · past avg miss 5.8pp for this kind of issue<br>GMP investorgain ₹32 · ipowatch ₹32 · ipogyani ₹32</span></p>
     <p class="card-suggestion"><strong>Suggestion:</strong> Watch — 30.23% RoNW and +28.82% PAT growth, but priced at peer average with negative FY26 operating cash flow</p>
     <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
   </div>
@@ -1583,7 +1585,7 @@ Bengaluru-based IT/ITeS company that builds, integrates and runs digital platfor
       <span class="status-badge badge-upcoming">Upcoming</span>
     </div>
     <div class="card-meta-line">₹159-167 · Issue size <span class="issue-size">₹90.17 Cr (fresh ₹90.17 Cr + OFS ₹0.00 Cr)</span> · 28 Sep-30 Sep 2026 · not opened · as of 26 Sep 2026, 1:00 PM IST (Upcoming, opens 28 Sep) · GMP ₹12 (7.19%)</div>
-    <p class="card-predicted conf-high"><strong>Predicted gains:</strong> <span class="pred-num">+7.2%</span> (≈₹179 vs issue ₹167) · range -3.0% to +14% · <span class="pred-conf">High confidence</span><span class="pred-note"> · past avg miss 5.8pp for this kind of issue</span></p>
+    <p class="card-predicted conf-high"><strong>Predicted gains:</strong> <span class="pred-num">+5.4%</span> (≈₹176 vs issue ₹167) · range -5.0% to +12% · <span class="pred-conf">High confidence</span><span class="pred-note"> · past avg miss 5.8pp for this kind of issue<br>GMP investorgain ₹9 · ipowatch ₹12 · ipogyani ₹9</span></p>
     <p class="card-suggestion"><strong>Suggestion:</strong> Avoid — FY26 PAT down 43.54% and post-issue P/E 26.76x vs peer avg 18.35x</p>
     <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
   </div>
@@ -1624,7 +1626,7 @@ Gujarat-focused retail stock broker offering equity and derivatives broking, mar
       <span class="status-badge badge-upcoming">Upcoming</span>
     </div>
     <div class="card-meta-line">₹59-62 · Issue size <span class="issue-size">₹14.01 Cr (fresh ₹14.01 Cr + OFS ₹0.00 Cr)</span> · 28 Sep-30 Sep 2026 · not opened · as of 26 Sep 2026, 1:00 PM IST (Upcoming, opens 28 Sep) · GMP not yet active</div>
-    <p class="card-predicted conf-pending"><strong>Predicted gains:</strong> pending — no GMP quoted yet; a number appears once the grey market starts trading.</p>
+    <p class="card-predicted conf-pending"><strong>Predicted gains:</strong> pending — no GMP quoted yet; a number appears once the grey market starts trading.<span class="pred-note"> · GMP investorgain – · ipowatch ₹0 (not counted) · ipogyani –</span></p>
     <p class="card-suggestion"><strong>Suggestion:</strong> Watch — 23% revenue growth and 14.38x P/E, but a weak LM record and cash-flow and promoter-advance flags</p>
     <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
   </div>
@@ -1665,7 +1667,7 @@ Shivchem Agro makes and distributes crop-protection formulations (insecticides, 
       <span class="status-badge badge-upcoming">Upcoming</span>
     </div>
     <div class="card-meta-line">₹65-71 · Issue size <span class="issue-size">₹35.93 Cr (fresh ₹35.93 Cr + OFS ₹0.00 Cr)</span> · 28 Sep-30 Sep 2026 · not opened · as of 26 Sep 2026, 1:00 PM IST (Upcoming, opens 28 Sep) · GMP not yet active</div>
-    <p class="card-predicted conf-pending"><strong>Predicted gains:</strong> pending — no GMP quoted yet; a number appears once the grey market starts trading.</p>
+    <p class="card-predicted conf-pending"><strong>Predicted gains:</strong> pending — no GMP quoted yet; a number appears once the grey market starts trading.<span class="pred-note"> · GMP investorgain – · ipowatch ₹0 (not counted) · ipogyani –</span></p>
     <p class="card-suggestion"><strong>Suggestion:</strong> Watch — P/BV of 1.89x, but ROCE of 5.54%, D/E of 1.10 and a volatile PAT history</p>
     <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
   </div>
@@ -1706,7 +1708,7 @@ Acme Universal Safezone 9 makes industrial safety shoes (EVA-rubber, nitrile rub
       <span class="status-badge badge-upcoming">Upcoming</span>
     </div>
     <div class="card-meta-line">₹69-72 · Issue size <span class="issue-size">₹20.18 Cr (fresh ₹18.52 Cr + OFS ₹1.66 Cr)</span> · 29 Sep-1 Oct 2026 · not opened · as of 26 Sep 2026, 1:00 PM IST (Upcoming, opens 29 Sep) · GMP not yet active</div>
-    <p class="card-predicted conf-pending"><strong>Predicted gains:</strong> pending — no GMP quoted yet; a number appears once the grey market starts trading.</p>
+    <p class="card-predicted conf-pending"><strong>Predicted gains:</strong> pending — no GMP quoted yet; a number appears once the grey market starts trading.<span class="pred-note"> · GMP investorgain – · ipowatch ₹0 (not counted) · ipogyani –</span></p>
     <p class="card-suggestion"><strong>Suggestion:</strong> Watch — 12.97x post-issue P/E is reasonable, but FY26 revenue grew only 5.59%, inventory is heavy and the LM record is negative</p>
     <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
   </div>
@@ -1747,7 +1749,7 @@ Papadmalji makes hand-made, machine-made and rice (khichiya) papads, vrat papads
       <span class="status-badge badge-upcoming">Upcoming</span>
     </div>
     <div class="card-meta-line">₹112-118 · Issue size <span class="issue-size">₹33.98 Cr (fresh ₹33.98 Cr, no OFS)</span> · 29 Sep-1 Oct 2026 · not opened · as of 26 Sep 2026, 1:00 PM IST (Upcoming, opens 29 Sep) · GMP ₹18 (15.25%)</div>
-    <p class="card-predicted conf-low"><strong>Predicted gains:</strong> <span class="pred-num">+15%</span> (≈₹136 vs issue ₹118) · range -11% to +58% · <span class="pred-conf">Low confidence</span><span class="pred-note"> · past avg miss 23.7pp for this kind of issue; hot issue: pre-open auction often departs from GMP</span></p>
+    <p class="card-predicted conf-low"><strong>Predicted gains:</strong> <span class="pred-num">+38%</span> (≈₹163 vs issue ₹118) · range +12% to +81% · <span class="pred-conf">Low confidence</span><span class="pred-note"> · past avg miss 23.7pp for this kind of issue; hot issue: pre-open auction often departs from GMP<br>GMP investorgain ₹45 · ipowatch ₹0 (not counted) · ipogyani –</span></p>
     <p class="card-suggestion"><strong>Suggestion:</strong> Watch — strong growth and LM record, but 10.30x P/BV, a four-year history and a receivables jump</p>
     <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
   </div>
@@ -1788,7 +1790,7 @@ Vans, incorporated in February 2022, manufactures vacuum circuit breakers, vacuu
       <span class="status-badge badge-upcoming">Upcoming</span>
     </div>
     <div class="card-meta-line">₹80-85 · Issue size <span class="issue-size">₹48.46 Cr (fresh ₹39.05 Cr + OFS ₹9.41 Cr)</span> · 29 Sep-5 Oct 2026 · not opened · as of 26 Sep 2026, 1:00 PM IST (Upcoming, opens 29 Sep) · GMP ₹8 (9.41%)</div>
-    <p class="card-predicted conf-medium"><strong>Predicted gains:</strong> <span class="pred-num">+9.4%</span> (≈₹93 vs issue ₹85) · range -6.0% to +20% · <span class="pred-conf">Medium confidence</span><span class="pred-note"> · past avg miss 8.4pp for this kind of issue</span></p>
+    <p class="card-predicted conf-low"><strong>Predicted gains:</strong> <span class="pred-num">+15%</span> (≈₹98 vs issue ₹85) · range -11% to +58% · <span class="pred-conf">Low confidence</span><span class="pred-note"> · past avg miss 23.7pp for this kind of issue; hot issue: pre-open auction often departs from GMP<br>GMP investorgain ₹13 · ipowatch ₹0 (not counted) · ipogyani –</span></p>
     <p class="card-suggestion"><strong>Suggestion:</strong> Buy — debt-free, 35.41% EBITDA margin, 14.00x post P/E vs peer 23.45x</p>
     <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
   </div>
@@ -1829,7 +1831,7 @@ Bengaluru software company (incorporated 2017) selling IT operations and service
       <span class="status-badge badge-upcoming">Upcoming</span>
     </div>
     <div class="card-meta-line">₹119-127 · Issue size <span class="issue-size">₹81.79 Cr (fresh ₹81.79 Cr + OFS ₹0.00 Cr)</span> · 30 Sep-6 Oct 2026 · not opened · as of 26 Sep 2026, 1:00 PM IST (Upcoming, opens 30 Sep) · GMP not yet active</div>
-    <p class="card-predicted conf-pending"><strong>Predicted gains:</strong> pending — no GMP quoted yet; a number appears once the grey market starts trading.</p>
+    <p class="card-predicted conf-pending"><strong>Predicted gains:</strong> pending — no GMP quoted yet; a number appears once the grey market starts trading.<span class="pred-note"> · GMP investorgain – · ipowatch ₹0 (not counted) · ipogyani –</span></p>
     <p class="card-suggestion"><strong>Suggestion:</strong> Watch — PAT doubled to ₹13.87 Cr, but the LM's 2026 listings average -1.19%</p>
     <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
   </div>
@@ -1870,7 +1872,7 @@ Ludhiana-based maker of acrylic, polyester, nylon, wool and blended yarns and dy
       <span class="status-badge badge-upcoming">Upcoming</span>
     </div>
     <div class="card-meta-line">₹186-196 · Issue size <span class="issue-size">₹121.69 Cr (fresh ₹105.98 Cr + OFS ₹15.71 Cr)</span> · 30 Sep-6 Oct 2026 · not opened · as of 26 Sep 2026, 1:00 PM IST (Upcoming, opens 30 Sep) · GMP not yet active</div>
-    <p class="card-predicted conf-pending"><strong>Predicted gains:</strong> pending — no GMP quoted yet; a number appears once the grey market starts trading.</p>
+    <p class="card-predicted conf-pending"><strong>Predicted gains:</strong> pending — no GMP quoted yet; a number appears once the grey market starts trading.<span class="pred-note"> · GMP investorgain – · ipowatch – · ipogyani –</span></p>
     <p class="card-suggestion"><strong>Suggestion:</strong> Watch — 18.89x post-issue P/E and 3.27x P/BV are fair, but FY26 operating cash flow was negative and receivables are 95.63% of revenue</p>
     <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
   </div>
@@ -1911,7 +1913,7 @@ Acme India designs, makes and fits railway coach interiors: turnkey furnishing o
       <span class="status-badge badge-upcoming">Upcoming</span>
     </div>
     <div class="card-meta-line">₹66-70 · Issue size <span class="issue-size">₹37.86 Cr (fresh ₹37.86 Cr, no OFS)</span> · 30 Sep-6 Oct 2026 · not opened · as of 26 Sep 2026, 1:00 PM IST (Upcoming, opens 30 Sep) · GMP not yet active</div>
-    <p class="card-predicted conf-pending"><strong>Predicted gains:</strong> pending — no GMP quoted yet; a number appears once the grey market starts trading.</p>
+    <p class="card-predicted conf-pending"><strong>Predicted gains:</strong> pending — no GMP quoted yet; a number appears once the grey market starts trading.<span class="pred-note"> · GMP investorgain – · ipowatch – · ipogyani –</span></p>
     <p class="card-suggestion"><strong>Suggestion:</strong> Buy — 14.89x post-issue P/E against a 39.60x RHP peer average, 1.94x P/BV, and fully growth-led use of proceeds</p>
     <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
   </div>
@@ -1952,7 +1954,7 @@ TNA Solutions makes home textiles in Indore: sheet sets, pillow covers, towels, 
       <span class="status-badge badge-upcoming">Upcoming</span>
     </div>
     <div class="card-meta-line">₹70-75 · Issue size <span class="issue-size">₹108.35 Cr (fresh only, 1,44,56,000 shares; no OFS)</span> · 30 Sep-5 Oct 2026 · not opened · as of 26 Sep 2026, 1:00 PM IST (Upcoming, opens 30 Sep) · GMP not yet active</div>
-    <p class="card-predicted conf-pending"><strong>Predicted gains:</strong> pending — no GMP quoted yet; a number appears once the grey market starts trading.</p>
+    <p class="card-predicted conf-pending"><strong>Predicted gains:</strong> pending — no GMP quoted yet; a number appears once the grey market starts trading.<span class="pred-note"> · GMP investorgain – · ipowatch ₹0 (not counted) · ipogyani ₹0 (not counted)</span></p>
     <p class="card-suggestion"><strong>Suggestion:</strong> Watch — 43.75% RoNW and +128% PAT growth are exceptional, but priced near the peer average and running consolidated negative operating cash flow of ₹147.32 million in FY26 as working capital scales with growth</p>
     <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
   </div>
@@ -1993,7 +1995,7 @@ Surat-based lab-grown-diamond (LGD) studded gold jewellery maker, incorporated A
       <span class="status-badge badge-upcoming">Upcoming</span>
     </div>
     <div class="card-meta-line">₹93-99 · Issue size <span class="issue-size">₹17.82 Cr (fresh only, 18,00,000 shares including 91,200 shares/₹0.9029 Cr reserved for Market Maker; net offer to public 17,08,800 shares aggregating ~₹17 Cr)</span> · 28 Sep-30 Sep 2026 · not opened · as of 26 Sep 2026, 1:00 PM IST (Upcoming, opens 28 Sep) · GMP not yet active</div>
-    <p class="card-predicted conf-pending"><strong>Predicted gains:</strong> pending — no GMP quoted yet; a number appears once the grey market starts trading.</p>
+    <p class="card-predicted conf-pending"><strong>Predicted gains:</strong> pending — no GMP quoted yet; a number appears once the grey market starts trading.<span class="pred-note"> · GMP investorgain – · ipowatch ₹0 (not counted) · ipogyani –</span></p>
     <p class="card-suggestion"><strong>Suggestion:</strong> Watch — Priced well below its own disclosed peer range (26.12x vs 191.57x average, 31.70x lowest), but FY26 PAT fell 11.33%, D/E rose to 0.88 and current ratio dropped below 1 — the discount may reflect real deterioration, not just an SME-market pricing gap</p>
     <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
   </div>
@@ -2034,7 +2036,7 @@ Pune-based restaurant and hospitality operator, incorporated June 2021, running 
       <span class="status-badge badge-upcoming">Upcoming</span>
     </div>
     <div class="card-meta-line">₹50-53 · Issue size <span class="issue-size">₹31.80 Cr (fresh issue only, 60.00 lakh shares)</span> · 28 Sep-5 Oct 2026 · not opened · as of 26 Sep 2026, 1:00 PM IST (Upcoming, opens 28 Sep) · GMP not yet active</div>
-    <p class="card-predicted conf-pending"><strong>Predicted gains:</strong> pending — no GMP quoted yet; a number appears once the grey market starts trading.</p>
+    <p class="card-predicted conf-pending"><strong>Predicted gains:</strong> pending — no GMP quoted yet; a number appears once the grey market starts trading.<span class="pred-note"> · GMP investorgain – · ipowatch – · ipogyani –</span></p>
     <p class="card-suggestion"><strong>Suggestion:</strong> Watch — steady growth and a moderate 15.87x post-issue P/E within the peer range, but a lead manager with a weak 2026 SME listing record (25% positive) and a history of delayed statutory filings</p>
     <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
   </div>
@@ -2075,7 +2077,7 @@ Shree TNB Polymers, incorporated 7 March 2007, is a Silvassa-based polymer manuf
       <span class="status-badge badge-upcoming">Upcoming</span>
     </div>
     <div class="card-meta-line">₹185-197 · Issue size <span class="issue-size">₹55.08 Cr (fresh ₹44.09 Cr + OFS ₹10.99 Cr)</span> · 29 Sep-1 Oct 2026 · not opened · as of 26 Sep 2026, 1:00 PM IST (Upcoming, opens 29 Sep) · GMP not yet active</div>
-    <p class="card-predicted conf-pending"><strong>Predicted gains:</strong> pending — no GMP quoted yet; a number appears once the grey market starts trading.</p>
+    <p class="card-predicted conf-pending"><strong>Predicted gains:</strong> pending — no GMP quoted yet; a number appears once the grey market starts trading.<span class="pred-note"> · GMP investorgain – · ipowatch ₹0 (not counted) · ipogyani –</span></p>
     <p class="card-suggestion"><strong>Suggestion:</strong> Watch — strong lead-manager track record and FY26 profitability, but no usable peer P/E, a materially bonus-share-distorted per-share history, and 59% of net proceeds funding a related group entity's project on land it only partially and indirectly controls</p>
     <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
   </div>
@@ -2116,7 +2118,7 @@ Black Opal Consultants, incorporated in 2020, is a Delhi/Noida-based real estate
       <span class="status-badge badge-upcoming">Upcoming</span>
     </div>
     <div class="card-meta-line">₹104-111 · Issue size <span class="issue-size">₹73.26 Cr (fresh ₹59.14 Cr + OFS ₹14.12 Cr)</span> · 30 Sep-5 Oct 2026 · not opened · as of 26 Sep 2026, 1:00 PM IST (Upcoming, opens 30 Sep) · GMP not yet active</div>
-    <p class="card-predicted conf-pending"><strong>Predicted gains:</strong> pending — no GMP quoted yet; a number appears once the grey market starts trading.</p>
+    <p class="card-predicted conf-pending"><strong>Predicted gains:</strong> pending — no GMP quoted yet; a number appears once the grey market starts trading.<span class="pred-note"> · GMP investorgain – · ipowatch ₹0 (not counted) · ipogyani –</span></p>
     <p class="card-suggestion"><strong>Suggestion:</strong> Watch — FY26 revenue and PAT both grew strongly (+45.94%/+41.44%), and the 11.56x post-issue P/E is a discount to listed CPaaS peers Route Mobile and Tanla (13.2-13.6x), but working capital (receivables) is expanding faster than revenue and chittorgarh's KPI/NAV figures on this page are a year stale versus the RHP's own FY26 numbers.</p>
     <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
   </div>
@@ -2157,7 +2159,7 @@ Dove Soft provides integrated cloud-communication (CPaaS) solutions — SMS, RCS
       <span class="status-badge badge-upcoming">Upcoming</span>
     </div>
     <div class="card-meta-line">₹67 (fixed price) · Issue size <span class="issue-size">₹23.45 Cr (entirely fresh issue, no OFS)</span> · 30 Sep-5 Oct 2026 · not opened · as of 26 Sep 2026, 1:00 PM IST (Upcoming, opens 30 Sep) · GMP not yet active</div>
-    <p class="card-predicted conf-pending"><strong>Predicted gains:</strong> pending — no GMP quoted yet; a number appears once the grey market starts trading.</p>
+    <p class="card-predicted conf-pending"><strong>Predicted gains:</strong> pending — no GMP quoted yet; a number appears once the grey market starts trading.<span class="pred-note"> · GMP investorgain – · ipowatch – · ipogyani –</span></p>
     <p class="card-suggestion"><strong>Suggestion:</strong> Watch — FY26 revenue and PAT both grew ~26%, leverage is rising (Net Debt/EBITDA 0.17x to 0.64x), the entire fresh issue funds growth capex with no debt repayment, and chittorgarh's KPI/NAV/P-BV figures on this page are a year stale versus the Prospectus's own FY26 numbers.</p>
     <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
   </div>
@@ -2198,7 +2200,7 @@ SJP Ultrasonics manufactures and supplies plastic-joining and industrial-automat
       <span class="status-badge badge-upcoming">Upcoming</span>
     </div>
     <div class="card-meta-line">₹112-118 · Issue size <span class="issue-size">₹38.12 Cr (fresh ₹38.12 Cr + OFS ₹0.00 Cr)</span> · 30 Sep-5 Oct 2026 · not opened · as of 26 Sep 2026, 1:00 PM IST (Upcoming, opens 30 Sep) · GMP not yet active</div>
-    <p class="card-predicted conf-pending"><strong>Predicted gains:</strong> pending — no GMP quoted yet; a number appears once the grey market starts trading.</p>
+    <p class="card-predicted conf-pending"><strong>Predicted gains:</strong> pending — no GMP quoted yet; a number appears once the grey market starts trading.<span class="pred-note"> · GMP investorgain – · ipowatch – · ipogyani –</span></p>
     <p class="card-suggestion"><strong>Suggestion:</strong> Watch — Very high RoNW (55.16%) and ROCE (48.76%) but thin PAT margin (7.67%), heavy customer concentration (top 10 = 84.59% of FY26 revenue), and a post-issue P/E (18.61x) above the RHP's own stated industry average (16.71x)</p>
     <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
   </div>
@@ -2239,7 +2241,7 @@ Eventions Limited plans, coordinates and executes corporate events, conferences,
       <span class="status-badge badge-upcoming">Upcoming</span>
     </div>
     <div class="card-meta-line">₹55 (fixed price) · Issue size <span class="issue-size">₹21.78 Cr (fresh ₹21.78 Cr + OFS ₹0.00 Cr)</span> · 30 Sep-5 Oct 2026 · not opened · as of 26 Sep 2026, 1:00 PM IST (Upcoming, opens 30 Sep) · GMP not yet active</div>
-    <p class="card-predicted conf-pending"><strong>Predicted gains:</strong> pending — no GMP quoted yet; a number appears once the grey market starts trading.</p>
+    <p class="card-predicted conf-pending"><strong>Predicted gains:</strong> pending — no GMP quoted yet; a number appears once the grey market starts trading.<span class="pred-note"> · GMP investorgain – · ipowatch – · ipogyani –</span></p>
     <p class="card-suggestion"><strong>Suggestion:</strong> Watch — Growth has slowed sharply (PAT +3.05% in FY26 vs +20.87% in FY25), returns are declining (RoNW 46.90%→22.56%→18.86% over FY24-FY26) even as leverage is roughly flat, and there is no listed peer to benchmark the fixed ₹55 price against</p>
     <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
   </div>
@@ -2280,7 +2282,7 @@ Sollfege Smart Electronics distributes and integrates premium audio, video, home
       <span class="status-badge badge-upcoming">Upcoming</span>
     </div>
     <div class="card-meta-line">₹296-311 · Issue size <span class="issue-size">₹41.99 Cr (fresh ₹41.99 Cr, no OFS)</span> · 30 Sep-5 Oct 2026 · not opened · as of 26 Sep 2026, 1:00 PM IST (Upcoming, opens 30 Sep) · GMP not yet active</div>
-    <p class="card-predicted conf-pending"><strong>Predicted gains:</strong> pending — no GMP quoted yet; a number appears once the grey market starts trading.</p>
+    <p class="card-predicted conf-pending"><strong>Predicted gains:</strong> pending — no GMP quoted yet; a number appears once the grey market starts trading.<span class="pred-note"> · GMP investorgain – · ipowatch ₹0 (not counted) · ipogyani –</span></p>
     <p class="card-suggestion"><strong>Suggestion:</strong> Avoid — 56% of proceeds repay debt; 7.47x book; LM 0/4 positive listings</p>
     <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
   </div>
@@ -2321,7 +2323,7 @@ Omara Ventures sells natural-diamond, solitaire and gold jewellery under the OMA
       <span class="status-badge badge-upcoming">Upcoming</span>
     </div>
     <div class="card-meta-line">₹208-220 · Issue size <span class="issue-size">₹178.00 Cr (fresh ₹145.00 Cr + OFS ₹33.00 Cr)</span> · 30 Sep-5 Oct 2026 · not opened · as of 26 Sep 2026, 1:00 PM IST (Upcoming, opens 30 Sep) · GMP not yet active</div>
-    <p class="card-predicted conf-pending"><strong>Predicted gains:</strong> pending — no GMP quoted yet; a number appears once the grey market starts trading.</p>
+    <p class="card-predicted conf-pending"><strong>Predicted gains:</strong> pending — no GMP quoted yet; a number appears once the grey market starts trading.<span class="pred-note"> · GMP investorgain – · ipowatch ₹0 (not counted) · ipogyani –</span></p>
     <p class="card-suggestion"><strong>Suggestion:</strong> Watch — Strong 33.87% RoNW but D/E of 1.01 and a partial promoter OFS cash-out alongside the fresh raise</p>
     <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
   </div>
@@ -2362,7 +2364,7 @@ Vishal Nirmiti Ltd. (formerly Sejal Farms Private Ltd.), incorporated in 1994, i
       <span class="status-badge badge-closed">Closed</span>
     </div>
     <div class="card-meta-line">Rs.109-115 · Issue size <span class="issue-size">Rs.44.23 Cr</span> · 23 Sep-25 Sep 2026 · 3.11x overall (QIB 2.50x, final) · as of 25 Sep 2026, 6:55 PM IST (Closed, listing 30 Sep) · GMP ₹0 (0.00%)</div>
-    <p class="card-predicted conf-low"><strong>Predicted gains:</strong> <span class="pred-num">+0.0%</span> (≈₹115 vs issue ₹115) · range -20% to +20% · <span class="pred-conf">Low confidence</span><span class="pred-note"> · past avg miss 13.4pp for this kind of issue</span></p>
+    <p class="card-predicted conf-pending"><strong>Predicted gains:</strong> pending — no GMP quoted yet; a number appears once the grey market starts trading.<span class="pred-note"> · GMP investorgain ₹0 (not counted) · ipowatch ₹0 (not counted) · ipogyani ₹0 (not counted)</span></p>
     <p class="card-suggestion"><strong>Suggestion:</strong> Book closed 3.11x with strong fundamentals but zero GMP — hold a small stake for the long term; don't expect a listing pop</p>
     <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
   </div>
@@ -2407,7 +2409,7 @@ The lead manager bench — Share India Capital Services Pvt.Ltd. — is assessed
       <span class="status-badge badge-closed">Closed</span>
     </div>
     <div class="card-meta-line">Rs.343-362 · Issue size <span class="issue-size">Rs.2,100 Cr</span> · 23 Sep-25 Sep 2026 · 1.89x overall (QIB 2.66x, final) · as of 25 Sep 2026, 6:52 PM IST (Closed, listing 30 Sep) · GMP ₹4 (1.10%)</div>
-    <p class="card-predicted conf-high"><strong>Predicted gains:</strong> <span class="pred-num">+1.1%</span> (≈₹366 vs issue ₹362) · range -9.0% to +8.0% · <span class="pred-conf">High confidence</span><span class="pred-note"> · past avg miss 5.8pp for this kind of issue</span></p>
+    <p class="card-predicted conf-high"><strong>Predicted gains:</strong> <span class="pred-num">+2.8%</span> (≈₹372 vs issue ₹362) · range -7.0% to +10% · <span class="pred-conf">High confidence</span><span class="pred-note"> · past avg miss 5.8pp for this kind of issue<br>GMP investorgain ₹10 · ipowatch ₹4 · ipogyani ₹10</span></p>
     <p class="card-suggestion"><strong>Suggestion:</strong> Book closed only 1.89x with a very thin GMP (1.10%) despite a strong lead-manager bench — no listing-gain case; long term only for patient investors given the leverage</p>
     <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
   </div>
@@ -2445,7 +2447,7 @@ Elevate Campuses Ltd. (formerly Good Host Spaces Ltd.) owns and operates on-camp
       <span class="status-badge badge-closed">Closed</span>
     </div>
     <div class="card-meta-line">Rs.119-125 · Issue size <span class="issue-size">Rs.29.06 Cr (incl. Market Maker)</span> · 23 Sep-25 Sep 2026 · 1.18x overall (QIB 2.61x, final) · as of 25 Sep 2026, 6:53 PM IST (Closed, listing 30 Sep) · GMP ₹0 (0.00%)</div>
-    <p class="card-predicted conf-low"><strong>Predicted gains:</strong> <span class="pred-num">+0.0%</span> (≈₹125 vs issue ₹125) · range -20% to +20% · <span class="pred-conf">Low confidence</span><span class="pred-note"> · past avg miss 13.4pp for this kind of issue</span></p>
+    <p class="card-predicted conf-pending"><strong>Predicted gains:</strong> pending — no GMP quoted yet; a number appears once the grey market starts trading.<span class="pred-note"> · GMP investorgain ₹0 (not counted) · ipowatch ₹0 (not counted) · ipogyani ₹0 (not counted)</span></p>
     <p class="card-suggestion"><strong>Suggestion:</strong> Strong profit growth, but the book closed only 1.18x with no GMP and a Caution-rated lead manager — minimal stake only</p>
     <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
   </div>
@@ -2483,7 +2485,7 @@ S.K. Offset Ltd. is an integrated printing and packaging company providing comme
       <span class="status-badge badge-closed">Closed</span>
     </div>
     <div class="card-meta-line">Rs.83-88 · Issue size <span class="issue-size">Rs.34.47 Cr</span> · 23 Sep-25 Sep 2026 · 3.92x overall (QIB 5.30x, final) · as of 25 Sep 2026, 6:53 PM IST (Closed, listing 30 Sep) · GMP ₹0 (0.00%)</div>
-    <p class="card-predicted conf-low"><strong>Predicted gains:</strong> <span class="pred-num">+0.0%</span> (≈₹88 vs issue ₹88) · range -20% to +20% · <span class="pred-conf">Low confidence</span><span class="pred-note"> · past avg miss 13.4pp for this kind of issue</span></p>
+    <p class="card-predicted conf-pending"><strong>Predicted gains:</strong> pending — no GMP quoted yet; a number appears once the grey market starts trading.<span class="pred-note"> · GMP investorgain ₹0 (not counted) · ipowatch ₹0 (not counted) · ipogyani ₹0 (not counted)</span></p>
     <p class="card-suggestion"><strong>Suggestion:</strong> Debt-heavy fund use and mixed health; the book closed 3.92x but with no GMP — small stake only, no listing-gain case</p>
     <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
   </div>
@@ -2521,7 +2523,7 @@ Unitec Fibres Ltd., incorporated in February 2005 and converted to a public comp
       <span class="status-badge badge-closed">Closed</span>
     </div>
     <div class="card-meta-line">Rs.51-54 · Issue size <span class="issue-size">Rs.26.16 Cr</span> · 23 Sep-25 Sep 2026 · 5.08x overall (QIB 1.00x, final) · as of 25 Sep 2026, 6:52 PM IST (Closed, listing 30 Sep) · GMP ₹0 (0.00%)</div>
-    <p class="card-predicted conf-low"><strong>Predicted gains:</strong> <span class="pred-num">+0.0%</span> (≈₹54 vs issue ₹54) · range -20% to +20% · <span class="pred-conf">Low confidence</span><span class="pred-note"> · past avg miss 13.4pp for this kind of issue</span></p>
+    <p class="card-predicted conf-pending"><strong>Predicted gains:</strong> pending — no GMP quoted yet; a number appears once the grey market starts trading.<span class="pred-note"> · GMP investorgain ₹0 (not counted) · ipowatch ₹0 (not counted) · ipogyani ₹0 (not counted)</span></p>
     <p class="card-suggestion"><strong>Suggestion:</strong> Attractive valuation and a 5.08x closing book, but a Caution-rated lead manager and no GMP — small stake for long term, no listing-gain case</p>
     <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
   </div>
@@ -2559,7 +2561,7 @@ Liqvd Digital India Ltd., incorporated in 2013 and converted to a public company
       <span class="status-badge badge-closed">Closed</span>
     </div>
     <div class="card-meta-line">Rs.350-375 · Issue size <span class="issue-size">Rs.300 Cr (100% fresh issue)</span> · 23 Sep-25 Sep 2026 · 2.62x overall (QIB 3.20x, final) · as of 25 Sep 2026, 6:54 PM IST (Closed, listing 30 Sep) · GMP ₹8 (2.13%)</div>
-    <p class="card-predicted conf-medium"><strong>Predicted gains:</strong> <span class="pred-num">+2.1%</span> (≈₹383 vs issue ₹375) · range -8.0% to +9.0% · <span class="pred-conf">Medium confidence</span><span class="pred-note"> · past avg miss 5.8pp for this kind of issue; lead manager history: listings often miss GMP (Khandwala avg miss 21pp)</span></p>
+    <p class="card-predicted conf-medium"><strong>Predicted gains:</strong> <span class="pred-num">+2.1%</span> (≈₹383 vs issue ₹375) · range -8.0% to +9.0% · <span class="pred-conf">Medium confidence</span><span class="pred-note"> · past avg miss 5.8pp for this kind of issue; lead manager history: listings often miss GMP (Khandwala avg miss 21pp)<br>GMP investorgain ₹8 · ipowatch ₹8 · ipogyani ₹8</span></p>
     <p class="card-suggestion"><strong>Suggestion:</strong> Book closed 2.62x and GMP has faded to 2.13%; mixed fundamentals and rich valuation — skip for long term, little listing cushion left</p>
     <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
   </div>
@@ -2597,7 +2599,7 @@ ArMee Infotech Ltd., operating since 2003 out of Ahmedabad, provides IT infrastr
       <span class="status-badge badge-closed">Closed</span>
     </div>
     <div class="card-meta-line">Rs.175-185 · Issue size <span class="issue-size">Rs.160.88 Cr (fresh ~Rs.129 Cr + OFS ~Rs.32 Cr)</span> · 23 Sep-25 Sep 2026 · 7.91x overall (QIB 3.31x, final) · as of 25 Sep 2026, 6:53 PM IST (Closed, listing 30 Sep) · GMP ₹4.5 (2.43%)</div>
-    <p class="card-predicted conf-high"><strong>Predicted gains:</strong> <span class="pred-num">+2.4%</span> (≈₹189.5 vs issue ₹185) · range -8.0% to +9.0% · <span class="pred-conf">High confidence</span><span class="pred-note"> · past avg miss 5.8pp for this kind of issue</span></p>
+    <p class="card-predicted conf-high"><strong>Predicted gains:</strong> <span class="pred-num">+3.2%</span> (≈₹191 vs issue ₹185) · range -7.0% to +10% · <span class="pred-conf">High confidence</span><span class="pred-note"> · past avg miss 5.8pp for this kind of issue<br>GMP investorgain ₹6 · ipowatch ₹5 · ipogyani ₹5</span></p>
     <p class="card-suggestion"><strong>Suggestion:</strong> Fair valuation, strong health and a well oversubscribed close (7.91x), but GMP is thin at 2.43% — small stake, moderate long-term potential</p>
     <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
   </div>
@@ -2635,7 +2637,7 @@ Swastika Infra Ltd., operating since August 2019 on an asset-light EPC model, ex
       <span class="status-badge badge-closed">Closed</span>
     </div>
     <div class="card-meta-line">Rs.100-106 · Issue size <span class="issue-size">Rs.26.50 Cr</span> · 22 Sep-24 Sep 2026 · 2.33x overall (QIB 1.00x, final) · as of 24 Sep 2026, 6:54 PM IST (Closed, listing 29 Sep) · GMP ₹0 (0.00%)</div>
-    <p class="card-predicted conf-low"><strong>Predicted gains:</strong> <span class="pred-num">+0.0%</span> (≈₹106 vs issue ₹106) · range -20% to +20% · <span class="pred-conf">Low confidence</span><span class="pred-note"> · past avg miss 13.4pp for this kind of issue</span></p>
+    <p class="card-predicted conf-pending"><strong>Predicted gains:</strong> pending — no GMP quoted yet; a number appears once the grey market starts trading.<span class="pred-note"> · GMP investorgain ₹0 (not counted) · ipowatch ₹0 (not counted) · ipogyani ₹0 (not counted)</span></p>
     <p class="card-suggestion"><strong>Suggestion:</strong> Book closed 2.33x subscribed with strong fundamentals but zero GMP — small stake for long term, skip for listing gains</p>
     <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
   </div>
@@ -2673,7 +2675,7 @@ Himalaya Nutravedics India Ltd. runs a hybrid Ayurvedic and nutraceutical busine
       <span class="status-badge badge-closed">Closed</span>
     </div>
     <div class="card-meta-line">Rs.72 (fixed) · Issue size <span class="issue-size">Rs.25.52 Cr</span> · 22 Sep-24 Sep 2026 · 1.47x overall (no QIB portion, final) · as of 24 Sep 2026, 6:53 PM IST (Closed, listing 29 Sep) · GMP ₹0 (0.00%)</div>
-    <p class="card-predicted conf-low"><strong>Predicted gains:</strong> <span class="pred-num">+0.0%</span> (≈₹72 vs issue ₹72) · range -20% to +20% · <span class="pred-conf">Low confidence</span><span class="pred-note"> · past avg miss 13.4pp for this kind of issue</span></p>
+    <p class="card-predicted conf-pending"><strong>Predicted gains:</strong> pending — no GMP quoted yet; a number appears once the grey market starts trading.<span class="pred-note"> · GMP investorgain ₹0 (not counted) · ipowatch ₹0 (not counted) · ipogyani ₹0 (not counted)</span></p>
     <p class="card-suggestion"><strong>Suggestion:</strong> Book closed 1.47x subscribed but zero GMP, rich valuation and a Caution-rated lead manager — avoid</p>
     <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
   </div>
@@ -2711,7 +2713,7 @@ Anand Seamless Ltd. manufactures seamless steel tubes and pipes — including fi
       <span class="status-badge badge-closed">Closed</span>
     </div>
     <div class="card-meta-line">Rs.126-134 · Issue size <span class="issue-size">Rs.150.71 Cr (fresh Rs.132.62 Cr + OFS Rs.18.09 Cr)</span> · 23 Sep-25 Sep 2026 · 176.85x overall (QIB 195.04x, final) · as of 25 Sep 2026, 6:54 PM IST (Closed, listing 30 Sep) · GMP ₹47 (35.07%)</div>
-    <p class="card-predicted conf-low"><strong>Predicted gains:</strong> <span class="pred-num">+35%</span> (≈₹181 vs issue ₹134) · range +14% to +51% · <span class="pred-conf">Low confidence</span><span class="pred-note"> · past avg miss 13.5pp for this kind of issue; hot issue: pre-open auction often departs from GMP</span></p>
+    <p class="card-predicted conf-low"><strong>Predicted gains:</strong> <span class="pred-num">+40%</span> (≈₹187.5 vs issue ₹134) · range +19% to +56% · <span class="pred-conf">Low confidence</span><span class="pred-note"> · past avg miss 13.5pp for this kind of issue; hot issue: pre-open auction often departs from GMP<br>GMP investorgain ₹53.5 · ipowatch ₹47 · ipogyani ₹53.5</span></p>
     <p class="card-suggestion"><strong>Suggestion:</strong> Book closed very heavily oversubscribed (176.85x) with GMP at 35.07% — strong listing-gain setup; rich valuation caps long-term conviction</p>
     <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
   </div>
@@ -2749,7 +2751,7 @@ Adroit Industries (India) Ltd., operating since 1995, is a vertically integrated
       <span class="status-badge badge-closed">Closed</span>
     </div>
     <div class="card-meta-line">₹32-37 · Issue size <span class="issue-size">₹22.20 Cr</span> · 21 Sep-23 Sep 2026 · 1.79x overall (QIB 1.26x, final) · as of 23 Sep 2026, 6:54 PM IST (Closed, listing 28 Sep) · GMP ₹0 (0.00%)</div>
-    <p class="card-predicted conf-low"><strong>Predicted gains:</strong> <span class="pred-num">+0.0%</span> (≈₹37 vs issue ₹37) · range -20% to +20% · <span class="pred-conf">Low confidence</span><span class="pred-note"> · past avg miss 13.4pp for this kind of issue; lead manager history: listings often miss GMP (Swastika avg miss 16pp)</span></p>
+    <p class="card-predicted conf-pending"><strong>Predicted gains:</strong> pending — no GMP quoted yet; a number appears once the grey market starts trading.<span class="pred-note"> · GMP investorgain ₹0 (not counted) · ipowatch ₹0 (not counted) · ipogyani ₹0 (not counted)</span></p>
     <p class="card-suggestion"><strong>Suggestion:</strong> Closed book only modestly subscribed (1.79x) with zero GMP and a Caution health rating — skip</p>
     <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
   </div>
@@ -2791,7 +2793,7 @@ Vivekanand Cotspin Ltd. spins clean cotton fibres into carded and combed cotton 
       <span class="status-badge badge-closed">Closed</span>
     </div>
     <div class="card-meta-line">₹110-116 · Issue size <span class="issue-size">₹42.96 Cr</span> · 21 Sep-23 Sep 2026 · 17.72x overall (QIB 20.95x, final) · as of 23 Sep 2026, 6:53 PM IST (Closed, listing 28 Sep) · GMP ₹6 (5.17%)</div>
-    <p class="card-predicted conf-medium"><strong>Predicted gains:</strong> <span class="pred-num">+5.2%</span> (≈₹122 vs issue ₹116) · range -11% to +16% · <span class="pred-conf">Medium confidence</span><span class="pred-note"> · past avg miss 8.4pp for this kind of issue</span></p>
+    <p class="card-predicted conf-medium"><strong>Predicted gains:</strong> <span class="pred-num">+5.2%</span> (≈₹122 vs issue ₹116) · range -11% to +16% · <span class="pred-conf">Medium confidence</span><span class="pred-note"> · past avg miss 8.4pp for this kind of issue<br>GMP investorgain ₹6 · ipowatch ₹6 · ipogyani ₹6</span></p>
     <p class="card-suggestion"><strong>Suggestion:</strong> Oversubscribed 17.72x with strong fundamentals but thin GMP (3.45%) — apply small for listing gains, moderate long-term potential</p>
     <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
   </div>
@@ -2833,7 +2835,7 @@ FX Multitech Ltd. distributes and exports HVAC and industrial-refrigeration equi
       <span class="status-badge badge-closed">Closed</span>
     </div>
     <div class="card-meta-line">₹100-106 · Issue size <span class="issue-size">₹29.37 Cr</span> · 21 Sep-23 Sep 2026 · 833.56x overall (QIB 306.73x, final) · as of 23 Sep 2026, 6:54 PM IST (Closed, listing 28 Sep) · GMP ₹77 (72.64%)</div>
-    <p class="card-predicted conf-low"><strong>Predicted gains:</strong> <span class="pred-num">+73%</span> (≈₹183 vs issue ₹106) · range +46% to +90% · <span class="pred-conf">Low confidence</span><span class="pred-note"> · past avg miss 23.7pp for this kind of issue; lead manager history: listings often miss GMP (GYR avg miss 29pp); hot issue: pre-open auction often departs from GMP</span></p>
+    <p class="card-predicted conf-low"><strong>Predicted gains:</strong> <span class="pred-num">+74%</span> (≈₹185 vs issue ₹106) · range +48% to +90% · <span class="pred-conf">Low confidence</span><span class="pred-note"> · past avg miss 23.7pp for this kind of issue; lead manager history: listings often miss GMP (GYR avg miss 29pp); hot issue: pre-open auction often departs from GMP<br>GMP investorgain ₹79 · ipowatch ₹77 · ipogyani ₹77</span></p>
     <p class="card-suggestion"><strong>Suggestion:</strong> Apply for both listing gains and long term</p>
     <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
   </div>
@@ -2875,7 +2877,7 @@ Robokidz Eduventures Ltd. is an ed-tech company delivering technology-enabled K-
       <span class="status-badge badge-closed">Closed</span>
     </div>
     <div class="card-meta-line">Rs.140-148 · Issue size <span class="issue-size">Rs.708.02 Cr</span> · 22 Sep-24 Sep 2026 · 1.60x overall (QIB 3.10x, final) · as of 24 Sep 2026, 6:53 PM IST (Closed, listing 29 Sep) · GMP ₹0.5 (0.34%)</div>
-    <p class="card-predicted conf-high"><strong>Predicted gains:</strong> <span class="pred-num">+0.3%</span> (≈₹148.5 vs issue ₹148) · range -10% to +7.0% · <span class="pred-conf">High confidence</span><span class="pred-note"> · past avg miss 5.8pp for this kind of issue</span></p>
+    <p class="card-predicted conf-high"><strong>Predicted gains:</strong> <span class="pred-num">+0.3%</span> (≈₹148.5 vs issue ₹148) · range -10% to +7.0% · <span class="pred-conf">High confidence</span><span class="pred-note"> · past avg miss 5.8pp for this kind of issue<br>GMP investorgain ₹0.5 · ipowatch ₹0 (not counted) · ipogyani ₹0 (not counted)</span></p>
     <p class="card-suggestion"><strong>Suggestion:</strong> Strong fundamentals and lead-manager bench, but only a 1.60x book and near-flat GMP — modest listing gains at best, moderate long-term potential</p>
     <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
   </div>
@@ -2925,7 +2927,7 @@ The lead manager bench — JM Financial Ltd., Goldman Sachs (India) Securities P
       <span class="status-badge badge-closed">Closed</span>
     </div>
     <div class="card-meta-line">₹78 (fixed) · Issue size <span class="issue-size">₹21.99 Cr</span> · 23 Sep-25 Sep 2026 · 1.4x overall (final) · as of 26 Sep 2026, 1:00 PM IST (Closed, listing 30 Sep) · GMP not yet active</div>
-    <p class="card-predicted conf-pending"><strong>Predicted gains:</strong> pending — no GMP quoted yet; a number appears once the grey market starts trading.</p>
+    <p class="card-predicted conf-pending"><strong>Predicted gains:</strong> pending — no GMP quoted yet; a number appears once the grey market starts trading.<span class="pred-note"> · GMP investorgain – · ipowatch ₹0 (not counted) · ipogyani ₹0 (not counted)</span></p>
     <p class="card-suggestion"><strong>Suggestion:</strong> Watch — Sharp FY24-26 revenue growth (+27.5% FY26) but a thin, wobbly PAT margin under 1%</p>
     <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
   </div>
@@ -4405,7 +4407,7 @@ Coreintegra Consulting Services Ltd. (formerly Coreintegra Consulting Services P
         <td>&#8377;54.00</td>
         <td>25-Sep-2026</td>
         <td>&#8377;54.75</td>
-        <td data-sort="-999"><span class="pred-cell pred-none">no call<br><small>no GMP quoted</small></span></td>
+        <td data-sort="-999"><span class="pred-cell pred-none">no call<br><small>no GMP quoted<br>investorgain ₹0 (not counted) · ipowatch – · ipogyani ₹0 (not counted)</small></span></td>
         <td><span class="gain-pos">+1.39%</span></td>
         <td>&#8377;54.05</td>
         <td><span class="gain-pos">+0.09%</span></td>
@@ -4415,7 +4417,7 @@ Coreintegra Consulting Services Ltd. (formerly Coreintegra Consulting Services P
         <td>&#8377;118.00</td>
         <td>24-Sep-2026</td>
         <td>&#8377;224.20</td>
-        <td data-sort="68.6"><span class="pred-cell conf-low"><span class="gain-pos">+69%</span><br><small>range +42% to +90% · <span class="pred-conf">Low</span></small></span></td>
+        <td data-sort="68.6"><span class="pred-cell conf-low"><span class="gain-pos">+69%</span> <span class="pred-flag">sources differ</span><br><small>range +42% to +90% · <span class="pred-conf">Low</span><br>GMP investorgain ₹81 · ipowatch – · ipogyani ₹44.96; sources differ by 30.5pp of issue price, confidence lowered one step</small></span></td>
         <td><span class="gain-pos">+90.00%</span></td>
         <td>&#8377;247.15</td>
         <td><span class="gain-pos">+109.45%</span></td>
@@ -4425,7 +4427,7 @@ Coreintegra Consulting Services Ltd. (formerly Coreintegra Consulting Services P
         <td>&#8377;101.00</td>
         <td>24-Sep-2026</td>
         <td>&#8377;104.90</td>
-        <td data-sort="3.0"><span class="pred-cell conf-medium"><span class="gain-pos">+3.0%</span><br><small>range -13% to +13% · <span class="pred-conf">Medium</span></small></span></td>
+        <td data-sort="3.0"><span class="pred-cell conf-medium"><span class="gain-pos">+3.0%</span><br><small>range -13% to +13% · <span class="pred-conf">Medium</span><br>GMP investorgain ₹3 · ipowatch – · ipogyani ₹6.97</small></span></td>
         <td><span class="gain-pos">+3.86%</span></td>
         <td>&#8377;99.60</td>
         <td><span class="gain-neg">-1.39%</span></td>
@@ -4435,7 +4437,7 @@ Coreintegra Consulting Services Ltd. (formerly Coreintegra Consulting Services P
         <td>&#8377;1,785.00</td>
         <td>24-Sep-2026</td>
         <td>&#8377;1,800.00</td>
-        <td data-sort="2.2"><span class="pred-cell conf-high"><span class="gain-pos">+2.2%</span><br><small>range -8.0% to +9.0% · <span class="pred-conf">High</span></small></span></td>
+        <td data-sort="2.2"><span class="pred-cell conf-high"><span class="gain-pos">+2.2%</span><br><small>range -8.0% to +9.0% · <span class="pred-conf">High</span><br>GMP investorgain ₹40 · ipowatch – · ipogyani ₹44.62</small></span></td>
         <td><span class="gain-pos">+0.84%</span></td>
         <td>&#8377;1,792.65</td>
         <td><span class="gain-pos">+0.43%</span></td>
@@ -4445,7 +4447,7 @@ Coreintegra Consulting Services Ltd. (formerly Coreintegra Consulting Services P
         <td>&#8377;99.00</td>
         <td>24-Sep-2026</td>
         <td>&#8377;102.21</td>
-        <td data-sort="0.0"><span class="pred-cell conf-high"><span class="">+0.0%</span><br><small>range -10% to +7.0% · <span class="pred-conf">High</span></small></span></td>
+        <td data-sort="0.0"><span class="pred-cell conf-high"><span class="">+0.0%</span><br><small>range -10% to +7.0% · <span class="pred-conf">High</span><br>GMP investorgain ₹0 · ipowatch – · ipogyani ₹0 (not counted)</small></span></td>
         <td><span class="gain-pos">+3.24%</span></td>
         <td>&#8377;102.05</td>
         <td><span class="gain-pos">+3.08%</span></td>
@@ -4455,7 +4457,7 @@ Coreintegra Consulting Services Ltd. (formerly Coreintegra Consulting Services P
         <td>&#8377;424.00</td>
         <td>23-Sep-2026</td>
         <td>&#8377;624.00</td>
-        <td data-sort="37.7"><span class="pred-cell conf-low"><span class="gain-pos">+38%</span><br><small>range +17% to +53% · <span class="pred-conf">Low</span></small></span></td>
+        <td data-sort="37.7"><span class="pred-cell conf-low"><span class="gain-pos">+38%</span> <span class="pred-flag">sources differ</span><br><small>range +17% to +53% · <span class="pred-conf">Low</span><br>GMP investorgain ₹160 · ipowatch – · ipogyani ₹137.8; sources differ by 5.2pp of issue price, confidence lowered one step</small></span></td>
         <td><span class="gain-pos">+47.17%</span></td>
         <td>&#8377;728.20</td>
         <td><span class="gain-pos">+71.75%</span></td>
@@ -4465,7 +4467,7 @@ Coreintegra Consulting Services Ltd. (formerly Coreintegra Consulting Services P
         <td>&#8377;93.00</td>
         <td>23-Sep-2026</td>
         <td>&#8377;120.00</td>
-        <td data-sort="31.2"><span class="pred-cell conf-low"><span class="gain-pos">+31%</span><br><small>range +10% to +47% · <span class="pred-conf">Low</span></small></span></td>
+        <td data-sort="31.2"><span class="pred-cell conf-low"><span class="gain-pos">+31%</span><br><small>range +10% to +47% · <span class="pred-conf">Low</span><br>GMP investorgain ₹29 · ipowatch – · ipogyani ₹29.02</small></span></td>
         <td><span class="gain-pos">+29.03%</span></td>
         <td>&#8377;138.91</td>
         <td><span class="gain-pos">+49.37%</span></td>
@@ -4475,14 +4477,14 @@ Coreintegra Consulting Services Ltd. (formerly Coreintegra Consulting Services P
         <td>&#8377;84.00</td>
         <td>23-Sep-2026</td>
         <td>&#8377;82.00</td>
-        <td data-sort="-3.6"><span class="pred-cell conf-high"><span class="gain-neg">-3.6%</span><br><small>range -14% to +3.0% · <span class="pred-conf">High</span></small></span></td>
+        <td data-sort="-3.6"><span class="pred-cell conf-medium"><span class="gain-neg">-3.6%</span> <span class="pred-flag">sources differ</span><br><small>range -14% to +3.0% · <span class="pred-conf">Medium</span><br>GMP investorgain ₹-3 · ipowatch – · ipogyani ₹13.02; sources differ by 19.1pp of issue price, confidence lowered one step</small></span></td>
         <td><span class="gain-neg">-2.38%</span></td>
         <td>&#8377;141.69</td>
         <td><span class="gain-pos">+68.68%</span></td>
       </tr>
     </tbody>
   </table>
-  <p class="predict-note"><strong>Predicted gains</strong> column = what the method on the scorecards would have called from each issue's final GMP the day before listing (point, 10th–90th percentile range, confidence). Compare it with Listing gains to see how the call did. "no call" = no GMP was quoted (SME GMP of ₹0 counts as none).</p>
+  <p class="predict-note"><strong>Predicted gains</strong> column = what the method on the scorecards would have called from each issue's final GMP the day before listing (point, 10th–90th percentile range, confidence). GMP is read from investorgain, ipowatch and ipogyani; investorgain is used when it has a quote (most accurate of the three in backtest; average and majority were both worse), else the median of the others. If the three differ by more than 5% of the issue price, confidence drops one step. Compare it with Listing gains to see how the call did. "no call" = no GMP was quoted (SME GMP of ₹0 counts as none). "–" = that site had no quote.</p>
   </div>
 </section>
 
