@@ -6,7 +6,7 @@ tags: [ipo, finance, automation, cron]
 
 Daily automated research ledger tracking Indian mainboard + SME IPOs — fundamentals, subscription, GMP, listing-day risk.
 
-**Last run: 2026-09-28** (28 September 2026 — see Run Log below for details).
+**Last run: 2026-09-29** (29 September 2026 — see Run Log below for details).
 
 ## What it does
 
