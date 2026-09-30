@@ -1,4 +1,5 @@
 *.log
+Trading/
 fyers-prices.txt
 bse-sub.json
 ipo-fundamentals-ledger-new.html
