@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>IPO Ledger Job — Full Prompt (Legender Copy)</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600;700&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<title>IPO Ledger Daily Update — Full Prompt (Legender)</title>
 <style>
+
+
   :root {
     --parchment: #f6f1e2;
     --parchment-dark: #ece2c6;
@@ -57,6 +57,14 @@
     padding-bottom: 4px;
     border-bottom: 1px solid rgba(201,162,80,0.35);
   }
+  .compiled-badge {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #cdd6e8;
+    margin-bottom: 16px;
+  }
   .subtitle { font-size: 1.02rem; color: #d6dcec; margin-bottom: 20px; max-width: 900px; }
   .compiled-line {
     font-family: 'IBM Plex Mono', monospace;
@@ -66,108 +74,808 @@
     padding-top: 14px;
     line-height: 1.7;
   }
+  .summary-strip {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+  .summary-item {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.82rem;
+    background: rgba(255,255,255,0.07);
+    padding: 8px 14px;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.14);
+    transition: background 0.15s ease;
+  }
+  .summary-item .sum-num {
+    font-weight: 700;
+    color: var(--gold-light);
+    margin-right: 6px;
+    font-variant-numeric: tabular-nums;
+  }
+  .summary-item .sum-lbl {
+    color: #d6dcec;
+    letter-spacing: 0.3px;
+  }
   main { max-width: 1180px; margin: 0 auto; padding: 36px 24px 80px; }
-  section.spec {
+  section.notes {
     background: var(--parchment-dark);
     border: 1px solid rgba(20,33,61,0.12);
     border-left: 5px solid var(--gold);
-    padding: 26px 30px;
+    padding: 24px 26px;
     margin-bottom: 34px;
     border-radius: var(--card-radius);
     box-shadow: 0 2px 10px rgba(20,33,61,0.06);
   }
-  section.spec h2 {
+  section.notes h2 {
     font-family: 'Source Serif 4', serif;
-    font-size: 1.5rem;
-    margin: 0 0 14px;
+    font-size: 1.32rem;
+    margin-top: 0;
     color: var(--navy);
     text-wrap: balance;
   }
-  .prompt-block {
-    background: #fbf7ec;
-    border: 1px solid rgba(20,33,61,0.15);
-    border-radius: 8px;
-    padding: 22px 26px;
-    font-family: 'Public Sans', sans-serif;
+  section.notes ul { margin: 8px 0; padding-left: 20px; }
+  section.notes li { margin-bottom: 6px; }
+  .update-box {
+    background: rgba(47,93,58,0.08);
+    border: 1px solid rgba(47,93,58,0.35);
+    border-left: 4px solid var(--green);
+    padding: 14px 18px;
+    margin-top: 16px;
     font-size: 0.92rem;
-    line-height: 1.75;
-    color: var(--ink);
-    white-space: pre-wrap;
-    word-wrap: break-word;
+    border-radius: 6px;
   }
-  .prompt-block code {
+  .update-box strong { color: var(--green); }
+  .sub-hot { color: var(--green); font-weight: 600; }
+  .sub-warm { color: var(--amber); font-weight: 600; }
+  .sub-cold { color: var(--red); font-weight: 600; }
+  .filter-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+    margin: 22px 0 0;
+  }
+  .filter-box {
+    background: #fffdf6;
+    border: 1px solid rgba(20,33,61,0.12);
+    border-radius: 8px;
+    padding: 14px 16px;
+    box-shadow: 0 1px 4px rgba(20,33,61,0.05);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .filter-box:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(20,33,61,0.1); }
+  .filter-box .fnum { font-family:'IBM Plex Mono',monospace; color: var(--gold); font-size:0.72rem; letter-spacing: 0.5px; }
+  .filter-box h4 { font-family:'Source Serif 4',serif; margin: 6px 0 6px; font-size: 1rem; color: var(--navy); }
+  .filter-box p { font-size: 0.81rem; margin: 0; color: #4a4030; }
+  .filter-box {
+    cursor: pointer;
+    user-select: none;
+    transition-property: transform, box-shadow, border-color;
+    transition-duration: 0.15s;
+    transition-timing-function: ease;
+  }
+  .filter-box:active { transform: translateY(-2px) scale(0.97); }
+  .filter-box:focus-visible {
+    outline: 2px solid var(--gold);
+    outline-offset: 2px;
+  }
+  .filter-box.is-open {
+    border-color: var(--gold);
+    box-shadow: 0 4px 12px rgba(20,33,61,0.12);
+  }
+  .filter-box .fexpand-cue {
     font-family: 'IBM Plex Mono', monospace;
-    font-size: 0.85em;
-    background: rgba(20,33,61,0.07);
-    padding: 1px 6px;
-    border-radius: 4px;
+    font-size: 0.66rem;
+    letter-spacing: 0.4px;
+    color: var(--gold);
+    margin-top: 8px;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .filter-box .fexpand-cue svg {
+    width: 9px; height: 9px;
+    transition-property: transform;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+  }
+  .filter-box.is-open .fexpand-cue svg { transform: rotate(180deg); }
+  .filter-detail-row {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-rows: 0fr;
+    opacity: 0;
+    transition-property: grid-template-rows, opacity, margin-top;
+    transition-duration: 0.25s;
+    transition-timing-function: cubic-bezier(0.2, 0, 0, 1);
+    margin-top: 0;
+  }
+  .filter-detail-row.is-open {
+    grid-template-rows: 1fr;
+    opacity: 1;
+    margin-top: 4px;
+  }
+  .filter-detail-row > div { overflow: hidden; }
+  .filter-detail {
+    background: #fffdf6;
+    border: 1px solid rgba(20,33,61,0.12);
+    border-left: 3px solid var(--gold);
+    border-radius: 8px;
+    padding: 18px 22px;
+    box-shadow: 0 1px 4px rgba(20,33,61,0.05);
+  }
+  .filter-detail h5 {
+    font-family: 'Source Serif 4', serif;
+    font-size: 1.02rem;
     color: var(--navy);
+    margin: 0 0 10px;
   }
-  .gate-line {
-    background: rgba(20,33,61,0.05);
-    border-left: 3px solid var(--navy);
-    padding: 10px 14px;
-    margin: 10px 0;
+  .filter-detail .fmetric-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 12px 20px;
+    margin-bottom: 12px;
+  }
+  .filter-detail .fmetric {
+    border-top: 1px solid rgba(20,33,61,0.1);
+    padding-top: 8px;
+  }
+  .filter-detail .fmetric .fm-name {
     font-family: 'IBM Plex Mono', monospace;
-    font-size: 0.8rem;
-    line-height: 1.7;
-    border-radius: 0 6px 6px 0;
-    overflow-x: auto;
+    font-size: 0.74rem;
+    font-weight: 600;
+    color: var(--navy);
+    display: block;
+    margin-bottom: 3px;
   }
-  .gate-line b { color: var(--navy); }
+  .filter-detail .fmetric .fm-formula {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.7rem;
+    color: var(--gold);
+    display: block;
+    margin-bottom: 4px;
+    font-variant-numeric: tabular-nums;
+  }
+  .filter-detail .fmetric p {
+    font-size: 0.79rem;
+    color: #4a4030;
+    margin: 0;
+  }
+  .filter-detail .fread-note {
+    font-size: 0.79rem;
+    color: #4a4030;
+    background: rgba(169,129,47,0.08);
+    border-radius: 6px;
+    padding: 10px 14px;
+    margin: 0;
+  }
+  .filter-detail .fread-note b { color: var(--navy); }
+  @media (prefers-reduced-motion: reduce) {
+    .filter-box, .filter-box .fexpand-cue svg, .filter-detail-row {
+      transition-duration: 0.001ms !important;
+    }
+  }
+  h2.section-title {
+    font-family: 'Source Serif 4', serif;
+    font-size: 1.65rem;
+    color: var(--navy);
+    border-bottom: 2px solid var(--gold);
+    padding-bottom: 10px;
+    margin: 46px 0 8px;
+    text-wrap: balance;
+  }
+  .section-desc { font-size: 0.87rem; color: #4a4030; margin-bottom: 22px; max-width: 900px; }
+  .cards-col {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 22px;
+  }
+  .ledger-card {
+    background: #fffdf6;
+    border: 1px solid rgba(20,33,61,0.14);
+    border-left: 4px solid var(--navy);
+    border-radius: var(--card-radius);
+    padding: 18px 20px;
+    box-shadow: 0 2px 8px rgba(20,33,61,0.06);
+    transition: box-shadow 0.15s ease, transform 0.15s ease;
+  }
+  .ledger-card:hover { box-shadow: 0 6px 18px rgba(20,33,61,0.1); transform: translateY(-1px); }
+  .card-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; flex-wrap: wrap; }
+  .card-head h3 {
+    font-family: 'Source Serif 4', serif;
+    font-size: 1.15rem;
+    margin: 0 0 4px;
+    color: var(--navy);
+    line-height: 1.3;
+    text-wrap: balance;
+  }
+  .seg-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.62rem;
+    color: #8a7f66;
+    font-weight: 400;
+    margin-left: 6px;
+  }
+  .status-badge {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.68rem;
+    padding: 4px 10px;
+    border-radius: 12px;
+    white-space: nowrap;
+    font-weight: 600;
+  }
+  .badge-open { background: #dcefe0; color: var(--green); border: 1px solid var(--green); }
+  .badge-closed { background: #f0e6d2; color: var(--amber); border: 1px solid var(--amber); }
+  .badge-upcoming { background: #e2e7f2; color: var(--navy); border: 1px solid var(--navy); }
+  .card-meta-line {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.77rem;
+    color: var(--navy-light);
+    background: #eef1f8;
+    padding: 8px 10px;
+    border-radius: 6px;
+    margin: 10px 0 12px;
+    border: 1px solid rgba(20,33,61,0.1);
+    line-height: 1.6;
+  }
+  .lead-manager-box {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 0.8rem;
+    color: var(--navy);
+    background: #fbf8ef;
+    padding: 7px 10px;
+    border-radius: 6px;
+    margin: 0 0 12px;
+    border: 1px solid var(--gold);
+  }
+  .lmbox-strong { border: 1px solid var(--green); background: #e3f0e6; }
+  .lmbox-mixed { border: 1px solid var(--amber); background: #f5eccb; }
+  .lmbox-caution { border: 1px solid var(--red); background: #f2dede; }
+  .lmbox-unproven { border: 1px solid #888; background: #eaeaea; }
+  .card-tags { margin: 0 0 12px; display: flex; flex-wrap: wrap; gap: 6px; }
+  .tag {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.65rem;
+    padding: 3px 8px;
+    border-radius: 4px;
+    background: #eee;
+    color: #444;
+    border: 1px solid #ccc;
+    font-weight: 500;
+  }
+  .tag-strong { background: #dcefe0; color: var(--green); border-color: var(--green); }
+  .tag-mixed { background: #f5eccb; color: var(--amber); border-color: var(--amber); }
+  .tag-weak, .tag-caution { background: #f3dcdc; color: var(--red); border-color: var(--red); }
+  .tag-val-attractive { background: #dcefe0; color: var(--green); border-color: var(--green); }
+  .tag-val-fair { background: #f5eccb; color: var(--amber); border-color: var(--amber); }
+  .tag-val-rich { background: #f3dcdc; color: var(--red); border-color: var(--red); }
+  .tag-val-pending { background: #eee; color: #777; }
+  .tag-fund-growth-led { background: #dcefe0; color: var(--green); border-color: var(--green); }
+  .tag-fund-mixed { background: #f5eccb; color: var(--amber); border-color: var(--amber); }
+  .tag-fund-debt-heavy, .tag-fund-ofs-only { background: #f3dcdc; color: var(--red); border-color: var(--red); }
+  .tag-sub-very-strong { background: #dcefe0; color: var(--green); border-color: var(--green); }
+  .tag-sub-oversubscribed { background: #f5eccb; color: var(--amber); border-color: var(--amber); }
+  .tag-sub-undersubscribed, .tag-sub-pending { background: #f3dcdc; color: var(--red); border-color: var(--red); }
+  .tag-sub-not-opened { background: #eee; color: #777; }
+  .card-prose { font-size: 0.87rem; color: #3a3226; margin: 0; }
+  table.ledger-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fffdf6;
+    font-size: 0.78rem;
+    margin-bottom: 42px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(20,33,61,0.06);
+  }
+  table.ledger-table caption { text-align: left; font-family:'Source Serif 4',serif; font-size:1.08rem; margin-bottom:10px; color: var(--navy); }
+  table.ledger-table th {
+    background: var(--navy);
+    color: var(--parchment);
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 500;
+    font-size: 0.68rem;
+    text-align: left;
+    padding: 9px 11px;
+    letter-spacing: 0.3px;
+  }
+  table.ledger-table td {
+    padding: 8px 11px;
+    border-bottom: 1px solid rgba(20,33,61,0.08);
+    vertical-align: top;
+    font-variant-numeric: tabular-nums;
+  }
+  table.ledger-table tr:nth-child(even) { background: rgba(20,33,61,0.02); }
+  table.ledger-table tr:hover { background: rgba(169,129,47,0.06); }
+  .tcell-name { font-weight: 600; color: var(--navy); white-space: nowrap; }
+  .tsub { font-family: 'IBM Plex Mono', monospace; font-size: 0.62rem; color: #7a7060; font-weight: 400; }
+  .table-scroll { overflow-x: auto; border-radius: 8px; }
+  .table-footnote { font-size: 0.78rem; color: #5a5040; margin: -22px 0 42px; padding: 12px 16px; background: rgba(20,33,61,0.03); border-left: 3px solid rgba(20,33,61,0.2); border-radius: 0 6px 6px 0; }
   footer {
+    text-align: center;
+    padding: 28px;
     font-family: 'IBM Plex Mono', monospace;
     font-size: 0.75rem;
-    color: #6a6050;
-    padding: 20px 24px 40px;
-    text-align: center;
+    color: #7a7060;
+    border-top: 1px solid rgba(20,33,61,0.1);
+    margin-top: 20px;
   }
+
+  .analyst-note {
+    background: #fffdf6;
+    border: 1px solid rgba(20,33,61,0.13);
+    border-radius: var(--card-radius);
+    padding: 20px 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(20,33,61,0.06);
+  }
+  .analyst-note h3 {
+    font-family: 'Source Serif 4', serif;
+    font-size: 1.12rem;
+    color: var(--navy);
+    margin: 0 0 12px;
+    text-wrap: balance;
+  }
+  .analyst-note p { font-size: 0.88rem; margin: 0 0 10px; color: #3a3226; }
+  .analyst-note ul { margin: 0 0 10px; padding-left: 20px; }
+  .analyst-note li { font-size: 0.88rem; margin-bottom: 8px; color: #3a3226; }
+  .verdict-box {
+    border-left: 4px solid var(--gold);
+    background: rgba(169,129,47,0.07);
+  }
+  .disclaimer-line {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.72rem;
+    color: #6a6050;
+    border-top: 1px dashed rgba(20,33,61,0.2);
+    padding-top: 10px;
+    margin-top: 14px !important;
+  }
+  table.rank-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.82rem;
+    margin-top: 14px;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  table.rank-table th {
+    background: var(--navy);
+    color: var(--parchment);
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 500;
+    font-size: 0.68rem;
+    text-align: left;
+    padding: 9px 11px;
+  }
+  table.rank-table td {
+    padding: 11px;
+    border-bottom: 1px solid rgba(20,33,61,0.08);
+    vertical-align: top;
+    font-variant-numeric: tabular-nums;
+  }
+  table.rank-table tr.rank-buy { background: rgba(47,93,58,0.07); }
+  table.rank-table tr.rank-watch { background: rgba(156,107,31,0.07); }
+  table.rank-table tr.rank-avoid { background: rgba(138,46,46,0.06); }
+  table.rank-table tbody tr { transition-property: background; transition-duration: 0.15s; transition-timing-function: ease-out; }
+  table.rank-table tr.rank-buy:hover { background: rgba(47,93,58,0.13); }
+  table.rank-table tr.rank-watch:hover { background: rgba(156,107,31,0.13); }
+  table.rank-table tr.rank-avoid:hover { background: rgba(138,46,46,0.12); }
+  .rank-score { font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; font-weight: 700; white-space: nowrap; }
+  tr.rank-buy .rank-score { color: var(--green); }
+  tr.rank-watch .rank-score { color: var(--amber); }
+  tr.rank-avoid .rank-score { color: var(--red); }
+  .verdict-line { font-size: 0.86rem; line-height: 1.4; }
+  tr.rank-buy .verdict-line { color: var(--green); }
+  tr.rank-watch .verdict-line { color: var(--amber); }
+  tr.rank-avoid .verdict-line { color: var(--red); }
+  .card-suggestion {
+    font-size: 0.88rem;
+    font-weight: 600;
+    margin: 10px 0 4px;
+    padding: 8px 12px;
+    border-left: 4px solid var(--gold);
+    background: rgba(169,129,47,0.08);
+  }
+  .card-suggestion-source {
+    font-size: 0.74rem;
+    color: #6a6050;
+    margin: 0 0 6px;
+  }
+
+  .sentiment-box {
+    background: #eef1f8;
+    border: 1px solid rgba(20,33,61,0.16);
+    border-left: 4px solid var(--navy);
+    padding: 18px 22px;
+    margin: 20px 0 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(20,33,61,0.05);
+  }
+  .sentiment-box h3 {
+    font-family: 'Source Serif 4', serif;
+    font-size: 1.1rem;
+    color: var(--navy);
+    margin: 0 0 10px;
+    text-wrap: balance;
+  }
+  .sentiment-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 12px;
+  }
+  .sentiment-stat {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.76rem;
+    background: #fffdf6;
+    border: 1px solid rgba(20,33,61,0.1);
+    border-radius: 6px;
+    padding: 8px 11px;
+  }
+  .sentiment-stat .lbl { color: #7a7060; display:block; font-size:0.62rem; text-transform:uppercase; letter-spacing:0.5px; margin-bottom: 2px; }
+  .sentiment-stat b { display: block; font-size: 0.92rem; color: var(--navy); margin-bottom: 2px; font-variant-numeric: tabular-nums; }
+  .sentiment-stat small { display: block; color: #6b6353; font-size: 0.7rem; line-height: 1.35; }
+  .sentiment-read {
+    font-size: 0.87rem;
+    color: #3a3226;
+    margin: 8px 0 0;
+  }
+  .read-tag {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.68rem;
+    padding: 3px 9px;
+    border-radius: 12px;
+    font-weight: 700;
+  }
+  .read-riskon { background: #dcefe0; color: var(--green); border: 1px solid var(--green); }
+  .read-neutral { background: #f5eccb; color: var(--amber); border: 1px solid var(--amber); }
+  .read-riskoff { background: #f3dcdc; color: var(--red); border: 1px solid var(--red); }
+  .key-points {
+    background: rgba(20,33,61,0.03);
+    border: 1px solid rgba(20,33,61,0.09);
+    border-radius: 6px;
+    padding: 10px 14px;
+    margin: 0 0 12px;
+  }
+  .key-points .kp-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.62rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--gold);
+    display: block;
+    margin-bottom: 5px;
+  }
+  .key-points ul { margin: 0; padding-left: 18px; }
+  .key-points li { font-size: 0.8rem; color: #2a2116; margin-bottom: 3px; display: flex; justify-content: space-between; gap: 10px; }
+  .key-points li.kp-prose { display: block; }
+  .key-points .kp-pt { white-space: nowrap; }
+
+  .gain-pos { color: var(--green); font-weight: 700; }
+  .gain-neg { color: var(--red); font-weight: 700; }
+  .gain-pending { color: #7a7060; font-style: italic; }
+
+  .pct-pos { color: var(--green); font-weight: 600; }
+  .pct-neg { color: var(--red); font-weight: 600; }
+  .pct-neutral { color: inherit; }
+
+  .issue-size {
+    background: rgba(169,129,47,0.15);
+    color: var(--gold);
+    font-weight: 700;
+    padding: 1px 6px;
+    border-radius: 4px;
+    border: 1px solid rgba(169,129,47,0.35);
+  }
+
+  .val-cheap {
+    background: rgba(47,93,58,0.12);
+    color: var(--green);
+    font-weight: 600;
+    padding: 1px 3px;
+    border-radius: 3px;
+  }
+  .val-rich {
+    background: rgba(138,46,46,0.12);
+    color: var(--red);
+    font-weight: 600;
+    padding: 1px 3px;
+    border-radius: 3px;
+  }
+  .val-similar {
+    background: rgba(156,107,31,0.1);
+    color: var(--amber);
+    font-weight: 600;
+    padding: 1px 3px;
+    border-radius: 3px;
+  }
+  .val-fair {
+    background: rgba(156,107,31,0.1);
+    color: var(--amber);
+    font-weight: 600;
+    padding: 1px 3px;
+    border-radius: 3px;
+  }
+  .val-nodata {
+    color: #7a7060;
+    font-style: italic;
+  }
+
+  @media (max-width: 900px) {
+    .filter-grid { grid-template-columns: repeat(2, 1fr); }
+    .sentiment-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 560px) {
+    .filter-grid, .sentiment-grid { grid-template-columns: 1fr; }
+    h1 { font-size: 1.9rem; }
+  }
+
+  table.sortable th {
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    padding-right: 20px;
+    transition-property: background, transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-out;
+  }
+  table.sortable th:hover { background: var(--navy-light); }
+  table.sortable th:active { transform: scale(0.98); }
+  table.sortable th .sort-arrow {
+    display: inline-block;
+    margin-left: 6px;
+    font-size: 0.6rem;
+    opacity: 0.4;
+    transition: opacity 0.15s ease-out, color 0.15s ease-out;
+  }
+  table.sortable th.sort-asc .sort-arrow,
+  table.sortable th.sort-desc .sort-arrow { opacity: 1; color: var(--gold-light); }
+  table.sortable th.sort-asc .sort-arrow::after { content: '\2191'; }
+  table.sortable th.sort-desc .sort-arrow::after { content: '\2193'; }
+  table.sortable th:not(.sort-asc):not(.sort-desc) .sort-arrow::after { content: '\2195'; }
+
+  .gov-strong {
+    background: rgba(47,93,58,0.12);
+    color: var(--green);
+    font-weight: 600;
+    padding: 1px 3px;
+    border-radius: 3px;
+  }
+  .gov-indirect {
+    background: rgba(169,129,47,0.12);
+    color: var(--amber);
+    font-weight: 600;
+    padding: 1px 3px;
+    border-radius: 3px;
+  }
+  .gov-none {
+    color: #7a7060;
+    font-style: italic;
+  }
+
+  .highlight-dev {
+    background: rgba(20,33,61,0.1);
+    color: var(--navy);
+    font-weight: 600;
+    padding: 1px 3px;
+    border-radius: 3px;
+  }
+
+  /* Visual polish pass — see make-interfaces-feel-better skill.
+     .actionable-box was referenced in markup 5x (analyst-comparison
+     callout + 4 follow-up boxes) with no matching CSS rule at all,
+     rendering as plain unstyled text. Styled consistently with the
+     existing .sentiment-box/.update-box card language: shadow-as-border
+     for elevation, gold left accent to match the ledger's ruled-margin
+     motif, concentric radius (8px outer, no nested inner surface here
+     so a single radius is correct). */
+  .actionable-box {
+    background: #fffdf6;
+    border: 1px solid rgba(20,33,61,0.14);
+    border-left: 4px solid var(--gold);
+    border-radius: 8px;
+    padding: 18px 22px;
+    margin: 16px 0 22px;
+    box-shadow: 0 2px 8px rgba(20,33,61,0.06);
+    transition-property: box-shadow, transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-out;
+  }
+  .actionable-box:hover { box-shadow: 0 5px 16px rgba(20,33,61,0.1); transform: translateY(-1px); }
+  .actionable-box h3 {
+    font-family: 'Source Serif 4', serif;
+    font-size: 1.1rem;
+    color: var(--navy);
+    margin: 0 0 10px;
+    text-wrap: balance;
+  }
+  .actionable-box p { font-size: 0.88rem; color: #3a3226; margin: 0; }
+  .actionable-box p + p { margin-top: 10px; }
+
+
+
+  /* Market-moving news section */
+  .news-section { margin: 0 0 40px; }
+  .news-section .news-head { display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:8px; }
+  .news-asof { font-family:'IBM Plex Mono',monospace; font-size:0.7rem; color:#7a7060; letter-spacing:0.5px; text-transform:uppercase; }
+  .news-snapshot { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:10px; margin:0 0 22px; }
+  .news-snapshot .sentiment-stat { background:#fffdf6; }
+  .news-section h3 { font-family:'Source Serif 4',serif; font-size:1.08rem; color:var(--navy); margin:26px 0 10px; text-wrap:balance; }
+  .news-section table.ledger-table { margin-bottom:18px; }
+  .news-section td.nw-date { font-family:'IBM Plex Mono',monospace; font-size:0.72rem; white-space:nowrap; color:var(--navy); font-weight:600; }
+  .impact { font-family:'IBM Plex Mono',monospace; font-size:0.64rem; padding:2px 8px; border-radius:10px; font-weight:700; white-space:nowrap; border:1px solid; display:inline-block; }
+  .impact-neg { background:#f3dcdc; color:var(--red); border-color:var(--red); }
+  .impact-pos { background:#dcefe0; color:var(--green); border-color:var(--green); }
+  .impact-mixed { background:#f5eccb; color:var(--amber); border-color:var(--amber); }
+  .nw-status { font-family:'IBM Plex Mono',monospace; font-size:0.64rem; padding:2px 8px; border-radius:10px; background:#eef1f8; color:var(--navy); border:1px solid rgba(20,33,61,0.25); white-space:nowrap; display:inline-block; }
+  .news-bottom { background:var(--parchment-dark); border-left:4px solid var(--gold); border-radius:0 8px 8px 0; padding:14px 18px; font-size:0.87rem; color:#3a3226; margin:22px 0 10px; }
+  .news-sources { font-size:0.74rem; color:#5a5040; margin:8px 0 0; }
+  @media (max-width: 760px) { .news-snapshot { grid-template-columns:repeat(2,1fr); } }
+  .gold-alert-pill { font-size:0.68rem; padding:1px 7px; }
+
+  /* Collapsible scorecard cards */
+  .scorecard-controls { display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap; margin:-6px 0 16px; }
+  .scorecard-hint { font-size:0.8rem; color:#6a6050; }
+  .card-toggle-all {
+    font-family:'IBM Plex Mono',monospace; font-size:0.72rem; letter-spacing:0.3px;
+    background:#fffdf6; color:var(--navy); border:1px solid rgba(20,33,61,0.3); border-radius:14px;
+    padding:5px 12px; cursor:pointer;
+    transition-property: background-color, transform; transition-duration: 0.15s; transition-timing-function: ease;
+  }
+  .card-toggle-all:hover { background:#eef1f8; }
+  .card-toggle-all:active { transform: scale(0.98); }
+  .ledger-card { padding: 0; }
+  .card-summary { padding: 14px 20px 12px; cursor: pointer; border-radius: var(--card-radius); outline: none; }
+  .card-summary:focus-visible { box-shadow: 0 0 0 2px var(--gold); }
+  .card-summary .card-head h3 { margin-bottom: 2px; }
+  .card-summary .card-suggestion { margin: 8px 0 6px; }
+  .card-expand-cue { display:inline-flex; align-items:center; gap:5px; font-family:'IBM Plex Mono',monospace; font-size:0.7rem; color:var(--gold); letter-spacing:0.3px; }
+  .card-expand-cue svg { width:11px; height:11px; transition: transform 0.2s ease; }
+  .card-expand-cue .cue-less { display:none; }
+  .ledger-card.is-open .card-expand-cue .cue-more { display:none; }
+  .ledger-card.is-open .card-expand-cue .cue-less { display:inline; }
+  .ledger-card.is-open .card-expand-cue svg { transform: rotate(180deg); }
+  .card-details { display:none; padding: 0 20px 18px; border-top: 1px dashed rgba(20,33,61,0.15); padding-top: 12px; }
+  .ledger-card.is-open .card-details { display:block; }
+  @media print { .card-details { display:block !important; } .card-expand-cue, .scorecard-controls { display:none; } }
+  .card-summary .card-meta-line { margin: 4px 0 2px; }
+/* Predicted gains */
+.card-predicted { margin: 6px 0 2px; padding: 5px 10px; border-left: 3px solid var(--navy); background: rgba(20,33,61,0.05); font-size: 0.86rem; line-height: 1.45; }
+.card-predicted strong { font-family: 'IBM Plex Mono', monospace; font-size: 0.78rem; letter-spacing: 0.04em; text-transform: uppercase; }
+.card-predicted .pred-num { font-weight: 700; font-variant-numeric: tabular-nums; }
+.card-predicted .pred-conf { display: inline-block; padding: 0 7px; border-radius: 10px; font-size: 0.74rem; font-weight: 600; border: 1px solid currentColor; }
+.card-predicted.conf-high { border-left-color: var(--green); } .card-predicted.conf-high .pred-conf { color: var(--green); }
+.card-predicted.conf-medium { border-left-color: var(--amber); } .card-predicted.conf-medium .pred-conf { color: var(--amber); }
+.card-predicted.conf-low { border-left-color: var(--red); } .card-predicted.conf-low .pred-conf { color: var(--red); }
+.card-predicted.conf-pending { border-left-color: #8a8a8a; color: #666; }
+.card-predicted .pred-note { color: #6b6b6b; font-size: 0.8rem; }
+.predict-note { font-size: 0.8rem; color: #5b5b5b; margin: 4px 0 12px; }
+.pred-cell { font-variant-numeric: tabular-nums; white-space: nowrap; }
+.pred-cell small { font-size: 0.74rem; color: #6b6b6b; }
+.pred-cell > span:first-child { font-weight: 700; }
+.pred-cell.conf-high .pred-conf { color: var(--green); } .pred-cell.conf-medium .pred-conf { color: var(--amber); } .pred-cell.conf-low .pred-conf { color: var(--red); }
+.pred-cell.pred-none { color: #8a8a8a; }
+.pred-cell small { white-space: normal; }
+.pred-flag { font-size: 0.7rem; font-weight: 600; color: var(--amber); border: 1px solid currentColor; border-radius: 8px; padding: 0 5px; }
+/* end Predicted gains */
+
+  .prompt-verbatim { font-family: 'IBM Plex Mono', monospace; font-size: 0.82rem; line-height: 1.75; white-space: pre-wrap; word-wrap: break-word; background: #fbf7ec; border: 1px solid rgba(20,33,61,0.15); border-radius: 8px; padding: 18px 22px; margin: 8px 0 4px; color: var(--ink); }
 </style>
 </head>
 <body>
+
 <header>
   <div class="wrap">
-    <span class="eyebrow">Hermes Cron Job &middot; Profile: default</span>
-    <h1>IPO Ledger Daily Update &mdash; Full Prompt</h1>
-    <p class="subtitle">Exact copied prompt (&#8220;legender&#8221;) from cron job <b>be3ec934271b</b>, rendered verbatim in the IPO Fundamentals Ledger visual style. Not part of the ledger output set; reference copy only.</p>
-    <p class="compiled-line">Job: be3ec934271b &middot; Schedule: 30 21 * * * (21:30 IST daily) &middot; Model: kimi-k3 on nvidia &middot; Skill: ipo-ledger-daily-update &middot; Deliver: local &middot; <a href="https://sushrutbhargava.github.io/India_ipo_summary_report/" style="color:var(--gold-light)">Back to the live ledger</a></p>
+    <div class="eyebrow">Hermes Cron Job · Profile: default</div>
+    <h1>IPO Ledger Daily Update — Full Prompt</h1>
+    <div class="compiled-badge">Cron job be3ec934271b · verbatim prompt copy</div>
+    <p class="subtitle">The complete "legender" — the exact prompt of the daily IPO ledger cron job, section by section, in the ledger's own visual format. Every word is stored verbatim from the job definition in <em>jobs.json</em>; nothing is rephrased or summarised.</p>
+    <div class="summary-strip">
+      <div class="summary-item"><span class="sum-num">5</span><span class="sum-lbl">Prompt Sections</span></div>
+      <div class="summary-item"><span class="sum-num">3</span><span class="sum-lbl">Completion Gates</span></div>
+      <div class="summary-item"><span class="sum-num">1</span><span class="sum-lbl">Cron Job</span></div>
+    </div>
+    <div class="compiled-line">Job: be3ec934271b · Schedule: 30 21 * * * (21:30 IST daily) · Model: kimi-k3 on nvidia · Skill: ipo-ledger-daily-update · Deliver: local · <a href="https://sushrutbhargava.github.io/India_ipo_summary_report/" style="color:var(--gold-light)">Back to the live ledger</a></p>
   </div>
 </header>
-<main>
 
-<section class="spec">
-  <h2>1 &mdash; Completion Gates wrapper</h2>
-  <div class="prompt-block">COMPLETION GATES (unlazy skill, lightweight final-verification wrapper). Before starting the task below, write a gates ledger to ~/.hermes/cache/scratch/ipo-cron-gates/GATES.md (create the directory if missing) in the unlazy skill's format (~/.hermes/skills/autonomous-ai-agents/unlazy/references/gates.md and templates/gates-leaf.md) with exactly these 3 runnable gates:</div>
-  <div class="gate-line">G1 (ledger pushed and live): CHECK: bash -c 'cd "$HOME/Documents/Obsidian Vault" &amp;&amp; git fetch origin -q &amp;&amp; [ "$(git rev-parse HEAD)" = "$(git rev-parse origin/main)" ] &amp;&amp; echo GATE_OK' / EXPECT: GATE_OK</div>
-  <div class="gate-line">G3 (predicted gains on every card): CHECK: python3 ~/.hermes/scripts/ipo_backtest/check_predicted.py / EXPECT: GATE_OK</div>
-  <div class="gate-line">G2 (Obsidian run log appended today): CHECK: bash -c 'today=$(date +%Y-%m-%d); head -20 "$HOME/Documents/Obsidian Vault/IPO Ledger Task.md" | grep -q "$today" &amp;&amp; echo GATE_OK' / EXPECT: GATE_OK</div>
-  <div class="prompt-block">Do the task as instructed below. After finishing, run `node ~/.hermes/skills/autonomous-ai-agents/unlazy/scripts/gate-check.mjs --approve ~/.hermes/cache/scratch/ipo-cron-gates/GATES.md` (self-approve — this job runs fully unattended with no human reviewer present) and read its result. If any gate reports unmet, go back and fix the underlying artifact, then rerun the check — never write the final summary claiming the task is done until its gate reports MET. Only write the final summary once gate-check reports ALL MET, or for a genuinely impossible gate add an `ABANDON: &lt;id&gt; &lt;reason&gt;` line and say so plainly in the summary — never silently claim success over an abandoned gate. Include the gate-check result (MET/unmet/abandoned per gate) as a final line in the summary. This is a completion-honesty wrapper only — it never replaces or skips the ledger's own self-consistency checks below, which still run exactly as before.</div>
-</section>
+<main class="container">
 
-<section class="spec">
-  <h2>2 &mdash; Execution discipline directive</h2>
-  <div class="prompt-block">Do this task using DIRECT tool calls only (browser_exec, terminal, execute_code, read_file, write_file). NEVER call delegate_task / spawn subagents for any step — this job runs unattended and a nested subagent idle-timeout has silently failed similar jobs before with zero output. Break any big step into smaller direct calls instead of delegating it.</div>
-</section>
+<section class="filter-section">
+  <h2 class="section-title">The Five-Section Prompt</h2>
+  <div class="filter-grid">
+    <div class="filter-box" role="button" tabindex="0" aria-expanded="false" aria-controls="detail-s1" data-detail="detail-s1">
+      <span class="fnum">S1</span><h4>Completion Gates wrapper</h4>
+      <p>Unlazy gates ledger: 3 runnable gates (ledger pushed, predicted gains, Obsidian run log) plus the gate-check self-approve flow.</p>
+      <span class="fexpand-cue">Read the full prompt text <svg viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+    </div>
+    <div class="filter-box" role="button" tabindex="0" aria-expanded="false" aria-controls="detail-s2" data-detail="detail-s2">
+      <span class="fnum">S2</span><h4>Execution discipline directive</h4>
+      <p>Direct tool calls only; never delegate to subagents — nested idle-timeouts have silently failed this job before.</p>
+      <span class="fexpand-cue">Read the full prompt text <svg viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+    </div>
+    <div class="filter-box" role="button" tabindex="0" aria-expanded="false" aria-controls="detail-s3" data-detail="detail-s3">
+      <span class="fnum">S3</span><h4>IPO Fundamentals Ledger task</h4>
+      <p>The ledger leg: sources, cross-check-once rule, loop guard, predicted-gains script, save-progress, exact-figures, vault hygiene.</p>
+      <span class="fexpand-cue">Read the full prompt text <svg viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+    </div>
+    <div class="filter-box" role="button" tabindex="0" aria-expanded="false" aria-controls="detail-s4" data-detail="detail-s4">
+      <span class="fnum">S4</span><h4>Obsidian run-log update</h4>
+      <p>Append a dated run-log entry under &quot;## Run Log&quot; in IPO Ledger Task.md; append-only, newest at top.</p>
+      <span class="fexpand-cue">Read the full prompt text <svg viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+    </div>
+    <div class="filter-box" role="button" tabindex="0" aria-expanded="false" aria-controls="detail-s5" data-detail="detail-s5">
+      <span class="fnum">S5</span><h4>Final summary specification</h4>
+      <p>The autonomous-run close: what the final response must cover, including per-gate MET status.</p>
+      <span class="fexpand-cue">Read the full prompt text <svg viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+    </div>
 
-<section class="spec">
-  <h2>3 &mdash; IPO Fundamentals Ledger task</h2>
-  <div class="prompt-block">IPO Fundamentals Ledger. Update the IPO Fundamentals Ledger at ~/Documents/Obsidian Vault/ipo-fundamentals-ledger.html. Follow the ipo-ledger-daily-update skill exactly for design, data sources (chittorgarh.com, nseindia.com, bseindia.com, investorgain.com), build process, and the mandatory self-consistency check before writing the file. Mark any undisclosed figure as 'pending' rather than estimating it, and never fabricate a number. CROSS-CHECK ONCE: fundamentals of a company are cross-checked against its DRHP/RHP only the first time the company is published. If ~/Documents/Obsidian Vault/drhp-cache/&lt;slug&gt;-crosscheck-*.md exists, reuse those figures and do not re-download or re-verify them; only refresh live fields (status, subscription, GMP, listing price, sentiment). Exception: a newer offer document (RHP, price band ad, addendum, corrigendum) for that company, then cross-check only the changed fields. LOOP GUARD: the runtime hard-stops web_search at 50 calls per run. Keep the whole run under 20 web_search calls. Never repeat the same web_search more than 3 times; after 3 failures mark the item 'pending' and move on. Get chittorgarh detail-page URLs WITHOUT web_search: one curl (desktop User-Agent) of https://www.chittorgarh.com/report/ipo-in-india-list-main-board-sme/82/all/ and extract all chittorgarh.com/ipo/&lt;slug&gt;-ipo/&lt;id&gt;/ links; use web_search only for a company missing from that list. PREDICTED GAINS: after writing the ledger file and BEFORE syncing index.html, run `python3 ~/.hermes/scripts/ipo_backtest/ledger_predict.py` (defaults to the ledger path; idempotent; must print PASS). It adds the 'Predicted gains' line to every scorecard card per the skill. Never hand-write or edit predicted numbers. SAVE PROGRESS: write the ledger file, run the predicted-gains script, sync index.html, and commit+push as soon as the task is done, so a later failure never leaves an uncommitted half-edit. EXACT FIGURES: never round or write '~' or 'about' before any number, including risk scores. IMPORTANT: this folder is the user's Obsidian vault, shared with personal notes (.obsidian/, Welcome.md, Untitled.md, dated daily notes, *.canvas files, iPO summary/) — the .gitignore already excludes those from git, but never read, modify, delete, or otherwise touch any file in this vault that isn't part of the IPO ledger's own output set (ipo-fundamentals-ledger.html, index.html, listing-risk-desk-*.md, drhp-cache/, lead-managers/, README.md, LICENSE, .gitignore, IPO Ledger Task.md). Also: before committing, always re-verify .gitignore still contains the personal-file exclusions (.obsidian/, Welcome.md, Untitled.md, 2026-*.md, IPO Ledger Task.md, iPO summary/, *.canvas) — if any are missing, restore them before running git add, since this has been silently clobbered before.</div>
-</section>
+    <div class="filter-detail-row" id="row-detail-s1"><div>
+      <div class="filter-detail" id="detail-s1">
+        <h5>Section 1 — Completion Gates wrapper (verbatim)</h5>
+        <pre class="prompt-verbatim">COMPLETION GATES (unlazy skill, lightweight final-verification wrapper). Before starting the task below, write a gates ledger to ~/.hermes/cache/scratch/ipo-cron-gates/GATES.md (create the directory if missing) in the unlazy skill's format (~/.hermes/skills/autonomous-ai-agents/unlazy/references/gates.md and templates/gates-leaf.md) with exactly these 3 runnable gates:
+G1 (ledger pushed and live): CHECK: bash -c 'cd "$HOME/Documents/Obsidian Vault" &amp;&amp; git fetch origin -q &amp;&amp; [ "$(git rev-parse HEAD)" = "$(git rev-parse origin/main)" ] &amp;&amp; echo GATE_OK' / EXPECT: GATE_OK
+G3 (predicted gains on every card): CHECK: python3 ~/.hermes/scripts/ipo_backtest/check_predicted.py / EXPECT: GATE_OK
+G2 (Obsidian run log appended today): CHECK: bash -c 'today=$(date +%Y-%m-%d); head -20 "$HOME/Documents/Obsidian Vault/IPO Ledger Task.md" | grep -q "$today" &amp;&amp; echo GATE_OK' / EXPECT: GATE_OK
+Do the task as instructed below. After finishing, run `node ~/.hermes/skills/autonomous-ai-agents/unlazy/scripts/gate-check.mjs --approve ~/.hermes/cache/scratch/ipo-cron-gates/GATES.md` (self-approve — this job runs fully unattended with no human reviewer present) and read its result. If any gate reports unmet, go back and fix the underlying artifact, then rerun the check — never write the final summary claiming the task is done until its gate reports MET. Only write the final summary once gate-check reports ALL MET, or for a genuinely impossible gate add an `ABANDON: &lt;id&gt; &lt;reason&gt;` line and say so plainly in the summary — never silently claim success over an abandoned gate. Include the gate-check result (MET/unmet/abandoned per gate) as a final line in the summary. This is a completion-honesty wrapper only — it never replaces or skips the ledger's own self-consistency checks below, which still run exactly as before.</pre>
+      </div>
+    </div></div>
 
-<section class="spec">
-  <h2>4 &mdash; Obsidian run-log update</h2>
-  <div class="prompt-block">Update the Obsidian task note (part of the same task). Read ~/Documents/Obsidian Vault/IPO Ledger Task.md, and append a dated run-log entry under the "## Run Log" section (newest entries at top, append-only, 3-6 lines: date, ledger issue counts, notable adds/drops, success/error status including any recurring issues). Do NOT modify any other section unless something structural genuinely changed.</div>
-</section>
+    <div class="filter-detail-row" id="row-detail-s2"><div>
+      <div class="filter-detail" id="detail-s2">
+        <h5>Section 2 — Execution discipline directive (verbatim)</h5>
+        <pre class="prompt-verbatim">Do this task using DIRECT tool calls only (browser_exec, terminal, execute_code, read_file, write_file). NEVER call delegate_task / spawn subagents for any step — this job runs unattended and a nested subagent idle-timeout has silently failed similar jobs before with zero output. Break any big step into smaller direct calls instead of delegating it.</pre>
+      </div>
+    </div></div>
 
-<section class="spec">
-  <h2>5 &mdash; Final summary specification</h2>
-  <div class="prompt-block">This is a fully autonomous run with no chat context available. End with a short summary as your final response, covering:
+    <div class="filter-detail-row" id="row-detail-s3"><div>
+      <div class="filter-detail" id="detail-s3">
+        <h5>Section 3 — IPO Fundamentals Ledger task (verbatim)</h5>
+        <pre class="prompt-verbatim">IPO Fundamentals Ledger. Update the IPO Fundamentals Ledger at ~/Documents/Obsidian Vault/ipo-fundamentals-ledger.html. Follow the ipo-ledger-daily-update skill exactly for design, data sources (chittorgarh.com, nseindia.com, bseindia.com, investorgain.com), build process, and the mandatory self-consistency check before writing the file. Mark any undisclosed figure as 'pending' rather than estimating it, and never fabricate a number. CROSS-CHECK ONCE: fundamentals of a company are cross-checked against its DRHP/RHP only the first time the company is published. If ~/Documents/Obsidian Vault/drhp-cache/&lt;slug&gt;-crosscheck-*.md exists, reuse those figures and do not re-download or re-verify them; only refresh live fields (status, subscription, GMP, listing price, sentiment). Exception: a newer offer document (RHP, price band ad, addendum, corrigendum) for that company, then cross-check only the changed fields. LOOP GUARD: the runtime hard-stops web_search at 50 calls per run. Keep the whole run under 20 web_search calls. Never repeat the same web_search more than 3 times; after 3 failures mark the item 'pending' and move on. Get chittorgarh detail-page URLs WITHOUT web_search: one curl (desktop User-Agent) of https://www.chittorgarh.com/report/ipo-in-india-list-main-board-sme/82/all/ and extract all chittorgarh.com/ipo/&lt;slug&gt;-ipo/&lt;id&gt;/ links; use web_search only for a company missing from that list. PREDICTED GAINS: after writing the ledger file and BEFORE syncing index.html, run `python3 ~/.hermes/scripts/ipo_backtest/ledger_predict.py` (defaults to the ledger path; idempotent; must print PASS). It adds the 'Predicted gains' line to every scorecard card per the skill. Never hand-write or edit predicted numbers. SAVE PROGRESS: write the ledger file, run the predicted-gains script, sync index.html, and commit+push as soon as the task is done, so a later failure never leaves an uncommitted half-edit. EXACT FIGURES: never round or write '~' or 'about' before any number, including risk scores. IMPORTANT: this folder is the user's Obsidian vault, shared with personal notes (.obsidian/, Welcome.md, Untitled.md, dated daily notes, *.canvas files, iPO summary/) — the .gitignore already excludes those from git, but never read, modify, delete, or otherwise touch any file in this vault that isn't part of the IPO ledger's own output set (ipo-fundamentals-ledger.html, index.html, listing-risk-desk-*.md, drhp-cache/, lead-managers/, README.md, LICENSE, .gitignore, IPO Ledger Task.md). Also: before committing, always re-verify .gitignore still contains the personal-file exclusions (.obsidian/, Welcome.md, Untitled.md, 2026-*.md, IPO Ledger Task.md, iPO summary/, *.canvas) — if any are missing, restore them before running git add, since this has been silently clobbered before.</pre>
+      </div>
+    </div></div>
+
+    <div class="filter-detail-row" id="row-detail-s4"><div>
+      <div class="filter-detail" id="detail-s4">
+        <h5>Section 4 — Obsidian run-log update (verbatim)</h5>
+        <pre class="prompt-verbatim">Update the Obsidian task note (part of the same task). Read ~/Documents/Obsidian Vault/IPO Ledger Task.md, and append a dated run-log entry under the "## Run Log" section (newest entries at top, append-only, 3-6 lines: date, ledger issue counts, notable adds/drops, success/error status including any recurring issues). Do NOT modify any other section unless something structural genuinely changed.</pre>
+      </div>
+    </div></div>
+
+    <div class="filter-detail-row" id="row-detail-s5"><div>
+      <div class="filter-detail" id="detail-s5">
+        <h5>Section 5 — Final summary specification (verbatim)</h5>
+        <pre class="prompt-verbatim">This is a fully autonomous run with no chat context available. End with a short summary as your final response, covering:
   - IPO ledger: issue counts, notable adds/drops, any material data revisions today
   - Obsidian note: confirm the Run Log entry was appended
-  - Completion gates: the gate-check result for G1-G3 (MET/unmet/abandoned per gate), from the unlazy skill's ~/.hermes/cache/scratch/ipo-cron-gates/GATES.md run</div>
+  - Completion gates: the gate-check result for G1-G3 (MET/unmet/abandoned per gate), from the unlazy skill's ~/.hermes/cache/scratch/ipo-cron-gates/GATES.md run</pre>
+      </div>
+    </div></div>
+  </div>
 </section>
 
 </main>
-<footer>Reference copy of cron job be3ec934271b prompt &middot; plain-text twin at ~/ip-ledger-leg.txt &middot; regenerate from jobs.json if the job prompt changes.</footer>
+
+<script
+src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+$(function(){
+  $('.filter-box').on('click', function(){
+    var $box = $(this);
+    var isOpen = $box.hasClass('is-open');
+    $('.filter-box.is-open').not($box).each(function(){
+      $(this).removeClass('is-open');
+      $('#row-' + $(this).data('detail')).removeClass('is-open');
+    });
+    $box.toggleClass('is-open', !isOpen);
+    $('#row-' + $box.data('detail')).toggleClass('is-open', !isOpen);
+  });
+});
+</script>
+
 </body>
 </html>
