@@ -6,7 +6,7 @@ tags: [ipo, finance, automation, cron]
 
 Daily automated research ledger tracking Indian mainboard + SME IPOs — fundamentals, subscription, GMP, listing-day risk.
 
-**Last run: 2026-10-05 (3:45 PM IST)** (5 October 2026 — see Run Log below for details).
+**Last run: 2026-10-06 (~11:00 AM IST)** (6 October 2026 — see Run Log below for details).
 
 ## What it does
 
@@ -42,6 +42,10 @@ Recurring `TimeoutError: idle for >600s` on the news-briefing subagent step — 
 - [[create a link]]
 
 ## Run Log
+
+- 6 October 2026 (~11:00 AM IST, cron run, direct calls no subagents): IPO ledger: rebuilt and pushed, 17 cards (4 open, 13 closed, 0 upcoming), 5 moved to Recently-listed (SRIT India, Shah Investor's Home, Acme Universal Safezone 9, Pind Hospitality, Shivchem Agro); predicted gains PASS 17/17. Success.
+  Trading news: tctl latest/calendar/5 watchlist symbols ran; NSE announcements feed timed out and marketaux token unset (both known). Success.
+  Risk desk: listing-risk-desk-2026-10-06.md written (4 open, 13 closed, 29 recent listings). Gemini key missing (recurring); YouTube transcript fetches blocked by IP today, so YouTube lines read none found except one reused 5 Oct transcript. Holdings empty. Obsidian note: this entry appended.
 
 - 5 October 2026 (4:55 PM IST, cron re-run, direct calls no subagents): IPO ledger: not rebuilt; the 3:45 PM refresh is still the live build (HEAD equals origin/main, 22 cards, predicted gains 22/22 GATE_OK). Final closing-day books publish after 5 PM IST. Success.
   Trading news: tctl latest/calendar/5 watchlist symbols ran; NSE announcements feed timed out and marketaux token unset (both known). Success.
