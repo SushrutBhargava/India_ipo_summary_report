@@ -6,7 +6,7 @@ tags: [ipo, finance, automation, cron]
 
 Daily automated research ledger tracking Indian mainboard + SME IPOs — fundamentals, subscription, GMP, listing-day risk.
 
-**Last run: 2026-10-04 (weekend, 3:48 AM IST)** (4 October 2026 — see Run Log below for details).
+**Last run: 2026-10-05 (3:45 PM IST)** (5 October 2026 — see Run Log below for details).
 
 ## What it does
 
@@ -42,6 +42,20 @@ Recurring `TimeoutError: idle for >600s` on the news-briefing subagent step — 
 - [[create a link]]
 
 ## Run Log
+
+- 5 October 2026 (4:55 PM IST, cron re-run, direct calls no subagents): IPO ledger: not rebuilt; the 3:45 PM refresh is still the live build (HEAD equals origin/main, 22 cards, predicted gains 22/22 GATE_OK). Final closing-day books publish after 5 PM IST. Success.
+  Trading news: tctl latest/calendar/5 watchlist symbols ran; NSE announcements feed timed out and marketaux token unset (both known). Success.
+  Risk desk: listing-risk-desk-2026-10-05.md and -afternoon.md stand; no rewrite. Obsidian note: this entry appended.
+
+- 5 October 2026 (3:40 PM IST, cron re-run, direct calls no subagents): IPO ledger: not rebuilt; the 3:45 PM refresh already live (HEAD equals origin/main, 22 cards, predicted gains 22/22 GATE_OK), so no new data to publish. Success.
+  Trading news: tctl latest/calendar/5 watchlist symbols ran; NSE announcements feed timed out and marketaux token unset (both known). Success.
+  Risk desk: existing listing-risk-desk-2026-10-05.md and -afternoon.md stand; no rewrite. Obsidian note: this entry appended.
+
+- 5 October 2026 (3:45 PM IST, cron, direct calls no subagents): IPO ledger: refreshed closing-day subscription prints for all 13 Open cards from chittorgarh live reports (EverestIMS Technologies jumped from 19.54x to 267.41x; Vishal Nirmiti 0.97x to 1.68x; Omara, SJP, Dove Soft all moved above 1x), updated tags, prose and compiled badge; no status changes (none of the 9 Closed names has a Fyers symbol yet). Predicted-gains script PASS (22 cards, 21 recent rows), index.html identical, pushed 0139353, origin/main matches. News (tctl): high-impact, calendar (BOJ Ueda 6 Oct, FOMC minutes 7 Oct) and watchlist scan ran, output in tdesk-news-output.txt; NSE announcements feed timed out once, Marketaux token unset. Risk desk: listing-risk-desk-2026-10-05-afternoon.md (EverestIMS 81 High EXTREME, Paramount Syntex EXTREME); Gemini unavailable (no API key), YouTube not re-fetched, anchor unlock ratios still pending. Obsidian note: this entry appended.
+
+- 5 October 2026 (~11:30 AM IST, cron, direct calls no subagents): IPO ledger: 12 listed issues moved from the scorecard to Recently-listed (8 listing today: Orient Cables, Runwal, German Green Steel, Acevector, Sai Urja, Himalayan Solar, Dudani Retail, Bench Mark Infotech; 4 that listed 1 Oct and had been left as Closed-awaiting-listing: Moneyview, A-One Steels, Roopa Screen, Peshwa Wheat); R.K. Fashion Accessories flipped Upcoming→Open; 22 tracked (13 Open/9 Closed/0 Upcoming); subscription/GMP refreshed from chittorgarh live reports; rank-table and Lead Manager table pruned to the 13 Open names; Sensex/Nifty refreshed from Fyers; predicted-gains PASS; pushed to GitHub (9b08e96). Success. Note: Sensex prior close from Fyers (71,909.70) disagrees with the 73,260.12 shown in the 4 Oct sentiment box.
+  Trading news: tctl latest/calendar/5 watchlist symbols ran; NSE announcements feed timed out and marketaux token unset (both known). Success.
+  Risk desk: listing-risk-desk-2026-10-05.md written (13 open, 9 closed, 21 listed rows with live Fyers prices); Fyers holdings empty; Gemini unavailable (no API key, recurring); anchor unlock ratio pending (anchor tables not pulled); YouTube searched for all 13 open issues, verdicts found for 4. Success with those gaps.
 
 - 4 October 2026 (3:48 AM IST, cron, direct calls no subagents — weekend, exchanges shut): IPO ledger: light refresh — compiled date bumped to 4 Oct 3:48 AM IST; cohort unchanged at 33 tracked (10 Open/21 Closed-awaiting-listing/2 Upcoming/0 Listed Today, badge parity verified). No new subscription prints or listings (exchanges shut 2-4 Oct for Gandhi Jayanti + weekend; Fyers still shows 1 Oct close: Sensex 73,260.12 / Nifty 22,421.95). Predicted-gains script re-ran PASS (33 cards, 15 recently-listed rows), index.html byte-identical re-synced. Trading news (tctl, direct terminal): high-impact 12h filter dominated by global macro/geopolitics (Spain housing protests, Houthi Aramco strikes, India-Pakistan border incident, Ukraine-Russia refinery strikes) — no new India-IPO-relevant item beyond prior runs; 3-day calendar returned no events in range (weekend gap — next RBI MPC 5-7 Oct and TCS Q2 8 Oct still hold from ledger''s Market-Moving News section); watchlist scan (RELIANCE/TCS/INFY/HDFCBANK/NIFTY) returned routine market-wrap + Reliance securitization/debt-fundraise coverage, TCS/Infosys F&O support talk, HDFC Bank Anup Bagchi CEO transition — nothing materially new; all output tee''d to tdesk-news-output.txt (270 lines). IPO risk desk (`listing-risk-desk-2026-10-04.md`): 10 Open + 21 Closed-awaiting-listing + 12 recently-listed covered; no new EXTREME flags on Open cohort (all building/undersubscribed, GMPs modest or inactive); Closed cohort still 7 EXTREME flags (SRIT India 125.16x, Vans Electroengineerings 628.73x+GMP 76.27% dual-trigger, Orient Cables 97.28x+192.68x QIB, Bench Mark Infotech 103.12x, Moneyview 101.87x+230.54x QIB, Peshwa Wheat QIB-only 177.12x, Roopa Screen 271.94x+GMP 59.38% dual-trigger); Fyers holdings empty (no exposure); live prices via Fyers still on 1 Oct closes (Adroit +85.37% best, ArMee -20% worst); Gemini cross-check unavailable (no API key — recurring gap); YouTube sentiment marked none found this weekend run; anchor unlock ratios still pending (recurring gap).
 
