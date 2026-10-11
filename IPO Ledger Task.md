@@ -6,7 +6,7 @@ tags: [ipo, finance, automation, cron]
 
 Daily automated research ledger tracking Indian mainboard + SME IPOs — fundamentals, subscription, GMP, listing-day risk.
 
-**Last run: 2026-10-06 (~11:00 AM IST)** (6 October 2026 — see Run Log below for details).
+**Last run: 2026-10-11 (~1:30 PM IST)** (11 October 2026 — see Run Log below for details).
 
 ## What it does
 
@@ -42,6 +42,17 @@ Recurring `TimeoutError: idle for >600s` on the news-briefing subagent step — 
 - [[create a link]]
 
 ## Run Log
+
+- 11 October 2026 / 2026-10-11 (~1:30 PM IST, Sunday, cron, direct calls no subagents): IPO ledger: rebuilt and pushed (commit 1bedb52): 16 issues that listed 7-9 Oct moved to Recently-listed, R.K. Fashion Accessories closed at 2.70x (lists 12 Oct, lead manager now rated Caution), 4 upcoming added (HD Fire Protect, Ravita Engineering Services, Vaibhav Vyapaar, Fusion CX) from chittorgarh restated summaries only; DRHP/RHP cross-check still pending for those four (chittorgarh-only notes written, no crosscheck file so next run still does it). Predicted-gains script PASS (5 cards, 16 recent rows). Success.
+  Trading news: tctl latest/calendar/5 watchlist symbols ran; NSE announcements feed timed out and marketaux token unset (known); 3-day calendar empty (weekend), 10-day calendar shows US CPI 14 Oct. Success.
+  Risk desk: listing-risk-desk-2026-10-11.md written (16 listed + R.K. Fashion + 4 upcoming; 5 EXTREME flags; Fyers holdings empty; Gemini skipped, no API key; YouTube transcripts fetched for Fusion CX and Ravita, none found for HD Fire Protect and Vaibhav Vyapaar; anchor unlock ratios pending for listed issues). Obsidian note: this entry appended.
+- 6 October 2026 (~3:35 PM IST, cron re-run, direct calls no subagents): IPO ledger: not rebuilt; the 3:20 PM refresh (commit b7b4a26, USD/INR update 8053a3c) is still the live build, 17 cards, predicted gains 17/17 GATE_OK, HEAD equals origin/main. Success.
+  Trading news: tctl latest/calendar/5 watchlist symbols ran; NSE announcements feed timed out and marketaux token unset (both known). Success.
+  Risk desk: reused listing-risk-desk-2026-10-06-afternoon.md (written 3:30 PM; no new data since). Obsidian note: this entry appended.
+
+- 6 October 2026 (~3:30 PM IST, cron re-run, direct calls no subagents): IPO ledger: live-field refresh of the 11 AM build, 17 cards (4 open, 13 closed, 0 upcoming); closing-day prints for TNA Solutions (35.40x) and Acme India Industries (73.23x), Paramount Syntex 1.79x, R.K. Fashion 0.41x, Nifty/Sensex from Fyers; predicted gains PASS 17/17, pushed b7b4a26. Success.
+  Trading news: tctl latest/calendar/5 watchlist symbols ran, NSE announcements feed timed out and marketaux token unset (both known). Success.
+  Risk desk: listing-risk-desk-2026-10-06-afternoon.md written (4 open, 13 closed, 29 recent listings with Fyers prices). Gemini key missing (recurring), YouTube not re-attempted (blocked at 11 AM), anchor unlock ratios still pending, holdings empty. Obsidian note: this entry appended.
 
 - 6 October 2026 (~11:00 AM IST, cron run, direct calls no subagents): IPO ledger: rebuilt and pushed, 17 cards (4 open, 13 closed, 0 upcoming), 5 moved to Recently-listed (SRIT India, Shah Investor's Home, Acme Universal Safezone 9, Pind Hospitality, Shivchem Agro); predicted gains PASS 17/17. Success.
   Trading news: tctl latest/calendar/5 watchlist symbols ran; NSE announcements feed timed out and marketaux token unset (both known). Success.
