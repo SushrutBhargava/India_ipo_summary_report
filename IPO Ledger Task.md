@@ -43,6 +43,9 @@ Recurring `TimeoutError: idle for >600s` on the news-briefing subagent step — 
 
 ## Run Log
 
+- 11 October 2026 / 2026-10-11 (~3:40 PM IST, Sunday, cron re-run, direct calls no subagents): IPO ledger: no data change since 1:15 PM; timestamps bumped to 3:35 PM, predicted gains PASS (5 cards, 16 recent rows), pushed (commit 1fea393). Success.
+  Trading news: tctl latest/calendar/5 watchlist symbols ran; NSE announcements feed timed out and marketaux token unset (known); 3-day calendar empty (weekend). Success.
+  Risk desk: listing-risk-desk-2026-10-11.md reused with a 3:35 PM re-check section; Fyers holdings empty; Gemini skipped (no API key). Obsidian note: this entry appended.
 - 11 October 2026 / 2026-10-11 (~1:30 PM IST, Sunday, cron, direct calls no subagents): IPO ledger: rebuilt and pushed (commit 1bedb52): 16 issues that listed 7-9 Oct moved to Recently-listed, R.K. Fashion Accessories closed at 2.70x (lists 12 Oct, lead manager now rated Caution), 4 upcoming added (HD Fire Protect, Ravita Engineering Services, Vaibhav Vyapaar, Fusion CX) from chittorgarh restated summaries only; DRHP/RHP cross-check still pending for those four (chittorgarh-only notes written, no crosscheck file so next run still does it). Predicted-gains script PASS (5 cards, 16 recent rows). Success.
   Trading news: tctl latest/calendar/5 watchlist symbols ran; NSE announcements feed timed out and marketaux token unset (known); 3-day calendar empty (weekend), 10-day calendar shows US CPI 14 Oct. Success.
   Risk desk: listing-risk-desk-2026-10-11.md written (16 listed + R.K. Fashion + 4 upcoming; 5 EXTREME flags; Fyers holdings empty; Gemini skipped, no API key; YouTube transcripts fetched for Fusion CX and Ravita, none found for HD Fire Protect and Vaibhav Vyapaar; anchor unlock ratios pending for listed issues). Obsidian note: this entry appended.
