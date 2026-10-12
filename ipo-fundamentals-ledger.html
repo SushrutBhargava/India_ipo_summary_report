@@ -745,6 +745,7 @@
   .ledger-card.is-open .card-details { display:block; }
   @media print { .card-details { display:block !important; } .card-expand-cue, .scorecard-controls { display:none; } }
   .card-summary .card-meta-line { margin: 4px 0 2px; }
+  .summary-item.active-stat { background: rgba(169,129,47,0.35); border-color: var(--gold-light); }
 /* Predicted gains */
 .card-predicted { margin: 6px 0 2px; padding: 5px 10px; border-left: 3px solid var(--navy); background: rgba(20,33,61,0.05); font-size: 0.86rem; line-height: 1.45; }
 .card-predicted strong { font-family: 'IBM Plex Mono', monospace; font-size: 0.78rem; letter-spacing: 0.04em; text-transform: uppercase; }
@@ -772,14 +773,14 @@
   <div class="wrap">
     <div class="eyebrow">DRHP / RHP Financial Extract</div>
     <h1>IPO Fundamentals Ledger</h1>
-    <div class="compiled-badge">Compiled 11 October 2026, 3:35 PM IST</div>
+    <div class="compiled-badge">Compiled 12 October 2026, 3:45 PM IST</div>
     <p class="subtitle">A research ledger of Indian mainboard and SME IPOs — fundamentals, valuation, subscription, and grey-market context. Built from DRHP/RHP extracts cross-checked against chittorgarh.com, NSE, BSE, and investorgain.com. All undisclosed figures marked <em>pending</em>.</p>
     <div class="summary-strip">
-      <div class="summary-item"><span class="sum-num">5</span><span class="sum-lbl">Issues Tracked</span></div>
+      <div class="summary-item"><span class="sum-num">8</span><span class="sum-lbl">Issues Tracked</span></div>
       <div class="summary-item" data-filter="status" data-value="open"><span class="sum-num">0</span><span class="sum-lbl">Open</span></div>
-      <div class="summary-item" data-filter="status" data-value="closed"><span class="sum-num">1</span><span class="sum-lbl">Closed — Awaiting Listing</span></div>
-      <div class="summary-item" data-filter="status" data-value="upcoming"><span class="sum-num">4</span><span class="sum-lbl">Upcoming</span></div>
-      <div class="summary-item"><span class="sum-num">3</span><span class="sum-lbl">Listed Last Session (9 Oct)</span></div>
+      <div class="summary-item" data-filter="status" data-value="closed"><span class="sum-num">0</span><span class="sum-lbl">Closed — Awaiting Listing</span></div>
+      <div class="summary-item" data-filter="status" data-value="upcoming"><span class="sum-num">8</span><span class="sum-lbl">Upcoming</span></div>
+      <div class="summary-item"><span class="sum-num">1</span><span class="sum-lbl">Listed Today (12 Oct)</span></div>
     </div>
     <div class="compiled-line">Sources: chittorgarh.com · nseindia.com · bseindia.com · investorgain.com · chittorgarh restated summaries (Oct 2026)</div>
   </div>
@@ -933,36 +934,36 @@
     </div></div>
   </div>
   <div class="update-box">
-    <h3>Update — 11 October 2026 (Sunday)</h3>
-    <p>Markets are shut; the next session is Monday 12 Oct. Three SME issues listed on Friday 9 Oct and moved to Recently-listed: <span class="sub-hot">Acme India Industries</span>, <span class="sub-hot">TNA Solutions</span>, <span class="sub-warm">Paramount Syntex</span>. Nine listed on Thursday 8 Oct — <span class="sub-warm">Vishal Nirmiti</span> and <span class="sub-warm">Nityas Gems &amp; Jewellery</span> on the mainboard, and <span class="sub-hot">EverestIMS Technologies</span>, <span class="sub-warm">Dove Soft</span>, <span class="sub-warm">SJP Ultrasonics</span>, <span class="sub-warm">Eventions</span>, <span class="sub-warm">Sollfege Smart Electronics</span>, <span class="sub-warm">Shree TNB Polymers</span> and <span class="sub-warm">Omara Ventures India</span> in SME — and four on Wednesday 7 Oct: <span class="sub-hot">Vans Electroengineerings</span>, <span class="sub-hot">Black Opal Consultants</span>, <span class="sub-warm">Papadmalji Agro Foods</span> and <span class="sub-warm">Green Asia Impex</span>. <span class="sub-warm">R.K. Fashion Accessories</span> is the one issue still closed and awaiting listing; it lists Monday 12 Oct. Four issues newly have a fixed price band and open this week: <span class="sub-cold">HD Fire Protect</span>, <span class="sub-cold">Ravita Engineering Services</span> and <span class="sub-cold">Vaibhav Vyapaar</span> on 13 Oct, and <span class="sub-cold">Fusion CX</span> on 14 Oct. Nothing is open today.</p>
+    <h3>Update — 12 October 2026 (Monday)</h3>
+    <p><span class="sub-warm">R.K. Fashion Accessories</span> listed today and moved to Recently-listed. Four mainboard issues newly have a fixed price band and open on 15 Oct (closing 19 Oct, listing 23 Oct): <span class="sub-cold">Tonbo Imaging India</span> (₹665-700), <span class="sub-cold">Zetwerk Manufacturing Business</span> (₹143-151), <span class="sub-cold">Bonfiglioli Transmissions</span> (₹558-586) and <span class="sub-cold">Sahajanand Medical Technologies</span> (₹327-344). They join <span class="sub-cold">HD Fire Protect</span>, <span class="sub-cold">Ravita Engineering Services</span> and <span class="sub-cold">Vaibhav Vyapaar</span> (opening 13 Oct) and <span class="sub-cold">Fusion CX</span> (14 Oct). Nothing is open today. Jio Platforms is on Chittorgarh with no dates or price band.</p>
   </div>
   <div class="sentiment-box">
     <h3>Market Sentiment &amp; Listing Context</h3>
     <div class="sentiment-grid">
-      <div class="sentiment-stat"><span class="lbl">Sensex</span><b>72,472.33</b><small>▲ +879.09 pts (+1.23%) at Friday 9 Oct close, range 71,739.50 to 72,669.20 (Fyers feed)</small></div>
-      <div class="sentiment-stat"><span class="lbl">Nifty 50</span><b>22,520.45</b><small>▲ +288.65 pts (+1.30%) at Friday 9 Oct close; weekly gain of 98.50 pts (+0.44%) ended an eight-week losing run (Fyers feed; Economic Times weekly outlook)</small></div>
-      <div class="sentiment-stat"><span class="lbl">FII Net (9 Oct)</span><b>-₹3,568.90 Cr</b><small>Net seller: ₹13,942.89 Cr sold against ₹10,373.99 Cr bought (NSE data, latest available)</small></div>
-      <div class="sentiment-stat"><span class="lbl">DII Net (9 Oct)</span><b>+₹4,743.26 Cr</b><small>Net buyer: ₹15,626.53 Cr bought against ₹10,883.27 Cr sold, more than absorbing the FII exit (NSE data)</small></div>
-      <div class="sentiment-stat"><span class="lbl">Global Backdrop</span><b>Brent $104.72, Riyadh airport strike</b><small>Brent closed at $104.72 and WTI at $91.85 on 9 Oct (worldoilmonitor.com snippet). A Houthi missile strike on Riyadh airport killed 12; Trump said the US may join Saudi strikes. India VIX 14.38 (Fyers). US CPI is due 14 Oct (tdesk calendar)</small></div>
-      <div class="sentiment-stat"><span class="lbl">IPO Pipeline</span><b>5 issues tracked</b><small>0 open, 4 upcoming, 1 closed-awaiting-listing, 3 listed last session (9 Oct). Sahajanand Medical Technologies and Tonbo Imaging India open 15 Oct with no price band yet; Jio Platforms and Bonfiglioli Transmissions are listed on Chittorgarh with no dates or band</small></div>
+      <div class="sentiment-stat"><span class="lbl">Sensex</span><b>71,924.68</b><small>▼ -547.65 pts (-0.76%) at 12 Oct afternoon print against a 72,472.33 close on 9 Oct (Fyers feed)</small></div>
+      <div class="sentiment-stat"><span class="lbl">Nifty 50</span><b>22,363.35</b><small>▼ -157.10 pts (-0.70%) against a 22,520.45 close; intraday range 22,304.45 to 22,651.10 (Fyers feed)</small></div>
+      <div class="sentiment-stat"><span class="lbl">FII Net (9 Oct)</span><b>-₹3,568.90 Cr</b><small>Net seller: ₹13,942.89 Cr sold against ₹10,373.99 Cr bought (NSE data; NSE publishes a day in arrear, so 9 Oct is the latest available)</small></div>
+      <div class="sentiment-stat"><span class="lbl">DII Net (9 Oct)</span><b>+₹4,743.26 Cr</b><small>Net buyer: ₹15,626.53 Cr bought against ₹10,883.27 Cr sold (NSE data)</small></div>
+      <div class="sentiment-stat"><span class="lbl">Global Backdrop</span><b>Riyadh airport strikes, rupee under pressure</b><small>Reuters headlines (tdesk, 12 Oct): skies over Riyadh largely empty after deadly Houthi strikes on the airport, top oil executives dropped from an event, and a piece on how India has sought to defend the slumping rupee. Economic Times: Sensex fell as much as 1,200 pts from the day's high. US CPI is due 14 Oct (tdesk calendar)</small></div>
+      <div class="sentiment-stat"><span class="lbl">IPO Pipeline</span><b>8 issues tracked</b><small>0 open, 8 upcoming, 0 closed-awaiting-listing, 1 listed today (12 Oct). Three SME and mainboard books open 13 Oct, Fusion CX 14 Oct, and four mainboard books 15 Oct. Jio Platforms has no dates or band yet (Economic Times, 12 Oct: reported valuation target of about ₹11 lakh crore)</small></div>
     </div>
     <p class="read-tag">Read: <span class="read-tag read-neutral">Neutral</span></p>
-    <p>Friday's rally (Nifty +1.30%, Sensex +1.23%) closed a week that broke an eight-week losing run, but the Nifty is still below its 200-week average near 22,627, FIIs sold ₹3,568.90 Cr on 9 Oct, and Brent is above $100. The RBI raised the repo rate by 25 bps to 5.50% on 7 Oct, its first hike in three years. The last three sessions of SME and mainboard listings were split: Vans Electroengineerings opened ₹224.20 against a ₹118 issue price (+90.00%) and Sollfege Smart Electronics ₹104.40 against ₹55 (+89.82%), while TNA Solutions opened ₹56 against ₹70 (-20.00%) and Paramount Syntex ₹115 against ₹127 (-9.45%). Next week brings Q2 results from HDFC Bank, HCL Tech and Wipro, US CPI on 14 Oct, and four new issues. Expect listing pops to stay selective: books with real institutional demand get the premium, thin retail-only books get marked down.</p>
+    <p>Monday's session gave back most of Friday's gain (Nifty -0.70%, Sensex -0.76%) after a 1,200-point intraday slide in the Sensex, with the Riyadh airport strikes and rupee defence in the headlines. FIIs sold ₹3,568.90 Cr on 9 Oct and the RBI raised the repo rate to 5.50% on 7 Oct. Today's listing was soft: R.K. Fashion Accessories opened at ₹80 against ₹82 (-2.44%) and trades at ₹76 (-7.32%). The week ahead is heavy on supply, with eight books open between 13 and 19 Oct, plus Q2 results from HDFC Bank, HCL Tech and Wipro and US CPI on 14 Oct. Expect listing pops to stay selective: books with real institutional demand get the premium, thin books get marked down.</p>
   </div>
 </section>
 
 <section class="news-section" id="market-news">
   <div class="news-head">
     <h2 class="section-title">Market-Moving News — Next 2–5 Weeks</h2>
-    <span class="news-asof">As of 11 Oct 2026, 3:35 PM IST</span>
+    <span class="news-asof">As of 12 Oct 2026, 3:45 PM IST</span>
   </div>
-  <p class="section-desc">Scheduled events, policy changes and laws that can move Indian equities, and so listing-day demand for the IPOs above. Tone is neutral: Friday's rally (Nifty +1.30%, Sensex +1.23%) ended an eight-week losing run, but FIIs sold ₹3,568.90 Cr on 9 Oct, Brent closed at $104.72, the RBI hiked to 5.50% on 7 Oct and the rupee sits at ₹96.72 per dollar. Q2 results, US CPI on 14 Oct and a heavy IPO week are next.</p>
+  <p class="section-desc">Scheduled events, policy changes and laws that can move Indian equities, and so listing-day demand for the IPOs above. Tone is neutral to cautious: Friday's rally reversed on Monday (Nifty -0.70%, Sensex -0.76% at the afternoon print), FIIs sold ₹3,568.90 Cr on 9 Oct, the RBI hiked to 5.50% on 7 Oct and the rupee is under pressure. Q2 results, US CPI on 14 Oct and a heavy IPO week are next.</p>
   <div class="news-snapshot">
     <div class="sentiment-stat"><span class="lbl">Gold — MCX</span><b>not pulled</b><small>No MCX futures print was sourced this run (markets are shut on Sunday and the tracker pages were not reached), so no MCX rate, expiry or open-interest figure is claimed</small></div>
-    <div class="sentiment-stat"><span class="lbl">Gold — International (COMEX/spot)</span><b>$4,193.60/oz</b><small>Bid $4,193.60, ask $4,195.60; +$30.30 (+0.73%) over three days (kitco.com, weekend quote)</small></div>
+    <div class="sentiment-stat"><span class="lbl">Gold — International (COMEX/spot)</span><b>$4,193.60/oz</b><small>Carried from 11 Oct, not refreshed. Bid $4,193.60, ask $4,195.60; +$30.30 (+0.73%) over three days (kitco.com, weekend quote)</small></div>
     <div class="sentiment-stat"><span class="lbl">Gold flow alert</span><b><span class="impact impact-pos gold-alert-pill">No alert</span></b><small>+0.73% over three days is inside the ±1.5% intraday band. MCX open-interest change was not pulled, so no OI-based signal is claimed</small></div>
-    <div class="sentiment-stat"><span class="lbl">Brent crude</span><b>$104.72/bbl</b><small>Brent close on 9 Oct; WTI $91.85 (worldoilmonitor.com snippet). Houthi strike on Riyadh airport and a possible US role in Saudi strikes keep supply risk high (pulse.zerodha.com)</small></div>
-    <div class="sentiment-stat"><span class="lbl">USD/INR</span><b>₹96.72/$</b><small>Rupee rose 16 paise to close at 96.72 (provisional) on 9 Oct (The Hindu snippet); Trading Economics shows 96.775. Bloomberg headline: rupee defence raises the question of how far the RBI will go</small></div>
+    <div class="sentiment-stat"><span class="lbl">Brent crude</span><b>$104.72/bbl</b><small>Carried from 9 Oct close, not refreshed (12 Oct Reuters headlines: Riyadh airport strikes, oil executives pulled from an event); WTI $91.85 (worldoilmonitor.com snippet). Houthi strike on Riyadh airport and a possible US role in Saudi strikes keep supply risk high (pulse.zerodha.com)</small></div>
+    <div class="sentiment-stat"><span class="lbl">USD/INR</span><b>₹96.72/$</b><small>Carried from 9 Oct, not refreshed (Reuters 12 Oct headline on India defending the slumping rupee; Societe Generale note on RBI measures). Rupee rose 16 paise to close at 96.72 (provisional) on 9 Oct (The Hindu snippet); Trading Economics shows 96.775. Bloomberg headline: rupee defence raises the question of how far the RBI will go</small></div>
     <div class="sentiment-stat"><span class="lbl">FPI flows</span><b>−₹3,568.90 Cr on 9 Oct</b><small>NSE shows FIIs net sold ₹3,568.90 Cr on 9 Oct. Economic Times: FIIs have sold Indian stocks for eight straight weeks; no month-to-date NSDL figure was sourced this run</small></div>
   </div>
 
@@ -971,12 +972,12 @@
     <thead><tr><th>Date</th><th>Event</th><th>Most exposed</th><th>What to watch</th><th>Likely bias</th></tr></thead>
     <tbody>
       <tr><td class="nw-date">12–16 Oct</td><td>Q2 FY27 results week: HDFC Bank, HCL Tech, Wipro among 129 companies</td><td>Banks, IT</td><td>TCS reported a 15% profit rise on 8 Oct; HCL Tech guidance (narrowing?) and HDFC Bank margins set the tone for banks and IT (Economic Times earnings tracker and preview, 11 Oct)</td><td><span class="impact impact-mixed">Mixed</span></td></tr>
-      <tr><td class="nw-date">13–16 Oct</td><td>IPO calendar: HD Fire Protect, Ravita, Vaibhav Vyapaar (13-15 Oct), Fusion CX (14-16 Oct), then Sahajanand Medical and Tonbo Imaging (15-19 Oct)</td><td>Primary market liquidity</td><td>About ₹1,572 crore of issues open this week (Economic Times, 11 Oct); heavy supply can absorb liquidity from secondary listings</td><td><span class="impact impact-mixed">Mixed</span></td></tr>
+      <tr><td class="nw-date">13–19 Oct</td><td>IPO calendar: HD Fire Protect, Ravita, Vaibhav Vyapaar (13-15 Oct), Fusion CX (14-16 Oct), then Tonbo Imaging, Zetwerk, Bonfiglioli and Sahajanand Medical (15-19 Oct)</td><td>Primary market liquidity</td><td>Chittorgarh issue sizes add up to ₹10,446.12 crore across the eight books (Zetwerk ₹5,012 Cr, Bonfiglioli ₹2,534 Cr, Tonbo ₹852.18 Cr, HD Fire ₹712.31 Cr, Fusion CX ₹702.00 Cr, Sahajanand ₹475.48 Cr, Ravita ₹116.05 Cr, Vaibhav ₹42.10 Cr); heavy supply can absorb liquidity from secondary markets</td><td><span class="impact impact-mixed">Mixed</span></td></tr>
       <tr><td class="nw-date">14 Oct (6:00 PM IST)</td><td>US CPI and core CPI (Sept)</td><td>FII flows, rupee, IT</td><td>Forecast headline CPI 3.6% y/y vs 3.4% previous; core 2.5% vs 2.4% (tdesk calendar). A hot print strengthens the dollar and adds to FII selling</td><td><span class="impact impact-neg">Negative</span></td></tr>
       <tr><td class="nw-date">15 Oct</td><td>US PPI and retail sales; 0.4% MDR on UPI merchant payments above ₹2,000 starts (carried from 6 Oct run, not re-verified)</td><td>Rupee, IT; Paytm, Pine Labs, banks</td><td>US data sets the dollar tone; the UPI charge is a revenue pool for payments firms</td><td><span class="impact impact-mixed">Mixed</span></td></tr>
       <tr><td class="nw-date">16 Oct (9:00 AM IST)</td><td>Fed Chairman Warsh speaks; BoE Governor Bailey speaks (7:30 AM IST)</td><td>FII flows, rupee, IT</td><td>Any signal on the US rate path after the 14 Oct CPI print</td><td><span class="impact impact-mixed">Mixed</span></td></tr>
       <tr><td class="nw-date">~18 Oct</td><td>US Russia-sanctions tariffs can start (30 days after 18 Sep signing; carried from 6 Oct run, not re-verified)</td><td>Exporters (textiles, apparel), refiners/OMCs, metals</td><td>Up to 100% tariff on top buyers of Russian crude; India is the second largest. Not automatic; a waiver is possible</td><td><span class="impact impact-neg">Negative</span></td></tr>
-      <tr><td class="nw-date">21 Oct</td><td>Reliance Jio Platforms IPO (reported launch buzz, not confirmed)</td><td>Reliance, secondary-market liquidity</td><td>Economic Times (6 Oct) reported Jio seeking about ₹11 lakh crore valuation and a 21 Oct launch; Chittorgarh lists no dates or price band yet</td><td><span class="impact impact-mixed">Mixed</span></td></tr>
+      <tr><td class="nw-date">21 Oct</td><td>Reliance Jio Platforms IPO (reported launch buzz, not confirmed)</td><td>Reliance, secondary-market liquidity</td><td>Economic Times (6 and 12 Oct) reported Jio seeking about ₹11 lakh crore valuation and a 21 Oct launch; Chittorgarh lists no dates or price band yet (27 crore fresh shares)</td><td><span class="impact impact-mixed">Mixed</span></td></tr>
       <tr><td class="nw-date">25 Oct</td><td>IRDAI commission/expense-cap comments close (carried, not re-verified)</td><td>HDFC Life, ICICI Pru Life, Max Financial, PB Fintech</td><td>Implementation proposed from FY28; any softening is an upside trigger</td><td><span class="impact impact-neg">Negative</span></td></tr>
       <tr><td class="nw-date">28 Oct</td><td>US Fed FOMC decision (carried, not re-verified)</td><td>FII flows, rupee, IT</td><td>A hike would mean a stronger dollar and more FII selling</td><td><span class="impact impact-neg">Negative</span></td></tr>
     </tbody>
@@ -997,12 +998,12 @@
     </tbody>
   </table></div>
 
-  <div class="news-bottom"><strong>What it means for IPO listings:</strong> The four new issues list on 21 and 22 Oct, so the dates most likely to swing their listing-day demand are US CPI on 14 Oct, the Q2 bank and IT results this week, and the possible US tariff start around 18 Oct. Fusion CX (customer-support outsourcing) and Ravita (HVAC contracting for oil platforms and data centres) carry the most direct exposure to US demand and oil prices; Vaibhav Vyapaar, an unsecured lender, is exposed to the rate hike. Upside triggers: a cooler US CPI, Brent back below $100, or FII buying after eight weeks of selling.</div>
-  <p class="news-sources">Sources: Fyers feed for Sensex/Nifty/VIX; NSE fiidiiTradeReact for FII/DII (9 Oct); tdesk news feed and calendar for headlines, US CPI and Fed dates; Economic Times articles read (weekly outlook, IPO calendar); kitco.com for COMEX gold; web-search snippets only for the RBI decision, TCS result, GST Council outcome, Brent and USD/INR (the underlying pages were not opened); pulse.zerodha.com headlines. Rows marked "carried" come from the 6 Oct run and were not re-verified. Not investment advice.</p>
+  <div class="news-bottom"><strong>What it means for IPO listings:</strong> The eight books list on 21, 22 and 23 Oct, so the dates most likely to swing listing-day demand are US CPI on 14 Oct, the Q2 bank and IT results this week, and the possible US tariff start around 18 Oct. Zetwerk (manufacturing outsourcing, loss-making) and Tonbo (defence electronics, exports to 24 countries) carry the most exposure to global demand and defence budgets; Fusion CX and Ravita are exposed to US demand and oil prices; Vaibhav Vyapaar, an unsecured lender, is exposed to the rate hike. Four mainboard books closing together on 19 Oct will compete for institutional money. Upside triggers: a cooler US CPI, easing oil prices, or FII buying after eight weeks of selling.</div>
+  <p class="news-sources">Sources: Fyers feed for Sensex/Nifty/VIX; NSE fiidiiTradeReact for FII/DII (9 Oct); tdesk news feed and calendar for headlines, US CPI and Fed dates; Economic Times articles read (weekly outlook, IPO calendar); kitco.com for COMEX gold; web-search snippets only for the RBI decision, TCS result, GST Council outcome, Brent and USD/INR (the underlying pages were not opened); pulse.zerodha.com headlines. Gold, Brent and USD/INR figures are carried from 11 Oct and were not refreshed on 12 Oct (Fyers feed for index levels is live). Rows marked "carried" come from the 6 Oct run and were not re-verified. Not investment advice.</p>
 </section>
 
 <section class="scorecard-section">
-  <h2 class="section-title">Scorecard — 5 Issues, Sorted by Status (Open → Upcoming → Closed)</h2>
+  <h2 class="section-title">Scorecard — 8 Issues, Sorted by Status (Open → Upcoming → Closed)</h2>
   <div class="scorecard-controls">
     <span class="scorecard-hint">Click any card to see its full analysis.</span>
     <button type="button" class="card-toggle-all" aria-pressed="false">Expand all</button>
@@ -1014,9 +1015,9 @@
       <h3>HD Fire Protect <span class="seg-label">Mainboard</span></h3>
       <span class="status-badge badge-upcoming">Upcoming</span>
     </div>
-    <div class="card-meta-line">₹258-271 · Issue size <span class="issue-size">₹712.31 Cr (100% offer for sale, 2,62,84,500 shares)</span> · 13-15 Oct 2026 · not yet opened (bidding opens 13 Oct) · listing 21 Oct 2026 · GMP ₹75 (27.68%)</div>
-    <p class="card-predicted conf-low"><strong>Predicted gains:</strong> <span class="pred-num">+28%</span> (≈₹346 vs issue ₹271) · range +7.0% to +43% · <span class="pred-conf">Low confidence</span><span class="pred-note"> · past avg miss 13.5pp for this kind of issue; hot issue: pre-open auction often departs from GMP<br>GMP investorgain ₹75 · ipowatch – · ipogyani ₹77</span></p>
-    <p class="card-suggestion"><strong>Suggestion:</strong> Watch — FY26 PAT grew only 6% (₹116.79 Cr) while the issue is priced at 49.72x post-issue P/E and 12.63x P/BV; 100% OFS, so no money goes to the company; GMP ₹75 (27.68%) is the one thing in its favour</p>
+    <div class="card-meta-line">₹258-271 · Issue size <span class="issue-size">₹712.31 Cr (100% offer for sale, 2,62,84,500 shares)</span> · 13-15 Oct 2026 · not yet opened (bidding opens 13 Oct) · listing 21 Oct 2026 · GMP ₹81 (29.89%)</div>
+    <p class="card-predicted conf-low"><strong>Predicted gains:</strong> <span class="pred-num">+30%</span> (≈₹352 vs issue ₹271) · range +9.0% to +46% · <span class="pred-conf">Low confidence</span><span class="pred-note"> · past avg miss 13.5pp for this kind of issue; hot issue: pre-open auction often departs from GMP<br>GMP investorgain ₹81 · ipowatch – · ipogyani ₹78</span></p>
+    <p class="card-suggestion"><strong>Suggestion:</strong> Watch — FY26 PAT grew only 6% (₹116.79 Cr) while the issue is priced at 49.72x post-issue P/E and 12.63x P/BV; 100% OFS, so no money goes to the company; GMP ₹81 (29.89%) is the one thing in its favour</p>
     <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
   </div>
   <div class="card-details" id="details-hd-fire-protect">
@@ -1036,7 +1037,7 @@
         <li><span class="kp-pt"><strong>RoNW:</strong> 31.07%</span><span class="kp-pt"><strong>D/E:</strong> pending</span></li>
         <li><span class="kp-pt"><strong>PAT Margin:</strong> 23.12%</span><span class="kp-pt"><strong>EBITDA Margin:</strong> 30.75%</span></li>
         <li><span class="kp-pt"><strong>NAV:</strong> ₹21.45</span><span class="kp-pt"><strong>P/BV:</strong> 12.63</span></li>
-        <li><span class="kp-pt"><strong>Post-issue P/E:</strong> 49.72x</span><span class="kp-pt"><strong>GMP:</strong> ₹75 (27.68%)</span></li>
+        <li><span class="kp-pt"><strong>Post-issue P/E:</strong> 49.72x</span><span class="kp-pt"><strong>GMP:</strong> ₹81 (29.89%)</span></li>
         <li class="kp-prose"><strong>Lead Manager bench:</strong> Solid — Ambit Pvt.Ltd., Anand Rathi Advisors Ltd., IIFL Capital Services Ltd. — Anand Rathi: 3 mainboard issues in 2026, 100% positive, +34.02% avg listing gain. IIFL Capital: 23 issues, 57% positive, +12.31% avg. Ambit has no 2026 tracker record; ipomarkets.com shows 9 listed IPOs since 2016 averaging +21.8% (5 of 9 positive). Nobody on the bench has a negative average, but IIFL's 57% hit rate keeps it a step below Strong.</li>
         <li class="kp-prose"><strong>Key risks (chittorgarh summary):</strong> Entire issue is a sale by existing holders, so the company receives nothing. FY26 PAT rose 6% against revenue +12%, and reserves fell from ₹332.19 Cr (FY24) to ₹286.07 Cr (FY26). Chittorgarh shows different pre- and post-issue EPS (₹6.66 / ₹5.45) for an issue that adds no shares; the ₹6.66 matches FY26 PAT over the share count, the ₹5.45 is unexplained and is flagged pending the offer document. D/E not shown on the source page.</li>
         <li class="kp-prose"><strong>Market &amp; moat (chittorgarh summary):</strong> First Indian maker to get UL Listing for deluge valves (1996) and FM approval for a range of low-expansion foam products; 21 UL Listed and 87 FM Approved certifications as of September 2026; exports to 90+ countries since inception (49 in the June 2026 quarter); 2,066 customers in FY26.</li>
@@ -1054,8 +1055,8 @@ HD Fire Protect (incorporated April 1997) makes and supplies fire protection equ
       <h3>Ravita Engineering Services <span class="seg-label">SME</span></h3>
       <span class="status-badge badge-upcoming">Upcoming</span>
     </div>
-    <div class="card-meta-line">₹105-112 · Issue size <span class="issue-size">₹116.05 Cr (fresh issue only, 1,03,62,000 shares incl. market maker)</span> · 13-15 Oct 2026 · not yet opened (bidding opens 13 Oct) · listing 21 Oct 2026 · GMP ₹12 (10.71%)</div>
-    <p class="card-predicted conf-low"><strong>Predicted gains:</strong> <span class="pred-num">+11%</span> (≈₹124 vs issue ₹112) · range -16% to +53% · <span class="pred-conf">Low confidence</span><span class="pred-note"> · past avg miss 23.7pp for this kind of issue; hot issue: pre-open auction often departs from GMP<br>GMP investorgain ₹12 · ipowatch – · ipogyani –</span></p>
+    <div class="card-meta-line">₹105-112 · Issue size <span class="issue-size">₹116.05 Cr (fresh issue only, 1,03,62,000 shares incl. market maker)</span> · 13-15 Oct 2026 · not yet opened (bidding opens 13 Oct) · listing 21 Oct 2026 · GMP ₹8 (7.14%)</div>
+    <p class="card-predicted conf-medium"><strong>Predicted gains:</strong> <span class="pred-num">+7.1%</span> (≈₹120 vs issue ₹112) · range -9.0% to +18% · <span class="pred-conf">Medium confidence</span><span class="pred-note"> · past avg miss 8.4pp for this kind of issue<br>GMP investorgain ₹8 · ipowatch – · ipogyani ₹8</span></p>
     <p class="card-suggestion"><strong>Suggestion:</strong> Watch — 10.42x post-issue P/E on FY26 PAT of ₹28.04 Cr, but revenue rose from ₹13.53 Cr to ₹277.82 Cr in two years and the lead manager's 2026 record is one win and one loss</p>
     <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
   </div>
@@ -1076,7 +1077,7 @@ HD Fire Protect (incorporated April 1997) makes and supplies fire protection equ
         <li><span class="kp-pt"><strong>RoNW:</strong> 48.90%</span><span class="kp-pt"><strong>D/E:</strong> 0.19</span></li>
         <li><span class="kp-pt"><strong>PAT Margin:</strong> 10.09%</span><span class="kp-pt"><strong>EBITDA Margin:</strong> 14.43%</span></li>
         <li><span class="kp-pt"><strong>NAV:</strong> ₹36.44</span><span class="kp-pt"><strong>P/BV:</strong> 3.07</span></li>
-        <li><span class="kp-pt"><strong>Post-issue P/E:</strong> 10.42x</span><span class="kp-pt"><strong>GMP:</strong> ₹12 (10.71%)</span></li>
+        <li><span class="kp-pt"><strong>Post-issue P/E:</strong> 10.42x</span><span class="kp-pt"><strong>GMP:</strong> ₹8 (7.14%)</span></li>
         <li class="kp-prose"><strong>Lead Manager bench:</strong> Mixed bench — Vivro Financial Services Pvt.Ltd. — Vivro Financial Services — 2 SME IPOs in 2026 (₹123.17 Cr), 1 of 2 listed positive (50%), +47.31% avg listing gain (chittorgarh 2026 SME tracker). One big winner and one negative listing on a two-issue sample.</li>
         <li class="kp-prose"><strong>Key risks (chittorgarh summary):</strong> Revenue went from ₹13.53 Cr (FY24) to ₹277.82 Cr (FY26): a very fast ramp from a tiny base. Working capital takes ₹70.00 Cr of the ₹95.53 Cr itemised, so growth depends on funding receivables and inventory. Total borrowing rose from ₹19.21 Cr (Mar 2026) to ₹30.88 Cr (Jun 2026). Offshore oil and gas work is part of the mix.</li>
         <li class="kp-prose"><strong>Market &amp; moat (chittorgarh summary):</strong> Turnkey EPIC (engineering, procurement, installation, commissioning) plus O&M for HVAC, chillers and compressors across onshore, offshore (6 rigs and 16 platforms served) and data centres; data-centre work orders of ₹120.00 Cr secured in Maharashtra.</li>
@@ -1134,9 +1135,9 @@ Vaibhav Vyapaar (incorporated February 2009) is a non-banking finance company th
       <h3>Fusion CX <span class="seg-label">Mainboard</span></h3>
       <span class="status-badge badge-upcoming">Upcoming</span>
     </div>
-    <div class="card-meta-line">₹275-289 · Issue size <span class="issue-size">₹702.00 Cr (fresh ₹500.00 Cr + OFS ₹202.00 Cr)</span> · 14-16 Oct 2026 · not yet opened (bidding opens 14 Oct) · listing 22 Oct 2026 · GMP ₹45 (15.57%)</div>
-    <p class="card-predicted conf-medium"><strong>Predicted gains:</strong> <span class="pred-num">+16%</span> (≈₹334 vs issue ₹289) · range +5.0% to +22% · <span class="pred-conf">Medium confidence</span><span class="pred-note"> · past avg miss 5.8pp for this kind of issue<br>GMP investorgain ₹45 · ipowatch – · ipogyani ₹25; sources differ by 6.9pp of issue price, confidence lowered one step</span></p>
-    <p class="card-suggestion"><strong>Suggestion:</strong> Buy — 18.73x post-issue P/E against PAT up 129% to ₹169.84 Cr, ROCE of 71.59% and GMP of ₹45 (15.57%); watch the 55% of the fresh issue that repays debt and the base-effect jump in PAT</p>
+    <div class="card-meta-line">₹275-289 · Issue size <span class="issue-size">₹702.00 Cr (fresh ₹500.00 Cr + OFS ₹202.00 Cr)</span> · 14-16 Oct 2026 · not yet opened (bidding opens 14 Oct) · listing 22 Oct 2026 · GMP ₹10 (3.46%)</div>
+    <p class="card-predicted conf-high"><strong>Predicted gains:</strong> <span class="pred-num">+3.5%</span> (≈₹299 vs issue ₹289) · range -7.0% to +10% · <span class="pred-conf">High confidence</span><span class="pred-note"> · past avg miss 5.8pp for this kind of issue<br>GMP investorgain ₹10 · ipowatch – · ipogyani ₹10</span></p>
+    <p class="card-suggestion"><strong>Suggestion:</strong> Buy — 18.73x post-issue P/E against PAT up 129% to ₹169.84 Cr, ROCE of 71.59% and GMP of ₹10 (3.46%); watch the 55% of the fresh issue that repays debt and the base-effect jump in PAT</p>
     <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
   </div>
   <div class="card-details" id="details-fusion-cx">
@@ -1156,7 +1157,7 @@ Vaibhav Vyapaar (incorporated February 2009) is a non-banking finance company th
         <li><span class="kp-pt"><strong>RoNW:</strong> 30.74%</span><span class="kp-pt"><strong>D/E:</strong> 0.53</span></li>
         <li><span class="kp-pt"><strong>PAT Margin:</strong> 9.34%</span><span class="kp-pt"><strong>EBITDA Margin:</strong> 19.48%</span></li>
         <li><span class="kp-pt"><strong>NAV:</strong> ₹43.73</span><span class="kp-pt"><strong>P/BV:</strong> 6.61</span></li>
-        <li><span class="kp-pt"><strong>Post-issue P/E:</strong> 18.73x</span><span class="kp-pt"><strong>GMP:</strong> ₹45 (15.57%)</span></li>
+        <li><span class="kp-pt"><strong>Post-issue P/E:</strong> 18.73x</span><span class="kp-pt"><strong>GMP:</strong> ₹10 (3.46%)</span></li>
         <li class="kp-prose"><strong>Lead Manager bench:</strong> Solid — Nuvama Wealth Management Ltd. — Nuvama Wealth Management — 7 mainboard issues in 2026 (₹28,284.37 Cr), 71% positive, +8.36% avg listing gain (chittorgarh 2026 mainboard tracker). Chittorgarh's page for this issue names only Nuvama as lead manager (listed on the all-IPO table); any co-managers are pending.</li>
         <li class="kp-prose"><strong>Key risks (chittorgarh summary):</strong> PAT more than doubled (₹74.31 Cr to ₹169.84 Cr) after a much smaller FY24 (₹36.26 Cr); the step-up may not repeat. ₹275.70 Cr (55% of the fresh issue) repays borrowings, total borrowing ₹238.13 Cr at June 2026. ₹202.00 Cr is an OFS. QIB quota is 75%, so retail gets at most 10%. Acquisition spending is unidentified.</li>
         <li class="kp-prose"><strong>Market &amp; moat (chittorgarh summary):</strong> 40 delivery centres across 13 countries, 28 languages, 208 customers including 22 Fortune 1000 companies; AI data-infrastructure services (annotation, labelling, robotic teleoperations) and AI tools built through Omind Technologies.</li>
@@ -1168,55 +1169,173 @@ Fusion CX (incorporated 2004) provides customer-experience and business-process 
 </p>
   </div>
 </div>
-<div class="ledger-card" id="card-rkfashion-accessories">
-  <div class="card-summary" role="button" tabindex="0" aria-expanded="false" aria-controls="details-rkfashion-accessories">
+<div class="ledger-card" id="card-tonbo-imaging-india">
+  <div class="card-summary" role="button" tabindex="0" aria-expanded="false" aria-controls="details-tonbo-imaging-india">
     <div class="card-head">
-      <h3>R.K. Fashion Accessories <span class="seg-label">SME</span></h3>
-      <span class="status-badge badge-closed">Closed</span>
+      <h3>Tonbo Imaging India <span class="seg-label">Mainboard</span></h3>
+      <span class="status-badge badge-upcoming">Upcoming</span>
     </div>
-    <div class="card-meta-line">₹77-82 · Issue size <span class="issue-size">₹34.99 Cr (fresh only, 42,67,200 shares)</span> · 5-7 Oct 2026 · 2.70x overall (QIB 14.11x · NII 1.77x · RII 3.11x — final) · as of 7 Oct 2026, close of bidding (book closed) · lists 12 Oct 2026 · GMP ₹1.5 (1.83%)</div>
-    <p class="card-predicted conf-medium"><strong>Predicted gains:</strong> <span class="pred-num">+1.8%</span> (≈₹83.5 vs issue ₹82) · range -14% to +12% · <span class="pred-conf">Medium confidence</span><span class="pred-note"> · past avg miss 8.4pp for this kind of issue<br>GMP investorgain ₹1.5 · ipowatch – · ipogyani ₹0 (not counted)</span></p>
-    <p class="card-suggestion"><strong>Suggestion:</strong> Watch — FY26 revenue +77% and PAT +215% on a low base (₹31.54 Cr / ₹6.29 Cr), 17.41x post-issue P/E, fully fresh-issue funded; book closed at 2.70x with only ₹1.5 of grey-market premium and a lead manager whose two 2026 listings averaged -14.49%</p>
+    <div class="card-meta-line">₹665-700 · Issue size <span class="issue-size">₹852.18 Cr (100% offer for sale, 1,21,74,046 shares)</span> · 15-19 Oct 2026 · not yet opened (bidding opens 15 Oct) · listing 23 Oct 2026 · GMP ₹345 (49.29%)</div>
+    <p class="card-predicted conf-low"><strong>Predicted gains:</strong> <span class="pred-num">+49%</span> (≈₹1,045 vs issue ₹700) · range +28% to +65% · <span class="pred-conf">Low confidence</span><span class="pred-note"> · past avg miss 13.5pp for this kind of issue; hot issue: pre-open auction often departs from GMP<br>GMP investorgain ₹345 · ipowatch – · ipogyani ₹345</span></p>
+    <p class="card-suggestion"><strong>Suggestion:</strong> Watch — 78.83x pre-issue P/E and 7.25x P/BV on revenue down 22% and PAT down 30%, a 100% OFS; GMP of ₹345 (49.29%) is the only thing pulling the other way</p>
     <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
   </div>
-  <div class="card-details" id="details-rkfashion-accessories">
+  <div class="card-details" id="details-tonbo-imaging-india">
 
-    <div class="lead-manager-box lmbox-caution"><strong>Lead manager(s):</strong> Affinity Global Capital Market Pvt.Ltd.</div>
+    <div class="lead-manager-box lmbox-strong"><strong>Lead manager(s):</strong> JM Financial Ltd., IIFL Capital Services Ltd.</div>
 <div class="card-tags">
-      <span class="tag tag-strong">Health: Strong</span>
-      <span class="tag tag-val-fair">Valuation: 17.41x post-issue P/E (pre 14.67x), P/BV 5.71x</span>
-      <span class="tag tag-fund-growth-led">Fund use: Growth-led</span>
-      <span class="tag tag-sub-oversubscribed">Subscription: Oversubscribed (2.70x)</span>
+      <span class="tag tag-mixed">Health: Mixed</span>
+      <span class="tag tag-val-rich">Valuation: 78.83x pre-issue P/E (post-issue negative), P/BV 7.25x</span>
+      <span class="tag tag-fund-ofs-only">Fund use: OFS-only</span>
+      <span class="tag tag-sub-not-opened">Subscription: Not opened</span>
+      <span class="tag tag-strong">Lead mgr: Solid</span>
+    </div>
+    <div class="key-points">
+      <ul>
+        <li><span class="kp-pt"><strong>Revenue FY26:</strong> ₹369.94 Cr (-22% YoY)</span><span class="kp-pt"><strong>PAT FY26:</strong> ₹50.88 Cr (-30% YoY)</span></li>
+        <li><span class="kp-pt"><strong>ROE:</strong> 9.75%</span><span class="kp-pt"><strong>ROCE:</strong> 14.54%</span></li>
+        <li><span class="kp-pt"><strong>RoNW:</strong> 9.75%</span><span class="kp-pt"><strong>D/E:</strong> 0.21 (computed: borrowing ₹116.06 Cr ÷ net worth ₹553.16 Cr)</span></li>
+        <li><span class="kp-pt"><strong>PAT Margin:</strong> 13.75%</span><span class="kp-pt"><strong>EBITDA Margin:</strong> 28.85%</span></li>
+        <li><span class="kp-pt"><strong>NAV:</strong> ₹96.57</span><span class="kp-pt"><strong>P/BV:</strong> 7.25</span></li>
+        <li><span class="kp-pt"><strong>Post-issue P/E:</strong> negative (loss-making June quarter)</span><span class="kp-pt"><strong>GMP:</strong> ₹345 (49.29%)</span></li>
+        <li class="kp-prose"><strong>Lead Manager bench:</strong> Solid — JM Financial Ltd. (17 mainboard issues in 2026, 65% positive, +16.82% avg listing gain) and IIFL Capital Services Ltd. (23 issues, 57% positive, +12.31% avg), both from the lead-manager track-record file refreshed 11 Oct 2026.</li>
+        <li class="kp-prose"><strong>Key risks (chittorgarh summary):</strong> Revenue fell 22% and PAT 30% in FY26 (₹431.90 Cr to ₹474.39 Cr to ₹369.94 Cr income). The June 2026 quarter shows income of ₹37.32 Cr and a ₹17.74 Cr loss, so the post-issue P/E is negative. 100% offer for sale: the company receives nothing and promoter holding falls from 18.58% to 15.72%. Defence revenue is lumpy and order-timing driven.</li>
+        <li class="kp-prose"><strong>Market &amp; moat (chittorgarh summary):</strong> Describes itself as India's largest maker of thermal imaging systems for government and defence customers (FY24-FY26), with 28,000+ systems fielded in 24 countries, in-house IP free of US ITAR rules, and IDDM-category approval under the Make in India procurement framework.</li>
+        <li class="kp-prose"><strong>Management &amp; lock-in:</strong> Promoters Ankit Kumar, Arvind Kondangi Lakshmikumar and Cecilia D'Souza (plus Vinimaya Advisory LLP as a selling promoter entity); promoter holding 18.58% pre-issue, 15.72% post-issue. Largest sellers are CEAQ Technologies Private Limited (₹349.87 Cr) and CEAQ Technologies Pte. Ltd. (₹290.86 Cr).</li>
+      </ul>
+    </div>
+    <p class="card-prose">
+Tonbo Imaging India (incorporated December 2003) is a defence-electronics maker: thermal-imaging systems, weapon sights, missile seekers, fire-control and guidance systems, and a directed-energy platform branded WaveStrike aimed at drone swarms. It sells to defence and security customers in 24 countries from an asset-light, R&amp;D-led model with 339 permanent employees. <span class="highlight-dev">India's largest thermal-imaging systems maker for government and defence customers (FY24-FY26), with 28,000+ systems deployed and an ITAR-free export position.</span> Indian defence indigenisation (Make in India, IDDM procurement category) is the main demand driver, though order timing makes revenue uneven. <span class="val-nodata">At 78.83x pre-issue P/E (post-issue negative) the multiple is read standalone: the chittorgarh summary links to a peer table but does not show it, and the offer document has not been read for this run, so no listed-peer comparison is offered.</span> The lead manager bench — JM Financial Ltd., IIFL Capital Services Ltd. — is rated Solid.
+</p>
+  </div>
+</div>
+<div class="ledger-card" id="card-zetwerk-manufacturing-business">
+  <div class="card-summary" role="button" tabindex="0" aria-expanded="false" aria-controls="details-zetwerk-manufacturing-business">
+    <div class="card-head">
+      <h3>Zetwerk Manufacturing Business <span class="seg-label">Mainboard</span></h3>
+      <span class="status-badge badge-upcoming">Upcoming</span>
+    </div>
+    <div class="card-meta-line">₹143-151 · Issue size <span class="issue-size">₹5,012 Cr (fresh ₹2,830 Cr + OFS ₹2,182 Cr)</span> · 15-19 Oct 2026 · not yet opened (bidding opens 15 Oct) · listing 23 Oct 2026 · GMP ₹15 (9.93%)</div>
+    <p class="card-predicted conf-high"><strong>Predicted gains:</strong> <span class="pred-num">+9.9%</span> (≈₹166 vs issue ₹151) · range -0.0% to +17% · <span class="pred-conf">High confidence</span><span class="pred-note"> · past avg miss 5.8pp for this kind of issue<br>GMP investorgain ₹15 · ipowatch – · ipogyani ₹16.5</span></p>
+    <p class="card-suggestion"><strong>Suggestion:</strong> Avoid — ₹1,606.17 Cr net loss in FY26 and no P/E at 4.83x P/BV on a ₹5,012 Cr issue, with ₹2,160.00 Cr of the fresh money repaying debt; GMP of ₹15 (9.93%) is modest</p>
+    <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+  </div>
+  <div class="card-details" id="details-zetwerk-manufacturing-business">
+
+    <div class="lead-manager-box lmbox-caution"><strong>Lead manager(s):</strong> Kotak Mahindra Capital Co.Ltd., Morgan Stanley India Co.Pvt.Ltd., Goldman Sachs (India) Securities Pvt.Ltd., Avendus Capital Pvt.Ltd., JM Financial Ltd., HSBC Securities &amp; Capital Markets (India) Pvt.Ltd., Pantomath Capital Advisors Pvt.Ltd.</div>
+<div class="card-tags">
+      <span class="tag tag-weak">Health: Caution</span>
+      <span class="tag tag-val-rich">Valuation: loss-making (P/E negative), P/BV 4.83x</span>
+      <span class="tag tag-fund-debt-heavy">Fund use: Debt-heavy</span>
+      <span class="tag tag-sub-not-opened">Subscription: Not opened</span>
       <span class="tag tag-weak">Lead mgr: Caution</span>
     </div>
     <div class="key-points">
       <ul>
-        <li><span class="kp-pt"><strong>Revenue FY26:</strong> ₹31.54 Cr (+77% YoY)</span><span class="kp-pt"><strong>PAT FY26:</strong> ₹6.29 Cr (+215% YoY)</span></li>
-        <li><span class="kp-pt"><strong>ROE:</strong> 48.40%</span><span class="kp-pt"><strong>ROCE:</strong> 57.74%</span></li>
-        <li><span class="kp-pt"><strong>RoNW:</strong> 38.90%</span><span class="kp-pt"><strong>D/E:</strong> 0.11</span></li>
-        <li><span class="kp-pt"><strong>PAT Margin:</strong> 20.71%</span><span class="kp-pt"><strong>EBITDA Margin:</strong> 24.16%</span></li>
-        <li><span class="kp-pt"><strong>NAV:</strong> ₹14.37</span><span class="kp-pt"><strong>P/BV:</strong> 5.71</span></li>
-        <li><span class="kp-pt"><strong>Post-issue P/E:</strong> 17.41x</span><span class="kp-pt"><strong>GMP:</strong> ₹1.5 (1.83%)</span></li>
-        <li class="kp-prose"><strong>Lead Manager bench:</strong> Caution — Affinity Global Capital Market Pvt.Ltd. — 2 SME IPOs in 2026 (₹94.38 Cr), 0 of 2 listed positive, -14.49% avg listing gain (chittorgarh 2026 SME tracker).</li>
-        <li class="kp-prose"><strong>Key risks (RHP):</strong> Imitation jewellery via contract manufacturers + branded cosmetics trading; single property under construction on Rash Behari Avenue, Kolkata for B2C expansion; 50 permanent employees as of 30 Jun 2026.</li>
-        <li class="kp-prose"><strong>Market &amp; moat (RHP):</strong> B2B wholesale + B2C multi-platform e-commerce strategy with corporate tie-ups; handcrafted imitation jewellery blending traditional and contemporary designs.</li>
-        <li class="kp-prose"><strong>Management &amp; lock-in (RHP):</strong> Promoters Md.Qasim, Mohammed Usman, Mohammed Imran and Md.Aurangzeb; 99.67% pre-issue promoter holding drops to 72.26% post-issue.</li>
+        <li><span class="kp-pt"><strong>Revenue FY26:</strong> ₹16,100.63 Cr (+40% YoY)</span><span class="kp-pt"><strong>PAT FY26:</strong> -₹1,606.17 Cr (loss)</span></li>
+        <li><span class="kp-pt"><strong>ROE:</strong> pending</span><span class="kp-pt"><strong>ROCE:</strong> pending</span></li>
+        <li><span class="kp-pt"><strong>RoNW:</strong> -21.11%</span><span class="kp-pt"><strong>D/E:</strong> 0.40 (computed: borrowing ₹1,936.16 Cr ÷ net worth ₹4,813.72 Cr)</span></li>
+        <li><span class="kp-pt"><strong>PAT Margin:</strong> -9.98% (computed)</span><span class="kp-pt"><strong>EBITDA Margin:</strong> 2.62% (adjusted EBITDA ₹421.34 Cr ÷ income)</span></li>
+        <li><span class="kp-pt"><strong>NAV:</strong> ₹31.26</span><span class="kp-pt"><strong>P/BV:</strong> 4.83</span></li>
+        <li><span class="kp-pt"><strong>Post-issue P/E:</strong> negative (loss-making)</span><span class="kp-pt"><strong>GMP:</strong> ₹15 (9.93%)</span></li>
+        <li class="kp-prose"><strong>Lead Manager bench:</strong> Caution — seven lead managers. Morgan Stanley India has a negative average (2 mainboard issues in 2026, 0% positive, -8.59% avg listing gain); Goldman Sachs (3 issues, 33% positive, +1.21%) and Avendus (4 issues, 50% positive, +1.51%) are Mixed; Kotak (+21.28%), JM Financial (+16.82%), HSBC (+6.51%) and Pantomath (+17.14%) are Strong or Solid (track-record file, 11 Oct 2026).</li>
+        <li class="kp-prose"><strong>Key risks (chittorgarh summary):</strong> Net loss of ₹1,606.17 Cr in FY26 on income of ₹16,100.63 Cr, after losses of ₹370.71 Cr (FY25) and ₹917.95 Cr (FY24); the loss widened as revenue grew 40%. EPS is negative (-₹10.66), so no P/E exists. ₹2,160.00 Cr of the ₹2,830 Cr fresh issue is itemised to repay borrowings, with the rest for unidentified acquisitions and general corporate purposes. Adjusted EBITDA is a non-GAAP figure (₹421.34 Cr). Promoter holding falls from 15.86% to 11.36%.</li>
+        <li class="kp-prose"><strong>Market &amp; moat (chittorgarh summary):</strong> Managed-marketplace model linking industrial and consumer customers to 10,000+ suppliers across 25+ countries for custom and large-scale production; 1,100+ customers including Fortune 500 companies and 20+ manufacturing facilities; proprietary Zetwerk OS platform.</li>
+        <li class="kp-prose"><strong>Management &amp; lock-in:</strong> Promoters Amrit Pratik Acharya and Srinath Ramakkrushnan; promoter holding 15.86% pre-issue, 11.36% post-issue.</li>
       </ul>
     </div>
     <p class="card-prose">
-R.K. Fashion Accessories (incorporated Mar 2010) manufactures via contract manufacturers and wholesale-distributes imitation jewellery and trades branded cosmetics, operating B2B wholesale plus a growing B2C retail/e-commerce arm. FY26 Total Income was ₹31.54 Cr (up from ₹17.82 Cr FY25) and PAT ₹6.29 Cr (up from ₹2.00 Cr). <span class="highlight-dev">Contract-manufacturing model plus a new Kolkata retail property on Rash Behari Avenue (under construction) to strengthen B2C presence.</span> No listed peer P/E disclosed on chittorgarh summary for this issue; peer comparison not replicated here. <span class="val-nodata">At 17.41x post-issue P/E (14.67x pre-issue) the multiple is presented as a standalone read pending a prospectus-disclosed peer set.</span> The lead manager — Affinity Global Capital Market Pvt.Ltd. — is rated Caution: both of its 2026 SME listings opened below issue price (-14.49% average listing gain).
+Zetwerk Manufacturing Business (incorporated 2017) runs a technology-led, asset-light manufacturing platform: it matches enterprise buyers with a network of contract manufacturers for custom production across electronics, renewables, aerospace and defence, oil and gas, capital goods and AI-infrastructure hardware, handling design, supplier matching, quality control and logistics through its Zetwerk OS software. <span class="highlight-dev">The largest issue in the cohort at ₹5,012 Cr, with ₹2,160.00 Cr of the fresh money itemised to repay borrowings and a 40% revenue increase to ₹16,100.63 Cr alongside a wider loss.</span> Indian manufacturing outsourcing benefits from supply-chain diversification and government production-linked incentive schemes, but Zetwerk is a low-margin intermediary. <span class="val-nodata">With negative earnings there is no P/E; the 4.83x P/BV is read standalone because the chittorgarh summary links to a peer table but does not show it, and the offer document has not been read for this run, so no listed-peer comparison is offered.</span> The lead manager bench — seven firms led by Kotak Mahindra Capital and Morgan Stanley India — is rated Caution because Morgan Stanley India has a negative 2026 average.
 </p>
   </div>
 </div>
+<div class="ledger-card" id="card-bonfiglioli-transmissions">
+  <div class="card-summary" role="button" tabindex="0" aria-expanded="false" aria-controls="details-bonfiglioli-transmissions">
+    <div class="card-head">
+      <h3>Bonfiglioli Transmissions <span class="seg-label">Mainboard</span></h3>
+      <span class="status-badge badge-upcoming">Upcoming</span>
+    </div>
+    <div class="card-meta-line">₹558-586 · Issue size <span class="issue-size">₹2,534 Cr (100% offer for sale, 4,32,39,042 shares)</span> · 15-19 Oct 2026 · not yet opened (bidding opens 15 Oct) · listing 23 Oct 2026 · GMP ₹153 (26.11%)</div>
+    <p class="card-predicted conf-low"><strong>Predicted gains:</strong> <span class="pred-num">+26%</span> (≈₹739 vs issue ₹586) · range +5.0% to +42% · <span class="pred-conf">Low confidence</span><span class="pred-note"> · past avg miss 13.5pp for this kind of issue; hot issue: pre-open auction often departs from GMP<br>GMP investorgain ₹153 · ipowatch – · ipogyani ₹153</span></p>
+    <p class="card-suggestion"><strong>Suggestion:</strong> Watch — steady growth with profit (11.90% PAT margin, 18.37% EBITDA margin, PAT +22%) but 46.32x P/E and about 11x P/BV on a 100% OFS; GMP of ₹153 (26.11%) already prices part of it</p>
+    <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+  </div>
+  <div class="card-details" id="details-bonfiglioli-transmissions">
 
+    <div class="lead-manager-box lmbox-mixed"><strong>Lead manager(s):</strong> Axis Capital Ltd., BNP Paribas, ICICI Securities Ltd., Jefferies India Pvt.Ltd.</div>
+<div class="card-tags">
+      <span class="tag tag-strong">Health: Strong</span>
+      <span class="tag tag-val-rich">Valuation: 46.32x P/E (OFS, so post-issue equals pre), P/BV 10.65x</span>
+      <span class="tag tag-fund-ofs-only">Fund use: OFS-only</span>
+      <span class="tag tag-sub-not-opened">Subscription: Not opened</span>
+      <span class="tag tag-mixed">Lead mgr: Mixed bench</span>
+    </div>
+    <div class="key-points">
+      <ul>
+        <li><span class="kp-pt"><strong>Revenue CY2025:</strong> ₹2,023.59 Cr (+9% YoY)</span><span class="kp-pt"><strong>PAT CY2025:</strong> ₹237.87 Cr (+22% YoY)</span></li>
+        <li><span class="kp-pt"><strong>ROE:</strong> 13.24% (Dec 2025)</span><span class="kp-pt"><strong>ROCE:</strong> 18.62% (Dec 2025)</span></li>
+        <li><span class="kp-pt"><strong>RoNW:</strong> 23.96% (Dec 2025; 14.37% for June 2026 — inconsistent with ROE, flagged)</span><span class="kp-pt"><strong>D/E:</strong> pending</span></li>
+        <li><span class="kp-pt"><strong>PAT Margin:</strong> 11.90%</span><span class="kp-pt"><strong>EBITDA Margin:</strong> 18.37%</span></li>
+        <li><span class="kp-pt"><strong>NAV:</strong> ₹52.82 (Dec 2025)</span><span class="kp-pt"><strong>P/BV:</strong> 11.09 (Dec 2025)</span></li>
+        <li><span class="kp-pt"><strong>Post-issue P/E:</strong> 46.32x (pre = post, OFS)</span><span class="kp-pt"><strong>GMP:</strong> ₹153 (26.11%)</span></li>
+        <li class="kp-prose"><strong>Lead Manager bench:</strong> Mixed bench — Axis Capital (15 mainboard issues in 2026, 67% positive, +16.24% avg listing gain) and ICICI Securities (14 issues, 71% positive, +22.09%) are Strong; BNP Paribas and Jefferies India have no row in the track-record file, so their records are not assessed.</li>
+        <li class="kp-prose"><strong>Key risks (chittorgarh summary):</strong> 100% offer for sale by the Italian parent group (promoter holding 100% to 77%), so the company receives nothing. 46.32x P/E and 10.65x-11.09x P/BV are rich for 9% revenue growth. The company reports on a December year-end, so figures are calendar 2023-2025. Chittorgarh shows total borrowing only for 2023 (₹110.79 Cr), so D/E is pending. RoNW (23.96%) and ROE (13.24%) for the same date do not reconcile on the source page.</li>
+        <li class="kp-prose"><strong>Market &amp; moat (chittorgarh summary):</strong> One of India's largest gearbox and industrial-drive makers, serving industry and automation, off-highway mobility and wind segments from three plants (two in Tamil Nadu, one in Maharashtra) that produced 341,133 gear motors and gearboxes in 2025; torque range 13 Nm to 1,400 kNm.</li>
+        <li class="kp-prose"><strong>Management &amp; lock-in:</strong> Promoters Sonia Bonfiglioli, Luciano Bonfiglioli, Luisa Lusardi, Bon-FI S.R.L and Bonfiglioli S.P.A.; promoter holding 100% pre-issue, 77% post-issue.</li>
+      </ul>
+    </div>
+    <p class="card-prose">
+Bonfiglioli Transmissions makes mechanical and electro-mechanical power-transmission products: helical, bevel, planetary and worm gearboxes and gear motors, electric motors, variable frequency drives and servo drives, for industrial automation, off-highway vehicles and wind turbines. It runs three plants in India (Thirumudivakkam and Mannur in Tamil Nadu, Talegaon in Maharashtra) and buys from 215 Indian and 70 overseas suppliers. <span class="highlight-dev">Steady profitability: 18.37% EBITDA margin, calendar-2025 PAT up 22% to ₹237.87 Cr, and ₹148.58 Cr of PAT in the six months to June 2026 against ₹114.97 Cr a year earlier.</span> Industrial automation, wind capacity additions and manufacturing capex are the demand drivers in India. <span class="val-nodata">At 46.32x P/E the multiple is read standalone: the chittorgarh summary links to a peer table but does not show it, and the offer document has not been read for this run, so no listed-peer comparison is offered.</span> The lead manager bench — Axis Capital, BNP Paribas, ICICI Securities and Jefferies India — is rated Mixed because two of the four have no 2026 record in the track-record file.
+</p>
+  </div>
+</div>
+<div class="ledger-card" id="card-sahajanand-medical-technologies">
+  <div class="card-summary" role="button" tabindex="0" aria-expanded="false" aria-controls="details-sahajanand-medical-technologies">
+    <div class="card-head">
+      <h3>Sahajanand Medical Technologies <span class="seg-label">Mainboard</span></h3>
+      <span class="status-badge badge-upcoming">Upcoming</span>
+    </div>
+    <div class="card-meta-line">₹327-344 · Issue size <span class="issue-size">₹475.48 Cr (100% offer for sale, 1,38,22,116 shares)</span> · 15-19 Oct 2026 · not yet opened (bidding opens 15 Oct) · listing 23 Oct 2026 · GMP ₹43 (12.50%)</div>
+    <p class="card-predicted conf-high"><strong>Predicted gains:</strong> <span class="pred-num">+12%</span> (≈₹387 vs issue ₹344) · range +2.0% to +19% · <span class="pred-conf">High confidence</span><span class="pred-note"> · past avg miss 5.8pp for this kind of issue<br>GMP investorgain ₹43 · ipowatch – · ipogyani ₹46</span></p>
+    <p class="card-suggestion"><strong>Suggestion:</strong> Watch — 57.91x post-issue P/E on a 5.71% PAT margin and a base-effect profit jump (₹25.15 Cr to ₹69.08 Cr), a 100% OFS; GMP of ₹43 (12.50%) is moderate</p>
+    <span class="card-expand-cue"><span class="cue-more">Show full analysis</span><span class="cue-less">Hide analysis</span><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+  </div>
+  <div class="card-details" id="details-sahajanand-medical-technologies">
 
+    <div class="lead-manager-box lmbox-mixed"><strong>Lead manager(s):</strong> Motilal Oswal Investment Advisors Ltd., Avendus Capital Pvt.Ltd., HSBC Securities &amp; Capital Markets (India) Pvt.Ltd., Nuvama Wealth Management Ltd. (names from the July 2025 DRHP filing; chittorgarh's page does not list them, RHP confirmation pending)</div>
+<div class="card-tags">
+      <span class="tag tag-mixed">Health: Mixed</span>
+      <span class="tag tag-val-rich">Valuation: 57.91x post-issue P/E (pre 50.59x), P/BV 5.48x</span>
+      <span class="tag tag-fund-ofs-only">Fund use: OFS-only</span>
+      <span class="tag tag-sub-not-opened">Subscription: Not opened</span>
+      <span class="tag tag-mixed">Lead mgr: Mixed bench</span>
+    </div>
+    <div class="key-points">
+      <ul>
+        <li><span class="kp-pt"><strong>Revenue FY26:</strong> ₹1,218.73 Cr (+18% YoY)</span><span class="kp-pt"><strong>PAT FY26:</strong> ₹69.08 Cr (+175% YoY)</span></li>
+        <li><span class="kp-pt"><strong>ROE:</strong> 10.35%</span><span class="kp-pt"><strong>ROCE:</strong> 11.57%</span></li>
+        <li><span class="kp-pt"><strong>RoNW:</strong> 10.60%</span><span class="kp-pt"><strong>D/E:</strong> 0.27</span></li>
+        <li><span class="kp-pt"><strong>PAT Margin:</strong> 5.71%</span><span class="kp-pt"><strong>EBITDA Margin:</strong> 14.10%</span></li>
+        <li><span class="kp-pt"><strong>NAV:</strong> ₹62.76</span><span class="kp-pt"><strong>P/BV:</strong> 5.48</span></li>
+        <li><span class="kp-pt"><strong>Post-issue P/E:</strong> 57.91x</span><span class="kp-pt"><strong>GMP:</strong> ₹43 (12.50%)</span></li>
+        <li class="kp-prose"><strong>Lead Manager bench:</strong> Mixed bench — Motilal Oswal (14 mainboard issues in 2026, 93% positive, +17.93% avg listing gain) is Strong, HSBC (+6.51%) and Nuvama (+8.36%) are Solid, and Avendus (4 issues, 50% positive, +1.51%) is Mixed. Names are from the July 2025 DRHP filing as reported in a law-firm announcement; not confirmed against the RHP.</li>
+        <li class="kp-prose"><strong>Key risks (chittorgarh summary):</strong> PAT jumped from ₹25.15 Cr to ₹69.08 Cr after a ₹7.35 Cr loss in FY24, a base effect. 5.71% PAT margin and 10.35% ROE are thin for 57.91x post-issue earnings. 100% offer for sale: promoters and funds sell, the company receives nothing. Borrowing rose to ₹320.63 Cr by June 2026 (₹175.27 Cr in FY24). ROE for the June 2026 quarter was only 2.07% (not annualised).</li>
+        <li class="kp-prose"><strong>Market &amp; moat (chittorgarh summary):</strong> Makes coronary stents (Supraflex Cruz), balloons, TAVI valves and structural-heart devices from three plants (two in India, one in Thailand) with 119 patents granted and sales in 77 countries in FY26.</li>
+        <li class="kp-prose"><strong>Management &amp; lock-in:</strong> Promoters Bhargav Dhirajlal Kotadia, Dhirajlal Vallabhbhai Kotadia, Priyanka Dhirajlal Cohen and Shree Hari Trust; promoter holding 40.82% pre-issue, 36.2% post-issue. Sellers include Samara Capital (₹222.88 Cr) and Kotak Pre-IPO Opportunities Fund (₹44.99 Cr).</li>
+      </ul>
+    </div>
+    <p class="card-prose">
+Sahajanand Medical Technologies (incorporated October 2001) develops and makes vascular and structural-heart devices: coronary stents, balloons, transcatheter aortic valve implantation (TAVI) devices, occluders, renal stents and drug-coated balloons, under brands such as Supraflex Cruz, Cocoon and Hydra. It operates three plants (two in India, one in Thailand), two R&amp;D centres, and sold into 77 countries in FY26. <span class="highlight-dev">119 patents granted globally and a TAVI and drug-coated-balloon pipeline beyond its core stent business.</span> Indian medical-device demand is rising with cardiac-care access and import substitution, and stent price caps limit pricing power. <span class="val-nodata">At 57.91x post-issue P/E (50.59x pre-issue) the multiple is read standalone: the chittorgarh summary links to a peer table but does not show it, and the offer document has not been read for this run, so no listed-peer comparison is offered.</span> The lead manager bench — Motilal Oswal, Avendus, HSBC and Nuvama, per the July 2025 DRHP filing — is rated Mixed.
+</p>
+  </div>
+</div>
 </section>
 
 <section class="data-tables-section">
   <h2 class="section-title">Financial Data Tables</h2>
 
   <h3 class="table-subtitle">Revenue &amp; PAT Trend</h3>
-  <p class="table-footnote">Total income and profit after tax as disclosed in the restated financial statements in each prospectus, in ₹ crore, FY24 → FY25 → FY26 (years ended 31 March) unless individually noted.</p>
+  <p class="table-footnote">Total income and profit after tax as disclosed in the restated financial statements in each prospectus, in ₹ crore, FY24 → FY25 → FY26 (years ended 31 March) unless individually noted; Bonfiglioli Transmissions reports on a December year-end (CY2023 → CY2024 → CY2025).</p>
   <table class="ledger-table sortable">
     <thead><tr><th>Company</th><th>Revenue (₹Cr)</th><th>PAT (₹Cr)</th><th>PAT Margin</th><th>EBITDA Margin</th></tr></thead>
     <tbody>
@@ -1247,6 +1366,34 @@ R.K. Fashion Accessories (incorporated Mar 2010) manufactures via contract manuf
         <td>36.26 → 74.31 → 169.84</td>
         <td>9.34% (FY26)</td>
         <td>19.48% (FY26)</td>
+      </tr>
+      <tr>
+        <td class="tcell-name">Tonbo Imaging India<br><span class="tsub">Mainboard</span></td>
+        <td>431.90 → 474.39 → 369.94</td>
+        <td>68.54 → 72.76 → 50.88</td>
+        <td>13.75% (FY26)</td>
+        <td>28.85% (FY26)</td>
+      </tr>
+      <tr>
+        <td class="tcell-name">Zetwerk Manufacturing Business<br><span class="tsub">Mainboard</span></td>
+        <td>12,523.46 → 11,492.23 → 16,100.63</td>
+        <td>-917.95 → -370.71 → -1,606.17</td>
+        <td>-9.98% (FY26, computed)</td>
+        <td>2.62% (FY26, adjusted EBITDA, computed)</td>
+      </tr>
+      <tr>
+        <td class="tcell-name">Bonfiglioli Transmissions<br><span class="tsub">Mainboard</span></td>
+        <td>1,701.80 → 1,861.16 → 2,023.59</td>
+        <td>148.49 → 195.16 → 237.87</td>
+        <td>11.90% (CY2025)</td>
+        <td>18.37% (CY2025)</td>
+      </tr>
+      <tr>
+        <td class="tcell-name">Sahajanand Medical Technologies<br><span class="tsub">Mainboard</span></td>
+        <td>908.59 → 1,035.96 → 1,218.73</td>
+        <td>-7.35 → 25.15 → 69.08</td>
+        <td>5.71% (FY26)</td>
+        <td>14.10% (FY26)</td>
       </tr>
     </tbody>
   </table>
@@ -1283,6 +1430,34 @@ R.K. Fashion Accessories (incorporated Mar 2010) manufactures via contract manuf
         <td>30.74%</td>
         <td>0.53</td>
       </tr>
+      <tr>
+        <td class="tcell-name">Tonbo Imaging India<br><span class="tsub">Mainboard</span></td>
+        <td>9.75%</td>
+        <td>14.54%</td>
+        <td>9.75%</td>
+        <td>0.21 (computed)</td>
+      </tr>
+      <tr>
+        <td class="tcell-name">Zetwerk Manufacturing Business<br><span class="tsub">Mainboard</span></td>
+        <td>pending</td>
+        <td>pending</td>
+        <td>-21.11%</td>
+        <td>0.40 (computed)</td>
+      </tr>
+      <tr>
+        <td class="tcell-name">Bonfiglioli Transmissions<br><span class="tsub">Mainboard</span></td>
+        <td>13.24% (Dec 2025)</td>
+        <td>18.62% (Dec 2025)</td>
+        <td>23.96% (Dec 2025)</td>
+        <td>pending</td>
+      </tr>
+      <tr>
+        <td class="tcell-name">Sahajanand Medical Technologies<br><span class="tsub">Mainboard</span></td>
+        <td>10.35%</td>
+        <td>11.57%</td>
+        <td>10.60%</td>
+        <td>0.27</td>
+      </tr>
     </tbody>
   </table>
 
@@ -1295,14 +1470,14 @@ R.K. Fashion Accessories (incorporated Mar 2010) manufactures via contract manuf
         <td>6.66 → 5.45</td>
         <td>40.69x / 49.72x</td>
         <td>12.63</td>
-        <td>₹75 (27.68%)</td>
+        <td>₹81 (29.89%)</td>
       </tr>
       <tr>
         <td class="tcell-name">Ravita Engineering Services<br><span class="tsub">SME</span></td>
         <td>10.26 → 10.75</td>
         <td>10.92x / 10.42x</td>
         <td>3.07</td>
-        <td>₹12 (10.71%)</td>
+        <td>₹8 (7.14%)</td>
       </tr>
       <tr>
         <td class="tcell-name">Vaibhav Vyapaar<br><span class="tsub">SME</span></td>
@@ -1316,7 +1491,35 @@ R.K. Fashion Accessories (incorporated Mar 2010) manufactures via contract manuf
         <td>13.37 → 15.43</td>
         <td>21.62x / 18.73x</td>
         <td>6.61</td>
-        <td>₹45 (15.57%)</td>
+        <td>₹10 (3.46%)</td>
+      </tr>
+      <tr>
+        <td class="tcell-name">Tonbo Imaging India<br><span class="tsub">Mainboard</span></td>
+        <td>8.88 → negative</td>
+        <td>78.83x / negative</td>
+        <td>7.25</td>
+        <td>₹345 (49.29%)</td>
+      </tr>
+      <tr>
+        <td class="tcell-name">Zetwerk Manufacturing Business<br><span class="tsub">Mainboard</span></td>
+        <td>-10.66 → negative</td>
+        <td>negative / negative</td>
+        <td>4.83</td>
+        <td>₹15 (9.93%)</td>
+      </tr>
+      <tr>
+        <td class="tcell-name">Bonfiglioli Transmissions<br><span class="tsub">Mainboard</span></td>
+        <td>12.65 → 12.65 (OFS, no new shares)</td>
+        <td>46.32x / 46.32x</td>
+        <td>11.09 (Dec 2025)</td>
+        <td>₹153 (26.11%)</td>
+      </tr>
+      <tr>
+        <td class="tcell-name">Sahajanand Medical Technologies<br><span class="tsub">Mainboard</span></td>
+        <td>6.80 → 5.94</td>
+        <td>50.59x / 57.91x</td>
+        <td>5.48</td>
+        <td>₹43 (12.50%)</td>
       </tr>
     </tbody>
   </table>
@@ -1349,6 +1552,30 @@ R.K. Fashion Accessories (incorporated Mar 2010) manufactures via contract manuf
         <td>Debt-heavy</td>
         <td>99.03% → 81.82%</td>
       </tr>
+      <tr>
+        <td class="tcell-name">Tonbo Imaging India<br><span class="tsub">Mainboard</span></td>
+        <td>None of the ₹852.18 Cr reaches the company: this is a 100% offer for sale by promoters and investors, led by CEAQ Technologies (₹640.73 Cr across two entities).</td>
+        <td>OFS-only</td>
+        <td>18.58% → 15.72%</td>
+      </tr>
+      <tr>
+        <td class="tcell-name">Zetwerk Manufacturing Business<br><span class="tsub">Mainboard</span></td>
+        <td>₹2,160.00 Cr of the ₹2,830 Cr fresh issue is itemised to repay borrowings (₹1,300.00 Cr plus ₹860.00 Cr for further borrowings); the rest funds unidentified acquisitions and general corporate purposes. The ₹2,182 Cr OFS goes to selling shareholders.</td>
+        <td>Debt-heavy</td>
+        <td>15.86% → 11.36%</td>
+      </tr>
+      <tr>
+        <td class="tcell-name">Bonfiglioli Transmissions<br><span class="tsub">Mainboard</span></td>
+        <td>None of the ₹2,534 Cr reaches the company: this is a 100% offer for sale by the promoter group, who sell down from 100% to 77%.</td>
+        <td>OFS-only</td>
+        <td>100% → 77%</td>
+      </tr>
+      <tr>
+        <td class="tcell-name">Sahajanand Medical Technologies<br><span class="tsub">Mainboard</span></td>
+        <td>None of the ₹475.48 Cr reaches the company: this is a 100% offer for sale by promoters (₹161.68 Cr) and investor funds, led by Samara Capital Markets Holding (₹222.88 Cr).</td>
+        <td>OFS-only</td>
+        <td>40.82% → 36.2%</td>
+      </tr>
     </tbody>
   </table>
 
@@ -1380,6 +1607,30 @@ R.K. Fashion Accessories (incorporated Mar 2010) manufactures via contract manuf
         <td>Solid</td>
         <td>Nuvama Wealth Management — 7 mainboard issues in 2026 (₹28,284.37 Cr), 71% positive, +8.36% avg listing gain (chittorgarh 2026 mainboard tracker). Chittorgarh's page for this issue names only Nuvama as lead manager (listed on the all-IPO table); any co-managers are pending.</td>
       </tr>
+      <tr>
+        <td class="tcell-name">Tonbo Imaging India</td>
+        <td>JM Financial Ltd., IIFL Capital Services Ltd.</td>
+        <td>Solid</td>
+        <td>JM Financial: 17 mainboard issues in 2026, 65% positive, +16.82% avg listing gain. IIFL Capital: 23 issues, 57% positive, +12.31% avg. Both positive on average; IIFL's 57% hit rate keeps the bench a step below Strong.</td>
+      </tr>
+      <tr>
+        <td class="tcell-name">Zetwerk Manufacturing Business</td>
+        <td>Kotak Mahindra Capital Co.Ltd., Morgan Stanley India Co.Pvt.Ltd., Goldman Sachs (India) Securities Pvt.Ltd., Avendus Capital Pvt.Ltd., JM Financial Ltd., HSBC Securities &amp; Capital Markets (India) Pvt.Ltd., Pantomath Capital Advisors Pvt.Ltd.</td>
+        <td>Caution</td>
+        <td>Morgan Stanley India: 2 mainboard issues in 2026, 0% positive, -8.59% avg listing gain (Caution). Goldman Sachs: 3 issues, 33% positive, +1.21% avg. Avendus: 4 issues, 50% positive, +1.51% avg. Kotak (+21.28%), JM Financial (+16.82%), HSBC (+6.51%) and Pantomath (+17.14%, 2 issues) are positive. One negative-average lead manager sets the bench to Caution.</td>
+      </tr>
+      <tr>
+        <td class="tcell-name">Bonfiglioli Transmissions</td>
+        <td>Axis Capital Ltd., BNP Paribas, ICICI Securities Ltd., Jefferies India Pvt.Ltd.</td>
+        <td>Mixed bench</td>
+        <td>Axis Capital: 15 mainboard issues in 2026, 67% positive, +16.24% avg listing gain. ICICI Securities: 14 issues, 71% positive, +22.09% avg. BNP Paribas and Jefferies India have no row in the track-record file and were not assessed, so the bench is rated Mixed rather than Strong.</td>
+      </tr>
+      <tr>
+        <td class="tcell-name">Sahajanand Medical Technologies</td>
+        <td>Motilal Oswal Investment Advisors Ltd., Avendus Capital Pvt.Ltd., HSBC Securities &amp; Capital Markets (India) Pvt.Ltd., Nuvama Wealth Management Ltd.</td>
+        <td>Mixed bench</td>
+        <td>Motilal Oswal: 14 mainboard issues in 2026, 93% positive, +17.93% avg listing gain. HSBC: 4 issues, 75% positive, +6.51%. Nuvama: 7 issues, 71% positive, +8.36%. Avendus: 4 issues, 50% positive, +1.51%. Names are from the July 2025 DRHP filing; RHP confirmation pending.</td>
+      </tr>
     </tbody>
   </table>
 
@@ -1387,11 +1638,11 @@ R.K. Fashion Accessories (incorporated Mar 2010) manufactures via contract manuf
 
 <section class="analyst-section">
   <h2 class="section-title">Analyst Comparison — where the money looks best placed right now</h2>
-  <p class="section-desc">A read across all 5 tracked issues against the same four filters, written the way a sell-side primary-market note would frame it. This is analysis of public DRHP/RHP disclosures and live subscription data, not personalised investment advice — position sizing, your own risk tolerance, and lock-in/liquidity needs for unlisted allotments are yours to weigh, and SME allotments in particular carry materially thinner post-listing liquidity than mainboard names.</p>
+  <p class="section-desc">A read across all 8 tracked issues against the same four filters, written the way a sell-side primary-market note would frame it. This is analysis of public DRHP/RHP disclosures and live subscription data, not personalised investment advice — position sizing, your own risk tolerance, and lock-in/liquidity needs for unlisted allotments are yours to weigh, and SME allotments in particular carry materially thinner post-listing liquidity than mainboard names.</p>
 
   <div class="actionable-box">
-    <h3>Four issues upcoming, none open, one closed and awaiting listing</h3>
-    <p>No issue is open today (Sunday 11 Oct). Four have a fixed price band and open this week: HD Fire Protect (mainboard, ₹258-271), Ravita Engineering Services (SME, ₹105-112) and Vaibhav Vyapaar (SME, ₹51-54) open 13 Oct and close 15 Oct, and Fusion CX (mainboard, ₹275-289) opens 14 Oct and closes 16 Oct. R.K. Fashion Accessories (SME) finished bidding on 7 Oct at 2.70x and lists Monday 12 Oct. Sixteen names listed across 7 to 9 Oct and sit in the Recently-listed table. The table below ranks the four upcoming books: Buy first, then Watch, then Avoid. None of the four has an offer-document cross-check yet; figures are chittorgarh's restated summaries.</p>
+    <h3>Eight issues upcoming, none open, none closed awaiting listing</h3>
+    <p>No issue is open today (Monday 12 Oct). Eight have a fixed price band: HD Fire Protect (mainboard, ₹258-271), Ravita Engineering Services (SME, ₹105-112) and Vaibhav Vyapaar (SME, ₹51-54) open 13 Oct and close 15 Oct; Fusion CX (mainboard, ₹275-289) opens 14 Oct and closes 16 Oct; and Tonbo Imaging India (₹665-700), Zetwerk Manufacturing Business (₹143-151), Bonfiglioli Transmissions (₹558-586) and Sahajanand Medical Technologies (₹327-344), all mainboard, open 15 Oct and close 19 Oct. R.K. Fashion Accessories (SME) listed today. Thirteen names listed across 8, 9 and 12 Oct and sit in the Recently-listed table. The table below ranks the eight upcoming books: Buy first, then Watch, then Avoid. None of the eight has an offer-document cross-check yet; figures are chittorgarh's restated summaries.</p>
   </div>
 
   <table class="rank-table sortable">
@@ -1402,8 +1653,8 @@ R.K. Fashion Accessories (incorporated Mar 2010) manufactures via contract manuf
         <td class="tcell-name">Fusion CX <span class="seg-label">Mainboard</span></td>
         <td>14 Oct</td>
         <td>16 Oct</td>
-        <td><strong class="verdict-line">Buy — 18.73x post-issue P/E against PAT up 129% and ROCE of 71.59%, with 15.57% GMP</strong></td>
-        <td>FY26 total income rose 37% to ₹1,851.83 Cr and PAT 129% to ₹169.84 Cr, with ROE of 30.30%, ROCE of 71.59% and D/E of 0.53. At ₹289 the issue is 18.73x post-issue EPS and 6.61x P/BV, the lowest earnings multiple in the group relative to growth. The cautions: ₹275.70 Cr (55% of the ₹500.00 Cr fresh issue) repays debt rather than adding capacity, PAT growth sits on a low FY24 base, and 75% of the book is reserved for QIBs, so a thin institutional book would show quickly. Nuvama (Solid: 7 mainboard issues, 71% positive, +8.36% avg) is the only lead manager shown; co-managers are pending. The grey market quotes ₹45 on investorgain (₹53 on ipogyani). Figures are chittorgarh's restated summary; offer-document cross-check pending.</td>
+        <td><strong class="verdict-line">Buy — 18.73x post-issue P/E against PAT up 129% and ROCE of 71.59%, with a 3.46% GMP</strong></td>
+        <td>FY26 total income rose 37% to ₹1,851.83 Cr and PAT 129% to ₹169.84 Cr, with ROE of 30.30%, ROCE of 71.59% and D/E of 0.53. At ₹289 the issue is 18.73x post-issue EPS and 6.61x P/BV, the lowest earnings multiple in the group relative to growth. The cautions: ₹275.70 Cr (55% of the ₹500.00 Cr fresh issue) repays debt rather than adding capacity, PAT growth sits on a low FY24 base, and 75% of the book is reserved for QIBs, so a thin institutional book would show quickly. Nuvama (Solid: 7 mainboard issues, 71% positive, +8.36% avg) is the only lead manager shown; co-managers are pending. The grey market premium has faded to ₹10 (3.46%) on investorgain and ipogyani, from ₹45 on 11 Oct. Figures are chittorgarh's restated summary; offer-document cross-check pending.</td>
       </tr>
       <tr class="rank-watch">
         <td>2</td>
@@ -1418,16 +1669,48 @@ R.K. Fashion Accessories (incorporated Mar 2010) manufactures via contract manuf
         <td class="tcell-name">HD Fire Protect <span class="seg-label">Mainboard</span></td>
         <td>13 Oct</td>
         <td>15 Oct</td>
-        <td><strong class="verdict-line">Watch — 49.72x post-issue P/E and 12.63x P/BV on a 100% OFS with PAT up only 6%, offset by a 27.68% GMP</strong></td>
+        <td><strong class="verdict-line">Watch — 49.72x post-issue P/E and 12.63x P/BV on a 100% OFS with PAT up only 6%, offset by a 29.89% GMP</strong></td>
         <td>FY26 total income rose 12% to ₹505.12 Cr and PAT 6% to ₹116.79 Cr (23.12% margin), with ROE of 30.17% and ROCE of 40.33%. At ₹271 the issue is priced at 49.72x post-issue EPS (40.69x on FY26 EPS of ₹6.66) and 12.63x P/BV. Every rupee goes to the selling promoters, whose holding drops from 100% to 85%. The bench is Solid: Anand Rathi (+34.02% avg, 3 of 3 positive) and IIFL Capital (+12.31%, 57% positive) in 2026, plus Ambit's +21.8% multi-year average. Quality of the franchise (UL/FM certifications, 90+ export countries) is real, but the price already pays for it. Figures are chittorgarh's restated summary; D/E and the post-issue EPS are pending the offer document.</td>
       </tr>
-      <tr class="rank-avoid">
+      <tr class="rank-watch">
         <td>4</td>
+        <td class="tcell-name">Bonfiglioli Transmissions <span class="seg-label">Mainboard</span></td>
+        <td>15 Oct</td>
+        <td>19 Oct</td>
+        <td><strong class="verdict-line">Watch — steady growth (PAT +22%) with real margins, but 46.32x P/E and about 11x P/BV on a 100% OFS</strong></td>
+        <td>Calendar-2025 total income rose 9% to ₹2,023.59 Cr and PAT 22% to ₹237.87 Cr (11.90% margin, 18.37% EBITDA margin), with ROE of 13.24% and ROCE of 18.62% at December 2025. At ₹586 the issue is 46.32x P/E on EPS of ₹12.65 and 10.65x P/BV (June 2026 NAV ₹55.02). It is a 100% OFS: the parent group sells down from 100% to 77% and the company receives nothing. D/E is pending (chittorgarh shows borrowing only for 2023) and RoNW does not reconcile with ROE on the source page. Axis Capital and ICICI Securities are Strong; BNP Paribas and Jefferies India are not assessed, so the bench is Mixed. The grey market quotes ₹153 (26.11%) on both investorgain and ipogyani. Figures are chittorgarh's restated summary; offer-document cross-check pending.</td>
+      </tr>
+      <tr class="rank-watch">
+        <td>5</td>
+        <td class="tcell-name">Sahajanand Medical Technologies <span class="seg-label">Mainboard</span></td>
+        <td>15 Oct</td>
+        <td>19 Oct</td>
+        <td><strong class="verdict-line">Watch — 57.91x post-issue P/E on a 5.71% PAT margin and a base-effect profit jump; GMP 12.50%</strong></td>
+        <td>FY26 total income rose 18% to ₹1,218.73 Cr and PAT 175% to ₹69.08 Cr, but the margin is 5.71% (14.10% EBITDA) and ROE 10.35%, ROCE 11.57%, D/E 0.27. At ₹344 the issue is 57.91x post-issue EPS of ₹5.94 (50.59x pre-issue) and 5.48x P/BV. The profit jump follows a ₹7.35 Cr loss in FY24, a base effect, and borrowing has risen to ₹320.63 Cr. It is a 100% OFS, so the company receives nothing. The DRHP-stage bench of Motilal Oswal (Strong), HSBC and Nuvama (Solid) and Avendus (Mixed) is rated Mixed and is not yet confirmed against the RHP. The grey market quotes ₹43 (12.50%) on investorgain and ₹46 on ipogyani. Figures are chittorgarh's restated summary; offer-document cross-check pending.</td>
+      </tr>
+      <tr class="rank-watch">
+        <td>6</td>
+        <td class="tcell-name">Tonbo Imaging India <span class="seg-label">Mainboard</span></td>
+        <td>15 Oct</td>
+        <td>19 Oct</td>
+        <td><strong class="verdict-line">Watch — 78.83x pre-issue P/E and 7.25x P/BV on shrinking revenue and profit; 49.29% GMP is the offset</strong></td>
+        <td>FY26 total income fell 22% to ₹369.94 Cr and PAT 30% to ₹50.88 Cr (13.75% margin, 28.85% EBITDA margin), with ROE of 9.75% and ROCE of 14.54%. At ₹700 the issue is 78.83x pre-issue EPS of ₹8.88 and 7.25x P/BV; the June 2026 quarter was a ₹17.74 Cr loss, so post-issue P/E is negative. It is a 100% OFS, so no money reaches the company. The bench is Solid (JM Financial +16.82% avg, IIFL Capital +12.31%). The grey market quotes ₹345 (49.29%) on investorgain and ₹345 on ipogyani, the highest of the cohort, which can lift listing day but does not change the fundamentals. Figures are chittorgarh's restated summary; offer-document cross-check pending.</td>
+      </tr>
+      <tr class="rank-avoid">
+        <td>7</td>
         <td class="tcell-name">Vaibhav Vyapaar <span class="seg-label">SME</span></td>
         <td>13 Oct</td>
         <td>15 Oct</td>
         <td><strong class="verdict-line">Avoid — 53.61x P/E on FY26 earnings with 6.99% ROE and 1.60 D/E; no GMP quoted</strong></td>
         <td>FY26 income rose 48% to ₹37.64 Cr but PAT was ₹1.97 Cr, a 5.36% margin, for ROE of 6.99% and RoNW of 6.75%. At ₹54 the issue is 53.61x FY26 EPS of ₹0.97 and 2.87x P/BV; the 16.25x post-issue figure uses annualised profit from the four months to July. D/E was 1.60 at March 2026 with borrowings of ₹46.80 Cr, and the proceeds go to lending capital, so the new equity would be re-lent in an unsecured book while the RBI is raising rates. GetFive Advisors' only 2026 listing gained 15.48%, a one-issue sample. Chittorgarh's description quotes AUM and net worth in crore that do not match its own table (likely ₹ million); offer-document cross-check pending.</td>
+      </tr>
+      <tr class="rank-avoid">
+        <td>8</td>
+        <td class="tcell-name">Zetwerk Manufacturing Business <span class="seg-label">Mainboard</span></td>
+        <td>15 Oct</td>
+        <td>19 Oct</td>
+        <td><strong class="verdict-line">Avoid — ₹1,606.17 Cr net loss, no P/E, 4.83x P/BV on a ₹5,012 Cr issue with a Caution-rated lead-manager bench</strong></td>
+        <td>FY26 total income rose 40% to ₹16,100.63 Cr but the net loss widened to ₹1,606.17 Cr (-9.98% margin; adjusted EBITDA ₹421.34 Cr, 2.62%), after losses of ₹370.71 Cr and ₹917.95 Cr in FY25 and FY24. RoNW is -21.11%, NAV ₹31.26 and P/BV 4.83x at ₹151; EPS is -₹10.66, so no earnings multiple applies. ₹2,160.00 Cr of the ₹2,830 Cr fresh issue repays debt, and promoters' stake falls from 15.86% to 11.36%. Morgan Stanley India (0 of 2 positive in 2026, -8.59% avg) puts the seven-firm bench at Caution. The grey market quotes ₹15 (9.93%) on investorgain and ₹16.5 on ipogyani. Figures are chittorgarh's restated summary; offer-document cross-check pending.</td>
       </tr>
     </tbody>
   </table>
@@ -1436,43 +1719,52 @@ R.K. Fashion Accessories (incorporated Mar 2010) manufactures via contract manuf
 
 <section class="analyst-followups">
   <div class="actionable-box">
-    <h3>Debuts, 7-9 Oct: Vans Electroengineerings and Sollfege Smart Electronics lead; TNA Solutions and Eventions trail</h3>
-    <p>Sixteen issues listed across 7, 8 and 9 October. Vans Electroengineerings opened at ₹224.20 against a ₹118 issue price (+90.00%), closed its first day at ₹235.40 (+99.49%) and trades at ₹259.50 (+119.92%). Sollfege Smart Electronics opened at ₹104.40 (+89.82%) against ₹55 and trades at ₹94.23 (+71.33%). EverestIMS Technologies opened at ₹126 (+48.24%) and trades at ₹113.72 (+33.79%). Acme India Industries opened at ₹221 (+12.76%) and trades at ₹232.05 (+18.39%). The weak end is TNA Solutions, which opened at ₹56 against ₹70 (-20.00%) and trades at ₹58.80 (-16.00%), then Eventions at ₹100.20 (-15.08%), Green Asia Impex at ₹76.35 (-14.21%), Paramount Syntex at ₹109.25 (-13.98%) and Papadmalji Agro Foods at ₹62.10 (-13.75%). On the mainboard, Vishal Nirmiti opened at ₹215 (-2.27%) and trades at ₹194.04 (-11.80%), while Nityas Gems &amp; Jewellery opened at ₹80 (+6.67%) and trades at ₹79.80 (+6.40%). Grey-market direction was mixed: Vans (₹103 final premium, 87.29%) opened +90.00% and EverestIMS (₹50, 58.82%) opened +48.24%, but Sollfege Smart Electronics carried only ₹10 (18.18%) and opened +89.82%, while TNA Solutions (₹10 on 6 Oct, no quote by listing day) opened -20.00% and Black Opal Consultants (₹88 on 6 Oct, no quote by listing day) opened only +1.52% at ₹200 against ₹197.</p>
+    <h3>Debuts, 8-12 Oct: Sollfege Smart Electronics and EverestIMS lead; TNA Solutions and Eventions trail</h3>
+    <p>Thirteen issues listed across 8, 9 and 12 October. Sollfege Smart Electronics opened at ₹104.40 against a ₹55 issue price (+89.82%) and trades at ₹94.23 (+71.33%). EverestIMS Technologies opened at ₹126 (+48.24%) and trades at ₹113.72 (+33.79%). Acme India Industries opened at ₹221 (+12.76%) and trades at ₹232.05 (+18.39%). The weak end is TNA Solutions, which opened at ₹56 against ₹70 (-20.00%) and trades at ₹58.80 (-16.00%), then Eventions at ₹100.20 (-15.08%), Paramount Syntex at ₹109.25 (-13.98%) and, on the mainboard, Vishal Nirmiti, which opened at ₹215 (-2.27%) and trades at ₹194.04 (-11.80%). Nityas Gems &amp; Jewellery opened at ₹80 (+6.67%) and trades at ₹79.80 (+6.40%). Today's listing, R.K. Fashion Accessories, opened at ₹80 against ₹82 (-2.44%) and trades at ₹76 (-7.32%). Grey-market direction was mixed: EverestIMS (₹50, 58.82%) opened +48.24%, but Sollfege carried only ₹10 (18.18%) and opened +89.82%, while R.K. Fashion's ₹1.5 premium (1.83%) pointed to a flat open and it opened slightly below issue.</p>
   </div>
 
   <div class="actionable-box">
     <h3>Near-term filings pipeline</h3>
-    <p>Four names with a fixed price band are already in the scorecard above. Two more mainboard issues are scheduled but have no price band yet, so nothing here is confirmed:</p>
+    <p>All seven names with a confirmed price band on Chittorgarh are in the scorecard above. Two more are not, and nothing here is confirmed:</p>
     <ul>
-      <li><strong>Sahajanand Medical Technologies</strong> (mainboard, offer for sale of 2.76 crore shares): opens 15 Oct, closes 19 Oct, lists 23 Oct; price band and issue size not announced. Economic Times reports FY26 revenue up 18% to ₹1,219 crore and PAT of ₹69 crore against ₹25 crore in FY25. Risk flag: the profit jump follows a ₹7.35 crore loss in FY24, a base effect; the company receives none of the money.</li>
-      <li><strong>Tonbo Imaging India</strong> (mainboard, JM Financial): opens 15 Oct, closes 19 Oct; no price band or financials were available on the sources read this run, so none are stated.</li>
-      <li><strong>Jio Platforms</strong> and <strong>Bonfiglioli Transmissions</strong> appear on Chittorgarh with no dates or price band; Economic Times (6 Oct) reported a Jio launch buzz for 21 Oct, which is unconfirmed.</li>
+      <li><strong>Shellz India</strong> (SME, Socradamus Capital): ipoplatform.com lists it as opening 15 Oct and closing 19 Oct with an upper band of ₹179 and an issue size of ₹59.97 Cr. It is not on Chittorgarh's SME list or in the grey-market trackers read this run, so it has no scorecard until a second source confirms it; no financials were read.</li>
+      <li><strong>Jio Platforms</strong> (mainboard): Chittorgarh shows 27 crore fresh shares, no dates, price band or issue size, and reported FY26 revenue up 16% and PAT up 15%. Economic Times (6 and 12 Oct) reports the company is seeking a valuation of about ₹11 lakh crore and a 21 Oct launch; this is unconfirmed. The investorgain grey-market tracker already quotes a ₹182.50 premium, but with no price band that figure has no base. Risk flag: a launch of this size in the same fortnight as eight other books would draw heavily on institutional demand.</li>
     </ul>
   </div>
 
   <div class="actionable-box">
-    <h3>The one to watch closely: HD Fire Protect</h3>
-    <p>HD Fire Protect is the largest tracked issue: a ₹712.31 Cr mainboard book priced at ₹258-271 that opens 13 Oct, closes 15 Oct and lists 21 Oct. It is 100% offer for sale, so the company gets none of the money and the promoter group sells down from 100% to 85%. FY26 total income was ₹505.12 Cr (+12%) and PAT ₹116.79 Cr (+6%), at a 23.12% margin, with ROE of 30.17% and ROCE of 40.33%. At the top of the band the issue is 49.72x post-issue P/E and 12.63x P/BV. The lead managers are Ambit, Anand Rathi and IIFL Capital, a Solid bench. The grey market quotes ₹75 (27.68%). What you would own is a certification-protected fire-safety maker (21 UL Listed and 87 FM Approved certifications, exports to 90+ countries, ₹158.60 Cr order book) bought at a price that already assumes years of growth faster than the 6% PAT rise it just reported. Fusion CX (₹702.00 Cr, 14-16 Oct) is a close second by size.</p>
+    <h3>The one to watch closely: Zetwerk Manufacturing Business</h3>
+    <p>Zetwerk is the largest tracked issue by far: ₹5,012 Cr at ₹143-151, split ₹2,830 Cr fresh and ₹2,182 Cr offer for sale, opening 15 Oct, closing 19 Oct and listing 23 Oct. Revenue rose 40% to ₹16,100.63 Cr in FY26 but the net loss widened to ₹1,606.17 Cr (FY25: ₹370.71 Cr; FY24: ₹917.95 Cr), RoNW is -21.11% and EPS is -₹10.66, so no P/E exists; the issue is priced at 4.83x P/BV with a ₹25,583.25 Cr market cap. ₹2,160.00 Cr of the fresh issue repays borrowings and the rest funds unidentified acquisitions and general corporate purposes. The grey market quotes ₹15 (9.93%) on investorgain and ₹16.50 on ipogyani, much weaker than Tonbo's ₹345 (49.29%) or Bonfiglioli's ₹153 (26.11%). Seven lead managers include Kotak (Strong) and Morgan Stanley India, whose two 2026 mainboard listings both fell (-8.59% average), which makes the bench Caution. Owning it means paying 4.83x book for a platform that has not yet turned a profit, so the case rests on scale and a 2.62% adjusted EBITDA margin improving, not on current earnings.</p>
   </div>
 
   <div class="actionable-box" style="border-left-color: var(--gold);">
     <h3>Bottom line</h3>
-    <p><strong>If you can only apply to one name before close this week:</strong> No book is open today; the first open on Tuesday 13 Oct. On the numbers collected, Fusion CX (opens 14 Oct, closes 16 Oct) is the strongest: PAT up 129% to ₹169.84 Cr, ROCE of 71.59%, 18.73x post-issue P/E and 6.61x P/BV, with Nuvama (Solid) as lead manager and a ₹45 (15.57%) grey-market premium. Its fund use is Debt-heavy: ₹275.70 Cr of the ₹500.00 Cr fresh issue repays borrowings.</p>
-    <p><strong>If you're watching institutional conviction after the fact:</strong> Among the books that closed on 1 and 5 Oct, Vans Electroengineerings (628.73x, QIB 281.65x) and EverestIMS Technologies (294.22x, QIB 148.63x) had the strongest QIB demand and both trade above their listing prices (+119.92% and +33.79% against issue). Black Opal Consultants (73.80x, QIB 59.77x) is the exception: it opened +1.52% and trades at ₹186.20 (-5.48%). The weakest QIB books were Green Asia Impex (QIB 2.06x) and Dove Soft (QIB 1.00x); both trade below issue (-14.21% and -10.00%).</p>
-    <p><strong>Too early to call:</strong> R.K. Fashion Accessories closed at 2.70x overall (QIB 14.11x on a 43,200-share quota, NII 1.77x, RII 3.11x) and lists Monday 12 Oct; its grey-market premium is ₹1.5 (1.83%). The four new books (HD Fire Protect, Ravita Engineering Services, Vaibhav Vyapaar, Fusion CX) have not opened.</p>
-    <p><strong>Skip or size down on fundamentals alone:</strong> Vaibhav Vyapaar (53.61x P/E on FY26 earnings, ROE of 6.99%, D/E of 1.60, no GMP yet, unsecured lending in a rate-hike phase). HD Fire Protect for size: 49.72x post-issue P/E and 12.63x P/BV on a 100% OFS with PAT up 6%. R.K. Fashion Accessories carries a Caution lead manager (Affinity Global: 0 of 2 positive listings in 2026, -14.49% average).</p>
-    <p class="table-footnote">This is analysis of chittorgarh restated summaries, live subscription data where books have opened, and grey-market quotes as of this run (11 October 2026, midday). The four new names have not yet been cross-checked against their offer documents. It is not personalised investment advice. Position sizing, your own risk tolerance, and lock-in/liquidity needs for unlisted allotments remain yours to weigh.</p>
+    <p><strong>If you can only apply to one name before close this week:</strong> No book is open today; the first three open on Tuesday 13 Oct. On the numbers collected, Fusion CX (opens 14 Oct, closes 16 Oct) is still the strongest fundamentals-first pick: PAT up 129% to ₹169.84 Cr, ROCE of 71.59%, 18.73x post-issue P/E and 6.61x P/BV, with Nuvama (Solid) as lead manager. Its fund use is Debt-heavy (₹275.70 Cr of the ₹500.00 Cr fresh issue repays borrowings), and its grey-market premium has faded to ₹10 (3.46%) from ₹45 on 11 Oct, so the listing-day cushion is thin.</p>
+    <p><strong>If you're watching institutional conviction after the fact:</strong> No book is closed and awaiting listing. The last closed book, R.K. Fashion Accessories, drew 2.70x overall (QIB 14.11x on a 43,200-share quota) and opened 2.44% below issue today, consistent with the Caution flag on its lead manager, Affinity Global.</p>
+    <p><strong>Too early to call:</strong> All eight tracked books, none of which has opened: HD Fire Protect, Ravita Engineering Services and Vaibhav Vyapaar (13 Oct), Fusion CX (14 Oct), and Tonbo Imaging India, Zetwerk Manufacturing Business, Bonfiglioli Transmissions and Sahajanand Medical Technologies (15 Oct). Four mainboard books closing together on 19 Oct will compete for institutional money.</p>
+    <p><strong>Skip or size down on fundamentals alone:</strong> Zetwerk (₹1,606.17 Cr net loss, no P/E, Caution-rated bench), Vaibhav Vyapaar (53.61x P/E on FY26 earnings, ROE of 6.99%, D/E of 1.60, no GMP, unsecured lending in a rate-hike phase), and, for valuation, Tonbo Imaging India (78.83x pre-issue P/E on revenue down 22% and PAT down 30%, despite a 49.29% premium) and HD Fire Protect (49.72x post-issue P/E and 12.63x P/BV on a 100% OFS with PAT up 6%).</p>
+    <p class="table-footnote">This is analysis of chittorgarh restated summaries, grey-market quotes as of this run (12 October 2026, 3:45 PM IST) and live prices from the Fyers feed. The eight tracked names have not yet been cross-checked against their offer documents. It is not personalised investment advice. Position sizing, your own risk tolerance, and lock-in/liquidity needs for unlisted allotments remain yours to weigh.</p>
   </div>
 </section>
 
 <section class="tables-section">
   <h2 class="section-title">Recently listed &mdash; listing-day &amp; current gains</h2>
-  <p class="section-desc">Every mainboard and SME issue that listed across the last 3 trading sessions (7, 8 and 9 October 2026), measured from listing price (the opening trade on listing day, not the close) and from the current market price, both against issue price. The cutoff is by date, not a fixed row count. Listing prices come from ipogyani.com's per-issue Listing Price field (for the three issues that listed on 9 Oct they match the Fyers session open for those symbols); Green Asia Impex's listing price was not published on that source. Current prices are the Fyers last-traded price at the Friday 9 Oct close (markets are shut today), on NSE for the two mainboard names and BSE for the SME names that trade there. 12 Oct lists R.K. Fashion Accessories.</p>
+  <p class="section-desc">Every mainboard and SME issue that listed across the last 3 trading sessions (8, 9 and 12 October 2026), measured from listing price (the opening trade on listing day, not the close) and from the current market price, both against issue price. The cutoff is by date, not a fixed row count. Listing prices come from ipogyani.com's per-issue Listing Price field for 8 and 9 Oct (those on 9 Oct match the Fyers session open); R.K. Fashion Accessories' listing price is the Fyers open for NSE:RKFAL-ST on 12 Oct (₹80, opening session 9:15 AM IST). Current prices are Fyers last-traded prices: the 9 Oct close for earlier listings and the 12 Oct afternoon print (₹76, high ₹80, low ₹76) for R.K. Fashion Accessories; the listing-day close is not final until the session ends.</p>
   <div class="table-scroll">
   <table class="ledger-table sortable">
     <caption>Recently listed IPOs &mdash; issue price vs listing price vs current market price</caption>
     <thead><tr><th>Company</th><th>Issue price</th><th>Listing date</th><th>Listing price</th><th>Predicted gains</th><th>Listing gains</th><th>Current market price</th><th>Current gain vs issue</th></tr></thead>
     <tbody>
+      <tr>
+        <td class="tcell-name">R.K. Fashion Accessories Ltd. <span class="tsub">SME</span></td>
+        <td>&#8377;82.00</td>
+        <td>12-Oct-2026</td>
+        <td>&#8377;80.00</td>
+        <td data-sort="1.8"><span class="pred-cell conf-medium"><span class="gain-pos">+1.8%</span><br><small>range -14% to +12% · <span class="pred-conf">Medium</span><br>GMP investorgain ₹1.5 · ipowatch – · ipogyani –</small></span></td>
+        <td><span class="gain-neg">-2.44%</span></td>
+        <td>&#8377;76.00</td>
+        <td><span class="gain-neg">-7.32%</span></td>
+      </tr>
       <tr>
         <td class="tcell-name">Paramount Syntex Ltd. <span class="tsub">SME</span></td>
         <td>&#8377;127.00</td>
@@ -1593,46 +1885,6 @@ R.K. Fashion Accessories (incorporated Mar 2010) manufactures via contract manuf
         <td>&#8377;319.00</td>
         <td><span class="gain-pos">+2.57%</span></td>
       </tr>
-      <tr>
-        <td class="tcell-name">Black Opal Consultants Ltd. <span class="tsub">SME</span></td>
-        <td>&#8377;197.00</td>
-        <td>07-Oct-2026</td>
-        <td>&#8377;200.00</td>
-        <td data-sort="-999"><span class="pred-cell pred-none">no call<br><small>no GMP quoted<br>investorgain ₹0 (not counted) · ipowatch – · ipogyani –</small></span></td>
-        <td><span class="gain-pos">+1.52%</span></td>
-        <td>&#8377;186.20</td>
-        <td><span class="gain-neg">-5.48%</span></td>
-      </tr>
-      <tr>
-        <td class="tcell-name">Papadmalji Agro Foods Ltd. <span class="tsub">SME</span></td>
-        <td>&#8377;72.00</td>
-        <td>07-Oct-2026</td>
-        <td>&#8377;72.30</td>
-        <td data-sort="-999"><span class="pred-cell pred-none">no call<br><small>no GMP quoted<br>investorgain ₹0 (not counted) · ipowatch – · ipogyani –</small></span></td>
-        <td><span class="gain-pos">+0.42%</span></td>
-        <td>&#8377;62.10</td>
-        <td><span class="gain-neg">-13.75%</span></td>
-      </tr>
-      <tr>
-        <td class="tcell-name">Green Asia Impex Ltd. <span class="tsub">SME</span></td>
-        <td>&#8377;89.00</td>
-        <td>07-Oct-2026</td>
-        <td>not published</td>
-        <td data-sort="-999"><span class="pred-cell pred-none">no call<br><small>no GMP quoted<br>investorgain ₹0 (not counted) · ipowatch – · ipogyani ₹0 (not counted)</small></span></td>
-        <td>pending</td>
-        <td>&#8377;76.35</td>
-        <td><span class="gain-neg">-14.21%</span></td>
-      </tr>
-      <tr>
-        <td class="tcell-name">Vans Electroengineerings Ltd. <span class="tsub">SME</span></td>
-        <td>&#8377;118.00</td>
-        <td>07-Oct-2026</td>
-        <td>&#8377;224.20</td>
-        <td data-sort="87.3"><span class="pred-cell conf-low"><span class="gain-pos">+87%</span><br><small>range +61% to +90% · <span class="pred-conf">Low</span><br>GMP investorgain ₹103 · ipowatch – · ipogyani –</small></span></td>
-        <td><span class="gain-pos">+90.00%</span></td>
-        <td>&#8377;259.50</td>
-        <td><span class="gain-pos">+119.92%</span></td>
-      </tr>
     </tbody>
   </table>
   <p class="predict-note"><strong>Predicted gains</strong> column = what the method on the scorecards would have called from each issue's final GMP the day before listing (point, 10th–90th percentile range, confidence). GMP is read from investorgain, ipowatch and ipogyani; investorgain is used when it has a quote (most accurate of the three in backtest; average and majority were both worse), else the median of the others. If the three differ by more than 5% of the issue price, confidence drops one step. Compare it with Listing gains to see how the call did. "no call" = no GMP was quoted (SME GMP of ₹0 counts as none). "–" = that site had no quote.</p>
@@ -1645,7 +1897,7 @@ R.K. Fashion Accessories (incorporated Mar 2010) manufactures via contract manuf
 <footer>
   <div class="container">
     <p>Data sourced from chittorgarh.com, nseindia.com, bseindia.com, investorgain.com, and DRHP/RHP extracts and chittorgarh restated summaries (October 2026). GMP data from investorgain.com — unofficial, unregulated grey-market indicator. All undisclosed figures marked <em>pending</em>. This is a research ledger, not investment advice.</p>
-    <p class="footer-date">Compiled 11 October 2026, 3:35 PM IST · IPO Fundamentals Ledger</p>
+    <p class="footer-date">Compiled 12 October 2026, 3:45 PM IST · IPO Fundamentals Ledger</p>
   </div>
 </footer>
 
@@ -1737,6 +1989,18 @@ $(function() {
   }
   openFromHash();
   $(window).on('hashchange', openFromHash);
+});
+
+// stat-filter: summary-strip chips filter the scorecard (client-side)
+$(function() {
+  $('.summary-item[data-filter]').css('cursor','pointer').click(function() {
+    var chip = $(this), was = chip.hasClass('active-stat');
+    $('.summary-item').removeClass('active-stat');
+    if (was) { $('.ledger-card').show(); return; }
+    chip.addClass('active-stat');
+    var key = chip.data('filter'), val = String(chip.data('value'));
+    $('.ledger-card').each(function() { var c = $(this), v = key === 'status' ? (c.find('.status-badge').attr('class').match(/badge-(\w+)/) || [])[1] : c.find('.seg-label').first().text().toLowerCase(); c.toggle(v === val); });
+  });
 });
 </script>
 
