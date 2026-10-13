@@ -6,7 +6,7 @@ tags: [ipo, finance, automation, cron]
 
 Daily automated research ledger tracking Indian mainboard + SME IPOs — fundamentals, subscription, GMP, listing-day risk.
 
-**Last run: 2026-10-11 (~1:30 PM IST)** (11 October 2026 — see Run Log below for details).
+**Last run: 2026-10-12 (~4:00 PM IST)** (12 October 2026 — see Run Log below for details).
 
 ## What it does
 
@@ -43,6 +43,9 @@ Recurring `TimeoutError: idle for >600s` on the news-briefing subagent step — 
 
 ## Run Log
 
+- 12 October 2026 / 2026-10-12 (~4:00 PM IST, Monday, cron, direct calls no subagents): IPO ledger: rebuilt and pushed (commit 8dbe602): R.K. Fashion Accessories listed (opened 80 vs 82 issue, 76 last) and moved to Recently-listed; 4 mainboard issues newly priced and added as cards (Tonbo Imaging India, Zetwerk Manufacturing Business, Bonfiglioli Transmissions, Sahajanand Medical Technologies; 15-19 Oct) for 8 upcoming total; GMP refreshed (Fusion CX 45 to 10); predicted gains PASS (8 cards, 13 recent rows). Fundamentals are chittorgarh-only, DRHP cross-check pending. Browser tool hit ERR_SSL_PROTOCOL_ERROR, so data came via curl/defuddle. Success.
+  Trading news: tctl latest/calendar/5 watchlist symbols ran; NSE announcements feed timed out and marketaux token unset (both known). Success.
+  Risk desk: listing-risk-desk-2026-10-12.md written (R.K. Fashion + 16 listed + 8 upcoming; no EXTREME flag; Tonbo GMP 49.29%, 0.71 points under the line; Fyers holdings empty; Gemini not triggered; YouTube not searched, no Open book). Obsidian note: this entry appended.
 - 11 October 2026 / 2026-10-11 (~3:40 PM IST, Sunday, cron re-run, direct calls no subagents): IPO ledger: no data change since 1:15 PM; timestamps bumped to 3:35 PM, predicted gains PASS (5 cards, 16 recent rows), pushed (commit 1fea393). Success.
   Trading news: tctl latest/calendar/5 watchlist symbols ran; NSE announcements feed timed out and marketaux token unset (known); 3-day calendar empty (weekend). Success.
   Risk desk: listing-risk-desk-2026-10-11.md reused with a 3:35 PM re-check section; Fyers holdings empty; Gemini skipped (no API key). Obsidian note: this entry appended.
