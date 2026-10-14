@@ -6,7 +6,7 @@ tags: [ipo, finance, automation, cron]
 
 Daily automated research ledger tracking Indian mainboard + SME IPOs — fundamentals, subscription, GMP, listing-day risk.
 
-**Last run: 2026-10-14 (10:55 AM IST)** (14 October 2026 — see Run Log below for details).
+**Last run: 14 October 2026 (03:38 PM IST)** (14 October 2026 — see Run Log below for details).
 
 ## What it does
 
@@ -42,6 +42,11 @@ Recurring `TimeoutError: idle for >600s` on the news-briefing subagent step — 
 - [[create a link]]
 
 ## Run Log
+- 14 October 2026 / 2026-10-14 (03:38 PM IST, Tuesday, cron, direct calls no subagents): IPO ledger: refreshed and pushed (commit bc551b8): Day-2 close prints updated — HD Fire 14.32x (QIB 1.47x, NII 41.18x at 15:20), Ravita 0.79x (QIB 1.05x), Fusion 0.33x, Vaibhav 0.22x; Nifty close 22,622.70 (-0.44%, -99.25 pts) via Fyers, Sensex ~72,712 est., 4 Open / 5 Upcoming / 9 tracked, GMP refreshed (Tonbo 71.43%, Bonfiglioli 31.06%, HD Fire 33.58%), ledger_predict PASS 9/9 + 13/13. Success.
+  Trading news: tctl latest/calendar/5 watchlist symbols ran (225 fetched, 116 new; calendar: CPI 14 Oct 6 PM IST, PPI/retail 15 Oct, Bailey/Warsh 16 Oct); NSE announcements feed timed out + marketaux token unset (known); watchlist headline: Jio RHP filing buzz 14 Oct. Success.
+  Risk desk: listing-risk-desk-2026-10-14.md written (4 Open 5 Upcoming 13 listed; Tonbo Imaging 71.43% GMP EXTREME High 82; Fyers holdings empty; Gemini skipped no API key; YouTube: none found this run for all 4 open issues). Success.
+  Obsidian note: this entry appended.
+
 - 14 October 2026 / 2026-10-14 (10:55 AM IST, Tuesday, cron, direct calls no subagents): IPO ledger: refreshed and pushed (commit fe04f45): Day 2 subs HD Fire 4.77x (NII 11.59x, QIB 1.04x at 09:56) and Vaibhav 0.12x (10:00), Ravita 0.03x and Fusion CX 0.04x opened Day 1, 4 Open / 5 Upcoming / 9 tracked, Nifty 22,700.05 (-0.06%) + Sensex ~72,990 via Fyers, FII -1,305.13 Cr / DII +2,439.24 Cr (13 Oct), ledger_predict PASS 9/9 + 13/13. Success.
   Trading news: tctl latest/calendar/5 watchlist symbols ran (225 fetched, 204 new; calendar shows CPI 14 Oct 6 PM IST, PPI/retail 15 Oct, Bailey/Warsh 16 Oct); NSE announcements feed timed out + marketaux token unset (known); watchlist headline: Fusion CX opens GMP 12% + HD Fire Day 2 GMP 34% (Economic Times). Success.
   Risk desk: listing-risk-desk-2026-10-14.md written (4 Open 5 Upcoming 17 listed; Tonbo Imaging 71.43% GMP EXTREME; Fyers holdings empty; Gemini skipped no API key; YouTube: HD Fire lean negative, others none found). Success.
