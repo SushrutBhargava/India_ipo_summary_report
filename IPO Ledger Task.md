@@ -6,7 +6,7 @@ tags: [ipo, finance, automation, cron]
 
 Daily automated research ledger tracking Indian mainboard + SME IPOs — fundamentals, subscription, GMP, listing-day risk.
 
-**Last run: 14 October 2026 (11:55 PM IST)** — 2026-10-15 IST / 2026-10-14 UTC (see Run Log below for details).
+**Last run: 15 October 2026 (03:30 PM IST)** — 2026-10-15 IST / 2026-10-15 UTC (see Run Log below for details).
 
 ## What it does
 
@@ -42,6 +42,15 @@ Recurring `TimeoutError: idle for >600s` on the news-briefing subagent step — 
 - [[create a link]]
 
 ## Run Log
+- 15 October 2026 / 2026-10-15 (03:00 PM IST, Thursday, cron, direct calls no subagents): IPO ledger: refreshed and committed (6278e04, push blocked — gh token 401 Bad credentials, local HEAD ahead of origin/main by 2): 9 Open (HD Fire 31.77x 11:47 close day, Vaibhav 1.49x 14:00 close day, Ravita 1.43x, Fusion 0.90x, Tonbo 1.00x Day1, Bonfig 0.35x, Zetwerk 0.02x, Sahajanand 0.06x, Shellz 0.13x), all 9 now bidding live 15 Oct; Nifty live 22,968.65 (+1.53% intraday 14:50, prev close 22,622.70), Sensex est ~83,300, FII -1,857.44 Cr / DII +2,670.44 Cr (14 Oct, NSE fiidiiTradeReact), GMP refreshed via gmp_sources (Tonbo 71.57% EXTREME, HD Fire 28.78%, Bonfig 28.67%), predicted gains PASS 9/9 + 13/13, index.html byte-identical. Push blocked on auth only, not data.
+  Trading news: tctl latest/calendar/5 watchlist symbols ran (225 fetched, 104 new; calendar: PPI/Retail 15 Oct 18:00 IST HIGH, Bailey 16 Oct 07:30 IST, Warsh 16 Oct 09:00 IST; NSE announce RSS timeout + marketaux unset known); watchlist headlines: Jio Platforms IPO valuation Rs 10.3 lakh cr + stake change, Reliance wealth story, TCS/HCL Tech 82,500 Cr IT rally, Nifty surge; no new India-IPO-relevant high-impact beyond Jio. Success.
+  Risk desk: listing-risk-desk-2026-10-15.md written (9 Open, Tonbo EXTREME 71.57% High 78, Zetwerk High 74, Vaibhav High 71, rest Medium 48-62; 13 recently-listed unchanged; Fyers holdings/quotes token invalid -15/-16 no exposure, Gemini skipped not triggered, YouTube none found this run for 9). Success.
+  Obsidian note: this entry appended.
+- 15 October 2026 / 2026-10-15 (03:30 PM IST, Thursday, cron, direct calls no subagents): IPO ledger: refreshed and staged (commit fcd1bd9, push blocked — gh token invalid, local HEAD ahead of origin/main): 4 Open (HD Fire 16.56x, Ravita 1.14x, Fusion 0.43x, Vaibhav 0.39x as of 14 Oct 17:54) / 5 Upcoming (open today 15 Oct: Tonbo, Zetwerk, Bonfiglioli, Sahajanand, Shellz) / 9 tracked; NSE 6 active symbols (TONBO/ZETWERK/BONFIG/SMT/FUSIONCX/HDFIRE), close dates 15 Oct (HD Fire/Vaibhav) and 16 Oct (Ravita/Fusion) and 19 Oct (5 more), Nifty close 22,622.70 (-0.44%) carried from 14 Oct (Fyers token invalid -15, no live pull), FII -1,857.44 Cr / DII +2,670.44 Cr (14 Oct, NSE fiidiiTradeReact), ledger_predict PASS 9/9 + 13/13. Push failure is auth-only, not data.
+  Trading news: tctl latest/calendar/5 watchlist symbols ran (225 fetched, 145 new; calendar: UK GDP 15 Oct 11:30 IST, US PPI/Retail 15 Oct 18:00 IST, Bailey/Warsh 16 Oct HIGH; NSE announce RSS timeout + marketaux unset known); watchlist headlines: Jio IPO price band/dates mother-of-all-IPOs + 20% GMP buzz, Fusion CX Day 2 GMP 12%, HD Fire Day 3 GMP 33%, Bonfiglioli/Tonbo/Sahajanand open-today previews. Success.
+  Risk desk: listing-risk-desk-2026-10-15.md written (9 cohort: Tonbo EXTREME 71.4% GMP High 78; Zetwerk High 74 loss-making, Vaibhav High 71 undersubscribed; rest Medium 48-62; 13 listed cohort unchanged; Fyers holdings/token invalid no exposure; Gemini not triggered; YouTube: none found this run for 4 open issues). Success.
+  Obsidian note: this entry appended.
+
 - 14 October 2026 / 2026-10-14 (11:55 PM IST, Tuesday, cron, direct calls no subagents): IPO ledger: refreshed and pushed (commit ec32ed8): late-close update — HD Fire 16.56x (NII 48.77x, QIB 1.49x, RII 11.43x), Ravita 1.14x (NII 1.69x), Fusion 0.43x (RII 1.65x), Vaibhav 0.39x as of 17:54; Nifty close 22,622.70 (-0.44%) via Fyers, FII -1,857.44 Cr / DII +2,670.44 Cr (14 Oct, NSE fiidiiTradeReact), 4 Open / 5 Upcoming / 9 tracked, GMP unchanged (Tonbo 71.43% EXTREME), ledger_predict PASS 9/9 + 13/13, index.html byte-identical, push verified. Success.
   Trading news: tctl latest/calendar/5 watchlist symbols ran (225 fetched, 142 new; calendar: PPI/retail 15 Oct 6 PM IST, Bailey/Warsh 16 Oct; NSE feed timeout + marketaux unset known); watchlist headline: Jio Platforms RHP/GMP 20% buzz + Zetwerk anchor Rs 2,251 Cr. Success.
   Risk desk: listing-risk-desk-2026-10-14.md patched to same subscription prints (4 Open 5 Upcoming 13 listed; Tonbo EXTREME High 82; Fyers holdings empty; Gemini skipped no API key; YouTube: none found this run for all 4 open issues). Success.
