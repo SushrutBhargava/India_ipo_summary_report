@@ -23,7 +23,7 @@ date: 2026-10-15
 | 8 | Sahajanand Medical Technologies | Mainboard | ₹327-344 | 19 Oct | 0.06x (as of 11:04) | ₹47 / ₹46 | 13.66% |
 | 9 | Shellz India | SME | ₹170-179 | 19 Oct | 0.13x (as of 11:59) | not active / — | — |
 
-Subscription source: chittorgarh.com ipo_subscription pages (live prints 11:00-14:34 IST 15 Oct). GMP source: `gmp_sources.py` live — investorgain (primary, when quoted), ipogyani (cross-check), ipowatch (no SME quotes). Nifty live 22,968.65 (+1.53%, +345.95 pts vs 22,622.70 close 14 Oct, NSE allIndices 14:50 IST).
+Subscription source: chittorgarh.com ipo_subscription pages (live prints 11:00-14:34 IST 15 Oct). GMP source: `gmp_sources.py` live — investorgain (primary, when quoted), ipogyani (cross-check), ipowatch (no SME quotes). Nifty live 22,997.35 (+1.66%, +374.65 pts vs 22,622.70 close 14 Oct, NSE allIndices 15:30 IST).
 
 ## Recently listed (last 5 trading sessions)
 
@@ -162,5 +162,5 @@ GMP momentum = gap to issue price; subscription skew = retail-heavy vs QIB-heavy
 
 ## Sources
 
-chittorgarh.com ipo_subscription pages (live 15 Oct 11:00-14:34 IST), `gmp_sources.py` live (investorgain webnodejs report 331 + ipogyani), NSE fiidiiTradeReact (FII/DII 14 Oct), NSE allIndices/marketStatus (Nifty 22,968.65 live 14:50 IST), NSE all-upcoming-issues (price bands). Not investment advice.
+chittorgarh.com ipo_subscription pages (live 15 Oct 11:00-14:34 IST), `gmp_sources.py` live (investorgain webnodejs report 331 + ipogyani), NSE fiidiiTradeReact (FII/DII 14 Oct), NSE allIndices/marketStatus (Nifty 22,997.35 live 15:30 IST), NSE all-upcoming-issues (price bands). Not investment advice.
 
