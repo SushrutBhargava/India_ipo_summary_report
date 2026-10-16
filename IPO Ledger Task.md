@@ -6,7 +6,7 @@ tags: [ipo, finance, automation, cron]
 
 Daily automated research ledger tracking Indian mainboard + SME IPOs — fundamentals, subscription, GMP, listing-day risk.
 
-**Last run: 15 October 2026 (03:35 PM IST)** — 2026-10-15 IST / 2026-10-15 UTC (see Run Log below for details).
+**Last run: 16 October 2026 (04:31 PM IST)** — 2026-10-15 IST / 2026-10-15 UTC (see Run Log below for details).
 
 ## What it does
 
@@ -42,6 +42,10 @@ Recurring `TimeoutError: idle for >600s` on the news-briefing subagent step — 
 - [[create a link]]
 
 ## Run Log
+- 16 October 2026 / 2026-10-16 (04:31 PM IST, Friday, cron, direct calls no subagents): IPO ledger: refreshed and pushed (007658b): 7 Open / 2 Closed / 2 Upcoming / 9 tracked — HD Fire and Vaibhav closed 15 Oct (Closed awaiting listing 21 Oct), Ravita 2.18x (1.86x retail) and Fusion 1.49x (4.80x retail) close today 16 Oct (Day 3 11:59), Tonbo/Bonfig/Zetwerk/Sahajanand/Shellz Day 2 to 19 Oct; Jio ₹1,065–1,119 + Paras ₹660–693 confirmed 21–23 Oct Upcoming; Nifty live 23,104.20 (+0.46% vs 22,997.35) and Sensex 74,611.66 (+0.40% vs 74,315.61) via Fyers 16:31 IST, FII -5,285.37 Cr / DII +3,319.39 Cr (15 Oct NSE fiidiiTradeReact), ledger_predict PASS 9/9 + 13/13, index.html byte-identical, push verified. Success.
+  Trading news: tctl latest (225 fetched, 203 new, calendar 111) / calendar --days 3 (no events in range) / 5 watchlist symbols ran; top: Jio IPO GMP 20% (ET 07:03), HD Fire allotment 16 Oct, Tonbo Day2 4x/71% GMP, Zetwerk Day2 9% GMP, Reliance/Jio valuation buzz, Sensex 700-pt comeback, rupee 94.79; NSE RSS timeout + marketaux unset known. Success.
+  Risk desk: listing-risk-desk-2026-10-16.md written (9 tracked list 21-23 Oct, Tonbo EXTREME 71.43% High 74, Zetwerk High 71, Sahajanand High 68, rest Medium 48-62; Fyers holdings 0 empty no exposure, live price N/A pre-listing, Gemini skipped not triggered, YouTube none found this run for 9 — will fetch transcripts next run). Success.
+  Obsidian note: this entry appended.
 - 15 October 2026 / 2026-10-15 (04:31 PM IST, Thursday, cron, direct calls no subagents): IPO ledger: refreshed and committed (ab2f515, push blocked — gh token 401 Bad credentials, local HEAD 7 ahead of origin/main): 9 Open all bidding live 15 Oct — HD Fire 53.87x final (retail 22.80x, 13:44 close day), Vaibhav 1.49x (retail 0.98x, 14:00 close day), Ravita 1.43x (retail 1.33x), Fusion 0.90x (retail 3.24x), Tonbo 2.34x Day1 (retail 2.07x, EXTREME GMP 71.57%), Zetwerk 0.07x, Bonfig 0.42x, Sahajanand 0.20x, Shellz 0.13x; Nifty live 22,997.35 (+1.66% vs 22,622.70, Fyers 16:31 IST), Sensex 74,315.61 (+2.11% vs 72,781.89, Fyers live), FII -1,857.44 Cr / DII +2,670.44 Cr (14 Oct, NSE fiidiiTradeReact), gold spot $4,158.10 (kitco 07:06 EDT 15 Oct) / MCX ₹14,763.63/g, predicted gains PASS 9/9 + 13/13, index.html byte-identical. Push blocked on auth only, not data — PAT needs gh auth login refresh.
   Trading news: tctl latest/calendar/5 watchlist symbols ran (225 fetched, 25 new; calendar: PPI/Retail 15 Oct 18:00 IST HIGH, Bailey 16 Oct 07:30 IST, Warsh 16 Oct 09:00 IST; NSE announce RSS timeout + marketaux unset known); watchlist headline: Jio Platforms RHP/price band buzz (Reliance/TCS/INFY/HDFC/Nifty tagged, Rs 10.3 lakh cr valuation + Rs 2,500 cr shareholder quota). Success.
   Risk desk: listing-risk-desk-2026-10-15.md patched to same prints (9 Open, Tonbo EXTREME 71.57% High 78, HD Fire 53.87x Medium 62, Zetwerk High 74, Vaibhav High 71, rest Medium 48-60; Fyers holdings empty count 0 + live Nifty/Sensex refreshed, Gemini skipped not triggered, YouTube none found this run for 9). Success.
