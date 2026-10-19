@@ -6,7 +6,7 @@ tags: [ipo, finance, automation, cron]
 
 Daily automated research ledger tracking Indian mainboard + SME IPOs — fundamentals, subscription, GMP, listing-day risk.
 
-**Last run: 19 October 2026 (10:30 AM IST)** — 2026-10-19 IST / 2026-10-19 UTC (see Run Log below for details).
+**Last run: 20 October 2026 (1:00 AM IST)** — 2026-10-20 IST / 2026-10-19 UTC (see Run Log below for details).
 
 ## What it does
 
@@ -42,6 +42,10 @@ Recurring `TimeoutError: idle for >600s` on the news-briefing subagent step — 
 - [[create a link]]
 
 ## Run Log
+- 20 October 2026 (1:00 AM IST, Tuesday, Dussehra market holiday, cron, direct calls no subagents): IPO ledger: refreshed and pushed (5788669): 0 Open / 9 Closed / 4 Upcoming / 13 tracked. All five 19 Oct books moved to Closed with NSE finals (Tonbo 135.90x, Bonfiglioli 46.06x, Sahajanand 14.20x, Zetwerk 3.06x) and Shellz 58.54x (chittorgarh); Vaibhav Vyapaar final revised 1.49x to 2.27x; new upcoming cards Core4 Engineers (SME, 23-27 Oct, DRHP cross-check) and BLS Polymers (27-29 Oct, RHP cross-check); stale summary strip (7/2/2) and rank table (closed names) fixed; news section, sentiment box, Recently-listed CMPs (Fyers 19 Oct) rebuilt; all self-consistency checks and predicted-gains PASS.
+  Trading news: tctl latest (225 fetched, 188 new, calendar 86; NSE announcements RSS timed out, marketaux token unset) + calendar --days 3 (GBP CPI 21 Oct 11:30 IST, NZD CPI 22 Oct 03:15 IST, both HIGH) + 5 watchlist symbols ran; output tee'd to scratch tdesk-news-output.txt.
+  Risk desk: listing-risk-desk-2026-10-20.md written (9 closed-awaiting-listing; EXTREME: Tonbo 44.2 Medium, HD Fire 31.9 Low, Bonfiglioli 28.7 Low, each with fast-exit advisory; others hold/monitor); Fyers holdings 0; no listings so no Fyers price; Gemini triggered for 4 items but no GOOGLE_API_KEY/GEMINI_API_KEY set (recurring); YouTube check skipped, no Open issues.
+  Obsidian note: this entry appended.
 - 19 October 2026 (10:30 AM IST, Sunday, cron, direct calls no subagents): IPO ledger: refreshed and pushed (37e2bd1): 5 Open / 4 Closed / 2 Upcoming / 11 tracked — Tonbo surges to 9.87x (NSE Total, was 7.78x 16 Oct, GMP 74.29% EXTREME), Bonfiglioli 1.63x (was 0.99x, GMP 21.33%), Sahajanand 0.44x (was 0.83x, GMP 7.56% — book retreated), Zetwerk 0.22x (was 0.31x, GMP 3.31% — still undersubscribed) all close today 19 Oct; Shellz 0.89x; Jio/Paras Upcoming 21-23 Oct; Nifty 23,110.85 (-0.15%) / Sensex 74,526.07 (-0.27%) via Fyers 10:30 IST; ledger_predict PASS 11/11 + 13/13, index.html byte-identical, push verified (MATCH YES).
   Trading news: tctl latest (225 fetched, 190 new, calendar 86) + calendar --days 3 + 5 watchlist symbols ran (RELIANCE/TCS/INFY/HDFCBANK/NIFTY); top: Sensex -200 Nifty <23,100 (ET 04:34), Jio holding discount/RIL impact (ET 04:32), Bonfiglioli Day 3 GMP 22% sub 99% (ET 04:12), Sahajanand Day 3 GMP 7% (ET 04:11), Tonbo Day 3 GMP 74% sub 7x+ (ET 03:25), RBI $10.5B repo (ET 03:33), China GDP 4.5% beats (Reuters 02:40), Jio $3.2B IPO + RIL breakout; NSE RSS timeout + marketaux unset known. Success.
   Risk desk: listing-risk-desk-2026-10-19.md written (11 tracked; Open: Tonbo EXTREME 74.29% Medium 35 closes today, Bonfig Medium 50 closes today, Zetwerk High 70 closes today, Sahajanand Medium 40 closes today, Shellz Medium 50 closes today; Closed: HD Fire EXTREME 131.73x Medium 50 + 50% GMP, Ravita Low 30, Fusion Low 30, Vaibhav Medium 40; Upcoming: Jio/Paras pre-open Low 25; Fyers holdings 0 empty no exposure, live price N/A pre-listing 21-23 Oct, Gemini not triggered, YouTube: Shellz Avoid GMP-not-active, SMT Avoid high-valuations + OFS + cases, Bonfiglioli Apply strong fundamentals 22% GMP, Tonbo/Zetwerk none found). Success.
