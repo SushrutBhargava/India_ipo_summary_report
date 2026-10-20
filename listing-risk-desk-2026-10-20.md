@@ -1,6 +1,6 @@
-# Listing-Day Risk Desk — 20 Oct 2026 (Tuesday, Dussehra market holiday)
+# Listing-Day Risk Desk — 20 Oct 2026, 10:30 AM IST refresh (Tuesday, Dussehra market holiday)
 
-> **Advisory only. No orders placed, simulated or drafted.** No broker order endpoint was called. Fyers use was read-only (quotes, holdings). GMP: investorgain.com live table, updated 19 Oct 2026 11:37 PM, cross-read against ipogyani via the ledger's predicted-gains script. Subscription: NSE ipo-active-category API (final, updated 19 Oct 2026 7:00 PM) for the 19 Oct mainboard closers; chittorgarh.com subscription pages for SME and for books that closed 15-16 Oct. Risk score 0-100 (Low 0-33 / Medium 34-66 / High 67-100). Not investment advice.
+> **Advisory only. No orders placed, simulated or drafted.** No broker order endpoint was called. Fyers use was read-only (quotes, holdings). GMP: investorgain.com live table, re-read 20 Oct 2026 10:02 AM, cross-read against ipogyani via the ledger's predicted-gains script. Subscription: NSE ipo-active-category API (final, updated 19 Oct 2026 7:00 PM) for the 19 Oct mainboard closers; chittorgarh.com subscription pages for SME and for books that closed 15-16 Oct. Risk score 0-100 (Low 0-33 / Medium 34-66 / High 67-100). Not investment advice.
 
 ## Cohort
 
@@ -8,14 +8,14 @@ Nine issues are Closed — awaiting listing (21, 22 and 23 Oct). No issue listed
 
 | Issue | Price band | GMP | Subscription (final) | Listing | Anchor unlock 30d / 90d (ratio) | Risk score | Flag | Recommendation |
 |---|---|---|---|---|---|---|---|---|
-| **HD Fire Protect** (Mainboard) | ₹258-271 | ₹61 (22.51%) | 131.73x (QIB 256.65x, NII 203.21x, retail 30.55x) | 21 Oct | 39,32,004 / 39,32,004 shares (14.96% Low / 14.96% Low) | 31.9 Low | **EXTREME — high gap-up signal** (overall 131.73x >75x; QIB 256.65x >100x; NII 203.21x >100x) | If allotted, consider selling within the first 15 minutes of listing (advisory text only, no order placed). |
+| **HD Fire Protect** (Mainboard) | ₹258-271 | ₹64 (23.62%) | 131.73x (QIB 256.65x, NII 203.21x, retail 30.55x) | 21 Oct | 39,32,004 / 39,32,004 shares (14.96% Low / 14.96% Low) | 31.8 Low | **EXTREME — high gap-up signal** (overall 131.73x >75x; QIB 256.65x >100x; NII 203.21x >100x) | If allotted, consider selling within the first 15 minutes of listing (advisory text only, no order placed). |
 | **Vaibhav Vyapaar** (SME) | ₹51-54 | ₹5 (9.26%) | 2.27x (QIB 1.61x, NII 6.65x, retail 2.70x) | 21 Oct | 11,00,000 / 11,00,000 shares (14.11% Low / 14.11% Low) | 48.3 Medium | — | Hold — monitor, no urgent exit signal. |
 | **Ravita Engineering Services** (SME) | ₹105-112 | ₹5 (4.46%) | 7.11x (QIB 13.21x, NII 7.42x, retail 3.50x) | 22 Oct | 14,74,200 / 14,74,200 shares (14.23% Low / 14.23% Low) | 37.9 Medium | — | Hold — monitor, no urgent exit signal. |
-| **Fusion CX** (Mainboard) | ₹275-289 | ₹13 (4.50%) | 4.68x (QIB 4.21x, NII 4.73x, retail 5.99x) | 22 Oct | 54,65,398 / 54,65,398 shares (22.50% Medium / 22.50% Medium) | 56.7 Medium | — | Hold — monitor, no urgent exit signal. |
-| **Tonbo Imaging India** (Mainboard) | ₹665-700 | ₹510 (72.86%) | 135.90x (QIB 293.56x, NII 170.94x, retail 31.07x) | 23 Oct | 18,24,007 / 18,24,007 shares (14.98% Low / 14.98% Low) | 44.2 Medium | **EXTREME — high gap-up signal** (overall 135.90x >75x; QIB 293.56x >100x; NII 170.94x >100x; GMP 72.86% >50%) | If allotted, consider selling within the first 15 minutes of listing (advisory text only, no order placed). |
+| **Fusion CX** (Mainboard) | ₹275-289 | ₹19 (6.57%) | 4.68x (QIB 4.21x, NII 4.73x, retail 5.99x) | 22 Oct | 54,65,398 / 54,65,398 shares (22.50% Medium / 22.50% Medium) | 55.9 Medium | — | Hold — monitor, no urgent exit signal. |
+| **Tonbo Imaging India** (Mainboard) | ₹665-700 | ₹501 (71.57%) | 135.90x (QIB 293.56x, NII 170.94x, retail 31.07x) | 23 Oct | 18,24,007 / 18,24,007 shares (14.98% Low / 14.98% Low) | 44.1 Medium | **EXTREME — high gap-up signal** (overall 135.90x >75x; QIB 293.56x >100x; NII 170.94x >100x; GMP 71.57% >50%) | If allotted, consider selling within the first 15 minutes of listing (advisory text only, no order placed). |
 | **Zetwerk Manufacturing Business** (Mainboard) | ₹143-151 | ₹3.5 (2.32%) | 3.06x (QIB 4.73x, NII 1.40x, retail 0.73x) | 23 Oct | 7,45,44,110 / 7,45,44,110 shares (22.45% Medium / 22.45% Medium) | 50.3 Medium | — | Hold — monitor, no urgent exit signal. |
 | **Bonfiglioli Transmissions** (Mainboard) | ₹558-586 | ₹127 (21.67%) | 46.06x (QIB 120.78x, NII 40.40x, retail 5.91x) | 23 Oct | 64,78,356 / 64,78,356 shares (14.98% Low / 14.98% Low) | 28.7 Low | **EXTREME — high gap-up signal** (QIB 120.78x >100x) | If allotted, consider selling within the first 15 minutes of listing (advisory text only, no order placed). |
-| **Sahajanand Medical Technologies** (Mainboard) | ₹327-344 | ₹24 (6.98%) | 14.20x (QIB 34.70x, NII 14.64x, retail 3.03x) | 23 Oct | 20,35,817 / 20,35,817 shares (14.73% Low / 14.73% Low) | 28.9 Low | — | Hold — monitor, no urgent exit signal. |
+| **Sahajanand Medical Technologies** (Mainboard) | ₹327-344 | ₹21 (6.10%) | 14.20x (QIB 34.70x, NII 14.64x, retail 3.03x) | 23 Oct | 20,35,817 / 20,35,817 shares (14.73% Low / 14.73% Low) | 29.6 Low | — | Hold — monitor, no urgent exit signal. |
 | **Shellz India** (SME) | ₹170-179 | ₹46 (25.70%) | 58.54x (QIB 41.92x, NII 86.41x, retail 56.09x) | 23 Oct | 4,52,400 / 4,52,400 shares (13.50% Low / 13.50% Low) | 44.2 Medium | — | Hold — monitor, no urgent exit signal. |
 
 ## Method
@@ -31,19 +31,19 @@ Nine issues are Closed — awaiting listing (21, 22 and 23 Oct). No issue listed
 ## Per-issue notes
 
 ### HD Fire Protect (Mainboard, lists 21 Oct)
-- GMP ₹61 (22.51%), investorgain range ₹61-₹91. Subscription 131.73x (QIB 256.65x, NII 203.21x, retail 30.55x), source: chittorgarh final 15 Oct.
+- GMP ₹64 (23.62%), investorgain range ₹61-₹91. Subscription 131.73x (QIB 256.65x, NII 203.21x, retail 30.55x), source: chittorgarh final 15 Oct.
 - Anchor shares 78,64,008; 39,32,004 unlock at 30 days (14.96% of 2,62,84,500 free-float shares, Low) and 39,32,004 at 90 days (14.96%, Low).
-- Score components: GMP momentum 30.1, subscription skew 10.6, sector volatility 45 (fire-safety equipment), anchor proximity 44.9. **Risk score 31.9 (Low).**
+- Score components: GMP momentum 29.6, subscription skew 10.6, sector volatility 45 (fire-safety equipment), anchor proximity 44.9. **Risk score 31.8 (Low).**
 - **EXTREME — high gap-up signal:** overall 131.73x >75x; QIB 256.65x >100x; NII 203.21x >100x.
 - Live price: no listing yet, so there is no Fyers last-traded price.
 - Holdings: not held (Fyers holdings returned 0 positions).
 - Gemini cross-check: triggered but unavailable (no GOOGLE_API_KEY/GEMINI_API_KEY set); primary-source figure used.
 - Advisory: If allotted, consider selling within the first 15 minutes of listing (advisory text only, no order placed).
 
-Unofficial YouTube sentiment: not checked this run — the book is closed and no issue is open (the YouTube check covers Open issues only)
+Unofficial YouTube sentiment: none found this run — book closed and no scorecard issue is Open on 20 Oct, so no review was fetched
 
 ### Vaibhav Vyapaar (SME, lists 21 Oct)
-- GMP ₹5 (9.26%), investorgain range ₹2-₹5. Subscription 2.27x (QIB 1.61x, NII 6.65x, retail 2.70x), source: chittorgarh final 15 Oct (revised from 1.49x).
+- GMP ₹5 (9.26%), investorgain range ₹2-₹5. Subscription 2.27x (QIB 1.61x, NII 6.65x, retail 2.70x), source: chittorgarh final 15 Oct (revised from 1.49x; investorgain shows 3.23x, flagged for manual review, chittorgarh tier kept).
 - Anchor shares 22,00,000; 11,00,000 unlock at 30 days (14.11% of 77,96,000 free-float shares, Low) and 11,00,000 at 90 days (14.11%, Low).
 - Score components: GMP momentum 6.9, subscription skew 82.6, sector volatility 75 (unsecured NBFC lending (SME)), anchor proximity 42.3. **Risk score 48.3 (Medium).**
 - Live price: no listing yet, so there is no Fyers last-traded price.
@@ -51,7 +51,7 @@ Unofficial YouTube sentiment: not checked this run — the book is closed and no
 - Gemini cross-check: triggered but unavailable (no GOOGLE_API_KEY/GEMINI_API_KEY set); primary-source figure used.
 - Advisory: Hold — monitor, no urgent exit signal.
 
-Unofficial YouTube sentiment: not checked this run — the book is closed and no issue is open (the YouTube check covers Open issues only)
+Unofficial YouTube sentiment: none found this run — book closed and no scorecard issue is Open on 20 Oct, so no review was fetched
 
 ### Ravita Engineering Services (SME, lists 22 Oct)
 - GMP ₹5 (4.46%), investorgain range ₹2-₹12. Subscription 7.11x (QIB 13.21x, NII 7.42x, retail 3.50x), source: chittorgarh final 16 Oct.
@@ -62,30 +62,30 @@ Unofficial YouTube sentiment: not checked this run — the book is closed and no
 - Gemini cross-check: not triggered.
 - Advisory: Hold — monitor, no urgent exit signal.
 
-Unofficial YouTube sentiment: not checked this run — the book is closed and no issue is open (the YouTube check covers Open issues only)
+Unofficial YouTube sentiment: none found this run — book closed and no scorecard issue is Open on 20 Oct, so no review was fetched
 
 ### Fusion CX (Mainboard, lists 22 Oct)
-- GMP ₹13 (4.50%), investorgain range ₹10-₹55. Subscription 4.68x (QIB 4.21x, NII 4.73x, retail 5.99x), source: chittorgarh final 16 Oct.
+- GMP ₹19 (6.57%), investorgain range ₹10-₹55. Subscription 4.68x (QIB 4.21x, NII 4.73x, retail 5.99x), source: chittorgarh final 16 Oct.
 - Anchor shares 1,09,30,795; 54,65,398 unlock at 30 days (22.50% of 2,42,90,656 free-float shares, Medium) and 54,65,398 at 90 days (22.50%, Medium).
-- Score components: GMP momentum 33.9, subscription skew 78.7, sector volatility 50 (CX/BPO services (US-demand exposed)), anchor proximity 67.5. **Risk score 56.7 (Medium).**
+- Score components: GMP momentum 31.1, subscription skew 78.7, sector volatility 50 (CX/BPO services (US-demand exposed)), anchor proximity 67.5. **Risk score 55.9 (Medium).**
 - Live price: no listing yet, so there is no Fyers last-traded price.
 - Holdings: not held (Fyers holdings returned 0 positions).
 - Gemini cross-check: not triggered.
 - Advisory: Hold — monitor, no urgent exit signal.
 
-Unofficial YouTube sentiment: not checked this run — the book is closed and no issue is open (the YouTube check covers Open issues only)
+Unofficial YouTube sentiment: none found this run — book closed and no scorecard issue is Open on 20 Oct, so no review was fetched
 
 ### Tonbo Imaging India (Mainboard, lists 23 Oct)
-- GMP ₹510 (72.86%), investorgain range ₹270-₹516. Subscription 135.90x (QIB 293.56x, NII 170.94x, retail 31.07x), source: NSE final 19 Oct 19:00.
+- GMP ₹501 (71.57%), investorgain range ₹270-₹516. Subscription 135.90x (QIB 293.56x, NII 170.94x, retail 31.07x), source: NSE final 19 Oct 19:00.
 - Anchor shares 36,48,013; 18,24,007 unlock at 30 days (14.98% of 1,21,74,046 free-float shares, Low) and 18,24,007 at 90 days (14.98%, Low).
-- Score components: GMP momentum 55.1, subscription skew 9.6, sector volatility 70 (defence electronics), anchor proximity 44.9. **Risk score 44.2 (Medium).**
-- **EXTREME — high gap-up signal:** overall 135.90x >75x; QIB 293.56x >100x; NII 170.94x >100x; GMP 72.86% >50%.
+- Score components: GMP momentum 54.8, subscription skew 9.6, sector volatility 70 (defence electronics), anchor proximity 44.9. **Risk score 44.1 (Medium).**
+- **EXTREME — high gap-up signal:** overall 135.90x >75x; QIB 293.56x >100x; NII 170.94x >100x; GMP 71.57% >50%.
 - Live price: no listing yet, so there is no Fyers last-traded price.
 - Holdings: not held (Fyers holdings returned 0 positions).
 - Gemini cross-check: triggered but unavailable (no GOOGLE_API_KEY/GEMINI_API_KEY set); primary-source figure used.
 - Advisory: If allotted, consider selling within the first 15 minutes of listing (advisory text only, no order placed).
 
-Unofficial YouTube sentiment: not checked this run — the book is closed and no issue is open (the YouTube check covers Open issues only)
+Unofficial YouTube sentiment: none found this run — book closed and no scorecard issue is Open on 20 Oct, so no review was fetched
 
 ### Zetwerk Manufacturing Business (Mainboard, lists 23 Oct)
 - GMP ₹3.5 (2.32%), investorgain range ₹3.5-₹30. Subscription 3.06x (QIB 4.73x, NII 1.40x, retail 0.73x), source: NSE final 19 Oct 19:00.
@@ -96,7 +96,7 @@ Unofficial YouTube sentiment: not checked this run — the book is closed and no
 - Gemini cross-check: not triggered.
 - Advisory: Hold — monitor, no urgent exit signal.
 
-Unofficial YouTube sentiment: not checked this run — the book is closed and no issue is open (the YouTube check covers Open issues only)
+Unofficial YouTube sentiment: none found this run — book closed and no scorecard issue is Open on 20 Oct, so no review was fetched
 
 ### Bonfiglioli Transmissions (Mainboard, lists 23 Oct)
 - GMP ₹127 (21.67%), investorgain range ₹127-₹178. Subscription 46.06x (QIB 120.78x, NII 40.40x, retail 5.91x), source: NSE final 19 Oct 19:00.
@@ -108,18 +108,18 @@ Unofficial YouTube sentiment: not checked this run — the book is closed and no
 - Gemini cross-check: triggered but unavailable (no GOOGLE_API_KEY/GEMINI_API_KEY set); primary-source figure used.
 - Advisory: If allotted, consider selling within the first 15 minutes of listing (advisory text only, no order placed).
 
-Unofficial YouTube sentiment: not checked this run — the book is closed and no issue is open (the YouTube check covers Open issues only)
+Unofficial YouTube sentiment: none found this run — book closed and no scorecard issue is Open on 20 Oct, so no review was fetched
 
 ### Sahajanand Medical Technologies (Mainboard, lists 23 Oct)
-- GMP ₹24 (6.98%), investorgain range ₹15-₹43. Subscription 14.20x (QIB 34.70x, NII 14.64x, retail 3.03x), source: NSE final 19 Oct 19:00.
+- GMP ₹21 (6.10%), investorgain range ₹15-₹43. Subscription 14.20x (QIB 34.70x, NII 14.64x, retail 3.03x), source: NSE final 19 Oct 19:00.
 - Anchor shares 40,71,634; 20,35,817 unlock at 30 days (14.73% of 1,38,22,116 free-float shares, Low) and 20,35,817 at 90 days (14.73%, Low).
-- Score components: GMP momentum 22.9, subscription skew 8.0, sector volatility 45 (medical devices), anchor proximity 44.2. **Risk score 28.9 (Low).**
+- Score components: GMP momentum 25.0, subscription skew 8.0, sector volatility 45 (medical devices), anchor proximity 44.2. **Risk score 29.6 (Low).**
 - Live price: no listing yet, so there is no Fyers last-traded price.
 - Holdings: not held (Fyers holdings returned 0 positions).
 - Gemini cross-check: not triggered.
 - Advisory: Hold — monitor, no urgent exit signal.
 
-Unofficial YouTube sentiment: not checked this run — the book is closed and no issue is open (the YouTube check covers Open issues only)
+Unofficial YouTube sentiment: none found this run — book closed and no scorecard issue is Open on 20 Oct, so no review was fetched
 
 ### Shellz India (SME, lists 23 Oct)
 - GMP ₹46 (25.70%), investorgain range ₹25-₹46. Subscription 58.54x (QIB 41.92x, NII 86.41x, retail 56.09x), source: chittorgarh final 19 Oct (BSE SME).
@@ -130,7 +130,7 @@ Unofficial YouTube sentiment: not checked this run — the book is closed and no
 - Gemini cross-check: not triggered.
 - Advisory: Hold — monitor, no urgent exit signal.
 
-Unofficial YouTube sentiment: not checked this run — the book is closed and no issue is open (the YouTube check covers Open issues only)
+Unofficial YouTube sentiment: none found this run — book closed and no scorecard issue is Open on 20 Oct, so no review was fetched
 
 ## Live price cross-check (Fyers, read-only)
 
@@ -138,10 +138,10 @@ No issue in the cohort has listed. Fyers symbol master already carries NSE:HDFIR
 
 ## Holdings
 
-Fyers holdings: 0 positions (count_total 0). No IPO in this cohort is held.
+Fyers holdings (re-read 20 Oct 2026, 10:30 AM IST after a forced token refresh): 0 positions (count_total 0). No IPO in this cohort is held.
 
 ## Gemini grounded cross-check
 
-Triggered for Tonbo Imaging India, HD Fire Protect and Bonfiglioli Transmissions (EXTREME flags) and for Vaibhav Vyapaar (final book revised from 1.49x to 2.27x). All four calls returned: "No GOOGLE_API_KEY or GEMINI_API_KEY set in environment." Skipped; primary-source figures stand.
+Triggered for Tonbo Imaging India, HD Fire Protect and Bonfiglioli Transmissions (EXTREME flags) and for Vaibhav Vyapaar (chittorgarh final 2.27x vs investorgain 3.23x, an internal inconsistency). Re-tried at 10:30 AM IST; the call returned: "No GOOGLE_API_KEY or GEMINI_API_KEY set in environment." Skipped; primary-source figures stand.
 
-*Sources: investorgain.com GMP (19 Oct 2026, 11:37 PM); NSE ipo-active-category API (19 Oct 2026, 7:00 PM); chittorgarh.com subscription pages; Fyers read-only quotes and holdings. Not investment advice.*
+*Sources: investorgain.com GMP (20 Oct 2026, 10:02 AM); NSE ipo-active-category API (19 Oct 2026, 7:00 PM); chittorgarh.com subscription pages; Fyers read-only quotes and holdings. Not investment advice.*
