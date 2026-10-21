@@ -6,7 +6,7 @@ tags: [ipo, finance, automation, cron]
 
 Daily automated research ledger tracking Indian mainboard + SME IPOs — fundamentals, subscription, GMP, listing-day risk.
 
-**Last run: 20 October 2026 (3:30 PM IST)** — 2026-10-20 IST / 2026-10-20 UTC (see Run Log below for details).
+**Last run: 21 October 2026 (10:30 AM IST)** — 2026-10-21 IST / 2026-10-21 UTC (see Run Log below for details).
 
 ## What it does
 
@@ -42,6 +42,10 @@ Recurring `TimeoutError: idle for >600s` on the news-briefing subagent step — 
 - [[create a link]]
 
 ## Run Log
+- 2026-10-21 / 21 October 2026 (10:30 AM IST, Wednesday, cron, direct calls no subagents): IPO ledger: refreshed and pushed (a07a81e): 2 Open / 7 Closed / 4 Upcoming / 13 tracked. Jio Platforms + Paras Healthcare opened (Day 1 0.91x / 0.03x, NSE 10:27); HD Fire Protect + Vaibhav Vyapaar listed (Fyers open ₹335.00 / ₹52.90) and moved to Recently-listed; EAAA India Alternatives (26-28 Oct) + SFC Environmental Technologies (27-29 Oct) added as Upcoming. SFC cross-checked against its RHP; EAAA RHP returned 403 and SEBI was unreachable, so EAAA uses chittorgarh figures (cross-check pending). 16/16 checks PASS, predicted gains PASS. Success.
+  Trading news: tctl latest (225 fetched, 208 new; NSE announcements RSS timed out, marketaux token unset, both recurring) + calendar --days 3 (GBP CPI 21 Oct 11:30 IST, NZD CPI 22 Oct 03:15 IST) + 5 watchlist symbols ran; output tee'd to scratch. Success.
+  Risk desk: listing-risk-desk-2026-10-21.md written, 9 issues (7 awaiting listing + 2 listed today). EXTREME: Tonbo 44.2 Medium, HD Fire 31.5 Low, Bonfiglioli 28.5 Low (fast-exit advisory); others hold. Fyers holdings 0; Gemini still no API key (recurring). YouTube transcripts fetched for Jio and Paras. Success.
+  Obsidian note: this entry appended.
 - 2026-10-20 / 20 October 2026 (3:30 PM IST, Tuesday, Dussehra market holiday, cron, direct calls no subagents): IPO ledger: refreshed and pushed (54223bc): 0 Open / 9 Closed / 4 Upcoming / 13 tracked, no status change (holiday; no new price band on chittorgarh/NSE). GMP refreshed via investorgain data API (Jio ₹254, Paras ₹70, BLS ₹27, Tonbo ₹510, Bonfiglioli ₹128, HD Fire ₹63, Sahajanand ₹25, Fusion ₹20, Zetwerk ₹3, Vaibhav ₹3, Ravita ₹2); news snapshot re-fetched (spot $4,112.20 -0.68%, Brent $111.58 +2.77%, USD/INR 94.86, MCX daily rate unchanged on holiday); investorgain live table did not render in browser (API used instead); all 16 self-consistency checks and predicted-gains PASS 13/13.
   Trading news: tctl latest (225 fetched, 86 new; NSE announcements RSS timed out, marketaux token unset, both recurring) + calendar --days 3 (GBP CPI 21 Oct 11:30 IST, NZD CPI 22 Oct 03:15 IST) + 5 watchlist symbols ran; output tee'd to scratch. Success.
   Risk desk: listing-risk-desk-2026-10-20-afternoon.md written (EXTREME: Tonbo 44.2 Medium, HD Fire 31.8 Low, Bonfiglioli 28.7 Low, fast-exit advisory; others hold); Fyers holdings 0; Gemini still no API key (recurring); ET reports Tonbo 140x vs NSE 135.90x and EAAA India Alternatives IPO on 26 Oct (no price band yet), both noted.
