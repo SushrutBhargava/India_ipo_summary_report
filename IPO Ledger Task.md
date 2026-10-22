@@ -6,7 +6,7 @@ tags: [ipo, finance, automation, cron]
 
 Daily automated research ledger tracking Indian mainboard + SME IPOs — fundamentals, subscription, GMP, listing-day risk.
 
-**Last run: 21 October 2026 (3:30 PM IST)** — 2026-10-21 IST / 2026-10-21 UTC (see Run Log below for details).
+**Last run: 22 October 2026 (10:30 AM IST)** — 2026-10-22 IST / 2026-10-22 UTC (see Run Log below for details).
 
 ## What it does
 
@@ -42,6 +42,10 @@ Recurring `TimeoutError: idle for >600s` on the news-briefing subagent step — 
 - [[create a link]]
 
 ## Run Log
+- 2026-10-22 / 22 October 2026 (10:30 AM IST, Thursday, cron, direct calls no subagents): IPO ledger: refreshed and pushed (34bcf52): 2 Open / 5 Closed / 5 Upcoming / 12 tracked. Fusion CX + Ravita Engineering Services listed (Fyers open ₹305.00 / ₹112.00) and moved to Recently-listed; Paramount, Acme and TNA aged out (3-session cutoff now 12, 21, 22 Oct). Wiscon Industries (SME, ₹194-204, 27-29 Oct) added as Upcoming after RHP cross-check (chittorgarh 'About' FY26 revenue ₹73.39 Cr conflicts with RHP ₹196.87 Cr consolidated; RHP used). Jio Day 2 3.36x (QIB 9.42x), Paras 0.19x (NSE 10:27). GMP refreshed (Jio ₹239, Paras ₹25, Tonbo ₹465, Bonfiglioli ₹105, Sahajanand ₹17, Zetwerk ₹0, SFC first quote ₹31, BLS ₹25). Fixed stale 'not yet active' GMP cells for Jio/Paras in the Valuation table. 16/16 checks PASS, predicted gains PASS 12/12. Success.
+  Trading news: tctl latest (225 fetched, 192 new; NSE announcements RSS timed out, marketaux token unset, both recurring) + calendar --days 3 (no events returned) + 5 watchlist symbols ran; output tee'd to scratch. Success.
+  Risk desk: listing-risk-desk-2026-10-22.md written, 9 issues (5 listing 23 Oct + 4 listed 21-22 Oct). EXTREME: Tonbo 43.8 Medium, HD Fire 31.5 Low, Bonfiglioli 29.4 Low (fast-exit advisory); others hold. Fyers holdings 0; Gemini still no API key (recurring). YouTube transcripts fetched fresh for Jio and Paras. Success.
+  Obsidian note: this entry appended.
 - 2026-10-21 / 21 October 2026 (3:30 PM IST, Wednesday, cron, direct calls no subagents): IPO ledger: refreshed and pushed (3e41782): 2 Open / 7 Closed / 4 Upcoming / 13 tracked, no status change and no new price band (chittorgarh all-IPO list, NSE all-upcoming-issues). Jio Platforms Day 1 close 2.54x (QIB 7.46x, NSE 15:27), tag moved to Oversubscribed; Paras Healthcare 0.13x. GMP refreshed via investorgain API (Jio ₹254, Paras ₹35, Shellz ₹25, Fusion ₹17, Zetwerk ₹1, Ravita ₹1; others unchanged). Sensex 73,709.69 (-0.19%), Nifty 22,811.35 (-0.34%) from Fyers; news snapshot re-fetched (MCX ₹1,46,034/10g, spot $4,116.20, Brent $110.48, USD/INR 94.47). 16/16 checks PASS, predicted gains PASS 13/13. Success.
   Trading news: tctl latest (225 fetched, 124 new; NSE announcements RSS timed out, marketaux token unset, both recurring) + calendar --days 3 (one HIGH event: NZD CPI 22 Oct 03:15 IST) + 5 watchlist symbols ran; output tee'd to scratch. Success.
   Risk desk: listing-risk-desk-2026-10-21.md rewritten for the 3:30 PM run, 9 issues. EXTREME: Tonbo 44.2 Medium, HD Fire 31.5 Low, Bonfiglioli 28.5 Low (fast-exit advisory); others hold. Fyers holdings 0; Gemini still no API key (recurring). YouTube lines reuse the transcripts fetched in the 10:30 AM run. Success.
