@@ -6,7 +6,7 @@ tags: [ipo, finance, automation, cron]
 
 Daily automated research ledger tracking Indian mainboard + SME IPOs — fundamentals, subscription, GMP, listing-day risk.
 
-**Last run: 23 October 2026 (10:30 AM IST)** — 2026-10-23 IST / 2026-10-23 UTC (see Run Log below for details).
+**Last run: 23 October 2026 (3:30 PM IST)** — 2026-10-23 IST / 2026-10-23 UTC (see Run Log below for details).
 
 ## What it does
 
@@ -42,6 +42,10 @@ Recurring `TimeoutError: idle for >600s` on the news-briefing subagent step — 
 - [[create a link]]
 
 ## Run Log
+- 2026-10-23 / 23 October 2026 (3:30 PM IST, Friday, cron, direct calls no subagents): IPO ledger: refreshed and pushed (6b31406): 3 Open / 0 Closed / 7 Upcoming / 10 tracked, no status change and no new price bands. Jio final day 13.59x (QIB 36.74x, NII 13.63x, retail 2.50x), Paras 1.70x (QIB 2.21x, NII 0.60x, retail 1.84x; NSE 15:27), Core4 Day 1 0.07x (chittorgarh 15:29). GMP: Jio ₹247 (22.07%), Paras ₹1 (0.14%, from ₹13). Debut last trades after close (Fyers): Tonbo ₹1,133.80 (+61.97%), Sahajanand ₹377.65 (+9.78%), Zetwerk ₹138.25 (-8.44%), Bonfiglioli ₹574.50 (-1.96%), Shellz ₹170.05 (-5.00%). Nifty 22,600.00 (-0.39%), Sensex 73,123.83 (-0.17%); snapshot re-fetched (MCX ₹1,42,810/10g, spot $4,020.40, Brent $114.36, USD/INR 94.94). 16/16 checks PASS, predicted gains PASS 10/10. chittorgarh curl returned the 18-link shell; browser read used (recurring). Success.
+  Trading news: tctl latest (225 fetched, 99 new; NSE announcements RSS timed out, marketaux token unset, both recurring) + calendar --days 3 (no events returned) + 5 watchlist symbols ran; output tee'd to scratch. Success.
+  Risk desk: listing-risk-desk-2026-10-23-afternoon.md written, 9 issues. EXTREME: Tonbo 43.6 Medium, HD Fire 31.5 Low, Bonfiglioli 30.5 Low (fast-exit advisory); others hold. Fyers holdings 0; Gemini still no API key (recurring). YouTube transcripts re-fetched (unchanged): Jio Apply, Paras Neutral, Core4 Avoid. Success.
+  Obsidian note: this entry appended.
 - 2026-10-23 / 23 October 2026 (10:30 AM IST, Friday, cron, direct calls no subagents; ran late, ledger pushed ~12:05 PM): IPO ledger: refreshed and pushed (274bc1d): 3 Open / 0 Closed / 7 Upcoming / 10 tracked. Tonbo, Sahajanand, Zetwerk, Bonfiglioli, Shellz listed today and moved to Recently-listed (Fyers opens ₹1,160.00 / ₹371.15 / ₹159.25 / ₹586.00 / ₹179.00); R.K. Fashion dropped (outside 3-session window). Core4 Engineers opened (0.01x). Jio Day 3 6.17x (QIB 13.56x), Paras 0.38x. Three newly priced issues carded after RHP cross-check: M.K.Sons Fine Jewels, Carver Roboweld (chittorgarh shows standalone figures under a consolidated label; RHP consolidated used), Bombay Coated & Special Steels. Self-consistency checks 0-12 all PASS; predicted gains PASS.
   Trading news: tctl latest (225 fetched, 206 new; NSE announcements RSS timed out, marketaux token unset, both recurring) + calendar --days 3 (no events returned) + 5 watchlist symbols ran; output tee'd to scratch. Success.
   Risk desk: listing-risk-desk-2026-10-23.md written, 9 issues (5 listed today + 4 listed 21-22 Oct). EXTREME: Tonbo 43.6 Medium, HD Fire 31.5 Low, Bonfiglioli 30.5 Low (fast-exit advisory); others hold. Fyers holdings 0; Gemini still no API key (recurring). YouTube lines for Jio, Paras, Core4 (Core4: Avoid).
