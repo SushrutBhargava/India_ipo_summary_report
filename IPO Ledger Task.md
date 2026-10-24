@@ -6,7 +6,7 @@ tags: [ipo, finance, automation, cron]
 
 Daily automated research ledger tracking Indian mainboard + SME IPOs — fundamentals, subscription, GMP, listing-day risk.
 
-**Last run: 23 October 2026 (3:30 PM IST)** — 2026-10-23 IST / 2026-10-23 UTC (see Run Log below for details).
+**Last run: 24 October 2026 (10:30 AM IST)** — 2026-10-24 IST / 2026-10-24 UTC (see Run Log below for details).
 
 ## What it does
 
@@ -42,6 +42,10 @@ Recurring `TimeoutError: idle for >600s` on the news-briefing subagent step — 
 - [[create a link]]
 
 ## Run Log
+- 2026-10-24 / 24 October 2026 (10:30 AM IST, Saturday, markets shut, cron, direct calls no subagents): IPO ledger: refreshed and pushed (bba0564): 1 Open / 2 Closed / 9 Upcoming / 12 tracked. Jio Platforms (NSE final 22.19x, QIB 70.55x) and Paras Healthcare (2.23x, QIB 3.09x) moved to Closed, listing 28 Oct, and left the data tables and rank table. New Upcoming SME cards: Ajwa Projects (fixed ₹203, 28-30 Oct; only Oct 2025 draft prospectus found, FY26 offer-document cross-check pending, no crosscheck file) and Antala Industries (₹63-67, 29 Oct-2 Nov; DRHP cross-check written). Core4 Day 1 final 0.08x. GMP: Jio ₹250, Paras ₹11, EAAA ₹121, BLS ₹30 (from ₹38), Bombay Coated ₹8, SFC ₹21. Self-consistency checks ALL PASS; predicted gains PASS (12 cards, 9 recent rows).
+  Trading news: tctl latest (225 fetched, 192 new; NSE announcements RSS timed out, marketaux token unset, both recurring) + calendar --days 3 (no events returned) + 5 watchlist symbols ran; output tee'd to scratch. Success.
+  Risk desk: listing-risk-desk-2026-10-24.md written, 11 issues (Jio, Paras listing pending + 9 listed 21-23 Oct). Jio 25.0 Low, Paras 51.7 Medium (hold); EXTREME: Tonbo 43.6 Medium, HD Fire 31.5 Low, Bonfiglioli 30.5 Low (fast-exit advisory). Fyers holdings 0; Gemini still no API key (recurring). YouTube: Core4 Avoid (fresh transcript). Success.
+  Obsidian note: this entry appended.
 - 2026-10-23 / 23 October 2026 (3:30 PM IST, Friday, cron, direct calls no subagents): IPO ledger: refreshed and pushed (6b31406): 3 Open / 0 Closed / 7 Upcoming / 10 tracked, no status change and no new price bands. Jio final day 13.59x (QIB 36.74x, NII 13.63x, retail 2.50x), Paras 1.70x (QIB 2.21x, NII 0.60x, retail 1.84x; NSE 15:27), Core4 Day 1 0.07x (chittorgarh 15:29). GMP: Jio ₹247 (22.07%), Paras ₹1 (0.14%, from ₹13). Debut last trades after close (Fyers): Tonbo ₹1,133.80 (+61.97%), Sahajanand ₹377.65 (+9.78%), Zetwerk ₹138.25 (-8.44%), Bonfiglioli ₹574.50 (-1.96%), Shellz ₹170.05 (-5.00%). Nifty 22,600.00 (-0.39%), Sensex 73,123.83 (-0.17%); snapshot re-fetched (MCX ₹1,42,810/10g, spot $4,020.40, Brent $114.36, USD/INR 94.94). 16/16 checks PASS, predicted gains PASS 10/10. chittorgarh curl returned the 18-link shell; browser read used (recurring). Success.
   Trading news: tctl latest (225 fetched, 99 new; NSE announcements RSS timed out, marketaux token unset, both recurring) + calendar --days 3 (no events returned) + 5 watchlist symbols ran; output tee'd to scratch. Success.
   Risk desk: listing-risk-desk-2026-10-23-afternoon.md written, 9 issues. EXTREME: Tonbo 43.6 Medium, HD Fire 31.5 Low, Bonfiglioli 30.5 Low (fast-exit advisory); others hold. Fyers holdings 0; Gemini still no API key (recurring). YouTube transcripts re-fetched (unchanged): Jio Apply, Paras Neutral, Core4 Avoid. Success.
